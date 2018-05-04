@@ -1,0 +1,13 @@
+
+@import url("alabaster.css");
+
+
+.license {
+    text-decoration: none;
+    background-color: #EEEEEE;
+    color: #000000;
+    padding: 2px 6px 2px 6px;
+    border: 1px solid #CCCCCC;
+    border-radius: 2pt;
+    display: inline-block;
+}

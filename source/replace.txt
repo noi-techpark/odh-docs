@@ -1,0 +1,6 @@
+.. |odh|  replace:: OpenDataHub
+.. |odhweb|  replace:: opendatahub.bz.it
+
+#  URLs of datasets
+
+.. |mobecs| replace:: ipchannels.integreen-life.bz.it
