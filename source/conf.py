@@ -37,7 +37,7 @@ extensions = [
 ]
 
 # Add any paths that contain templates here, relative to this directory.
-templates_path = ['_templates', 'odh']
+templates_path = ['_templates']
 
 # The suffix(es) of source filenames.
 # You can specify multiple suffix as a list of string:
@@ -134,7 +134,7 @@ extlinks = { 'intergreen':
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 #
-html_theme = 'odh'
+html_theme = 'sphinx_rtd_theme'
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
@@ -143,7 +143,7 @@ html_theme = 'odh'
 # html_theme_options = {}
 
 # Add any paths that contain custom themes here, relative to this directory.
-html_theme_path = ['.']
+#html_theme_path = ['.']
 
 # The name for this set of Sphinx documents.
 # "<project> v<release> documentation" by default.
@@ -168,7 +168,7 @@ html_logo = 'images/OpenDataHub.png'
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
-html_static_path = ['odh/']
+html_static_path = ['odh/static']
 html_style= 'odh.css'
 
 #html_css_files = ['odh.css']

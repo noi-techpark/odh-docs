@@ -1,6 +1,9 @@
 
-@import url("alabaster.css");
+@import url("css/theme.css");
 
+body {
+    font-family: Lato, Helvetica, Arial, sans-serif;
+}
 
 .license {
     text-decoration: none;
@@ -10,4 +13,8 @@
     border: 1px solid #CCCCCC;
     border-radius: 2pt;
     display: inline-block;
+}
+
+external {
+    diplay: block;
 }
