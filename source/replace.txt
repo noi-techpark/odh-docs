@@ -1,6 +1,13 @@
-.. |odh|  replace:: OpenDataHub
+.. |odh|  replace:: Open Data Hub
 .. |odhweb|  replace:: opendatahub.bz.it
+
+.. licenses:
+
+.. |bysa| image:: /images/by-sa.png
+.. |cc0| image:: /images/cc0.png
 
 ..  URLs of datasets
 
 .. |mobecs| replace:: ipchannels.integreen-life.bz.it
+
+
