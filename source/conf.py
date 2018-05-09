@@ -127,7 +127,7 @@ rst_prolog = """
 #facility to shorten/change external links to datasets - useful if hosting changes
 
 extlinks = { 'integreen':
-             ('http://ipchannels.integreen-life.bz.it/%s', None)
+             ('http://ipchannels.integreen-life.bz.it/%s', None),
              'sasabus': ('http://sasabus.org/%s', None)
 }
 
