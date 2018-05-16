@@ -13,8 +13,10 @@ Contents:
 
    intro
    catalogue
+   contribute
    howto
-   howto/ecfe.rst
+   howto/ecfe
+   howto/developer
 
 Indices and tables
 ==================
