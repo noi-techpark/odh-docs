@@ -71,7 +71,7 @@ data with the API call:
 
    .. parsed-literal::
 
-     curl -X GET --header 'Accept: application/json' '\ :integreen:`emobility/rest//get-stations`'
+      curl -X GET --header 'Accept: application/json' '\ :integreen:`emobility/rest/get-stations`'
 
 
 The result structure is a json list of strings, and an actual outcome

@@ -1,5 +1,7 @@
 .. |odh|  replace:: Open Data Hub
 .. |odhweb|  replace:: opendatahub.bz.it
+.. |bdp| replace:: Big Data Platform
+.. |bdpc| replace:: :command:`bdp-core`
 
 .. licenses:
 
