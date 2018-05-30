@@ -13,7 +13,7 @@ Mobility Domain
    usage.  :integreen:`EchargingFrontEnd`.  |cc0|
 
 Transportation Domain
----------------------
+~~~~~~~~~~~~~~~~~~~~~
    
 #. info.opensasa.realtime Shows the real time position of buses
    operated by SASA in South Tyrol.  :sasabus:`opendata`
