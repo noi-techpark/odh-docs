@@ -18,6 +18,9 @@ Contents:
    howto
    howto/ecfe
    howto/developer
+   guidelines/introduction
+   guidelines/platform
+   guidelines/database
 
 Indices and tables
 ==================
