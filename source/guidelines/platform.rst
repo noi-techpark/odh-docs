@@ -226,7 +226,7 @@ for the hosting provider to make it available.
 SQL
 +++
 
-See &rarr; PostgreSQL.
+See section :ref:`pgsql-guidelines` below.
 
 HTML and CSS
 ++++++++++++
@@ -261,7 +261,7 @@ the |odh|.
 :strong:`JSON` is of particular interest as that is the preferred data
 exchange format for REST endpoints. It also plays a role in the
 persistence layer, as |odh| allows the use of JSON records in
-PostgreSQL tables (see &rarr; PostgreSQL).
+PostgreSQL tables (see section :ref:`pgsql-guidelines` below).
 
 
 .. _platforms:
