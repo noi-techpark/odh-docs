@@ -1,5 +1,7 @@
-|odh| Database Guidelines
-=========================
+.. _db-guidelines:
+
+|odh| Database Guidelines - Full Version
+--------------------------------------------------------------
 
 Refer to the document Part 1 - |odh| Platform Guidelines for a general
 introduction to the scope of the present guidelines.
@@ -9,4 +11,4 @@ PostgreSQL from Java or JavaScript (for developers that contribute code that
 just uses an existing database) are explained in the document Part 1 as well.
 
 The present Part 2 clarifies database design criteria for developers who
-contribute their own database designs to the |odh| platform.  
+contribute their own databases
