@@ -4,16 +4,10 @@
 |odh| Platform Guidelines - Full Version
 ------------------------------------------------------------
 
-|odh| is a collection of software, databases, and services coordinated and
-hosted by IDM Südtirol / Alto Adige. Currently, |odh| systems are related to
-mobility and tourism. In the future |odh| might diversify into more fields.
-
-Companies and developers contributing to |odh| must follow the guidelines
-listed in this document ("the guidelines") as close as possible.
-
-The aim of the guidelines is to simplify the hosting and maintenance of the
-software, databases and services by the |odh| developers and maintainers at
-IDM ("the |odh| team").
+This document represents :strong:`Part 1` of the guidelines and
+presents the preferred programming languages, databases, and protocols
+to be used, data exchange and exposition methods, coding conventions,
+and regulates the use of third-party libraries.
 
 There are scenarios where an exemption from the guidelines is acceptable.
 The following is a :strong:`non-exhaustive` list of such scenarios.
@@ -441,11 +435,3 @@ Database Design and Usage
 _________________________
 
 This section is moved into its own document, :doc:`database`.
-
-.. check all internal references! &arr;
-   sectioning correspondences:
-   txt     rst
-   #       ----
-   ##      ~~~~
-   ###     ++++
-   ** **   ++++ (to verify) or ____
