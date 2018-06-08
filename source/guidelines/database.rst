@@ -332,12 +332,3 @@ PostgreSQL accepts these strings as inputs for :envvar:`timestamp` and
 Also note JavaScript has a :envvar:`Date.prototype.toISOString()`
 method.
 
-
-
-.. check all internal references! &arr;
-   sectioning correspondences:
-   txt     rst
-   #       ----
-   ##      ~~~~
-   ###     ++++
-   ** **   ++++ (to verify) or ____
