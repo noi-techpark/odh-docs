@@ -240,9 +240,8 @@ As most web traffic is nowadays coming from mobile devices, all general purpose
 web UIs exposed to end users should be implemented to work well on mobile
 devices by using standard techniques, such as :strong:`responsive design`.
 
-In some, if not most, contexts it is also necessary to take
-accessibility into account when designing web pages.
-
+In the development of the web front-end, Accessibility principles
+should be taken into account when designing web pages.
 
 XML and JSON
 ++++++++++++
@@ -301,9 +300,10 @@ __________________________
 Currently, the |odh| team uses Amazon Web Services for Tomcat hosting,
 in particular the managed service known as `Elastic Beanstalk`. While
 there is no hard dependency on this provider -that could be changed at
-any point in the future, some architectural choices in Elastic
-Beanstalk have shaped the way the |odh| teams thinks about how web
-applications should be engineered.
+any point in the future, the architectural design of Elastic Beanstalk
+has partly modelled/shaped the engineering choices of the |odh| team
+in the design of its web application.
+
 
 First and foremost, servers are considered volatile. This means a
 |odh| component running in Tomcat :strong:`can not expect` to see a
@@ -330,7 +330,7 @@ ___________
 One subtle point is the question `"Where is the JDBC data source and password
 stored?"`. It cannot be stored in a file and it must not be stored in the
 source code or context files. The recommended way to store this information is
-in environment properties.
+in Java environment properties.
 
 The system will set these variables when launching Tomcat::
    
@@ -415,8 +415,8 @@ Since PostgreSQL will refuse a connection if that number is exceeded,
 developers must take this number into account, whether they configure
 a connection pool or not.
 
-|odh| databases generally are configured to not all connections from any host
-but the application servers.
+|odh| databases generally are configured to accept connections only from the known hosts where the application
+servers are deployed.
 
 Contributors must follow well known best practices when querying
 the database from Java or JavaScript:
