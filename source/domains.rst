@@ -6,7 +6,7 @@ introduction to the available `Domains`, `APIs`, and `Datasets`.
 	  
 .. _domains:
 
-.. figure:: /images/domain2.png
+.. figure:: /images/domain.png
    :width: 80%
 
    :strong:`Figure P-1:` An overview of the |odh| project.
