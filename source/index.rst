@@ -12,8 +12,7 @@ Contents:
    :maxdepth: 2
 
    intro
-   api
-   catalogue
+   domains
    contribute
    howto
    howto/ecfe
@@ -27,5 +26,5 @@ Indices and tables
 
 .. * :ref:`genindex`
 
-* :ref:`search`
+.. * :ref:`search`
 

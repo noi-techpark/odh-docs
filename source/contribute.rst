@@ -18,9 +18,9 @@ the project or in the methods exposed by the API, but in using apps
 that are built on top of the APIs and providing feedback to their
 developers. We keep a list of those application here. (TBD)
 
-You can also browse the list of :doc:`catalogue`, choose a dataset and
+You can also browse the list of :ref:`available_datasets`, choose a dataset and
 start gathering data from it, by using the documentation provided in
-this site. You can then provide any kond of feedback, like reports
+this site. You can then provide any kind of feedback, like reports
 about any malfunctions, suggestions for improvements or new features,
 and so on.
 
@@ -64,6 +64,4 @@ You can then set up PostgreSQL, clone the git repository of the |bdp|
 Core, and finally clone our :strong:`HelloWorld` sample repository to
 have an idea of how to proceed.
 
-The complete howto can be found :doc:`here <howto/developer>`. (TBD
-after issue #30 has been completed)
-
+You can find more precise directions in the :doc:`howto/developer` article.

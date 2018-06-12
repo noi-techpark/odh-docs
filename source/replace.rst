@@ -1,3 +1,4 @@
+.. |od|  replace:: Open Data 
 .. |odh|  replace:: Open Data Hub
 .. |odhweb|  replace:: opendatahub.bz.it
 .. |bdp| replace:: Big Data Platform
