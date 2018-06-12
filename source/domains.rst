@@ -109,4 +109,24 @@ various type of data about buses and station.
 Authentication
 ~~~~~~~~~~~~~~
 
+Authentication in |odh| is mainly used in the part of the tool which
+exposes data to the consumer, which means in the Reader of the
+core-module and in every single webservice accessing the Reader. The
+authentication mechanism used is Oauth2 and follows the standard
+:rfc:`6749`, `The OAuth 2.0 Authorization Framework`. Authentication
+tokens are based on JWT as defined in :rfc:`7519#section-3`, `JSON Web
+Token (JWT)` to send claims.
 
+For those not familiar with the OAuth2 mechanism, here is a quick
+description of the client-server interaction:
+
+#. The client requests the permission to access restricted resources
+   to the `authorisation server`.
+#. The authorisation server replies with a :strong:`refresh token` and an
+   :strong:`access token`. The access token contains an expire date.
+#. The access token can now be used to access protected resources on
+   the `resource server`. 
+#. If the access token has expired, you'll get a HTTP :literal:`401
+   Unauthorized` response. In this case you need to request a new
+   access-token, and passing your refresh token in the Authorization
+   header as Bearer-token.
