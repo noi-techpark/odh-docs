@@ -55,8 +55,9 @@ more to be published.
    that can not be distributed under an open licence like, e.g., CC0
    |cc0| or CC-BY-SA |bysa|. Therefore, to allow the highest possible
    data to be shared, an authentication mechanism has been
-   implemented, to limit the access only to the |od| in the
-   dataset. Please refer to section :ref:`authentication` for details.
+   implemented, to prevent access to the data in the datasets that has
+   not yet been published as |od|\.  Please refer to section
+   :ref:`authentication` for details.
 
 Datasets in the Mobility Domain
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -125,8 +126,18 @@ description of the client-server interaction:
 #. The authorisation server replies with a :strong:`refresh token` and an
    :strong:`access token`. The access token contains an expire date.
 #. The access token can now be used to access protected resources on
-   the `resource server`. 
+   the `resource server`. To be able to use the access token, add it
+   as a Bearer token in the Authorization header of the HTTP
+   call. :strong:`Bearer` is a means to use tokens in HTTP transaction. The
+   complete specification can be found in :rfc:`6750`.
 #. If the access token has expired, you'll get a HTTP :literal:`401
    Unauthorized` response. In this case you need to request a new
    access-token, and passing your refresh token in the Authorization
-   header as Bearer-token.
+   header as Bearer token.  As an example, in |odh| datasets Bearer
+   tokens can be inserted in a :command:`curl` call like follows:
+
+   .. code-block:: bash
+			    
+      curl -X GET "$HTTP_URL_WITH_GET_PARAMETERS" -H "accept: */*" -H "Authorization: Bearer $TOKEN"
+
+
