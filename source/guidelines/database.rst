@@ -39,11 +39,12 @@ Specifically, the following methodologies are well known and acceptable:
    traditional ID column and one JSON data column. The (simple)
    :command:`CREATE` statements are written by the developer.  The
    JSON data column must use the PostgreSQL native data type
-   :strong:`jsonb` (see `binary stored JSON`_ in PostgreSQL
-   documentation).
+   :strong:`jsonb` (see `binary stored JSON
+   <https://www.postgresql.org/docs/10/static/datatype-json.html#JSON-DOC-DESIGN>`_
+   in PostgreSQL documentation).
 
-PostgreSQL supports all three methodologies well. It is also possible to have a
-hybrid design mixing 1. and 3.
+PostgreSQL supports all three methodologies well. It is also possible
+to have a hybrid design mixing 1. and 3.
 
 A developer contributing a database design to |odh| must provide the
 |ddl| , a.k.a. `schema files` containing the :command:`CREATE` statements.
@@ -142,8 +143,9 @@ cleanest DDL output the framework provides.
 Contributors can expect their database design to be stored into a
 schema whose name is determined by the |odh| team and executed as a
 non-privileged user account that has the given schema in its default
-:strong:`search_path` (see `DDL schema path`_ in PostgreSQL
-documentation).
+:strong:`search_path` (see `DDL schema path
+<https://www.postgresql.org/docs/10/static/ddl-schemas.html#DDL-SCHEMAS-PATH>`_
+in PostgreSQL documentation).
 
 Unless there is a specific reason, contributed designs must use
 :strong:`only a single schema` without using its explicit name,
@@ -172,15 +174,16 @@ Hence, the general rule is that database designs submitted to the
 
 However, (small) utility procedures and functions, especially with
 respect to triggers, are allowed. When used, these procedures and
-functions must be written in `PL/PgSQL`_. Other server-side languages,
-even the trusted ones, are neither allowed, nor can they be expected
-to be available.
+functions must be written in `PL/PgSQL
+<https://www.postgresql.org/docs/10/static/plpgsql.html>`_. Other
+server-side languages, even the trusted ones, are neither allowed, nor
+can they be expected to be available.
 
 An example of such an allowed instance of a procedure is an audit
 trigger that, for any changes made to :strong:`Table A` generates a
 log entry that is stored in :strong:`Table B`.
 
-Foreign data wrappers (`SQL/MED`_) :strong:`must not` be used.
+Foreign data wrappers (`SQL/MED <https://www.postgresql.org/docs/10/static/sql-createforeigndatawrapper.html>`_) :strong:`must not` be used.
 
 Indices and Partioning
 ~~~~~~~~~~~~~~~~~~~~~~
@@ -197,7 +200,8 @@ columns will benefit from indices, when the number of records grows.
 
 In particular, if methodology 3 (JSON) is chosen, PostgreSQL provides
 specialized multi-dimensional indices of type GIN to index the `jsonb
-data type`_.
+data type
+<https://www.postgresql.org/docs/10/static/datatype-json.html#JSON-INDEXING>`_.
 
 If the contributor anticipates designs with large tables (say more
 than 100M records or more than 5 GB on disk) and expects queries
@@ -232,8 +236,10 @@ and Italian::
 
 A contributor is free to add a custom collation such as
 :envvar:`de_DE` or :envvar:`it_IT`, either at the DDL level or the
-query level (see `PostgreSQL documentation on collation <collation>`_),
+query level (see `PostgreSQL documentation on collation
+<https://www.postgresql.org/docs/10/static/collation.html>`_),
 although there is most likely no need to apply other collations.
+
 
 A database design :strong:`must not` use the :envvar:`money`
 type. Currency amounts must be stored in fields of type
@@ -241,8 +247,9 @@ type. Currency amounts must be stored in fields of type
 
 One important aspect concerns :strong:`dates` and :strong:`timestamps`.
 
-Since the |odh| applications span multiple regions and time zones, it is very
-important to be precise about date and time formats and time zone information.
+Since the |odh| applications span multiple regions and time zones, it
+is very important to be precise about date and time formats and time
+zone information.
 
 Dates must be stored in the appropriate :envvar:`date` data
 type. Dates stored in this data type will be automatically converted
@@ -296,8 +303,8 @@ appear as separated by two hours.
 Sometimes developers need to convert to and from text. In case a
 contributing developer wishes to do this using PostgreSQL functions,
 they must use functions :strong:`to_date()` and :strong:`to_char()`
-(see `PostgreSQL documentation on function formatting <function
-formatting>`_).
+(see `PostgreSQL documentation on function formatting
+<https://www.postgresql.org/docs/10/static/functions-formatting.html>`_).
 
 For example:
 
@@ -314,14 +321,16 @@ For example:
    (1 row)
 
 Sometimes timestamps are stored as numbers, the so called Unix time
-stamp (see `unix timestamp`_ on wikipedia).
+stamp (see `unix timestamp <https://en.wikipedia.org/wiki/Unix_time>`_
+on wikipedia).
 
 This is also acceptable, as the Unix time stamp always follows UTC and
 is therefore unambiguous.
 
 For JSON data, contributors must make sure that the textual
 representation of dates and timestamps follow the ISO standard
-:strong:`ISO_8601` (see more `on Wikipedia <iso 8601>`_. Examples:
+:strong:`ISO_8601` (see more `on Wikipedia
+<https://en.wikipedia.org/wiki/ISO_8601>`_). Examples:
 
  * `"ts":"2018-05-28T00:54:28.025Z"`
  * `"d":"2018-05-28"`

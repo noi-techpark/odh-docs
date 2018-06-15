@@ -33,17 +33,7 @@
 .. _extensions distributed with PostgreSQL:
    https://www.postgresql.org/docs/10/static/contrib.html
 .. _spatial query extension PostGIS: https://postgis.net/
-.. _binary stored JSON:
-   https://www.postgresql.org/docs/10/static/datatype-json.html#JSON-DOC-DESIGN	
-.. _DDL schema path:
-   https://www.postgresql.org/docs/10/static/ddl-schemas.html#DDL-SCHEMAS-PATH
-.. _PL/PgSQL: https://www.postgresql.org/docs/10/static/plpgsql.html
-.. _SQL/MED: https://www.postgresql.org/docs/10/static/sql-createforeigndatawrapper.html
-.. _jsonb data type: https://www.postgresql.org/docs/10/static/datatype-json.html#JSON-INDEXING
-.. _collation: https://www.postgresql.org/docs/10/static/collation.html
-.. _function formatting: https://www.postgresql.org/docs/10/static/functions-formatting.html
-.. _unix timestamp: https://en.wikipedia.org/wiki/Unix_time
-.. _iso 8601: https://en.wikipedia.org/wiki/ISO_8601
+
 
 .. abbreviations
 
