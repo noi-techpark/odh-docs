@@ -1,7 +1,7 @@
 .. _db-guidelines:
 
-|odh| Database Guidelines - Full Version
---------------------------------------------------------------
+Database Guidelines - Full Version
+----------------------------------
 
 This document represents Part 2 of the |odh| Developer's Guidelines and
 clarifies the database design criteria for developers who contribute

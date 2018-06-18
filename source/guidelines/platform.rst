@@ -1,8 +1,8 @@
 
 .. _platform-guidelines:
 
-|odh| Platform Guidelines - Full Version
-------------------------------------------------------------
+Platform Guidelines - Full Version
+----------------------------------
 
 This document represents :strong:`Part 1` of the guidelines and
 presents the preferred programming languages, databases, and protocols
