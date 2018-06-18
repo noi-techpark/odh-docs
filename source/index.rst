@@ -6,25 +6,19 @@
 Welcome to |odh| Documentation Repository!
 ==========================================
 
-Contents:
-
 .. toctree:: 
-   :maxdepth: 2
+   :maxdepth: 3
+   :includehidden:
+   :caption: Table of Contents
 
    intro
    domains
    contribute
-   howto
-   howto/ecfe
-   howto/developer
-   guidelines/introduction
-   guidelines/platform
-   guidelines/database
+   user
+   developer
+   corehacker
+
 
 Indices and tables
 ==================
-
-.. * :ref:`genindex`
-
-.. * :ref:`search`
 

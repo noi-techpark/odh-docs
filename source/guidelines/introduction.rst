@@ -1,3 +1,5 @@
+.. _devel-guidelines:
+
 Guidelines for Developers
 =========================
 
