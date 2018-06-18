@@ -3,6 +3,12 @@
 Database Guidelines - Full Version
 ----------------------------------
 
+.. topic:: Changelog
+
+   * :strong:`2018-05-28 version 1.0`
+
++++++
+
 This document represents Part 2 of the |odh| Developer's Guidelines and
 clarifies the database design criteria for developers who contribute
 their own databases designs to the |odh| platform.

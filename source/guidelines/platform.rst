@@ -4,6 +4,14 @@
 Platform Guidelines - Full Version
 ----------------------------------
 
+
+.. topic:: Changelog
+
+   * :strong:`2018-05-28 version 1.0`
+   * 2018-03-30 version 1.0-beta
+
++++++
+   
 This document represents :strong:`Part 1` of the guidelines and
 presents the preferred programming languages, databases, and protocols
 to be used, data exchange and exposition methods, coding conventions,
