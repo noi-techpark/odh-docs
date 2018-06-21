@@ -9,7 +9,7 @@ introduction to the available `Domains`, `APIs`, and `Datasets`.
 .. figure:: /images/domain.png
    :width: 80%
 
-   :strong:`Figure P-1:` An overview of the |odh| project.
+   An overview of the |odh| project.
 
 In a nutshell, the |odh| project takes data from multiple domains
 (mobility, tourism, meteo), makes them available through the |odh|/Big
@@ -36,7 +36,7 @@ different datasets and correlate them in some useful way.
    this date. This page will be updated in due time as soon as more
    material will be made available.
 
-As seen in :ref:`Figure P-1 <domains>`, data originate from different
+As seen in :numref:`domains`, data originate from different
 domains (Mobility, Tourism, and so on); they are gathered from sensors
 and packed within :strong:`datasets`. `Sensors` can be for example GPS
 devices installed on buses that send their real-time geographic

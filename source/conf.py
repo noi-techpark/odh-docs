@@ -131,6 +131,7 @@ extlinks = { 'integreen':
              'sasabus': ('http://sasabus.org/%s', None)
 }
 
+numfig = True
 
 # -- Options for HTML output ----------------------------------------------
 
