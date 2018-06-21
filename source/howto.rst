@@ -9,7 +9,7 @@ areas.
 Developers and Code Contributors have a dedicated tutorial to help
 them bootstrapping the environment and start coding right away:
 
-#. :doc:`howto/developer`
+#. :doc:`howto/development`
 
 Mobility
 --------
