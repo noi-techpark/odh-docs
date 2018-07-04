@@ -121,6 +121,7 @@ todo_include_todos = True
 rst_prolog = """
 
 .. role:: license
+.. role:: green
 
 """ + file("replace.rst").read()
 
@@ -132,6 +133,7 @@ extlinks = { 'integreen':
 }
 
 numfig = True
+numfig_format = { 'figure': ('Figure %s')}
 
 # -- Options for HTML output ----------------------------------------------
 
