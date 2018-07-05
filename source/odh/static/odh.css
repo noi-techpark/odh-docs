@@ -18,3 +18,18 @@ body {
 external {
     diplay: block;
 }
+span.caption-number:after {
+   content: ": ";
+}
+
+div.topic {
+    border: 1px solid;
+    box-shadow: 5px 5px 3px grey;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.green {
+    color: green;
+}

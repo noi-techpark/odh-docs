@@ -34,8 +34,10 @@
    https://www.postgresql.org/docs/10/static/contrib.html
 .. _spatial query extension PostGIS: https://postgis.net/
 
-
 .. abbreviations
 
 .. |rdbms| replace:: :abbr:`RDBMS (Relational DataBase Management System)`
 .. |ddl| replace:: :abbr:`DDL (Data Definition Language)`
+.. |dal| replace:: :abbr:`DAL (Data Access Layer)`
+.. |dto| replace:: :abbr:`DTO (Data Transfer Object)`
+		   

@@ -13,6 +13,7 @@ Welcome to |odh| Documentation Repository!
 
    intro
    domains
+   architecture
    contribute
    user
    developer
