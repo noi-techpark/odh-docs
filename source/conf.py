@@ -133,7 +133,11 @@ extlinks = { 'integreen':
 }
 
 numfig = True
-numfig_format = { 'figure': ('Figure %s')}
+numfig_format = { 'figure': ('Figure %s'),
+                  'table': ('Table %s'),
+                  'code-block': ('Listing %s'),
+                  'section': ('Section')
+}
 
 # -- Options for HTML output ----------------------------------------------
 
