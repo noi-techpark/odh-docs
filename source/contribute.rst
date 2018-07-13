@@ -43,3 +43,36 @@ interact with datasets that are not yet part of |odh|.
 
 More details on how you can help shaping the future of |odh| are in
 the :ref:`corehacker` page.
+
+.. _bug-reports:
+
+Bug reporting and feature requests
+----------------------------------
+
+This section explains what to do in case you:
+
+1. have found an error or a bug in the APIs;
+2. like to suggest or require some enhancement for the APIs;
+3. have some requests about the datasets
+4. find typos or any error in this documentation repository;
+5. have an idea for some  specific tutorial.
+
+
+If your feedback is related to the Open Data Hub Core, including
+technical bugs or suggestions as well as requests about datasets
+(i.e. points 1. to 3. above), please insert your issues on the
+following website:
+
+https://github.com/idm-suedtirol/bdp-core/issues
+
+If your feedback is related to the Open Data Hub Documentation,
+(i.e. points 4. and 5. above), please insert your issue on the
+following website:
+
+https://github.com/idm-suedtirol/odh-docs/issues
+
+.. note:: You need to have a valid github account to report issues and
+   interact with the |odh| team.
+   
+We keep track of your reports in our bug trackers, where you can also
+follow progress and comments of the |odh| team members.
