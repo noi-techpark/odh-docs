@@ -112,3 +112,5 @@ Data Consumers
 Also part of the architecture, but not pictured in the diagram, is the
 :file:`persistence.xml` file, which contains the credentials and
 postgres configuration used by both the Reader and Writer.
+
+.. include:: dtp.rst
