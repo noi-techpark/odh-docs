@@ -33,8 +33,8 @@ correctly import the data. Dual to the :program:`dc-interface`, the
 :program:`ws-interface` allows the export of DTOs to web services,
 that expose them to :strong:`Data Consumers`.
 
-The bottom part of :numref:`arch-odh` shows the data format used in
-the various steps of the data flow.
+The bottom part of :numref:`arch-odh` shows the :term:`data format`
+used in the various steps of the data flow.
 
 Records in the Data Sources can be stored in any format and are
 converted into JSON as DTOs. They are then transmitted to the Writer,
@@ -79,8 +79,8 @@ DTO
 Writer
    With the Writer, we enter in the core of the |bdp|\. Its purpose is
    to receive DTOs from the Data Collectors and store them into the DB
-   and therefore implements all methods to read the DTO's JSON format
-   and to write to the database using SQL.
+   and therefore implements all methods to read the DTO's :term:`JSON`
+   format and to write to the database using SQL.
 
 DAL
    The Data Abstraction Layer is used by both the Writer and the

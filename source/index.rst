@@ -18,6 +18,7 @@ Welcome to |odh| Documentation Repository!
    user
    developer
    corehacker
+   glossary
 
 
 Indices and tables

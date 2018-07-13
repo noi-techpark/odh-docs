@@ -10,7 +10,7 @@
 This is website of the |ODH| documentation repository, a collection of
 resources about the |odh| project. The website serves as the main
 resource portal for everyone interested in deploying apps based on
-datasets&API provided by the |odh| team.
+:term:`datasets`\ &\ :term:`API` provided by the |odh| team.
 
 The technical stuff is composed of:
 
