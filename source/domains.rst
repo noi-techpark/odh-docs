@@ -68,11 +68,17 @@ Datasets in the Mobility Domain
 #. info.opensasa.realtime Shows the real time position of buses
    operated by SASA in South Tyrol.  :sasabus:`opendata`
    |bysa|
-#. info.opensasa.plandata
-#. info.opensasa.stationboard
-#. info.opensasa.news
-#. info.opensasa.rssDE
-#. info.opensasa.rssIT
+
+   ..  note:: This dataset includes also the following subsets:
+	      
+       + info.opensasa.plandata
+       + info.opensasa.stationboard
+       + info.opensasa.news
+       + info.opensasa.rssDE
+       + info.opensasa.rssIT
+
+#. it.bz.geobank.bluetooth	:integreen:`BluetoothFrontEnd` |cc0|
+#. it.bz.geobank.linkstation	:integreen:`LinkFrontEnd` |cc0|
 
    
 Datasets in the Tourism Domain
@@ -101,9 +107,6 @@ availability of plugs to recharge e-cars, and so on.
 The SASAbus API is part of the Mobility domain and allows to access
 various type of data about buses and station.
 
-..
-   The Tourism Domain allows to access data about events, hotels, and
-   other resources related to travelling in South Tyrol.
 
 .. _authentication:
 
