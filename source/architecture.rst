@@ -3,13 +3,13 @@
 Architecture
 ============
 
-The architecture of the |odh| is depicted in :numref:`arch-odh`,
-which shows its composing elements together with its main goal: To
-gather data from :strong:`(Open) Data Sources` (`"datasets"`) and make
-them available to :strong:`Data Consumers`, which are usually
-third-party applications that use those data in any way that they deem
-useful, including (but not limited to) visualisation of diagram,
-evolution of historical data, statistical analysis.
+The architecture of the |odh| is depicted in :numref:`arch-odh`, which
+shows its composing elements together with its main goal: To gather
+data from :strong:`Data Sources` and make them available to
+:strong:`Data Consumers`, which are usually third-party applications
+that use those data in any way that they deem useful, including (but
+not limited to) visualisation of diagram, evolution of historical
+data, statistical analysis.
 
 .. _arch-odh:
 
@@ -98,9 +98,14 @@ Writer
 DAL
    The Data Abstraction Layer is used by both the Writer and the
    Reader to access the Database and exchange DTOs and relies on Java
+<<<<<<< HEAD
    Hibernate.
 
 .. _database-def:
+=======
+   Hibernate. It contains classes that map the content of a DTO to
+   corresponding database tables.
+>>>>>>> master
    
 Database (DB)
    The database represents the persistence layer and contains all the
@@ -132,3 +137,5 @@ Data Consumers
 Also part of the architecture, but not pictured in the diagram, is the
 :file:`persistence.xml` file, which contains the credentials and
 postgres configuration used by both the Reader and Writer.
+
+.. include:: dtp.rst

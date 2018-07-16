@@ -9,7 +9,8 @@ areas.
 Developers and Code Contributors have a dedicated tutorial to help
 them bootstrapping the environment and start coding right away:
 
-#. :doc:`howto/development`
+#. :doc:`howto/development`. This tutorial is still in development and
+   not so useful at the moment!
 
 Mobility
 --------
@@ -20,4 +21,6 @@ Mobility
 
 Tourism
 -------
+
+There is currently no HOWTO for this domain.
 
