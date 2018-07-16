@@ -11,12 +11,10 @@ Glossary
       with other programs 
       
    Domain
-   Domains
       A domain is a category of interest to which one or more datasets
       belong to.
 
    Dataset
-   Datasets
       A dataset is a collection of records that originate from the
       same Data Source. There is at least one dataset per domain.
 
