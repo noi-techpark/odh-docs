@@ -50,16 +50,23 @@ As :numref:`arch-odh` shows, the |bdp| is composed by a number of
 elements, described in the remainder of this section in the same order
 as they appear in the picture.
 
+.. _data-source-def:
+
 Data Source
-   A Data Source is the origin of one ore more datasets; data are
-   picked up usually by sensors and stored in some format, like for
-   example CSV.
+   A Data Source is the origin of one ore more datasets, which usually
+   belongs to a single domain. Data are usually automatically picked
+   up by sensors and stored in some format, like for example CSV.
+
+.. _dataset-def:
 
 Dataset
-   A dataset is a collection of records. Within the |ODH|\, a same
-   Data Source may provide more dataset, that include slight different
-   data. The underlying data format of a dataset :strong:`never`
-   changes.
+   A dataset is a collection of records that originate from the same
+   Data Source. Within the |ODH|\, a same Data Source may provide more
+   datasets, that include slight different data, but there is at least
+   one dataset per domain. The underlying data format of a dataset
+   :strong:`never` changes.
+
+.. _data-collector-def:
 
 Data Collectors
    Data collectors are a library of Java classes used to transform
@@ -69,24 +76,36 @@ Data Collectors
    transfer them to the |bdp|\. They are usually created by extending
    the :program:`dc-interface` in the bpd-core repository.
 
+.. _dto-def:
+
 DTO
    The Data Transfer Object are used to translate the data format from
    the various formats used by the Data Sources, to be read from the
    writer and to be exposed by the reader (see below). DTOs are
    written in :strong:`JSON`. and are composed of three `Entities`:
    Station, Data Type, and Record.
-   
+
+.. _writer-def:
+
 Writer
    With the Writer, we enter in the core of the |bdp|\. Its purpose is
    to receive DTOs from the Data Collectors and store them into the DB
    and therefore implements all methods to read the DTO's :term:`JSON`
    format and to write to the database using SQL.
 
+.. _dal-def:
+
 DAL
    The Data Abstraction Layer is used by both the Writer and the
    Reader to access the Database and exchange DTOs and relies on Java
+<<<<<<< HEAD
+   Hibernate.
+
+.. _database-def:
+=======
    Hibernate. It contains classes that map the content of a DTO to
    corresponding database tables.
+>>>>>>> master
    
 Database (DB)
    The database represents the persistence layer and contains all the
@@ -94,15 +113,21 @@ Database (DB)
    be defined, one with full permissions granted -used by the writer,
    and one with read-only permissions, used bye the Reader. 
 
+.. _reader-def:
+
 Reader
    The reader is the last component of the Core. It uses the DAL to
    retrieve DTOs from the DB and to transmit them to the web services.
 
+.. _ws-def:
+   
 Web Services
    The Web Services, which extend the :program:`ws-interface` in the
    bdp-core repository, receive data from the Reader and make them
    available to Data Consumers by exposing APIs and REST
-   endpoints. They transform the DTO they get into JSON. 
+   endpoints. They transform the DTO they get into JSON.
+
+.. _data-consumer-def:
    
 Data Consumers
    Data consumers are (web-)applications that use the JSON produced by
