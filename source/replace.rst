@@ -40,4 +40,4 @@
 .. |ddl| replace:: :abbr:`DDL (Data Definition Language)`
 .. |dal| replace:: :abbr:`DAL (Data Access Layer)`
 .. |dto| replace:: :abbr:`DTO (Data Transfer Object)`
-		   
+

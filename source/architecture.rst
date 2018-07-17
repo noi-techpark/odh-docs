@@ -8,8 +8,8 @@ shows its composing elements together with its main goal: To gather
 data from :strong:`Data Sources` and make them available to
 :strong:`Data Consumers`, which are usually third-party applications
 that use those data in any way that they deem useful, including (but
-not limited to) visualisation of diagram, evolution of historical
-data, statistical analysis.
+not limited to) study the evolution of historical data, or carry out
+data analysis to produce :term:`statistical graphics`.
 
 .. _arch-odh:
 
@@ -23,11 +23,11 @@ At the core of the |odh| lays the |bdp|, a java application which
 contains all the business logic and handles all the connections with
 the underling database using the |dal|. The |bdp| is composed by
 different modules: A :program:`Writer`, that receives data from the
-Data Sources and stores them in the Database using the |dal|
+Data Sources and stores them in the Database using the |dal|\.
 
 
 Communication with the Data Sources is guaranteed by the :strong:`Data
-Collectors`, which are Java application built on top of the
+Collectors`, which are Java applications built on top of the
 :program:`dc-interface` that use a |dto| for each different source to
 correctly import the data. Dual to the :program:`dc-interface`, the
 :program:`ws-interface` allows the export of DTOs to web services,

@@ -20,7 +20,7 @@ Welcome to |odh| Documentation Repository!
    corehacker
    glossary
 
-
-Indices and tables
-==================
+..
+   Indices and tables
+   ==================
 

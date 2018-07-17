@@ -78,7 +78,7 @@ output similar to the one show, where at the :green:`active
 .. code-block:: bash
 
    odh@bdp:~$ service tomcat8 status
-   ● tomcat8.service - LSB: Start Tomcat.
+     tomcat8.service - LSB: Start Tomcat.
       Loaded: loaded (/etc/init.d/tomcat8; bad; vendor preset: enabled)
       Active: active (running) since Wed 2018-06-13 16:36:28 CEST; 14min ago
         Docs: man:systemd-sysv-generator(8)

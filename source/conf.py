@@ -34,6 +34,7 @@ extensions = [
 #    'sphinx.ext.mathjax',
     'sphinx.ext.ifconfig',
     'sphinx.ext.extlinks',
+    'sphinx.ext.imgconverter',
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -54,8 +55,8 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'OpenDataHub Docs'
-copyright = u'2018, The ODH Team'
-author = u'The ODH Team'
+copyright = u'2018, The Open Data Hub Team'
+author = u'The Open Data Hub Team'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -116,7 +117,7 @@ pygments_style = 'sphinx'
 # keep_warnings = False
 
 # If true, `todo` and `todoList` produce output, else they produce nothing.
-todo_include_todos = True
+#todo_include_todos = True
 
 rst_prolog = """
 
@@ -287,13 +288,13 @@ latex_elements = {
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
     (master_doc, 'OpenDataHubDocs.tex', u'OpenDataHub Docs Documentation',
-     u'The ODH Team', 'manual'),
+     u'The Open Data Hub Team', 'manual'),
 ]
 
 # The name of an image file (relative to this directory) to place at the top of
 # the title page.
 #
-# latex_logo = None
+latex_logo = 'images/OpenDataHub.png'
 
 # For "manual" documents, if this is true, then toplevel headings are parts,
 # not chapters.

@@ -82,3 +82,18 @@ Glossary
    Persistence layer      
       Another name for Database, see the above entry or the
       :ref:`detailed description <database-def>`.
+
+   Claim
+     In JSON Web Token, a claim is a piece of information about a
+     subject, structured as a key/value pair.
+
+
+   JSON Web Token
+     It is a mechanism to exchange a claim between two parties, used
+     for authentication purposes when the claim is digitally signed
+     and/or encrypted.
+
+   Statistical graphics   
+     Statistical graphics are means to display statistical data with
+     the purpose to ease their interpretations. Common statistical
+     graphics include pie charts, histograms, and scatter plot.

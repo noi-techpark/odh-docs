@@ -9,30 +9,29 @@ introduction to the available `Domains`, `APIs`, and `Datasets`.
 .. figure:: /images/domain.png
    :width: 80%
 
-   An overview of the |odh| project.
+   An overview of the |odh| Project.
 
-In a nutshell, the |odh| project takes data from multiple domains
-(mobility, tourism, meteo), makes them available through the |odh|/Big
-Data Platform with the purpose to allow third party developers (or any
-interested parties) to use them within their own projects, using the
-available APIs.
+In a nutshell, the |odh| Project takes data from multiple domains
+(mobility, tourism, meteo), makes them available through the |odh|
+with the purpose to allow third party developers (or any interested
+user) to use them within their own projects, using the available APIs.
 
 .. _available_datasets:
 
 Domains with Available Datasets
 -------------------------------
 
-The goal of the |odh| project is to make available datasets containing
-|od| about the South Tyrolean Ecosystem, to allow third party to
-develop novel applications on top of them. These new application may
-range from a simple processing the datasets to extract statistical
-data and display the result in different graphic formats like
+The goal of the |odh| Project is to make available datasets containing
+data about the South Tyrolean Ecosystem, to allow third parties to
+develop novel applications on top of them. These new applications may
+range from a simple processing of datasets to extract statistical
+data and to display the result in different graphic formats like
 pie-charts, to far more complex applications that combine data from
 different datasets and correlate them in some useful way.
 
 
 .. note:: This page was written on |today|, hence all information
-   about the availability of datasets, domains, API is correct as of
+   about the availability of datasets, domains, APIs is correct as of
    this date. This page will be updated in due time as soon as more
    material will be made available.
 
@@ -40,11 +39,10 @@ As seen in :numref:`domains`, data originate from different
 domains (Mobility, Tourism, and so on); they are gathered from sensors
 and packed within :strong:`datasets`. `Sensors` can be for example GPS
 devices installed on buses that send their real-time geographic
-position
+position.
 
-For each domain are listed the available datasets. Currently, this
-section only contains datasets from the `Mobility` domain, but expect
-more to be published.
+For each domain the available datasets are listed. Please refer to the
+next section for a complete list.
 
 .. topic:: A note about datasets.
 
@@ -90,21 +88,21 @@ There is currently no dataset that contains |od| that can be accessed.
 Available APIs
 --------------
 
-Currently, the following API are available directly from |odh|\:
+Currently, the following APIs are available from the |odh|\:
 
-#. :strong:`Mobility API`
-#. :strong:`SASAbus API`
-#. :strong:`Tourism API`.
+#. :strong:`Mobility APIs`
+#. :strong:`SASAbus APIs`
+#. :strong:`Tourism APIs`.
 
-The first and second APIs can be used with all the datasets that
-belong to the `Mobility Domain`, while the third one with those that
-are part of the `Tourism Domain`.
+The first and second APIs provide datasets that belong to the
+`Mobility Domain`, while the third one to datasets in the `Tourism
+Domain`.
 
-The Mobility API allows to access real-time data of the datasets
-concerning the e-mobility, including data about e-charging station,
+The Mobility APIs allow to access real-time data of the datasets
+concerning the e-mobility, including data about e-charging stations,
 availability of plugs to recharge e-cars, and so on.
 
-The SASAbus API is part of the Mobility domain and allows to access
+The SASAbus APIs are part of the Mobility domain and allow to access
 various type of data about buses and station.
 
 
@@ -113,13 +111,15 @@ various type of data about buses and station.
 Authentication
 ~~~~~~~~~~~~~~
 
-Authentication in |odh| is mainly used in the part of the tool which
-exposes data to the consumer, which means in the Reader of the
-core-module and in every single webservice accessing the Reader. The
-authentication mechanism used is Oauth2 and follows the standard
-:rfc:`6749`, `The OAuth 2.0 Authorization Framework`. Authentication
-tokens are based on JWT as defined in :rfc:`7519#section-3`, `JSON Web
-Token (JWT)` to send claims.
+.. note:: The authentication layer is not yet used.
+	  
+Authentication in |odh| is mainly used in the part of the |bdp| which
+exposes data to the consumer, which means by the Reader and in every
+single webservice accessing the Reader. The authentication mechanism
+used is OAuth2 and follows the standard :rfc:`6749`, `The OAuth 2.0
+Authorization Framework`. Authentication tokens are based on
+:term:`JSON Web Token (JWT) <JSON Web Token>` as defined in
+:rfc:`7519#section-3`, to send :term:`claims <claim>`.
 
 For those not familiar with the OAuth2 mechanism, here is a quick
 description of the client-server interaction:
@@ -131,11 +131,12 @@ description of the client-server interaction:
 #. The access token can now be used to access protected resources on
    the `resource server`. To be able to use the access token, add it
    as a Bearer token in the Authorization header of the HTTP
-   call. :strong:`Bearer` is a means to use tokens in HTTP transaction. The
-   complete specification can be found in :rfc:`6750`.
+   call. :strong:`Bearer` is a means to use tokens in HTTP
+   transactions. The complete specification can be found in
+   :rfc:`6750`.
 #. If the access token has expired, you'll get a HTTP :literal:`401
    Unauthorized` response. In this case you need to request a new
-   access-token, and passing your refresh token in the Authorization
+   access-token, passing your refresh token in the `Authorization`
    header as Bearer token.  As an example, in |odh| datasets Bearer
    tokens can be inserted in a :command:`curl` call like follows:
 
@@ -144,3 +145,5 @@ description of the client-server interaction:
       curl -X GET "$HTTP_URL_WITH_GET_PARAMETERS" -H "accept: */*" -H "Authorization: Bearer $TOKEN"
 
 
+Here, $HTTP_URL_WITH_GET_PARAMETERS is the URL containing the API call
+and "$TOKEN" is the string of the token.

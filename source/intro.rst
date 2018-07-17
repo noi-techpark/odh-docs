@@ -7,16 +7,16 @@
    intended audience etc.
 
 
-This is website of the |ODH| documentation repository, a collection of
+This is the website of the |ODH| documentation repository, a collection of
 resources about the |odh| project. The website serves as the main
 resource portal for everyone interested in deploying apps based on
-:term:`datasets <dataset>` & :term:`API` provided by the |odh| team.
+:term:`datasets <dataset>` & :term:`API`\s provided by the |odh| team.
 
 The technical stuff is composed of:
 
-* The catalogue of the available datasets
-* How-tos
-* API documentation
+* Catalogue of available datasets.
+* How-tos.
+* API documentation.
 * Links to the full API documentation.
 
 
