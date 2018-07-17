@@ -77,12 +77,17 @@ Datasets in the Mobility Domain
 
 #. it.bz.geobank.bluetooth	:integreen:`BluetoothFrontEnd` |cc0|
 #. it.bz.geobank.linkstation	:integreen:`LinkFrontEnd` |cc0|
+#. it.bz.geobank.weather        :integreen:`meteorology` |cc0|
 
    
 Datasets in the Tourism Domain
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-There is currently no dataset that contains |od| that can be accessed.
+#. it.bz.geobank.activity_poi is a collection of activities and points
+   of interest in the South Tyrol region. Data have been extracted
+   from different sources. :stinfo:`ODHActivityPoi` |cc0|
+#. it.bz.siag.museum provides information about South Tyrolean
+   museums. :stinfo:`ODHActivityPoi` |cc0|
 
 
 Available APIs
