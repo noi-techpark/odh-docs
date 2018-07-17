@@ -98,14 +98,11 @@ Writer
 DAL
    The Data Abstraction Layer is used by both the Writer and the
    Reader to access the Database and exchange DTOs and relies on Java
-<<<<<<< HEAD
-   Hibernate.
-
-.. _database-def:
-=======
    Hibernate. It contains classes that map the content of a DTO to
    corresponding database tables.
->>>>>>> master
+
+.. _database-def:
+
    
 Database (DB)
    The database represents the persistence layer and contains all the
