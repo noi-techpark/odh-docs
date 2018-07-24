@@ -1,7 +1,6 @@
 ---
 name: Bug report
-about: Create a report to help us improve, typos, wrong spelling, step-by-step introductions
-  that do not work
+about: I found a typo, wrong spelling, or a wrong description
 
 ---
 
