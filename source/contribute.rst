@@ -55,7 +55,7 @@ This section explains what to do in case you:
 2. like to suggest or require some enhancement for the APIs;
 3. have some requests about the datasets
 4. find typos or any error in this documentation repository;
-5. have an idea for some  specific tutorial.
+5. have an idea for some specific tutorial.
 
 
 If your feedback is related to the Open Data Hub Core, including
@@ -65,11 +65,12 @@ following website:
 
 https://github.com/idm-suedtirol/bdp-core/issues
 
-If your feedback is related to the Open Data Hub Documentation,
-(i.e. points 4. and 5. above), please insert your issue on the
-following website:
+If your feedback is related to the Open Data Hub Documentation, please
+insert your issue on the following website, using the template that
+suits your needs:
 
-https://github.com/idm-suedtirol/odh-docs/issues
+4. https://github.com/idm-suedtirol/odh-docs/issues/new?template=bug_report.md
+5. https://github.com/idm-suedtirol/odh-docs/issues/new?template=feedback.md
 
 .. note:: You need to have a valid github account to report issues and
    interact with the |odh| team.
