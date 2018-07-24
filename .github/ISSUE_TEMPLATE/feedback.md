@@ -1,6 +1,6 @@
 ---
 name: Feedback
-about: Any idea, typo or request
+about: Any idea, missing chapter or request
 
 ---
 
