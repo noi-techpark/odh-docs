@@ -33,3 +33,11 @@ div.topic {
 .green {
     color: green;
 }
+
+.uline {
+    text-decoration: underline;
+}
+
+.extrafooter {
+    font-size: 80%;
+}

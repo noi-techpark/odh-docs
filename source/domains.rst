@@ -42,7 +42,7 @@ devices installed on buses that send their real-time geographic
 position.
 
 For each domain the available datasets are listed. Please refer to the
-next section for a complete list.
+next sections for a complete list.
 
 .. topic:: A note about datasets.
 
@@ -60,12 +60,11 @@ next section for a complete list.
 Datasets in the Mobility Domain
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-#. it.bz.geobank.echargingstation allows access to e-charging stations
-   in South Tyrol and their status, including historical data and
-   usage.  :integreen:`EchargingFrontEnd`.  |cc0|
-#. info.opensasa.realtime Shows the real time position of buses
-   operated by SASA in South Tyrol.  :sasabus:`opendata`
-   |bysa|
+#. :uline:`it.bz.geobank.echargingstation`. It allows access to
+   e-charging stations in South Tyrol and their status, including
+   historical data and usage.  :integreen:`EchargingFrontEnd`.  |cc0|
+#. :uline:`info.opensasa.realtime`. It shows the real time position of
+   buses operated by SASA in South Tyrol.  :sasabus:`opendata` |bysa|
 
    ..  note:: This dataset includes also the following subsets:
 	      
@@ -75,18 +74,27 @@ Datasets in the Mobility Domain
        + info.opensasa.rssDE
        + info.opensasa.rssIT
 
-#. it.bz.geobank.bluetooth	:integreen:`BluetoothFrontEnd` |cc0|
-#. it.bz.geobank.linkstation	:integreen:`LinkFrontEnd` |cc0|
-#. it.bz.geobank.weather        :integreen:`meteorology` |cc0|
+#. :uline:`it.bz.geobank.bluetooth`. The data for this datasets are
+   collected by experimental Bluetooth-based sensors and detectors and
+   represent traffic information, since the detectors scan available
+   Bluetooth devices on board of vehicle that drive on.
+   :integreen:`BluetoothFrontEnd` |cc0|
+#. :uline:`it.bz.geobank.linkstation`. Similar to the previous
+   dataset, data are collected by Bluetooth-based sensors to measure
+   the level of traffic on the strech of a road.
+   :integreen:`LinkFrontEnd` |cc0|
+#. :uline:`it.bz.geobank.weather`. It contains meteorological data
+   provided by the hydrographical Department of South
+   Tyrol. :integreen:`meteorology` |cc0|
 
    
 Datasets in the Tourism Domain
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-#. it.bz.geobank.activity_poi is a collection of activities and points
-   of interest in the South Tyrol region. Data have been extracted
-   from different sources. :stinfo:`ODHActivityPoi` |cc0|
-#. it.bz.siag.museum provides information about South Tyrolean
+#. :uline:`it.bz.geobank.activity_poi` is a collection of activities
+   and points of interest in the South Tyrol region. Data have been
+   extracted from different sources. :stinfo:`ODHActivityPoi` |cc0|
+#. :uline:`it.bz.siag.museum` provides information about South Tyrolean
    museums. :stinfo:`ODHActivityPoi` |cc0|
 
 
