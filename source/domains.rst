@@ -87,7 +87,7 @@ Datasets in the Mobility Domain
    provided by the hydrographical Department of South
    Tyrol. :integreen:`meteorology` |cc0|
 
-   
+
 Datasets in the Tourism Domain
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -96,7 +96,6 @@ Datasets in the Tourism Domain
    extracted from different sources. :stinfo:`ODHActivityPoi` |cc0|
 #. :uline:`it.bz.siag.museum` provides information about South Tyrolean
    museums. :stinfo:`ODHActivityPoi` |cc0|
-
 
 Available APIs
 --------------
@@ -118,6 +117,9 @@ availability of plugs to recharge e-cars, and so on.
 The SASAbus APIs are part of the Mobility domain and allow to access
 various type of data about buses and station.
 
+The Tourism API allows to access locations (of hotels,
+museums, events, and so on), points of interests, and a number of
+other information about the tourism in South Tyrol.
 
 .. _authentication:
 
