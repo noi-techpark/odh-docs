@@ -1,4 +1,4 @@
-Development, Testing and, Production Environments
+Development, Testing, and Production Environments
 =================================================
 
 .. note:: Information in this section is still provisional!
