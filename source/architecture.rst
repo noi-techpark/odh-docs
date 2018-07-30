@@ -14,6 +14,7 @@ data analysis to produce :term:`statistical graphics`.
 .. _arch-odh:
 
 .. figure::  /images/odh-architecture.svg
+   :scale: 100%
 
    The |odh| architecture with the components (top) and the data
    format used (bottom) during the data transformation.
