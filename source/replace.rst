@@ -6,9 +6,20 @@
 
 .. licenses:
 
-.. |bysa| image:: /images/by-sa.png
-.. |cc0| image:: /images/cc0.png
+.. |gpl| image:: /images/code-GPLv3-brightgreen.svg
+   :target: https://www.gnu.org/licenses/gpl-3.0.en.html
+   :alt: GPLv3 license
 
+
+.. |bysa| image:: /images/dataset-CC-BY-SA-lightgrey.svg
+   :target: https://creativecommons.org/licenses/by-sa/4.0/
+   :alt: CC BY-SA license
+
+.. |cc0| image:: /images/dataset-CC0-blue.svg
+   :target: https://creativecommons.org/publicdomain/zero/1.0/
+   :alt: CC0 license (public domain)
+
+	 
 ..  URLs of datasets
 
 .. |mobecs| replace:: ipchannels.integreen-life.bz.it

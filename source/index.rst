@@ -19,6 +19,7 @@ Welcome to |odh| Documentation Repository!
    developer
    corehacker
    glossary
+   licenses
 
 ..
    Indices and tables

@@ -21,6 +21,7 @@ user) to use them within their own projects, using the available APIs.
 Domains with Available Datasets
 -------------------------------
 
+
 The goal of the |odh| Project is to make available datasets containing
 data about the South Tyrolean Ecosystem, to allow third parties to
 develop novel applications on top of them. These new applications may
@@ -96,6 +97,8 @@ Datasets in the Tourism Domain
    extracted from different sources. :stinfo:`ODHActivityPoi` |cc0|
 #. :uline:`it.bz.siag.museum` provides information about South Tyrolean
    museums. :stinfo:`ODHActivityPoi` |cc0|
+
+.. This part has been moved :doc:`datasets <to its own section>`
 
 Available APIs
 --------------
