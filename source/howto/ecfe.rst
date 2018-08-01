@@ -1,4 +1,3 @@
-.. |idgb| replace:: it.bz.geobank.
 
 Echarging Stations Howto
 ------------------------

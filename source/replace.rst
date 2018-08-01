@@ -1,8 +1,12 @@
 .. |od|  replace:: Open Data 
 .. |odh|  replace:: Open Data Hub
 .. |odhweb|  replace:: opendatahub.bz.it
+.. |contact| replace:: info\@opendatahub.bz.it
 .. |bdp| replace:: Big Data Platform
 .. |bdpc| replace:: :command:`bdp-core`
+.. |idgb| replace:: it.bz.geobank.
+.. |idsiag| replace:: it.bz.siag.
+
 
 .. licenses:
 
@@ -18,9 +22,8 @@
 .. |cc0| image:: /images/dataset-CC0-blue.svg
    :target: https://creativecommons.org/publicdomain/zero/1.0/
    :alt: CC0 license (public domain)
-
-	 
-..  URLs of datasets
+ 
+.. URLs of datasets
 
 .. |mobecs| replace:: ipchannels.integreen-life.bz.it
 

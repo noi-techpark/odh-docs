@@ -80,8 +80,9 @@ Tyrolean tourism portal www.suedtirol.info.
 The public API are in early development and therefore should be still
 considered as a :strong:`beta` version. If any third party would like
 to use a stable version of the APIs in its production environment, a
-special agreement must be signed with `IDM South Tyrol
-<https://www.idm-suedtirol.com/>`_.
+special agreement must be signed with `IDM Südtirol - Alto Adige
+<https://www.idm-suedtirol.com/>`_. You can contact
+|contact| for any information.
 
 ..
    Each API is provided AS-IS, with no expressed or implied
