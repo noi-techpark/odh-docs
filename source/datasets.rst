@@ -37,6 +37,8 @@ next sections for a complete list.
    published as |od|\.  Please refer to section :ref:`authentication`
    for details.
 
+.. _mobility-datasets:
+
 Datasets in the Mobility Domain
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -63,6 +65,9 @@ listed dataset:
 
 .. _weather-dataset:
 .. include:: /datasets/weather.rst
+
+
+.. _tourism-datasets:
 
 Datasets in the Tourism Domain
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

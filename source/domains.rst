@@ -26,7 +26,17 @@ This part has been moved :doc:`to its own section <datasets>`
 Available APIs
 --------------
 
-Currently, the following APIs are available from the |odh|\:
+The :strong:`API` of a software contains the definition of methods and of
+their signatures, that can be invoked to retrieve data from the web
+services provided by the software itself. The signature of each method
+defines how to invoke the method (i.e., the name of the method), which
+parameters should be supplied (i.e., their names and types, if they
+are mandatory or not, and what the method returns (i.e., the type and
+format of the output produced by the method. By using an API, it is
+possible to receive data from the web service and process them.
+
+Currently, the following :term:`APIs <API>` are available from the
+|odh|\:
 
 #. :strong:`Mobility APIs`
 #. :strong:`SASAbus APIs`
@@ -52,7 +62,8 @@ other information about the tourism in South Tyrol.
 Authentication
 ~~~~~~~~~~~~~~
 
-.. note:: The authentication layer is not yet used.
+.. note:: The authentication layer is currently intended for internal
+   use only.
 	  
 Authentication in |odh| is mainly used in the part of the |bdp| which
 exposes data to the consumer, which means by the Reader and in every
