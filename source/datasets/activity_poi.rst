@@ -9,10 +9,10 @@ about the South Tyrolean museums are freely available without
 authentication.
    
 ==============  ========================================================
-License         |cc0| 
+License         museum's data |cc0|\, other data |auth| 
 Output          JSON, mime-type application/json
 E-mail contact  |contact|
 API version     v1
-Swagger URL     :stinfo:`ODHactivityPoi`
+Swagger URL     :stinfo:`/ODHactivityPoi`
 ==============  ========================================================
 

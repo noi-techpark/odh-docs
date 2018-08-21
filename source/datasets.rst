@@ -61,20 +61,46 @@ the above-listed dataset:
 * The swagger URL of the APIs.
 
 
-.. _echarging-dataset:
-.. include:: /datasets/ecs.rst
-	     
-.. _sasabus-dataset: 
-.. include:: /datasets/sasa.rst
+.. _weather-dataset:
+.. include:: /datasets/weather.rst
+
+.. _environment-dataset:
+.. include:: /datasets/environment.rst
+
+.. _parking-dataset:
+.. include:: /datasets/parking.rst
 
 .. _bluetooth-dataset:
 .. include:: /datasets/bluetooth.rst
 
+.. _trafficstation-dataset:
+.. include:: /datasets/trafficstation.rst
+
 .. _linkstation-dataset:
 .. include:: /datasets/linkstation.rst
 
-.. _weather-dataset:
-.. include:: /datasets/weather.rst
+.. _streetelement-dataset:
+.. include:: /datasets/streetelements.rst
+
+
+.. _rwisstation-dataset:
+.. include:: /datasets/rwisstation.rst
+
+.. _carsharing-dataset:
+.. include:: /datasets/carsharing.rst
+
+.. _bikesharing-dataset:
+.. include:: /datasets/bikesharing.rst
+
+.. _echarging-dataset:
+.. include:: /datasets/ecs.rst
+
+
+.. _carpoolinghub-dataset:
+.. include:: /datasets/carpoolinghub.rst
+
+.. _sasabus-dataset: 
+.. include:: /datasets/sasa.rst
 
 
 .. _tourism-datasets:
@@ -94,9 +120,46 @@ for each of the above-listed dataset:
 * The versions of the API that can be used to access the dataset.
 * The swagger URL of the APIs.
 
+
+.. _accomodation-dataset:
+.. include:: /datasets/accomodation.rst
+
+.. _package-dataset:
+.. include:: /datasets/package.rst
+
+.. _poi-dataset:
+.. include:: /datasets/poi.rst
+
+.. _activity-dataset:
+.. include:: /datasets/activity.rst
+
+.. _event-dataset:
+.. include:: /datasets/event.rst
+
 .. _activity_poi-dataset:
 .. include:: /datasets/activity_poi.rst
 	     
+.. _gastronomy-dataset:
+.. include:: /datasets/gastronomy.rst
+
+.. _location-dataset:
+.. include:: /datasets/location.rst
+
+.. _ski-dataset:
+.. include:: /datasets/ski.rst
+
+.. _snowreport-dataset:
+.. include:: /datasets/snowreport.rst
+	     
+.. _webcam-dataset:
+.. include:: /datasets/webcam.rst
+	     
+.. _weather-siag-dataset:
+.. include:: /datasets/weather-siag.rst
+	     
+.. _siag.weather-dataset:
+.. include:: /datasets/siag.weather.rst
+
 .. _museum-dataset:
 .. include:: /datasets/museum.rst
 

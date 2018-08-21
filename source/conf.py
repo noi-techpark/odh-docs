@@ -133,7 +133,7 @@ extlinks = { 'sasabus': ('http://sasabus.org/%s', None),
              'integreen':
              ('http://ipchannels.integreen-life.bz.it/%s', None),
              'stinfo':
-             ('http://service.suedtirol.info/swagger/ui/index#/%s', None),
+             ('http://service.suedtirol.info/swagger/ui/index#%s', None),
 }
 
 numfig = True
