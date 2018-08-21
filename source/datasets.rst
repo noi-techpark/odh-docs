@@ -94,8 +94,8 @@ for each of the above-listed dataset:
 * The versions of the API that can be used to access the dataset.
 * The swagger URL of the APIs.
 
-.. _poi-dataset:
-.. include:: /datasets/poi.rst
+.. _activity_poi-dataset:
+.. include:: /datasets/activity_poi.rst
 	     
 .. _museum-dataset:
 .. include:: /datasets/museum.rst
