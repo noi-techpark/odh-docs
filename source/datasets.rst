@@ -21,9 +21,6 @@ and packed within :strong:`datasets`. `Sensors` can be for example GPS
 devices installed on buses that send their real-time geographic
 position.
 
-For each domain the available datasets are listed. Please refer to the
-next sections for a complete list.
-
 .. topic:: A note about datasets.
 
    At the time of writing, only a few datasets are published. As
@@ -34,16 +31,28 @@ next sections for a complete list.
    or |bysa|. Therefore, to allow the highest possible data to be
    shared, an authentication mechanism has been implemented, to
    prevent access to the data in the datasets that has not yet been
-   published as |od|\.  Please refer to section :ref:`authentication`
-   for details.
+   published as |od|\.
+
+   Datasets which require authentication are marked with the |auth|
+   badge. If you are interested in accessing closed data, you can try
+   to contact the dataset owner or express your interest to the |odh|
+   team.
+
+   Please refer to section :ref:`authentication` for details.
+
+For each domain the available datasets are listed. Please refer to the
+next sections for a complete list.
 
 .. _mobility-datasets:
 
 Datasets in the Mobility Domain
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-In this section, the following information are provided for each
-listed dataset:
+.. contents:: List of datasets in the mobility domain.
+   :local:
+
+In this section, the following information are provided for each of
+the above-listed dataset:
 
 * The licence of the data present in the dataset.
 * The output format of the API call.
@@ -51,9 +60,10 @@ listed dataset:
 * The versions of the API that can be used to access the dataset.
 * The swagger URL of the APIs.
 
+
 .. _echarging-dataset:
 .. include:: /datasets/ecs.rst
-
+	     
 .. _sasabus-dataset: 
 .. include:: /datasets/sasa.rst
 
@@ -72,8 +82,11 @@ listed dataset:
 Datasets in the Tourism Domain
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Like in the previous section, the following information are provided for each
-listed dataset:
+.. contents:: List of datasets in the tourism domain.
+   :local:
+
+Like in the previous section, the following information are provided
+for each of the above-listed dataset:
 
 * The licence of the data present in the dataset.
 * The output format of the API call.
@@ -86,3 +99,4 @@ listed dataset:
 	     
 .. _museum-dataset:
 .. include:: /datasets/museum.rst
+

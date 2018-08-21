@@ -1,5 +1,6 @@
 
-.. rubric:: ID: |idgb|\ bluetooth
+|idgb|\ bluetooth
+-----------------
    
 The data for this datasets are collected by experimental
 Bluetooth-based sensors and detectors and represent traffic

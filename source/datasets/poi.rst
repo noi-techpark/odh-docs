@@ -1,5 +1,6 @@
 
-.. rubric:: ID: |idgb|\ activity_poi
+|idgb|\ activity_poi
+--------------------
 
 This dataset contains a collection of activities and points of
 interest (PoI) in the South Tyrol region. The available data have been

@@ -1,5 +1,6 @@
 
-.. rubric:: ID: |idgb|\ linkstation
+|idgb|\ linkstation
+-------------------
 
 Similar to the :ref:`Bluetooth dataset <bluetooth-dataset>`, data
 available in this dataset are collected by Bluetooth-based sensors to

@@ -1,5 +1,6 @@
 
-.. rubric:: ID: |idsiag|\ museum
+|idsiag|\ museum
+----------------
    
 This datasets contains information about the museums in the South
 Tyrol region and is retrieved directly from the Open Data portal of

@@ -1,5 +1,6 @@
 
-.. rubric:: ID: |idgb|\ weather
+|idgb|\ weather
+---------------
    
 This dataset contains meteorological data provided by the
 hydrographical Department of South Tyrol.
