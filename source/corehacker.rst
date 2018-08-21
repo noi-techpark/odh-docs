@@ -10,6 +10,7 @@ As a |odh| Core Hacker I can...
    guidelines/introduction
    guidelines/platform
    guidelines/database
+   architecture
    howto/development
    
 ...help shape the future of |odh|\.
@@ -31,6 +32,9 @@ tasks to be carried out:
    separate parts: :doc:`guidelines/platform` and
    :doc:`guidelines/database`.
 
+#. Understand the :doc:`architecture <architecture>` of both the |odh|
+   and |bdp|\.
+#. Learn about the :ref:`dtp-env`.
 #. Install the necessary software on your local workstation (be it a
    physical workstation, a virtual machine, or a Docker instance),
    including PostgreSQL with postgis extension, JDK, git.
@@ -42,6 +46,8 @@ tasks to be carried out:
    :ref:`development` tutorial, which guides you stepwise through all
    the required set up and configuration, along with some
    troubleshooting advice.
+
+
 
 #. Coding.
 

@@ -20,3 +20,4 @@ The technical stuff is composed of:
 * Links to the full API documentation.
 
 
+.. include:: /domains.rst

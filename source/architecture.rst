@@ -1,7 +1,7 @@
 .. _architecture-odh:
 
-Architecture
-============
+|ODH| Architecture
+==================
 
 The architecture of the |odh| is depicted in :numref:`arch-odh`, which
 shows its composing elements together with its main goal: To gather

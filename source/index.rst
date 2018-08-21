@@ -11,16 +11,13 @@ Welcome to |odh| Documentation Repository!
    :includehidden:
    :caption: Table of Contents
 
-   intro
-   domains
+   Introduction & Project Overview <intro>
    datasets
-   architecture
    contribute
    user
    developer
    corehacker
-   glossary
-   licenses
+   appendices
 
 ..
    Indices and tables
