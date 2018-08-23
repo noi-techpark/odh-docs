@@ -67,10 +67,22 @@ Authentication
 	  
 Authentication in |odh| is mainly used in the part of the |bdp| which
 exposes data to the consumer, which means by the Reader and in every
-single webservice accessing the Reader. The authentication mechanism
-used is OAuth2 and follows the standard :rfc:`6749`, `The OAuth 2.0
-Authorization Framework`. Authentication tokens are based on
-:term:`JSON Web Token (JWT) <JSON Web Token>` as defined in
+single webservice accessing the Reader, to allow the access to closed
+data in each dataset only to those who are allowed to.
+
+There are currently two different authentication methods available:
+
+* The :strong:`Basic Authentication`, defined in :rfc:`7617`, requires
+  that anyone who wants to access resources supply a valid username
+  and password. Basic authentication is used for the datasets in the
+  tourism domain,
+
+* The :strong:`OAuth2 Authentication` follows the :rfc:`6749` and is
+  used for all the datasets in the mobility domain.
+  
+
+The OAuth2 authentication mechanism  Authentication tokens are
+based on :term:`JSON Web Token (JWT) <JSON Web Token>` as defined in
 :rfc:`7519#section-3`, to send :term:`claims <claim>`.
 
 For those not familiar with the OAuth2 mechanism, here is a quick
