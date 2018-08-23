@@ -93,6 +93,10 @@ the above-listed dataset:
 .. include:: /datasets/bikesharing.rst
 
 .. _echarging-dataset:
+
+|idgb|\ echargingstation
+------------------------
+
 .. include:: /datasets/ecs.rst
 
 
