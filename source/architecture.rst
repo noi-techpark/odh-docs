@@ -13,7 +13,7 @@ data analysis to produce :term:`statistical graphics`.
 
 .. _arch-odh:
 
-.. figure::  /images/odh-architecture.svg
+.. figure::  /images/odh-architecture.png
    :scale: 100%
 
    The |odh| architecture with the components (top) and the data

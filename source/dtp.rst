@@ -11,7 +11,7 @@ Development, Testing, and Production Environments
 
 .. _dtp:
 
-.. figure:: /images/DTP.svg
+.. figure:: /images/DTP.png
 
    Diagram showing the development, testing, and production
    environments in the |odh| project.

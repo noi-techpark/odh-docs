@@ -7,20 +7,20 @@
 
 .. licenses:
 
-.. |gpl| image:: /images/code-GPLv3-brightgreen.svg
+.. |gpl| image:: /images/code-GPLv3-brightgreen.png
    :target: https://www.gnu.org/licenses/gpl-3.0.en.html
    :alt: GPLv3 license
 
 
-.. |bysa| image:: /images/dataset-CC-BY-SA-lightgrey.svg
+.. |bysa| image:: /images/dataset-CC-BY-SA-lightgrey.png
    :target: https://creativecommons.org/licenses/by-sa/4.0/
    :alt: CC BY-SA license
 
-.. |cc0| image:: /images/dataset-CC0-blue.svg
+.. |cc0| image:: /images/dataset-CC0-blue.png
    :target: https://creativecommons.org/publicdomain/zero/1.0/
    :alt: CC0 license (public domain)
 
-.. |auth| image:: /images/authorisation-required-orange.svg
+.. |auth| image:: /images/authorisation-required-orange.png
    :alt: This dataset requires authorisation
 
 

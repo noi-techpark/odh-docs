@@ -9,7 +9,7 @@ shown in :numref:`floss-lm`.
 
 .. _floss-lm:
 
-.. figure:: images/FLOSS-LM.svg
+.. figure:: images/FLOSS-LM.png
    :scale: 80%
 
    Licenses for the |odh| and derivative material.
@@ -65,7 +65,7 @@ returned. These licenses are applied to the |odh| components:
  
 .. _dac-lm:
 
-.. figure:: images/DAC-LM.svg
+.. figure:: images/DAC-LM.png
    :scale: 80%
 
    Creative Common Licenses and derivative material. 
