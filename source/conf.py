@@ -124,6 +124,7 @@ rst_prolog = """
 .. role:: license
 .. role:: green
 .. role:: uline
+.. role:: button
 
 """ + file("replace.rst").read()
 

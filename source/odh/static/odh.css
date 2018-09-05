@@ -41,3 +41,10 @@ div.topic {
 .extrafooter {
     font-size: 80%;
 }
+
+.button {
+    border: 1px solid #CCCCCC;
+    padding: 3px;
+    background-color: #E1E1E1;
+    border-radius: 3px;
+}
