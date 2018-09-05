@@ -9,6 +9,7 @@ As an App developer I can...
 
    howto.rst
    howto/ecfe.rst
+   howto/authentication
 
 ...harvest data exposed by the dataset.
    Browse the list of :ref:`available_datasets` to see what types of

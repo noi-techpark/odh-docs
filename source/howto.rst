@@ -6,6 +6,8 @@ areas.
 
 .. For every area, some information common to all howtos is provided.
 
+#. :doc:`/howto/authentication`
+   
 Developers and Code Contributors have a dedicated tutorial to help
 them bootstrapping the environment and start coding right away:
 
