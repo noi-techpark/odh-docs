@@ -35,7 +35,7 @@ a time.
 .. figure:: /images/basic-auth.png
    :width: 80%
 
-   Authentication for one API call.
+   Authentication for one API call. 
 
 However, if you need to execute multiple API call on the same dataset,
 a more useful method is to insert the username and password directly

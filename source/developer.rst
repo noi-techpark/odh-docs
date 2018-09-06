@@ -3,13 +3,6 @@
 As an App developer I can...
 ============================
 
-.. toctree::
-   :hidden:
-   :maxdepth: 2
-
-   howto.rst
-   howto/ecfe.rst
-   howto/authentication
 
 ...harvest data exposed by the dataset.
    Browse the list of :ref:`available_datasets` to see what types of

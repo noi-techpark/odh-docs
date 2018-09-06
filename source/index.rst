@@ -14,9 +14,7 @@ Welcome to |odh| Documentation Repository!
    Introduction & Project Overview <intro>
    datasets
    contribute
-   user
-   developer
-   corehacker
+   howto
    appendices
 
 ..
