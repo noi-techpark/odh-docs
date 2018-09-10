@@ -27,7 +27,7 @@
 .. URLs of datasets
 
 .. |mobecs| replace:: ipchannels.integreen-life.bz.it
-.. |idgb| replace:: it.bz.geobank.
+.. |idgb| replace:: it.bz.opendatahub.
 .. |idsiag| replace:: it.bz.siag.
 .. |lts| replace:: it.lts.
 
