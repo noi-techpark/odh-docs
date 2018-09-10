@@ -15,6 +15,7 @@ Welcome to |odh| Documentation Repository!
    datasets
    contribute
    howto
+   applist
    appendices
 
 ..

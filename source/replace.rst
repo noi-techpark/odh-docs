@@ -23,6 +23,16 @@
 .. |auth| image:: /images/authorisation-required-orange.png
    :alt: This dataset requires authorisation
 
+.. App's status
+
+.. |alpha| image:: /images/status-alpha-lightblue.png
+   :alt: This application is in alpha stage
+
+.. |beta| image:: /images/status-beta-darkblue.png
+   :alt: This application is in beta stage
+
+
+
 
 .. URLs of datasets
 
