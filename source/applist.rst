@@ -61,12 +61,38 @@ Alpha Stage Apps
 Beta Stage Apps
 ---------------
 
+* http://mobility.meran.eu. |beta| This web site is the first example of a
+  Mobility-as-a-Service application; it includes real-time information
+  of multiple mobility services, like public transportation, places of
+  interests, car sharing services, parking lots, ans more.
+* https://parking.bz.it. |beta| A web site that displays the real-time parking
+  availability of off-street parking lots in South Tyrol. On mobile
+  devices, it can also show directions from your current position
+  to the chosen parking lot.
+* http://traffic.bz.it. |beta| Some streets in South Tyrol are monitored for
+  real-time vehicular travel times; the data collected are used by
+  this web site to show traffic slowdowns or jams.
+* http://bus.bz.it. |beta| This web site shows the real-time positions of the
+  buses managed by the public transport operator SASA. Urban or
+  suburban bus lines can be shown, and for each bus can be shown the
+  next few stops and an estimate of the arrival time.
+* http://map.clean-roads.eu. |beta| One of the CLEAN-ROADS project outcomes,
+  this web site shows real-time data of the meteorological stations
+  that are situated along public streets.
+
 
 Production Stage
 ----------------
 
 
-* sudtirol.info. This website uses data from the
+* http://www.sudtirol.info. This website uses data from the
   :ref:`tourism-datasets` to display events in the region of South
   Tyrol and other useful information to help tourists organise their
   holiday in South Tyrol. Contact for the app is .
+
+* South Tyrol Guide, the official smartphone app for exploring and
+  experiencing South Tyrol, available for both `Android
+  <https://play.google.com/store/apps/details?id=com.suedtirol.android>`_
+  and `iPhone
+  <https://itunes.apple.com/us/app/s%C3%BCdtirol-mobile-guide/id339011586?mt=8>`_
+  mobile devices.
