@@ -8,6 +8,6 @@ License         |auth|
 Output          JSON, mime-type application/json
 E-mail contact  |contact|
 API version     v1
-Swagger URL     :stinfo:`/Package`
+Swagger URL     http://service.suedtirol.info/swagger/ui/index#/Package
 ==============  ========================================================
 
