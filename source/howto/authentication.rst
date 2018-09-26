@@ -23,7 +23,7 @@ Basic authentication can be used with the :ref:`tourism-datasets`.
 .. rubric:: If you use a browser.
 
 Go to the swagger interface of the API (in our example we use the
-:ref:`accomodation dataset <accomodation-dataset>`). Here,
+:ref:`accommodation dataset <accommodation-dataset>`). Here,
 authentication can be used simply by trying to execute an API call. As
 :numref:`basic-auth` shows, click on the :button:`Try it out!` button
 and a new dialog will appear, in which you can supply the username and

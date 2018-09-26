@@ -125,8 +125,8 @@ for each of the above-listed dataset:
 * The swagger URL of the APIs.
 
 
-.. _accomodation-dataset:
-.. include:: /datasets/accomodation.rst
+.. _accommodation-dataset:
+.. include:: /datasets/accommodation.rst
 
 .. _package-dataset:
 .. include:: /datasets/package.rst
