@@ -68,7 +68,7 @@ provide the credentials required to access protected content.
 
 .. code:: bash
 
-   curl -X GET --header 'Accept: text/html' --header 'Authorization: Basic dGVzdDp0ZXN0aGFsbG8=' 'http://service.suedtirol.info/api/Accommodation'
+   curl -X GET --header 'Accept: text/html' --header 'Authorization: Basic dGVzdDp0ZXN0aGFsbG8=' 'http://tourism.opendatahub.bz.it/Accommodation'
 
    
 OAuth2 authentication
