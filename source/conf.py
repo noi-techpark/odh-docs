@@ -35,6 +35,7 @@ extensions = [
     'sphinx.ext.ifconfig',
     'sphinx.ext.extlinks',
     'sphinx.ext.imgconverter',
+    'sphinx_tabs.tabs'
 ]
 
 # Add any paths that contain templates here, relative to this directory.
