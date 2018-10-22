@@ -38,7 +38,7 @@ hackathons and must be considered as `Experimental`. |alpha|
 
 .. tabs::
 
-   .. group-tab:: Summer Lido Hackathon 2018. |alpha|
+   .. group-tab:: Summer Lido Hackathon 2018 |alpha|
 
 
       Projects developed during the `Summer Lido Hackathon 2018
@@ -77,7 +77,7 @@ hackathons and must be considered as `Experimental`. |alpha|
 	offices. Additionally get discounts for restaurants and
 	entrance tickets.
 
-   .. group-tab:: HackTheAlps 2018
+   .. group-tab:: HackTheAlps 2018 |alpha|
 
       Projects developed during `HackTheAlps 2018
       <http://hackathon.bz.it/edition/september-2018>`_. 
