@@ -87,42 +87,6 @@ hackathons and must be considered as `Experimental`. |alpha|
 	the project was to build something simple & fun that gets
 	people off their couches.
 
-      * `baank.ly 2.0 <http://hackathon.bz.it/project/baank-ly>`_ The
-	project's goal was to make something inherently quite a bit
-	annoying for most people, banking, into a pleasurable
-	experience.
-
-      * `deepsnow <http://hackathon.bz.it/project/deepsnow>`_ The idea
-	behind the project was to develop the first solution to
-	combine AI and satellite images to generate data about ski
-	resorts to minimize the efforts of snowmaking.
-
-      * `Explore South Tyrol
-	<http://hackathon.bz.it/project/explore-south-tyrol>`_
-	Discover and share cool new places in South Tyrol in a truly
-	immersive way, by simply looking around themselves, making
-	them feel more connected with the environment.
-
-      * `Green Alps <http://hackathon.bz.it/project/green-alps>`_ The
-        purpose of the project is to persuade people in South Tyrol to
-        switch to public or muscle-driven mobility.
-	
-      * `Map the Alps <http://hackathon.bz.it/project/map-the-alps>`_
-	The goal of the project is to create a Tensor flow data model
-	in order to support Techno Alpin in planning of snowmaking
-	systems in the most efficient way.
-
-      * `Offtrack <http://hackathon.bz.it/project/offtrack>`_ This
-	project uses IDM Open Data Hub and new data collected by
-	sensors around the ski area to define a KPI used by insurances
-	and ski rents to develop a business around the risk in the ski
-	run.
-	
-      * `Zohlarei <http://hackathon.bz.it/project/zohlarei>`_ a
-        banking application as simple as possible with features like
-        making app-to-app transactions using NFC and including cash
-        payments in the finance overview.
-
 
 	
 Beta Stage Apps
