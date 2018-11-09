@@ -55,7 +55,7 @@ hackathons and must be considered as `Experimental`. |alpha|
 	Tyrolean hospitals.
 	
       * `IFC Converter and AIVRTour
-	<https://hackathon.bqz.it/project/ifc-converter-and-aivrtour>`_
+	<https://hackathon.bz.it/project/ifc-converter-and-aivrtour>`_
 	is on the one side a converter of 3D reality data formats
 	(form ifc to dae/obj), while on the other side it applies AI
 	to virtual reality for museums, real estates, and on tourism.
@@ -92,7 +92,7 @@ hackathons and must be considered as `Experimental`. |alpha|
 Beta Stage Apps
 ---------------
 
-* http://mobility.meran.eu. This web site is the first example of a
+* https://mobility.meran.eu. This web site is the first example of a
   Mobility-as-a-Service application; it includes real-time information
   of multiple mobility services, like public transportation, places of
   interests, car sharing services, parking lots, ans more.

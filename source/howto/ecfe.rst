@@ -95,7 +95,7 @@ dataset. Like the previous method, two method can be used for the call:
 
    .. parsed-literal::
 
-      curl -X GET --header 'Accept: application/json' '\ :integreen:`emobility/rest/get-station-detailss`'
+      curl -X GET --header 'Accept: application/json' '\ :integreen:`emobility/rest/get-station-details`'
 
 
 The result structure is a json list of strings, and an actual outcome
