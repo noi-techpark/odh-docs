@@ -1,6 +1,7 @@
 Datasets
 ========
 
+
 The goal of the |odh| Project is to make available datasets containing
 data about the South Tyrolean Ecosystem, to allow third parties to
 develop novel applications on top of them, consuming the exposed
@@ -15,11 +16,17 @@ them in some useful way.
    page will be updated in due time as soon as more material will be
    made available.
 
+   This page will be soon removed, as all the information statically
+   provided here will be in the near future be replaced by :ref:`the
+   broker service <broker>`, which dynamically maintains the list.
+
 As seen in :numref:`domains`, data originate from different
 domains (Mobility, Tourism, and so on); they are gathered from sensors
 and packed within :strong:`datasets`. `Sensors` can be for example GPS
 devices installed on buses that send their real-time geographic
-position.
+position or a small electronic device on a plug of an e-charging
+station that checks the if the plug is being used or not, to let
+people know that the charging outlet is available.
 
 .. topic:: A note about datasets.
 
@@ -41,7 +48,7 @@ position.
    Please refer to section :ref:`authentication` for details.
 
 For each domain the available datasets are listed. Please refer to the
-next sections for a complete list.
+next sections for a complete list. 
 
 .. _mobility-datasets:
 
@@ -167,3 +174,97 @@ for each of the above-listed dataset:
 .. _museum-dataset:
 .. include:: /datasets/museum.rst
 
+.. _broker:
+
+The Broker
+~~~~~~~~~~
+
+The |ODH| Broker is a recently introduced online service
+(November 2018) that gives an overview and quick access of the
+datasets available within the |odh| project.
+
+The service is accessible at the URL https://api.opendatahub.bz.it and
+consists of a web page, divided in two parts:
+
+* The :strong:`list of datasets` accessible through the broker, which
+  are all the datasets containing publicly accessible data. This list
+  is dynamically created when the page is loaded, therefore is is
+  always up to date. Each dataset can be clicked to open a panel with
+  additional information about it.
+
+* An overview of the :strong:`REST API` provided by the broker, a few
+  methods that allow to query the existing datasets. Results are in
+  `JSON-LD <https://json-ld.org/>`_ format and use the `DCAT
+  vocabulary <https://www.w3.org/TR/vocab-dcat/>`_. This means that all
+  the keyword in the result set belong to a W3C standard, allowing the
+  data in the result set to be reused and combined with results from
+  foreign datasets that use the same vocabulary.
+
+The results obtained by querying the broker give the 
+
+Broker's REST API
+-----------------
+
+The methods available are the following.
+    
+* :literal:`GET /datasets` Returns a list of all datasets in form of a
+  :strong:`dcat:Catalog`.
+
+ 
+* :literal:`GET /datasets/{id}` Retrieve the metadata of a single
+  dataset by its identifier, which corresponds to the
+  :strong:`identifier` key that you can find in the in the outcome of
+  the previous method's call. See also the excerpt below. The result
+  set is a :strong:`dcat:Dataset`\.
+  
+* :literal:`GET /datasets/search/{query}` Execute a custom, case
+  insensitive query on the available datasets. All the fields that are
+  in the result set of :literal:`GET /datasets` will be considered for
+  an answer.
+
+  .. note:: There is currently no tokenisation of the query string,
+     therefore the text you enter is searched as-is in the
+     datasets. IT is however possible to search for partial words. As
+     an example, the code snippet below is the outcome of both queries
+     :literal:`GET /datasets/search/charging` and :literal:`GET
+     /datasets/search/echargingstation`
+	   
+The outcome of the query looks like the following excerpt which is, as
+mentioned in the previous section in JSON-LD format and uses the
+standard DCAT vocabulary. 
+
+.. parsed-literal::
+
+   {
+      "title": "it.bz.opendatahub.echargingstation",
+      "publisher": {
+        "title": "Alperia, route220, Nevicam, Driwe",
+        "@type": "http:\/\/www.w3.org\/ns\/org#Organization",
+        "@context": {
+          "title": "http:\/\/purl.org\/dc\/terms\/title"
+        }
+      },
+      "keyword": [
+        "echarging",
+        "mobility",
+        "realtime"
+      ],
+      "identifier": "it.bz.opendatahub.echargingstation",
+      "distribution": [
+        {
+          "license": "https:\/\/creativecommons.org\/publicdomain\/zero\/1.0\/",
+          "format": "application\/json",
+          "accessURL": "https:\/\/api.opendatahub.bz.it\/it.bz.opendatahub.echargingstation",
+          }
+        }
+      ],
+      "description": "Real time information about the echarging statons",
+      "contactPoint": {
+        "hasEmail": "info@geobank.bz.it"
+      },
+      "@type": "http:\/\/www.w3.org\/ns\/dcat#Dataset",
+      "@id": "https:\/\/api.opendatahub.bz.it\/datasets\/it.bz.opendatahub.echargingstation",      
+    }
+
+.. note:: References to some of the definitions of the vocabulary have
+   been deleted from the excerpt for the sake of clarity.
