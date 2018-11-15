@@ -200,7 +200,38 @@ consists of a web page, divided in two parts:
   data in the result set to be reused and combined with results from
   foreign datasets that use the same vocabulary.
 
-The results obtained by querying the broker give the 
+The results obtained by querying the broker give a number of metadata
+about one or more datasets, including the :strong:`Contact` for
+information or reuse of the dataset, and the :strong:`Base URL`,
+allowing for quick and direct access to the data, using the ODH APIs,
+described in the :strong:`Documentation` URL.
+
+.. note:: While the :strong:`Base URL`, when accessed, may give an
+   error, the API calls work and produce correct results. For example,
+   consider the :strong:`it.bz.opendatahub.echargingstation`
+   dataset. Calling the method :strong:`get-station-details` by using
+   its base URL,
+   https://api.opendatahub.bz.it/it.bz.opendatahub.echargingstation,
+   actually produce the expected result, i.e., the list of stations
+   in the dataset with all the information attached to it:
+
+   .. parsed-literal::
+
+      curl
+      "https://api.opendatahub.bz.it/it.bz.opendatahub.echargingstation/rest/get-station-details"
+      | jq '.' | head -10
+
+      [
+        {
+	  "_t": "it.bz.idm.bdp.dto.emobility.EchargingStationDto",
+	  "id": "ASD_00000038",
+	  "name": "CAMPING_LATSCH",
+	  "latitude": 46.622135,
+	  "longitude": 10.863569,
+	  "municipality": "Latsch - Laces",
+	  "capacity": 1,
+	  "provider": "Alperia Smart Mobility",
+
 
 Broker's REST API
 -----------------
@@ -218,17 +249,11 @@ The methods available are the following.
   set is a :strong:`dcat:Dataset`\.
   
 * :literal:`GET /datasets/search/{query}` Execute a custom, case
-  insensitive query on the available datasets. All the fields that are
-  in the result set of :literal:`GET /datasets` will be considered for
-  an answer.
+  insensitive query on the available datasets. All the fields within
+  the result set of the :literal:`GET /datasets` query will be
+  considered for an answer. Multiple words can be used as query string
 
-  .. note:: There is currently no tokenisation of the query string,
-     therefore the text you enter is searched as-is in the
-     datasets. IT is however possible to search for partial words. As
-     an example, the code snippet below is the outcome of both queries
-     :literal:`GET /datasets/search/charging` and :literal:`GET
-     /datasets/search/echargingstation`
-	   
+  
 The outcome of the query looks like the following excerpt which is, as
 mentioned in the previous section in JSON-LD format and uses the
 standard DCAT vocabulary. 
