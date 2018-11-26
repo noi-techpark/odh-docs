@@ -15,7 +15,7 @@ This tutorial is divided into three parts:
 
 #. Software installation
 #. Services configuration
-#. Coding 
+#. Troubleshooting
 
 .. warning:: This tutorial is still work in progress and is largely incomplete!
 
@@ -23,9 +23,9 @@ This tutorial is divided into three parts:
 Software Installation
 ---------------------
 
-In this tutorial we are using a virtual machine with installed
-:strong:`Ubuntu 16.04 LTS`. This VM has IP Address
-:envvar:`192.168.1.82`.
+The following installation directions have been verified on a VM with
+installed either :strong:`Debian 9` or :strong:`Ubuntu 18.04.01 LTS`.
+The applications installed on it are the :strong:`Suggested` version.
 
 .. note:: All the commands and configuration items (including their
    location in the filesystem) refer to this distribution and should be
@@ -33,26 +33,33 @@ In this tutorial we are using a virtual machine with installed
    as well.
 
    On other Linux distribution some the name of the single packages
-   and directory structure might vary.
+   might vary.
 
 You need to install the following software:
 
-* PostgreSQL 9.3 or higher with postgis 2.2 extension.
-* JRE7 or higher (JRE8 suggested).
-* git version control system.
-* xmlstarlet to edit the XML configuration file - you will need to do
-  it manually otherwise.
-* Apache Maven\ :sup:`#`.
-* An application server (tomcat8 suggested)\ :sup:`#`.
-  
-  :sup:`#`\ These components are optional. You can skip Apache
-  Maven installation if you do not use it and use the online
-  application server provided by |odh| instead of deploying it
-  locally.
+============ ========= =========== =======================================
+ Software     Minimum   Suggested   Notes
+============ ========= =========== =======================================
+PostgreSQL     9.6       10.5
+postgis ext.   2.2        2.4
+Java           JRE7      JRE8       Most of the packages require
+                                    Java 8 to be built.
+git            2.17      2.17
+xmlstarlet     1.6.1     1.6.1    
+Apache Maven   3.3.9     3.5.2      Optional. If you don't use it, do
+                                    not install it.
 
-On a typical debian-base Linux distribution, this is achieved by
-opening a shell/terminal, then issuing the following command, provided
-you have the rights to install software:
+tomcat8        8.0       8.5        You Optional can either use the
+                                    tomcat server provided by |odh| or
+				    install another application server.
+============ ========= =========== =======================================
+
+.. note:: In case you opt to not use Maven or Tomcat, remember to
+   edit the script in order to not attempt to configure them!
+
+On a typical debian-based Linux distribution, installing the software
+is achieved by opening a shell/terminal, then issuing the following
+command, provided you have the rights to install software:
 
 .. code-block:: bash
 	  
@@ -60,20 +67,46 @@ you have the rights to install software:
 
 This command ensures that all dependencies are installed as well. If
 you have none of these package already installed, you might need to
-download ~125Mb of packages.
+download up to ~125Mb of packages.
 
 Services configuration
 ----------------------
 
+The services will be configured automatically, since we developed a
+script that does most of the job for you. However, a few preliminary
+steps are required:
+
+#. Make sure tomcat8 and postgres are running. If the do not or if you
+   are unsure, refer to :ref:`entry 1 <ts-1>` in section
+   :ref:`setup-troubleshooting`.
+#. Verify that tomcat and postgres are listening on the right port
+   (:strong:`8080` and :strong:`5432` respectively). See :ref:`entry 2
+   <ts-2>` in section :ref:`setup-troubleshooting` for more information.
+#. Make sure there is a database role configured with a password and a
+   few access permission.
+#. Set two environment variables.
+#. Edit the script to suit your workstation.
+#. Launch the script.
+
+.. warning:: The script :strong:`might silently fail` on some
+   machine, for example on Ubuntu 18.04, because it ships with
+   Java 11. In this case, please install also java 8 and make it the
+   default java version.
+   
+  
 .. _setup-troubleshooting:
 
 Troubleshooting
 ---------------
 
-You can check that tomcat is running either from the CLI or using a
-web browser. From the CLI you should issue the command ans see an
-output similar to the one show, where at the :green:`active
-(running)` string can be read.
+.. _ts-1:
+
+1. :strong:`How do I check if a service is running?`
+   
+You can check that a service like tomcat or postgres is running from
+the CLI, by issuing the following command and see an output similar to
+the one show here, where the :green:`active (running)` string can be
+read.
 
 .. code-block:: bash
 
@@ -116,4 +149,24 @@ entering your password.
 
 You can check again if tomcat is running with the command
 :command:`service tomcat8 status`.
+
+.. _ts-2:
+
+2. :strong:`How do I check the port on which a service is listening?`
+
+You can use the :command:`netstat` command line utility, like this:
    
+.. code-block:: bash
+   
+  root@bdp:~$ netstat -plnt4
+  Active Internet connections (only servers)
+  Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program name    
+  tcp        0      0 0.0.0.0:5432              0.0.0.0:*               LISTEN      2427/postgresql        
+  tcp        0      0 0.0.0.0:22              0.0.0.0:*               LISTEN      2719/sshd           
+  tcp        0      0 127.0.0.1:8080            0.0.0.0:*               LISTEN      2863/tomcat8
+  
+Make sure that at least ports 8080 and 5432 are present (tomcat and
+postgres respectively) in the :strong:`Local Address`.
+
+It is suggested to run this command as superuser, because otherwise
+not all information is present.
