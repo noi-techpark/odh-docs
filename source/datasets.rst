@@ -251,8 +251,7 @@ The methods available are the following.
 * :literal:`GET /datasets/search/{query}` Execute a custom, case
   insensitive query on the available datasets. All the fields within
   the result set of the :literal:`GET /datasets` query will be
-  considered for an answer. Multiple words can be used as query string
-
+  considered for an answer. Multiple words can be used as query string.
   
 The outcome of the query looks like the following excerpt which is, as
 mentioned in the previous section in JSON-LD format and uses the
