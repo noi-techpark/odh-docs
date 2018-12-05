@@ -8,9 +8,8 @@ The following is the list of appendices.
    :numbered: 1
    :maxdepth: 2
 
-   guidelines/introduction
-   guidelines/platform
-   guidelines/database
    architecture
+   guidelines
    glossary
    licenses
+
