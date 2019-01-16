@@ -8,6 +8,7 @@ List of HOWTOs
    howto/ecfe
    howto/authentication
    howto/development
+   howto/tourism
 
 This page contains the list of available howtos, divided into
 areas.
@@ -34,4 +35,7 @@ Mobility
 Tourism
 -------
 
-There is currently no HOWTO for this domain.
+#. :doc:`/howto/tourism`
+
+
+
