@@ -56,8 +56,9 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'OpenDataHub Docs'
-copyright = u'2018, The Open Data Hub Team'
-author = u'The Open Data Hub Team'
+copyright = u'2018-%s, The ODH Team' %(current_year)
+author = u'The ODH Team'
+
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
@@ -126,6 +127,10 @@ rst_prolog = """
 .. role:: green
 .. role:: uline
 .. role:: button
+.. role:: monospace
+.. role:: button
+.. role:: greenswbutton 
+
 
 """ + file("replace.rst").read()
 

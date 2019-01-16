@@ -42,9 +42,34 @@ div.topic {
     font-size: 80%;
 }
 
-.button {
-    border: 1px solid #CCCCCC;
-    padding: 3px;
-    background-color: #E1E1E1;
-    border-radius: 3px;
+.monospace {
+    font-family: monospace;
+    font-weight: normal;
+    font-size: 90%;
 }
+.button {
+    text-decoration: none;
+    background-color: #EEEEEE;
+    color: #000000;
+    padding: 2px 6px 2px 6px;
+    border: 1px solid #CCCCCC;
+    border-radius: 2pt;
+    display: inline-block;
+}
+
+.greenswbutton {
+ display: inline-block;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 1px 6px;
+  font-size: 0.9em;
+  color: white;
+  background-color: #547f00;
+  border-radius: 4px
+  /* -moz-border-radius: 4px; */
+  /* -webkit-border-radius: 4px; */
+  /* -o-border-radius: 4px; */
+  /* -ms-border-radius: 4px; */
+  /* -khtml-border-radius: 4px; */
+}
+
