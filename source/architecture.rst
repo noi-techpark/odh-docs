@@ -14,7 +14,7 @@ data analysis to produce :term:`statistical graphics`.
 .. _arch-odh:
 
 .. figure::  /images/odh-architecture.png
-   :scale: 100%
+   :scale: 99%
 
    The |odh| architecture with the components (top) and the data
    format used (bottom) during the data transformation.
@@ -135,5 +135,11 @@ Data Consumers
 Also part of the architecture, but not pictured in the diagram, is the
 :file:`persistence.xml` file, which contains the credentials and
 postgres configuration used by both the Reader and Writer.
+
+
+.. _dtp-env:
+
+Development, Testing, and Production Environments
+-------------------------------------------------
 
 .. include:: dtp.rst

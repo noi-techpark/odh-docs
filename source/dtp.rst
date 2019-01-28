@@ -1,9 +1,4 @@
 
-.. _dtp-env:
-
-Development, Testing, and Production Environments
-=================================================
-
 .. note:: Information in this section is still provisional!
 
 :numref:`dtp` shows the various environments which compose the whole
@@ -12,6 +7,7 @@ Development, Testing, and Production Environments
 .. _dtp:
 
 .. figure:: /images/DTP.png
+   :scale: 99
 
    Diagram showing the development, testing, and production
    environments in the |odh| project.
