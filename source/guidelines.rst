@@ -1,3 +1,5 @@
+.. _devels-resources:
+
 Resources for Developers
 =========================
 

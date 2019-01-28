@@ -1,3 +1,5 @@
+.. _howto-list:
+
 List of HOWTOs
 ==============
 

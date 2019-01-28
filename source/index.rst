@@ -16,6 +16,7 @@ Welcome to |odh| Documentation Repository!
    contribute
    howto
    applist
+   faq
    appendices
 
 ..

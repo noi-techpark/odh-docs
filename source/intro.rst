@@ -1,3 +1,6 @@
+
+.. _project-intro:
+
 ==============
  Introduction
 ==============
