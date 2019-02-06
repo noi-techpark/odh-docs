@@ -1,6 +1,5 @@
-.. |q| replace:: :strong:`Q:`
-.. |a| replace:: :strong:`A:`
-	     
+.. _faq:
+
 Frequently Asked Questions
 ==========================
 

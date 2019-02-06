@@ -32,8 +32,6 @@
    :alt: This application is in beta stage
 
 
-
-
 .. URLs of datasets
 
 .. |mobecs| replace:: ipchannels.integreen-life.bz.it
@@ -68,4 +66,7 @@
 .. |ddl| replace:: :abbr:`DDL (Data Definition Language)`
 .. |dal| replace:: :abbr:`DAL (Data Access Layer)`
 .. |dto| replace:: :abbr:`DTO (Data Transfer Object)`
+.. |q| replace:: :strong:`Q:`
+.. |a| replace:: :strong:`A:`
 
+.. EOF 
