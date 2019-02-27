@@ -73,3 +73,12 @@ div.topic {
   /* -khtml-border-radius: 4px; */
 }
 
+.std-term:before{
+    content:"\f518";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-style: normal;
+    margin-right:3px;
+    text-decoration:none;
+    font-size: 60%;
+}
