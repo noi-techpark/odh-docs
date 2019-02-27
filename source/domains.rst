@@ -1,31 +1,12 @@
-Project Overview
-================
+..
+   In a nutshell, the |odh| Project takes data from multiple domains
+   (mobility, tourism, meteo), makes them available through the |odh|
+   with the purpose to allow third party developers (or any interested
+   user) to use them within their own projects, using the available APIs.
 
-In this section you can find an overview of the |odh| Project and an
-introduction to the available `Domains`, `APIs`, and `Datasets`.
-	  
-.. _domains:
-
-.. figure:: /images/domain.png
-   :width: 80%
-
-   An overview of the |odh| Project.
-
-In a nutshell, the |odh| Project takes data from multiple domains
-(mobility, tourism, meteo), makes them available through the |odh|
-with the purpose to allow third party developers (or any interested
-user) to use them within their own projects, using the available APIs.
-
-.. _available_datasets:
-
-Domains with Available Datasets
--------------------------------
-
-This part has been moved :doc:`to its own section <datasets>`
-
-Available APIs
---------------
-
+The domains that are intended as sources for data served by the |odh| are
+depicted in :numref:`domains-diagram`.
+ 
 The :strong:`API` of a software contains the definition of methods and of
 their signatures, that can be invoked to retrieve data from the web
 services provided by the software itself. The signature of each method

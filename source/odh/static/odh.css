@@ -5,6 +5,10 @@ body {
     font-family: Lato, Helvetica, Arial, sans-serif;
 }
 
+.wy-nav-content{
+    max-width: 1024px;    
+}
+
 .license {
     text-decoration: none;
     background-color: #EEEEEE;

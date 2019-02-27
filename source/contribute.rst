@@ -101,8 +101,8 @@ tasks to be carried out:
    separate parts: :doc:`guidelines/platform` and
    :doc:`guidelines/database`.
 
-#. Understand the :doc:`architecture <architecture>` of both the |odh|
-   and |bdp|\.
+#. Understand the :ref:`architecture <architecture-odh>` of both the
+   |odh| and |bdp|\.
 #. Learn about the :ref:`dtp-env`.
 #. Install the necessary software on your local workstation (be it a
    physical workstation, a virtual machine, or a Docker instance),

@@ -1,3 +1,7 @@
+.. _dtp-env:
+
+Development, Testing, and Production Environments
+-------------------------------------------------
 
 .. note:: Information in this section is still provisional!
 
@@ -7,7 +11,7 @@
 .. _dtp:
 
 .. figure:: /images/DTP.png
-   :scale: 99
+   :scale: 99%
 
    Diagram showing the development, testing, and production
    environments in the |odh| project.

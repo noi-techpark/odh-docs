@@ -1,7 +1,3 @@
-.. _architecture-odh:
-
-|ODH| Architecture
-==================
 
 The architecture of the |odh| is depicted in :numref:`arch-odh`, which
 shows its composing elements together with its main goal: To gather
@@ -14,7 +10,7 @@ data analysis to produce :term:`statistical graphics`.
 .. _arch-odh:
 
 .. figure::  /images/odh-architecture.png
-   :scale: 99%
+   :width: 99%
 
    The |odh| architecture with the components (top) and the data
    format used (bottom) during the data transformation.
@@ -136,10 +132,3 @@ Also part of the architecture, but not pictured in the diagram, is the
 :file:`persistence.xml` file, which contains the credentials and
 postgres configuration used by both the Reader and Writer.
 
-
-.. _dtp-env:
-
-Development, Testing, and Production Environments
--------------------------------------------------
-
-.. include:: dtp.rst

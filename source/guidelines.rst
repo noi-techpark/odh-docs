@@ -15,4 +15,5 @@ app
    guidelines/introduction
    guidelines/platform
    guidelines/database
+   guidelines/dtp
    contributors

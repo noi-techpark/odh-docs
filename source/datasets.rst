@@ -1,6 +1,8 @@
+
+.. _available_datasets:
+
 Datasets
 ========
-
 
 The goal of the |odh| Project is to make available datasets containing
 data about the South Tyrolean Ecosystem, to allow third parties to
@@ -11,16 +13,18 @@ different graphic formats like pie-charts, to far more complex
 applications that combine data from different datasets and correlate
 them in some useful way.
 
-.. note:: This page was last updated on |today|, hence all information
-   about the availability of datasets is correct as of this date. This
-   page will be updated in due time as soon as more material will be
-   made available.
+.. changed |today| to a static date 4 iaa
+   
+.. note:: This page was last updated on 15th January 2019, hence all
+   information about the availability of datasets is correct as of
+   this date. This page will be updated in due time as soon as more
+   material will be made available.
 
    This page will be soon removed, as all the information statically
    provided here will be in the near future be replaced by :ref:`the
    broker service <broker>`, which dynamically maintains the list.
 
-As seen in :numref:`domains`, data originate from different
+As seen in :numref:`domains-diagram`, data originate from different
 domains (Mobility, Tourism, and so on); they are gathered from sensors
 and packed within :strong:`datasets`. `Sensors` can be for example GPS
 devices installed on buses that send their real-time geographic

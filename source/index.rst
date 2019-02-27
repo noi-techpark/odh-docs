@@ -12,7 +12,6 @@ Welcome to |odh| Documentation Repository!
    :caption: Table of Contents
 
    Introduction & Project Overview <intro>
-   datasets
    contribute
    howto
    applist
