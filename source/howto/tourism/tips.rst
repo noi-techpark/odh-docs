@@ -5,7 +5,7 @@ This section contains various tips and tricks to improve and tweak the
 queries sent to the Tourism datasets, allowing more precise results to
 be retrieved. This page is divided into two parts: The first one shows
 examples with code (usually the API call), the second is organised
-like a FAQ section..
+like a FAQ section.
 
 	  
 Example Calls
@@ -65,7 +65,7 @@ Location identifier are the following four:
 
 * :strong:`reg`: Region (Italian Regione)
 * :strong:`tvs`: Turistic association (German Tourismusverein) 
-* :strong:`mun`: Town or city (Italian Comune)
+* :strong:`mun`: Municipality, i.e., town or city (Italian Municipalità)
 * :strong:`fra`: Suburb or district (Italian frazione)
 
 IDs for each location can be gathered either from the swagger
