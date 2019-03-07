@@ -65,7 +65,7 @@ Location identifier are the following four:
 
 * :strong:`reg`: Region (Italian Regione)
 * :strong:`tvs`: Turistic association (German Tourismusverein) 
-* :strong:`com`: Town or city (Italian Comune)
+* :strong:`mun`: Town or city (Italian Comune)
 * :strong:`fra`: Suburb or district (Italian frazione)
 
 IDs for each location can be gathered either from the swagger
@@ -81,7 +81,7 @@ interface or using an API calls:
     http://tourism.opendatahub.bz.it/swagger/ui/index#!/Common/Common_GetTourismvereinReduced
     http://tourism.opendatahub.bz.it/api/TourismAssociationReduced?language=iturismusverein)
     
-* :strong:`com`::
+* :strong:`mun`::
     
     http://tourism.opendatahub.bz.it/swagger/ui/index#!/Common/Common_GetMunicipalityReduced
     http://tourism.opendatahub.bz.it/api/MunicipalityReduced?language=it
