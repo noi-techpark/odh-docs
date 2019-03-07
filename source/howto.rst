@@ -11,7 +11,7 @@ information about each of them is provided.
 .. toctree::
    :maxdepth: 1
 
-   howto/ecfe
+   howto/mobility
    howto/tourism/getstarted
    howto/tourism/access
    howto/tourism/tips
@@ -23,7 +23,7 @@ information about each of them is provided.
 
 .. rubric:: Mobility
 
-#. :doc:`/howto/ecfe`. Since the APIs are very generic, directions
+#. :doc:`/howto/mobility`. Since the APIs are very generic, directions
    contained in this howto can be applied to any dataset of the
    mobility domain.
 
