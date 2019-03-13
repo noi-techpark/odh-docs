@@ -149,33 +149,64 @@ Tips and Tricks
 filter, like in the Gastronomy dataset. Is there some equivalent
 filter?
 
-|a| Accommodations belong to a different dataset, use
-:strong:`categoryfilter` and the 
+|a| In the Accommodations dataset use :strong:`categoryfilter` instead.
 
 *****
 
 .. _tour-tt2:
 
-.. rubric:: TT2. `odhactive` and fields starting with `odh`.
+.. rubric:: TT2. `odhactive` and filter starting with `odh`.
 	    
-|q| What is the purpose of the `odhactive` field? And what are all
-the parameters prefixed with :strong:`odh` stand for?
+|q| What is the purpose of the `odhactive` filter? And what do all the
+filters prefixed with :strong:`odh` stand for?
    
 |a| `odh` simply stands for |odh|. There are fields like `active` and
-`odhactive`. Datasets filtered with the former return all data sent and
-validated by the dataset provider, while the latter returns those
-validated by the |odh| team as well.
+`odhactive`. Datasets filtered with the former return all data sent by
+the dataset provider, while the latter returns those validated by the
+|odh| team as well. Ths parameter is useful in a number of use
+cases. Suppose that the |odh| team receives a dataset contains name
+and location of ski lifts within South Tyrol's ski areas. If the
+dataset has not been updated in a few years, some entry in that
+dataset might be non valid anymore, for example a ski lift has been
+replaced by a cable car or has been dismantled. If this case has been
+verified by the |odh| team, the entry referring to that skilift will
+not appear in the |odh|\.
 
 
 .. _tour-tt3:
 
-.. rubric:: TT3. The `seed` field
+.. rubric:: TT3. The `seed` filter
 
-|q| What is the `seed` field used for?
+|q| What is the `seed` filter used for?
 
 |a| `seed` is used in pagination, i.e., when there are two or more
-pages of results, to keep the same sorting in all pages. By passing to
-the API call the :literal:`null` string, no seed is generated and
-there is no sorting; by passing :literal:`0`, a seed is generated and
-will be used in pages from 2 onwards; By passing a predefined seed, it
-will be applied to all result sets.
+pages of results, to keep the sorting across all pages. When
+retrieving a high number of items in a dataset it is desirable to have
+only a limited amount of results in each page.
+
+It is possible to activate seed in two ways: in the dataset, choose a
+:monospace:`pagenumber` (the number of the result page that will be
+shown first) or a :monospace:`pagesize` (number of items in each page,
+we'll use :strong:`15` in this example) and set :monospace:`seed` to
+:strong:`0`.  At the beginning of query's :strong:`Response Body` you
+will see something like:
+
+.. parsed-literal::
+
+   {
+  "TotalResults": 10564,
+  "TotalPages": 705,
+  "CurrentPage": 1,
+  "OnlineResults": -1,
+  "Seed": "43",
+  "Items": [
+    {
+    
+The remainder of the :strong:`Response Body` contains the first 15
+sorted items. If you now want to retrieve page 2, page 56, or any
+other, use :strong:`43` as :monospace:`seed` and write :strong:`2`,
+:strong:`56`, or the desired value as :monospace:`pagenumber`.
+
+If you do not enter the :strong:`seed`, you could find an item that
+was already shown before, because the API can not guarante that the
+same sorting is used in different queries.

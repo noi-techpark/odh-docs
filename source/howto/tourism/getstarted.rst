@@ -52,20 +52,38 @@ Filters common to all datasets
 ------------------------------
 
 Filters are used within a dataset and their primary purpose is to
-limit the result set according to specific parameters.
+limit the result set according to specific parameters. They might not
+be available in every API call. information about default values can
+be found for each datasets in the `swagger interface
+<http::/tourism.opendatahub.bz.it/swagger>`_ of the API. Some examples
+of their use can be found in section :doc:`tips`.
 
+.. note:: This section is :strong:`Work in Progress` and might be
+   expanded.
 
-.. warning:: This section is :strong:`Work in Progress` and therefore
-   incomplete!
-   
+- :strong:`Seed` is used to set pagination. See tip :ref:`TT3
+  <tour-tt3>`.
+- :strong:`Locfilter` is a composed parameters that uniquely
+  identifies a location within South Tyrol. See example :ref:`EX2
+  <tour-ex2>` for a detailed example.
+- :strong:`Latitude` and :strong:`Longitude` are used to identify the
+  (absolute) positioning of a location, point of interest, event, or
+  any other type of object. They must be entered in decimal form
+- :strong:`Radius` it is the distance in meter prom a geographical
+  point. It can be used together with latitude and longitude to
+  broaden the search for an object. The results are automatically
+  `geosorted` from the nearest to the most far away from the selected
+  point.  
+- :strong:`IdFilter` allows to extract from the dataset only the items
+  with the given IDs, separated with a :literal:`,`.
+- :strong:`Active` and :strong:`OdhActive`. Filters with the same
+  name, with one prefixed by :strong:`Odh` refer to the same
+  parameter. The difference is however important: :strong:`Active`
+  indicates that the item is present in the original dataset provided,
+  while :strong:`OdhActive` shows that the item has been verified by
+  the |odh| team and is present in the |odh|. See discussion in tip
+  :ref:`TT2 <tour-tt2>`.
 
-- :strong:`Seed` is used to set pagination. See tip :ref:`TT3 <tour-tt3>`.
-- :strong:`Active` and  :strong:`OdhActive`
-- :strong:`Locfilter`
-- :strong:`Latitude`  :strong:`Longitude`, :strong:`Radius`
-- :strong:`Geosort` Sort by Distance
-- :strong:`IdFilter` (Filter by multiple IDs)
-- :strong:`ODHTagFilter`  (Filter by ODH Tags get ODH Tags list 
 
 .. filters in each datasets
 
