@@ -1,10 +1,5 @@
-..
-   In a nutshell, the |odh| Project takes data from multiple domains
-   (mobility, tourism, meteo), makes them available through the |odh|
-   with the purpose to allow third party developers (or any interested
-   user) to use them within their own projects, using the available APIs.
 
-The domains that are intended as sources for data served by the |odh| are
+The domains intended as sources for data served by the |odh| are
 depicted in :numref:`domains-diagram`.
  
 The :strong:`API` of a software contains the definition of methods and of
@@ -53,14 +48,15 @@ data in each dataset only to those who are allowed to.
 
 There are currently two different authentication methods available:
 
-* The :strong:`Basic Authentication`, defined in :rfc:`7617`, requires
-  that anyone who wants to access resources supply a valid username
-  and password. Basic authentication is used for the datasets in the
-  tourism domain,
+* The :strong:`Token-based Authentication`, defined in :rfc:`6750`,
+  requires that anyone who wants to access resources supply a valid
+  username and password and becomes a Bearer Token that must be used
+  to access the data. After the token expires, a new one must be
+  obtained. This type of authentication is used for the datasets in
+  the tourism domain.
 
 * The :strong:`OAuth2 Authentication` follows the :rfc:`6749` and is
-  used for all the datasets in the mobility domain.
-  
+  used for all the datasets in the mobility domain. 
 
 The OAuth2 authentication mechanism  Authentication tokens are
 based on :term:`JSON Web Token (JWT) <JSON Web Token>` as defined in

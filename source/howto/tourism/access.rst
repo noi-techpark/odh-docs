@@ -22,37 +22,37 @@ http::/tourism.opendatahub.bz.it/swagger
 
 For most of the Tourism domain datasets you need credentials to access
 the data. Go to the abovementioned URL and click on `Expand
-Operations` on the far right-hand side of :strong:`LoginAPI`.  In the
-panel that opens (see :numref:`tourism-login`), fill in the
-:monospace:`loginmodel` with your username and password.
+Operations` on the far right-hand side of :strong:`Login (Get Bearer
+Token)`.  In the panel that opens (see :numref:`tourism-login`), fill
+in the :monospace:`username` and :monospace:`password` with your
+credentials.
+
+.. note:: :strong:`The Bearer Token Login` method replaces the
+   previous one, :strong:`LoginAPI`, which is not available anymore.
 
 .. _tourism-login:
 
 .. figure:: /images/tourism-01.png
 
-   Login mask of the Tourism API 
+   Login mask of the Tourism API.
 
-
-To make it simpler, you can click on the `Example value` on the
-right-hand side of the page and fill in the appropriate values for
-:strong:`username` and :strong:`pswd`. Click on :button:`Try it out`
-to generate a new access token that will be needed for any further
-request (see :numref:`tourism-token`).
+Click on :button:`Try it out` to generate a new access token that will
+be needed for any further request (see :numref:`tourism-token`).
 
 .. _tourism-token:
 
 .. figure:: /images/tourism-02.png
 
-   Successful Token received from the LoginAPI.
+   Token assigned to the user.
 
 After you have clicked on the button, the panel will expand and
 present some more data, the most important are the :strong:`Curl` and
 :strong:`Response Body` sections. In the first one, you can see the
-:strong:`POST` call send from the API in curl format: you can use its
+:strong:`POST` call sent from the API in curl format: you can use its
 content to write scripts that fetch data and automatise data fetching.
 
 The :strong:`Response Body` section contains the answer to the call
-sent and is a JSON-formatted string that contains a few data, the most
+and is a JSON-formatted string that contains a few data, the most
 important of which are:
 
 * The :strong:`access_token`, needed for any access to the data
@@ -83,7 +83,7 @@ add an authentication header to each call. For example, using curl:
 
    curl -X GET --header 'Accept: application/json' --header \\
    'Authorization: Bearer vLwemAqrLKVKXsvgvEQgtkeanbMq7Xcs' \\
-   'http://tourism.opendatahub.bz.it/api/Gastronomy'
+   'http\://tourism.opendatahub.bz.it/api/Gastronomy'
 
 .. note:: The string of the token is shortened for the sake of
    clarity. 
