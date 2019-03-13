@@ -82,7 +82,19 @@ div.topic {
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
     font-style: normal;
-    margin-right:3px;
-    text-decoration:none;
+    color:#b3b3b3;
     font-size: 60%;
+    margin-right:2px;
+
 }
+.rst-content.style-external-links, a.reference.external:after {
+    content:"\f35d";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-style: normal;
+    color:#b3b3b3;
+    font-size:60%;
+    vertical-align:super;   
+    margin:0 .2em
+}
+
