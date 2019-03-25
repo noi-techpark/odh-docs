@@ -14,6 +14,8 @@ API.
 
 .. structure of the API Calls
 
+.. _tourism-api-call-structure:
+
 Structure of the API calls
 --------------------------
 
@@ -72,8 +74,9 @@ of their use can be found in section :doc:`tips`.
 - :strong:`Radius` it is the distance in meter prom a geographical
   point. It can be used together with latitude and longitude to
   broaden the search for an object. The results are automatically
-  `geosorted` from the nearest to the most far away from the selected
-  point.  
+  `geosorted`, that is, they are listed from the nearest to the most
+  far away from the selected point. The distance is calculated as the
+  crow flies.
 - :strong:`IdFilter` allows to extract from the dataset only the items
   with the given IDs, separated with a :literal:`,`.
 - :strong:`Active` and :strong:`OdhActive`. Filters with the same
@@ -83,8 +86,12 @@ of their use can be found in section :doc:`tips`.
   while :strong:`OdhActive` shows that the item has been verified by
   the |odh| team and is present in the |odh|. See discussion in tip
   :ref:`TT2 <tour-tt2>`.
+- :strong:`ODHTag` allows to filter a result set according to tag
+  defined by the |odh| team. These tags are mostly related with places
+  to see, activities that can be carried out in winter or summer, food
+  and beverage, cultural events and so on
 
-
+  
 .. filters in each datasets
 
 Filters specific of a datasets
@@ -93,108 +100,50 @@ Filters specific of a datasets
 .. note:: This section will be available soon.
 
 
-..
-   Accommodation
-
-   http://tourism.opendatahub.bz.it/api/AccommodationTypes
-
-   Board à per il boardiflter
-
-   Type à per il typefilter
-
-   Category à per il categoryfilter
-
-   Theme à per il themefilter
-
-   Badge à per il badgefilter
-
-   SpecialFeature à per featurefilter
-
-
-
-   Qua si trovono tutti “Features” che un accommodation puo avere
-
-   http://tourism.opendatahub.bz.it/api/AccommodationFeatures
-
-
-   Gastronomy
-
-
-
-   http://tourism.opendatahub.bz.it/api/GastronomyTypes
-   CategoryCode à categorycodefilter
-
-   Etc…
-
-
-
-   Event
-
-   http://tourism.opendatahub.bz.it/api/EventTopics
-   eventTopic à topicfilter
-
-
-
-
-
-   Activity
-
-   http://tourism.opendatahub.bz.it/api/ActivityTypes
-   activitytypefilter
-
-
-   Poi
-
-   http://service.suedtirol.info/api/PoiTypes
-   poi type filter
-
-
-
-
-   ODH Activity POI
-
-
-
-   Qua ce da dire che ODH Activity Poi é una specie di container di tutti Activities & Pois provvenienti da diverse Sources.
-
-   Qua noi ne dobbiamo parlare internamente perché per un terzo é difficile capire perché esistono 3 Endpoints con Activity + Pois .... magari lascieremo solo questo........
-
-
-
-   http://tourism.opendatahub.bz.it/api/ODHActivityPoiTypes
-   per il filtro
-
-   type, subtype, poitype
-
-
-
-
-
-
-
-   Articles
-
-
-
-   http://tourism.opendatahub.bz.it/api/ArticleTypes
-   per l’articlestypefilter
-
-
-
-
-   Common sarebbe il menu dove sono tuti calls con
-
-   -Regions, Metaregions, Districts, Municipality, Skiarea, Skiregion, Tourismassociations etc…
-
-   Common non ha tipi dentro
-
-
-
-   Poi esistono ancora
-
-
-
-   Webcams
-
-   -Lista di Webcams
-
+Types of input data
+-------------------
+
+
+.. note:: This section is :strong:`Work in Progress` and will be
+   expanded with additional types of input data.
+
+Since calls in the tourism domain are quite generic and revolve around
+a few common calls (see section :ref:`tourism-api-call-structure`), we
+showed a couple of filters that can be used to reduce the result set
+and make the query more precise. Depending on the type of filter, a
+different type of data must be entered to have a successful result,
+otherwise the filter will not match. In this section we show the most
+common types of data that should be provided, besides the common
+strings, dates, and integers.
+
+.. _bitmask-value:
+
+:strong:`Bitmask` value	
+   A Bitmasks value is a kind of shorthand that can be entered in a
+   filter to obtain results for different types of that filter's
+   accepted values. Each of the accepted values has a code that is a
+   power of two (1, 2, 4, 8, and so on), hence each sum of different
+   codes produces a unique number. The advantage is that, instead of
+   entering multiple strings that should be matched, you simply need
+   to enter a number as a filter, that is the sum of the values'
+   corresponding codes. See :ref:`Example 3 <tour-ex3>`.
+
+
+:strong:`Lists`
+   A list is an (unordered) sequence of items. The available values
+   are usually listed on the right-hand side of the filter, along with
+   the separator, which is a :strong:`comma` (:strong:`,`). In a few
+   cases, in which more lists are accepted as filter.
+
+:strong:`Compound values`
+   Compound values refer to those values that need a prefix before the
+   type of value. See for example :ref:`Example2 <tour-ex2>` for a
+   deeper explanation and  :ref:`Example 1 <tour-ex1>` for a sample
+   query that fails because  a wrong compound value was supplied.
+
+
+:strong:`Language`
+   The descriptions of items in the dataset appear in three languages:
+   Italian, German, and English. To retrieve values only in one
+   language, enter :strong:`it`, :strong:`de`, or :strong:`en`,
+   respectively.
