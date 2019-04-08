@@ -18,59 +18,10 @@ email of the dataset you would like to access.
 Basic authentication
 --------------------
 
-Basic authentication can be used with the :ref:`tourism-datasets`.
-
-.. rubric:: If you use a browser.
-
-Go to the swagger interface of the API (in our example we use the
-:ref:`accommodation dataset <accommodation-dataset>`). Here,
-authentication can be used simply by trying to execute an API call. As
-:numref:`basic-auth` shows, click on the :button:`Try it out!` button
-and a new dialog will appear, in which you can supply the username and
-password. This method is convenient if you need to call one method at
-a time.
- 
-.. _basic-auth:
-
-.. figure:: /images/basic-auth.png
-   :width: 80%
-
-   Authentication for one API call. 
-
-However, if you need to execute multiple API call on the same dataset,
-a more useful method is to insert the username and password directly
-in the two appropriate fields on top of swagger interface (they are
-framed in red in :numref:`advanced-auth`).
-
-.. _advanced-auth:
-
-.. figure:: /images/advanced-auth.png
-   :width: 80%
-
-   Authentication for multiple API call.
-
-.. rubric:: If you use the Command Line Interface.
-
-Open a shell on your workstation and use a tool like :command:`curl`
-or :command:`wget`, with the appropriate options:
-
-.. option:: -X
-
-   Specify the request method (GET)
-
-.. option:: --header, -H
-
-   Add extra header information to be included in the request.
-
-Note that the :option:`--header` option is used twice: The first to
-receive the answer in :strong:`text/html` format, the second to
-provide the credentials required to access protected content.
-
-.. code:: bash
-
-   curl -X GET --header 'Accept: text/html' --header 'Authorization: Basic dGVzdDp0ZXN0aGFsbG8=' 'http://tourism.opendatahub.bz.it/Accommodation'
-
-   
+.. note:: Basic authentication was used in the Tourism domain, but is
+   not available anymore. To access data in the Tourism domain, follow
+   the new login procedure available at :ref:`data-access-tourismAPI`.
+    
 OAuth2 authentication
 ---------------------
 
@@ -126,12 +77,25 @@ Unauthorized` HTTP response.
 
 .. rubric:: If you use the Command Line Interface.
 
-Like in the case of basic authentication, API calls can be done using
-a tool like :command:`curl` or :command:`wget`, with the same
-:option:`-X` and :option:`--header` options, with the slight
-difference that the :option:`--header` option is used twice: The first
-to require the format of the response, the second to provide the
-credentials.
+Open a shell on your workstation and use a tool like :command:`curl`
+or :command:`wget`, with the appropriate options:
+
+.. option:: -X
+	       
+   Specify the request method (GET)
+
+.. option:: --header, -H
+
+   Add extra header information to be included in the request.
+
+Note that the :option:`--header` option is used twice: The first to
+receive the answer in :strong:`text/html` format, the second to
+provide the credentials required to access protected content.
+   
+API calls can be done using a tool like :command:`curl` or
+:command:`wget`, with the same :option:`-X` and :option:`--header`
+option used twice: The first to require the format of the response,
+the second to provide the credentials, like for example:
 
 .. code:: bash
 
