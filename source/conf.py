@@ -20,6 +20,7 @@
 # import sys
 # sys.path.insert(0, os.path.abspath('.'))
 
+import io
 import time
 current_year = time.strftime('%Y')
 
@@ -38,7 +39,8 @@ extensions = [
     'sphinx.ext.ifconfig',
     'sphinx.ext.extlinks',
     'sphinx.ext.imgconverter',
-    'sphinx_tabs.tabs'
+    'sphinx_tabs.tabs',
+    'sphinxcontrib.googleanalytics'
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -273,6 +275,7 @@ html_show_sphinx = False
 # implements a search results scorer. If empty, the default will be used.
 #
 # html_search_scorer = 'scorer.js'
+googleanalytics_id = 'UA-138331709-2'
 
 # Output file base name for HTML help builder.
 htmlhelp_basename = 'OpenDataHubDocsdoc'
