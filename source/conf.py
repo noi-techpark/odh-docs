@@ -137,7 +137,7 @@ rst_prolog = """
 .. role:: greenswbutton 
 
 
-""" + file("replace.rst").read()
+""" + open("replace.rst").read()
 
 #facility to shorten/change external links to datasets - useful if hosting changes
 
