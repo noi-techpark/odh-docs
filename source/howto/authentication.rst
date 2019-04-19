@@ -4,7 +4,7 @@ How to use authentication
 =========================
 
 As described in section :ref:`authentication`, there are two methods
-to access protected data in the dataset: Basic and OAuth2
+to access protected data in the dataset: Bearer Token Login and OAuth2
 authentication. Both authentication methods can be used within a
 browser or from the command line, with only slight differences. In
 this section we show how to use authentication within the |odh|\,
@@ -15,13 +15,12 @@ To obtain the credentials, please address your enquiry to the contact
 email of the dataset you would like to access.
 
 
-Basic authentication
---------------------
+Bearer Token Login
+------------------
 
-.. note:: Basic authentication was used in the Tourism domain, but is
-   not available anymore. To access data in the Tourism domain, follow
-   the new login procedure available at :ref:`data-access-tourismAPI`.
-    
+Bearer token login is used to access the :ref:`tourism-datasets`;
+description of the procedure is available at :ref:`data-access-tourismAPI`.
+
 OAuth2 authentication
 ---------------------
 
