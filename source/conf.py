@@ -292,7 +292,7 @@ latex_elements = {
 
      # Additional stuff for the LaTeX preamble.
      #
-     # 'preamble': '',
+     'preamble': r'\usepackage{bookmark}',
 
      # Latex figure (float) alignment
      #
