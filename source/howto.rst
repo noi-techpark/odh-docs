@@ -17,6 +17,7 @@ information about each of them is provided.
    howto/tourism/tips
    howto/authentication
    howto/development
+   howto/postman
 
 
 *****
@@ -38,8 +39,6 @@ information about each of them is provided.
    calls and various tricks&tips for the Tourism domain.
     
 .. rubric:: Miscellaneous
-	    
-.. For every area, some information common to all howtos is provided.
 
 #. :doc:`/howto/authentication`.  Developers and Code Contributors
    have a dedicated tutorial to help them bootstrapping the
@@ -47,3 +46,6 @@ information about each of them is provided.
 
 #. :doc:`howto/development`. This tutorial is still in development and
    not so useful at the moment!
+
+#. :doc:`howto/postman`. This howto guides you in the setup of Postman,
+   a popular API development environment.
