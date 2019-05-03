@@ -97,3 +97,8 @@ Glossary
      Statistical graphics are means to display statistical data with
      the purpose to ease their interpretations. Common statistical
      graphics include pie charts, histograms, and scatter plot.
+
+   ODHtags
+     In the tourism domain, this name refers to all the tags/filter
+     that refer to data that have been validated by the Open Data Hub
+     team.
