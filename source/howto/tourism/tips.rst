@@ -128,15 +128,13 @@ accept string?
    (Skihütte)
 
 The `categorycodefilter` parameter accepts integers instead of
-strings. The code of each category is a power of 2, so to search in
-multiple categories, simply :strong:`add` the respective codes and
-pass them as value of the parameter. For example, to search for
-Restaurants (1) and Pizzerias (32), pass :strong:`33` to
-`categorycodefilter`::
+strings, in :ref:`bitmask-value <bitmask-value>`. The code of each
+category is a power of 2, so to search in multiple categories, simply
+:strong:`add` the respective codes and pass them as value of the
+parameter. For example, to search for Restaurants (1) and Pizzerias
+(32), pass :strong:`33` to `categorycodefilter`::
 
   http://tourism.opendatahub.bz.it/api/Gastronomy?categorycodefilter=33
-
-
 
 Tips and Tricks
 ~~~~~~~~~~~~~~~
@@ -155,21 +153,26 @@ filter?
 
 .. _tour-tt2:
 
-.. rubric:: TT2. `odhactive` and filter starting with `odh`.
+.. rubric:: TT2. `odhactive` and filters starting with `odh`.
 	    
 |q| What is the purpose of the `odhactive` filter? And what do all the
 filters prefixed with :strong:`odh` stand for?
    
-|a| `odh` simply stands for |odh|. There are fields like `active` and
-`odhactive`. Datasets filtered with the former return all data sent by
+.. _odhtags:
+
+|a| In the datasets, there are filters like `active` and `odhactive`,
+where `odh` simply stands for |odh|. Filters starting with
+:strong:`odh` are collectively called :term:`odhtags`.
+
+Datasets filtered with the former return all data sent by
 the dataset provider, while the latter returns those validated by the
-|odh| team as well. Ths parameter is useful in a number of use
+|odh| team as well. This parameter is useful in a number of use
 cases. Suppose that the |odh| team receives a dataset contains name
 and location of ski lifts within South Tyrol's ski areas. If the
 dataset has not been updated in a few years, some entry in that
 dataset might be non valid anymore, for example a ski lift has been
 replaced by a cable car or has been dismantled. If this case has been
-verified by the |odh| team, the entry referring to that skilift will
+verified by the |odh| team, the entry referring to that ski lift will
 not appear in the |odh|\.
 
 
@@ -208,5 +211,5 @@ other, use :strong:`43` as :monospace:`seed` and write :strong:`2`,
 :strong:`56`, or the desired value as :monospace:`pagenumber`.
 
 If you do not enter the :strong:`seed`, you could find an item that
-was already shown before, because the API can not guarante that the
+was already shown before, because the API can not guarantee that the
 same sorting is used in different queries.
