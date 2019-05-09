@@ -1,0 +1,89 @@
+
+.. role:: greenbtn
+.. role:: blackbtn
+   
+How to insert and modify NOI Events
+===================================
+
+After reading this article, you will be able to use the |odh| tourism
+portal to insert, modify, and delete events that take place at NOI
+Techpark in Bolzano (in the remainder, :strong:`NOI events`).
+
+Preliminaries
+-------------
+
+Since you must login to create events, you need valid credentials to
+be able to add NOI events, that you should have received from the
+|odh| team.
+
+Go to http://tourism.opendatahub.bz.it and click on Log in (top right
+corner)
+
+.. image:: /images/events/login.png
+   :width: 90%
+
+Provide your credentials, then you will be redirected to your
+homepage, that shows among other information, the roles you have
+within the |odh|\.
+
+
+Creation of a new NOI Event
+---------------------------
+
+Once logged in, go to :menuselection:`ODH Data --> Events NOI -->
+Events EURAC NOI`.
+
+.. image:: /images/events/newevent.png
+   :scale: 70%  
+
+You will now see a list of events that will take place at Bolzano's
+NOI Techpark today or in the next days. For each event, the
+description, start and end date, and the location where it takes place
+are shown. If the event is marked as :strong:`Active`, it is displayed
+on the official NOI web page at https://today.noi.bz.it/.
+
+.. image:: /images/events/eventlist.png
+   :width: 90%
+
+In order to add a new event, click on the :greenbtn:`New` button to
+create a new event.
+
+In the dialog that opens, fill in all the fields you deem necessary,
+especially the title and description at least in one of the three
+available languages.
+
+.. image:: /images/events/createevent.png
+   :width: 90%
+
+   
+Remember to tick the `Active` and `noi.bz.it Active` checkboxes: The
+latter allows the event to show up on https://today.noi.bz.it/.
+
+If the event is set to take place in more rooms, click on the
+:button:`Room Management` button to add more rooms and time slots to
+the event.
+
+If the event has a web page and/or a video trailer, you can add a link
+to them in the `Web Page (URL)` and `Video (URL)` text-fields.
+
+It is even possible to add images to the event, by clicking on the
+`Images` tab on top of the dialog and then on :button:`Choose File` to
+upload a file. For each image, a few information can be added:
+
+* The author's name.
+* The licence used for the image, either :strong:`Proprietary` or
+  :strong:`CC0`. |cc0-badge|
+
+  .. hint:: We prefer that a :strong:`CC0` licence be used; it is
+     neccessary to have the rights to upload the photo with
+     :strong:`CC0`.
+
+* The position of the image within the gallery, if you upload more
+  than one image. Image in position :strong:`0` will be the cover page
+  of the gallery
+
+When you provided all the necessary information, click on
+:blackbtn:`Create` to create the event.
+
+If you later need to modify the event, click  on the :button:`Edit`
+button next to the event in the event list.

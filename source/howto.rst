@@ -18,6 +18,7 @@ information about each of them is provided.
    howto/authentication
    howto/development
    howto/postman
+   howto/noievents
 
 
 *****
@@ -44,8 +45,11 @@ information about each of them is provided.
    have a dedicated tutorial to help them bootstrapping the
    environment and start coding right away.
 
-#. :doc:`howto/development`. This tutorial is still in development and
+#. :doc:`/howto/development`. This tutorial is still in development and
    not so useful at the moment!
 
-#. :doc:`howto/postman`. This howto guides you in the setup of Postman,
+#. :doc:`/howto/postman`. This howto guides you in the setup of Postman,
    a popular API development environment.
+
+#. :doc:`/howto/noievents`. In this howto you will learn how to enter
+   and modify NOI events directly from the |odh| portal.

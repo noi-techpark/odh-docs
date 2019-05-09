@@ -77,6 +77,36 @@ div.topic {
   /* -khtml-border-radius: 4px; */
 }
 
+.greenbtn {
+ display: inline-block;
+  text-decoration: none;
+  padding: 1px 6px;
+  font-size: 0.9em;
+  color: white;
+  background-color: #43AC6A;
+  /*border-radius: 4px*/
+  /* -moz-border-radius: 4px; */
+  /* -webkit-border-radius: 4px; */
+  /* -o-border-radius: 4px; */
+  /* -ms-border-radius: 4px; */
+  /* -khtml-border-radius: 4px; */
+}
+
+.blackbtn {
+ display: inline-block;
+  text-decoration: none;
+  padding: 1px 6px;
+  font-size: 0.9em;
+  color: white;
+  background-color: #3F3F3F;
+  /*border-radius: 4px*/
+  /* -moz-border-radius: 4px; */
+  /* -webkit-border-radius: 4px; */
+  /* -o-border-radius: 4px; */
+  /* -ms-border-radius: 4px; */
+  /* -khtml-border-radius: 4px; */
+}
+
 .std-term:before{
     content:"\f518";
     font-family: "Font Awesome 5 Free";

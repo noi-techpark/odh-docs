@@ -23,6 +23,8 @@
 .. |auth| image:: /images/authorisation-required-orange.png
    :alt: This dataset requires authorisation
 
+.. |cc0-badge| image:: /images/cc0.png
+
 .. App's status
 
 .. |alpha| image:: /images/status-alpha-lightblue.png
