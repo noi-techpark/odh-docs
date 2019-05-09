@@ -6,7 +6,7 @@ team.
 
 There are two possibilities to interact with the data exposed by the
 |odh|'s Tourism API: You can simply browse the data using the
-dedicated portal or you can retrieve data and manipulated them within
+dedicated portal or you can retrieve data and manipulate them within
 your application. The former method is described in
 :ref:`data-explore-tourismAPI`, while the latter is described in the
 next section.
