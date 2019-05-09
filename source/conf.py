@@ -132,7 +132,6 @@ rst_prolog = """
 .. role:: uline
 .. role:: button
 .. role:: monospace
-.. role:: button
 .. role:: greenswbutton 
 
 
