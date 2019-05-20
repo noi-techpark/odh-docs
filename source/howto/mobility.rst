@@ -1,6 +1,6 @@
 
-Echarging Stations Howto
-------------------------
+HOWTO access e-Charging Stations Data
+-------------------------------------
 
 This howto uses the :ref:`E-charging stations dataset <echarging-dataset>`
 to showcase a few basic API calls, whose output will be needed in most
