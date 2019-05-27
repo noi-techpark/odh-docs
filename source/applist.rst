@@ -1,3 +1,5 @@
+.. _applist:
+
 Apps built from |ODH| datasets
 ==============================
 

@@ -22,13 +22,10 @@ As a user I can...
 ------------------
 
 ...install and use an app built on top of the API.
-   Browse the list of available applications developed by
-   third-parties, choose one that you are interested in, install it
-   and try it out, then send feedback to their developers if you feel
-   something is wrong or missing.
-
-   While we plan to keep an up-to-date list of those applications, as of
-   |today|, no such application that we are aware of has been released.
+   Browse the list of :ref:`available applications developed by
+   third-parties <applist>`, choose one that you are interested in,
+   install it and try it out, then send feedback to their developers
+   if you feel something is wrong or missing.
 
 ...explore the data in the datasets.
    Choose a dataset from the list of :ref:`available_datasets` and
@@ -40,9 +37,6 @@ As a user I can...
    Moreover, if you are interested in datasets that are not yet in our
    collection, get in touch with the |odh| team to discuss your
    request.
-
-No software installation is needed: Go to the list of apps (not yet
-available) or the list of datasets and start from there.
 
 .. _app-developer:
 
