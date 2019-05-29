@@ -38,56 +38,29 @@ All the projects listed in this section have been built during various
 hackathons and must be considered as `Experimental`. |alpha|
 
 
-.. tabs::
 
-   .. group-tab:: Summer Lido Hackathon 2018 |alpha|
+.. only:: html
+	  
+   .. tabs::
 
+      .. tab:: Summer Lido Hackathon 2018 |alpha|
 
-      Projects developed during the `Summer Lido Hackathon 2018
-      <http://hackathon.bz.it/edition/summer-2018>`_ 
+	 .. include:: /apps/summerlido2018.rst
 
-      * `South Tyrol Crime Scene (STCS)
-	<:hp:south-tyrol-crime-scene-stcs->`_
-	is an interactive thriller combining traditional storytelling
-	and augmented reality.
-	
-      * `SAMA - Smart Application Medical Appointment
-	<:hp:sama---smart-application-medical-appointment>`_
-	is a prototype for the booking of appointments in the South
-	Tyrolean hospitals.
-	
-      * `IFC Converter and AIVRTour
-	<https://hackathon.bz.it/project/ifc-converter-and-aivrtour>`_
-	is on the one side a converter of 3D reality data formats
-	(form ifc to dae/obj), while on the other side it applies AI
-	to virtual reality for museums, real estates, and on tourism.
-	
-      * `Travel & Win <:hp:travel-win>`_
-	is an app for South Tyrol tourists that can collect points to
-	receive gifts.
-	
-      * `Memorama <:hp:ugo>`_ Get your
-	pictures printed on paper and delivered to your hotel.
-	
-      * `Sportmap.net <:hp:sportmap.net>`_
-	Creation of a OpenData map with trendy sport locations,
-	courses, & events.
-      
-      * `Game of Alps <:hp:game-of-alps>`_
-	Get unique experiences by completing challenges around South
-	Tyrol. Gather crystals and collect rewards from local tourist
-	offices. Additionally get discounts for restaurants and
-	entrance tickets.
+      .. tab:: HackTheAlps 2018 |alpha|
 
-   .. group-tab:: HackTheAlps 2018 |alpha|
+	 .. include:: /apps/hackthealps2018.rst
 
-      Projects developed during `HackTheAlps 2018
-      <http://hackathon.bz.it/edition/september-2018>`_. 
-	
-      * `Activity Crystal
-	<http://hackathon.bz.it/project/activity-crystal>`_ goal of
-	the project was to build something simple & fun that gets
-	people off their couches.
+.. only:: latex or latexpdf or epub
+
+   .. topic::  Summer Lido Hackathon 2018 |alpha|
+
+      .. include:: /apps/summerlido2018.rst
+
+   .. topic:: HackTheAlps 2018 |alpha|
+	 
+      .. include:: /apps/hackthealps2018.rst
+
 
 
 	
@@ -121,7 +94,7 @@ Beta Stage Apps
 Production Stage
 ----------------
 
-* http://www.sudtirol.info. This website uses data from the
+* https://www.suedtirol.info. This website uses data from the
   :ref:`tourism-datasets` to display events in the region of South
   Tyrol and other useful information to help tourists organise their
   holiday in South Tyrol.
