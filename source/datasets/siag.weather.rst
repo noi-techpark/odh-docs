@@ -4,7 +4,6 @@
 
 
 ==============  ========================================================
-License         |auth| 
 Output          XML\ :sup:`#`
 E-mail contact  meteo@provinz.bz.it
 API version     --

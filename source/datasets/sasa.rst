@@ -7,7 +7,6 @@ in South Tyrol and, through a few subsets, additional information
 about lines, station boards, and news.
 
 ==============  ========================================================
-License         |bysa| 
 Output          geoJSON
 E-mail contact  info\@sasabus\.org
 API version     v1

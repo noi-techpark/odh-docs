@@ -11,7 +11,6 @@ keywords :strong:`MuseumData` and :Strong:`SuedtirolWein` in the
 `source` filter of the dataset.
    
 ==============  ========================================================
-License         museum and wine data |cc0|\, other data |auth| 
 Output          JSON, mime-type application/json
 E-mail contact  |contact|
 API version     v1

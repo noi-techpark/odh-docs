@@ -4,8 +4,8 @@
 Datasets
 ========
 
-The goal of the |odh| Project is to make available datasets containing
-data about the South Tyrolean Ecosystem, to allow third parties to
+The goal of the |odh| project is to make available datasets containing
+data about the South Tyrolean ecosystem, to allow third parties to
 develop novel applications on top of them, consuming the exposed
 data. These applications may range from a simple processing of
 datasets to extract statistical data and to display the result in
@@ -15,14 +15,15 @@ them in some useful way.
 
 .. changed |today| to a static date 4 iaa
    
-.. note:: This page was last updated on 15th January 2019, hence all
+.. note:: This page was last updated on 07 of June 2019, hence all
    information about the availability of datasets is correct as of
    this date. This page will be updated in due time as soon as more
    material will be made available.
 
-   This page will be soon removed, as all the information statically
-   provided here will be in the near future be replaced by :ref:`the
-   broker service <broker>`, which dynamically maintains the list.
+   ..
+      This page will be soon removed, as all the information statically
+      provided here will be in the near future be replaced by :ref:`the
+      broker service <broker>`, which dynamically maintains the list.
 
 As seen in :numref:`domains-diagram`, data originate from different
 domains (Mobility, Tourism, and so on); they are gathered from sensors
@@ -34,22 +35,15 @@ people know that the charging outlet is available.
 
 .. topic:: A note about datasets.
 
-   At the time of writing, only a few datasets are published. As
-   mentioned before in this section, the goal is to expose datasets
-   containing :strong:`only Open Data`, which is at the moment not the
-   case for all datasets. Indeed, some of the datasets contain data
-   that can not be distributed under an open licence like, e.g., |cc0|
-   or |bysa|. Therefore, to allow the highest possible data to be
-   shared, an authentication mechanism has been implemented, to
-   prevent access to the data in the datasets that has not yet been
-   published as |od|\.
-
-   Datasets which require authentication are marked with the |auth|
-   badge. If you are interested in accessing closed data, you can try
-   to contact the dataset owner or express your interest to the |odh|
-   team.
-
-   Please refer to section :ref:`authentication` for details.
+   At the time of writing, only a few datasets are completely
+   published as open data. While the goal is to expose :strong:`only
+   Open Data`, it is not yet possible for the |odh| team to guarantee
+   the availability as open data of all the data in the datasets,
+   because the distribution licensing is decided by the copyright
+   holder of the dataset. Since some of the datasets may contain data
+   that can not be distributed by the |odh| team under an open licence
+   like, e.g., |cc0| or |bysa|, a user will be able to retrieve only
+   those data that are distributed as :strong:`Open Data`.
 
 For each domain the available datasets are listed. Please refer to the
 next sections for a complete list. 
@@ -65,7 +59,6 @@ Datasets in the Mobility Domain
 In this section, the following information are provided for each of
 the above-listed dataset:
 
-* The licence of the data present in the dataset.
 * The output format of the API call.
 * An e-mail contact for the dataset.
 * The versions of the API that can be used to access the dataset.
@@ -129,7 +122,6 @@ Datasets in the Tourism Domain
 Like in the previous section, the following information are provided
 for each of the above-listed dataset:
 
-* The licence of the data present in the dataset.
 * The output format of the API call.
 * An e-mail contact for the dataset.
 * The versions of the API that can be used to access the dataset.

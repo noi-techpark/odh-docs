@@ -9,7 +9,6 @@ board of vehicle that drive on.
 
    
 ==============  ========================================================
-License         |cc0| 
 Output          JSON, mime-type application/json
 E-mail contact  |contact|
 API version     v1

@@ -14,7 +14,6 @@ in either Italian or German at the following URLs, respectively:
 
    
 ==============  ========================================================
-License         |cc0| 
 Output          JSON, CSV, XML\ :sup:`#`
 E-mail contact  museen@provinz.bz.it
 API version     --
