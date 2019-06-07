@@ -13,7 +13,7 @@ information about each of them is provided.
 
    howto/mobility
    howto/tourism/getstarted
-   howto/tourism/access
+   howto/tourism/browse
    howto/tourism/tips
    howto/authentication
    howto/development
@@ -34,7 +34,7 @@ information about each of them is provided.
 
 #. :doc:`/howto/tourism/getstarted`. This howto describes the various
    filters available in the Tourism domain
-#. :doc:`/howto/tourism/access`. This howto provides information about
+#. :doc:`/howto/tourism/browse`. This howto provides information about
    accessing the data originating from the Tourism domain.
 #. :doc:`/howto/tourism/tips`. This howto provides some simple use cases/API
    calls and various tricks&tips for the Tourism domain.

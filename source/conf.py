@@ -92,7 +92,9 @@ language = None
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
 # This patterns also effect to html_static_path and html_extra_path
-exclude_patterns = ['replace.rst', 'dtp.rst', 'datasets', 'domains.rst', 'architecture.rst', 'unused' ] 
+exclude_patterns = ['replace.rst', 'dtp.rst', 'datasets', 'domains.rst', 'architecture.rst', 'howto/tourism/access.rst'] 
+
+
 # The reST default role (used for this markup: `text`) to use for all
 # documents.
 #
@@ -143,6 +145,7 @@ extlinks = { 'sasabus': ('http://sasabus.org/%s', None),
              ('http://ipchannels.integreen-life.bz.it/%s', None),
              'stinfo':
              ('http://tourism.opendatahub.bz.it/swagger/ui/index#%s', None),
+             'iterconcept': ('https://en.cppreference.com/w/cpp/experimental/ranges/iterator/%s', 'std::'), 
 }
 
 numfig = True
