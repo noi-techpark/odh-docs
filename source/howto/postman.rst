@@ -1,6 +1,6 @@
 .. role:: orange
 
-How to Sett Up Postman (API Development Environment)
+How to set up Postman (API Development Environment)?
 -----------------------------------------------------
 
 Postman is a popular API development environment, that is, a tool that

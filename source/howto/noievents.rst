@@ -2,8 +2,8 @@
 .. role:: greenbtn
 .. role:: blackbtn
    
-How to insert and modify NOI Events
-===================================
+How to insert and modify NOI Events?
+====================================
 
 After reading this article, you will be able to use the |odh| tourism
 portal to insert, modify, and delete events that take place at NOI

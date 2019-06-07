@@ -1,17 +1,10 @@
 
-HOWTO access e-Charging Stations Data
--------------------------------------
+How to access e-Charging Stations Data?
+---------------------------------------
 
 This howto uses the :ref:`E-charging stations dataset <echarging-dataset>`
 to showcase a few basic API calls, whose output will be needed in most
 complex calls.
-
-..
-   .. note:: This howto is a stub and will be used mostly to collect
-      feedback. It is however structured like my idea for these howots
-      and contains almost all the parts that IMHO should be contained in
-      the howtos that should be ready for our first milestone.
-  
 
        
 Dataset Information

@@ -1,17 +1,20 @@
 .. |li| replace:: :literal:`{Id}`
 
 		  
-HOWTO access Tourism Data
-=========================
+How to access Tourism Data?
+===========================
 
 
-.. note:: Information in this page might change in the next future.
+.. note:: Information in this page might be updated and improved in
+   the next future.
    
 The purpose of this howto is to quickly introduce the structure of the
 API calls, the available filters for the datasets in the Tourism
 domain, and give some general and useful information about the Tourism
 API.
-	     
+
+.. include:: /howto/tourism/access.rst
+
 .. structure of the API Calls
 
 .. _tourism-api-call-structure:
@@ -148,5 +151,3 @@ strings, dates, and integers.
    language, enter :strong:`it`, :strong:`de`, or :strong:`en`,
    respectively.
 
-
-.. include:: /howto/tourism/access.rst

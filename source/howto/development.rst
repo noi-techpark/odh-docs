@@ -3,8 +3,8 @@
 
 .. _development:
 
-How to setup your local Development Environment
-===============================================
+How to set up your local Development Environment?
+================================================
 
 This tutorial will guide you in the setup of the local infrastructure
 to be able to deploy, on top of the Big Data Platform, a new Data

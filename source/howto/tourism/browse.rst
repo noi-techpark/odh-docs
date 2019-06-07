@@ -1,5 +1,5 @@
-HOWTO use the Open Data Hub's Tourism Data Browser
-==================================================
+How to use the Open Data Hub's Tourism Data Browser?
+====================================================
 
 This how to explains the necessary steps to access and retrieve data
 from the |odh|'s tourism domain.

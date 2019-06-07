@@ -14,11 +14,11 @@ information about each of them is provided.
    howto/mobility
    howto/tourism/getstarted
    howto/tourism/browse
-   howto/tourism/tips
    howto/authentication
    howto/development
    howto/postman
    howto/noievents
+   howto/tourism/tips
 
 
 *****
@@ -32,24 +32,25 @@ information about each of them is provided.
 .. rubric:: Tourism
 
 
-#. :doc:`/howto/tourism/getstarted`. This howto describes the various
-   filters available in the Tourism domain
-#. :doc:`/howto/tourism/browse`. This howto provides information about
-   accessing the data originating from the Tourism domain.
-#. :doc:`/howto/tourism/tips`. This howto provides some simple use cases/API
-   calls and various tricks&tips for the Tourism domain.
+#. :doc:`/howto/tourism/getstarted` Description of how to access and
+   manipulate data, the input data used, and the various filters
+   available in the Tourism domain.
+#. :doc:`/howto/tourism/browse` Access to the open data provided
+   within the Tourism domain.
+#. :doc:`/howto/tourism/tips` Mini howtos, tricks&tips, and use cases
+   for data in the Tourism domain.
     
 .. rubric:: Miscellaneous
 
-#. :doc:`/howto/authentication`.  Developers and Code Contributors
-   have a dedicated tutorial to help them bootstrapping the
-   environment and start coding right away.
+#. :doc:`/howto/authentication` Access to data that are not yet open
+   (mostly for internal use).
 
-#. :doc:`/howto/development`. This tutorial is still in development and
-   not so useful at the moment!
+#. :doc:`/howto/development` Set up your workstation to develop for
+   |odh|--This tutorial is still in development and not so useful at
+   the moment!
 
-#. :doc:`/howto/postman`. This howto guides you in the setup of Postman,
-   a popular API development environment.
+#. :doc:`/howto/postman` Setup of Postman, a popular API development
+   environment, to access data from the |odh|.
 
-#. :doc:`/howto/noievents`. In this howto you will learn how to enter
-   and modify NOI events directly from the |odh| portal.
+#. :doc:`/howto/noievents` Create and modify NOI events directly from
+   the |odh| portal.

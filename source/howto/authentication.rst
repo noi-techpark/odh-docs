@@ -1,7 +1,7 @@
 .. _authentication-howto:
 
-How to use authentication
-=========================
+How to use authentication?
+==========================
 
 As described in section :ref:`authentication`, there are two methods
 to access protected data in the dataset: Bearer Token Login and OAuth2

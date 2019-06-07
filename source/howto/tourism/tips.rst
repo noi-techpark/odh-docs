@@ -1,5 +1,5 @@
-Quick and (not-so) Dirty Tips for Tourism
------------------------------------------
+Quick and (not-so) Dirty Tips for Tourism (AKA Mini-howtos)
+-----------------------------------------------------------
 
 This section contains various tips and tricks to improve and tweak the
 queries sent to the Tourism datasets, allowing more precise results to
