@@ -12,13 +12,11 @@ datasets to extract statistical data and to display the result in
 different graphic formats like pie-charts, to far more complex
 applications that combine data from different datasets and correlate
 them in some useful way.
-
-.. changed |today| to a static date 4 iaa
    
-.. note:: This page was last updated on 07 of June 2019, hence all
-   information about the availability of datasets is correct as of
-   this date. This page will be updated in due time as soon as more
-   material will be made available.
+.. note:: This page was last updated on |today| and all information
+   about the availability of datasets is correct as of this date. This
+   page will be updated in due time as soon as more material will be
+   made available.
 
    ..
       This page will be soon removed, as all the information statically
@@ -35,18 +33,27 @@ people know that the charging outlet is available.
 
 .. topic:: A note about datasets.
 
-   At the time of writing, only a few datasets are completely
-   published as open data. While the goal is to expose :strong:`only
-   Open Data`, it is not yet possible for the |odh| team to guarantee
-   the availability as open data of all the data in the datasets,
-   because the distribution licensing is decided by the copyright
-   holder of the dataset. Since some of the datasets may contain data
-   that can not be distributed by the |odh| team under an open licence
-   like, e.g., |cc0| or |bysa|, a user will be able to retrieve only
-   those data that are distributed as :strong:`Open Data`.
+   The |odh| contains many datasets: a few have been provided for
+   testing purposes, other are meant for internal use only, and other
+   contain only a part of their data that is available as Open Data.
 
-For each domain the available datasets are listed. Please refer to the
-next sections for a complete list. 
+   While the goal of the |odh| project is to expose :strong:`only Open
+   Data` and the |odh| team members always suggest to use |CC0| to
+   third-parties releasing datasets, it is not yet possible for the
+   |odh| team to guarantee the availability as open data of all the
+   data in the datasets, because the data licensing and its
+   distribution rights are decided by the copyright holder of each
+   dataset.
+
+   Since some of the datasets may contain data that can not be
+   distributed by the |odh| team under an open licence like, e.g.,
+   |cc0| or |bysa|, a user will be able to retrieve from each dataset
+   only those data that are distributed as :strong:`Open Data`.
+
+At the date ow writing, only datasets about the Mobility and Tourism
+domains are available; the available datasets in each domain are
+listed below.
+
 
 .. _mobility-datasets:
 
