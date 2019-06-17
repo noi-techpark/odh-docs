@@ -34,17 +34,20 @@ an email contact and its status and we'll add it to the list.
 Production Stage
 ----------------
 
-* https://www.suedtirol.info. This website uses data from the
-  :ref:`tourism-datasets` to display events in the region of South
+* https://www.suedtirol.info. This portal uses the data extracted from
+  the :ref:`tourism-datasets` to display events in the region of South
   Tyrol and other useful information to help tourists organise their
-  holiday in South Tyrol.
+  holiday in South Tyrol, including points of interest, excursions,
+  hikes, historical background, products, landscape, and so on.
 
 * South Tyrol Guide, the official smartphone app for exploring and
   experiencing South Tyrol, available for both `Android
   <https://play.google.com/store/apps/details?id=com.suedtirol.android>`_
   and `iPhone
   <https://itunes.apple.com/us/app/s%C3%BCdtirol-mobile-guide/id339011586?mt=8>`_
-  mobile devices.
+  mobile devices. This app offers all the functionalities of the
+  above-mentioned web site, plus the ability to locate events, points
+  of interest and the like near your current position.
 
 
 Beta Stage Apps
