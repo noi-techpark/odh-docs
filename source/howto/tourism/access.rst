@@ -5,60 +5,57 @@ Data Access and Manipulation
 ----------------------------
 
 All the APIs available for the tourism domain can be accessed from the
-same URL through their swagger interface:
+same URL through their Swagger user interface:
 http::/tourism.opendatahub.bz.it/swagger
 
-For most of the Tourism domain datasets you need credentials to access
-the data. Go to the abovementioned URL and click on `Expand
-Operations` on the far right-hand side of :strong:`Login (Get Bearer
-Token)`.  In the panel that opens (see :numref:`tourism-login`), fill
-in the :monospace:`username` and :monospace:`password` with your
-credentials.
+.. versionchanged:: 2019-May new and easier procedure to authenticate
+   and to store credentials.
 
-.. note:: :strong:`The Bearer Token Login` method replaces the
-   previous one, :strong:`LoginAPI`, which is not available anymore.
+With the introduction on the Tourism API graphic interface of a newer
+swagger version, supplying and storing the token has become easier,
+making older procedures deprecated or obsolete. Moreover, in the new
+GUI, for every API method is shown whether it can provide Open Data as
+a result and if not, it will be necessary to authenticate.
 
-.. _tourism-login:
+Authentication is easy and, unlike it happened in the past, it does
+require only to supply your credentials. From the swagger UI, click on
+the :strong:`Authorize` button on the right-hand side of the page
+(shown in the bottom-right corner in :numref:`tourism-ui`).
+
+.. _tourism-ui:
 
 .. figure:: /images/tourism-01.png
+   :width: 90% 
 
-   Login mask of the Tourism API.
+   The new Swagger UI for Tourism domain.
 
-Click on :button:`Try it out` to generate a new access token that will
-be needed for any further request (see :numref:`tourism-token`).
+A dialog window will pop up; here, supply your username and password,
+and click on :strong:`Authorize`. It is not necessary to change any
+other parameter.
 
-.. _tourism-token:
+.. _tourism-auth:
 
 .. figure:: /images/tourism-02.png
+   :width: 70% 
 
-   Token assigned to the user.
+   Providing credentials for authentication.
 
-After you have clicked on the button, the panel will expand and
-present some more data, the most important are the :strong:`Curl` and
-:strong:`Response Body` sections. In the first one, you can see the
-:strong:`POST` call sent from the API in curl format: you can use its
-content to write scripts that fetch data and automatise data fetching.
+After a few seconds a new dialog replaces the one used for
+authentication, whose most important bit is the :strong:`Authorized`
+word, that means you are now authenticated. No additional step is now
+necessary: the browser will remember the token. Click on
+:strong:`Close` to close the dialog window start browsing the Tourism
+data.
 
-The :strong:`Response Body` section contains the answer to the call
-and is a JSON-formatted string that contains a few data, the most
-important of which are:
-
-* The :strong:`access_token`, needed for any access to the data
-* The :strong:`expires_in`, the validity in seconds of the access
-  token before its expiration.
-
-To avoid writing every time the token in the API methods, copy and
-paste :strong:`only` the token without quotes from the response body
-into the textfield on the right-hand side textfield on top of the page
-(see :numref:`tourism-add-token`), then click on
-:greenswbutton:`Explore` to store the token and cache it for
-all the next queries.
-
-.. _tourism-add-token:
+.. _tourism-auth-ok:
 
 .. figure:: /images/tourism-03.png
+   :width: 70% 
 
-   Caching the received token into the tourism' swagger interface.
+   Successful authentication.
+
+To log out, click again on :strong:`Authorize` in the Swagger UI (see
+:numref:`tourism-ui`), then on :strong:`Logout`.
 
 Using Command Line Tools
 ~~~~~~~~~~~~~~~~~~~~~~~~
