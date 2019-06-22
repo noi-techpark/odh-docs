@@ -12,6 +12,7 @@ information about each of them is provided.
    :maxdepth: 1
 
    howto/mobility
+   howto/mobilityanalytics
    howto/tourism/getstarted
    howto/tourism/browse
    howto/authentication
@@ -29,8 +30,11 @@ information about each of them is provided.
    contained in this howto can be applied to any dataset of the
    mobility domain.
 
-.. rubric:: Tourism
+#. :doc:`/howto/mobilityanalytics`. This howto guides you in
+   browse and query data produces from the sensors used in the mobility
+   domain.
 
+.. rubric:: Tourism
 
 #. :doc:`/howto/tourism/getstarted` Description of how to access and
    manipulate data, the input data used, and the various filters
