@@ -34,11 +34,21 @@ an email contact and its status and we'll add it to the list.
 Production Stage
 ----------------
 
-* https://www.suedtirol.info. This portal uses the data extracted from
-  the :ref:`tourism-datasets` to display events in the region of South
+* https://www.suedtirol.info.  This portal is the official touristic
+  site of the South Tyrol region. It uses the data extracted from the
+  :ref:`tourism-datasets` to display events in the region of South
   Tyrol and other useful information to help tourists organise their
-  holiday in South Tyrol, including points of interest, excursions,
-  hikes, historical background, products, landscape, and so on.
+  holiday in South Tyrol. All information are available also for every
+  region that composes South Tyrol, including historical remark and
+  proposed taste itinerary.
+
+  Additionally, it is also possible to subscribe to the newsletter, to
+  browse or search for events and points of interest. For most of the
+  points of interest there are suggestions for hiking tracks or walks
+  to reach them.
+
+  Hotel description and availability with options for booking are
+  additional services offered by the site.
 
 * South Tyrol Guide, the official smartphone app for exploring and
   experiencing South Tyrol, available for both `Android
