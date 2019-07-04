@@ -66,13 +66,61 @@ more standards and data formats might be supported in the future.
 .. _available-domains:
 	     
 Available Domains and APIs
---------------------------
+==========================
 
 .. include:: /domains.rst
 
 
 Available Datasets
-------------------
+==================
 
 The list of available datasets has been moved :doc:`to a dedicated page
 <datasets>`.
+
+
+Accessing data in the |odh|
+===========================
+
+There are different modalities to access data that are provided by the
+|odh|, that are listed here. Currently, only data from the
+:strong:`Mobility` and :strong:`Tourism` domains can be accessed, both
+from the command line and using a browser. Various dedicated tutorials
+are available in the :ref:`howto-list` section; while in section
+:ref:`how-to-contribute` you can find additional ways to interact with
+the data and the |odh| team.
+
+CLI access
+----------
+
+Command line access proves useful for scripting and quick data
+manipulation, for example within applications that gather data and
+present them to end users. On the other hand, browser access is useful
+on different levels: for the casual user, to have a look at the type
+and quality of data provided, or even to use the REST API implemented
+by the |odh| in order to get acquainted with the various methods to
+retrieve data.
+
+Browser access
+--------------
+
+By using a browser it is possible to access data in different ways:
+
+#. Go to the :ref:`applist` section of the documentation, particularly
+   sections `Production Stage` and `Beta Stage Apps`, and choose one
+   of the web sites and portals that are listed there. Each of them
+   uses the data gathered from one or more datasets to display a
+   number of useful information. You can then see how data are exposed
+   and browse them.
+
+#. Check the list of :strong:`Alpha Stage Apps` and choose one of them
+   that you think you can expand or get in touch with the authors to
+   discuss it or collaborate with them to improve them.
+   
+#. Go to the :strong:`Swagger interface` of the datasets, to learn how
+   the REST APIs are built and how you can script them to fetch data
+   for your application.
+
+#. :strong:`Analytics for Mobility` web page. This portal uses data in
+   the mobility domain to display various information about the
+   sensors, including their locations, what they measure, and actual
+   data in near-real time.

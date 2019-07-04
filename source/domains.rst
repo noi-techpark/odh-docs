@@ -36,7 +36,7 @@ other information about the tourism in South Tyrol.
 .. _authentication:
 
 Authentication
-~~~~~~~~~~~~~~
+--------------
 
 .. note:: The authentication layer is currently intended for internal
    use only.
