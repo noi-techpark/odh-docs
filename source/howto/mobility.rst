@@ -95,7 +95,7 @@ The result structure is a json list of strings, and an actual outcome
 is (shortened for the sake of clarity):
 
 
-.. code:: json
+.. code-block:: json
 
    {
      "_t": "it.bz.idm.bdp.dto.emobility.EchargingStationDto",
@@ -111,7 +111,7 @@ is (shortened for the sake of clarity):
      "paymentInfo": "https://www.alperiaenergy.eu/smart-mobility/punti-di-ricarica.html",
      "accessType": "PUBLIC",
      "address": "CLUB MAX - Fischzuchtweg - Via del Laghetto"
-   },
+   }
    {
      "_t": "it.bz.idm.bdp.dto.emobility.EchargingStationDto",
      "id": "DW-000027",
@@ -132,7 +132,7 @@ is (shortened for the sake of clarity):
      ],
      "address": "Strada al Plan Dessora",
      "reservable": true
-   },
+   }
 
 As you see from the example, many of the e-charging station's metadata
 is shared by all of them including the (unique) ID, name, location

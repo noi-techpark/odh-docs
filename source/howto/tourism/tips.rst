@@ -15,14 +15,14 @@ Example Calls
 
 .. rubric:: EX1. Why does this query return no result?
    
-.. code:: http
+.. code:: 
 	  
    http://tourism.opendatahub.bz.it/api/Gastronomy?pagesize=3&categorycodefilter=0&locfilter=reg268
 
 Because there is no value :strong:`reg268` for `locfilter`. You can
 return valid IDs to be used as locfilter using this call:
 
-.. code:: http
+.. code:: 
 	     
    http://tourism.opendatahub.bz.it/api/RegionReduced?language=it
 
@@ -33,7 +33,7 @@ An example result for this call is:
    {
      "Id": "D2633A26C24E11D18F1B006097B8970B",
      "Name": "Alta Badia"
-   },
+   }
 
 Therefore, use the ID :strong:`regD2633A26C24E11D18F1B006097B8970B` in
 `locfilter` to search for Gastronomy in the Alta Badia region.
@@ -99,7 +99,7 @@ retrieve its ID, which is:
       {
         "Id": "79CBD79551C911D18F1400A02427D15E",
 	"Name": "Lana"
-      },
+      }
 
 Then pass the string :strong:`fra79CBD79551C911D18F1400A02427D15E` as
 `locfilter`::
