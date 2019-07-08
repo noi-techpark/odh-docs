@@ -98,7 +98,6 @@ is (shortened for the sake of clarity):
 .. code-block:: json
 
    {
-     "_t": "it.bz.idm.bdp.dto.emobility.EchargingStationDto",
      "id": "ASM_00000103",
      "name": "BRIXEN_02",
      "latitude": 46.706333,
@@ -113,7 +112,6 @@ is (shortened for the sake of clarity):
      "address": "CLUB MAX - Fischzuchtweg - Via del Laghetto"
    }
    {
-     "_t": "it.bz.idm.bdp.dto.emobility.EchargingStationDto",
      "id": "DW-000027",
      "name": "San Vigilio Hotel Sport",
      "latitude": 46.698061,
