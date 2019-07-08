@@ -442,4 +442,4 @@ the database from Java or JavaScript:
 Database Design and Usage
 _________________________
 
-This section is moved into its own document, :doc:`database`.
+This section has been moved into its own document, :ref:`db-guidelines`.
