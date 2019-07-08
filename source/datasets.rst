@@ -54,6 +54,33 @@ At the date ow writing, only datasets about the Mobility and Tourism
 domains are available; the available datasets in each domain are
 listed below.
 
+Data Providers
+~~~~~~~~~~~~~~
+
+The Open Data exposed by the |odh| originate from :ref:`data sources
+<data-source-def>` owned by different actors (called :strong:`Data
+Providers`) that are mostly local public bodies. Since there is no
+direct 1-to-1 correspondence between Data Providers and datasets, we
+currently offer only a list of data providers whose data can be pulled
+from |odh|\. Indeed, a dataset can be composed of data deriving from
+different providers, while a provider can submit to |odh| more than
+one dataset.
+
+The |odh|\'s Data Providers are:
+
+* IDM S\"udtirol/Alto Adige.
+* SIAG, S\"udtirol Informatica AG - Informatica Alto Adige.
+* SASA, public transport operator.
+* Alperia, energy provider for South Tyrol.
+* Municipalities of Merano and Bolzano.
+* Carsharing Alto Adige.
+* DB rent.
+* LTS, South Tyrol Association of Tourism Organisations.
+* APPA, South Tyrolean agency for the environment.
+* InnoVie.
+* Vertical Life.
+* Suedtirol Wein.
+ 
 
 .. _mobility-datasets:
 
@@ -63,7 +90,7 @@ Datasets in the Mobility Domain
 .. contents:: List of datasets in the mobility domain.
    :local:
 
-In this section, the following information are provided for each of
+In this section, the following information is provided for each of
 the above-listed dataset:
 
 * The output format of the API call.
@@ -126,7 +153,7 @@ Datasets in the Tourism Domain
 .. contents:: List of datasets in the tourism domain.
    :local:
 
-Like in the previous section, the following information are provided
+Like in the previous section, the following information is provided
 for each of the above-listed dataset:
 
 * The output format of the API call.
