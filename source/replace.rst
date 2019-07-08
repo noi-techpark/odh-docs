@@ -44,7 +44,7 @@
 
 .. other urls
 
-.. _github repository: https://github.com/idm-suedtirol/odh-docs
+.. _github repository: https://github.com/noi-techpark/odh-docs
 .. _OpenJDK: http://openjdk.java.net/
 .. _oraclejdk:
    http://www.oracle.com/technetwork/java/javase/downloads/index.html

@@ -27,7 +27,7 @@ Before starting the development, you need to fork the original
 (upstream) repository.
 
 1. Navigate to the repository on GitHub, e.g.,
-   https://github.com/idm-suedtirol/bdp-core.
+   https://github.com/noi-techpark/bdp-core.
 
 2. Create a fork of the repository by clicking on the :strong:`Fork`
    button. If you are not logged in, you will be asked for a github
@@ -141,7 +141,7 @@ https://help.github.com/articles/configuring-a-remote-for-a-fork/.
 
    .. code-block:: bash
 
-      git remote add upstream https://github.com/idm-suedtirol/bdp-core.git
+      git remote add upstream https://github.com/noi-techpark/bdp-core.git
     
 
 3. Verify the new upstream repository you've specified for your fork.

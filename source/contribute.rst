@@ -138,14 +138,14 @@ technical bugs or suggestions as well as requests about datasets
 (i.e. points 1. to 3. above), please insert your issues on the
 following website:
 
-https://github.com/idm-suedtirol/bdp-core/issues
+https://github.com/noi-techpark/bdp-core/issues
 
 If your feedback is related to the Open Data Hub Documentation, please
 insert your issue on the following website, using the template that
 suits your needs:
 
-4. https://github.com/idm-suedtirol/odh-docs/issues/new?template=bug_report.md
-5. https://github.com/idm-suedtirol/odh-docs/issues/new?template=feedback.md
+4. https://github.com/noi-techpark/odh-docs/issues/new?template=bug_report.md
+5. https://github.com/noi-techpark/odh-docs/issues/new?template=feedback.md
 
 .. note:: You need to have a valid github account to report issues and
    interact with the |odh| team.
