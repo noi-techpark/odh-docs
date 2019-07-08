@@ -41,10 +41,10 @@ Authentication
 .. note:: The authentication layer is currently intended for internal
    use only.
 	  
-Authentication in |odh| is mainly used in the part of the |bdp| which
-exposes data to the consumer, which means by the Reader and in every
-single webservice accessing the Reader, to allow the access to closed
-data in each dataset only to those who are allowed to.
+Authentication in |odh| is mainly used when exposing data to the
+consumer, which means by the Reader and in every single web service
+accessing the Reader, to allow the access to closed data in each
+dataset only to those who are allowed to.
 
 There are currently two different authentication methods available:
 

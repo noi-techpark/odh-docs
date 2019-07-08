@@ -41,17 +41,17 @@ Glossary
 
 
    Data Collector   
-      A component of the |bdp|\, a data collector is used to gather
-      data from datasets and send them to the |bdp|\. See the
+      A component of the |odh|\, a data collector is used to gather
+      data from datasets and send them to the |odh|\. See the
       :ref:`detailed description <data-collector-def>`.
 	    
    DTO   
-      A core component of the |bdp|\, the DTO transforms the data
-      format of a Source into a |bdp|\-understandable format.  See the
+      A core component of the |odh|\, the DTO transforms the data
+      format of a Source into a |odh|\-understandable format.  See the
       :ref:`detailed description <dto-def>`.
    
    Writer   
-      The Writer is a core component of the |bdp|\. It receives data
+      The Writer is a core component of the |odh|\. It receives data
       from the Data Collectors and stores them in the Database.  See
       the :ref:`detailed description <writer-def>`.
 
@@ -65,7 +65,7 @@ Glossary
       description <database-def>`.
 
    Reader      
-      A core component of the |bdp|\, the Reader extract data form the
+      A core component of the |odh|\, the Reader extract data form the
       Database and sends it to the web services.  See the
       :ref:`detailed description <reader-def>`.
 

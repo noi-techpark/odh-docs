@@ -7,9 +7,8 @@ How to set up your local Development Environment?
 =================================================
 
 This tutorial will guide you in the setup of the local infrastructure
-to be able to deploy, on top of the Big Data Platform, a new Data
-Collector Object starting from a simple :strong:`HelloWorld` template
-we provide.
+to be able to deploy, on top of the |ODH|, a new Data Collector Object
+starting from a simple :strong:`HelloWorld` template we provide.
 
 This tutorial is divided into three parts:
 
@@ -63,7 +62,7 @@ command, provided you have the rights to install software:
 
 .. code-block:: bash
 	  
-   odh@bdp:~$ sudo apt-get install git openjdk-8-jdk postgresql postgis maven tomcat8 xmlstarlet 
+   odh@odh:~$ sudo apt-get install git openjdk-8-jdk postgresql postgis maven tomcat8 xmlstarlet 
 
 This command ensures that all dependencies are installed as well. If
 you have none of these package already installed, you might need to
@@ -110,7 +109,7 @@ read.
 
 .. code-block:: bash
 
-   odh@bdp:~$ service tomcat8 status
+   odh@odh:~$ service tomcat8 status
      tomcat8.service - LSB: Start Tomcat.
       Loaded: loaded (/etc/init.d/tomcat8; bad; vendor preset: enabled)
       Active: active (running) since Wed 2018-06-13 16:36:28 CEST; 14min ago
@@ -118,16 +117,16 @@ read.
       CGroup: /system.slice/tomcat8.service
               └─13828 /usr/lib/jvm/java-8-openjdk-amd64/bin/java -Djava.util.logging.config.file=/var/lib/tomcat8/conf/lo
 
-   Jun 13 16:36:23 bdp systemd[1]: Starting LSB: Start Tomcat....
-   Jun 13 16:36:23 bdp tomcat8[13802]:  * Starting Tomcat servlet engine tomcat8
-   Jun 13 16:36:28 bdp tomcat8[13802]:    ...done.
-   Jun 13 16:36:28 bdp systemd[1]: Started LSB: Start Tomcat..
+   Jun 13 16:36:23 odh systemd[1]: Starting LSB: Start Tomcat....
+   Jun 13 16:36:23 odh tomcat8[13802]:  * Starting Tomcat servlet engine tomcat8
+   Jun 13 16:36:28 odh tomcat8[13802]:    ...done.
+   Jun 13 16:36:28 odh systemd[1]: Started LSB: Start Tomcat..
 
 If you do not use systemd, the command will have a differnt output:
 
 .. code-block:: bash
 
-   odh@bdp:~$ service tomcat8 status
+   odh@odh:~$ service tomcat8 status
    [ ok ] Tomcat servlet engine is running with pid 11357.
 
 From a browser you should connect to http://localhost:8080/ (replace
@@ -144,7 +143,7 @@ entering your password.
 
 .. code-block:: bash
    
-   odh@bdp:~$ sudo service tomcat8 start
+   odh@odh:~$ sudo service tomcat8 start
    [sudo] password for odh: 
 
 You can check again if tomcat is running with the command
@@ -158,7 +157,7 @@ You can use the :command:`netstat` command line utility, like this:
    
 .. code-block:: bash
    
-  root@bdp:~$ netstat -plnt4
+  root@odh:~$ netstat -plnt4
   Active Internet connections (only servers)
   Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program name    
   tcp        0      0 0.0.0.0:5432              0.0.0.0:*               LISTEN      2427/postgresql        
