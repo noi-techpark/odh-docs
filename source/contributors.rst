@@ -34,6 +34,7 @@ Before starting the development, you need to fork the original
    username and password.
 
    .. figure:: /images/contributors/fork.png
+      :scale: 90%
 
       Fork the repository.
 
@@ -50,7 +51,8 @@ Before starting the development, you need to fork the original
    .. _checkout-pic:
    
    .. figure:: /images/contributors/checkout.png
-	       
+      :scale: 90%
+	      
       Clone the repository.
 
 Create a pull request
@@ -92,7 +94,8 @@ you need to follow the following steps.
    .. _create-pr:
 
    .. figure:: /images/contributors/create-pull-request-development.png
-
+      :scale: 90%
+	      
       Create a pull request.
 
    You can write some description as well, to describe your changes.
@@ -106,7 +109,8 @@ you need to follow the following steps.
    .. _pr-ok:
 
    .. figure:: /images/contributors/show-pull-request-ok-development.png
-
+      :scale: 90%
+      
       Show outcome of a pull request.
 
 8. In addition, the detailed logs can be viewed under
@@ -189,9 +193,9 @@ shown in :numref:`merge-conflict-picture`.
 
 .. _merge-conflict-picture:
 
-.. figure::
-   /images/contributors/merge-conflicts-conflicts-development.png
-
+.. figure:: /images/contributors/merge-conflicts-conflicts-development.png
+   :scale: 90%
+	   
    A Merge Conflict.
 
 To resolve merge conflicts, the following steps must be performed.
@@ -219,9 +223,9 @@ To resolve merge conflicts, the following steps must be performed.
 
    .. _merge-conflict-output:
 
-   .. figure::
-      /images/contributors/merge-conflicts-output-development.png
-
+   .. figure:: /images/contributors/merge-conflicts-output-development.png
+      :scale: 90%
+	      
       Merge conflicts output.
 
 4. Go the the listed files of the previous output and resolve all
@@ -229,9 +233,9 @@ To resolve merge conflicts, the following steps must be performed.
    :literal:`<<<<<<<` and end with :literal:`>>>>>>>`. The
    :literal:`=======` separates the two versions.
 
-   .. figure::
-      /images/contributors/merge-conflicts-solving-development.png
-
+   .. figure:: /images/contributors/merge-conflicts-solving-development.png
+      :scale: 90%
+	      
       Solving a merge conflicts.
 
    You can resolve a conflict by simply deleting one of the two
@@ -256,9 +260,9 @@ To resolve merge conflicts, the following steps must be performed.
 6. After resolving the merge conflicts, the pull request can be
    accepted.
 
-   .. figure::
-      /images/contributors/merge-conflicts-resolved-development.png 
-
+   .. figure:: /images/contributors/merge-conflicts-resolved-development.png 
+      :scale: 90%
+	      
       A solved merge conflict. 
 
 A more detailed description can be found in the online Github help: https://help.github.com/articles/resolving-a-merge-conflict-using-the-command-line/.
