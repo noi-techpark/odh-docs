@@ -93,7 +93,7 @@ the (unique) sensor at that location.
 
 In the case of Parking data--and in a few other datasets, the
 :strong:`+` will be replaced by a green, yellow, or red circle,
-meaning that there are many, a few or no free parkings in that lot.
+meaning that there are many, a few, or no free parkings in that lot.
 
 For other types of sensors, the :strong:`+` simply disappears.
 
