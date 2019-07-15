@@ -1,6 +1,7 @@
 .. |li| replace:: :literal:`{Id}`
 
-		  
+.. _tourism-data-howto:
+   
 How to access Tourism Data?
 ===========================
 

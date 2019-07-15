@@ -1,3 +1,6 @@
+
+.. _tourism-data-browser-howto:
+
 How to use the Open Data Hub's Tourism Data Browser?
 ====================================================
 

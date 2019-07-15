@@ -106,21 +106,35 @@ Browser access
 By using a browser it is possible to access data in different ways:
 
 #. Go to the :ref:`applist` section of the documentation, particularly
-   sections `Production Stage` and `Beta Stage Apps`, and choose one
-   of the web sites and portals that are listed there. Each of them
-   uses the data gathered from one or more datasets to display a
-   number of useful information. You can then see how data are exposed
-   and browse them.
+   sub-sections `Production Stage` and `Beta Stage Apps`, and choose
+   one of the web sites and portals that are listed there. Each of
+   them uses the data gathered from one or more |ODH|\'s datasets to
+   display a number of useful information. You can then see how data
+   are exposed and browse them.
 
-#. Check the list of :strong:`Alpha Stage Apps` and choose one of them
-   that you think you can expand or get in touch with the authors to
-   discuss it or collaborate with them to improve them.
+#. In the same :ref:`applist` section, you can also check the list of
+   the :strong:`Alpha Stage Apps` and choose one of them that you
+   think you can expand, then get in touch with the authors to suggest
+   additional features or collaborate with them to discuss its further
+   development to improve it.  
    
-#. Go to the :strong:`Swagger interface` of the datasets, to learn how
-   the REST APIs are built and how you can script them to fetch data
-   for your application.
+#. Access the `ODH Tourism data browser
+   <http://tourism.opendatahub.bz.it/>`_ and search for the Open Data
+   available in the Tourism domain. You can simply use those data for
+   your convenience, or you might even find a novel way to exploit
+   those data and use them in an app or portal you are going to
+   develop. A detailed howto is available:
+   :ref:`tourism-data-browser-howto` to help you getting acquainted
+   with the browser.
 
-#. :strong:`Analytics for Mobility` web page. This portal uses data in
-   the mobility domain to display various information about the
-   sensors, including their locations, what they measure, and actual
-   data in near-real time.
+#. Go to the :strong:`Swagger interface` of the datasets, located at
+   http://tourism.opendatahub.bz.it/swagger/, to learn how the REST
+   APIs are built and how you can script them to fetch data for your
+   application. To get started, there is a dedicated howto:
+   :ref:`tourism-data-howto` that will guide you in the first steps.
+
+#. Open the :strong:`Analytics for Mobility` web page, at
+   https://analytics.mobility.bz.it/. This portal uses data in the
+   mobility domain to display various information about the sensors,
+   including their locations, what they measure, and actual data in
+   near-real time. You can retrieve 
