@@ -95,7 +95,7 @@ Browser access
 By using a browser it is possible to access data in different ways:
 
 #. Go to the :ref:`applist` section of the documentation, particularly
-   sub-sections `Production Stage` and `Beta Stage Apps`, and choose
+   sub-sections :ref:`production-stage-apps` and :ref:`beta-stage-apps`, and choose
    one of the web sites and portals that are listed there. Each of
    them uses the data gathered from one or more |ODH|\'s datasets to
    display a number of useful information. You can then see how data
@@ -116,11 +116,19 @@ By using a browser it is possible to access data in different ways:
    :ref:`tourism-data-browser-howto` to help you getting acquainted
    with the browser.
 
-#. Go to the :strong:`Swagger interface` of the datasets, located at
+#. Go to the :strong:`Swagger interface` of the datasets in the
+   Tourism domain, located at
    http://tourism.opendatahub.bz.it/swagger/, to learn how the REST
    APIs are built and how you can script them to fetch data for your
    application. To get started, there is a dedicated howto:
    :ref:`tourism-data-howto` that will guide you in the first steps.
+
+#. Access the :strong:`Swagger interface` of the datasets in the
+   Mobility domain. Check the link for each of them in section
+   :ref:`mobility-datasets`. Like in the case of the tourism' Swagger
+   interface, you can learn REST API call for that domain and fetch
+   data for your application. There is a dedicated howto to learn more
+   how to interact with this interface: ref:`mobility-data-howto`
 
 #. Open the :strong:`Analytics for Mobility` web page, at
    https://analytics.mobility.bz.it/. This portal uses data in the
@@ -150,4 +158,4 @@ used to retrieve the data will be shown.
 
 .. rubric:: Footnotes
 
-.. [#] Add the dataset name, see :ref:`mobility-datasets`.
+.. [#] Add the dataset name, see :ref:`mobility-datasets`. 

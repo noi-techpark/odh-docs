@@ -30,9 +30,10 @@ If you are developing one application with the data provided by
 datasets of the |odh| project, send an email with a short description,
 an email contact and its status and we'll add it to the list.
 
+.. _production-stage-apps:
 
-Production Stage
-----------------
+Production Stage Apps
+---------------------
 
 * https://www.suedtirol.info.  This portal is the official touristic
   site of the South Tyrol region. It uses the data extracted from the
@@ -59,6 +60,7 @@ Production Stage
   above-mentioned web site, plus the ability to locate events, points
   of interest and the like near your current position.
 
+.. _beta-stage-apps:
 
 Beta Stage Apps
 ---------------
@@ -86,6 +88,7 @@ Beta Stage Apps
   this web site shows real-time data of the meteorological stations
   that are situated along public streets.
   
+.. _alpha-stage-apps:
 
 Alpha Stage Apps
 ----------------
