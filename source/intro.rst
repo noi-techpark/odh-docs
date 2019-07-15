@@ -89,17 +89,6 @@ are available in the :ref:`howto-list` section; while in section
 :ref:`how-to-contribute` you can find additional ways to interact with
 the data and the |odh| team.
 
-CLI access
-----------
-
-Command line access proves useful for scripting and quick data
-manipulation, for example within applications that gather data and
-present them to end users. On the other hand, browser access is useful
-on different levels: for the casual user, to have a look at the type
-and quality of data provided, or even to use the REST API implemented
-by the |odh| in order to get acquainted with the various methods to
-retrieve data.
-
 Browser access
 --------------
 
@@ -138,3 +127,14 @@ By using a browser it is possible to access data in different ways:
    mobility domain to display various information about the sensors,
    including their locations, what they measure, and actual data in
    near-real time. You can retrieve 
+
+CLI access
+----------
+
+Command line access proves useful for scripting and quick data
+manipulation, for example within applications that gather data and
+present them to end users. On the other hand, browser access is useful
+on different levels: for the casual user, to have a look at the type
+and quality of data provided, or even to use the REST API implemented
+by the |odh| in order to get acquainted with the various methods to
+retrieve data.
