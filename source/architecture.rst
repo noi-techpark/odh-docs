@@ -57,6 +57,14 @@ Data Source
    belongs to a single domain. Data are usually automatically picked
    up by sensors and stored in some format, like for example CSV.
 
+   .. note:: Each data source is provided by one :strong:`Data
+      Provider`. Since a data provider may decide to not publish its
+      data on the |odh| anymore, or new data providers can join the
+      |odh| in the future, they are not an official part of the
+      |odh|. You can learn more on this, including the current list of
+      data providers, in the :ref:`dedicated section <data-providers>`
+      of the documentation.
+
 .. _dataset-def:
 
 Dataset
@@ -65,7 +73,7 @@ Dataset
    datasets, that include slight different data, but there is at least
    one dataset per domain. The underlying data format of a dataset
    :strong:`never` changes.
-
+  
 .. _data-collector-def:
 
 Data Collectors
@@ -96,7 +104,6 @@ Writer
 .. _bdp-def:
 
 BDP Core
-
    The |bdpc| lays at the very core of the |odh|\. Its main task is to
    keep the database updated, to be able to always serve up-to-date
    data. To do so, it relies on the Writer, to gather new or updated
