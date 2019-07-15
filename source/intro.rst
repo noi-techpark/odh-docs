@@ -89,24 +89,13 @@ are available in the :ref:`howto-list` section; while in section
 :ref:`how-to-contribute` you can find additional ways to interact with
 the data and the |odh| team.
 
-CLI access
-----------
-
-Command line access proves useful for scripting and quick data
-manipulation, for example within applications that gather data and
-present them to end users. On the other hand, browser access is useful
-on different levels: for the casual user, to have a look at the type
-and quality of data provided, or even to use the REST API implemented
-by the |odh| in order to get acquainted with the various methods to
-retrieve data.
-
 Browser access
 --------------
 
 By using a browser it is possible to access data in different ways:
 
 #. Go to the :ref:`applist` section of the documentation, particularly
-   sub-sections `Production Stage` and `Beta Stage Apps`, and choose
+   sub-sections :ref:`production-stage-apps` and :ref:`beta-stage-apps`, and choose
    one of the web sites and portals that are listed there. Each of
    them uses the data gathered from one or more |ODH|\'s datasets to
    display a number of useful information. You can then see how data
@@ -127,14 +116,46 @@ By using a browser it is possible to access data in different ways:
    :ref:`tourism-data-browser-howto` to help you getting acquainted
    with the browser.
 
-#. Go to the :strong:`Swagger interface` of the datasets, located at
+#. Go to the :strong:`Swagger interface` of the datasets in the
+   Tourism domain, located at
    http://tourism.opendatahub.bz.it/swagger/, to learn how the REST
    APIs are built and how you can script them to fetch data for your
    application. To get started, there is a dedicated howto:
    :ref:`tourism-data-howto` that will guide you in the first steps.
+
+#. Access the :strong:`Swagger interface` of the datasets in the
+   Mobility domain. Check the link for each of them in section
+   :ref:`mobility-datasets`. Like in the case of the tourism' Swagger
+   interface, you can learn REST API call for that domain and fetch
+   data for your application. There is a dedicated howto to learn more
+   how to interact with this interface: ref:`mobility-data-howto`
 
 #. Open the :strong:`Analytics for Mobility` web page, at
    https://analytics.mobility.bz.it/. This portal uses data in the
    mobility domain to display various information about the sensors,
    including their locations, what they measure, and actual data in
    near-real time. You can retrieve 
+
+CLI access
+----------
+
+Command line access proves useful for scripting and quick data
+manipulation, for example within applications that gather data and
+present them to end users. On the other hand, browser access is useful
+on different levels: for the casual user, to have a look at the type
+and quality of data provided, or even to use the REST API implemented
+by the |odh| in order to get acquainted with the various methods to
+retrieve data.
+
+Command line access to the data is usually carried out with the
+:program:`wget` utility, used to retrieve information in a
+non-interactive way. To learn about the correct syntax and parameter
+to use, go to the :strong:`swagger interface` of the `tourism
+<http://tourism.opendatahub.bz.it/swagger>`_ or `mobility
+<http://ipchannels.integreen-life.bz.it/>`_ [#]_ domains and execute a
+query: with the output, also the corresponding :program:`wget` command
+used to retrieve the data will be shown.
+
+.. rubric:: Footnotes
+
+.. [#] Add the dataset name, see :ref:`mobility-datasets`. 

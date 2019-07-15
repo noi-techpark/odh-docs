@@ -1,3 +1,4 @@
+.. _mobility-data-howto:
 
 How to access e-Charging Stations Data?
 ---------------------------------------
