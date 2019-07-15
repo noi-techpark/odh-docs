@@ -138,3 +138,16 @@ on different levels: for the casual user, to have a look at the type
 and quality of data provided, or even to use the REST API implemented
 by the |odh| in order to get acquainted with the various methods to
 retrieve data.
+
+Command line access to the data is usually carried out with the
+:program:`wget` utility, used to retrieve information in a
+non-interactive way. To learn about the correct syntax and parameter
+to use, go to the :strong:`swagger interface` of the `tourism
+<http://tourism.opendatahub.bz.it/swagger>`_ or `mobility
+<http://ipchannels.integreen-life.bz.it/>`_ [#]_ domains and execute a
+query: with the output, also the corresponding :program:`wget` command
+used to retrieve the data will be shown.
+
+.. rubric:: Footnotes
+
+.. [#] Add the dataset name, see :ref:`mobility-datasets`.
