@@ -6,7 +6,7 @@ Data Access and Manipulation
 
 All the APIs available for the tourism domain can be accessed from the
 same URL through their swagger interface:
-http::/tourism.opendatahub.bz.it/swagger
+http://tourism.opendatahub.bz.it/swagger
 
 For most of the Tourism domain datasets you need credentials to access
 the data. Go to the abovementioned URL and click on `Expand
