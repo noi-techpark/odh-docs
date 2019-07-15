@@ -54,6 +54,8 @@ At the date ow writing, only datasets about the Mobility and Tourism
 domains are available; the available datasets in each domain are
 listed below.
 
+.. _data-providers:
+
 Data Providers
 ~~~~~~~~~~~~~~
 
