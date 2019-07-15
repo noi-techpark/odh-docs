@@ -34,7 +34,7 @@ Before starting the development, you need to fork the original
    username and password.
 
    .. figure:: /images/contributors/fork.png
-      :scale: 90%
+      :width: 90%
 
       Fork the repository.
 
@@ -51,7 +51,7 @@ Before starting the development, you need to fork the original
    .. _checkout-pic:
    
    .. figure:: /images/contributors/checkout.png
-      :scale: 90%
+      :width: 90%
 	      
       Clone the repository.
 
@@ -94,7 +94,7 @@ you need to follow the following steps.
    .. _create-pr:
 
    .. figure:: /images/contributors/create-pull-request-development.png
-      :scale: 90%
+      :width: 90%
 	      
       Create a pull request.
 
@@ -109,7 +109,7 @@ you need to follow the following steps.
    .. _pr-ok:
 
    .. figure:: /images/contributors/show-pull-request-ok-development.png
-      :scale: 90%
+      :width: 90%
       
       Show outcome of a pull request.
 
@@ -194,7 +194,7 @@ shown in :numref:`merge-conflict-picture`.
 .. _merge-conflict-picture:
 
 .. figure:: /images/contributors/merge-conflicts-conflicts-development.png
-   :scale: 90%
+   :width: 90%
 	   
    A Merge Conflict.
 
@@ -224,7 +224,7 @@ To resolve merge conflicts, the following steps must be performed.
    .. _merge-conflict-output:
 
    .. figure:: /images/contributors/merge-conflicts-output-development.png
-      :scale: 90%
+      :width: 90%
 	      
       Merge conflicts output.
 
@@ -234,7 +234,7 @@ To resolve merge conflicts, the following steps must be performed.
    :literal:`=======` separates the two versions.
 
    .. figure:: /images/contributors/merge-conflicts-solving-development.png
-      :scale: 90%
+      :width: 90%
 	      
       Solving a merge conflicts.
 
@@ -261,7 +261,7 @@ To resolve merge conflicts, the following steps must be performed.
    accepted.
 
    .. figure:: /images/contributors/merge-conflicts-resolved-development.png 
-      :scale: 90%
+      :width: 90%
 	      
       A solved merge conflict. 
 
