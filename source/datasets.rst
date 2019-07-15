@@ -68,18 +68,18 @@ one dataset.
 
 The |odh|\'s Data Providers are:
 
-* IDM S\"udtirol/Alto Adige.
-* SIAG, S\"udtirol Informatica AG - Informatica Alto Adige.
+* IDM Südtirol/Alto Adige.
+* SIAG, Südtirol Informatica AG - Informatica Alto Adige.
 * SASA, public transport operator.
 * Alperia, energy provider for South Tyrol.
-* Municipalities of Merano and Bolzano.
+* Municipality of Bolzano.
+* Municipality of Merano.
 * Carsharing Alto Adige.
 * DB rent.
 * LTS, South Tyrol Association of Tourism Organisations.
 * APPA, South Tyrolean agency for the environment.
 * InnoVie.
-* Vertical Life.
-* Suedtirol Wein.
+* Südtirol Wein.
  
 
 .. _mobility-datasets:
