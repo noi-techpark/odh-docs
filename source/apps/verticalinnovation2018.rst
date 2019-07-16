@@ -1,7 +1,7 @@
 Projects developed during `Vertical Innovation 2018
 <http://hackathon.bz.it/edition/november-2018>`_.
 
-* `Smart Bivouac <https://hackathon.bz.it/project/smart-bivouac>` is
+* `Smart Bivouac <https://hackathon.bz.it/project/smart-bivouac>`_ is
   the project that won the :strong:`Cassa di Risparmio / Sparkasse
   award` at the Hackathon. The idea on which the project is based is
   to avoid crowded bivouacs in the South Tyrolean area with the use of
