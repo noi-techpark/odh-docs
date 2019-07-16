@@ -102,13 +102,18 @@ hackathons and must be considered as `Experimental`. |alpha|
 	  
    .. tabs::
 
-      .. tab:: Summer Lido Hackathon 2018 |alpha|
+      .. tab:: Summer Lido Hackathon 2018 
 
 	 .. include:: /apps/summerlido2018.rst
 
-      .. tab:: HackTheAlps 2018 |alpha|
+      .. tab:: HackTheAlps 2018
 
 	 .. include:: /apps/hackthealps2018.rst
+
+      .. tab:: Vertical Innovation Hackathon 2018 
+
+	 .. include:: /apps/verticalinnovation2018.rst
+      
 
 .. only:: latex or latexpdf or epub
 
@@ -120,6 +125,9 @@ hackathons and must be considered as `Experimental`. |alpha|
 	 
       .. include:: /apps/hackthealps2018.rst
 
+   .. topic:: Vertical Innovation Hackathon 2018 
 
+      .. include:: /apps/verticalinnovation2018.rst
+      
 
 	
