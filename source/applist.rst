@@ -3,16 +3,11 @@
 Apps built from |ODH| datasets
 ==============================
 
-This section features a list of applications, and some additional
-useful information about them, built using the :doc:`datasets` that
-the |odh| team makes available.
+This section features a list of applications--and their
+descriptions--built using the :doc:`datasets` that the |odh| team
+makes available.
 
-The additional information may include the home page of the app, the
-contact address of the developers, a description, and the type of the
-application (mobile app, web page, and so on)..
-
-However, the most important attribute of each project is probably its
-:strong:`status`, which might be one of these three:
+Applications are grouped according to their status in three categories:
 
 * Experimental status, aka `alpha stage`, shown by the |alpha|
   badge. Applications falling in this category are in the early stage
@@ -34,13 +29,13 @@ an email contact and its status and we'll add it to the list.
 Production Stage
 ----------------
 
-* https://www.suedtirol.info.  This portal is the official touristic
-  site of the South Tyrol region. It uses the data extracted from the
-  :ref:`tourism-datasets` to display events in the region of South
-  Tyrol and other useful information to help tourists organise their
-  holiday in South Tyrol. All information are available also for every
-  region that composes South Tyrol, including historical remark and
-  proposed taste itinerary.
+* :strong:`https://www.suedtirol.info`.  This portal is the official
+  touristic site of the South Tyrol region. It uses the data extracted
+  from the :ref:`tourism-datasets` to display events in the region of
+  South Tyrol and other useful information to help tourists organise
+  their holiday in South Tyrol. All information are available also for
+  every region that composes South Tyrol, including historical remark
+  and proposed taste itinerary.
 
   Additionally, it is also possible to subscribe to the newsletter, to
   browse or search for events and points of interest. For most of the
