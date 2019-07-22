@@ -29,7 +29,7 @@ an email contact and its status and we'll add it to the list.
 Production Stage
 ----------------
 
-* :strong:`https://www.suedtirol.info`.  This portal is the official
+* https://www.suedtirol.info.  This portal is the official
   touristic site of the South Tyrol region. It uses the data extracted
   from the :ref:`tourism-datasets` to display events in the region of
   South Tyrol and other useful information to help tourists organise
