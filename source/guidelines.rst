@@ -10,8 +10,11 @@ contracted to write code for the |odh| project (|odh| Core Hacker) or
 app
 
    
-.. include:: /guidelines/introduction.rst
-.. include:: /guidelines/platform.rst
-.. include:: /guidelines/database.rst
-.. include:: /guidelines/dtp.rst
-.. include:: /contributors.rst
+.. toctree::
+   :maxdepth: 2
+   
+   /guidelines/introduction.rst
+   /guidelines/platform.rst
+   /guidelines/database.rst
+   /guidelines/dtp.rst
+   /contributors.rst
