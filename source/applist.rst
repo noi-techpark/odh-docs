@@ -9,17 +9,17 @@ makes available.
 
 Applications are grouped according to their status in three categories:
 
+* Production status. These applications are already used in production
+  environment.  
+* Development status, aka `beta stage`, shown by the |beta|
+  badge. Application in beta stage are developed actively and might
+  already be suitable for a production environment.
 * Experimental status, aka `alpha stage`, shown by the |alpha|
   badge. Applications falling in this category are in the early stage
   of development, and might be for example, a proof of concept or the
   outcome of a hackathon. They might not be maintained or developed
   further and should not be considered mature enough to be deployed in
   a production environment.
-* Development status, aka `beta stage`, shown by the |beta|
-  badge. Application in beta stage are developed actively and might
-  already be suitable for a production environment.
-* Production status. These applications are already used in production
-  environment.  
 
 If you are developing one application with the data provided by
 datasets of the |odh| project, send an email with a short description,
@@ -112,17 +112,20 @@ hackathons and must be considered as `Experimental`. |alpha|
 
 .. only:: latex or latexpdf or epub
 
-   .. topic::  Summer Lido Hackathon 2018 |alpha|
+   Summer Lido Hackathon 2018 |alpha|
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-      .. include:: /apps/summerlido2018.rst
+   .. include:: /apps/summerlido2018.rst
 
-   .. topic:: HackTheAlps 2018 |alpha|
+   HackTheAlps 2018 |alpha|
+   ~~~~~~~~~~~~~~~~~~~~~~~~
 	 
-      .. include:: /apps/hackthealps2018.rst
+   .. include:: /apps/hackthealps2018.rst
 
-   .. topic:: Vertical Innovation Hackathon 2018 
+   Vertical Innovation Hackathon 2018
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-      .. include:: /apps/verticalinnovation2018.rst
+   .. include:: /apps/verticalinnovation2018.rst
       
 
 	
