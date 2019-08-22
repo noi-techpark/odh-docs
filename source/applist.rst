@@ -91,8 +91,6 @@ Alpha Stage Apps
 All the projects listed in this section have been built during various
 hackathons and must be considered as `Experimental`. |alpha|
 
-
-
 .. only:: html
 	  
    .. tabs::
