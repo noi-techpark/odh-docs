@@ -22,7 +22,8 @@
    our dataset included with this documentation.
 
 
-No software installation is needed: Go to the list of apps (not yet
-available, be the first!) or API documentation/datasets and start from
-there, and develop in a language of your choice an application that
-uses our data.
+No software installation is needed: Go to the list of :ref:`available
+applications developed by third-parties <applist>` that use |odh|
+data, to the API documentation of each :ref:`Dataset
+<available_datasets>` and start from there, and develop in a language
+of your choice an application that uses our data.

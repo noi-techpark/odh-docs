@@ -10,17 +10,16 @@ repository, to make feature requests or suggestions for improvement.
 
 Depending on your interest on the |odh| Project, we welcome your
 participation to the project in one of the roles that we have
-envisioned: :ref:`User <user>`, :ref:`App developer <app-developer>`,
-:ref:`Core Hacker <core-hacker>`.
+envisioned: :strong:`User`, :strong:`App developer`, :strong:`Core
+Hacker`, and :strong:`Data Provider`. You can find out below which type of
+role better fits with your expertise!
 
 You can also help the |odh| project grow and improve by
 :ref:`reporting bugs or asking new features <bug-reports>`.
 
-
-
 .. only:: html
 
-   .. tabs::
+   .. tabs::     
 
       .. tab:: As a user I can...
 	 
@@ -34,37 +33,39 @@ You can also help the |odh| project grow and improve by
 	 
 	 .. include:: /includes/corehacker.rst
 
-      .. tab:: Bug reports and feature requests
+      .. tab:: As a Data Provider I can....
 	 
-	 .. include:: /includes/bugrepo.rst
+	 .. include:: /includes/dataproviders.rst
+
 
 
 .. only:: latex or epub
-
-   .. _user:
       
    As a user I can...
    ------------------
    
    .. include:: /includes/user.rst
 		
-   .. _app-developer:
-
    As an App Developer I can...
    ----------------------------
    
    .. include:: /includes/appdevel.rst
    
-   .. _core-hacker:
-   
    As a |odh| Core Hacker I can...
    -------------------------------
 
    .. include:: /includes/corehacker.rst
-		
-   .. _bug-reports:
-   
-   Bug reporting and feature requests
-   ----------------------------------
 
-   .. include:: /includes/bugrepo.rst
+   As a Data Provider I can....
+   ----------------------------
+	 
+   .. include:: /includes/dataproviders.rst
+
+
+.. _bug-reports:
+   
+Bug reporting and feature requests
+----------------------------------
+
+.. include:: /includes/bugrepo.rst
+ 

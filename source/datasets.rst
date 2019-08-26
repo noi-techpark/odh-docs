@@ -18,41 +18,13 @@ them in some useful way.
    page will be updated in due time as soon as more material will be
    made available.
 
-   ..
-      This page will be soon removed, as all the information statically
-      provided here will be in the near future be replaced by :ref:`the
-      broker service <broker>`, which dynamically maintains the list.
-
 As seen in :numref:`domains-diagram`, data originate from different
 domains (Mobility, Tourism, and so on); they are gathered from sensors
-and packed within :strong:`datasets`. `Sensors` can be for example GPS
-devices installed on buses that send their real-time geographic
-position or a small electronic device on a plug of an e-charging
-station that checks the if the plug is being used or not, to let
-people know that the charging outlet is available.
-
-.. topic:: A note about datasets.
-
-   The |odh| contains many datasets: a few have been provided for
-   testing purposes, other are meant for internal use only, and other
-   contain only a part of their data that is available as Open Data.
-
-   While the goal of the |odh| project is to expose :strong:`only Open
-   Data` and the |odh| team members always suggest to use |CC0| to
-   third-parties releasing datasets, it is not yet possible for the
-   |odh| team to guarantee the availability as open data of all the
-   data in the datasets, because the data licensing and its
-   distribution rights are decided by the copyright holder of each
-   dataset.
-
-   Since some of the datasets may contain data that can not be
-   distributed by the |odh| team under an open licence like, e.g.,
-   |cc0| or |bysa|, a user will be able to retrieve from each dataset
-   only those data that are distributed as :strong:`Open Data`.
-
-At the date ow writing, only datasets about the Mobility and Tourism
-domains are available; the available datasets in each domain are
-listed below.
+and packed together by :ref:`data-providers`. `Sensors` can be for
+example GPS devices installed on buses that send their real-time
+geographic position or a small electronic device on a plug of an
+e-charging station that checks the if the plug is being used or not,
+to let people know that the charging outlet is available.
 
 .. _data-providers:
 
@@ -90,6 +62,30 @@ The |odh|\'s Data Providers are:
 * InnoVie.
 * Südtirol Wein.
  
+
+
+.. topic:: A note about datasets.
+
+   The |odh| contains many datasets: a few have been provided for
+   testing purposes, other are meant for internal use only, and other
+   contain only a part of their data that is available as Open Data.
+
+   While the goal of the |odh| project is to expose :strong:`only Open
+   Data` and the |odh| team members always suggest to use |CC0| to
+   third-parties releasing datasets, it is not yet possible for the
+   |odh| team to guarantee the availability as open data of all the
+   data in the datasets, because the data licensing and its
+   distribution rights are decided by the copyright holder of each
+   dataset.
+
+   Since some of the datasets may contain data that can not be
+   distributed by the |odh| team under an open licence like, e.g.,
+   |cc0| or |bysa|, a user will be able to retrieve from each dataset
+   only those data that are distributed as :strong:`Open Data`.
+
+At the date ow writing, only datasets about the Mobility and Tourism
+domains are available; the available datasets in each domain are
+listed below.
 
 .. _mobility-datasets:
 
