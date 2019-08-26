@@ -1,6 +1,6 @@
-.. _how-to-contribute:
+.. _getting-involved:
 
-How To Contribute
+Getting Involved
 =================
 
 There are different possibilities to participate in the |odh| Project,

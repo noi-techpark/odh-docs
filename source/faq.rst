@@ -12,7 +12,7 @@ about the project.
    |a| The project is described in section :ref:`project-intro`.
  
 |q| I am interested in taking part in the |odh| project.
-   |a| Check section :ref:`how-to-contribute`.
+   |a| Check section :ref:`getting-involved`.
   
 |q| I am a developer, are there guidelines for the development?
    |a| Sure! Check the dedicated section: :ref:`devels-resources`.

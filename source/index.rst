@@ -13,7 +13,7 @@ Welcome to |odh| Documentation Repository!
 
    Introduction & Project Overview <intro>
    datasets
-   contribute
+   involved
    guidelines
    howto
    applist

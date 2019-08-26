@@ -86,7 +86,7 @@ There are different modalities to access data that are provided by the
 :strong:`Mobility` and :strong:`Tourism` domains can be accessed, both
 from the command line and using a browser. Various dedicated tutorials
 are available in the :ref:`howto-list` section; while in section
-:ref:`how-to-contribute` you can find additional ways to interact with
+:ref:`getting-involved` you can find additional ways to interact with
 the data and the |odh| team.
 
 Browser access
@@ -95,11 +95,11 @@ Browser access
 By using a browser it is possible to access data in different ways:
 
 #. Go to the :ref:`applist` section of the documentation, particularly
-   sub-sections :ref:`production-stage-apps` and :ref:`beta-stage-apps`, and choose
-   one of the web sites and portals that are listed there. Each of
-   them uses the data gathered from one or more |ODH|\'s datasets to
-   display a number of useful information. You can then see how data
-   are exposed and browse them.
+   sub-sections :ref:`production-stage-apps` and
+   :ref:`beta-stage-apps`, and choose one of the web sites and portals
+   that are listed there. Each of them uses the data gathered from one
+   or more |ODH|\'s datasets to display a number of useful
+   information. You can then see how data are exposed and browse them.
 
 #. In the same :ref:`applist` section, you can also check the list of
    the :strong:`Alpha Stage Apps` and choose one of them that you
