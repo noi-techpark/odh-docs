@@ -62,18 +62,18 @@ Data Providers
 A :strong:`Data Provider` is any entity that shares their Open Data
 with the |odh| project, allowing their free reuse (ideally under a
 free licence like |cc0| or |bysa|) from any third-party that relies on
-the |odh| to build their application.  These entities can be private
+the |odh| to build their application. These entities can be private
 companies or enterprises, public bodies, and even private citizen, if
-they have interesting data to share.
+they have interesting data about South Tyrol to share.
 
 The Open Data exposed by the |odh| originate from :ref:`data sources
 <data-source-def>` owned by different actors (called :strong:`Data
 Providers`) that are mostly local public bodies. Since there is no
 direct 1-to-1 correspondence between Data Providers and datasets, we
 currently offer only a list of data providers whose data can be pulled
-from |odh|\. Indeed, a dataset can be composed of data deriving from
-different providers, while a provider can submit to |odh| more than
-one dataset.
+from |odh|\. Indeed, an |odh| dataset can be composed of data deriving
+from different providers, while a provider can submit to |odh|
+multiple types of data that will belong to more than one dataset.
 
 The |odh|\'s Data Providers are:
 
