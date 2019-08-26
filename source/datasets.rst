@@ -59,6 +59,13 @@ listed below.
 Data Providers
 ~~~~~~~~~~~~~~
 
+A :strong:`Data Provider` is any entity that shares their Open Data
+with the |odh| project, allowing their free reuse (ideally under a
+free licence like |cc0| or |bysa|) from any third-party that relies on
+the |odh| to build their application.  These entities can be private
+companies or enterprises, public bodies, and even private citizen, if
+they have interesting data to share.
+
 The Open Data exposed by the |odh| originate from :ref:`data sources
 <data-source-def>` owned by different actors (called :strong:`Data
 Providers`) that are mostly local public bodies. Since there is no
