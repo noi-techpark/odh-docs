@@ -156,6 +156,9 @@ to use, go to the :strong:`swagger interface` of the `tourism
 query: with the output, also the corresponding :program:`wget` command
 used to retrieve the data will be shown.
 
+
+.. include:: /includes/authentication.rst
+
 .. rubric:: Footnotes
 
 .. [#] Add the dataset name, see :ref:`mobility-datasets`. 
