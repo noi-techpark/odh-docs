@@ -52,7 +52,7 @@ The calls defined for every datasets are:
   the dataset, that can be later used to ask more precise queries to
   the dataset.
 
-.. common filters
+.. _common-filters:
 
 Filters common to all datasets
 ------------------------------

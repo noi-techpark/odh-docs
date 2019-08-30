@@ -92,7 +92,15 @@ the data and the |odh| team.
 Browser access
 --------------
 
-By using a browser it is possible to access data in different ways:
+Accessing data in the |odh| by using a browser is useful on different
+levels: for the casual user, who can have a look at the type and
+quality of data provided; for a developer, that can use the REST API
+implemented by the |odh| or even check if the results of his app are
+coherent with those retrieved with the API; for everyone in order to
+get acquainted with the various methods to retrieve data.
+
+More in detail, these are the possibilities to interact with |odh|\'s
+data by using a browser:
 
 #. Go to the :ref:`applist` section of the documentation, particularly
    sub-sections :ref:`production-stage-apps` and
@@ -134,31 +142,55 @@ By using a browser it is possible to access data in different ways:
    https://analytics.mobility.bz.it/. This portal uses data in the
    mobility domain to display various information about the sensors,
    including their locations, what they measure, and actual data in
-   near-real time. You can retrieve 
+   near-real time. You can retrieve data gathered by the sensors
+   directly from the dataset, in almost real-time.
 
 CLI access
 ----------
 
-Command line access proves useful for scripting and quick data
-manipulation, for example within applications that gather data and
-present them to end users. On the other hand, browser access is useful
-on different levels: for the casual user, to have a look at the type
-and quality of data provided, or even to use the REST API implemented
-by the |odh| in order to get acquainted with the various methods to
-retrieve data.
+Unlike browser access, that provides an interactive access to data,
+with the option to incrementally refine a query, command line access
+proves useful for non-interactive, one-directional, and quick data
+retrieval in a number of scenarios, including:
+
+* Scripting, data manipulation and interpolation, to be used in
+  statistical analysis.
+* Applications that gather data and present them to the end users.
+* Automatic updates to third-parties websites or kiosk-systems like
+  e.g., in the hall of hotels.
 
 Command line access to the data is usually carried out with the
-:program:`wget` utility, used to retrieve information in a
-non-interactive way. To learn about the correct syntax and parameter
-to use, go to the :strong:`swagger interface` of the `tourism
-<http://tourism.opendatahub.bz.it/swagger>`_ or `mobility
-<http://ipchannels.integreen-life.bz.it/>`_ [#]_ domains and execute a
-query: with the output, also the corresponding :program:`wget` command
-used to retrieve the data will be shown.
+:program:`curl` Linux utility, which is used to retrieve information
+in a non-interactive way from a remote site and can be
+used with a variety of options and can save the contents it downloads,
+which can them be send to other applications and manipulated.
 
+The number of options required by :program:`curl` to retrieve data
+from |odh|\'s dataset is limited, usually they are not more than 3 or
+4, but their syntax and content might become long and not easily
+readable by a human, due to the number of :ref:`filters
+<common-filters>` available. For example, to retrieve the list of all
+points of interests in South Tyrol, the following command should be
+used:
+
+.. code-block::
+
+   curl -X GET "http://tourism.opendatahub.bz.it/api/ODHActivityPoi?pagenumber=1&pagesize=10&type=63&subtype=null&poitype=null&idlist=null&locfilter=null&langfilter=null&areafilter=null&highlight=null&source=null&odhtagfilter=null&odhactive=null&active=null&seed=null&latitude=null&longitude=null&radius=null" -H
+   "accept: application/json"
+
+
+Your best opportunity to learn about the correct syntax and parameters
+to use is to go to the :strong:`swagger interface` of the `tourism
+<http://tourism.opendatahub.bz.it/swagger>`_ or `mobility`
+(http\://ipchannels.integreen-life.bz.it/<dataset>/swagger-ui.html
+[#]_) domains and execute a query: with the output, also the
+corresponding :program:`curl` command used to retrieve the data will
+be shown.
+
+.. rubric:: Notes
+
+.. [#] You need to provide the dataset name, for example
+       http://ipchannels.integreen-life.bz.it/parking/swagger-ui.html,
+       see :ref:`mobility-datasets` for full links.
 
 .. include:: /includes/authentication.rst
-
-.. rubric:: Footnotes
-
-.. [#] Add the dataset name, see :ref:`mobility-datasets`. 
