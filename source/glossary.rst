@@ -29,6 +29,12 @@ Glossary
       pairs, organised into lists (arrays, sequences,
       vectors). Nesting of key-values and of lists is supported.
 
+   CSV
+      CSV stands for Comma Separated Value, and is a file in which
+      the content is organised in a fixed number of fields per line,
+      separated by a comma (,) or some other symbol, like a semi-colon,
+      a slash, or a vertical bar.
+
    Key-value
       Also called name-value pair or attribute-name pair, a key-value
       pair is a simple data structure in which information are stored
@@ -102,3 +108,15 @@ Glossary
      In the tourism domain, this name refers to all the tags/filter
      that refer to data that have been validated by the Open Data Hub
      team.
+
+   Sensor
+     Within the |odh|\, a sensor is intended as a kind of `device`
+     that gathers data and sends them to another device which stores
+     them in a machine-readable format, used to exchange or publish
+     them. Depending on the domain a sensor may collect environmental
+     data in the mobility domain (like, e.g., temperature, humidity,
+     pressure), but in the tourism domain a `sensor` can collect
+     the guests in a hotel or the people attending at an event. In
+     these cases, the `device` is usually a human (e.g., the hotel's
+     receptionist and the organiser of the event), and the data are
+     digitalised manually.
