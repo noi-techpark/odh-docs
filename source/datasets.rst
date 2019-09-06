@@ -38,10 +38,10 @@ the |odh| to build their application. These entities can be private
 companies or enterprises, public bodies, and even private citizen, if
 they have interesting data about South Tyrol to share.
 
-The Open Data exposed by the |odh| originate from :ref:`data sources
-<data-source-def>` owned by different actors (called :strong:`Data
-Providers`) that are mostly local public bodies. Since there is no
-direct 1-to-1 correspondence between Data Providers and datasets, we
+The Open Data exposed by the |odh| originate from data and datasets
+owned by different actors (called :strong:`Data Providers`) which are
+at this time mostly local public bodies. Since there is no direct
+1-to-1 correspondence between Data Providers and datasets, we
 currently offer only a list of data providers whose data can be pulled
 from |odh|\. Indeed, an |odh| dataset can be composed of data deriving
 from different providers, while a provider can submit to |odh|

@@ -35,10 +35,10 @@ Glossary
       as tuples {attribute, value}, with no constraint of uniqueness
       on both attribute and value.
      
-   Data Source
-      A Data Source is the origin of a dataset. See the
-      :ref:`detailed description <data-source-def>`.
-
+   Data Provider  
+      A Data Provider is an entity that supplies data or datasets to
+      the |odh|. See how it :ref:`is integrated <data-provider-def>`
+      in the |odh| and a :ref:`detailed description <data-providers>`.
 
    Data Collector   
       A component of the |odh|\, a data collector is used to gather

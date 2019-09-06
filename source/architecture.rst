@@ -50,20 +50,21 @@ As :numref:`arch-odh` shows, the |odh| is composed by a number of
 elements, described in the remainder of this section in the same order
 as they appear in the picture.
 
-.. _data-source-def:
+.. _data-provider-def:
 
-Data Source
-   A Data Source is the origin of one ore more datasets, which usually
-   belongs to a single domain. Data are usually automatically picked
-   up by sensors and stored in some format, like for example CSV.
+Data Providers
+   A :ref:`Data Provider <data-providers>` is a person, company or
+   public body that supplies to the |odh| some data or dataset, which
+   usually belongs to a single domain. Data are automatically picked
+   up by sensors and stored in some format, like for example CSV or
+   :term:`JSON`.
 
-   .. note:: Each data source is provided by one :strong:`Data
-      Provider`. Since a data provider may decide to not publish its
-      data on the |odh| anymore, or new data providers can join the
-      |odh| in the future, they are not an official part of the
-      |odh|. You can learn more on this, including the current list of
-      data providers, in the :ref:`dedicated section <data-providers>`
-      of the documentation.
+   .. note:: Since a data provider may decide at some point to not
+      publish its data on the |odh| anymore, or new data providers can
+      join the |odh| in the future, they are not an official part of
+      the |odh|. You can learn more on this, including the current
+      list of data providers, in the :ref:`dedicated section
+      <data-providers>` of the documentation.
 
 .. _dataset-def:
 
