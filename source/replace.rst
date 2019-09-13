@@ -2,7 +2,7 @@
 .. |odh|  replace:: Open Data Hub
 .. |odhweb|  replace:: opendatahub.bz.it
 .. |contact| replace:: info\@opendatahub.bz.it
-.. |bdpc| replace:: BDP Core
+.. |odhc| replace:: Open Data Hub Core
 
 .. licenses:
 

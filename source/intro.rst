@@ -21,6 +21,8 @@ The technical stuff is composed of:
 For non-technical information about the |odh| project, please point 
 your browser to https://opendatahub.bz.it/.
 
+.. _project-overview:
+
 Project Overview
 ================
 
