@@ -86,7 +86,7 @@ The |odh|\'s Data Providers are:
    |cc0| or |bysa|, a user will be able to retrieve from each dataset
    only those data that are distributed as :strong:`Open Data`.
 
-At the date ow writing, only datasets about the Mobility and Tourism
+At the date of writing, only datasets about the Mobility and Tourism
 domains are available; the available datasets in each domain are
 listed below.
 
