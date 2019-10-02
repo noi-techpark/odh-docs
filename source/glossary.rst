@@ -5,11 +5,11 @@ Glossary
 .. glossary::
    :sorted:
 
-   API
+   API  
       The Application Programming Interface is a collection of methods
       that a software program makes available to allow interaction
-      with other programs 
-      
+      with other programs. 
+   
    Domain
       A domain is a category of interest to which one or more datasets
       belong to.
@@ -22,6 +22,10 @@ Glossary
       Data format is the way information is encoded and exchanged between
       applications.
 
+   Endpoint
+      An Endpoint is an online resource that make data available,
+      usually through REST APIs.
+      
    JSON
       The JavaScript Object Notation is a lightweight data format to
       ease the exchange of data between computer and its understanding

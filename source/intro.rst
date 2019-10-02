@@ -89,8 +89,8 @@ in the future.
 
 .. _available-domains:
 	     
-Available Domains and APIs
-==========================
+Available Domains
+=================
 
 .. include:: /domains.rst
 
