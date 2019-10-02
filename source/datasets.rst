@@ -26,6 +26,11 @@ geographic position or a small electronic device on a plug of an
 e-charging station that checks the if the plug is being used or not,
 to let people know that the charging outlet is available.
 
+Datasets are accessible through a :term:`REST API`, the URL of each
+endpoint is given along with other information in the description of
+each dataset, see the lists of datasets in the remainder of this
+section.
+
 .. _data-providers:
 
 Data Providers
@@ -62,8 +67,6 @@ The |odh|\'s Data Providers are:
 * InnoVie.
 * Südtirol Wein.
  
-
-
 .. topic:: A note about datasets.
 
    The |odh| contains many datasets: a few have been provided for
