@@ -95,14 +95,9 @@ of their use can be found in section :doc:`tips`.
   to see, activities that can be carried out in winter or summer, food
   and beverage, cultural events and so on
 
-  
-.. filters in each datasets
-
-Filters specific of a datasets
-------------------------------
-
-.. note:: This section will be available soon.
-
+.. note:: Besides the filters available globally, for each dataset
+   several additional filters are available. They are described in the
+   respective swagger interface.
 
 Types of input data
 -------------------
