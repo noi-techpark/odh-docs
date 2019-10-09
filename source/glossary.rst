@@ -125,12 +125,11 @@ Glossary
      receptionist and the organiser of the event), and the data are
      digitalised manually.
 
-     REST API,
-     RESTful API
-     
+   REST API
+   RESTful API
      A REST(ful) API is a Web Service that adheres the architectural
      constraint of a `RESTful system
-     <https://restfulapi.net/rest-architectural-constraints/>_. It is
+     <https://restfulapi.net/rest-architectural-constraints/>`_. It is
      composed of a URI, a collection of methods to interact with the
      resources offered by the Web Service, and a media type defining
      the accepted data formats.
