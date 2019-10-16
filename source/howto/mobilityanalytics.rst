@@ -37,7 +37,7 @@ Italian provinces and regions.
    The landing page of analytics.mobility.bz.it.
 
 While there are many controllers in the page, that allow to tweak the
-search parameter, the basic usage is quite simple and requires only
+search parameter, the basic usage is quite simple and requires 
 two steps:
 
 #. Select a dataset to be added to the chart, from the drop-down menus
@@ -71,7 +71,7 @@ Map Overview
 ------------
 
 In the map overview, there is a map, initially displaying only the
-Soth Tyrol region, with the list of available sensor types on the
+South Tyrol region, with the list of available sensor types on the
 left-hand side. When clicking on one or more items, the position of
 all sensors will appear on the map, see :numref:`map-overview-image`
 for the parking lots available in the Trentino-South Tyrol region.

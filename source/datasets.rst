@@ -47,7 +47,7 @@ The Open Data exposed by the |odh| originate from data and datasets
 owned by different actors (called :strong:`Data Providers`) which are
 at this time mostly local public bodies. Since there is no direct
 1-to-1 correspondence between Data Providers and datasets, we
-currently offer only a list of data providers whose data can be pulled
+currently offer a list of data providers whose data can be pulled
 from |odh|\. Indeed, an |odh| dataset can be composed of data deriving
 from different providers, while a provider can submit to |odh|
 multiple types of data that will belong to more than one dataset.
@@ -86,7 +86,7 @@ The |odh|\'s Data Providers are:
    |cc0| or |bysa|, a user will be able to retrieve from each dataset
    only those data that are distributed as :strong:`Open Data`.
 
-At the date of writing, only datasets about the Mobility and Tourism
+At the date of writing, datasets about the Mobility and Tourism
 domains are available; the available datasets in each domain are
 listed below.
 

@@ -106,7 +106,7 @@ Accessing data in the |odh|
 ===========================
 
 There are different modalities to access data that are provided by the
-|odh|, that are listed here. Currently, only data from the
+|odh|, that are listed here. Currently, data from the
 :strong:`Mobility` and :strong:`Tourism` domains can be accessed, both
 from the command line and using a browser. Various dedicated tutorials
 are available in the :ref:`howto-list` section; while in section
