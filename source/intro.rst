@@ -198,7 +198,7 @@ readable by a human, due to the number of :ref:`filters
 points of interests in South Tyrol, the following command should be
 used:
 
-.. code-block::
+.. code-block:: bash
 
    curl -X GET "http://tourism.opendatahub.bz.it/api/ODHActivityPoi?pagenumber=1&pagesize=10&type=63&subtype=null&poitype=null&idlist=null&locfilter=null&langfilter=null&areafilter=null&highlight=null&source=null&odhtagfilter=null&odhactive=null&active=null&seed=null&latitude=null&longitude=null&radius=null" -H "accept: application/json"
 
