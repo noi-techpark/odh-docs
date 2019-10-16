@@ -136,10 +136,6 @@ rst_prolog = """
 .. role:: monospace
 .. role:: greenswbutton 
 
-.. warning:: This is a development version of the documentation and
-   may contain inaccuracies! Please find the official documentation at
-   https://opendatahub.readthedocs.io/en/latest/
-
 """ + open("replace.rst").read()
 
 #facility to shorten/change external links to datasets - useful if hosting changes
