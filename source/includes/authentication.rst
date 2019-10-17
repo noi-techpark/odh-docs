@@ -22,7 +22,9 @@ members of the |odh| team.
 
 In the remainder of this section, we describe how authentication works
 within the |odh|\, because this information might be of interest to
-user that might become app developers for the |odh| team.
+user that might become app developers for the |odh| team; further
+information about how to use authentication can be found in the
+:ref:`dedicated howto <authentication-howto>`.
 
 There are currently two different authentication methods available:
 

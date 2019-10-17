@@ -4,13 +4,18 @@ How to use authentication?
 ==========================
 
 As described in section :ref:`authentication`, there are two methods
-to access protected data in the dataset: Bearer Token Login and OAuth2
-authentication. Both authentication methods can be used within a
-browser or from the command line, with only slight differences. In
-this section we show how to use authentication within the |odh|\,
-provided that you owe an username and a password to access the closed
-data in the datasets.
+to access protected data in the dataset: :strong:`Bearer Token Login`
+and :strong:`OAuth2 authentication`. Both authentication methods can
+be used within a browser or from the command line, with only slight
+differences.
 
+.. hint:: The Open Data provided by the |odh| can be freely accessed,
+   authentication is meant only for internal use.
+
+In this section we show how to use authentication within the |odh|\,
+provided that you own an username and a password to access the closed
+data in the datasets.
+	  
 To obtain the credentials, please address your enquiry to the contact
 email of the dataset you would like to access.
 

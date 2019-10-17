@@ -144,13 +144,12 @@ Troubleshooting
 ~~~~~~~~~~~~~~~
 
 If the API call fails, one of the following response code is
-returned - they correspond to HTTP status codes :
+returned--they correspond to HTTP status codes :
 
 :strong:`401 Unauthorised`
    The request is valid, but authentication is required and you
-   provided none. This should never happen, you should receive an
-   empty output set if you require data that are not publicly
-   available.
+   provided none. This error will never be publicly seen, because
+   authentication is used only by the |odh| team internally.
 
 :strong:`403 Forbidden`
    The request is valid but could not be completed on the server side.
