@@ -63,9 +63,13 @@ Beta Stage Apps
 * https://mobility.meran.eu. This web site is the first example of a
   Mobility-as-a-Service application; it includes real-time information
   of multiple mobility services, like public transportation, places of
-  interests, car sharing services, parking lots, ans more.
+  interests, car sharing services, parking lots, and more in the city
+  of Merano/Meran.
 
-* https://parking.bz.it. A web site that displays the real-tim parking
+* https://mobility.bz.it/ This web site is the counterpart of the
+  previous one for the city of Bolzano/Bozen.
+
+* https://parking.bz.it. A web site that displays the real-time parking
   availability of off-street parking lots in South Tyrol. On mobile
   devices, it can also show directions from your current position to
   the chosen parking lot.
