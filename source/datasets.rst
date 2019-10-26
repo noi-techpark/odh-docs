@@ -57,15 +57,19 @@ The |odh|\'s Data Providers are:
 * IDM Südtirol/Alto Adige.
 * SIAG, Südtirol Informatica AG - Informatica Alto Adige.
 * SASA, public transport operator.
-* Alperia, energy provider for South Tyrol.
+* Alperia/Neogy, energy provider for South Tyrol.
 * Municipality of Bolzano.
 * Municipality of Merano.
-* Carsharing Alto Adige.
-* DB rent.
+* Municipality of Trento
+* Municipality of Rovereto
+* APPA, Trentino Agency of the environment
+* CISMA, Bluetooth sensors
+* Carsharing Alto Adige, via its technological partner DB Rent
 * LTS, South Tyrol Association of Tourism Organisations.
 * APPA, South Tyrolean agency for the environment.
 * InnoVie.
 * Südtirol Wein.
+* Route220, Nevicam and Driwe e-charging stations provider
  
 .. topic:: A note about datasets.
 
