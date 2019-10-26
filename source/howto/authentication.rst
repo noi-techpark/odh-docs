@@ -16,8 +16,9 @@ In this section we show how to use authentication within the |odh|\,
 provided that you own an username and a password to access the closed
 data in the datasets.
 	  
-To obtain the credentials, please address your enquiry to the contact
-email of the dataset you would like to access.
+To obtain the credentials, please send an email to |contact|\. This action
+will open a support ticket that will be taken in charge by the
+Customer Support Team.
 
 
 Bearer Token Login

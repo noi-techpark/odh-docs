@@ -198,7 +198,7 @@ readable by a human, due to the number of :ref:`filters
 points of interests in South Tyrol, the following command should be
 used:
 
-.. code-block::
+.. code-block:: bash
 
    curl -X GET "http://tourism.opendatahub.bz.it/api/ODHActivityPoi?pagenumber=1&pagesize=10&type=63&subtype=null&poitype=null&idlist=null&locfilter=null&langfilter=null&areafilter=null&highlight=null&source=null&odhtagfilter=null&odhactive=null&active=null&seed=null&latitude=null&longitude=null&radius=null" -H
    "accept: application/json"
@@ -218,4 +218,14 @@ be shown.
        http://ipchannels.integreen-life.bz.it/parking/swagger-ui.html,
        see :ref:`mobility-datasets` for full links.
 
-.. include:: /includes/authentication.rst
+Authentication
+--------------
+
+The authentication layer is currently intended for :strong:`internal
+use only`. All data in the dataset that you can receive from the |odh|
+are free to use and do not require any type of authentication.
+
+
+The authentication layer can be of interest for developers who want to
+collaborate in the development of |odh|\; Details on the implementtion
+are available in section :ref:`authentication`.

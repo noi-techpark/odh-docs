@@ -11,8 +11,8 @@ authentication to access data provided by the |odh|\.
 While the |odh| project strives to offer only Open Data, it relies on
 third-party :ref:`data-providers`, which may not offer the whole
 content of a dataset for public use. For this reason, an
-authentication mechanism has been implemented, which does not however
-impact on users.
+authentication mechanism has been implemented, which does however have
+no impact on users and on their use of the data.
 
 Indeed, authentication in |odh| is mainly used when exposing data to
 the consumer, which means by the Reader and in every single web
