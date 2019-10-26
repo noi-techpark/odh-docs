@@ -42,22 +42,26 @@ can find a lot more information and details), they are:
 Licenses for |odh| resources
 ----------------------------
 
+The |odh| Project processes dataset, possibly supplied by third-party
+sources (i.e., :ref:`data-providers`), which may contain closed data;
+however, only Open Data are returned to the users' queries.
+
 According to the main goal of the |odh| Project, we have defined
 licenses for its different components and we use badges across the
 documentation for a better visibility. As a rule of thumb, we try to
-do our best to deliver Open Data by developing Free/Open Source
-software and by using an Open Standard for the API used to access
-data.
+do our best to deliver :strong:`Open Data`, by developing
+:strong:`Free/Open Source software` that is publicly available on
+github, and by using an :strong:`Open Standard` for the API used to
+access data.
 
-The Open Data Hub Project exposes data, possibly of third-party
-sources. Without the use of authentication, only Open Data are
-returned. These licenses are applied to the |odh| components:
+These licenses are applied to the |odh| components:
 
-* All the software released within the |odh| is Free software and
-  complies with the GPLv3 license.  |gpl|
-* Datasets currently expose only open data that are in the public
-  domain, so they are released as CC0. |cc0|
-* APIs have no license yet, since we are in the process to define
+* All the :strong:`software` released within the |odh| is Free software and
+  complies with the GPLv3 license.  |gpl| Code repositories can be
+  found at https://github.com/noi-techpark.
+* The :strong:`Datasets` currently expose only Open Data that are in
+  the public domain, so they are released as CC0. |cc0|
+* The :strong:`APIs` have no license yet, since we are in the process to define
   which among the CC licenses could fit best. See :numref:`dac-lm` for
   an overview and quick description of CC licenses and derivative
   material.

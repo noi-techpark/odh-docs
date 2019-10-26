@@ -4,13 +4,27 @@
 Authentication
 --------------
 
-.. note:: The authentication layer is currently intended for internal
-   use only.
-	  
-Authentication in |odh| is mainly used when exposing data to the
-consumer, which means by the Reader and in every single web service
-accessing the Reader, to allow the access to closed data in each
-dataset only to those who are allowed to.
+The authentication layer is currently intended for :strong:`internal
+use only`, therefore it is :strong:`not` necessary to use
+authentication to access data provided by the |odh|\.
+	   
+While the |odh| project strives to offer only Open Data, it relies on
+third-party :ref:`data-providers`, which may not offer the whole
+content of a dataset for public use. For this reason, an
+authentication mechanism has been implemented, which does however have
+no impact on users and on their use of the data.
+
+Indeed, authentication in |odh| is mainly used when exposing data to
+the consumer, which means by the Reader and in every single web
+service accessing the Reader, to allow the access to closed data in
+each dataset only to those who are allowed to, i.e., developers and
+members of the |odh| team.
+
+In the remainder of this section, we describe how authentication works
+within the |odh|\, because this information might be of interest to
+user that might become app developers for the |odh| team; further
+information about how to use authentication can be found in the
+:ref:`dedicated howto <authentication-howto>`.
 
 There are currently two different authentication methods available:
 
