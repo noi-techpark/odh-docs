@@ -5,10 +5,6 @@
 How to access Tourism Data?
 ===========================
 
-
-.. note:: Information in this page might be updated and improved in
-   the next future.
-   
 The purpose of this howto is to quickly introduce the structure of the
 API calls, the available filters for the datasets in the Tourism
 domain, and give some general and useful information about the Tourism
@@ -64,9 +60,6 @@ be found for each datasets in the `swagger interface
 <http::/tourism.opendatahub.bz.it/swagger>`_ of the API. Some examples
 of their use can be found in section :doc:`tips`.
 
-.. note:: This section is :strong:`Work in Progress` and might be
-   expanded.
-
 - :strong:`Seed` is used to set pagination. See tip :ref:`TT3
   <tour-tt3>`.
 - :strong:`Locfilter` is a composed parameters that uniquely
@@ -101,10 +94,6 @@ of their use can be found in section :doc:`tips`.
 
 Types of input data
 -------------------
-
-
-.. note:: This section is :strong:`Work in Progress` and will be
-   expanded with additional types of input data.
 
 Since calls in the tourism domain are quite generic and revolve around
 a few common calls (see section :ref:`tourism-api-call-structure`), we
