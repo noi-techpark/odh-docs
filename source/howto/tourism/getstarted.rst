@@ -88,6 +88,47 @@ of their use can be found in section :doc:`tips`.
   to see, activities that can be carried out in winter or summer, food
   and beverage, cultural events and so on
 
+The `fields` Filter
+~~~~~~~~~~~~~~~~~~~
+
+A recently added filter is the :strong:`fields` filter, which allows
+to add to a REST request a parameter that can act on multiple keys of
+a dataset entry, selecting only the entries which have a corresponding
+value in the dataset. In other words, the purpose of this filter is to
+retrieve only relevant information from each item in the datasets and
+strip down information that is not needed or not necessary to the
+purpose of the query. The `fields` filter can be used on
+single-valued parameters as well as on dictionary fields.
+
+Lets take as example the `ODHActivityPOI` dataset and its swagger
+interface :stinfo:`/ODHActivityPoi`; the same approach can be used
+with other datasets by simply replacing the datasets' name in the URL.
+
+The following query will retrieve from the dataset only those item
+which have a :strong:`Type` and a strong:`Active` keys defined in the
+dataset:
+
+https://tourism.opendatahub.bz.it/api/ODHActivityPoi?fields=Type,Active 
+
+The following query retrieves information from within a dictionary
+field:
+
+https://tourism.opendatahub.bz.it/api/ODHActivityPoi?fields=Detail.en.Title
+
+In particular, all items which have a `Title` in `en`\ glish within
+the `Detail` will appear in the result set of this query.
+
+To show how it works, the following excerpt from the dataset shows how
+to discover the :strong:`Detail.en.Title` elements:
+
+.. code-block:: json-object
+
+   "Detail": {
+     "en": {
+       "Title": "01 Cross Country Stadio Track Dobbiaco/Toblach",
+       "Header": null,
+
+
 .. note:: Besides the filters available globally, for each dataset
    several additional filters are available. They are described in the
    respective swagger interface.
