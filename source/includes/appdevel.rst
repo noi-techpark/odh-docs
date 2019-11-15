@@ -7,7 +7,6 @@
    :ref:`available datasets <available_datasets>` with links to the
    API to access them.
 
-
 ...build an application with the data.
    Write code for an app that combines the data you can harvest from
    the available datasets in various, novel way.
@@ -15,6 +14,12 @@
    To reach this goal, you need to access the APIs, their
    documentation, and the datasets. It is then your task to discover
    how you can reuse the data in your code.
+
+...integrate |odh| data using webcomponents.
+   The |ODH| team and their partner have developed a `small library of
+   webcomponents <https://webcomponents.opendatahub.bz.it/>`_ that can
+   be integrated in existing web sites or used as guidance to develop
+   new webcomponents.
 
 ...publish my app in |odh|.
    As soon as you have developed a stable version of your app, get in
