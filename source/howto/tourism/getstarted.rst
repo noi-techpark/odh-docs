@@ -53,10 +53,14 @@ The calls defined for every datasets are:
 Filters common to all datasets
 ------------------------------
 
+.. note:: Besides the filters available globally, for each dataset
+   several additional filters are available. They are described in the
+   respective swagger interface.
+
 Filters are used within a dataset and their primary purpose is to
-limit the result set according to specific parameters. They might not
-be available in every API call. information about default values can
-be found for each datasets in the `swagger interface
+limit the result set according to specific parameters, although they
+might not be available in every API call. Information about default
+values can be found for each datasets in the `swagger interface
 <http::/tourism.opendatahub.bz.it/swagger>`_ of the API. Some examples
 of their use can be found in section :doc:`tips`.
 
@@ -127,11 +131,6 @@ to discover the :strong:`Detail.en.Title` elements:
      "en": {
        "Title": "01 Cross Country Stadio Track Dobbiaco/Toblach",
        "Header": null,
-
-
-.. note:: Besides the filters available globally, for each dataset
-   several additional filters are available. They are described in the
-   respective swagger interface.
 
 Types of input data
 -------------------
