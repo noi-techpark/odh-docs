@@ -7,13 +7,12 @@
 # add these directories to sys.path here. If the directory is relative to the
 # documentation root, use os.path.abspath to make it absolute, like shown here.
 #
-# import os
-# import sys
-# sys.path.insert(0, os.path.abspath('.'))
-
+import os
+import sys
 import io
 import time
 current_year = time.strftime('%Y')
+sys.path.append(os.path.abspath("./_ext"))
 
 # -- General configuration ------------------------------------------------
 
@@ -26,11 +25,11 @@ current_year = time.strftime('%Y')
 # ones.
 extensions = [
     'sphinx.ext.todo',
-#    'sphinx.ext.mathjax',
     'sphinx.ext.ifconfig',
     'sphinx.ext.extlinks',
     'sphinx.ext.imgconverter',
-    'sphinx_tabs.tabs'
+    'sphinx_tabs.tabs',
+    'ga'
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -157,6 +156,8 @@ html_show_sourcelink = False
 #
 html_show_sphinx = False
 
+googleanalytics_id = 'UA-138331709-2'
+
 # Output file base name for HTML help builder.
 htmlhelp_basename = 'OpenDataHubDocsdoc'
 
@@ -217,3 +218,5 @@ epub_exclude_files = ['search.html']
 def setup(app):
     app.add_css_file('https://use.fontawesome.com/releases/v5.7.0/css/all.css')
     app.add_css_file('css/odh.css')
+    app.add_config_value('googleanalytics_id', '', 'html')
+    app.add_config_value('googleanalytics_enabled', True, 'html')
