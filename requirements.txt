@@ -1,2 +1,2 @@
 sphinx-tabs==1.1.13
-Sphinx==2.0.0
+Sphinx==2.2.1
