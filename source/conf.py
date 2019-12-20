@@ -217,5 +217,6 @@ epub_exclude_files = ['search.html']
 
 def setup(app):
     app.add_css_file('https://use.fontawesome.com/releases/v5.7.0/css/all.css')
+    app.add_js_file('searchtools.js')
     app.add_config_value('googleanalytics_id', '', 'html')
     app.add_config_value('googleanalytics_enabled', True, 'html')

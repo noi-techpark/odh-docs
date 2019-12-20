@@ -15,11 +15,11 @@
    documentation, and the datasets. It is then your task to discover
    how you can reuse the data in your code.
 
-...integrate |odh| data using webcomponents.
+...integrate |odh| data using Web Components.
    The |ODH| team and their partner have developed a `small library of
-   webcomponents <https://webcomponents.opendatahub.bz.it/>`_ that can
+   Web Components <https://webcomponents.opendatahub.bz.it/>`_ that can
    be integrated in existing web sites or used as guidance to develop
-   new webcomponents.
+   new Web Components.
 
 ...publish my app in |odh|.
    As soon as you have developed a stable version of your app, get in

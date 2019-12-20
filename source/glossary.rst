@@ -133,3 +133,7 @@ Glossary
      composed of a URI, a collection of methods to interact with the
      resources offered by the Web Service, and a media type defining
      the accepted data formats.
+
+   Web Component
+     A Web Component is a set of API that allows the creation of
+     interoperable HTML widgets that can be shared and reused.
