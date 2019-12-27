@@ -3,9 +3,10 @@
 Guidelines for Developers
 =========================
 
-|odh| is a collection of software, databases, and services coordinated and
-hosted by IDM Südtirol / Alto Adige. Currently, |odh| systems are related to
-mobility and tourism. In the future |odh| might diversify into more fields.
+|odh| is a collection of software, databases, and services coordinated
+and hosted by `NOI techpark <https://noi.bz.it/>`_ in Bolzano/Bozen,
+South Tyrol. Currently, |odh| systems are related to mobility and
+tourism. In the future |odh| might diversify into more fields.
 
 Companies and developers contributing to |odh| must follow the
 guidelines listed in the documents as close as possible.
@@ -13,7 +14,7 @@ guidelines listed in the documents as close as possible.
 The aim of the |odh| Developer's Guidelines (:strong:`"The
 Guidelines"`) is to simplify the hosting and maintenance of the
 software, databases, and services by the |odh| developers and
-maintainers at IDM ("the |odh| team").
+maintainers at NOI Techpark ("the |odh| team").
 
 The Guidelines describe the conventions to which a developer must
 adhere, to be able to become an active |odh| developer or to see his
