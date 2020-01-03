@@ -29,7 +29,7 @@ extensions = [
     'sphinx.ext.extlinks',
     'sphinx.ext.imgconverter',
     'sphinx_tabs.tabs',
-    'ga'
+    'ga', 'hidemail'
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -84,6 +84,8 @@ rst_prolog = """
 .. role:: button
 .. role:: monospace
 .. role:: greenswbutton 
+.. role:: raw-latex(raw)
+   :format: latex 
 
 """ + open("replace.rst").read()
 
