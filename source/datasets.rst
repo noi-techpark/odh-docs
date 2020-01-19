@@ -54,12 +54,12 @@ multiple types of data that will belong to more than one dataset.
 
 The |odh|\'s Data Providers are:
 
-* IDM Südtirol/Alto Adige.
-* SIAG, Südtirol Informatica AG - Informatica Alto Adige.
-* SASA, public transport operator.
-* Alperia/Neogy, energy provider for South Tyrol.
-* Municipality of Bolzano.
-* Municipality of Merano.
+* IDM Südtirol/Alto Adige
+* SIAG, Südtirol Informatica AG - Informatica Alto Adige
+* SASA, public transport operator
+* Alperia/Neogy, energy provider for South Tyrol
+* Municipality of Bolzano
+* Municipality of Merano
 * Municipality of Trento
 * Municipality of Rovereto
 * APPA, Trentino Agency of the environment
