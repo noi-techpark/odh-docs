@@ -5,7 +5,8 @@ Database Guidelines - Full Version
 
 .. topic:: Changelog
 
-   * :strong:`2018-05-28 version 1.0`
+   * :strong:`2020-01-20 version 1.1` -- fixed outgoing links
+   * 2018-05-28 version 1.0
 
 +++++
 
@@ -46,7 +47,7 @@ Specifically, the following methodologies are well known and acceptable:
    :command:`CREATE` statements are written by the developer.  The
    JSON data column must use the PostgreSQL native data type
    :strong:`jsonb` (see `binary stored JSON
-   <https://www.postgresql.org/docs/10/static/datatype-json.html#JSON-DOC-DESIGN>`_
+   <https://www.postgresql.org/docs/10/datatype-json.html#JSON-DOC-DESIGN>`_
    in PostgreSQL documentation).
 
 PostgreSQL supports all three methodologies well. It is also possible
@@ -150,7 +151,7 @@ Contributors can expect their database design to be stored into a
 schema whose name is determined by the |odh| team and executed as a
 non-privileged user account that has the given schema in its default
 :strong:`search_path` (see `DDL schema path
-<https://www.postgresql.org/docs/10/static/ddl-schemas.html#DDL-SCHEMAS-PATH>`_
+<https://www.postgresql.org/docs/10/ddl-schemas.html#DDL-SCHEMAS-PATH>`_
 in PostgreSQL documentation).
 
 Unless there is a specific reason, contributed designs must use
@@ -181,7 +182,7 @@ Hence, the general rule is that database designs submitted to the
 However, (small) utility procedures and functions, especially with
 respect to triggers, are allowed. When used, these procedures and
 functions must be written in `PL/PgSQL
-<https://www.postgresql.org/docs/10/static/plpgsql.html>`_. Other
+<https://www.postgresql.org/docs/10/plpgsql.html>`_. Other
 server-side languages, even the trusted ones, are neither allowed, nor
 can they be expected to be available.
 
@@ -189,7 +190,7 @@ An example of such an allowed instance of a procedure is an audit
 trigger that, for any changes made to :strong:`Table A` generates a
 log entry that is stored in :strong:`Table B`.
 
-Foreign data wrappers (`SQL/MED <https://www.postgresql.org/docs/10/static/sql-createforeigndatawrapper.html>`_) :strong:`must not` be used.
+Foreign data wrappers (`SQL/MED <https://www.postgresql.org/docs/10/sql-createforeigndatawrapper.html>`_) :strong:`must not` be used.
 
 Indices and Partioning
 ~~~~~~~~~~~~~~~~~~~~~~
@@ -207,7 +208,7 @@ columns will benefit from indices, when the number of records grows.
 In particular, if methodology 3 (JSON) is chosen, PostgreSQL provides
 specialized multi-dimensional indices of type GIN to index the `jsonb
 data type
-<https://www.postgresql.org/docs/10/static/datatype-json.html#JSON-INDEXING>`_.
+<https://www.postgresql.org/docs/10/datatype-json.html#JSON-INDEXING>`_.
 
 If the contributor anticipates designs with large tables (say more
 than 100M records or more than 5 GB on disk) and expects queries
@@ -243,7 +244,7 @@ and Italian::
 A contributor is free to add a custom collation such as
 :envvar:`de_DE` or :envvar:`it_IT`, either at the DDL level or the
 query level (see `PostgreSQL documentation on collation
-<https://www.postgresql.org/docs/10/static/collation.html>`_),
+<https://www.postgresql.org/docs/10/collation.html>`_),
 although there is most likely no need to apply other collations.
 
 
@@ -310,7 +311,7 @@ Sometimes developers need to convert to and from text. In case a
 contributing developer wishes to do this using PostgreSQL functions,
 they must use functions :strong:`to_date()` and :strong:`to_char()`
 (see `PostgreSQL documentation on function formatting
-<https://www.postgresql.org/docs/10/static/functions-formatting.html>`_).
+<https://www.postgresql.org/docs/10/functions-formatting.html>`_).
 
 For example:
 
