@@ -14,7 +14,7 @@ In the remainder of this tutorial, we will use as example the
 http://ipchannels.integreen-life.bz.it/emobility/swagger-ui.html for
 the mobility domain and the :ref:`Accommodation
 <accommodation-dataset>` dataset, located at
-http://tourism.opendatahub.bz.it/swagger/ui/index#/Accommodation.
+:stinfo:`Accommodation`.
 
 
 Initial Setup

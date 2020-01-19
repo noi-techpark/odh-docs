@@ -19,8 +19,8 @@ If your feedback is related to the Open Data Hub Documentation, please
 insert your issue on the following website, using the template that
 suits your needs:
 
-4. https://github.com/noi-techpark/odh-docs/issues/new?template=bug_report.md
-5. https://github.com/noi-techpark/odh-docs/issues/new?template=feedback.md
+4. `Report a bug <https://github.com/login?return_to=https%3A%2F%2Fgithub.com%2Fnoi-techpark%2Fodh-docs%2Fissues%2Fnew%3Ftemplate%3Dbug_report.md>`_
+5. `Leave your feedback <https://github.com/login?return_to=https%3A%2F%2Fgithub.com%2Fnoi-techpark%2Fodh-docs%2Fissues%2Fnew%3Ftemplate%3Dfeedback.md>`_
 
 .. note:: You need to have a valid github account to report issues and
    interact with the |odh| team.

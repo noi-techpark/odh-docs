@@ -12,5 +12,5 @@ board of vehicle that drive on.
 Output          JSON, mime-type application/json
 E-mail contact  |contact|
 API version     v1
-Swagger URL     :integreen:`BluetoothFrontEnd`
+Swagger URL     :ig-swagger:`BluetoothFrontEnd`
 ==============  ========================================================

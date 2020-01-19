@@ -22,7 +22,7 @@ and point it to http://tourism.opendatahub.bz.it/.
 
 Under the header and an informative message, two icons and hyperlink
 in the centre of the page allow to reach the `Swagger interface
-<http://tourism.opendatahub.bz.it/swagger>`_, the quickest place from
+<http://tourism.opendatahub.bz.it/swagger/ui/index>`_, the quickest place from
 where to access the datasets and learn how to programmatically
 retrieve the data, and the `Official documentation
 <https://opendatahub.readthedocs.io/en/latest/index.html>`_.
