@@ -197,6 +197,15 @@ man_pages = [
 #
 # man_show_urls = False
 
+# -- Options for linkcheck output -------------------------------------------
+
+linkcheck_anchors = False
+linkcheck_retries = 2
+linkcheck_ignore = [
+    'https://ci.opendatahub.bz.it',
+    'https://github.com/your-username/',
+    'http://localhost:\d+/'
+]
 
 # -- Options for Texinfo output -------------------------------------------
 
