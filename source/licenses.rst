@@ -85,4 +85,4 @@ The public API are in early development and therefore should be still
 considered as a :strong:`beta` version. If any third party would like
 to use a stable version of the APIs in its production environment, a
 special agreement must be signed with `NOI techpark
-<https://noi.bz.it/>`_. You can contact |contact| for any information.
+<https://noi.bz.it/en>`_. You can contact |contact| for any information.
