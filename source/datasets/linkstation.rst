@@ -10,5 +10,5 @@ measure the level of traffic on the strech of a road.
 Output          JSON, mime-type application/json
 E-mail contact  |contact|
 API version     v1
-Swagger URL     :integreen:`LinkFrontEnd`
+Swagger URL     :ig-swagger:`LinkFrontEnd`
 ==============  ========================================================
