@@ -22,20 +22,20 @@ workflow`; the preferred being the first one.
 #. When using the :strong:`full open source` path, you simply hand in
    the source code of your Web Component to the |odh| team, no
    additional effort is required from your side. The code
-   will be placed in in a GIT repository, and immediately made
+   will be placed in a GIT repository, and immediately made
    available through the Store. Future versions of the Web component
    are developed under the control of the |odh| team directly within
    this repository. 
 
 #. The :strong:`forked` project way will still see the Web Component's
-   source code saved in in a GIT repository, but you own full
+   source code saved in a GIT repository, but you own full
    control of it, and decide about its future versions. The difference
    with the previous method is that the updates are done by you in
    your repository and the |odh| team will need to keep its copy
    synchronised with yours.
 
 #. Finally, the :strong:`the external workflow` is the one is which
-   nothing is saved in in a GIT repository. You will maintain full
+   nothing is saved in a GIT repository. You will maintain full
    control of the source code and of the Web Component's development,
    including the right to pull it out of the store. Should you decide
    to follow this path, you will have to satisfy a few more
