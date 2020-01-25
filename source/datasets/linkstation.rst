@@ -6,7 +6,7 @@ The data for this dataset are collected by the same Bluetooth-based
 sensors that are used to produce the :ref:`Bluetooth dataset
 <bluetooth-dataset>`. Indeed, the data gathered by the sensors will be
 used to produce statistics about a LinkStation, which is defined as
-the shortest path between an ordered pair of bluetooth stations.
+the path between an ordered pair of bluetooth stations.
 
 * the :strong:`valid matches` between pairs of Bluetooth sensors (also
   called Bluetooth stations).
