@@ -6156,6 +6156,9 @@ div.topic {
     color: #F26B3A
 }
 
+.strike {
+    text-decoration: line-through;
+}
 .rst-content dl:not(.docutils) {
 
 }

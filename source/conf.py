@@ -86,7 +86,7 @@ rst_prolog = """
 .. role:: greenswbutton 
 .. role:: raw-latex(raw)
    :format: latex 
-
+.. role:: strike
 """ + open("replace.rst").read()
 
 #facility to shorten/change external links to datasets - useful if hosting changes
@@ -166,7 +166,7 @@ htmlhelp_basename = 'OpenDataHubDocsdoc'
 # -- Options for LaTeX output ---------------------------------------------
 
 latex_elements = {
-     'preamble': r'\usepackage{bookmark}',
+     'preamble': r'\usepackage{odh}',
 
 }
 
@@ -182,6 +182,8 @@ latex_documents = [
 # the title page.
 #
 latex_logo = 'images/OpenDataHub.png'
+
+latex_additional_files = [ 'odh.sty' ]
 
 # -- Options for manual page output ---------------------------------------
 
@@ -216,6 +218,7 @@ epub_author = author
 epub_publisher = author
 epub_copyright = copyright
 epub_exclude_files = ['search.html']
+epub_css_files = [ 'odh.css' ]
 
 def setup(app):
     app.add_css_file('https://use.fontawesome.com/releases/v5.7.0/css/all.css')
