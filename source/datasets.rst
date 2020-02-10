@@ -137,9 +137,26 @@ The description of each dataset includes the following information:
 * The output format of the API call
 * An e-mail contact for the dataset
 * The versions of the API that can be used to access the dataset
-* :strike:`The swagger URL of the APIs`
+* The (`new!`) swagger URL of the APIs
 * The :literal:`stationType` that belong to each dataset
 
+The datasets in the Mobility domain are grouped in :strong:`Traffic`
+and :strong:`Mobility` as follows:
+
+.. rubric:: Traffic
+
+.. _rwisstation-dataset:
+.. include:: /datasets/rwisstation.rst
+
+.. _streetelement-dataset:
+.. include:: /datasets/streetelements.rst
+
+.. _linkstation-dataset:
+.. include:: /datasets/linkstation.rst
+
+.. _bluetooth-dataset:
+.. include:: /datasets/bluetooth.rst
+    
 .. _weather-dataset:
 .. include:: /datasets/weather.rst
 
@@ -149,24 +166,16 @@ The description of each dataset includes the following information:
 .. _parking-dataset:
 .. include:: /datasets/parking.rst
 
-.. _bluetooth-dataset:
-.. include:: /datasets/bluetooth.rst
-
 .. _trafficstation-dataset:
 .. include:: /datasets/trafficstation.rst
 
-.. _linkstation-dataset:
-.. include:: /datasets/linkstation.rst
-
-.. _streetelement-dataset:
-.. include:: /datasets/streetelements.rst
-
-
-.. _rwisstation-dataset:
-.. include:: /datasets/rwisstation.rst
-
+.. rubric:: Mobility
+   
 .. _carsharing-dataset:
 .. include:: /datasets/carsharing.rst
+
+.. _carpoolinghub-dataset:
+.. include:: /datasets/carpoolinghub.rst
 
 .. _bikesharing-dataset:
 .. include:: /datasets/bikesharing.rst
@@ -178,13 +187,8 @@ The description of each dataset includes the following information:
 
 .. include:: /datasets/ecs.rst
 
-
-.. _carpoolinghub-dataset:
-.. include:: /datasets/carpoolinghub.rst
-
 .. _sasabus-dataset: 
 .. include:: /datasets/sasa.rst
-
 
 .. _tourism-datasets:
 

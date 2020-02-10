@@ -33,6 +33,17 @@
 .. |beta| image:: /images/status-beta-darkblue.png
    :alt: This application is in beta stage
 
+.. API v2
+   
+.. |deprecated| image:: /images/deprecated.png
+   :alt: API v1 are now deprecated
+
+
+.. |apiv2| replace:: https://mobility.api.opendatahub.bz.it/v2/swagger-ui.html
+
+
+.. |station| replace:: :literal:`stationType`
+
 
 .. URLs of datasets
 

@@ -1,6 +1,6 @@
 
-info.opensasa.realtime
-----------------------
+Public Transportation
+---------------------
 
 This datasets shows the real time position of buses operated by SASA
 in South Tyrol and, through a few subsets, additional information

@@ -5,6 +5,7 @@ South Tyrol and their status, including historical data and usage.
 ==============  ========================================================
 Output          JSON, mime-type application/json
 E-mail contact  |contact|
-API version     v1
-Swagger URL     :integreen:`EchargingFrontEnd`
+API version     :strike:`v1` |deprecated|, v2
+Swagger URL     |apiv2|
+|station|       EChargingPlug,EChargingStation
 ==============  ========================================================
