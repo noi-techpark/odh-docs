@@ -54,12 +54,12 @@ multiple types of data that will belong to more than one dataset.
 
 The |odh|\'s Data Providers are:
 
-* IDM Südtirol/Alto Adige.
-* SIAG, Südtirol Informatica AG - Informatica Alto Adige.
-* SASA, public transport operator.
-* Alperia/Neogy, energy provider for South Tyrol.
-* Municipality of Bolzano.
-* Municipality of Merano.
+* IDM Südtirol/Alto Adige
+* SIAG, Südtirol Informatica AG - Informatica Alto Adige
+* SASA, public transport operator
+* Alperia/Neogy, energy provider for South Tyrol
+* Municipality of Bolzano
+* Municipality of Merano
 * Municipality of Trento
 * Municipality of Rovereto
 * APPA, Trentino Agency of the environment
@@ -101,15 +101,44 @@ Datasets in the Mobility Domain
 
 .. contents:: List of datasets in the mobility domain.
    :local:
+	   
+This section contains information about the datasets and how to access
+them using the API that the |odh| team developed and made available.
 
-In this section, the following information is provided for each of
-the above-listed dataset:
+.. topic:: API v1 vs API v2.
+	   
+   There are currently two versions of the API, v1 and v2, with the
+   former now :strong:`deprecated` and marked as such |deprecated|
+   throughout the |odh| documentation. New users are strongly
+   suggested to use the new API v2, while users of the API v1 are
+   encouraged to plan a migration to the new API.
 
-* The output format of the API call.
-* An e-mail contact for the dataset.
-* The versions of the API that can be used to access the dataset.
-* The swagger URL of the APIs.
+   The new API v2 has a different approach compared to the previous
+   version, and therefore is not compatible with the API v1, the main
+   difference being that all data stored in the |odh| can now be
+   retrieved `from a single endpoint`, while with API v1 there was an
+   endpoint for each dataset.
 
+   This change in approach requires also a breaking change for the
+   users of API v1. The initial step, indeed, will not be to open the
+   URL of the dataset and start exploring, but to retrieve the
+   :literal:`stationType`\s and then retrieve additional data about
+   each station. A :literal:`stationType` is the main object of a
+   datasets, about which all the information in a dataset relate to; a
+   dataset includes at least one :literal:`stationType`.  A new,
+   dedicated howto will describe with examples the new workflow for
+   the use of the API v2.
+  
+   It is important to note that the API v2 is :strong:`only available`
+   for datasets in the :strong:`Mobility` Domain.
+   
+The description of each dataset includes the following information:
+
+* The output format of the API call
+* An e-mail contact for the dataset
+* The versions of the API that can be used to access the dataset
+* :strike:`The swagger URL of the APIs`
+* The :literal:`stationType` that belong to each dataset
 
 .. _weather-dataset:
 .. include:: /datasets/weather.rst
