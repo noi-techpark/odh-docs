@@ -13,14 +13,14 @@ available here:
 
       .. tab:: Mobility
 
-	 #. :doc:`/howto/mobility`. Since the APIs are very generic,
+	 #. :doc:`/howto/mobility/mobility`. Since the APIs are very generic,
 	    directions contained in this howto can be applied to any
 	    dataset of the mobility domain.
-
-	 #. :doc:`/howto/mobilityanalytics`. This howto guides you in
+	 #. :doc:`/howto/mobility/mobilityanalytics`. This howto guides you in
 	    browse and query data produces from the sensors used in
 	    the mobility domain.
- 
+	 #. :doc:`/howto/mobility/tips` Mini howtos, tricks&tips, and
+	    use cases for data in the Mobility domain. 
 
       .. tab:: Tourism
 
@@ -49,7 +49,7 @@ available here:
 	 #. :doc:`/howto/noievents` Create and modify NOI events
 	    directly from the |odh| portal.
 
-	 #. :doc:`howto/webcomponents` share your Web Components with
+	 #. :doc:`/howto/webcomponents` share your Web Components with
 	    |odh| team
 
 
@@ -57,13 +57,15 @@ available here:
 
    .. rubric:: Mobility
 
-   #. :doc:`/howto/mobility`. Since the APIs are very generic,
+   #. :doc:`/howto/mobility/mobility`. Since the APIs are very generic,
       directions contained in this howto can be applied to any dataset
       of the mobility domain.
-   #. :doc:`/howto/mobilityanalytics`. This howto guides you in browse
+   #. :doc:`/howto/mobility/mobilityanalytics`. This howto guides you in browse
       and query data produces from the sensors used in the mobility
       domain.
- 
+   #. :doc:`/howto/mobility/tips` Mini howtos, tricks&tips, and
+      use cases for data in the Mobility domain.
+      
    .. rubric:: Tourism
 	       
    #. :doc:`/howto/tourism/getstarted` Description of how to access
@@ -89,15 +91,16 @@ available here:
    #. :doc:`/howto/noievents` Create and modify NOI events directly
       from the |odh| portal.
 
-   #. :doc:`howto/webcomponents` share your webcomponents with
+   #. :doc:`/howto/webcomponents` share your webcomponents with
       |odh| team
 
 .. toctree::
    :maxdepth: 1
    :hidden:
 		 
-   howto/mobility
-   howto/mobilityanalytics
+   howto/mobility/mobility
+   howto/mobility/mobilityanalytics
+   howto/mobility/tips
    howto/tourism/getstarted
    howto/tourism/browse
    howto/authentication
