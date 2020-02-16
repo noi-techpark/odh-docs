@@ -7,11 +7,22 @@ This howto uses the :ref:`E-charging stations dataset <echarging-dataset>`
 to showcase a few basic API calls, whose output will be needed in most
 complex calls.
 
+.. note:: This how-to is valid for the API v1 |deprecated| version
+   only. Please use the :ref:`dedicated howto for API v2
+   <mobility-tips>` instead.
        
 Dataset Information
 ~~~~~~~~~~~~~~~~~~~
 
-.. include:: /datasets/ecs.rst
+This datasets exposes data about the existing e-charging stations in
+South Tyrol and their status, including historical data and usage.
+
+==============  ========================================================
+Output          JSON, mime-type application/json
+E-mail contact  |contact|
+API version     :strike:`v1` |deprecated|
+Swagger URL     :integreen:`EchargingFrontEnd`
+==============  ========================================================
 
 
 Invoking the API
