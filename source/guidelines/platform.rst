@@ -6,8 +6,9 @@ Platform Guidelines - Full Version
 
 
 .. topic:: Changelog
-
-   * :strong:`2018-05-28 version 1.0`
+   
+   * :strong:`2020-01-20 version 1.1` -- fixed outgoing links
+   * 2018-05-28 version 1.0
    * 2018-03-30 version 1.0-beta
 
 +++++

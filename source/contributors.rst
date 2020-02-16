@@ -1,14 +1,15 @@
-GITHUB Quick Documentation for Contributors
-===========================================
+=============================================
+ GITHUB Quick Documentation for Contributors
+=============================================
 
 This section guides you in setting up on your local workstation the
 (forked) git repositories needed to contribute to the |odh| project,
 along with some troubleshooting concerning pull requests and merge
 conflicts. For more detailed help, please refer to the online Github
-help, at https://help.github.com/.
+help, at https://help.github.com/en.
 
 Prerequisites
--------------
+=============
 
 In the following documentation some example names are used. Please
 replace them with your names:
@@ -21,7 +22,7 @@ replace them with your names:
 
 
 Project Checkout
-----------------
+================
 
 Before starting the development, you need to fork the original
 (upstream) repository.
@@ -56,7 +57,7 @@ Before starting the development, you need to fork the original
       Clone the repository.
 
 Create a pull request
----------------------
+=====================
 
 In order to let your contribution be accepted in the |odh| code base,
 you need to follow the following steps.
@@ -119,7 +120,7 @@ you need to follow the following steps.
 .. _syncing-a-fork:
    
 Syncing a Fork
---------------
+==============
 
 Your forked repository does not receive the updates of the original
 repository automatically. To sync for example the
@@ -132,7 +133,8 @@ Before you can sync your fork with the original repository (an
 upstream repository), you must configure a remote that points to the
 upstream repository in Git. A more detailed description for the
 following steps can be found in the online Github help
-https://help.github.com/articles/configuring-a-remote-for-a-fork/.
+https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/configuring-a-remote-for-a-fork
+
 
 1. List the current configured remote repository for your fork.
 
@@ -157,7 +159,7 @@ https://help.github.com/articles/configuring-a-remote-for-a-fork/.
 You need sync a fork of a repository to keep it up-to-date with the
 original repository (upstream repository). A more detailed description
 for the following steps can be found in the online Github help
-https://help.github.com/articles/syncing-a-fork/.
+https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/syncing-a-fork
 
 1. Fetch the branches and their respective commits from the upstream
    repository. Commits to :strong:`development` will be stored in a
@@ -183,7 +185,7 @@ https://help.github.com/articles/syncing-a-fork/.
       git merge upstream/development
     
 Resolving Merge Conflicts
--------------------------
+=========================
 
 When creating and working on a pull request, it could happen that the
 destination branch of the original repository will change. These
@@ -265,4 +267,5 @@ To resolve merge conflicts, the following steps must be performed.
 	      
       A solved merge conflict. 
 
-A more detailed description can be found in the online Github help: https://help.github.com/articles/resolving-a-merge-conflict-using-the-command-line/.
+A more detailed description can be found in the online Github help:
+https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/resolving-a-merge-conflict-using-the-command-line.

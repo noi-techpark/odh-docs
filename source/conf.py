@@ -94,9 +94,13 @@ rst_prolog = """
 extlinks = { 'sasabus': ('http://sasabus.org/%s', None),
              'integreen':
              ('http://ipchannels.integreen-life.bz.it/%s', None),
+             'ig-swagger':
+             ('http://ipchannels.integreen-life.bz.it/%s/swagger-ui.html', None),
+
              'stinfo':
              ('http://tourism.opendatahub.bz.it/swagger/ui/index#%s', None),
-             'iterconcept': ('https://en.cppreference.com/w/cpp/experimental/ranges/iterator/%s', 'std::'), 
+             'iterconcept': ('https://en.cppreference.com/w/cpp/experimental/ranges/iterator/%s', 'std::'),
+             'hp': ('https://hackathon.bz.it/project/%s', None)
 }
 
 numfig = True
@@ -198,6 +202,17 @@ man_pages = [
 #
 # man_show_urls = False
 
+# -- Options for linkcheck output -------------------------------------------
+
+linkcheck_anchors = False
+linkcheck_retries = 2
+linkcheck_ignore = [
+    'https://ci.opendatahub.bz.it',
+    'https://github.com/your-username/',
+    'http://localhost:\d+/',
+    'https://cert.provinz.bz.it/musport/services/MuseumsService.MuseumsServiceHttpSoap11Endpoint/',
+    'http://tourism.opendatahub.bz.it/token'
+]
 
 # -- Options for Texinfo output -------------------------------------------
 
@@ -222,5 +237,6 @@ epub_css_files = [ 'odh.css' ]
 
 def setup(app):
     app.add_css_file('https://use.fontawesome.com/releases/v5.7.0/css/all.css')
+    app.add_js_file('searchtools.js')
     app.add_config_value('googleanalytics_id', '', 'html')
     app.add_config_value('googleanalytics_enabled', True, 'html')

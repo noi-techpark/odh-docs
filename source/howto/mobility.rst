@@ -25,7 +25,7 @@ The API calls shown here can be used with other datasets of the
 :ref:`mobility domain <mobility-datasets>`.
 
 You can find all the API's defined methods and documentation at the
-URL :integreen:`EchargingFrontEnd`.
+URL :ig-swagger:`EchargingFrontEnd`.
 
 The two most basic REST calls are carried out by the methods
 :command:`get-stations` and  :command:`get-station-details`.

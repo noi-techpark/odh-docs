@@ -56,21 +56,21 @@
 .. other urls
 
 .. _github repository: https://github.com/noi-techpark/odh-docs
-.. _OpenJDK: http://openjdk.java.net/
+.. _OpenJDK: https://openjdk.java.net/
 .. _oraclejdk:
-   http://www.oracle.com/technetwork/java/javase/downloads/index.html
+   https://www.oracle.com/technetwork/java/javase/downloads/index.html
 .. _Javadoc style guide and tags:
-   http://www.oracle.com/technetwork/java/javase/tech/index-137868.html
+   https://www.oracle.com/technetwork/java/javase/tech/index-137868.html
 .. _ECMA Compatibility table:
    https://kangax.github.io/compat-table/es6/
 .. _webpack: https://webpack.js.org/
 .. _lts release: https://github.com/nodejs/Release
 .. _the W3C validator: https://validator.w3.org/
-.. _Apache Tomcat: http://tomcat.apache.org/
+.. _Apache Tomcat: https://tomcat.apache.org/
 .. _postgresql: https://www.postgresql.org/
 .. _the versioning policy: https://www.postgresql.org/support/versioning/
 .. _extensions distributed with PostgreSQL:
-   https://www.postgresql.org/docs/10/static/contrib.html
+   https://www.postgresql.org/docs/10/contrib.html
 .. _spatial query extension PostGIS: https://postgis.net/
 
 .. abbreviations

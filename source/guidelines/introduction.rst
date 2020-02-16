@@ -4,7 +4,7 @@ Guidelines for Developers
 =========================
 
 |odh| is a collection of software, databases, and services coordinated
-and hosted by `NOI techpark <https://noi.bz.it/>`_ in Bolzano/Bozen,
+and hosted by `NOI techpark <https://noi.bz.it/en>`_ in Bolzano/Bozen,
 South Tyrol. Currently, |odh| systems are related to mobility and
 tourism. In the future |odh| might diversify into more fields.
 

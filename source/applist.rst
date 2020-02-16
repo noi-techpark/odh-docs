@@ -30,7 +30,7 @@ an email contact and its status and we'll add it to the list.
 Production Stage Apps
 ---------------------
 
-* https://www.suedtirol.info.  This portal is the official
+* https://www.suedtirol.info/en This portal is the official
   touristic site of the South Tyrol region. It uses the data extracted
   from the :ref:`tourism-datasets` to display events in the region of
   South Tyrol and other useful information to help tourists organise
@@ -50,7 +50,7 @@ Production Stage Apps
   experiencing South Tyrol, available for both `Android
   <https://play.google.com/store/apps/details?id=com.suedtirol.android>`_
   and `iPhone
-  <https://itunes.apple.com/us/app/s%C3%BCdtirol-mobile-guide/id339011586?mt=8>`_
+  <https://apps.apple.com/us/app/s%C3%BCdtirol-mobile-guide/id339011586>`_
   mobile devices. This app offers all the functionalities of the
   above-mentioned web site, plus the ability to locate events, points
   of interest and the like near your current position.
@@ -60,7 +60,7 @@ Production Stage Apps
 Beta Stage Apps
 ---------------
 
-* https://mobility.meran.eu. This web site is the first example of a
+* https://mobility.meran.eu/ This web site is the first example of a
   Mobility-as-a-Service application; it includes real-time information
   of multiple mobility services, like public transportation, places of
   interests, car sharing services, parking lots, and more in the city
@@ -69,21 +69,21 @@ Beta Stage Apps
 * https://mobility.bz.it/ This web site is the counterpart of the
   previous one for the city of Bolzano/Bozen.
 
-* https://parking.bz.it. A web site that displays the real-time parking
+* https://parking.bz.it/ A web site that displays the real-time parking
   availability of off-street parking lots in South Tyrol. On mobile
   devices, it can also show directions from your current position to
   the chosen parking lot.
 
-* http://traffic.bz.it. Some streets in South Tyrol are monitored for
+* http://traffic.bz.it/ Some streets in South Tyrol are monitored for
   real-time vehicular travel times; the data collected are used by
   this web site to show traffic slowdowns or jams.
   
-* http://bus.bz.it. This web site shows the real-time positions of the
+* http://bus.bz.it/ This web site shows the real-time positions of the
   buses managed by the public transport operator SASA. Urban or
   suburban bus lines can be shown, and for each bus can be shown the
   next few stops and an estimate of the arrival time.
 
-* http://map.clean-roads.eu. One of the CLEAN-ROADS project outcomes,
+* https://map.clean-roads.eu/ One of the CLEAN-ROADS project outcomes,
   this web site shows real-time data of the meteorological stations
   that are situated along public streets.
   

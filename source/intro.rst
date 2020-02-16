@@ -151,7 +151,7 @@ data by using a browser:
 
 #. Go to the :strong:`Swagger interface` of the datasets in the
    Tourism domain, located at
-   http://tourism.opendatahub.bz.it/swagger/, to learn how the REST
+   http://tourism.opendatahub.bz.it/swagger/ui/index, to learn how the REST
    APIs are built and how you can script them to fetch data for your
    application. To get started, there is a dedicated howto:
    :ref:`tourism-data-howto` that will guide you in the first steps.
@@ -205,7 +205,7 @@ used:
 
 Your best opportunity to learn about the correct syntax and parameters
 to use is to go to the :strong:`swagger interface` of the `tourism
-<http://tourism.opendatahub.bz.it/swagger>`_ or `mobility`
+<http://tourism.opendatahub.bz.it/swagger/ui/index>`_ or `mobility`
 (http\://ipchannels.integreen-life.bz.it/<dataset>/swagger-ui.html
 [#]_) domains and execute a query: with the output, also the
 corresponding :program:`curl` command used to retrieve the data will

@@ -49,6 +49,9 @@ available here:
 	 #. :doc:`/howto/noievents` Create and modify NOI events
 	    directly from the |odh| portal.
 
+	 #. :doc:`howto/webcomponents` share your Web Components with
+	    |odh| team
+
 
 .. only:: latex or latexpdf or epub
 
@@ -86,7 +89,8 @@ available here:
    #. :doc:`/howto/noievents` Create and modify NOI events directly
       from the |odh| portal.
 
-
+   #. :doc:`howto/webcomponents` share your webcomponents with
+      |odh| team
 
 .. toctree::
    :maxdepth: 1
@@ -101,3 +105,4 @@ available here:
    howto/postman
    howto/noievents
    howto/tourism/tips
+   howto/webcomponents

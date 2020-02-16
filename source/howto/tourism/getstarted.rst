@@ -61,7 +61,7 @@ Filters are used within a dataset and their primary purpose is to
 limit the result set according to specific parameters, although they
 might not be available in every API call. Information about default
 values can be found for each datasets in the `swagger interface
-<http::/tourism.opendatahub.bz.it/swagger>`_ of the API. Some examples
+<http://tourism.opendatahub.bz.it/swagger/ui/index>`_ of the API. Some examples
 of their use can be found in section :doc:`tips`.
 
 - :strong:`Seed` is used to set pagination. See tip :ref:`TT3
