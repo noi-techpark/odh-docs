@@ -13,7 +13,7 @@ available here:
 
       .. tab:: Mobility
 
-	 #. :doc:`/howto/tourism/getstarted` Getting started with the
+	 #. :doc:`/howto/mobility/getstarted` Getting started with the
 	    new API v2.
 	 #. :doc:`/howto/mobility/mobility`. Since the APIs are very generic,
 	    directions contained in this howto can be applied to any
@@ -57,7 +57,7 @@ available here:
 
    .. rubric:: Mobility
 
-   #. :doc:`/howto/tourism/getstarted` Getting started with the new
+   #. :doc:`/howto/mobility/getstarted` Getting started with the new
       API v2.
    #. :doc:`/howto/mobility/mobility`. Since the APIs are very
       generic, directions contained in this howto can be applied to
