@@ -13,14 +13,14 @@ available here:
 
       .. tab:: Mobility
 
+	 #. :doc:`/howto/tourism/getstarted` Getting started with the
+	    new API v2.
 	 #. :doc:`/howto/mobility/mobility`. Since the APIs are very generic,
 	    directions contained in this howto can be applied to any
 	    dataset of the mobility domain.
 	 #. :doc:`/howto/mobility/mobilityanalytics`. This howto guides you in
 	    browse and query data produces from the sensors used in
 	    the mobility domain.
-	 #. :doc:`/howto/mobility/tips` Mini howtos, tricks&tips, and
-	    use cases for data in the Mobility domain. 
 
       .. tab:: Tourism
 
@@ -57,14 +57,14 @@ available here:
 
    .. rubric:: Mobility
 
-   #. :doc:`/howto/mobility/mobility`. Since the APIs are very generic,
-      directions contained in this howto can be applied to any dataset
-      of the mobility domain.
+   #. :doc:`/howto/tourism/getstarted` Getting started with the new
+      API v2.
+   #. :doc:`/howto/mobility/mobility`. Since the APIs are very
+      generic, directions contained in this howto can be applied to
+      any dataset of the mobility domain.
    #. :doc:`/howto/mobility/mobilityanalytics`. This howto guides you in browse
       and query data produces from the sensors used in the mobility
       domain.
-   #. :doc:`/howto/mobility/tips` Mini howtos, tricks&tips, and
-      use cases for data in the Mobility domain.
       
    .. rubric:: Tourism
 	       
@@ -97,10 +97,10 @@ available here:
 .. toctree::
    :maxdepth: 1
    :hidden:
-		 
+
+   howto/mobility/getstarted
    howto/mobility/mobility
    howto/mobility/mobilityanalytics
-   howto/mobility/tips
    howto/tourism/getstarted
    howto/tourism/browse
    howto/authentication
