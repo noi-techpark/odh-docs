@@ -1,6 +1,4 @@
-
-|idgb|\ carsharing
-------------------
+.. carsharing
    
 ==============  ========================================================
 Output          JSON, mime-type application/json

@@ -1,7 +1,4 @@
-
-|lts|\ activity
----------------
-
+.. activity
 
 ==============  ========================================================
 Output          JSON, mime-type application/json

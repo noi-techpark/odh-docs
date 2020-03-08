@@ -1,6 +1,4 @@
-
-|idgb|\ parking
----------------
+.. parking
 
 ==============  ========================================================
 Output          JSON, mime-type application/json

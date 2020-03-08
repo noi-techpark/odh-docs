@@ -1,8 +1,5 @@
-
-|idgb|\ snowreport
-------------------
-
-
+.. snow report
+   
 ==============  ========================================================
 Output          JSON, mime-type application/json
 E-mail contact  |contact|

@@ -1,6 +1,5 @@
 
-|idgb|\ environment
--------------------
+.. environment
       
 ==============  ========================================================
 Output          JSON, mime-type application/json
