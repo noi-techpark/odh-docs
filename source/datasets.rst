@@ -31,6 +31,12 @@ endpoint is given along with other information in the description of
 each dataset, see the lists of datasets in the remainder of this
 section.
 
+.. note:: There are currently two versions of the API, :strong:`v1`
+   and :strong:`v2`; :strong:`v1` is available for :strong:`both`
+   Tourism and Mobility domains, but deprecated within the Mobility
+   domain, for which the new :strong:`v2` is available and
+   recommended, see :ref:`the description of the new API <ninja api>`.
+
 .. _data-providers:
 
 Data Providers
@@ -90,9 +96,8 @@ The |odh|\'s Data Providers are:
    |cc0| or |bysa|, a user will be able to retrieve from each dataset
    only those data that are distributed as :strong:`Open Data`.
 
-At the date of writing, datasets about the Mobility and Tourism
-domains are available; the available datasets in each domain are
-listed below.
+At the date of writing, datasets in the :ref:`Mobility
+<mobility-datasets>` and :ref:`Tourism <tourism-datasets>` are available.
 
 Accessing data in the |odh|
 ---------------------------
@@ -197,17 +202,10 @@ used:
 
 Your best opportunity to learn about the correct syntax and parameters
 to use is to go to the :strong:`swagger interface` of the `tourism
-<http://tourism.opendatahub.bz.it/swagger/ui/index>`_ or `mobility`
-(http\://ipchannels.integreen-life.bz.it/<dataset>/swagger-ui.html
-[#]_) domains and execute a query: with the output, also the
-corresponding :program:`curl` command used to retrieve the data will
-be shown.
-
-.. rubric:: Notes
-
-.. [#] You need to provide the dataset name, for example
-       http://ipchannels.integreen-life.bz.it/parking/swagger-ui.html,
-       see :ref:`mobility-datasets` for full links.
+<http://tourism.opendatahub.bz.it/swagger/ui/index>`_ or `mobility
+<https://mobility.api.opendatahub.bz.it/v2/swagger-ui.html>`_ domains
+and execute a query: with the output, also the corresponding
+:program:`curl` command used to retrieve the data will be shown.
 
 Authentication
 ~~~~~~~~~~~~~~
@@ -232,6 +230,8 @@ Datasets in the Mobility Domain
 	   
 This section contains information about the datasets and how to access
 them using the API that the |odh| team developed and made available.
+
+.. _ninja api:
 
 .. topic:: API v1 vs API v2.
 	   
@@ -361,7 +361,7 @@ Datasets in the Tourism Domain
 .. contents:: List of datasets in the tourism domain.
    :local:
 
-Like in the previous section, the following information is provided
+The following information is provided
 for each of the above-listed dataset:
 
 * The output format of the API call.
