@@ -1,7 +1,5 @@
+.. bluetooth
 
-|idgb|\ bluetooth
------------------
-   
 The data for this datasets are collected by experimental
 Bluetooth-based sensors and detectors currently located on various
 points of the streets of Bolzano and soon in other location of South

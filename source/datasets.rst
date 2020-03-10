@@ -31,10 +31,16 @@ endpoint is given along with other information in the description of
 each dataset, see the lists of datasets in the remainder of this
 section.
 
+.. note:: There are currently two versions of the API, :strong:`v1`
+   and :strong:`v2`; :strong:`v1` is available for :strong:`both`
+   Tourism and Mobility domains, but deprecated within the Mobility
+   domain, for which the new :strong:`v2` is available and
+   recommended, see :ref:`the description of the new API <ninja api>`.
+
 .. _data-providers:
 
 Data Providers
-~~~~~~~~~~~~~~
+--------------
 
 A :strong:`Data Provider` is any entity that shares their Open Data
 with the |odh| project, allowing their free reuse (ideally under a
@@ -90,20 +96,142 @@ The |odh|\'s Data Providers are:
    |cc0| or |bysa|, a user will be able to retrieve from each dataset
    only those data that are distributed as :strong:`Open Data`.
 
-At the date of writing, datasets about the Mobility and Tourism
-domains are available; the available datasets in each domain are
-listed below.
+At the date of writing, datasets in the :ref:`Mobility
+<mobility-datasets>` and :ref:`Tourism <tourism-datasets>` are available.
+
+Accessing data in the |odh|
+---------------------------
+
+There are different modalities to access data that are provided by the
+|odh|, that are listed here. Currently, data from the
+:strong:`Mobility` and :strong:`Tourism` domains can be accessed, both
+from the command line and using a browser. Various dedicated tutorials
+are available in the :ref:`howto-list` section; while in section
+:ref:`getting-involved` you can find additional ways to interact with
+the data and the |odh| team.
+
+Browser access
+~~~~~~~~~~~~~~
+
+Accessing data in the |odh| by using a browser is useful on different
+levels: for the casual user, who can have a look at the type and
+quality of data provided; for a developer, that can use the
+:term:`REST API` implemented by the |odh| or even check if the results
+of his app are coherent with those retrieved with the API; for
+everyone in order to get acquainted with the various methods to
+retrieve data.
+
+More in detail, these are the possibilities to interact with |odh|\'s
+data by using a browser:
+
+#. Go to the :ref:`applist` section of the documentation, particularly
+   sub-sections :ref:`production-stage-apps` and
+   :ref:`beta-stage-apps`, and choose one of the web sites and portals
+   that are listed there. Each of them uses the data gathered from one
+   or more |ODH|\'s datasets to display a number of useful
+   information. You can then see how data are exposed and browse them.
+
+#. In the same :ref:`applist` section, you can also check the list of
+   the :strong:`Alpha Stage Apps` and choose one of them that you
+   think you can expand, then get in touch with the authors to suggest
+   additional features or collaborate with them to discuss its further
+   development to improve it.  
+   
+#. Access the `ODH Tourism data browser
+   <http://tourism.opendatahub.bz.it/>`_ and search for the Open Data
+   available in the Tourism domain. You can simply use those data for
+   your convenience, or you might even find a novel way to exploit
+   those data and use them in an app or portal you are going to
+   develop. A detailed howto is available:
+   :ref:`tourism-data-browser-howto` to help you getting acquainted
+   with the browser.
+
+#. Go to the :strong:`Swagger interface` of the datasets in the
+   Tourism domain, located at
+   http://tourism.opendatahub.bz.it/swagger/ui/index, to learn how the REST
+   APIs are built and how you can script them to fetch data for your
+   application. To get started, there is a dedicated howto:
+   :ref:`tourism-data-howto` that will guide you in the first steps.
+
+#. Access the :strong:`Swagger interface` of the datasets in the
+   Mobility domain. Check the link for each of them in section
+   :ref:`mobility-datasets`. Like in the case of the tourism' Swagger
+   interface, you can learn REST API call for that domain and fetch
+   data for your application. There is a dedicated howto to learn more
+   how to interact with this interface: ref:`mobility-data-howto`
+
+#. Open the :strong:`Analytics for Mobility` web page, at
+   https://analytics.mobility.bz.it/. This portal uses data in the
+   mobility domain to display various information about the sensors,
+   including their locations, what they measure, and actual data in
+   near-real time. You can retrieve data gathered by the sensors
+   directly from the dataset, in almost real-time.
+
+CLI access
+~~~~~~~~~~
+
+Unlike browser access, that provides an interactive access to data,
+with the option to incrementally refine a query, command line access
+proves useful for non-interactive, one-directional, and quick data
+retrieval in a number of scenarios, including:
+
+* Scripting, data manipulation and interpolation, to be used in
+  statistical analysis.
+* Applications that gather data and present them to the end users.
+* Automatic updates to third-parties websites or kiosk-systems like
+  e.g., in the hall of hotels.
+
+Command line access to the data is usually carried out with the
+:program:`curl` Linux utility, which is used to retrieve information
+in a non-interactive way from a remote site and can be
+used with a variety of options and can save the contents it downloads,
+which can them be send to other applications and manipulated.
+
+The number of options required by :program:`curl` to retrieve data
+from |odh|\'s dataset is limited, usually they are not more than 3 or
+4, but their syntax and content might become long and not easily
+readable by a human, due to the number of :ref:`filters
+<common-filters>` available. For example, to retrieve the list of all
+points of interests in South Tyrol, the following command should be
+used:
+
+.. code-block:: bash
+
+   curl -X GET "http://tourism.opendatahub.bz.it/api/ODHActivityPoi?pagenumber=1&pagesize=10&type=63&subtype=null&poitype=null&idlist=null&locfilter=null&langfilter=null&areafilter=null&highlight=null&source=null&odhtagfilter=null&odhactive=null&active=null&seed=null&latitude=null&longitude=null&radius=null" -H "accept: application/json"
+
+
+Your best opportunity to learn about the correct syntax and parameters
+to use is to go to the :strong:`swagger interface` of the `tourism
+<http://tourism.opendatahub.bz.it/swagger/ui/index>`_ or `mobility
+<https://mobility.api.opendatahub.bz.it/v2/swagger-ui.html>`_ domains
+and execute a query: with the output, also the corresponding
+:program:`curl` command used to retrieve the data will be shown.
+
+Authentication
+~~~~~~~~~~~~~~
+
+The authentication layer is currently intended for :strong:`internal
+use only`. All data in the dataset that you can receive from the |odh|
+are free to use and do not require any type of authentication.
+
+
+The authentication layer can be of interest for developers who want to
+collaborate in the development of |odh|\; Details on the implementation
+are available in section :ref:`authentication`.
 
 .. _mobility-datasets:
 
 Datasets in the Mobility Domain
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-------------------------------
+
 
 .. contents:: List of datasets in the mobility domain.
    :local:
 	   
 This section contains information about the datasets and how to access
 them using the API that the |odh| team developed and made available.
+
+.. _ninja api:
 
 .. topic:: API v1 vs API v2.
 	   
@@ -146,59 +274,94 @@ and :strong:`Mobility` as follows:
 .. rubric:: Traffic
 
 .. _rwisstation-dataset:
+
+|idgb|\ rwisstation
+~~~~~~~~~~~~~~~~~~~
 .. include:: /datasets/rwisstation.rst
 
 .. _streetelement-dataset:
+
+|idgb|\ streetelements
+~~~~~~~~~~~~~~~~~~~~~~
 .. include:: /datasets/streetelements.rst
 
 .. _linkstation-dataset:
+
+|idgb|\ linkstation
+~~~~~~~~~~~~~~~~~~~
 .. include:: /datasets/linkstation.rst
 
 .. _bluetooth-dataset:
+
+|idgb|\ bluetooth
+~~~~~~~~~~~~~~~~~
 .. include:: /datasets/bluetooth.rst
     
 .. _weather-dataset:
+
+|idgb|\ weather
+~~~~~~~~~~~~~~~
 .. include:: /datasets/weather.rst
 
 .. _environment-dataset:
+
+|idgb|\ environment
+~~~~~~~~~~~~~~~~~~~
 .. include:: /datasets/environment.rst
 
 .. _parking-dataset:
+
+|idgb|\ parking
+~~~~~~~~~~~~~~~
 .. include:: /datasets/parking.rst
 
 .. _trafficstation-dataset:
+
+|idgb|\ trafficstation
+~~~~~~~~~~~~~~~~~~~~~~
 .. include:: /datasets/trafficstation.rst
 
 .. rubric:: Mobility
    
 .. _carsharing-dataset:
+
+|idgb|\ carsharing
+~~~~~~~~~~~~~~~~~~
 .. include:: /datasets/carsharing.rst
 
 .. _carpoolinghub-dataset:
+
+|idgb|\ carpoolinghub
+~~~~~~~~~~~~~~~~~~~~~
 .. include:: /datasets/carpoolinghub.rst
 
 .. _bikesharing-dataset:
+
+|idgb|\ bikesharing
+~~~~~~~~~~~~~~~~~~~
 .. include:: /datasets/bikesharing.rst
 
 .. _echarging-dataset:
 
 |idgb|\ echargingstation
-------------------------
-
+~~~~~~~~~~~~~~~~~~~~~~~~
 .. include:: /datasets/ecs.rst
 
-.. _sasabus-dataset: 
+.. _sasabus-dataset:
+
+Public Transportation
+~~~~~~~~~~~~~~~~~~~~~
 .. include:: /datasets/sasa.rst
 
 .. _tourism-datasets:
 
 Datasets in the Tourism Domain
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+------------------------------
 
 .. contents:: List of datasets in the tourism domain.
    :local:
 
-Like in the previous section, the following information is provided
+The following information is provided
 for each of the above-listed dataset:
 
 * The output format of the API call.
@@ -211,44 +374,86 @@ for each of the above-listed dataset:
    set of values, because historical data are not available in the |odh|\.
   
 .. _accommodation-dataset:
+
+|lts|\ accommodation
+~~~~~~~~~~~~~~~~~~~~
 .. include:: /datasets/accommodation.rst
 
 .. _package-dataset:
+
+it.hgv.package
+~~~~~~~~~~~~~~
 .. include:: /datasets/package.rst
 
 .. _poi-dataset:
+
+|lts|\ poi
+~~~~~~~~~~
 .. include:: /datasets/poi.rst
 
 .. _activity-dataset:
+
+|lts|\ activity
+~~~~~~~~~~~~~~~
 .. include:: /datasets/activity.rst
 
 .. _event-dataset:
+
+|lts|\ event
+~~~~~~~~~~~~
 .. include:: /datasets/event.rst
 
 .. _activity_poi-dataset:
+
+|lts|\ activity_poi
+~~~~~~~~~~~~~~~~~~~
 .. include:: /datasets/activity_poi.rst
 	     
 .. _gastronomy-dataset:
+
+|lts|\ gastronomy
+~~~~~~~~~~~~~~~~~
 .. include:: /datasets/gastronomy.rst
 
 .. _location-dataset:
+
+|idgb|\ location
+~~~~~~~~~~~~~~~~
 .. include:: /datasets/location.rst
 
 .. _ski-dataset:
+
+|idgb|\ ski
+~~~~~~~~~~~
 .. include:: /datasets/ski.rst
 
 .. _snowreport-dataset:
+
+|idgb|\ snowreport
+~~~~~~~~~~~~~~~~~~
 .. include:: /datasets/snowreport.rst
 	     
 .. _webcam-dataset:
+
+|idgb|\ webcam
+~~~~~~~~~~~~~~
 .. include:: /datasets/webcam.rst
 	     
 .. _weather-siag-dataset:
+
+|idgb|\ weather-siag
+~~~~~~~~~~~~~~~~~~~~
 .. include:: /datasets/weather-siag.rst
 	     
 .. _siag.weather-dataset:
+
+|idsiag|\ weather
+~~~~~~~~~~~~~~~~~
 .. include:: /datasets/siag.weather.rst
 
 .. _museum-dataset:
+
+|idsiag|\ museum
+~~~~~~~~~~~~~~~~
 .. include:: /datasets/museum.rst
 

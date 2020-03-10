@@ -1,7 +1,4 @@
-
-|idgb|\ weather-siag
---------------------
-
+.. weather siag
 
 ==============  ========================================================
 Output          JSON, mime-type application/json

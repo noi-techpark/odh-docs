@@ -1,6 +1,4 @@
-
-|idgb|\ carpoolinghub
----------------------
+.. carpoolinghub
 
 ==============  ========================================================
 Output          JSON, mime-type application/json

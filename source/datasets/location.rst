@@ -1,7 +1,4 @@
-
-|idgb|\ location
-----------------
-
+.. location
 
 ==============  ========================================================
 Output          JSON, mime-type application/json

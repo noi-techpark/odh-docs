@@ -1,7 +1,5 @@
-
-Public Transportation
----------------------
-
+.. sasa bus
+   
 This datasets shows the real time position of buses operated by SASA
 in South Tyrol and, through a few subsets, additional information
 about lines, station boards, and news.

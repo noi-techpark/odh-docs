@@ -1,6 +1,4 @@
-
-|idgb|\ trafficstation
-----------------------
+.. traffic station
 
 ==============  ========================================================
 Output          JSON, mime-type application/json

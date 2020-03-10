@@ -1,7 +1,5 @@
+.. street elements
 
-|idgb|\ streetelements
-----------------------
-   
 ==============  ========================================================
 Output          JSON, mime-type application/json
 E-mail contact  |contact|

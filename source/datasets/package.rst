@@ -1,7 +1,4 @@
-
-it.hgv.package
--------------------
-
+.. package
 
 ==============  ========================================================
 Output          JSON, mime-type application/json

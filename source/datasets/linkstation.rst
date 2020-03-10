@@ -1,7 +1,5 @@
-
-|idgb|\ linkstation
--------------------
-
+.. linkstation
+   
 The data for this dataset are collected by the same Bluetooth-based
 sensors that are used to produce the :ref:`Bluetooth dataset
 <bluetooth-dataset>`. Indeed, the data gathered by the sensors will be

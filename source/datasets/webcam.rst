@@ -1,7 +1,4 @@
-
-|idgb|\ webcam
----------------
-
+.. webcam
 
 ==============  ========================================================
 Output          JSON, mime-type application/json
