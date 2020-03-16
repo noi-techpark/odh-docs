@@ -358,9 +358,15 @@ Public Transportation
 NOI-Place
 ~~~~~~~~~
 .. include:: /datasets/noiplace.rst
-	     
-.. _tourism-datasets:
 
+.. _creative-industries-dataset:
+
+Creative Industries
+~~~~~~~~~~~~~~~~~~~
+.. include:: /datasets/creativeindustries.rst
+
+
+.. _tourism-datasets:
 
 Datasets in the Tourism Domain
 ------------------------------

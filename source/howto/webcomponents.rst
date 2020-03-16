@@ -1,3 +1,5 @@
+.. _webcomponents:
+
 How to Publish your Web Component on the |ODH| Store
 ====================================================
 
