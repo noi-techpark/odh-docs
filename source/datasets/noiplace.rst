@@ -10,7 +10,7 @@ This dataset is used to create the `interactive map
 ==============  ========================================================
 Output          JSON, mime-type application/json
 E-mail contact  |contact|
-API version     :strike:`v1` |deprecated|, v2
+API version     v2
 Swagger URL     |apiv2|
 |station|       NOI-Place
 ==============  ========================================================
