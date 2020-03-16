@@ -353,7 +353,14 @@ Public Transportation
 ~~~~~~~~~~~~~~~~~~~~~
 .. include:: /datasets/sasa.rst
 
+.. _noiplace-dataset:
+
+NOI-Place
+~~~~~~~~~
+.. include:: /datasets/noiplace.rst
+	     
 .. _tourism-datasets:
+
 
 Datasets in the Tourism Domain
 ------------------------------
