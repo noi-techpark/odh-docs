@@ -382,7 +382,7 @@ for each of the above-listed dataset:
 * The versions of the API that can be used to access the dataset.
 * The swagger URL of the APIs.
 
-.. note:: There is one |station|, namely :strong:`MobileStation` which
+.. note:: There is one :literal:`StationType`, namely :strong:`MobileStation` which
    is a mobile probe no longer active. It will always return an empty
    set of values, because historical data are not available in the |odh|\.
   

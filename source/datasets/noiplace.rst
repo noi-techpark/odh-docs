@@ -12,5 +12,5 @@ Output          JSON, mime-type application/json
 E-mail contact  |contact|
 API version     v2
 Swagger URL     |apiv2|
-|station|       NOI-Place
+:literal:`StationType`     NOI-Place
 ==============  ========================================================

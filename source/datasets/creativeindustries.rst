@@ -1,4 +1,4 @@
-.. carpoolinghub
+.. creativeindustries:
 
 This dataset originates from data collected in the `DAVINCI project
 <https://davinci.bz.it/>`_, whose aims is to increase local businesses
@@ -13,5 +13,5 @@ Output          JSON, mime-type application/json
 E-mail contact  |contact|
 API version     v2
 Swagger URL     |apiv2|
-|station|       CreativeIndustry
+:literal:`StationType`     CreativeIndustry
 ==============  ========================================================
