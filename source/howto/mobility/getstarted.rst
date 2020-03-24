@@ -53,7 +53,10 @@ consumption, while the latter more convenient for human reading.
 
 The data retrieved by each method are:
 
-#. All the data relative to one or more :literal:`StationType`\s
-#. All the data types available for the given |station|
+#. the data about stations themselfes, that is, the station including
+   its meta data and parent stations
+#. All the data of the previous call + given data types + the most
+   recent measurement (specially suited for real time retrieval of
+   data)
 #. All the data retrieved by the previous method, but limited to a
    given historical interval (:literal:`from` ... :literal:`to`)
