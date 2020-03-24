@@ -18,10 +18,11 @@ described in Section `Data analysis complexity` of `this pdf article
 <https://www.integreen-life.bz.it/it/c/document_library/get_file?uuid=f1702bf2-5ed9-42a5-a85b-42a3d97a3e6b&groupId=17369>`_.
 
    
-==============  ========================================================
-Output          JSON, mime-type application/json
-E-mail contact  |contact|
-API version     :strike:`v1` |deprecated|, v2
-Swagger URL     |apiv2|
+======================     ==================================
+Output                     JSON, mime-type application/json
+E-mail contact             |contact|
+API version                :strike:`v1` |deprecated|, v2
+Swagger URL                |apiv2|
 :literal:`StationType`     LinkStation
-==============  ========================================================
+======================     ==================================
+

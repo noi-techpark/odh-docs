@@ -7,10 +7,11 @@ compose the NOI Techpark in Bolzano-Bozen, Italy.
 This dataset is used to create the `interactive map
 <https://maps.noi.bz.it/>`_ of the NOI Techpark.
 
-==============  ========================================================
-Output          JSON, mime-type application/json
-E-mail contact  |contact|
-API version     v2
-Swagger URL     |apiv2|
+======================     ==================================
+Output                     JSON, mime-type application/json
+E-mail contact             |contact|
+API version                v2
+Swagger URL                |apiv2|
 :literal:`StationType`     NOI-Place
-==============  ========================================================
+======================     ==================================
+

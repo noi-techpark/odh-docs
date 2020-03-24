@@ -14,10 +14,11 @@ minutes), for statistical and historical offline analysis. Moreover,
 the data gathered by the Bluetooth devices are used in the
 :ref:`linkstation-dataset`.
    
-==============  ========================================================
-Output          JSON, mime-type application/json
-E-mail contact  |contact|
-API version     :strike:`v1` |deprecated|, v2
-Swagger URL     |apiv2|
+======================     ==================================
+Output                     JSON, mime-type application/json
+E-mail contact             |contact|
+API version                :strike:`v1` |deprecated|, v2
+Swagger URL                |apiv2|
 :literal:`StationType`     BluetoothStation
-==============  ========================================================
+======================     ==================================
+
