@@ -24,7 +24,7 @@ Getting Started
 ---------------
 
 In the API v2, the central concept is :strong:`Station`: all data come
-from a given |station|\, whose complete list can be
+from a given :literal:`StationType`, whose complete list can be
 retrieved by simply opening the first method of the
 :strong:`data-controller`, :strong:`/api`, then click on :button:`Try
 it out` and then on `Execute`.
@@ -53,7 +53,7 @@ consumption, while the latter more convenient for human reading.
 
 The data retrieved by each method are:
 
-#. All the data relative to one or more |station|\s
+#. All the data relative to one or more :literal:`StationType`\s
 #. All the data types available for the given |station|
 #. All the data retrieved by the previous method, but limited to a
    given historical interval (:literal:`from` ... :literal:`to`)
