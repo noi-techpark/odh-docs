@@ -1,8 +1,11 @@
 
-==============  ========================================================
-Output          JSON, mime-type application/json
-E-mail contact  |contact|
-API version     :strike:`v1` |deprecated|, v2
-Swagger URL     |apiv2|
-|station|       RWISstation
-==============  ========================================================
+The Road Weather stations are sensors that measure both the road
+surface and the weather conditions.
+
+======================     ==================================
+Output                     JSON, mime-type application/json
+E-mail contact             |contact|
+API version                :strike:`v1` |deprecated|, v2
+Swagger URL                |apiv2|
+:literal:`StationType`     RWISstation
+======================     ==================================

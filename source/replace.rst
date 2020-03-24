@@ -41,10 +41,6 @@
 
 .. |apiv2| replace:: https://mobility.api.opendatahub.bz.it/v2/swagger-ui.html
 
-
-.. |station| replace:: :literal:`stationType`
-
-
 .. URLs of datasets
 
 .. |mobecs| replace:: ipchannels.integreen-life.bz.it
