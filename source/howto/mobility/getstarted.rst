@@ -29,7 +29,7 @@ retrieved by simply opening the first method of the
 :strong:`data-controller`, :strong:`/api`, then click on :button:`Try
 it out` and then on `Execute`.
 
-Stations in the resulting list can be used in the other methods to
+Station types in the resulting list can be used in the other methods to
 retrieve additional data about each of them. To check which station
 belongs to which datasets, you can check the list of
 :ref:`mobility-datasets`.
