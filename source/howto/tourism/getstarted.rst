@@ -27,14 +27,14 @@ conventions are used:
 
 * :literal:`{Name}` is the (case sensitive!) name of the dataset you are
   currently working with, like for example :literal:`Accomodation`. 
-* |li| is the unique identifier of an array within the
+* :literal:`{Id}` is the unique identifier of an array within the
   dataset, i.e., an item of the dataset. It is usually the first key
   of the resulting JSON output of a query.
 
 The calls defined for every datasets are:
 
 - :literal:`/api/{Name}` Return the whole dataset.
-- :literal:`/api/{Name}/{Id}` Return only item with given |li|\.
+- :literal:`/api/{Name}/{Id}` Return only item with given :literal:`{Id}`\.
 - :literal:`/api/{Name}Reduced` Return only the list of Ids and
   respective name of the items in the dataset. It is useful to create
   lists of items or just to have an overview of the dataset's items.
@@ -93,12 +93,12 @@ of their use can be found in section :doc:`tips`.
   parameter. The difference is however important: :strong:`Active`
   indicates that the item is present in the original dataset provided,
   while :strong:`OdhActive` shows that the item has been verified by
-  the |odh| team and is present in the |odh|. See discussion in tip
-  :ref:`TT2 <tour-tt2>`.
+  the Open Data Hub team and is present in the Open Data Hub. See
+  discussion in tip :ref:`TT2 <tour-tt2>`.
 - :strong:`ODHTag` allows to filter a result set according to tag
-  defined by the |odh| team. These tags are mostly related with places
-  to see, activities that can be carried out in winter or summer, food
-  and beverage, cultural events and so on
+  defined by the Open Data Hub team. These tags are mostly related
+  with places to see, activities that can be carried out in winter or
+  summer, food and beverage, cultural events and so on
  
 .. _fields-filter:
   
