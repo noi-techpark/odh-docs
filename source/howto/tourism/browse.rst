@@ -20,12 +20,25 @@ and point it to http://tourism.opendatahub.bz.it/.
 
    The home page of the Tourism Data Browser.
 
-Under the header and an informative message, two icons and hyperlink
-in the centre of the page allow to reach the `Swagger interface
-<http://tourism.opendatahub.bz.it/swagger/ui/index>`_, the quickest place from
-where to access the datasets and learn how to programmatically
-retrieve the data, and the `Official documentation
-<https://opendatahub.readthedocs.io/en/latest/index.html>`_.
+Under the header and an informative message, hyperlinks in the centre
+of the page allow to open various resources about the Tourism domain.
+
+* The `Swagger interface
+  <http://tourism.opendatahub.bz.it/swagger/ui/index>`_ of the
+  datasets, the quickest place from where to access the datasets and
+  learn how to programmatically retrieve the data
+* The `Open Data Hub API <http://tourism.opendatahub.bz.it/api>`_ , a
+  browsable, hyperlinked interface over the data in the Tourism
+  domain.
+
+  .. note:: Depending on the browser used to access the APIs, an
+     extension might by needed for the JSON to be properly displayed
+     and browsed. For example, on Chrome you should install
+     https://github.com/callumlocke/json-formatter.
+
+* The `Official documentation
+  <https://opendatahub.readthedocs.io/en/latest/index.html>`_ of the
+  Open Data Hub project
 
 The bar at the top of the page allows to carry out a few actions:
 
