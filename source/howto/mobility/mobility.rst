@@ -9,7 +9,7 @@ complex calls.
 
 .. note:: This how-to is valid for the API v1 |deprecated| version
    only. Please use the :ref:`dedicated howto for API v2
-   <mobility-tips>` instead.
+   <get-started-mobility>` instead.
        
 Dataset Information
 ~~~~~~~~~~~~~~~~~~~
