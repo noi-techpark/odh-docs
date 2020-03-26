@@ -110,6 +110,10 @@ hackathons and must be considered as `Experimental`. |alpha|
       .. tab:: Vertical Innovation Hackathon 2018 
 
 	 .. include:: /apps/verticalinnovation2018.rst
+     
+      .. tab:: NOI Hackathon Summer edition 2019
+
+	 .. include:: /apps/summerlido2019.rst
 
       .. tab:: NOI Hackathon SFScon Edition 2019
 
@@ -133,6 +137,10 @@ hackathons and must be considered as `Experimental`. |alpha|
 
    .. include:: /apps/verticalinnovation2018.rst
       
+   Summer Lido Hackathon 2019 |alpha|
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+   .. include:: /apps/summerlido2019.rst
 		
    NOI Hackathon SFScon Edition 2019
    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
