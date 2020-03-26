@@ -96,7 +96,9 @@ All the projects listed in this section have been built during various
 hackathons and must be considered as `Experimental`. |alpha|
 
 .. only:: html
-	  
+
+   * Year 2018
+   
    .. tabs::
 
       .. tab:: Summer Lido Hackathon 2018 
@@ -110,6 +112,10 @@ hackathons and must be considered as `Experimental`. |alpha|
       .. tab:: Vertical Innovation Hackathon 2018 
 
 	 .. include:: /apps/verticalinnovation2018.rst
+
+   * Year 2019
+
+   .. tabs::
      
       .. tab:: NOI Hackathon Summer edition 2019
 
