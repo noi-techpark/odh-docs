@@ -46,7 +46,8 @@ this summary.
 * Programming Language is :strong:`Java`, in its latest or second to
   last version.
 * The source code :strong:`must be documented` according to the
-  `Javadoc style guide and tags`_.
+  `Javadoc style guide and tags
+  <https://www.oracle.com/technetwork/java/javase/tech/index-137868.html>`_.
 * Java components of |odh| can be developed as :strong:`libraries`,
   :strong:`standalone applications`, or :strong:`server applications`
   running in Apache Tomcat.
@@ -66,9 +67,10 @@ this summary.
   basic accessibility principle.
 * :strong:`JSON` must be used as exchange language, while
   :strong:`XML` is welcomed as well.
-* The latest or second to last version `Apache Tomcat`_ is used to run
-  server application; only :strong:`API/REST end points` have direct
-  access to the database server.
+* The latest or second to last version `Apache Tomcat
+  <https://tomcat.apache.org/>`_ is used to run server application;
+  only :strong:`API/REST end points` have direct access to the
+  database server.
 * There's :strong:`no file system persistence`, everything must be
   stored in the DB. JDBC data source and passwords should be stored in
   environmental variables.
