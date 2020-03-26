@@ -5,7 +5,7 @@ How to use the Open Data Hub's Tourism Data Browser?
 ====================================================
 
 This how-to explains the necessary steps to access and retrieve data
-from the |odh|\'s tourism domain.
+from the Open Data Hub's tourism domain.
 
 
 Data Browsing and Exploring
@@ -27,7 +27,7 @@ of the page allow to open various resources about the Tourism domain.
   <http://tourism.opendatahub.bz.it/swagger/ui/index>`_ of the
   datasets, the quickest place from where to access the datasets and
   learn how to programmatically retrieve the data
-* The `Open Data Hub API <http://tourism.opendatahub.bz.it/api>`_ , a
+* The `Open Data Hub API <http://tourism.opendatahub.bz.it/api>`_, a
   browsable, hyperlinked interface over the data in the Tourism
   domain.
 
@@ -91,7 +91,7 @@ Logged in Users
 ---------------
 
 When you access the Tourism Data Browser using credentials that have
-been provided to you by the |odh| team, the appearance of the page
+been provided to you by the Open Data Hub team, the appearance of the page
 slightly changes
 
 .. _tourism-logged-in-web:
