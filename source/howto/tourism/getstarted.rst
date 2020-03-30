@@ -27,18 +27,14 @@ conventions are used:
 
 * :literal:`{Name}` is the (case sensitive!) name of the dataset you are
   currently working with, like for example :literal:`Accomodation`. 
-* |li| is the unique identifier of an array within the
+* :literal:`{Id}` is the unique identifier of an array within the
   dataset, i.e., an item of the dataset. It is usually the first key
   of the resulting JSON output of a query.
 
 The calls defined for every datasets are:
 
 - :literal:`/api/{Name}` Return the whole dataset.
-- :literal:`/api/{Name}/{Id}` Return only item with given |li|\.
-- :literal:`/api/{Name}Localized` Return the whole dataset in only
-  the given language (which is a mandatory part of the query).
-- :literal:`/api/{Name}Localized/{Id}` Return only item with given Id
-  an in given language.
+- :literal:`/api/{Name}/{Id}` Return only item with given :literal:`{Id}`\.
 - :literal:`/api/{Name}Reduced` Return only the list of Ids and
   respective name of the items in the dataset. It is useful to create
   lists of items or just to have an overview of the dataset's items.
@@ -47,6 +43,18 @@ The calls defined for every datasets are:
 - :literal:`/api/{Name}Types` Returns all types of data present in
   the dataset, that can be later used to ask more precise queries to
   the dataset.
+
+The following calls have been obsoleted and can not be used
+anymore. They have been replaced by a new filter, called `language`,
+that operates on the datasets in a similar way to the
+:ref:`fields-filter` and is
+described in section :ref:`language-filter`.
+
+- :literal:`/api/{Name}Localized` Return the whole dataset in only
+  the given language (which is a mandatory part of the query). 
+- :literal:`/api/{Name}Localized/{Id}` Return only item with given Id
+  an in given language.
+
 
 .. _common-filters:
 
@@ -85,13 +93,15 @@ of their use can be found in section :doc:`tips`.
   parameter. The difference is however important: :strong:`Active`
   indicates that the item is present in the original dataset provided,
   while :strong:`OdhActive` shows that the item has been verified by
-  the |odh| team and is present in the |odh|. See discussion in tip
-  :ref:`TT2 <tour-tt2>`.
+  the Open Data Hub team and is present in the Open Data Hub. See
+  discussion in tip :ref:`TT2 <tour-tt2>`.
 - :strong:`ODHTag` allows to filter a result set according to tag
-  defined by the |odh| team. These tags are mostly related with places
-  to see, activities that can be carried out in winter or summer, food
-  and beverage, cultural events and so on
-
+  defined by the Open Data Hub team. These tags are mostly related
+  with places to see, activities that can be carried out in winter or
+  summer, food and beverage, cultural events and so on
+ 
+.. _fields-filter:
+  
 The `fields` Filter
 ~~~~~~~~~~~~~~~~~~~
 
@@ -131,6 +141,33 @@ to discover the :strong:`Detail.en.Title` elements:
      "en": {
        "Title": "01 Cross Country Stadio Track Dobbiaco/Toblach",
        "Header": null,
+
+.. _language-filter:
+ 
+The `language` Filter
+~~~~~~~~~~~~~~~~~~~~~
+
+The `language` filter can be seen as a special case of the more
+generic `fields` filter, described in the previous section, and is
+similar to the second example presented there. 
+
+The `language` filter is used to retrieve only the data stored in one
+of the languages supported by the Open Data Hub. Let's build on the
+example of previous section and use the `ODHActivityPOI` dataset. The
+following query will retrieve all the data in the dataset that have
+some information stored in English:
+
+http://tourism.opendatahub.bz.it/api/ODHActivityPoi?language=en
+
+Most of the data in the Open Data Hub datasets are available in three
+languages, English, German, and Italian, for which :literal:`en`,
+:literal:`de`, and :literal:`it` can be used as value of the
+`language` filter. Additional language in which data may be available
+are: Dutch (:literal:`nl`), Czech (:literal:`cs`), Polish
+(:literal:`pl`), French (:literal:`fr`), and Russian (:literal:`ru`).
+
+
+
 
 Types of input data
 -------------------
