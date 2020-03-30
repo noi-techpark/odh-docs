@@ -36,12 +36,12 @@ retrieve additional data about each of them. To check which station
 belongs to which datasets, you can check the list of
 :ref:`mobility-datasets`.
 
-Advanced methods
-----------------
+Structure of the API calls
+--------------------------
 
-There are three more methods that can be used to extract data from the
-|odh|\'s datasets. They allow to incrementally refine the data
-retrieved. They are:
+In the Mobility domain, there are three methods that can be used to
+extract data from the |odh|\'s datasets and allow to incrementally
+refine the data retrieved. They are:
 
 #. :literal:`/api/{representation}/{stationTypes}`
 #. :literal:`/api/{representation}/{stationTypes}/{dataTypes}`
