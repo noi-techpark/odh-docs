@@ -110,6 +110,10 @@ hackathons and must be considered as `Experimental`. |alpha|
       .. tab:: Vertical Innovation Hackathon 2018 
 
 	 .. include:: /apps/verticalinnovation2018.rst
+
+      .. tab:: NOI Hackathon SFScon Edition 2019
+
+	 .. include:: /apps/sfscon2019.rst
       
 
 .. only:: latex or latexpdf or epub
@@ -129,5 +133,9 @@ hackathons and must be considered as `Experimental`. |alpha|
 
    .. include:: /apps/verticalinnovation2018.rst
       
+		
+   NOI Hackathon SFScon Edition 2019
+   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-	
+   .. include:: /apps/sfscon2019.rst
+      
