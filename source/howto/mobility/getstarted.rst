@@ -9,7 +9,7 @@ features, we recall that there is now one single endpoint from which
 to retrieve data from all datasets.
 
 The starting point for all actions to be carreid out on the datasets
-made available by the |odh| team is the following:
+made available by the Open Data Hub team is the following:
 
 https://mobility.api.opendatahub.bz.it/v2/swagger-ui.html
 
@@ -18,7 +18,7 @@ https://mobility.api.opendatahub.bz.it/v2/swagger-ui.html
    The swagger interface of the Mobility API v2.
 
 From this site, links provide access to documentation about data
-licencing and use of the API; it is also possible to contact the |odh|
+licencing and use of the API; it is also possible to contact the Open Data Hub
 team by sending an email to the issue tracker, to ask questions,
 provide feedback, or to report issues.
 
@@ -40,7 +40,7 @@ Structure of the API calls
 --------------------------
 
 In the Mobility domain, there are three methods that can be used to
-extract data from the |odh|\'s datasets and allow to incrementally
+extract data from the Open Data Hub's datasets and allow to incrementally
 refine the data retrieved. They are:
 
 #. :literal:`/api/{representation}/{stationTypes}`
