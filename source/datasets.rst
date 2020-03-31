@@ -197,11 +197,12 @@ data by using a browser:
    :ref:`tourism-data-howto` that will guide you in the first steps.
 
 #. Access the :strong:`Swagger interface` of the datasets in the
-   Mobility domain. Check the link for each of them in section
-   :ref:`mobility-datasets`. Like in the case of the tourism' Swagger
-   interface, you can learn REST API call for that domain and fetch
-   data for your application. There is a dedicated howto to learn more
-   how to interact with this interface: ref:`mobility-data-howto`
+   Mobility domain, located at
+   https://mobility.api.opendatahub.bz.it/v2/swagger-ui.html. Like in
+   the case of the tourism' Swagger interface, you can learn REST API
+   call for that domain and fetch data for your application. There is
+   a dedicated howto to learn more how to interact with this
+   interface: ref:`get-started-mobility`
 
 #. Open the :strong:`Analytics for Mobility` web page, at
    https://analytics.mobility.bz.it/. This portal uses data in the
@@ -396,9 +397,10 @@ for each of the above-listed dataset:
 * The versions of the API that can be used to access the dataset.
 * The swagger URL of the APIs.
 
-.. note:: There is one :literal:`StationType`, namely :strong:`MobileStation` which
-   is a mobile probe no longer active. It will always return an empty
-   set of values, because historical data are not available in the |odh|\.
+.. note:: There is one :literal:`StationType`, namely
+   :strong:`MobileStation` which is a mobile probe no longer
+   active. It will always return an empty set of values, because
+   historical data are not available in the |odh|\.
   
 .. _accommodation-dataset:
 
