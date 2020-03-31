@@ -156,3 +156,37 @@ the following limitations:
   will return the parking lots with the highest and lowest number of
   available parking spaces.
 
+	   
+
+.. _mobility-where-clause:
+
+The :literal:`WHERE` Clause
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Components for the :literal:`WHERE` condition can be built with the use of the
+following operators:
+
+- `eq`: equal
+- `neq`: not equal
+- `lt`: less than
+- `gt`: greater than
+- `lteq`: less than or equal
+- `gteq`: greater than or equal
+- `re`: regular expression
+- `ire`: case insensitive regular expression
+- `nre`: negated regular expression
+- `nire`: negated case insensitive regular expression
+- `bbi`: bounding box intersecting objects (ex., a street that is only partially
+  covered by the box)
+- `bbc`: bounding box containing objects (ex., a station or street, that is
+  completely covered by the box)
+- `in`: true if the value of the alias can be found within the given list.
+  Example: `name.in.(Patrick,Rudi,Peter)`
+- `nin`: False if the value of the alias can be found within the given list.
+  Example: `name.nin.(Patrick,Rudi,Peter)`
+- `and(filter,filter,...)`: Conjunction of filters (can be nested)
+- `or(filter,filter,...)`: Disjunction of filters (can be nested)
+
+Like in the case of SELECT clauses, multiple comma-separated
+conditions may be added and will be `AND`-ed, i.e., they will be
+considered for filtering if all of them are evaluated :strong:`True`.
