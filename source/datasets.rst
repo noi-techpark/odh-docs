@@ -86,7 +86,8 @@ The |odh|\'s Data Providers are:
    only those data that are distributed as :strong:`Open Data`.
 
 At the date of writing, datasets in the :ref:`Mobility
-<mobility-datasets>` and :ref:`Tourism <tourism-datasets>` are available.
+<mobility-datasets>` and :ref:`Tourism <tourism-datasets>` domains are
+available.
 
 Accessing data in the |odh|
 ---------------------------
@@ -94,10 +95,13 @@ Accessing data in the |odh|
 There are different modalities to access data that are provided by the
 |odh|, that are listed here. Currently, data from the
 :strong:`Mobility` and :strong:`Tourism` domains can be accessed, both
-from the command line and using a browser. Various dedicated tutorials
-are available in the :ref:`howto-list` section; while in section
+from the command line and using a browser. Non-interactive access
+using APIs is also available.  Various dedicated tutorials are
+available in the :ref:`howto-list` section; while in section
 :ref:`getting-involved` you can find additional ways to interact with
-the data and the |odh| team.
+the data and the |odh| team. The remainder of this section describes
+all the possibilities to access the Open Data Hub's datasets and their
+content.
 
 .. _ninja api:
 
