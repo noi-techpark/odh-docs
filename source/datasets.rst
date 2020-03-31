@@ -26,12 +26,6 @@ endpoint is given along with other information in the description of
 each dataset, see the lists of datasets in the remainder of this
 section.
 
-.. note:: There are currently two versions of the API, :strong:`v1`
-   and :strong:`v2`; :strong:`v1` is available for :strong:`both`
-   Tourism and Mobility domains, but deprecated within the Mobility
-   domain, for which the new :strong:`v2` is available and
-   recommended, see :ref:`the description of the new API <ninja api>`.
-
 .. _data-providers:
 
 Data Providers
@@ -104,6 +98,56 @@ from the command line and using a browser. Various dedicated tutorials
 are available in the :ref:`howto-list` section; while in section
 :ref:`getting-involved` you can find additional ways to interact with
 the data and the |odh| team.
+
+.. _ninja api:
+
+API
+~~~
+
+Programmatic and non-interactive access to the Open Data Hub's dataset
+is possible using the APIs made available by the Open Data Hub Team.
+
+The APIs are composed of a few generic methods, that can be combined
+with many parameters to retrieve only the relevant data and then
+post-processed in the preferred way.
+
+The following table summarises how the two versions of the API can be
+used within the Open Data Hub's domains.
+
+=== ========= =============
+API  Tourism  Mobility
+=== ========= =============
+v1   OK       Deprecated
+v2   --       Recommended 
+=== ========= =============
+
+
+There are currently two versions of the API, v1 and v2, with the
+former now :strong:`deprecated` for the Mobility domain and marked as
+such |deprecated| throughout the |odh| documentation. New users are
+recommended to use the new API v2, while users of the API v1 are
+encouraged to plan a migration to the new API.
+
+The new API v2 has a different approach compared to the previous
+version, and therefore is not compatible with the API v1, the main
+difference being that all data stored in the |odh| can now be
+retrieved `from a single endpoint`, while with API v1 there was an
+endpoint for each dataset.
+
+This change in approach requires also a breaking change for the users
+of API v1. The initial step, indeed, will not be to open the URL of
+the dataset and start exploring, but to retrieve the
+:literal:`stationType`\s and then retrieve additional data about each
+station. A :literal:`stationType` is the main object of a datasets,
+about which all the information in a dataset relate to; a dataset
+includes at least one :literal:`stationType`.  A new, dedicated howto
+describing in detail the new API v2 and a few basic examples is
+:ref:`already available <get-started-mobility>` in the dedicated section
+of this documentation.
+
+.. note:: It is important to remark that the API v2 is :strong:`only
+   available` for datasets in the :strong:`Mobility` Domain.
+   
 
 Browser access
 ~~~~~~~~~~~~~~
@@ -226,35 +270,6 @@ Datasets in the Mobility Domain
 This section contains information about the datasets and how to access
 them using the API that the |odh| team developed and made available.
 
-.. _ninja api:
-
-.. topic:: API v1 vs API v2.
-	   
-   There are currently two versions of the API, v1 and v2, with the
-   former now :strong:`deprecated` and marked as such |deprecated|
-   throughout the |odh| documentation. New users are strongly
-   suggested to use the new API v2, while users of the API v1 are
-   encouraged to plan a migration to the new API.
-
-   The new API v2 has a different approach compared to the previous
-   version, and therefore is not compatible with the API v1, the main
-   difference being that all data stored in the |odh| can now be
-   retrieved `from a single endpoint`, while with API v1 there was an
-   endpoint for each dataset.
-
-   This change in approach requires also a breaking change for the
-   users of API v1. The initial step, indeed, will not be to open the
-   URL of the dataset and start exploring, but to retrieve the
-   :literal:`stationType`\s and then retrieve additional data about
-   each station. A :literal:`stationType` is the main object of a
-   datasets, about which all the information in a dataset relate to; a
-   dataset includes at least one :literal:`stationType`.  A new,
-   dedicated howto will describe with examples the new workflow for
-   the use of the API v2.
-  
-   It is important to note that the API v2 is :strong:`only available`
-   for datasets in the :strong:`Mobility` Domain.
-   
 The description of each dataset includes the following information:
 
 * The output format of the API call
