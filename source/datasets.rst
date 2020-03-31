@@ -12,11 +12,6 @@ datasets to extract statistical data and to display the result in
 different graphic formats like pie-charts, to far more complex
 applications that combine data from different datasets and correlate
 them in some useful way.
-   
-.. note:: This page was last updated on |today| and all information
-   about the availability of datasets is correct as of this date. This
-   page will be updated in due time as soon as more material will be
-   made available.
 
 As seen in :numref:`domains-diagram`, data originate from different
 domains (Mobility, Tourism, and so on); they are gathered from sensors
