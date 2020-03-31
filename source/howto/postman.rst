@@ -137,5 +137,22 @@ should be able to see now the data in the dataset, like shown in
 .. figure:: /images/postman/postman7.png
 
    Access to data requiring authorisation.
+
+.. _postman-export:
    
+Data Exporting
+~~~~~~~~~~~~~~
    
+By default, queries to the Open Data Hub return data in JSON format
+and postman does not need any setup for that. It is however possible,
+for some datasets in the Tourism domain--check :ref:`export-tourism`
+section for the list, to have postman receive data in :abbr:`CSV (Comma
+Separated Value)`. The required set up is shown in
+:numref:`postman-exp-fig`: in the `Header` tab under the query, add a
+key :strong:`Accept` with value :strong:`text/csv`.
+
+.. _postman-exp-fig:
+
+.. figure:: /images/postman/postman-export.png
+
+   Exporting data from the Tourism domain in CSV format.
