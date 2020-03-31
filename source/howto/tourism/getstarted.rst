@@ -1,4 +1,3 @@
-.. |li| replace:: :literal:`{Id}`
 
 .. _tourism-data-howto:
    
@@ -167,8 +166,71 @@ are: Dutch (:literal:`nl`), Czech (:literal:`cs`), Polish
 (:literal:`pl`), French (:literal:`fr`), and Russian (:literal:`ru`).
 
 
+.. _export-tourism:
+
+Exporting and saving data
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Queries to the Open Data Hub datasets always return data in JSON
+format and can be saved in that format either from the browser or from
+the CLI, in the latter case by simply piping the output to a file.
+Additionally, it is mow possible to save data also in :abbr:`CSV (Comma
+Separated value)` format.
+
+.. warning:: This feature is currently available only for the following
+   datasets:
+
+   Activity, Poi, ODHActivityPoi, Event, Accommodation, Gastronomy, and
+   Article
+
+   However, plans are to soon have all Tourism datasets support it.
+   
+	  
+Depending on how you access the data, there are different modalities to
+retrieve and save data in CSV format:
+
+* when using a browser, append the keyword :literal:`&format=csv` to any
+  query and you will be prompted to provide a name to the file that
+  will contain the required data. Examples:
+
+  .. code:: bash
+	    
+     http://tourism.opendatahub.bz.it/api/Activity?fields=Id,Detail.en.Title,ContactInfos.en.CompanyName&pagesize=500
+     
+  This query shows its JSON output on the screen. To save it, right
+  click on the page and select `Save as`.
+
+  .. code:: bash
+
+     http://tourism.opendatahub.bz.it/api/Activity?fields=Id,Detail.de.Title,ContactInfos.de.CompanyName&pagesize=500&format=csv
+     
+  Nothing is shown on screen, but a dialog window opens that allows you
+  to select a name for the file and the directory where to save it.
 
 
+* When using a CLI command to query the Tourism endpoint, replace the
+  header that you send with the :command:`curl` command:
+
+  .. code:: bash
+	    
+     curl -X GET "http://tourism.opendatahub.bz.it/api/Activity?fields=Id,Detail.en.Title,ContactInfos.en.CompanyName&pagesize=500" -H "accept: application/json"
+  
+  
+  The output of this query will be in JSON format.
+
+  .. code:: bash
+	    
+     curl -X GET "http://tourism.opendatahub.bz.it/api/Activity?fields=Id,Detail.en.Title,ContactInfos.en.CompanyName&pagesize=500" -H "accept: text/csv"
+  
+  
+  The output of this query will be in CSV format.
+
+* When using an API Development Environment like Postman, add `accept:
+  text/csv` to the Header of the request. See detailed procedure and
+  screenshot can be found in the :ref:`postman-export` section of
+  Postman's howto.
+
+  
 Types of input data
 -------------------
 
