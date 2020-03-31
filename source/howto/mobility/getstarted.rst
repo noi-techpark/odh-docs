@@ -154,17 +154,16 @@ the following limitations:
   for grouping purposes. For example:
   :literal:`select=sname,max(smetadata.capacity),min(smetadata.capacity)`
   will return the parking lots with the highest and lowest number of
-  available parking spaces.
-
-	   
+  available parking spaces. 
 
 .. _mobility-where-clause:
 
 The :literal:`WHERE` Clause
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Components for the :literal:`WHERE` condition can be built with the use of the
-following operators:
+The :literal:`WHERE` clause can be used to define conditions to filter
+out unwanted results and can be built with the use of the following
+operators:
 
 - `eq`: equal
 - `neq`: not equal
@@ -187,6 +186,15 @@ following operators:
 - `and(filter,filter,...)`: Conjunction of filters (can be nested)
 - `or(filter,filter,...)`: Disjunction of filters (can be nested)
 
-Like in the case of SELECT clauses, multiple comma-separated
-conditions may be added and will be `AND`-ed, i.e., they will be
-considered for filtering if all of them are evaluated :strong:`True`.
+As an argument to the `filter`, it is possible to add either a single
+value or a list of values; in both cases, operators are used to
+determine a condition and only items matching all of the filters will
+be included in the answer to the query (implicit `AND`). Like in the
+case of SELECT clauses, multiple comma-separated conditions may be
+provided. As an example, the following queries use a value and a list
+of values, respectively:
+
+* :literal:`where=smetadata.capacity.gt.100` returns only parking lots with more
+  than 100 parking spaces
+* :literal:`where=smetadata.capacity.gt.100,smetadata.municipality.eq."Bolzano -
+  Bozen"` same as previous query, but only parking lots in Bolzano are shown.
