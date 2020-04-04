@@ -90,7 +90,7 @@ At the date of writing, datasets in the :ref:`Mobility
 available.
 
 Accessing data in the Open Data Hub
----------------------------
+-----------------------------------
 
 There are different modalities to access data that are provided by the
 Open Data Hub, that are listed here. Currently, data from the
