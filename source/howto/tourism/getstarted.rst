@@ -180,8 +180,9 @@ Separated value)` format.
 .. warning:: This feature is currently available only for the following
    datasets:
 
-   Activity, Poi, ODHActivityPoi, Event, Accommodation, Gastronomy, and
-   Article
+   Accommodation, Activity, Article, District, Event, Gastronomy,
+   MetaRegion, Municipality, ODHActivityPoi, Poi, Region, SkiArea,
+   SkiRegion, and TourismAssociation
 
    However, plans are to soon have all Tourism datasets support it.
    
