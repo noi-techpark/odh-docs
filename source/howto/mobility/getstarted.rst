@@ -199,12 +199,3 @@ of values, respectively:
 * :literal:`where=smetadata.capacity.gt.100,smetadata.municipality.eq."Bolzano -
   Bozen"` same as previous query, but only parking lots in Bolzano are shown.
 
-
-Null values
-~~~~~~~~~~~
-
-There is currently no mechanism to distinguish whether a JSON field
-contains a :literal:`null` value or if the field is
-non-existent. However, within a :literal:`WHERE` clause is possible to
-filter elements that have :literal:`null` values set by adding to the
-query the special parameter :literal:`shownull=true`.
