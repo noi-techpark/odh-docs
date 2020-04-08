@@ -42,7 +42,8 @@ it. To avoid misunderstandings, contributors must expect to get a
 
 .. note:: If you can not find any answer to your question or doubt in
    this document, please contact the |odh| team or open an issue in
-   the `github repository`_ of this document.
+   the `github repository <https://github.com/noi-techpark/odh-docs>`_
+   of this document.
 
 Programing Languages, Environments, and Related Technologies
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -55,9 +56,11 @@ Java
 The chosen programing language for |odh| is Java, more precisely the Java
 Platform, Standard Edition (Java SE).
 
-Source code will be compiled with either the `OpenJDK`_ or the
-`OracleJDK`_, which share the same code base anyway. Resulting
-binaries will run in the corresponding JVM.
+Source code will be compiled with either the `OpenJDK
+<https://openjdk.java.net/>`_ or the `OracleJDK
+<https://www.oracle.com/java/technologies/javase-downloads.html>`_,
+which share the same code base anyway. Resulting binaries will run in
+the corresponding JVM.
 
 Java Version
 ____________
@@ -104,7 +107,8 @@ Documentation
 _____________
 
 Source code must be commented following the established `Javadoc style
-guide and tags`_.
+guide and tags
+<https://www.oracle.com/technetwork/java/javase/tech/index-137868.html>`_.
 
 Complex section of the code (for example not-trivial algorithms) must have
 dedicated comment sections.
@@ -187,16 +191,17 @@ To avoid having to support many programing languages, source code
 (e.g. TypeScript or CoffeeScript),
  
 In terms of browser compatibility, developers can use ES 2015, as
-said.  According to the `ECMA Compatibility table`_, ES2015 is well
+said.  According to the `ECMA Compatibility table
+<https://kangax.github.io/compat-table/es6/>`_, ES2015 is well
 supported in all modern browsers (Chrome, Firefox, Safari, Edge) both
 in desktop and mobile version.
 
 Generally speaking, support of legacy browsers (MS Internet Explorer) is not
 an issue. Cross-browser testing is, of course, still necessary and expected.
 
-If a build system such as `webpack`_ is needed, its use must be
-clearly documented as the |odh| team must integrate it into their
-nightly builds system.
+If a build system such as `webpack <https://webpack.js.org/>`_ is
+needed, its use must be clearly documented as the |odh| team must
+integrate it into their nightly builds system.
 
 
 JavaScript Running in Node.js
@@ -222,9 +227,10 @@ Use cases for Node.js in the |odh| are:
 *  Scripting / glue code.
 
 
-The |odh| team generally uses an `LTS release`_ of Node.js, adopted
-soon after it becomes available, although some time might be needed
-for the hosting provider to make it available.
+The |odh| team generally uses an `LTS release
+<https://github.com/nodejs/Release>`_ of Node.js, adopted soon after
+it becomes available, although some time might be needed for the
+hosting provider to make it available.
 
 SQL
 +++
@@ -243,7 +249,7 @@ It is important that all web pages render correctly in all modern browsers
 Generally speaking, support of legacy browsers (MS Internet Explorer)
 is not an issue.  Cross-browser testing is, of course, still necessary
 and expected.  A minimum requirement is that all HTML validates
-against `the W3C validator`_.
+against `the W3C validator <https://validator.w3.org/>`_.
 
 As most web traffic is nowadays coming from mobile devices, all general purpose
 web UIs exposed to end users should be implemented to work well on mobile
@@ -276,8 +282,9 @@ Platforms and Architectural Considerations
 Java server applications running in Apache Tomcat
 +++++++++++++++++++++++++++++++++++++++++++++++++
 
-`Apache Tomcat`_ is a well established, light weight FOSS web server that
-implements among others the Java Servlet specification. 
+`Apache Tomcat <https://tomcat.apache.org/>`_ is a well established,
+light weight FOSS web server that implements among others the Java
+Servlet specification.
 
 The |odh| team generally uses the latest or second to last release of
 Tomcat, to run Java server applications in the previously mentioned
@@ -383,25 +390,26 @@ servers are volatile and the only persistence layer is the database.
 PostgreSQL
 __________
 
-`PostgreSQL`_ is one of the most established |rdbms| on the market and
-is generally described as being by far the most advanced FOSS RDBMS
-and therefore it has been chosen as the primary database system for
-|odh|.
+`PostgreSQL <https://www.postgresql.org/>`_ is one of the most
+established |rdbms| on the market and is generally described as being
+by far the most advanced FOSS RDBMS and therefore it has been chosen
+as the primary database system for |odh|.
 
 There is a :strong:`new major release` of PostgreSQL per year and each
-release is supported for 5 years, according to `the versioning
-policy`_. Contrary to the case of the other products mentioned in
-these guidelines, the |odh| team generally will :strong:`not run the
-latest` or even previous version of PostgreSQL.  Expect the version
-available for |odh| to lag about 2-3 years behind the latest available
-release.
+release is supported for 5 years, according to `the versioning policy
+<https://www.postgresql.org/support/versioning/>`_. Contrary to the
+case of the other products mentioned in these guidelines, the |odh|
+team generally will :strong:`not run the latest` or even previous
+version of PostgreSQL.  Expect the version available for |odh| to lag
+about 2-3 years behind the latest available release.
 
 Extensions
 ``````````
 
-Most, if not all of the `extensions distributed with PostgreSQL`_, can
-be expected to be available, together with the third-party `spatial
-query extension PostGIS`_ is also available.
+Most, if not all of the `extensions distributed with PostgreSQL
+<https://www.postgresql.org/docs/10/contrib.html>`_, can be expected
+to be available, together with the third-party `spatial query
+extension PostGIS <https://postgis.net/>`_ is also available.
 
 Other extensions are very likely :strong:`not available`, so ask the
 |odh| team if in doubt.
