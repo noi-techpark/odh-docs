@@ -64,6 +64,7 @@ Filters common to all datasets
    several additional filters are available. They are described in the
    respective swagger interface.
 
+
 Filters are used within a dataset and their primary purpose is to
 limit the result set according to specific parameters, although they
 might not be available in every API call. Information about default
@@ -165,6 +166,16 @@ languages, English, German, and Italian, for which :literal:`en`,
 are: Dutch (:literal:`nl`), Czech (:literal:`cs`), Polish
 (:literal:`pl`), French (:literal:`fr`), and Russian (:literal:`ru`).
 
+.. _search-filter:
+ 
+The `search` Filter
+~~~~~~~~~~~~~~~~~~~
+
+Currently available for only a limited number of datasets, namely
+Accommodations, Gastronomies, Events, Activities, Pois,
+ODHActivitiesPois, and Article, this filters allows to find whether the
+given string is contained in one of the field of the JSON response
+sent as answer to a query. 
 
 .. _export-tourism:
 
