@@ -402,6 +402,12 @@ for each of the above-listed dataset:
    active. It will always return an empty set of values, because
    historical data are not available in the Open Data Hub.
   
+.. _alpinebits-dataset:
+
+https\://alpinebits.opendatahub.bz.it/AlpineBits
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. include:: /datasets/alpinebits.rst
+	     
 .. _accommodation-dataset:
 
 |lts|\ accommodation
