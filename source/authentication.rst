@@ -40,7 +40,7 @@ There are currently two different authentication methods available:
 
 The OAuth2 authentication mechanism  Authentication tokens are
 based on :term:`JSON Web Token (JWT) <JSON Web Token>` as defined in
-:rfc:`7519#section-3`, to send :term:`claims <claim>`.
+:rfc:`7519#section-3`, to send :term:`claims <Claim>`.
 
 For those not familiar with the OAuth2 mechanism, here is a quick
 description of the client-server interaction:
