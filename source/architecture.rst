@@ -5,7 +5,7 @@ data from :strong:`Data Sources` and make them available to
 :strong:`Data Consumers`, which are usually third-party applications
 that use those data in any way that they deem useful, including (but
 not limited to) study the evolution of historical data, or carry out
-data analysis to produce :term:`statistical graphics`.
+data analysis to produce :term:`Statistical Graphics`.
 
 .. _arch-odh:
 
@@ -31,7 +31,7 @@ correctly import the data. Dual to the :program:`dc-interface`, the
 :program:`ws-interface` allows the export of DTOs to web services,
 that expose them to :strong:`Data Consumers`.
 
-The bottom part of :numref:`arch-odh` shows the :term:`data format`
+The bottom part of :numref:`arch-odh` shows the :term:`Data Format`
 used in the various steps of the data flow. Since the data are exposed
 in JSON, it is possible to develop applications in any language that
 uses them.
