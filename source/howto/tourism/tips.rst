@@ -162,7 +162,7 @@ filters prefixed with :strong:`odh` stand for?
 
 |a| In the datasets, there are filters like `active` and `odhactive`,
 where `odh` simply stands for |odh|. Filters starting with
-:strong:`odh` are collectively called :term:`odhtags`.
+:strong:`odh` are collectively called :term:`ODHtags`.
 
 Datasets filtered with the former return all data sent by
 the dataset provider, while the latter returns those validated by the
