@@ -36,33 +36,279 @@ retrieve additional data about each of them. To check which station
 belongs to which datasets, you can check the list of
 :ref:`mobility-datasets`.
 
-Structure of the API calls
---------------------------
 
-In the Mobility domain, there are three methods that can be used to
-extract data from the Open Data Hub's datasets and allow to incrementally
-refine the data retrieved. They are:
+The JSON Response Schema
+------------------------
 
-#. :literal:`/api/{representation}/{stationTypes}`
-#. :literal:`/api/{representation}/{stationTypes}/{dataTypes}`
-#. :literal:`/api/{representation}/{stationTypes}/{dataTypes}/{from}/{to}`
+We recall that every query to the mobility datasets will return a
+JSON-structured file with a number of information about one station
+(or more) and values it collected over time, both real-time and
+historical data.
 
-These method introduce another facility made available by the API v2:
-the type of :literal:`representation`: each result set can be
-reproduced as a single, :strong:`flat` or as an indented,
-:strong:`tree`\-like JSON file, the former more suitable for machine
-consumption, while the latter more convenient for human reading.
+The overall structure of the JSON is the following:
 
-The data retrieved by each method are:
+.. code::
 
-#. the data about stations themselfes, that is, the station including
-   its meta data and parent stations
-#. All the data of the previous call + given data types + the most
-   recent measurement (specially suited for real time retrieval of
-   data)
-#. All the data retrieved by the previous method, but limited to a
+   "offset": 0,   
+   "data": [],    
+   "limit": 200   
+
+Here, `offset` and `limit` are used for limiting the displayed
+results: `limit` gives the maximum number of results (defaults to
+:strong:`200`), while `offset` allows to skip elements from the result
+set (defaults to :strong:`0`, i.e., the results start from the first
+one . It is therefore possible to simulate pagination when there are
+many results: for example, if there are :strong:`1000` values, by
+adding to successive queries the offsets :strong:`0`, :strong:`200`,
+:strong:`400`, :strong:`600`, and :strong:`800`, the response of the
+query is split on 5 pages of 200 results each.
+
+`Data` is the actual :strong:`payload` of the response, that is, the
+data answering the query; since it changes depending on which API
+call/method is used, it will be described in the next section.
+
+
+Structure of the API calls and Payload
+--------------------------------------
+
+In the Mobility domain, there are three general methods that can be
+used to extract data from the Open Data Hub's datasets and allow to
+incrementally refine the data retrieved. They are:
+
+#. :literal:`/api/{representation}/{stationTypes}` returns data about
+   the stations themselves, including metadata associated with it, and
+   data about its parent stations.
+#. :literal:`/api/{representation}/{stationTypes}/{dataTypes}`.  In
+   addition to the data of the previous call, it contains the data
+   types defined in the dataset and the most recent measurement. This
+   method is especially suited for real time retrieval of data.
+#. :literal:`/api/{representation}/{stationTypes}/{dataTypes}/{from}/{to}`.
+   All the data retrieved by the previous method, but limited to a
    given historical interval (:literal:`from` ... :literal:`to`)
 
+These methods introduce another facility made available by the API v2:
+the type of `representation`: each result set can be reproduced as a
+single, :strong:`flat` or as an indented, :strong:`tree`\-like JSON
+file, the former more suitable for machine consumption, while the
+latter more convenient for human reading.
+
+:literal:`/api/{representation}/{stationTypes}`
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+To describe the outcome of this method in details, we will use the
+following snippet.
+
+.. code-block::
+   :linenos:
+   :emphasize-lines: 10-19,31-40
+   :caption: An excerpt of information about a charging station.
+   :name: apiv2-stations
+
+       {
+      "pactive": false,
+      "pavailable": true,
+      "pcode": "AER_00000005",
+      "pcoordinate": {
+        "x": 11.349217,
+        "y": 46.499702,
+        "srid": 4326
+      },
+      "pmetadata": {
+        "city": "BOLZANO - BOZEN",
+        "state": "ACTIVE",
+        "address": "Via Cassa di Risparmio  - Sparkassenstraße 14",
+        "capacity": 2,
+        "provider": "Alperia Smart Mobility",
+        "accessType": "PUBLIC",
+        "paymentInfo": "https://www.alperiaenergy.eu/smart-mobility/punti-di-ricarica.html",
+        "municipality": "Bolzano - Bozen"
+      },
+      "pname": "BZ_CASSARISP_01",
+      "porigin": "ALPERIA",
+      "ptype": "EChargingStation",
+      "sactive": false,
+      "savailable": true,
+      "scode": "AER_00000005-1",
+      "scoordinate": {
+        "x": 11.349217,
+        "y": 46.499702,
+        "srid": 4326
+      },
+      "smetadata": {
+        "outlets": [
+          {
+            "id": "1",
+            "maxPower": 22,
+            "maxCurrent": 31,
+            "minCurrent": 0,
+            "hasFixedCable": false,
+            "outletTypeCode": "Type2Mennekes"
+          }
+        ],
+        "maxPower": 7015,
+        "maxCurrent": 31,
+        "minCurrent": 6,
+        "municipality": "Bolzano - Bozen",
+        "outletTypeCode": "IEC 62196-2 type 2 outlets (all amperage and phase)"
+      },
+      "sname": "BZ_CASSARISP_01-253",
+      "sorigin": "ALPERIA",
+      "stype": "EChargingPlug"
+    }
+    
+You immediately notice that all the keys in the first level start
+either with a :strong:`p` (`pactive`, `pcoordinate`, and so on) or an
+:strong:`s` (`sactive`, `scoordinate`, and so on): the former,
+:strong:`p`, refers to data about the `parent` stations, :strong:`s`
+to data of the station itself. Besides the initial `p` or `s`, the
+meaning of the key is the same. In the snippet above, you see that all
+the data about a station are grouped together and come after the data
+of its parent (see lines.
+
+.. _apiv2-keys-1:
+
+The meaning of the keys are:
+
+* :strong:`active`: the station is actively sending data to the Open Data Hub. A
+  station is automatically marked as not active (i.e.,
+  :literal:`pactive` = false) when it does not send data for a given
+  amount of time (24 hours).
+* :strong:`available`: data from this station is available in the Open Data
+  Hub.
+
+  .. note:: `active` and `available` might seem duplicates, but a
+     station can be available but not active or vice-versa: In the
+     former case, it means that its historical data have been recorded
+     and can be accessed, although it currently does not send any data
+     (for example, due to a network error or because it is not working
+     or because it has been decommissioned); in the latter case, the
+     station has started to send its data but they are not yet
+     accessible (for example, because the are still being
+     pre-processed by the Open Data Hub).
+     
+* :strong:`code`: a unique :strong:`ID`\entifier 
+* :strong:`coordinate`: the station's geographical coordinates
+* :strong:`metadata`: it may contain any kind of information about the station
+  and mostly depends on the type of the station and the data it
+  sends. In the snippets above, lines 10-16 contain information about
+  the location of a charging station, while lines 28-38 technically
+  describe the type of plugs available to recharge a car.
+
+  .. hint:: The metadata has only one limitation: it must be either a
+     JSON object or :literal:`NULL`.
+     
+* :strong:`name`: a (human readable) name of the station
+* :strong:`origin`: the `source` of the station, which can be anything, like for
+  example the name of the :ref:`data-providers`, the spreadsheet or
+  database that contained the data, a street address, and so on.
+* :strong:`type`: the type of the station, which can be a MeteoStation,
+  TrafficStation, EChargingPlug, Bicycle, and so on.
+  
+  .. note:: This key is :strong:`Case Sensitive`! You can retrieve all
+     the station types with the following call:
+
+     .. code::
+	
+	curl -X GET "https://mobility.api.opendatahub.bz.it/v2/" -H "accept: application/json"
+
+:literal:`/api/{representation}/{stationTypes}/{dataTypes}`
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+This API call introduces two new prefixes to the keys, as shown in :numref:`apiv2-datatypes`.
+
+.. code-block::
+   :linenos:
+   :emphasize-lines: 2-6,8-11
+   :caption: An excerpt of information about a charging station.
+   :name: apiv2-datatypes
+
+
+   {
+      "tdescription": "",
+      "tmetadata": {},
+      "tname": "number-available",
+      "ttype": "Instantaneous",
+      "tunit": "number of available vehicles / charging points",
+      
+      "mperiod": 300,
+      "mtransactiontime": "2018-10-24 01:05:00.614+0000",
+      "mvalidtime": "2020-05-01 07:30:00.335+0000",
+      "mvalue": 1,
+   }
+
+The new prefixes are :strong:`t` and :strong:`m`. The `t` prefix
+refers to :strong:`Data Types`, i.e., how the values collected by the
+sensors are measured. See below for a more detailed description of
+data types and some tip about them.  The `m` prefix refers to a
+:strong:`measurement`, that is, how often the data are collected,
+timestamp of the measure, when it is transmitted to be stored, and
+other information.
+
+Alongside all keys present in :numref:`apiv2-stations` (see
+:ref:`previous section <apiv2-keys-1>`), :numref:`apiv2-datatypes`
+contains the additional key:
+
+* :strong:`ttype`: the type of the data, which can be expressed as
+  either a custom string, like in the example above, or as a DB
+  function like COUNT, SUM, AVERAGE, or similar
+* :strong:`tunit` the unit of measure
+* :strong:`mperiod`: the time in seconds between two consecutive
+  measures
+* :strong:`mtransactiontime`: timestamp of the transmission of the
+  data to the database
+* :strong:`mvalidtime`: timestamp of the measurement. It is either the
+  moment in time when the measurement took place or the time in the
+  future in which the next measure will be collected.
+* :strong:`mvalue`: the absolute value of the measure, represented in
+  either `double precision` or `string` format. It must be paired with
+  the `t` keys to understand its meaning.
+
+:numref:`apiv2-datatype` represents an `EChargingStation` with one
+available charging point; the last measure was taken on `2020-05-01
+07:30:00.335+0000` and will be repeated every 5 minutes (`300`
+seconds). Moreover, the station appears to not transmit its data
+anymore, so historical data might not be available.
+	
+.. topic:: Data types in the datasets.
+
+   Data types are not normalised; that is, there is no standard or
+   common unit across the datasets. Indeed, each data collector
+   defines its own data types and they may vary quite a lot from one
+   dataset to another. There is also neither a common representation
+   format for data types, therefore a same unit can appear quite
+   different in different datasets. For example, to express
+   `microseconds`, one dataset can use
+
+   .. code::
+      
+      "tdescription": "Time interval measured in microseconds",
+      "tmetadata": {},
+      "tname": "Time interval",
+      "ttype": "Instantaneous",
+      "tunit": "ms",
+
+   While another:
+   
+   .. code::
+      
+      "tdescription": "Microseconds between two consecutive measures",
+      "tmetadata": {},
+      "tname": "Time interval",
+      "ttype": "COUNT",
+      "tunit": "milliseconds",
+
+   We can see that, although we might understand that the measures
+   from the two datasets are indeed expressed in milliseconds, this is
+   not true for machine-processed data
+
+   
+:literal:`/api/{representation}/{stationTypes}/{dataTypes}/{from}/{to}`
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+This method does not add any other keys to the JSON response; all the
+keys described in the previous two section are valid and can be used.
+
+	 
 Advanced Data Processing
 ------------------------
 
