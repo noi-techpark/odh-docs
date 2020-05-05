@@ -6184,3 +6184,6 @@ div.topic {
 }
 .rst-content dl:not(.docutils) .property {
 }
+.highlight .hll {
+    background-color: #ADFF2F !important;
+}
