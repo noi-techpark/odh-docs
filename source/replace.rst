@@ -39,7 +39,7 @@
    :alt: API v1 are now deprecated
 
 
-.. |apiv2| replace:: https://mobility.api.opendatahub.bz.it/v2/swagger-ui.html
+.. |apiv2| replace:: https://mobility.api.opendatahub.bz.it/
 
 .. URLs of datasets
 
