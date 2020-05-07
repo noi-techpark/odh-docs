@@ -288,6 +288,31 @@ and :strong:`Mobility` as follows:
 
 .. rubric:: Traffic
 
+.. _bluetooth-dataset:
+
+|idgb|\ bluetooth
+~~~~~~~~~~~~~~~~~
+.. include:: /datasets/bluetooth.rst
+	     
+.. _environment-dataset:
+
+|idgb|\ environment
+~~~~~~~~~~~~~~~~~~~
+.. include:: /datasets/environment.rst
+
+
+.. _linkstation-dataset:
+
+|idgb|\ linkstation
+~~~~~~~~~~~~~~~~~~~
+.. include:: /datasets/linkstation.rst
+
+.. _parking-dataset:
+
+|idgb|\ parking
+~~~~~~~~~~~~~~~
+.. include:: /datasets/parking.rst
+
 .. _rwisstation-dataset:
 
 |idgb|\ rwisstation
@@ -300,17 +325,11 @@ and :strong:`Mobility` as follows:
 ~~~~~~~~~~~~~~~~~~~~~~
 .. include:: /datasets/streetelements.rst
 
-.. _linkstation-dataset:
+.. _trafficstation-dataset:
 
-|idgb|\ linkstation
-~~~~~~~~~~~~~~~~~~~
-.. include:: /datasets/linkstation.rst
-
-.. _bluetooth-dataset:
-
-|idgb|\ bluetooth
-~~~~~~~~~~~~~~~~~
-.. include:: /datasets/bluetooth.rst
+|idgb|\ trafficstation
+~~~~~~~~~~~~~~~~~~~~~~
+.. include:: /datasets/trafficstation.rst
     
 .. _weather-dataset:
 
@@ -318,31 +337,7 @@ and :strong:`Mobility` as follows:
 ~~~~~~~~~~~~~~~
 .. include:: /datasets/weather.rst
 
-.. _environment-dataset:
-
-|idgb|\ environment
-~~~~~~~~~~~~~~~~~~~
-.. include:: /datasets/environment.rst
-
-.. _parking-dataset:
-
-|idgb|\ parking
-~~~~~~~~~~~~~~~
-.. include:: /datasets/parking.rst
-
-.. _trafficstation-dataset:
-
-|idgb|\ trafficstation
-~~~~~~~~~~~~~~~~~~~~~~
-.. include:: /datasets/trafficstation.rst
-
 .. rubric:: Mobility
-   
-.. _carsharing-dataset:
-
-|idgb|\ carsharing
-~~~~~~~~~~~~~~~~~~
-.. include:: /datasets/carsharing.rst
 
 .. _carpoolinghub-dataset:
 
@@ -350,11 +345,12 @@ and :strong:`Mobility` as follows:
 ~~~~~~~~~~~~~~~~~~~~~
 .. include:: /datasets/carpoolinghub.rst
 
-.. _bikesharing-dataset:
+.. _carsharing-dataset:
 
-|idgb|\ bikesharing
-~~~~~~~~~~~~~~~~~~~
-.. include:: /datasets/bikesharing.rst
+|idgb|\ carsharing
+~~~~~~~~~~~~~~~~~~
+.. include:: /datasets/carsharing.rst
+
 
 .. _echarging-dataset:
 
@@ -368,17 +364,17 @@ Public Transportation
 ~~~~~~~~~~~~~~~~~~~~~
 .. include:: /datasets/sasa.rst
 
-.. _noiplace-dataset:
-
-NOI-Place
-~~~~~~~~~
-.. include:: /datasets/noiplace.rst
-
 .. _creative-industries-dataset:
 
 Creative Industries
 ~~~~~~~~~~~~~~~~~~~
 .. include:: /datasets/creativeindustries.rst
+
+.. _noiplace-dataset:
+
+NOI-Place
+~~~~~~~~~
+.. include:: /datasets/noiplace.rst
 
 
 .. _tourism-datasets:
