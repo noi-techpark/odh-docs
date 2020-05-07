@@ -286,94 +286,94 @@ The description of each dataset includes the following information:
 The datasets in the Mobility domain are grouped in :strong:`Traffic`
 and :strong:`Mobility` as follows:
 
-.. rubric:: Traffic
+Traffic
+~~~~~~~
 
 .. _bluetooth-dataset:
 
 |idgb|\ bluetooth
-~~~~~~~~~~~~~~~~~
+`````````````````
 .. include:: /datasets/bluetooth.rst
 	     
 .. _environment-dataset:
 
 |idgb|\ environment
-~~~~~~~~~~~~~~~~~~~
+```````````````````
 .. include:: /datasets/environment.rst
-
 
 .. _linkstation-dataset:
 
 |idgb|\ linkstation
-~~~~~~~~~~~~~~~~~~~
+```````````````````
 .. include:: /datasets/linkstation.rst
 
 .. _parking-dataset:
 
 |idgb|\ parking
-~~~~~~~~~~~~~~~
+```````````````
 .. include:: /datasets/parking.rst
 
 .. _rwisstation-dataset:
 
 |idgb|\ rwisstation
-~~~~~~~~~~~~~~~~~~~
+```````````````````
 .. include:: /datasets/rwisstation.rst
 
 .. _streetelement-dataset:
 
 |idgb|\ streetelements
-~~~~~~~~~~~~~~~~~~~~~~
+``````````````````````
 .. include:: /datasets/streetelements.rst
 
 .. _trafficstation-dataset:
 
 |idgb|\ trafficstation
-~~~~~~~~~~~~~~~~~~~~~~
+``````````````````````
 .. include:: /datasets/trafficstation.rst
     
 .. _weather-dataset:
 
 |idgb|\ weather
-~~~~~~~~~~~~~~~
+```````````````
 .. include:: /datasets/weather.rst
 
-.. rubric:: Mobility
+Mobility
+~~~~~~~~
 
 .. _carpoolinghub-dataset:
 
 |idgb|\ carpoolinghub
-~~~~~~~~~~~~~~~~~~~~~
+`````````````````````
 .. include:: /datasets/carpoolinghub.rst
 
 .. _carsharing-dataset:
 
 |idgb|\ carsharing
-~~~~~~~~~~~~~~~~~~
+``````````````````
 .. include:: /datasets/carsharing.rst
-
 
 .. _echarging-dataset:
 
 |idgb|\ echargingstation
-~~~~~~~~~~~~~~~~~~~~~~~~
+````````````````````````
 .. include:: /datasets/ecs.rst
 
 .. _sasabus-dataset:
 
 Public Transportation
-~~~~~~~~~~~~~~~~~~~~~
+`````````````````````
 .. include:: /datasets/sasa.rst
 
 .. _creative-industries-dataset:
 
 Creative Industries
-~~~~~~~~~~~~~~~~~~~
+```````````````````
 .. include:: /datasets/creativeindustries.rst
 
 .. _noiplace-dataset:
 
 NOI-Place
-~~~~~~~~~
+`````````
 .. include:: /datasets/noiplace.rst
 
 
