@@ -118,12 +118,12 @@ post-processed in the preferred way.
 The following table summarises how the two versions of the API can be
 used within the Open Data Hub's domains.
 
-=== ========= =============
-API  Tourism  Mobility
-=== ========= =============
-v1   OK       Deprecated
-v2   --       Recommended 
-=== ========= =============
+=== ============  =============
+API  Tourism      Mobility
+=== ============  =============
+v1   Recommended   Deprecated
+v2   --            Recommended 
+=== ============  =============
 
 
 There are currently two versions of the API, v1 and v2, with the
