@@ -41,13 +41,6 @@
 
 .. |apiv2| replace:: https://mobility.api.opendatahub.bz.it/
 
-.. URLs of datasets
-
-.. |mobecs| replace:: ipchannels.integreen-life.bz.it
-.. |idgb| replace:: it.bz.opendatahub.
-.. |idsiag| replace:: it.bz.siag.
-.. |lts| replace:: it.lts.
-
 .. abbreviations
 
 .. |rdbms| replace:: :abbr:`RDBMS (Relational DataBase Management System)`
