@@ -263,7 +263,7 @@ contains the additional key:
   either `double precision` or `string` format. It must be paired with
   the `t` keys to understand its meaning.
 
-:numref:`apiv2-datatype` represents an `EChargingStation` with one
+:numref:`apiv2-datatypes` represents an `EChargingStation` with one
 available charging point; the last measure was taken on `2020-05-01
 07:30:00.335+0000` and will be repeated every 5 minutes (`300`
 seconds). Moreover, the station appears to not transmit its data
