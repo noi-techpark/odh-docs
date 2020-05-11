@@ -118,12 +118,12 @@ post-processed in the preferred way.
 The following table summarises how the two versions of the API can be
 used within the Open Data Hub's domains.
 
-=== ========= =============
-API  Tourism  Mobility
-=== ========= =============
-v1   OK       Deprecated
-v2   --       Recommended 
-=== ========= =============
+=== ============  =============
+API  Tourism      Mobility
+=== ============  =============
+v1   Recommended   Deprecated
+v2   --            Recommended 
+=== ============  =============
 
 
 There are currently two versions of the API, v1 and v2, with the
@@ -286,99 +286,95 @@ The description of each dataset includes the following information:
 The datasets in the Mobility domain are grouped in :strong:`Traffic`
 and :strong:`Mobility` as follows:
 
-.. rubric:: Traffic
+Traffic
+~~~~~~~
+
+.. _bluetooth-dataset:
+
+it.bz.opendatahub.bluetooth
+```````````````````````````
+.. include:: /datasets/bluetooth.rst
+	     
+.. _environment-dataset:
+
+it.bz.opendatahub.environment
+`````````````````````````````
+.. include:: /datasets/environment.rst
+
+.. _linkstation-dataset:
+
+it.bz.opendatahub.linkstation
+`````````````````````````````
+.. include:: /datasets/linkstation.rst
+
+.. _parking-dataset:
+
+it.bz.opendatahub.parking
+`````````````````````````
+.. include:: /datasets/parking.rst
 
 .. _rwisstation-dataset:
 
-|idgb|\ rwisstation
-~~~~~~~~~~~~~~~~~~~
+it.bz.opendatahub.rwisstation
+`````````````````````````````
 .. include:: /datasets/rwisstation.rst
 
 .. _streetelement-dataset:
 
-|idgb|\ streetelements
-~~~~~~~~~~~~~~~~~~~~~~
+it.bz.opendatahub.streetelements
+````````````````````````````````
 .. include:: /datasets/streetelements.rst
-
-.. _linkstation-dataset:
-
-|idgb|\ linkstation
-~~~~~~~~~~~~~~~~~~~
-.. include:: /datasets/linkstation.rst
-
-.. _bluetooth-dataset:
-
-|idgb|\ bluetooth
-~~~~~~~~~~~~~~~~~
-.. include:: /datasets/bluetooth.rst
-    
-.. _weather-dataset:
-
-|idgb|\ weather
-~~~~~~~~~~~~~~~
-.. include:: /datasets/weather.rst
-
-.. _environment-dataset:
-
-|idgb|\ environment
-~~~~~~~~~~~~~~~~~~~
-.. include:: /datasets/environment.rst
-
-.. _parking-dataset:
-
-|idgb|\ parking
-~~~~~~~~~~~~~~~
-.. include:: /datasets/parking.rst
 
 .. _trafficstation-dataset:
 
-|idgb|\ trafficstation
-~~~~~~~~~~~~~~~~~~~~~~
+it.bz.opendatahub.trafficstation
+````````````````````````````````
 .. include:: /datasets/trafficstation.rst
+    
+.. _weather-dataset:
 
-.. rubric:: Mobility
-   
-.. _carsharing-dataset:
+it.bz.opendatahub.weather
+`````````````````````````
+.. include:: /datasets/weather.rst
 
-|idgb|\ carsharing
-~~~~~~~~~~~~~~~~~~
-.. include:: /datasets/carsharing.rst
+Mobility
+~~~~~~~~
 
 .. _carpoolinghub-dataset:
 
-|idgb|\ carpoolinghub
-~~~~~~~~~~~~~~~~~~~~~
+it.bz.opendatahub.carpoolinghub
+```````````````````````````````
 .. include:: /datasets/carpoolinghub.rst
 
-.. _bikesharing-dataset:
+.. _carsharing-dataset:
 
-|idgb|\ bikesharing
-~~~~~~~~~~~~~~~~~~~
-.. include:: /datasets/bikesharing.rst
+it.bz.opendatahub.carsharing
+````````````````````````````
+.. include:: /datasets/carsharing.rst
 
 .. _echarging-dataset:
 
-|idgb|\ echargingstation
-~~~~~~~~~~~~~~~~~~~~~~~~
+it.bz.opendatahub.echargingstation
+``````````````````````````````````
 .. include:: /datasets/ecs.rst
 
 .. _sasabus-dataset:
 
 Public Transportation
-~~~~~~~~~~~~~~~~~~~~~
+`````````````````````
 .. include:: /datasets/sasa.rst
-
-.. _noiplace-dataset:
-
-NOI-Place
-~~~~~~~~~
-.. include:: /datasets/noiplace.rst
 
 .. _creative-industries-dataset:
 
 Creative Industries
-~~~~~~~~~~~~~~~~~~~
+```````````````````
 .. include:: /datasets/creativeindustries.rst
+
+.. _noiplace-dataset:
+
+NOI-Place
+`````````
+.. include:: /datasets/noiplace.rst
 
 
 .. _tourism-datasets:
@@ -404,7 +400,7 @@ for each of the above-listed dataset:
   
 .. _accommodation-dataset:
 
-|lts|\ accommodation
+it.lts.accommodation
 ~~~~~~~~~~~~~~~~~~~~
 .. include:: /datasets/accommodation.rst
 
@@ -416,73 +412,73 @@ it.hgv.package
 
 .. _poi-dataset:
 
-|lts|\ poi
+it.lts.poi
 ~~~~~~~~~~
 .. include:: /datasets/poi.rst
 
 .. _activity-dataset:
 
-|lts|\ activity
+it.lts.activity
 ~~~~~~~~~~~~~~~
 .. include:: /datasets/activity.rst
 
 .. _event-dataset:
 
-|lts|\ event
+it.lts.event
 ~~~~~~~~~~~~
 .. include:: /datasets/event.rst
 
 .. _activity_poi-dataset:
 
-|lts|\ activity_poi
+it.lts.activity_poi
 ~~~~~~~~~~~~~~~~~~~
 .. include:: /datasets/activity_poi.rst
 	     
 .. _gastronomy-dataset:
 
-|lts|\ gastronomy
+it.lts.gastronomy
 ~~~~~~~~~~~~~~~~~
 .. include:: /datasets/gastronomy.rst
 
 .. _location-dataset:
 
-|idgb|\ location
-~~~~~~~~~~~~~~~~
+it.bz.opendatahub.location
+~~~~~~~~~~~~~~~~~~~~~~~~~~
 .. include:: /datasets/location.rst
 
 .. _ski-dataset:
 
-|idgb|\ ski
-~~~~~~~~~~~
+it.bz.opendatahub.ski
+~~~~~~~~~~~~~~~~~~~~~
 .. include:: /datasets/ski.rst
 
 .. _snowreport-dataset:
 
-|idgb|\ snowreport
-~~~~~~~~~~~~~~~~~~
+it.bz.opendatahub.snowreport
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 .. include:: /datasets/snowreport.rst
 	     
 .. _webcam-dataset:
 
-|idgb|\ webcam
-~~~~~~~~~~~~~~
+it.bz.opendatahub.webcam
+~~~~~~~~~~~~~~~~~~~~~~~~
 .. include:: /datasets/webcam.rst
 	     
 .. _weather-siag-dataset:
 
-|idgb|\ weather-siag
-~~~~~~~~~~~~~~~~~~~~
+it.bz.opendatahub.weather-siag
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 .. include:: /datasets/weather-siag.rst
 	     
 .. _siag.weather-dataset:
 
-|idsiag|\ weather
-~~~~~~~~~~~~~~~~~
+it.bz.siag.weather
+~~~~~~~~~~~~~~~~~~
 .. include:: /datasets/siag.weather.rst
 
 .. _museum-dataset:
 
-|idsiag|\ museum
-~~~~~~~~~~~~~~~~
+it.bz.siag.museum
+~~~~~~~~~~~~~~~~~
 .. include:: /datasets/museum.rst
 
