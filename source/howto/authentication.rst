@@ -3,7 +3,7 @@
 How to use authentication?
 ==========================
 
-As described in section :ref:`authentication`, there are two methods
+As described in section :ref:`authentication-hub`, there are two methods
 to access protected data in the dataset: :strong:`Bearer Token Login`
 and :strong:`OAuth2 authentication`. Both authentication methods can
 be used within a browser or from the command line, with only slight

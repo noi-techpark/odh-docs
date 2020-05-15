@@ -1,16 +1,16 @@
 
-.. _authentication:
+.. _authentication-hub:
 
-Authentication
---------------
+Authentication in the Open Data Hub
+-----------------------------------
 
 The authentication layer is currently intended for :strong:`internal
 use only`, therefore it is :strong:`not` necessary to use
 authentication to access data provided by the Open Data Hub.
 	   
-While the Open Data Hub project strives to offer only Open Data, it relies on
-third-party :ref:`data-providers`, which may not offer the whole
-content of a dataset for public use. For this reason, an
+While the Open Data Hub project strives to offer only Open Data, it
+relies on third-party :ref:`data-providers`, which may not offer the
+whole content of a dataset for public use. For this reason, an
 authentication mechanism has been implemented, which does however have
 no impact on users and on their use of the data.
 
@@ -58,8 +58,9 @@ description of the client-server interaction:
 #. If the access token has expired, you'll get a HTTP :literal:`401
    Unauthorized` response. In this case you need to request a new
    access-token, passing your refresh token in the `Authorization`
-   header as Bearer token.  As an example, in Open Data Hub datasets Bearer
-   tokens can be inserted in a :command:`curl` call like follows:
+   header as Bearer token.  As an example, in Open Data Hub datasets
+   Bearer tokens can be inserted in a :command:`curl` call like
+   follows:
 
    .. code-block:: bash
 			    
@@ -68,3 +69,16 @@ description of the client-server interaction:
 
 Here, $HTTP_URL_WITH_GET_PARAMETERS is the URL containing the API call
 and "$TOKEN" is the string of the token.
+
+.. _authentication-internal:
+
+Authentication to internal infrastructure
+-----------------------------------------
+
+Access to the Open Data Hub's internal infrastructure requires
+authentication, which is provided by :strong:`Keycloack`, an Open
+Source software that provides Identity and Access Management. In a
+nutshell, it acts as a broker to provide Single Sign On to different
+web sites and services; it also seamlessly interacts with
+Kerberos. More information and use cases can be found in the `official
+documentation <https://www.keycloak.org/documentation>`_.

@@ -261,7 +261,7 @@ are free to use and do not require any type of authentication.
 
 The authentication layer can be of interest for developers who want to
 collaborate in the development of Open Data Hub; Details on the implementation
-are available in section :ref:`authentication`.
+are available in section :ref:`authentication-hub`.
 
 .. _mobility-datasets:
 
