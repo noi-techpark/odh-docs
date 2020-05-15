@@ -82,3 +82,11 @@ nutshell, it acts as a broker to provide Single Sign On to different
 web sites and services; it also seamlessly interacts with
 Kerberos. More information and use cases can be found in the `official
 documentation <https://www.keycloak.org/documentation>`_.
+
+Source code for both the authentication server and a few pre-cooked
+examples of applications configured to connect to it can be found in
+dedicated servers created by the Open Data Hub Team: the
+`authentication server
+<https://github.com/noi-techpark/authentication-server-examples>`_,
+and the `example applications
+<https://github.com/noi-techpark/authentication-server-examples>`_,
