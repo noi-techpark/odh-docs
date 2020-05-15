@@ -6,23 +6,23 @@ Authentication
 
 The authentication layer is currently intended for :strong:`internal
 use only`, therefore it is :strong:`not` necessary to use
-authentication to access data provided by the |odh|\.
+authentication to access data provided by the Open Data Hub.
 	   
-While the |odh| project strives to offer only Open Data, it relies on
+While the Open Data Hub project strives to offer only Open Data, it relies on
 third-party :ref:`data-providers`, which may not offer the whole
 content of a dataset for public use. For this reason, an
 authentication mechanism has been implemented, which does however have
 no impact on users and on their use of the data.
 
-Indeed, authentication in |odh| is mainly used when exposing data to
+Indeed, authentication in Open Data Hub is mainly used when exposing data to
 the consumer, which means by the Reader and in every single web
 service accessing the Reader, to allow the access to closed data in
 each dataset only to those who are allowed to, i.e., developers and
-members of the |odh| team.
+members of the Open Data Hub team.
 
 In the remainder of this section, we describe how authentication works
-within the |odh|\, because this information might be of interest to
-user that might become app developers for the |odh| team; further
+within the Open Data Hub, because this information might be of interest to
+user that might become app developers for the Open Data Hub team; further
 information about how to use authentication can be found in the
 :ref:`dedicated howto <authentication-howto>`.
 
@@ -58,7 +58,7 @@ description of the client-server interaction:
 #. If the access token has expired, you'll get a HTTP :literal:`401
    Unauthorized` response. In this case you need to request a new
    access-token, passing your refresh token in the `Authorization`
-   header as Bearer token.  As an example, in |odh| datasets Bearer
+   header as Bearer token.  As an example, in Open Data Hub datasets Bearer
    tokens can be inserted in a :command:`curl` call like follows:
 
    .. code-block:: bash
