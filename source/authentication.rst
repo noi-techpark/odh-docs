@@ -1,28 +1,28 @@
 
-.. _authentication:
+.. _authentication-hub:
 
-Authentication
---------------
+Authentication in the Open Data Hub
+-----------------------------------
 
 The authentication layer is currently intended for :strong:`internal
 use only`, therefore it is :strong:`not` necessary to use
-authentication to access data provided by the |odh|\.
+authentication to access data provided by the Open Data Hub.
 	   
-While the |odh| project strives to offer only Open Data, it relies on
-third-party :ref:`data-providers`, which may not offer the whole
-content of a dataset for public use. For this reason, an
+While the Open Data Hub project strives to offer only Open Data, it
+relies on third-party :ref:`data-providers`, which may not offer the
+whole content of a dataset for public use. For this reason, an
 authentication mechanism has been implemented, which does however have
 no impact on users and on their use of the data.
 
-Indeed, authentication in |odh| is mainly used when exposing data to
+Indeed, authentication in Open Data Hub is mainly used when exposing data to
 the consumer, which means by the Reader and in every single web
 service accessing the Reader, to allow the access to closed data in
 each dataset only to those who are allowed to, i.e., developers and
-members of the |odh| team.
+members of the Open Data Hub team.
 
 In the remainder of this section, we describe how authentication works
-within the |odh|\, because this information might be of interest to
-user that might become app developers for the |odh| team; further
+within the Open Data Hub, because this information might be of interest to
+user that might become app developers for the Open Data Hub team; further
 information about how to use authentication can be found in the
 :ref:`dedicated howto <authentication-howto>`.
 
@@ -58,8 +58,9 @@ description of the client-server interaction:
 #. If the access token has expired, you'll get a HTTP :literal:`401
    Unauthorized` response. In this case you need to request a new
    access-token, passing your refresh token in the `Authorization`
-   header as Bearer token.  As an example, in |odh| datasets Bearer
-   tokens can be inserted in a :command:`curl` call like follows:
+   header as Bearer token.  As an example, in Open Data Hub datasets
+   Bearer tokens can be inserted in a :command:`curl` call like
+   follows:
 
    .. code-block:: bash
 			    
@@ -68,3 +69,24 @@ description of the client-server interaction:
 
 Here, $HTTP_URL_WITH_GET_PARAMETERS is the URL containing the API call
 and "$TOKEN" is the string of the token.
+
+.. _authentication-internal:
+
+Authentication to internal infrastructure
+-----------------------------------------
+
+Access to the Open Data Hub's internal infrastructure requires
+authentication, which is provided by :strong:`Keycloack`, an Open
+Source software that provides Identity and Access Management. In a
+nutshell, it acts as a broker to provide Single Sign On to different
+web sites and services; it also seamlessly interacts with
+Kerberos. More information and use cases can be found in the `official
+documentation <https://www.keycloak.org/documentation>`_.
+
+Source code for both the authentication server and a few pre-cooked
+examples of applications configured to connect to it can be found in
+dedicated servers created by the Open Data Hub Team: the
+`authentication server
+<https://github.com/noi-techpark/authentication-server-examples>`_,
+and the `example applications
+<https://github.com/noi-techpark/authentication-server-examples>`_,
