@@ -83,6 +83,10 @@ web sites and services; it also seamlessly interacts with
 Kerberos. More information and use cases can be found in the `official
 documentation <https://www.keycloak.org/documentation>`_.
 
+.. note:: By `internal infrastructure` we mean also the access to Open
+   Data that are already available to the Open Data Hub Team but not
+   yet to the Data Consumers, and therefore require authentication.
+
 Source code for both the authentication server and a few pre-cooked
 examples of applications configured to connect to it can be found in
 dedicated servers created by the Open Data Hub Team: the
