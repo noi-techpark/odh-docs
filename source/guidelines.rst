@@ -17,5 +17,5 @@ contracted to write code or apps for the |odh| project (|odh| Core Hacker)
    /guidelines/platform.rst
    /guidelines/database.rst
    /guidelines/dtp.rst
-   /authentication.rst
+   /guidelines/authentication.rst
    /contributors.rst
