@@ -31,7 +31,7 @@ available here:
 	    provided within the Tourism domain.
 	 #. :doc:`/howto/tourism/tips` Mini howtos, tricks&tips, and
 	    use cases for data in the Tourism domain.
-
+	 #. :doc:`howto/tourism/alpinebits` access AlpineBits data
 	    
       .. tab:: Miscellaneous
 
@@ -75,6 +75,7 @@ available here:
       within the Tourism domain.
    #. :doc:`/howto/tourism/tips` Mini howtos, tricks&tips, and use
       cases for data in the Tourism domain.
+   #. :doc:`howto/tourism/alpinebits` access AlpineBits data
 
    .. rubric:: Miscellaneous
  
@@ -89,10 +90,11 @@ available here:
       development environment, to access data from the |odh|.
 
    #. :doc:`/howto/noievents` Create and modify NOI events directly
-      from the |odh| portal.
+      from the |odh| portal
 
    #. :doc:`/howto/webcomponents` share your webcomponents with
       |odh| team
+
 
 .. toctree::
    :maxdepth: 1
@@ -109,3 +111,4 @@ available here:
    howto/noievents
    howto/tourism/tips
    howto/webcomponents
+   howto/tourism/alpinebits
