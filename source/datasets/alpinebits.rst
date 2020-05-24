@@ -1,7 +1,7 @@
 .. alpinebits
 
 This endpoint provides data from the `AlpineBits Open Standard
-</www.alpinebits.org>`, whose purpose it to ease data exchange among
+<https://www.alpinebits.org>`_, whose purpose it to ease data exchange among
 actors involved in the alpine tourism.
    
 ==============  ========================================================
