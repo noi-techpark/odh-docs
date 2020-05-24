@@ -72,7 +72,7 @@ and "$TOKEN" is the string of the token.
 
 .. _authentication-internal:
 
-Authentication to internal infrastructure
+Authentication To Internal Infrastructure
 -----------------------------------------
 
 Access to the Open Data Hub's internal infrastructure requires
@@ -90,3 +90,65 @@ dedicated servers created by the Open Data Hub Team: the
 <https://github.com/noi-techpark/authentication-server-examples>`_,
 and the `example applications
 <https://github.com/noi-techpark/authentication-server-examples>`_,
+
+Quick howto
+~~~~~~~~~~~
+
+In order to access the internal infrastructure, you need first to get
+a token, then use it together with the API. Both steps can be achieved
+using command-line tools, for a programmatic access to the date, which
+is the method shown here.
+
+.. rubric:: Request an access token
+
+In order to receive an access token, you need in advance to have
+credentials for the Open Data Hub. If you do not have them, please
+open a ticket on issues.opendatahub.bz.it or send an email to
+:email:`help@opendatahub.bz.it`.
+
+With your username and password
+(:strong:`my_username`. `strong:`my_password`), the access token is
+granted to you with the following call:
+ 
+.. code-block:: bash
+   :name: grant-token
+   :caption: Receiving an access topic
+
+   curl -X POST -L -H 'Content-Type:application/x-www-form-urlencoded' \
+   "https://auth.opendatahub.bz.it/auth/realms/noi/protocol/openid-connect/token" \
+   -d 'grant_type=password&username=my_username&password=my_password&client_id=your-client-id'
+
+   
+The last parameter, :literal:`client_id` should be set to
+:strong:`odh-mobility-v2`.
+
+Since the token expires after a given amount of time, it might prove
+necessary to refresh it, an action that can be done by replacing the
+parameters given in the query above with
+
+.. code-block::
+   :name: refresh-token
+   :caption: Refreshing the access token
+	  
+   curl -X POST -L -H 'Content-Type:application/x-www-form-urlencoded' \
+   "https://auth.opendatahub.bz.it/auth/realms/noi/protocol/openid-connect/token" \
+   -d 'grant_type=refresh_token&refresh_token=*****&client_id=your-client-id'
+
+Here, use the refresh token received from
+:numref:`grant-token` and the same :literal:`client_id`. 
+
+
+.. rubric:: Retrieve data with the token.
+
+Once you received the access token, it is easy to use it in actual
+requests. The following API call shows how to get all
+:strong:`sname`\s and :strong:`mvalue`\s from the VMS dataset:
+	    
+.. code-block::
+   :name: get-closed-data
+   :caption: Retrieving data with the access token
+
+   curl -X GET 'https://mobility.api.opendatahub.bz.it/v2/api/flat/VMS/*?select=sname,mvalue' \
+   -H 'content-type: application/json' \
+   -H 'Authorization: bearer your-access-token'
+
