@@ -458,3 +458,16 @@ calls and are described in this section.
          
 In order to show :strong:`null` values in the output of a query, add
 :literal:`shownull=true` ad the end of your query.
+
+.. rubric:: :literal:`distict`
+
+Results in query responses contain unique results, that is, if for
+some reason one element is retrieved multiple times while the query is
+executed, it will be nonetheless shown only once, for performance
+reasons. It is however possible to retrieve each single result and
+have it appear in the response by adding :literal:`distincs=true` to
+the API call.
+
+.. warning:: Keeping track of all distict values might be a
+   resource-intensive process that significantly rises the response
+   time, therefore use it with care.
