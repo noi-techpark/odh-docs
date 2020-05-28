@@ -152,10 +152,10 @@ requests. The following API call shows how to get all
    -H 'content-type: application/json' \
    -H 'Authorization: bearer your-access-token'
 
-
 Currently, data retrieved from the Open Data Hub are always open,
 except for the latest values and some other historical data. Only a
-subset of `m`\-prefixed data (see section :ref:`api-v2-structure`) can
-be closed.
+subset of `m`\-prefixed data from the :literal:`/latest` and
+:literal:`/from/to` API calls can be closed date. See section
+:ref:`api-v2-structure`) for more information about the API calls.
 
 
