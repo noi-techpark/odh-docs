@@ -120,11 +120,7 @@ granted to you with the following call:
 
    curl -X POST -L -H 'Content-Type:application/x-www-form-urlencoded' \
    "https://auth.opendatahub.bz.it/auth/realms/noi/protocol/openid-connect/token" \
-   -d 'grant_type=password&username=my_username&password=my_password&client_id=your-client-id'
-
-   
-The last parameter, :literal:`client_id` should be set to
-:strong:`odh-mobility-v2`.
+   -d 'grant_type=password&username=my_username&password=my_password&client_id=odh-mobility-v2'
 
 Since the token expires after a given amount of time, it might prove
 necessary to refresh it, an action that can be done by replacing the
@@ -136,10 +132,9 @@ parameters given in the query above with
 	  
    curl -X POST -L -H 'Content-Type:application/x-www-form-urlencoded' \
    "https://auth.opendatahub.bz.it/auth/realms/noi/protocol/openid-connect/token" \
-   -d 'grant_type=refresh_token&refresh_token=*****&client_id=your-client-id'
+   -d 'grant_type=refresh_token&refresh_token=*****&client_id=odh-mobility-v2'
 
-Here, use the refresh token received from
-:numref:`grant-token` and the same :literal:`client_id`. 
+Here, use the refresh token received from :numref:`grant-token`.
 
 
 .. rubric:: Retrieve data with the token.
