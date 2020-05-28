@@ -448,3 +448,13 @@ of values, respectively:
 * :literal:`where=smetadata.capacity.gt.100,smetadata.municipality.eq."Bolzano -
   Bozen"` same as previous query, but only parking lots in Bolzano are shown.
 
+Additional Parameters
+~~~~~~~~~~~~~~~~~~~~~
+
+There are a couple of other parameter that can be given to the API
+calls and are described in this section.
+
+.. rubric:: :literal:`shownull`
+         
+In order to show :strong:`null` values in the output of a query, add
+:literal:`shownull=true` ad the end of your query.
