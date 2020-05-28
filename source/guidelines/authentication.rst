@@ -155,5 +155,7 @@ requests. The following API call shows how to get all
 
 Currently, data retrieved from the Open Data Hub are always open,
 except for the latest values and some other historical data. Only a
-subset of `m`\-prefixed data (see section ref:`api-v2-structure`) can
+subset of `m`\-prefixed data (see section :ref:`api-v2-structure`) can
 be closed.
+
+
