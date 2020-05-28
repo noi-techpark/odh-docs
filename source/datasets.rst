@@ -1,4 +1,3 @@
-
 .. _available_datasets:
 
 Datasets
@@ -65,7 +64,7 @@ The Open Data Hub\'s Data Providers are:
 * InnoVie.
 * Südtirol Wein.
 * Route220, Nevicam and Driwe e-charging stations provider
- 
+
 .. topic:: A note about datasets.
 
    The Open Data Hub contains many datasets: a few have been provided for
@@ -122,7 +121,7 @@ used within the Open Data Hub's domains.
 API  Tourism      Mobility
 === ============  =============
 v1   Recommended   Deprecated
-v2   --            Recommended 
+v2   --            Recommended
 === ============  =============
 
 
@@ -151,7 +150,7 @@ of this documentation.
 
 .. note:: It is important to remark that the API v2 is :strong:`only
    available` for datasets in the :strong:`Mobility` Domain.
-   
+
 
 Browser access
 ~~~~~~~~~~~~~~
@@ -178,8 +177,8 @@ data by using a browser:
    the :strong:`Alpha Stage Apps` and choose one of them that you
    think you can expand, then get in touch with the authors to suggest
    additional features or collaborate with them to discuss its further
-   development to improve it.  
-   
+   development to improve it.
+
 #. Access the `ODH Tourism data browser
    <http://tourism.opendatahub.bz.it/>`_ and search for the Open Data
    available in the Tourism domain. You can simply use those data for
@@ -271,7 +270,7 @@ Datasets in the Mobility Domain
 
 .. contents:: List of datasets in the mobility domain.
    :local:
-	   
+
 This section contains information about the datasets and how to access
 them using the API that the Open Data Hub team developed and made available.
 
@@ -302,7 +301,7 @@ it.bz.opendatahub.bikesharing
 it.bz.opendatahub.bluetooth
 ```````````````````````````
 .. include:: /datasets/bluetooth.rst
-	     
+
 .. _environment-dataset:
 
 it.bz.opendatahub.environment
@@ -338,7 +337,7 @@ it.bz.opendatahub.streetelements
 it.bz.opendatahub.trafficstation
 ````````````````````````````````
 .. include:: /datasets/trafficstation.rst
-    
+
 .. _weather-dataset:
 
 it.bz.opendatahub.weather
@@ -405,12 +404,43 @@ for each of the above-listed dataset:
    :strong:`MobileStation` which is a mobile probe no longer
    active. It will always return an empty set of values, because
    historical data are not available in the Open Data Hub.
-  
+
 .. _accommodation-dataset:
 
 it.lts.accommodation
 ~~~~~~~~~~~~~~~~~~~~
 .. include:: /datasets/accommodation.rst
+
+.. _activity-dataset:
+
+it.lts.activity
+~~~~~~~~~~~~~~~
+.. include:: /datasets/activity.rst
+	     
+.. _activity_poi-dataset:
+
+it.lts.activity_poi
+~~~~~~~~~~~~~~~~~~~
+.. include:: /datasets/activity_poi.rst
+
+.. _event-dataset:
+
+it.lts.event
+~~~~~~~~~~~~
+.. include:: /datasets/event.rst
+
+
+.. _gastronomy-dataset:
+
+it.lts.gastronomy
+~~~~~~~~~~~~~~~~~
+.. include:: /datasets/gastronomy.rst
+
+.. _location-dataset:
+
+it.bz.opendatahub.location
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. include:: /datasets/location.rst
 
 .. _package-dataset:
 
@@ -424,36 +454,6 @@ it.lts.poi
 ~~~~~~~~~~
 .. include:: /datasets/poi.rst
 
-.. _activity-dataset:
-
-it.lts.activity
-~~~~~~~~~~~~~~~
-.. include:: /datasets/activity.rst
-
-.. _event-dataset:
-
-it.lts.event
-~~~~~~~~~~~~
-.. include:: /datasets/event.rst
-
-.. _activity_poi-dataset:
-
-it.lts.activity_poi
-~~~~~~~~~~~~~~~~~~~
-.. include:: /datasets/activity_poi.rst
-	     
-.. _gastronomy-dataset:
-
-it.lts.gastronomy
-~~~~~~~~~~~~~~~~~
-.. include:: /datasets/gastronomy.rst
-
-.. _location-dataset:
-
-it.bz.opendatahub.location
-~~~~~~~~~~~~~~~~~~~~~~~~~~
-.. include:: /datasets/location.rst
-
 .. _ski-dataset:
 
 it.bz.opendatahub.ski
@@ -465,24 +465,18 @@ it.bz.opendatahub.ski
 it.bz.opendatahub.snowreport
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 .. include:: /datasets/snowreport.rst
-	     
-.. _webcam-dataset:
 
-it.bz.opendatahub.webcam
-~~~~~~~~~~~~~~~~~~~~~~~~
-.. include:: /datasets/webcam.rst
-	     
 .. _weather-siag-dataset:
 
 it.bz.opendatahub.weather-siag
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 .. include:: /datasets/weather-siag.rst
-	     
-.. _siag.weather-dataset:
 
-it.bz.siag.weather
-~~~~~~~~~~~~~~~~~~
-.. include:: /datasets/siag.weather.rst
+.. _webcam-dataset:
+
+it.bz.opendatahub.webcam
+~~~~~~~~~~~~~~~~~~~~~~~~
+.. include:: /datasets/webcam.rst
 
 .. _museum-dataset:
 
@@ -490,3 +484,8 @@ it.bz.siag.museum
 ~~~~~~~~~~~~~~~~~
 .. include:: /datasets/museum.rst
 
+.. _siag.weather-dataset:
+
+it.bz.siag.weather
+~~~~~~~~~~~~~~~~~~
+.. include:: /datasets/siag.weather.rst
