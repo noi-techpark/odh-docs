@@ -324,7 +324,7 @@ Advanced processing allows to build SQL-style queries using the
 fields returned by the calls described in the previous section.
 :literal:`SELECT` and :literal:`WHERE` have the usual meaning, with
 the former retrieving data from a JSON field, in the form of
-:literal:`SELECT=alias[,alias,...]`, and the latter retrieving records
+:literal:`SELECT=target[,target,...]`, and the latter retrieving records
 from the JSON output, using the :literal:`WHERE=filter[,filter,...]`
 form, with an implicit :strong:`and` among the filters, therefore
 evaluation of the filters takes place only if all filters would
@@ -384,13 +384,13 @@ The latter two examples show that to go down one more step into the
 hierarchy, you simply add a dot (":literal:`.`") before the attribute
 in the next level of the hierarchy. Moreover, you can extract multiple
 values from a JSON output, provided you separate them with a comma
-(":literal:`,`") and use :strong:`no empty spaces` in the clause. in
+(":literal:`,`") and use :strong:`no empty spaces` in the clause. In
 the above examples, each of the element within
 parentheses--:literal:`smetadata`, :literal:`smetadata.municipality`,
-and :literal:`smetadata.mainaddress`\-- is called :strong:`alias`.
+and :literal:`smetadata.mainaddress`\-- is called :strong:`target`.
 
 Within a :literal:`SELECT` clause, SQL functions are allowed and can
-be mixed with aliases, allowing to further process the output, with
+be mixed with targets, allowing to further process the output, with
 the following limitations:
 
 * Only `numeric` functions are allowed, like e.g., :literal:`min`,
@@ -399,7 +399,7 @@ the following limitations:
   a post-processing task
 * Functions can be use :strong:`only` with the :literal:`flat`
   representation
-* When a function is used together with other aliases, these are used
+* When a function is used together with other targets, these are used
   for grouping purposes. For example:
   :literal:`select=sname,max(smetadata.capacity),min(smetadata.capacity)`
   will return the parking lots with the highest and lowest number of
@@ -428,9 +428,9 @@ operators:
   covered by the box)
 - `bbc`: bounding box containing objects (ex., a station or street, that is
   completely covered by the box)
-- `in`: true if the value of the alias can be found within the given list.
+- `in`: true if the value of the target can be found within the given list.
   Example: `name.in.(Patrick,Rudi,Peter)`
-- `nin`: False if the value of the alias can be found within the given list.
+- `nin`: False if the value of the target can be found within the given list.
   Example: `name.nin.(Patrick,Rudi,Peter)`
 - `and(filter,filter,...)`: Conjunction of filters (can be nested)
 - `or(filter,filter,...)`: Disjunction of filters (can be nested)
