@@ -54,18 +54,21 @@ The overall structure of the JSON is the following:
    "limit": 200   
 
 Here, `offset` and `limit` are used for limiting the displayed
-results: `limit` gives the maximum number of results (defaults to
-:strong:`200`), while `offset` allows to skip elements from the result
-set (defaults to :strong:`0`, i.e., the results start from the first
-one . It is therefore possible to simulate pagination when there are
-many results: for example, if there are :strong:`1000` values, by
-adding to successive queries the offsets :strong:`0`, :strong:`200`,
-:strong:`400`, :strong:`600`, and :strong:`800`, the response of the
-query is split on 5 pages of 200 results each.
+results. The three keys have the following meaning:
 
-`Data` is the actual :strong:`payload` of the response, that is, the
-data answering the query; since it changes depending on which API
-call/method is used, it will be described in the next section.
+* `limit` gives the maximum number of results that are included in the
+  response. It defaults to :strong:`200`.
+* `offset` allows to skip elements from the result set. The default is
+  :strong:`0`, i.e., the results start from the first one.
+* `Data` is the actual :strong:`payload` of the response, that is, the
+  data answering the query; since it changes depending on which API
+  call/method is used, it will be described in the next section.
+
+.. hint:: It is possible to simulate pagination when there are many
+   results: for example, if there are :strong:`1000` values, by adding
+   to successive queries the offsets :strong:`0`, :strong:`200`,
+   :strong:`400`, :strong:`600`, and :strong:`800`, the response of
+   the query is split on 5 pages of 200 results each.
 
 
 Structure of the API calls and Payload
