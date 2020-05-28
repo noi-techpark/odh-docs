@@ -147,7 +147,8 @@ requests. The following API call shows how to get all
    :name: get-closed-data
    :caption: Retrieving data with the access token
 
-   curl -X GET 'https://mobility.api.opendatahub.bz.it/v2/api/flat/VMS/*?select=sname,mvalue' \
+   curl -X GET \
+   'https://mobility.api.opendatahub.bz.it/v2/api/flat/VMS/*/latest?select=sname,mvalue' \
    -H 'content-type: application/json' \
    -H 'Authorization: bearer your-access-token'
 
