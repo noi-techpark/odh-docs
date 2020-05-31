@@ -8,7 +8,7 @@
 This is the website of the |ODH| documentation, a collection of
 technical resources about the |odh| project. The website serves as the
 main resource portal for everyone interested in accessing the data or
-deploying apps based on :term:`datasets <dataset>` & :term:`API`\s
+deploying apps based on :term:`datasets <Dataset>` & :term:`API`\s
 provided by the |odh| team.
 
 The technical stuff is composed of:
@@ -59,7 +59,7 @@ maturity: production stage, beta and alpha stage.
    An overview of the |odh| Project.
 
 :numref:`domains-diagram` gives a high level overview of the flow of
-data within the |odh|\: at the bottom, :term:`sensors <sensor>` gather
+data within the |odh|\: at the bottom, :term:`sensors <Sensor>` gather
 data from various domains, which are fed to the |odh| Big Data
 infrastructure and made available through endpoints to (third-party)
 applications, web sites, and vocal assistants. A more technical and

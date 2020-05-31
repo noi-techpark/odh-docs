@@ -4,6 +4,7 @@ Glossary
 
 .. glossary::
    :sorted:
+   
 
    API  
       The Application Programming Interface is a collection of methods
@@ -18,7 +19,7 @@ Glossary
       A dataset is a collection of records from a Data source. See the
       :ref:`detailed description <dataset-def>`.
 
-   Data format
+   Data Format
       Data format is the way information is encoded and exchanged between
       applications.
 
@@ -89,7 +90,7 @@ Glossary
       the :ref:`detailed description <data-consumer-def>`.
 
 
-   Persistence layer      
+   Persistence Layer      
       Another name for Database, see the above entry or the
       :ref:`detailed description <database-def>`.
 
@@ -103,7 +104,7 @@ Glossary
      for authentication purposes when the claim is digitally signed
      and/or encrypted.
 
-   Statistical graphics   
+   Statistical Graphics   
      Statistical graphics are means to display statistical data with
      the purpose to ease their interpretations. Common statistical
      graphics include pie charts, histograms, and scatter plot.

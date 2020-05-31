@@ -1,4 +1,3 @@
-
 .. _available_datasets:
 
 Datasets
@@ -65,7 +64,7 @@ The Open Data Hub\'s Data Providers are:
 * InnoVie.
 * Südtirol Wein.
 * Route220, Nevicam and Driwe e-charging stations provider
- 
+
 .. topic:: A note about datasets.
 
    The Open Data Hub contains many datasets: a few have been provided for
@@ -118,12 +117,12 @@ post-processed in the preferred way.
 The following table summarises how the two versions of the API can be
 used within the Open Data Hub's domains.
 
-=== ========= =============
-API  Tourism  Mobility
-=== ========= =============
-v1   OK       Deprecated
-v2   --       Recommended 
-=== ========= =============
+=== ============  =============
+API  Tourism      Mobility
+=== ============  =============
+v1   Recommended   Deprecated
+v2   --            Recommended
+=== ============  =============
 
 
 There are currently two versions of the API, v1 and v2, with the
@@ -151,7 +150,7 @@ of this documentation.
 
 .. note:: It is important to remark that the API v2 is :strong:`only
    available` for datasets in the :strong:`Mobility` Domain.
-   
+
 
 Browser access
 ~~~~~~~~~~~~~~
@@ -178,8 +177,8 @@ data by using a browser:
    the :strong:`Alpha Stage Apps` and choose one of them that you
    think you can expand, then get in touch with the authors to suggest
    additional features or collaborate with them to discuss its further
-   development to improve it.  
-   
+   development to improve it.
+
 #. Access the `ODH Tourism data browser
    <http://tourism.opendatahub.bz.it/>`_ and search for the Open Data
    available in the Tourism domain. You can simply use those data for
@@ -261,7 +260,7 @@ are free to use and do not require any type of authentication.
 
 The authentication layer can be of interest for developers who want to
 collaborate in the development of Open Data Hub; Details on the implementation
-are available in section :ref:`authentication`.
+are available in section :ref:`authentication-hub`.
 
 .. _mobility-datasets:
 
@@ -271,7 +270,7 @@ Datasets in the Mobility Domain
 
 .. contents:: List of datasets in the mobility domain.
    :local:
-	   
+
 This section contains information about the datasets and how to access
 them using the API that the Open Data Hub team developed and made available.
 
@@ -286,99 +285,102 @@ The description of each dataset includes the following information:
 The datasets in the Mobility domain are grouped in :strong:`Traffic`
 and :strong:`Mobility` as follows:
 
-.. rubric:: Traffic
+Traffic
+~~~~~~~
+
+.. _bikesharing-dataset:
+
+it.bz.opendatahub.bikesharing
+`````````````````````````````
+.. include:: /datasets/bikesharing.rst
+
+
+.. _bluetooth-dataset:
+
+it.bz.opendatahub.bluetooth
+```````````````````````````
+.. include:: /datasets/bluetooth.rst
+
+.. _environment-dataset:
+
+it.bz.opendatahub.environment
+`````````````````````````````
+.. include:: /datasets/environment.rst
+
+.. _linkstation-dataset:
+
+it.bz.opendatahub.linkstation
+`````````````````````````````
+.. include:: /datasets/linkstation.rst
+
+.. _parking-dataset:
+
+it.bz.opendatahub.parking
+`````````````````````````
+.. include:: /datasets/parking.rst
 
 .. _rwisstation-dataset:
 
-|idgb|\ rwisstation
-~~~~~~~~~~~~~~~~~~~
+it.bz.opendatahub.rwisstation
+`````````````````````````````
 .. include:: /datasets/rwisstation.rst
 
 .. _streetelement-dataset:
 
-|idgb|\ streetelements
-~~~~~~~~~~~~~~~~~~~~~~
+it.bz.opendatahub.streetelements
+````````````````````````````````
 .. include:: /datasets/streetelements.rst
-
-.. _linkstation-dataset:
-
-|idgb|\ linkstation
-~~~~~~~~~~~~~~~~~~~
-.. include:: /datasets/linkstation.rst
-
-.. _bluetooth-dataset:
-
-|idgb|\ bluetooth
-~~~~~~~~~~~~~~~~~
-.. include:: /datasets/bluetooth.rst
-    
-.. _weather-dataset:
-
-|idgb|\ weather
-~~~~~~~~~~~~~~~
-.. include:: /datasets/weather.rst
-
-.. _environment-dataset:
-
-|idgb|\ environment
-~~~~~~~~~~~~~~~~~~~
-.. include:: /datasets/environment.rst
-
-.. _parking-dataset:
-
-|idgb|\ parking
-~~~~~~~~~~~~~~~
-.. include:: /datasets/parking.rst
 
 .. _trafficstation-dataset:
 
-|idgb|\ trafficstation
-~~~~~~~~~~~~~~~~~~~~~~
+it.bz.opendatahub.trafficstation
+````````````````````````````````
 .. include:: /datasets/trafficstation.rst
 
-.. rubric:: Mobility
-   
-.. _carsharing-dataset:
+.. _weather-dataset:
 
-|idgb|\ carsharing
-~~~~~~~~~~~~~~~~~~
-.. include:: /datasets/carsharing.rst
+it.bz.opendatahub.weather
+`````````````````````````
+.. include:: /datasets/weather.rst
+
+Mobility
+~~~~~~~~
 
 .. _carpoolinghub-dataset:
 
-|idgb|\ carpoolinghub
-~~~~~~~~~~~~~~~~~~~~~
+it.bz.opendatahub.carpoolinghub
+```````````````````````````````
 .. include:: /datasets/carpoolinghub.rst
 
-.. _bikesharing-dataset:
+.. _carsharing-dataset:
 
-|idgb|\ bikesharing
-~~~~~~~~~~~~~~~~~~~
-.. include:: /datasets/bikesharing.rst
+it.bz.opendatahub.carsharing
+````````````````````````````
+.. include:: /datasets/carsharing.rst
 
 .. _echarging-dataset:
 
-|idgb|\ echargingstation
-~~~~~~~~~~~~~~~~~~~~~~~~
+it.bz.opendatahub.echargingstation
+``````````````````````````````````
 .. include:: /datasets/ecs.rst
 
 .. _sasabus-dataset:
 
 Public Transportation
-~~~~~~~~~~~~~~~~~~~~~
+`````````````````````
 .. include:: /datasets/sasa.rst
-
-.. _noiplace-dataset:
-
-NOI-Place
-~~~~~~~~~
-.. include:: /datasets/noiplace.rst
 
 .. _creative-industries-dataset:
 
 Creative Industries
-~~~~~~~~~~~~~~~~~~~
+```````````````````
 .. include:: /datasets/creativeindustries.rst
+
+.. _noiplace-dataset:
+
+NOI-Place
+`````````
+.. include:: /datasets/noiplace.rst
 
 
 .. _tourism-datasets:
@@ -401,6 +403,7 @@ for each of the above-listed dataset:
    :strong:`MobileStation` which is a mobile probe no longer
    active. It will always return an empty set of values, because
    historical data are not available in the Open Data Hub.
+
   
 .. _alpinebits-dataset:
 
@@ -410,9 +413,40 @@ https\://alpinebits.opendatahub.bz.it/AlpineBits
 	     
 .. _accommodation-dataset:
 
-|lts|\ accommodation
+it.lts.accommodation
 ~~~~~~~~~~~~~~~~~~~~
 .. include:: /datasets/accommodation.rst
+
+.. _activity-dataset:
+
+it.lts.activity
+~~~~~~~~~~~~~~~
+.. include:: /datasets/activity.rst
+	     
+.. _activity_poi-dataset:
+
+it.lts.activity_poi
+~~~~~~~~~~~~~~~~~~~
+.. include:: /datasets/activity_poi.rst
+
+.. _event-dataset:
+
+it.lts.event
+~~~~~~~~~~~~
+.. include:: /datasets/event.rst
+
+
+.. _gastronomy-dataset:
+
+it.lts.gastronomy
+~~~~~~~~~~~~~~~~~
+.. include:: /datasets/gastronomy.rst
+
+.. _location-dataset:
+
+it.bz.opendatahub.location
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. include:: /datasets/location.rst
 
 .. _package-dataset:
 
@@ -422,73 +456,42 @@ it.hgv.package
 
 .. _poi-dataset:
 
-|lts|\ poi
+it.lts.poi
 ~~~~~~~~~~
 .. include:: /datasets/poi.rst
 
-.. _activity-dataset:
-
-|lts|\ activity
-~~~~~~~~~~~~~~~
-.. include:: /datasets/activity.rst
-
-.. _event-dataset:
-
-|lts|\ event
-~~~~~~~~~~~~
-.. include:: /datasets/event.rst
-
-.. _activity_poi-dataset:
-
-|lts|\ activity_poi
-~~~~~~~~~~~~~~~~~~~
-.. include:: /datasets/activity_poi.rst
-	     
-.. _gastronomy-dataset:
-
-|lts|\ gastronomy
-~~~~~~~~~~~~~~~~~
-.. include:: /datasets/gastronomy.rst
-
-.. _location-dataset:
-
-|idgb|\ location
-~~~~~~~~~~~~~~~~
-.. include:: /datasets/location.rst
-
 .. _ski-dataset:
 
-|idgb|\ ski
-~~~~~~~~~~~
+it.bz.opendatahub.ski
+~~~~~~~~~~~~~~~~~~~~~
 .. include:: /datasets/ski.rst
 
 .. _snowreport-dataset:
 
-|idgb|\ snowreport
-~~~~~~~~~~~~~~~~~~
+it.bz.opendatahub.snowreport
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 .. include:: /datasets/snowreport.rst
-	     
-.. _webcam-dataset:
 
-|idgb|\ webcam
-~~~~~~~~~~~~~~
-.. include:: /datasets/webcam.rst
-	     
 .. _weather-siag-dataset:
 
-|idgb|\ weather-siag
-~~~~~~~~~~~~~~~~~~~~
+it.bz.opendatahub.weather-siag
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 .. include:: /datasets/weather-siag.rst
-	     
-.. _siag.weather-dataset:
 
-|idsiag|\ weather
-~~~~~~~~~~~~~~~~~
-.. include:: /datasets/siag.weather.rst
+.. _webcam-dataset:
+
+it.bz.opendatahub.webcam
+~~~~~~~~~~~~~~~~~~~~~~~~
+.. include:: /datasets/webcam.rst
 
 .. _museum-dataset:
 
-|idsiag|\ museum
-~~~~~~~~~~~~~~~~
+it.bz.siag.museum
+~~~~~~~~~~~~~~~~~
 .. include:: /datasets/museum.rst
 
+.. _siag.weather-dataset:
+
+it.bz.siag.weather
+~~~~~~~~~~~~~~~~~~
+.. include:: /datasets/siag.weather.rst

@@ -39,14 +39,7 @@
    :alt: API v1 are now deprecated
 
 
-.. |apiv2| replace:: https://mobility.api.opendatahub.bz.it/v2/swagger-ui.html
-
-.. URLs of datasets
-
-.. |mobecs| replace:: ipchannels.integreen-life.bz.it
-.. |idgb| replace:: it.bz.opendatahub.
-.. |idsiag| replace:: it.bz.siag.
-.. |lts| replace:: it.lts.
+.. |apiv2| replace:: https://mobility.api.opendatahub.bz.it/
 
 .. abbreviations
 

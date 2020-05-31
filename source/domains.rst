@@ -1,5 +1,5 @@
 
-A :term:`domain` is a category that contains entities that are closely
+A :term:`Domain` is a category that contains entities that are closely
 related. In the |odh|, each domain roughly identifies one social or
 economical category; the domains intended as sources for data served
 by the |odh| are depicted at the bottom of :numref:`domains-diagram`.

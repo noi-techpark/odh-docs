@@ -25,6 +25,6 @@ Tips and Tricks
 .. _mobi_tt1:
 
 .. rubric:: TT1: How do I retrieve :literal:`null` values?
-
-   In order to show `null` values in the output of a query, add
-   :literal:`shownull=true` ad the end of your query.
+	    
+In order to show `null` values in the output of a query, add
+:literal:`shownull=true` ad the end of your query.
