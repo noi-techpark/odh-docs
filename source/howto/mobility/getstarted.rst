@@ -60,6 +60,10 @@ results. The three keys have the following meaning:
 
 * `limit` gives the maximum number of results that are included in the
   response. It defaults to :strong:`200`.
+
+  .. hint:: By setting the value to :strong:`-1`, `limit` will be
+     disabled and all results will be shown.
+     
 * `offset` allows to skip elements from the result set. The default is
   :strong:`0`, i.e., the results start from the first one.
 * `data` is the actual :strong:`payload` of the response, that is, the
@@ -465,13 +469,13 @@ calls and are described in this section.
 In order to show :strong:`null` values in the output of a query, add
 :literal:`shownull=true` ad the end of your query.
 
-.. rubric:: :literal:`distict`
+.. rubric:: :literal:`distinct`
 
 Results in query responses contain unique results, that is, if for
 some reason one element is retrieved multiple times while the query is
 executed, it will be nonetheless shown only once, for performance
 reasons. It is however possible to retrieve each single result and
-have it appear in the response by adding :literal:`distincs=true` to
+have it appear in the response by adding :literal:`distinct=true` to
 the API call.
 
 .. warning:: Keeping track of all distict values might be a
