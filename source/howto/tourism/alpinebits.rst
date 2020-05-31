@@ -12,7 +12,7 @@ example call can be seen :ref:`at the bottom <ab-request>` of this
 howto.
 
 .. note:: Alternative command line programs like :command:`wget` can
-   be used as well, simply adapt the parameters described in the
+   be used as well: simply adapt the parameters described in the
    remainder of this section.
 
 The first important thing to mention is that requests to this endpoint
@@ -29,14 +29,32 @@ and a `client ID`, which are two additional headers, namely
 Concerning the client protocol version, it must be one of the
 supported version mentioned in :numref:`ab-matrix`, which also
 shows the actions that can be used together with the protocol.
-
-
+ 
 .. _ab-matrix:
 
-.. figure:: /images/AB-actions.png
+.. table:: Matrix of the protocol versions and supported actions in
+   AlpineBits.
 
-   Matrix of the protocol versions and supported actions in AlpineBits.
+   +---------------------+---------+---------+---------+---------+
+   | AlpineBits Server   | 2017-10 | 2017-10 | 2018-10 | 2018-10 |
+   | Actions             |   PUSH  |   PULL  |   PULL  |   PUSH  |
+   +---------------------+---------+---------+---------+---------+
+   | FreeRooms           | Yes     | No      | Yes     | No      |
+   +---------------------+---------+---------+---------+---------+
+   | GuestRequests       | No      | No      | No      | No      |
+   +---------------------+---------+---------+---------+---------+
+   | Inventory Basic     | Yes     | Yes     | Yes     | Yes     |
+   +---------------------+---------+---------+---------+---------+
+   | Inventory HotelInfo | Yes     | Yes     | Yes     | Yes     |
+   +---------------------+---------+---------+---------+---------+
+   | RatePlans           | No      | No      | No      | No      |
+   +---------------------+---------+---------+---------+---------+
+   | BaseRates           | No      | No      | No      | No      |
+   +---------------------+---------+---------+---------+---------+
 
+Note that PUSH and PULL refer to the action of uploading to and
+downloading from AlpineBits servers, respectively.
+   
 Finally, to retrieve data from the AlpineBits, you need to set the
 correct content type and provide an `action`. The content type is
 specified in another header by :literal:`--header 'Content-Type:
@@ -62,3 +80,8 @@ Here, you can see that the additional option :literal:`--location` is
 used, that will make sure to resend the request in case a
 :strong:`3xx` HTTP error code is received, i.e., if the requested
 resource has been moved.
+
+
+.. seealso:: More information about the interaction with AlpineBits
+   can be found in the official documnetation, available at
+   https://www.alpinebits.org/developers/.
