@@ -3,6 +3,8 @@
 How to Access Mobility Data With API v2
 =======================================
 
+.. versionadded:: 2020-April
+		  
 The new :strong:`API v2` (see :ref:`the description <ninja api>`) for
 the Mobility domain has simplified the access to data; among its
 features, we recall that there is now one single endpoint from which
@@ -60,7 +62,7 @@ results. The three keys have the following meaning:
   response. It defaults to :strong:`200`.
 * `offset` allows to skip elements from the result set. The default is
   :strong:`0`, i.e., the results start from the first one.
-* `Data` is the actual :strong:`payload` of the response, that is, the
+* `data` is the actual :strong:`payload` of the response, that is, the
   data answering the query; since it changes depending on which API
   call/method is used, it will be described in the next section.
 
@@ -315,6 +317,8 @@ keys described in the previous two section are valid and can be used.
 Advanced Data Processing
 ------------------------
 
+.. versionchanged:: 2020-May keyword alias was replaced by :strong:`target`.
+		    
 Before introducing advanced data processing techniques, we recall that
 queries against the Open Data Hub's datasets always return a
 :strong:`JSON` output.
@@ -450,6 +454,8 @@ of values, respectively:
 
 Additional Parameters
 ~~~~~~~~~~~~~~~~~~~~~
+
+.. versionadded:: 2020-May `shownull` and `distinct`.
 
 There are a couple of other parameter that can be given to the API
 calls and are described in this section.
