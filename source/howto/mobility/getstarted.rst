@@ -468,7 +468,7 @@ calls and are described in this section.
 .. rubric:: :literal:`shownull`
          
 In order to show :strong:`null` values in the output of a query, add
-:literal:`shownull=true` ad the end of your query.
+:literal:`shownull=true` to the end of your query.
 
 .. rubric:: :literal:`distinct`
 
@@ -479,6 +479,6 @@ reasons. It is however possible to retrieve each single result and
 have it appear in the response by adding :literal:`distinct=true` to
 the API call.
 
-.. warning:: Keeping track of all distict values might be a
+.. warning:: Keeping track of all distinct values might be a
    resource-intensive process that significantly rises the response
    time, therefore use it with care.
