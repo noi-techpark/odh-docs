@@ -3,6 +3,8 @@
 How to Access Mobility Data With API v2
 =======================================
 
+.. versionadded:: 2020-April
+		  
 The new :strong:`API v2` (see :ref:`the description <ninja api>`) for
 the Mobility domain has simplified the access to data; among its
 features, we recall that there is now one single endpoint from which
@@ -54,18 +56,25 @@ The overall structure of the JSON is the following:
    "limit": 200   
 
 Here, `offset` and `limit` are used for limiting the displayed
-results: `limit` gives the maximum number of results (defaults to
-:strong:`200`), while `offset` allows to skip elements from the result
-set (defaults to :strong:`0`, i.e., the results start from the first
-one . It is therefore possible to simulate pagination when there are
-many results: for example, if there are :strong:`1000` values, by
-adding to successive queries the offsets :strong:`0`, :strong:`200`,
-:strong:`400`, :strong:`600`, and :strong:`800`, the response of the
-query is split on 5 pages of 200 results each.
+results. The three keys have the following meaning:
 
-`Data` is the actual :strong:`payload` of the response, that is, the
-data answering the query; since it changes depending on which API
-call/method is used, it will be described in the next section.
+* `limit` gives the maximum number of results that are included in the
+  response. It defaults to :strong:`200`.
+
+  .. hint:: By setting the value to :strong:`-1`, `limit` will be
+     disabled and all results will be shown.
+     
+* `offset` allows to skip elements from the result set. The default is
+  :strong:`0`, i.e., the results start from the first one.
+* `data` is the actual :strong:`payload` of the response, that is, the
+  data answering the query; since it changes depending on which API
+  call/method is used, it will be described in the next section.
+
+.. hint:: It is possible to simulate pagination when there are many
+   results: for example, if there are :strong:`1000` values, by adding
+   to successive queries the offsets :strong:`0`, :strong:`200`,
+   :strong:`400`, :strong:`600`, and :strong:`800`, the response of
+   the query is split on 5 pages of 200 results each.
 
 .. _api-v2-structure:
 
@@ -313,6 +322,8 @@ keys described in the previous two section are valid and can be used.
 Advanced Data Processing
 ------------------------
 
+.. versionchanged:: 2020-May keyword alias was replaced by :strong:`target`.
+		    
 Before introducing advanced data processing techniques, we recall that
 queries against the Open Data Hub's datasets always return a
 :strong:`JSON` output.
@@ -322,7 +333,7 @@ Advanced processing allows to build SQL-style queries using the
 fields returned by the calls described in the previous section.
 :literal:`SELECT` and :literal:`WHERE` have the usual meaning, with
 the former retrieving data from a JSON field, in the form of
-:literal:`SELECT=alias[,alias,...]`, and the latter retrieving records
+:literal:`SELECT=target[,target,...]`, and the latter retrieving records
 from the JSON output, using the :literal:`WHERE=filter[,filter,...]`
 form, with an implicit :strong:`and` among the filters, therefore
 evaluation of the filters takes place only if all filters would
@@ -382,13 +393,13 @@ The latter two examples show that to go down one more step into the
 hierarchy, you simply add a dot (":literal:`.`") before the attribute
 in the next level of the hierarchy. Moreover, you can extract multiple
 values from a JSON output, provided you separate them with a comma
-(":literal:`,`") and use :strong:`no empty spaces` in the clause. in
+(":literal:`,`") and use :strong:`no empty spaces` in the clause. In
 the above examples, each of the element within
 parentheses--:literal:`smetadata`, :literal:`smetadata.municipality`,
-and :literal:`smetadata.mainaddress`\-- is called :strong:`alias`.
+and :literal:`smetadata.mainaddress`\-- is called :strong:`target`.
 
 Within a :literal:`SELECT` clause, SQL functions are allowed and can
-be mixed with aliases, allowing to further process the output, with
+be mixed with targets, allowing to further process the output, with
 the following limitations:
 
 * Only `numeric` functions are allowed, like e.g., :literal:`min`,
@@ -397,7 +408,7 @@ the following limitations:
   a post-processing task
 * Functions can be use :strong:`only` with the :literal:`flat`
   representation
-* When a function is used together with other aliases, these are used
+* When a function is used together with other targets, these are used
   for grouping purposes. For example:
   :literal:`select=sname,max(smetadata.capacity),min(smetadata.capacity)`
   will return the parking lots with the highest and lowest number of
@@ -426,9 +437,9 @@ operators:
   covered by the box)
 - `bbc`: bounding box containing objects (ex., a station or street, that is
   completely covered by the box)
-- `in`: true if the value of the alias can be found within the given list.
+- `in`: true if the value of the target can be found within the given list.
   Example: `name.in.(Patrick,Rudi,Peter)`
-- `nin`: False if the value of the alias can be found within the given list.
+- `nin`: False if the value of the target can be found within the given list.
   Example: `name.nin.(Patrick,Rudi,Peter)`
 - `and(filter,filter,...)`: Conjunction of filters (can be nested)
 - `or(filter,filter,...)`: Disjunction of filters (can be nested)
@@ -446,3 +457,28 @@ of values, respectively:
 * :literal:`where=smetadata.capacity.gt.100,smetadata.municipality.eq."Bolzano -
   Bozen"` same as previous query, but only parking lots in Bolzano are shown.
 
+Additional Parameters
+~~~~~~~~~~~~~~~~~~~~~
+
+.. versionadded:: 2020-May `shownull` and `distinct`.
+
+There are a couple of other parameter that can be given to the API
+calls and are described in this section.
+
+.. rubric:: :literal:`shownull`
+         
+In order to show :strong:`null` values in the output of a query, add
+:literal:`shownull=true` ad the end of your query.
+
+.. rubric:: :literal:`distinct`
+
+Results in query responses contain unique results, that is, if for
+some reason one element is retrieved multiple times while the query is
+executed, it will be nonetheless shown only once, for performance
+reasons. It is however possible to retrieve each single result and
+have it appear in the response by adding :literal:`distinct=true` to
+the API call.
+
+.. warning:: Keeping track of all distict values might be a
+   resource-intensive process that significantly rises the response
+   time, therefore use it with care.
