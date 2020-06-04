@@ -72,7 +72,7 @@ and "$TOKEN" is the string of the token.
 
 .. _authentication-internal:
 
-Authentication to internal infrastructure
+Authentication To Internal Infrastructure
 -----------------------------------------
 
 Access to the Open Data Hub's internal infrastructure requires
@@ -83,6 +83,10 @@ web sites and services; it also seamlessly interacts with
 Kerberos. More information and use cases can be found in the `official
 documentation <https://www.keycloak.org/documentation>`_.
 
+.. note:: By `internal infrastructure` we mean also the access to Open
+   Data that are already available to the Open Data Hub Team but not
+   yet to the Data Consumers, and therefore require authentication.
+
 Source code for both the authentication server and a few pre-cooked
 examples of applications configured to connect to it can be found in
 dedicated servers created by the Open Data Hub Team: the
@@ -90,3 +94,68 @@ dedicated servers created by the Open Data Hub Team: the
 <https://github.com/noi-techpark/authentication-server-examples>`_,
 and the `example applications
 <https://github.com/noi-techpark/authentication-server-examples>`_,
+
+Quick howto
+~~~~~~~~~~~
+
+In order to access the internal infrastructure, you need first to get
+a token, then use it together with the API. Both steps can be achieved
+using command-line tools, for a programmatic access to the date, which
+is the method shown here.
+
+.. rubric:: Request an access token
+
+In order to receive an access token, you need in advance to have
+credentials for the Open Data Hub. If you do not have them, please
+open a ticket on issues.opendatahub.bz.it or send an email to
+:email:`help@opendatahub.bz.it`.
+
+With your username and password
+(:strong:`my_username`. `strong:`my_password`), the access token is
+granted to you with the following call:
+ 
+.. code-block:: bash
+   :name: grant-token
+   :caption: Receiving an access topic
+
+   curl -X POST -L -H 'Content-Type:application/x-www-form-urlencoded' \
+   "https://auth.opendatahub.bz.it/auth/realms/noi/protocol/openid-connect/token" \
+   -d 'grant_type=password&username=my_username&password=my_password&client_id=odh-mobility-v2'
+
+Since the token expires after a given amount of time, it might prove
+necessary to refresh it, an action that can be done by replacing the
+parameters given in the query above with
+
+.. code-block::
+   :name: refresh-token
+   :caption: Refreshing the access token
+	  
+   curl -X POST -L -H 'Content-Type:application/x-www-form-urlencoded' \
+   "https://auth.opendatahub.bz.it/auth/realms/noi/protocol/openid-connect/token" \
+   -d 'grant_type=refresh_token&refresh_token=*****&client_id=odh-mobility-v2'
+
+Here, use the refresh token received from :numref:`grant-token`.
+
+
+.. rubric:: Retrieve data with the token.
+
+Once you received the access token, it is easy to use it in actual
+requests. The following API call shows how to get all
+:strong:`sname`\s and :strong:`mvalue`\s from the VMS dataset:
+	    
+.. code-block::
+   :name: get-closed-data
+   :caption: Retrieving data with the access token
+
+   curl -X GET \
+   'https://mobility.api.opendatahub.bz.it/v2/api/flat/VMS/*/latest?select=sname,mvalue' \
+   -H 'content-type: application/json' \
+   -H 'Authorization: bearer your-access-token'
+
+Currently, data retrieved from the Open Data Hub are always open,
+except for some of the latest values and historical data: Only a
+subset of `m`\-prefixed data from the :literal:`/latest` and
+:literal:`/from/to` API calls can be closed date. See section
+:ref:`api-v2-structure`) for more information about the API calls.
+
+

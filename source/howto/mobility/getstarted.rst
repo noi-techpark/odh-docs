@@ -67,6 +67,7 @@ query is split on 5 pages of 200 results each.
 data answering the query; since it changes depending on which API
 call/method is used, it will be described in the next section.
 
+.. _api-v2-structure:
 
 Structure of the API calls and Payload
 --------------------------------------
