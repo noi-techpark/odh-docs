@@ -7,9 +7,9 @@ The AlpineBits Alliance strives to develop and to spread a standard
 format to exchange data. In this howto, we show how to retrieve data
 from the AlpineBits endpoint located at
 https://alpinebits.opendatahub.bz.it/AlpineBits, by using the (Linux)
-command line and in particular the :command:`curl` application.  An
-example call can be seen :ref:`at the bottom <ab-request>` of this
-howto.
+command line--in particular the :command:`curl` application, and the
+popular `Postman` API development environment.  An example call can be
+seen :ref:`at the bottom <ab-request>` of this section.
 
 .. note:: Alternative command line programs like :command:`wget` can
    be used as well: simply adapt the parameters described in the
@@ -81,7 +81,41 @@ used, that will make sure to resend the request in case a
 :strong:`3xx` HTTP error code is received, i.e., if the requested
 resource has been moved.
 
+Postman Setup
+-------------
+
+In Postman, you need to enter the same data as in the call shown in
+previous section. The Postman setup equivalent to that call is shown
+in the two screenshots.
+
+.. _ab-postman-header:
+
+.. figure:: /images/postman/AB-postman1.png
+
+   Definition of the call's headers.
+
+In the headers you need to add all the parameters as in the curl
+version, except for the authentication: this option need to be
+specified in the `Authorization` tab of postman. Here, choose
+:strong:`Basic Auth` as type and use :strong:`someuser` and
+:strong:`secret` as username and password, respectively.
+
+Next, you need to add, in Postman's `Body` tab, the :literal:`action`.
+Choose :strong:`form-data`, enter :strong:`action` as key and the name
+of the method to retrieve data, in our example :strong:`getVersion`.
+
+.. _ab-postman-body:
+
+.. figure:: /images/postman/AB-postman2.png
+
+   Definition of the `action` and the outcome of the call.
+
+Once done, make sure to select :strong:`POST`, then click on
+:button:`Send` and you will receive the result in the bottom part of
+Postman's window, like in :numref:`ab-postman-body`.
 
 .. seealso:: More information about the interaction with AlpineBits
    can be found in the official documnetation, available at
    https://www.alpinebits.org/developers/.
+
+
