@@ -10,10 +10,10 @@ the Mobility domain has simplified the access to data; among its
 features, we recall that there is now one single endpoint from which
 to retrieve data from all datasets.
 
-The starting point for all actions to be carreid out on the datasets
+The starting point for all actions to be carried out on the datasets
 made available by the Open Data Hub team is the following:
 
-https://mobility.api.opendatahub.bz.it/v2/swagger-ui.html
+https://swagger.opendatahub.bz.it/?url=https://mobility.api.opendatahub.bz.it/v2/apispec
 
 .. figure:: /images/mobility-swagger.png
 
@@ -215,11 +215,12 @@ The meaning of the keys are:
   TrafficStation, EChargingPlug, Bicycle, and so on.
   
   .. note:: This key is :strong:`Case Sensitive`! You can retrieve all
-     the station types with the following call:
+     the station types with the following one-liner, which pipes the
+     call to the list of all Stations to the :command:`jq` command:
 
      .. code::
 	
-	curl -X GET "https://mobility.api.opendatahub.bz.it/v2/" -H "accept: application/json"
+	curl -X GET "https://mobility.api.opendatahub.bz.it/v2/tree" -H "accept: application/json"  |  jq '.[].id' 
 
 :literal:`/api/{representation}/{stationTypes}/{dataTypes}`
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
