@@ -197,12 +197,14 @@ data by using a browser:
 
 #. Access the :strong:`Swagger interface` of the datasets in the
    Mobility domain, located at
-   https://mobility.api.opendatahub.bz.it/v2/swagger-ui.html. Like in
-   the case of the tourism' Swagger interface, you can learn REST API
-   call for that domain and fetch data for your application. There is
-   a dedicated howto to learn more how to interact with this
-   interface: ref:`get-started-mobility`
-
+   https://swagger.opendatahub.bz.it/?url=https://mobility.api.opendatahub.bz.it/v2/apispec. Like
+   in the case of the tourism' Swagger interface, you can learn REST
+   API call for that domain and fetch data for your application. There
+   is a dedicated howto to learn more how to interact with this
+   interface: ref:`get-started-mobility`. More possibility to interact
+   with the Mobility domain datasets are described in the
+   :ref:`dedicated howto <get-started-mobility>`
+	
 #. Open the :strong:`Analytics for Mobility` web page, at
    https://analytics.mobility.bz.it/. This portal uses data in the
    mobility domain to display various information about the sensors,
@@ -246,8 +248,8 @@ used:
 Your best opportunity to learn about the correct syntax and parameters
 to use is to go to the :strong:`swagger interface` of the `tourism
 <http://tourism.opendatahub.bz.it/swagger/ui/index>`_ or `mobility
-<https://mobility.api.opendatahub.bz.it/v2/swagger-ui.html>`_ domains
-and execute a query: with the output, also the corresponding
+<https://swagger.opendatahub.bz.it/?url=https://mobility.api.opendatahub.bz.it/v2/apispec>`_
+domains and execute a query: with the output, also the corresponding
 :program:`curl` command used to retrieve the data will be shown.
 
 Authentication
