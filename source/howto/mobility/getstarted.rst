@@ -29,9 +29,9 @@ Getting Started
 
 In the API v2, the central concept is :strong:`Station`: all data come
 from a given :literal:`StationType`, whose complete list can be
-retrieved by simply opening the first method of the
-:strong:`data-controller`, :strong:`/api`, then click on :button:`Try
-it out` and then on `Execute`.
+retrieved by simply opening the first method of the :strong:`Mobility
+V2` controller, :strong:`/v2`, then click on :button:`Try it out` and
+then on `Execute`.
 
 Station types in the resulting list can be used in the other methods to
 retrieve additional data about each of them. To check which station
@@ -85,14 +85,14 @@ In the Mobility domain, there are three general methods that can be
 used to extract data from the Open Data Hub's datasets and allow to
 incrementally refine the data retrieved. They are:
 
-#. :literal:`/api/{representation}/{stationTypes}` returns data about
+#. :literal:`/v2/{representation}/{stationTypes}` returns data about
    the stations themselves, including metadata associated with it, and
    data about its parent stations.
-#. :literal:`/api/{representation}/{stationTypes}/{dataTypes}`.  In
+#. :literal:`/v2/{representation}/{stationTypes}/{dataTypes}`.  In
    addition to the data of the previous call, it contains the data
    types defined in the dataset and the most recent measurement. This
    method is especially suited for real time retrieval of data.
-#. :literal:`/api/{representation}/{stationTypes}/{dataTypes}/{from}/{to}`.
+#. :literal:`/v2/{representation}/{stationTypes}/{dataTypes}/{from}/{to}`.
    All the data retrieved by the previous method, but limited to a
    given historical interval (:literal:`from` ... :literal:`to`)
 
@@ -102,7 +102,7 @@ single, :strong:`flat` or as an indented, :strong:`tree`\-like JSON
 file, the former more suitable for machine consumption, while the
 latter more convenient for human reading.
 
-:literal:`/api/{representation}/{stationTypes}`
+:literal:`/v2/{representation}/{stationTypes}`
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 To describe the outcome of this method in details, we will use the
@@ -222,7 +222,7 @@ The meaning of the keys are:
 	
 	curl -X GET "https://mobility.api.opendatahub.bz.it/v2/tree" -H "accept: application/json"  |  jq '.[].id' 
 
-:literal:`/api/{representation}/{stationTypes}/{dataTypes}`
+:literal:`/v2/{representation}/{stationTypes}/{dataTypes}`
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 This API call introduces two new prefixes to the keys, as shown in :numref:`apiv2-datatypes`.
@@ -313,7 +313,7 @@ anymore, so historical data might not be available.
    not true for machine-processed data
 
    
-:literal:`/api/{representation}/{stationTypes}/{dataTypes}/{from}/{to}`
+:literal:`/v2/{representation}/{stationTypes}/{dataTypes}/{from}/{to}`
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 This method does not add any other keys to the JSON response; all the
@@ -380,7 +380,7 @@ station:
 You see that there are two hierarchies with two levels in the snippet:
 `scoordinate` and `smetadata`; to retrieve only data from them we will
 use the `select` clause with the
-:literal:`/api/{representation}/{stationTypes}` call; you can
+:literal:`/v2/{representation}/{stationTypes}` call; you can
 therefore:
 
 * retrieve only the metadata associated with all the stations; the
