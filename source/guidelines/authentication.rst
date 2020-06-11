@@ -111,7 +111,7 @@ open a ticket on issues.opendatahub.bz.it or send an email to
 :email:`help@opendatahub.bz.it`.
 
 With your username and password
-(:strong:`my_username`. `strong:`my_password`), the access token is
+(:strong:`my_username`. :strong:`my_password`), the access token is
 granted to you with the following call:
  
 .. code-block:: bash
