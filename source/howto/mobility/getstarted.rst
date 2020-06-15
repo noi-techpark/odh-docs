@@ -148,7 +148,9 @@ incrementally refine the data retrieved. They are:
    to set up a swagger-like interface to the Open Data Hub's data.
 
 
-
+In the reminder of this section we show examples of some of the above
+mentioned API methods and describe the outcome, including the various
+keys and types of data returns by the call.
 
 :literal:`/v2/{representation}/{stationTypes}`
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
