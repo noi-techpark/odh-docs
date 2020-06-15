@@ -122,11 +122,33 @@ incrementally refine the data retrieved. They are:
 
 .. _representation-types:
 
-These methods introduce another facility made available by the API v2:
-the type of `representation`: each result set can be reproduced as a
-single, :strong:`flat` or as an indented, :strong:`tree`\-like JSON
-file, the former more suitable for machine consumption, while the
-latter more convenient for human reading.
+.. topic:: Showing and browsing data with API v2
+	   
+   The first method described in the previous list introduces a new
+   facility made available by the API v2: the type of
+   `representation` that can be used to browse or access the data
+   provided by the Open Data Hub Team.
+
+   The three alternative, which will be described in detail in an
+   upcoming howto, are: `flat`, `tree`, and `apispec`.
+
+   The `flat` and the `tree` alternatives are :term:`JSON`
+   representation of the data and may require to install a JSON plugin
+   to render the output correctly, whereas `apispec` is a YAML
+   representation in OpenAPI v3 format suitable for swagger-like
+   access to the data.
+
+   In both the :strong:`flat` and :strong:`tree` representations, all
+   the metadata and available data are shown and browsable, the
+   difference being that in `flat` all metadata are shown at the same
+   level, while `tree` keeps the hierarchical structure of the
+   metadata. Both of them are available
+   
+   The :strong:`apispec` is a YAML configuration file that can be used
+   to set up a swagger-like interface to the Open Data Hub's data.
+
+
+
 
 :literal:`/v2/{representation}/{stationTypes}`
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
