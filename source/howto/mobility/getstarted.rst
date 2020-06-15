@@ -272,8 +272,8 @@ The meaning of the keys are:
 	
 	curl -X GET "https://mobility.api.opendatahub.bz.it/v2/tree" -H "accept: application/json"  |  jq '.[].id' 
 
-:literal:`/v2/{representation}/{stationTypes}/{dataTypes}`
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+:literal:`/v2/{representation}/{stationTypes}/{dataTypes}/latest`
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 This API call introduces two new prefixes to the keys, as shown in :numref:`apiv2-datatypes`.
 
