@@ -85,16 +85,42 @@ In the Mobility domain, there are three general methods that can be
 used to extract data from the Open Data Hub's datasets and allow to
 incrementally refine the data retrieved. They are:
 
+#. :literal:`/v2/` gives the list of the Open Data Hub's entry points,
+   that is, the possible representations of the data contained in the
+   datasets. to be used in the next methods. See :ref:`the details
+   below <representation-types>`. 
+
+   .. versionadded:: 2020-June API method to retrieve the list of
+      dataset's entry point.
+
+#. :literal:`/v2/{representation}/` shows all the StationTypes
+   available, that is, all the sources that provided data to the Open
+   Data Hub.
+
+   .. versionadded:: 2020-June API method to retrieve the list of all
+      stationTypes available.
+			
 #. :literal:`/v2/{representation}/{stationTypes}` returns data about
-   the stations themselves, including metadata associated with it, and
-   data about its parent stations.
+   the stations themselves, including metadata associated with each, and
+   data about its parent stations, if any.
 #. :literal:`/v2/{representation}/{stationTypes}/{dataTypes}`.  In
    addition to the data of the previous call, it contains the data
-   types defined in the dataset and the most recent measurement. This
-   method is especially suited for real time retrieval of data.
+   types defined in the dataset.
+#. :literal:`/v2/{representation}/{stationTypes}/{dataTypes}/latest`. In
+   addition to all the data retrieved by the previous call, this call
+   retrieves also the most recent measurement. This method is
+   especially suited for real time retrieval of data.
+
+   
+   .. versionadded:: 2020-June API method to retrieve the list of
+      latest/real time measurements
+
 #. :literal:`/v2/{representation}/{stationTypes}/{dataTypes}/{from}/{to}`.
-   All the data retrieved by the previous method, but limited to a
+   All the data retrieved by method #3, but limited to a
    given historical interval (:literal:`from` ... :literal:`to`)
+
+
+.. _representation-types:
 
 These methods introduce another facility made available by the API v2:
 the type of `representation`: each result set can be reproduced as a
