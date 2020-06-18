@@ -29,9 +29,9 @@ Getting Started
 
 In the API v2, the central concept is :strong:`Station`: all data come
 from a given :literal:`StationType`, whose complete list can be
-retrieved by simply opening the first method of the :strong:`Mobility
-V2` controller, :strong:`/v2`, then click on :button:`Try it out` and
-then on `Execute`.
+retrieved by simply opening the secong method of the :strong:`Mobility
+V2` controller, :strong:`/v2/{representation}`, then click on
+:button:`Try it out` and then on `Execute`.
 
 Station types in the resulting list can be used in the other methods to
 retrieve additional data about each of them. To check which station
@@ -117,7 +117,11 @@ incrementally refine the data retrieved. They are:
 
 #. :literal:`/v2/{representation}/{stationTypes}/{dataTypes}/{from}/{to}`.
    All the data retrieved by method #3, but limited to a
-   given historical interval (:literal:`from` ... :literal:`to`)
+   given historical interval (:literal:`from` ... :literal:`to`).
+
+   .. note:: The interval is `half-open`, i.e., [`from`, `to`),
+      meaning that the `from` date is :strong:`included` in the result
+      set, while the `to` date is :strong:`excluded`.
 
 
 .. _representation-types:
@@ -133,8 +137,7 @@ incrementally refine the data retrieved. They are:
    upcoming howto, are: `flat`, `tree`, and `apispec`.
 
    The `flat` and the `tree` alternatives are :term:`JSON`
-   representation of the data and may require to install a JSON plugin
-   to render the output correctly, whereas `apispec` is a YAML
+   representation of the data, whereas `apispec` is a YAML
    representation in OpenAPI v3 format suitable for swagger-like
    access to the data.
 
@@ -264,13 +267,12 @@ The meaning of the keys are:
 * :strong:`type`: the type of the station, which can be a MeteoStation,
   TrafficStation, EChargingPlug, Bicycle, and so on.
   
-  .. note:: This key is :strong:`Case Sensitive`! You can retrieve all
-     the station types with the following one-liner, which pipes the
-     call to the list of all Stations to the :command:`jq` command:
+  .. note:: The name of the StationType is :strong:`Case Sensitive`!
+     You can retrieve all the station types with the following API call.
 
      .. code::
 	
-	curl -X GET "https://mobility.api.opendatahub.bz.it/v2/tree" -H "accept: application/json"  |  jq '.[].id' 
+	curl -X GET "https://mobility.api.opendatahub.bz.it/v2/tree" -H "accept: application/json" 
 
 :literal:`/v2/{representation}/{stationTypes}/{dataTypes}/latest`
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
