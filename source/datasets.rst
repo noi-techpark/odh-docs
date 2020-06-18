@@ -206,7 +206,7 @@ data by using a browser:
    <get-started-mobility>`
 	
 #. Open the :strong:`Analytics for Mobility` web page, at
-   https://analytics.mobility.bz.it/. This portal uses data in the
+   https://analytics.opendatahub.bz.it/ This portal uses data in the
    mobility domain to display various information about the sensors,
    including their locations, what they measure, and actual data in
    near-real time. You can retrieve data gathered by the sensors
