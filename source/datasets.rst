@@ -197,14 +197,14 @@ data by using a browser:
 
 #. Access the :strong:`Swagger interface` of the datasets in the
    Mobility domain, located at
-   https://mobility.api.opendatahub.bz.it/v2/swagger-ui.html. Like in
+   https://mobility.api.opendatahub.bz.it/. Like in
    the case of the tourism' Swagger interface, you can learn REST API
    call for that domain and fetch data for your application. There is
    a dedicated howto to learn more how to interact with this
    interface: ref:`get-started-mobility`
 
 #. Open the :strong:`Analytics for Mobility` web page, at
-   https://analytics.mobility.bz.it/. This portal uses data in the
+   https://analytics.opendatahub.bz.it/. This portal uses data in the
    mobility domain to display various information about the sensors,
    including their locations, what they measure, and actual data in
    near-real time. You can retrieve data gathered by the sensors

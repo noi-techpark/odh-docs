@@ -1,5 +1,5 @@
 Projects developed during the `Summer Lido Hackathon 2018
-<http://hackathon.bz.it/edition/summer-2018>`_
+<https://hackathon.bz.it/edition/summer-2018>`_
     
 * :hp:`South Tyrol Crime Scene (STCS) <south-tyrol-crime-scene-stcs->`
   is an interactive thriller combining traditional storytelling and

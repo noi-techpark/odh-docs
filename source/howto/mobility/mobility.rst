@@ -21,9 +21,8 @@ South Tyrol and their status, including historical data and usage.
 Output          JSON, mime-type application/json
 E-mail contact  |contact|
 API version     :strike:`v1` |deprecated|
-Swagger URL     :integreen:`EchargingFrontEnd`
+Swagger URL     https://swagger.opendatahub.bz.it/?url=https://mobility.api.opendatahub.bz.it/v2/apispec#/Mobility%20V1%20-%20Emobility/
 ==============  ========================================================
-
 
 Invoking the API
 ~~~~~~~~~~~~~~~~
@@ -36,7 +35,7 @@ The API calls shown here can be used with other datasets of the
 :ref:`mobility domain <mobility-datasets>`.
 
 You can find all the API's defined methods and documentation at the
-URL :ig-swagger:`EchargingFrontEnd`.
+URL https://swagger.opendatahub.bz.it/?url=https://mobility.api.opendatahub.bz.it/v2/apispec#/Mobility%20V1%20-%20Emobility/.
 
 The two most basic REST calls are carried out by the methods
 :command:`get-stations` and  :command:`get-station-details`.
@@ -52,15 +51,15 @@ There are two possibilities to retrieve the data with the API call:
 
    .. parsed-literal::
 
-      :integreen:`emobility/rest/get-stations`
+      https://swagger.opendatahub.bz.it/?url=https://mobility.api.opendatahub.bz.it/v2/apispec#/Mobility%20V1%20-%20Emobility/get_v1_emobility_rest_get_stations
 
 2. Using a command line with a tool like :command:`curl` or
    :command:`wget`:
 
    .. parsed-literal::
 
-      curl -X GET --header 'Accept: application/json' '\ :integreen:`emobility/rest/get-stations`'
-
+      curl -X GET --header 'Accept: application/json' '\
+      https://swagger.opendatahub.bz.it/?url=https://mobility.api.opendatahub.bz.it/v2/apispec#/Mobility%20V1%20-%20Emobility/get_v1_emobility_rest_get_stations
 
 The result structure is a json list of strings, and an actual outcome
 is (shortened for the sake of clarity):
@@ -93,14 +92,14 @@ dataset. Like the previous method, two method can be used for the call:
 
    .. parsed-literal::
 
-      :integreen:`emobility/rest/get-station-details`
+      https://swagger.opendatahub.bz.it/?url=https://mobility.api.opendatahub.bz.it/v2/apispec#/Mobility%20V1%20-%20Emobility/get_v1_emobility_rest_get_station_details
 
 2. Using a command line with a tool like :command:`curl` or
    :command:`wget`:
 
    .. parsed-literal::
 
-      curl -X GET --header 'Accept: application/json' '\ :integreen:`emobility/rest/get-station-details`'
+      curl -X GET --header 'Accept: application/json' '\ 'https://swagger.opendatahub.bz.it/?url=https://mobility.api.opendatahub.bz.it/v2/apispec#/Mobility%20V1%20-%20Emobility/get_v1_emobility_rest_get_station_details
 
 
 The result structure is a json list of strings, and an actual outcome
