@@ -13,7 +13,7 @@ to retrieve data from all datasets.
 The starting point for all actions to be carried out on the datasets
 made available by the Open Data Hub team is the following:
 
-https://swagger.opendatahub.bz.it/?url=https://mobility.api.opendatahub.bz.it/v2/apispec
+https://mobility.api.opendatahub.bz.it/
 
 .. figure:: /images/mobility-swagger.png
 
