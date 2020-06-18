@@ -1,11 +1,11 @@
 .. _ab-howto:
 
-How to access AlpineBits data
-=============================
+Howto access Open Data Hub AlpineBits Server as a client
+========================================================
 
 The AlpineBits Alliance strives to develop and to spread a standard
 format to exchange data. In this howto, we show how to retrieve data
-from the AlpineBits endpoint located at
+from the AlpineBits Server endpoint for the Open Data Hub located at
 https://alpinebits.opendatahub.bz.it/AlpineBits, by using the (Linux)
 command line--in particular the :command:`curl` application, and the
 popular `Postman` API development environment.  An example call can be
@@ -19,7 +19,12 @@ The first important thing to mention is that requests to this endpoint
 need a :strong:`POST` method and an authentication token, therefore
 you should specify options :literal:`--request POST` and a header
 requiring `Basic` authorization and containing your token:
-:literal:`--header 'Authorization: Basic <your-token>'`
+:literal:`--header 'Authorization: Basic <your-email-address>'`
+
+.. note:: While there is no authorization required to access the Open Data
+   Hub AlpineBits Server, we strongly suggest you to insert as token
+   your email address for debugging reasons. It will help trace your
+   calls in the case you require support from the Open Data Hub Team.
 
 Next, it is necessary to provide the correct `client protocol version`
 and a `client ID`, which are two additional headers, namely
@@ -33,37 +38,37 @@ shows the actions that can be used together with the protocol.
 .. _ab-matrix:
 
 .. table:: Matrix of the protocol versions and supported actions in
-   AlpineBits.
+   the AlpineBits implementation of the Open Data Hub.
 
-   +---------------------+---------+---------+---------+---------+
-   | AlpineBits Server   | 2017-10 | 2017-10 | 2018-10 | 2018-10 |
-   | Actions             |   PUSH  |   PULL  |   PULL  |   PUSH  |
-   +---------------------+---------+---------+---------+---------+
-   | FreeRooms           | Yes     | No      | Yes     | No      |
-   +---------------------+---------+---------+---------+---------+
-   | GuestRequests       | No      | No      | No      | No      |
-   +---------------------+---------+---------+---------+---------+
-   | Inventory Basic     | Yes     | Yes     | Yes     | Yes     |
-   +---------------------+---------+---------+---------+---------+
-   | Inventory HotelInfo | Yes     | Yes     | Yes     | Yes     |
-   +---------------------+---------+---------+---------+---------+
-   | RatePlans           | No      | No      | No      | No      |
-   +---------------------+---------+---------+---------+---------+
-   | BaseRates           | No      | No      | No      | No      |
-   +---------------------+---------+---------+---------+---------+
+   +--------------------------+---------+---------+---------+---------+
+   | Open Data Hub AlpineBits | 2017-10 | 2017-10 | 2018-10 | 2018-10 |
+   | Server Actions           |   PUSH  |   PULL  |   PULL  |   PUSH  |
+   +--------------------------+---------+---------+---------+---------+
+   | FreeRooms                | Yes     | No      | Yes     | No      |
+   +--------------------------+---------+---------+---------+---------+
+   | GuestRequests            | --      | --      | --      | --      |
+   +--------------------------+---------+---------+---------+---------+
+   | Inventory Basic          | Yes     | Yes     | Yes     | Yes     |
+   +--------------------------+---------+---------+---------+---------+
+   | Inventory HotelInfo      | Yes     | Yes     | Yes     | Yes     |
+   +--------------------------+---------+---------+---------+---------+
+   | RatePlans                | --      | --      | --      | --      |
+   +--------------------------+---------+---------+---------+---------+
+   | BaseRates                | --      | --      | --      | --      |
+   +--------------------------+---------+---------+---------+---------+
 
 Note that PUSH and PULL refer to the action of uploading to and
-downloading from AlpineBits servers, respectively.
+downloading from AlpineBits Server, respectively.
    
-Finally, to retrieve data from the AlpineBits, you need to set the
-correct content type and provide an `action`. The content type is
-specified in another header by :literal:`--header 'Content-Type:
-multipart/form-data'`, while the action is given as a form:
-:literal:`--form 'action=getVersion'`.
+Finally, to retrieve data from the AlpineBits Server, you need to set
+the correct content type (i.e., `multipart/form-data`) and provide an
+`action`. The content type is specified in another header by
+:literal:`--header 'Content-Type: multipart/form-data'`, while the
+action is given as a form: :literal:`--form 'action=getVersion'`.
 
 .. _ab-request:
 
-Summing up what was described above, a call to the AlpineBits endpoint
+Summing up what was described above, a call to the AlpineBits Server endpoint
 looks like the following one:
 	 
 .. code-block:: 
@@ -98,7 +103,11 @@ In the headers you need to add all the parameters as in the curl
 version, except for the authentication: this option need to be
 specified in the `Authorization` tab of postman. Here, choose
 :strong:`Basic Auth` as type and use :strong:`someuser` and
-:strong:`secret` as username and password, respectively.
+:strong:`secret`  as username and password, respectively.
+
+.. note:: It is suggested to use, instead of `someuser` and `secret`,
+   your contact information, in order to be able to contact you for
+   some technical reasons.
 
 Next, you need to add, in Postman's `Body` tab, the :literal:`action`.
 Choose :strong:`form-data`, enter :strong:`action` as key and the name
