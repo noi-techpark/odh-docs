@@ -38,9 +38,6 @@
 .. |deprecated| image:: /images/deprecated.png
    :alt: API v1 are now deprecated
 
-
-.. |apiv2| replace:: https://mobility.api.opendatahub.bz.it/
-
 .. abbreviations
 
 .. |rdbms| replace:: :abbr:`RDBMS (Relational DataBase Management System)`
