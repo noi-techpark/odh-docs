@@ -100,7 +100,6 @@ extlinks = { 'sasabus': ('http://sasabus.org/%s', None),
              'stinfo':
              ('http://tourism.opendatahub.bz.it/swagger/ui/index#%s', None),
              'iterconcept': ('https://en.cppreference.com/w/cpp/experimental/ranges/iterator/%s', 'std::'),
-             'hp': ('https://hackathon.bz.it/project/%s', None)
 }
 
 numfig = True
