@@ -269,6 +269,8 @@ are available in section :ref:`authentication-hub`.
 Datasets in the Mobility Domain
 -------------------------------
 
+.. versionchanged:: June-2020 Direct link to the browsable version of
+   the datasets.
 
 .. contents:: List of datasets in the mobility domain.
    :local:
@@ -281,7 +283,9 @@ The description of each dataset includes the following information:
 * The output format of the API call
 * An e-mail contact for the dataset
 * The versions of the API that can be used to access the dataset
-* The (`new!`) swagger URL of the APIs
+* The direct link to a browsable version of the dataset, which
+  contains all the data about the corresponding
+  literal:`stationType`\s
 * The :literal:`stationType` that belong to each dataset
 
 The datasets in the Mobility domain are grouped in :strong:`Traffic`

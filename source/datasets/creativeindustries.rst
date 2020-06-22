@@ -14,7 +14,7 @@ Data Hub's `Web Component Store
 Output                     JSON, mime-type application/json
 E-mail contact             |contact|
 API version                v2
-Swagger URL                |apiv2|
+Swagger URL                https://mobility.api.opendatahub.bz.it/v2/flat/CreativeIndustry
 :literal:`StationType`     CreativeIndustry
 ======================     ==================================
 
