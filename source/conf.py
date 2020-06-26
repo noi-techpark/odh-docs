@@ -29,8 +29,13 @@ extensions = [
     'sphinx.ext.extlinks',
     'sphinx.ext.imgconverter',
     'sphinx_tabs.tabs',
-    'ga', 'hidemail'
+    'ga', 'hidemail',
+    'sphinx_togglebutton', 'sphinx_panels'
 ]
+
+### Configuration values for extensions
+
+togglebutton_hint = "More..."
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
