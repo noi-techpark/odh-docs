@@ -9,7 +9,6 @@ available here:
 
 
 .. panels::
-   :column: col-sm-6
 
    .. toggle:: Mobility
 
@@ -35,7 +34,7 @@ available here:
 	 use cases for data in the Tourism domain.
 
    -----
-   :column: col-sm-12 
+   :column: col-sm-12
 	    
    .. toggle:: Miscellaneous
       
