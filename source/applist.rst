@@ -95,61 +95,72 @@ Alpha Stage Apps
 All the projects listed in this section have been built during various
 hackathons and must be considered as `Experimental`. |alpha|
 
-.. only:: html
 
-   * Year 2018
+.. rubric::  Year 2018
    
-   .. tabs::
+.. panels::
+   :container: container-lg pb-3
+   :column: col-sm-4
 
-      .. tab:: Summer Lido Hackathon 2018 
+   .. toggle:: Summer Lido Hackathon 
 
-	 .. include:: /apps/summerlido2018.rst
+      .. include:: /apps/summerlido2018.rst
 
-      .. tab:: HackTheAlps 2018
+   -----
+   
+   .. toggle:: HackTheAlps
+	    
+      .. include:: /apps/hackthealps2018.rst
+   
+   -----
+   
+   .. toggle:: Vertical Innovation Hackathon
 
-	 .. include:: /apps/hackthealps2018.rst
+      .. include:: /apps/verticalinnovation2018.rst
 
-      .. tab:: Vertical Innovation Hackathon 2018 
 
-	 .. include:: /apps/verticalinnovation2018.rst
 
-   * Year 2019
+.. rubric:: Year 2019
 
-   .. tabs::
-     
-      .. tab:: NOI Hackathon Summer edition 2019
+.. panels::
+   :container: container-lg pb-3
+   :column: col-sm-6
+	    
+   .. toggle:: NOI Hackathon Summer edition 
 
-	 .. include:: /apps/summerlido2019.rst
+      .. include:: /apps/summerlido2019.rst
 
-      .. tab:: NOI Hackathon SFScon Edition 2019
+   -----
 
-	 .. include:: /apps/sfscon2019.rst
+   .. toggle:: NOI Hackathon SFScon Edition 
+
+      .. include:: /apps/sfscon2019.rst
       
+..
+   .. only:: latex or latexpdf or epub
 
-.. only:: latex or latexpdf or epub
+      Summer Lido Hackathon 2018 |alpha|
+      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-   Summer Lido Hackathon 2018 |alpha|
-   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      .. include:: /apps/summerlido2018.rst
 
-   .. include:: /apps/summerlido2018.rst
+      HackTheAlps 2018 |alpha|
+      ~~~~~~~~~~~~~~~~~~~~~~~~
 
-   HackTheAlps 2018 |alpha|
-   ~~~~~~~~~~~~~~~~~~~~~~~~
-	 
-   .. include:: /apps/hackthealps2018.rst
+      .. include:: /apps/hackthealps2018.rst
 
-   Vertical Innovation Hackathon 2018
-   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      Vertical Innovation Hackathon 2018
+      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-   .. include:: /apps/verticalinnovation2018.rst
-      
-   Summer Lido Hackathon 2019 |alpha|
-   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      .. include:: /apps/verticalinnovation2018.rst
 
-   .. include:: /apps/summerlido2019.rst
-		
-   NOI Hackathon SFScon Edition 2019
-   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      Summer Lido Hackathon 2019 |alpha|
+      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-   .. include:: /apps/sfscon2019.rst
+      .. include:: /apps/summerlido2019.rst
+
+      NOI Hackathon SFScon Edition 2019
+      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+      .. include:: /apps/sfscon2019.rst
       

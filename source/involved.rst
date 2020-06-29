@@ -17,55 +17,39 @@ role better fits with your expertise!
 You can also help the |odh| project grow and improve by
 :ref:`reporting bugs or asking new features <bug-reports>`.
 
-.. only:: html
+.. panels::
 
-   .. tabs::     
+   .. toggle:: As a user I can...
+   
+      .. include:: /includes/user.rst    
 
-      .. tab:: As a user I can...
-	 
-	 .. include:: /includes/user.rst
+   -----
+   
+   .. toggle:: As an App Developer I can...
 
-      .. tab:: As an App Developer I can...
-	 
-	 .. include:: /includes/appdevel.rst
-		      
-      .. tab:: As a |odh| Core Hacker I can...
-	 
-	 .. include:: /includes/corehacker.rst
+      .. include:: /includes/appdevel.rst
 
-      .. tab:: As a Data Provider I can....
-	 
-	 .. include:: /includes/dataproviders.rst
+   -----
+
+   .. toggle:: As a |odh| Core Hacker I can...
+
+      .. include:: /includes/corehacker.rst
 
 
+   -----
+   
 
-.. only:: latex or epub
+   .. toggle:: As a Data Provider I can....
       
-   As a user I can...
-   ------------------
-   
-   .. include:: /includes/user.rst
-		
-   As an App Developer I can...
-   ----------------------------
-   
-   .. include:: /includes/appdevel.rst
-   
-   As a |odh| Core Hacker I can...
-   -------------------------------
-
-   .. include:: /includes/corehacker.rst
-
-   As a Data Provider I can....
-   ----------------------------
-	 
-   .. include:: /includes/dataproviders.rst
-
+      .. include:: /includes/dataproviders.rst
+			 
 
 .. _bug-reports:
    
 Bug reporting and feature requests
 ----------------------------------
-
+	   
 .. include:: /includes/bugrepo.rst
  
+
+

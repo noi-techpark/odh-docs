@@ -28,7 +28,6 @@ extensions = [
     'sphinx.ext.ifconfig',
     'sphinx.ext.extlinks',
     'sphinx.ext.imgconverter',
-    'sphinx_tabs.tabs',
     'ga', 'hidemail',
     'sphinx_togglebutton', 'sphinx_panels'
 ]
