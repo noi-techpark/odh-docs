@@ -1,6 +1,6 @@
 
-...help shape the future of |odh|\.
-   Participate in the development of |odh|\ : Build new data
+...help shape the future of Open Data Hub.
+   Participate in the development of Open Data Hub: Build new data
    collectors, extend the functionality of the broker, integrate new
    datasets on the existing infrastructure, develop new stable API
    versions.   
@@ -11,7 +11,7 @@ tasks to be carried out:
 
 
 #. Learn how to successfully integrate your code with the existing
-   code-base and how to interact with the |odh| team.  In other words,
+   code-base and how to interact with the Open Data Hub team.  In other words,
    you need to read and accept the :ref:`devel-guidelines` (click on
    the link for a summary), which are available in two extended,
    separate parts: :ref:`platform-guidelines` and

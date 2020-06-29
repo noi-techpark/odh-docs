@@ -1,10 +1,10 @@
 .. _applist:
 
-Apps built from |ODH| datasets
-==============================
+Apps Built From Open Data Hub Datasets
+======================================
 
 This section features a list of applications--and their
-descriptions--built using the :doc:`datasets` that the |odh| team
+descriptions--built using the :doc:`datasets` that the Open Data Hub team
 makes available.
 
 Applications are grouped according to their status in three categories:
@@ -22,7 +22,7 @@ Applications are grouped according to their status in three categories:
   a production environment.
 
 If you are developing one application with the data provided by
-datasets of the |odh| project, send an email with a short description,
+datasets of the Open Data Hub project, send an email with a short description,
 an email contact and its status and we'll add it to the list.
 
 .. _production-stage-apps:
@@ -133,34 +133,6 @@ hackathons and must be considered as `Experimental`. |alpha|
    -----
 
    .. toggle:: NOI Hackathon SFScon Edition 
-
-      .. include:: /apps/sfscon2019.rst
-      
-..
-   .. only:: latex or latexpdf or epub
-
-      Summer Lido Hackathon 2018 |alpha|
-      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-      .. include:: /apps/summerlido2018.rst
-
-      HackTheAlps 2018 |alpha|
-      ~~~~~~~~~~~~~~~~~~~~~~~~
-
-      .. include:: /apps/hackthealps2018.rst
-
-      Vertical Innovation Hackathon 2018
-      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-      .. include:: /apps/verticalinnovation2018.rst
-
-      Summer Lido Hackathon 2019 |alpha|
-      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-      .. include:: /apps/summerlido2019.rst
-
-      NOI Hackathon SFScon Edition 2019
-      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
       .. include:: /apps/sfscon2019.rst
       

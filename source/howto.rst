@@ -44,17 +44,17 @@ available here:
 	 (mostly for internal use).
 
       #. :doc:`/howto/development` Set up your workstation to
-	 develop for |odh|--This tutorial is still in development
+	 develop for Open Data Hub--This tutorial is still in development
 	 and not so useful at the moment!
 
       #. :doc:`/howto/postman` Setup of Postman, a popular API
-	 development environment, to access data from the |odh|.
+	 development environment, to access data from the Open Data Hub.
 
       #. :doc:`/howto/noievents` Create and modify NOI events
-	 directly from the |odh| portal.
+	 directly from the Open Data Hub portal.
 
       #. :doc:`/howto/webcomponents` share your Web Components with
-	 |odh| team
+	 Open Data Hub team
 
 
 .. toctree::
