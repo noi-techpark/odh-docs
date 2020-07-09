@@ -3,14 +3,14 @@ How to Access Analytics Data in the Mobility Domain
 ===================================================
 
 This howto guides you in browsing and querying data from the Mobility
-domain using the https://analytics.mobility.bz.it/ web site.
+domain using the https://analytics.opendatahub.bz.it/ web site.
 
 .. introduction
 
 Introduction
 ------------
 
-The website https://analytics.mobility.bz.it/ gathers data from
+The website https://analytics.opendatahub.bz.it/ gathers data from
 datasets in the mobility domain and uses them to draw two types of
 diagram: a :ref:`chart <charts>` using historical data and an
 interactive :ref:`map <mapoverview>` that show where are located the

@@ -197,13 +197,12 @@ data by using a browser:
 
 #. Access the :strong:`Swagger interface` of the datasets in the
    Mobility domain, located at
-   https://mobility.api.opendatahub.bz.it/. Like in the case
-   of the tourism' Swagger interface, you can learn REST API call for
-   that domain and fetch data for your application. There is a
-   dedicated howto to learn more how to interact with this interface:
-   ref:`get-started-mobility`. More possibility to interact with the
-   Mobility domain datasets are described in the :ref:`dedicated howto
-   <get-started-mobility>`
+   https://mobility.api.opendatahub.bz.it/. Like in the case of the
+   tourism' Swagger interface, you can learn REST API call for that
+   domain and fetch data for your application. More possibilities to
+   interact with the Mobility domain datasets and the description of
+   the new APIv2 are described in the :ref:`dedicated howto
+   <get-started-mobility>`.
 	
 #. Open the :strong:`Analytics for Mobility` web page, at
    https://analytics.opendatahub.bz.it/ This portal uses data in the
