@@ -197,14 +197,15 @@ data by using a browser:
 
 #. Access the :strong:`Swagger interface` of the datasets in the
    Mobility domain, located at
-   https://mobility.api.opendatahub.bz.it/. Like in
-   the case of the tourism' Swagger interface, you can learn REST API
-   call for that domain and fetch data for your application. There is
-   a dedicated howto to learn more how to interact with this
-   interface: ref:`get-started-mobility`
-
+   https://mobility.api.opendatahub.bz.it/. Like in the case of the
+   tourism' Swagger interface, you can learn REST API call for that
+   domain and fetch data for your application. More possibilities to
+   interact with the Mobility domain datasets and the description of
+   the new APIv2 are described in the :ref:`dedicated howto
+   <get-started-mobility>`.
+	
 #. Open the :strong:`Analytics for Mobility` web page, at
-   https://analytics.opendatahub.bz.it/. This portal uses data in the
+   https://analytics.opendatahub.bz.it/ This portal uses data in the
    mobility domain to display various information about the sensors,
    including their locations, what they measure, and actual data in
    near-real time. You can retrieve data gathered by the sensors
@@ -246,8 +247,8 @@ used:
 Your best opportunity to learn about the correct syntax and parameters
 to use is to go to the :strong:`swagger interface` of the `tourism
 <http://tourism.opendatahub.bz.it/swagger/ui/index>`_ or `mobility
-<https://mobility.api.opendatahub.bz.it/v2/swagger-ui.html>`_ domains
-and execute a query: with the output, also the corresponding
+<https://mobility.api.opendatahub.bz.it/>`_
+domains and execute a query: with the output, also the corresponding
 :program:`curl` command used to retrieve the data will be shown.
 
 Authentication
@@ -267,6 +268,8 @@ are available in section :ref:`authentication-hub`.
 Datasets in the Mobility Domain
 -------------------------------
 
+.. versionchanged:: June-2020 Direct link to the browsable version of
+   the datasets.
 
 .. contents:: List of datasets in the mobility domain.
    :local:
@@ -279,7 +282,9 @@ The description of each dataset includes the following information:
 * The output format of the API call
 * An e-mail contact for the dataset
 * The versions of the API that can be used to access the dataset
-* The (`new!`) swagger URL of the APIs
+* The direct link to a browsable version of the dataset, which
+  contains all the data about the corresponding
+  literal:`stationType`\s
 * The :literal:`stationType` that belong to each dataset
 
 The datasets in the Mobility domain are grouped in :strong:`Traffic`

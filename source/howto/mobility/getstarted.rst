@@ -10,10 +10,10 @@ the Mobility domain has simplified the access to data; among its
 features, we recall that there is now one single endpoint from which
 to retrieve data from all datasets.
 
-The starting point for all actions to be carreid out on the datasets
+The starting point for all actions to be carried out on the datasets
 made available by the Open Data Hub team is the following:
 
-https://mobility.api.opendatahub.bz.it/v2/swagger-ui.html
+https://mobility.api.opendatahub.bz.it/
 
 .. figure:: /images/mobility-swagger.png
 
@@ -29,9 +29,9 @@ Getting Started
 
 In the API v2, the central concept is :strong:`Station`: all data come
 from a given :literal:`StationType`, whose complete list can be
-retrieved by simply opening the first method of the
-:strong:`data-controller`, :strong:`/api`, then click on :button:`Try
-it out` and then on `Execute`.
+retrieved by simply opening the secong method of the :strong:`Mobility
+V2` controller, :strong:`/v2/{representation}`, then click on
+:button:`Try it out` and then on `Execute`.
 
 Station types in the resulting list can be used in the other methods to
 retrieve additional data about each of them. To check which station
@@ -85,24 +85,77 @@ In the Mobility domain, there are three general methods that can be
 used to extract data from the Open Data Hub's datasets and allow to
 incrementally refine the data retrieved. They are:
 
-#. :literal:`/api/{representation}/{stationTypes}` returns data about
-   the stations themselves, including metadata associated with it, and
-   data about its parent stations.
-#. :literal:`/api/{representation}/{stationTypes}/{dataTypes}`.  In
+#. :literal:`/v2/` gives the list of the Open Data Hub's entry points,
+   that is, the possible representations of the data contained in the
+   datasets. to be used in the next methods. See :ref:`the details
+   below <representation-types>`. 
+
+   .. versionadded:: 2020-June API method to retrieve the list of
+      dataset's entry point.
+
+#. :literal:`/v2/{representation}/` shows all the StationTypes
+   available, that is, all the sources that provided data to the Open
+   Data Hub.
+
+   .. versionadded:: 2020-June API method to retrieve the list of all
+      stationTypes available.
+			
+#. :literal:`/v2/{representation}/{stationTypes}` returns data about
+   the stations themselves, including metadata associated with each, and
+   data about its parent stations, if any.
+#. :literal:`/v2/{representation}/{stationTypes}/{dataTypes}`.  In
    addition to the data of the previous call, it contains the data
-   types defined in the dataset and the most recent measurement. This
-   method is especially suited for real time retrieval of data.
-#. :literal:`/api/{representation}/{stationTypes}/{dataTypes}/{from}/{to}`.
-   All the data retrieved by the previous method, but limited to a
-   given historical interval (:literal:`from` ... :literal:`to`)
+   types defined in the dataset.
+#. :literal:`/v2/{representation}/{stationTypes}/{dataTypes}/latest`. In
+   addition to all the data retrieved by the previous call, this call
+   retrieves also the most recent measurement. This method is
+   especially suited for real time retrieval of data.
 
-These methods introduce another facility made available by the API v2:
-the type of `representation`: each result set can be reproduced as a
-single, :strong:`flat` or as an indented, :strong:`tree`\-like JSON
-file, the former more suitable for machine consumption, while the
-latter more convenient for human reading.
+   
+   .. versionadded:: 2020-June API method to retrieve the list of
+      latest/real time measurements
 
-:literal:`/api/{representation}/{stationTypes}`
+#. :literal:`/v2/{representation}/{stationTypes}/{dataTypes}/{from}/{to}`.
+   All the data retrieved by method #3, but limited to a
+   given historical interval (:literal:`from` ... :literal:`to`).
+
+   .. note:: The interval is `half-open`, i.e., [`from`, `to`),
+      meaning that the `from` date is :strong:`included` in the result
+      set, while the `to` date is :strong:`excluded`.
+
+
+.. _representation-types:
+
+.. topic:: Showing and browsing data with API v2
+	   
+   The first method described in the previous list introduces a new
+   facility made available by the API v2: the type of
+   `representation` that can be used to browse or access the data
+   provided by the Open Data Hub Team.
+
+   The three alternative, which will be described in detail in an
+   upcoming howto, are: `flat`, `tree`, and `apispec`.
+
+   The `flat` and the `tree` alternatives are :term:`JSON`
+   representation of the data, whereas `apispec` is a YAML
+   representation in OpenAPI v3 format suitable for swagger-like
+   access to the data.
+
+   In both the :strong:`flat` and :strong:`tree` representations, all
+   the metadata and available data are shown and browsable, the
+   difference being that in `flat` all metadata are shown at the same
+   level, while `tree` keeps the hierarchical structure of the
+   metadata. Both of them are available
+   
+   The :strong:`apispec` is a YAML configuration file that can be used
+   to set up a swagger-like interface to the Open Data Hub's data.
+
+
+In the reminder of this section we show examples of some of the above
+mentioned API methods and describe the outcome, including the various
+keys and types of data returns by the call.
+
+:literal:`/v2/{representation}/{stationTypes}`
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 To describe the outcome of this method in details, we will use the
@@ -214,15 +267,15 @@ The meaning of the keys are:
 * :strong:`type`: the type of the station, which can be a MeteoStation,
   TrafficStation, EChargingPlug, Bicycle, and so on.
   
-  .. note:: This key is :strong:`Case Sensitive`! You can retrieve all
-     the station types with the following call:
+  .. note:: The name of the StationType is :strong:`Case Sensitive`!
+     You can retrieve all the station types with the following API call.
 
      .. code::
 	
-	curl -X GET "https://mobility.api.opendatahub.bz.it/v2/" -H "accept: application/json"
+	curl -X GET "https://mobility.api.opendatahub.bz.it/v2/tree" -H "accept: application/json" 
 
-:literal:`/api/{representation}/{stationTypes}/{dataTypes}`
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+:literal:`/v2/{representation}/{stationTypes}/{dataTypes}/latest`
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 This API call introduces two new prefixes to the keys, as shown in :numref:`apiv2-datatypes`.
 
@@ -312,7 +365,7 @@ anymore, so historical data might not be available.
    not true for machine-processed data
 
    
-:literal:`/api/{representation}/{stationTypes}/{dataTypes}/{from}/{to}`
+:literal:`/v2/{representation}/{stationTypes}/{dataTypes}/{from}/{to}`
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 This method does not add any other keys to the JSON response; all the
@@ -379,7 +432,7 @@ station:
 You see that there are two hierarchies with two levels in the snippet:
 `scoordinate` and `smetadata`; to retrieve only data from them we will
 use the `select` clause with the
-:literal:`/api/{representation}/{stationTypes}` call; you can
+:literal:`/v2/{representation}/{stationTypes}` call; you can
 therefore:
 
 * retrieve only the metadata associated with all the stations; the
