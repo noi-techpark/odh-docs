@@ -1,7 +1,7 @@
 .. _ab-howto:
 
-Howto access Open Data Hub AlpineBits Server as a client
-========================================================
+How to access Open Data Hub AlpineBits Server as a client
+=========================================================
 
 The AlpineBits Alliance strives to develop and to spread a standard
 format to exchange data. In this howto, we show how to retrieve data
@@ -124,7 +124,7 @@ Once done, make sure to select :strong:`POST`, then click on
 Postman's window, like in :numref:`ab-postman-body`.
 
 .. seealso:: More information about the interaction with AlpineBits
-   can be found in the official documnetation, available at
+   can be found in the official documentation, available at
    https://www.alpinebits.org/developers/.
 
 
