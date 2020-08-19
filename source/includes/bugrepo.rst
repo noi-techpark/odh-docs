@@ -23,7 +23,7 @@ suits your needs:
 5. `Leave your feedback <https://github.com/login?return_to=https%3A%2F%2Fgithub.com%2Fnoi-techpark%2Fodh-docs%2Fissues%2Fnew%3Ftemplate%3Dfeedback.md>`_
 
 .. note:: You need to have a valid github account to report issues and
-   interact with the |odh| team.
+   interact with the Open Data Hub team.
    
 We keep track of your reports in our bug trackers, where you can also
-follow progress and comments of the |odh| team members.
+follow progress and comments of the Open Data Hub team members.

@@ -1,7 +1,7 @@
-...provide Open Data to the |odh| project.
+...provide Open Data to the Open Data Hub project.
    Share with an Open Data Licence (like e.g., |cc0| or |bysa|) the
-   data you own, that can prove interesting for the |odh|\, for
-   example because they complement existing data in the |odh| or they
+   data you own, that can prove interesting for the Open Data Hub, for
+   example because they complement existing data in the Open Data Hub or they
    pertain to an area which is not yet covered. Let your Open Data be
    freely used by App Developers in their applications.
 

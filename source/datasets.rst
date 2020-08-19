@@ -65,7 +65,7 @@ The Open Data Hub\'s Data Providers are:
 * Südtirol Wein.
 * Route220, Nevicam and Driwe e-charging stations provider
 
-.. topic:: A note about datasets.
+.. topic:: A note about datasets
 
    The Open Data Hub contains many datasets: a few have been provided for
    testing purposes, other are meant for internal use only, and other

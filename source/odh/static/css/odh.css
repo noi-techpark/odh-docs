@@ -6209,3 +6209,7 @@ div.topic {
     vertical-align:middle;   
     margin:0 .3em
 }
+
+button.toggle-button.toggle-button-hidden:before {
+    left: -3.5em !important;
+}
