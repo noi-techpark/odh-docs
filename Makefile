@@ -186,6 +186,9 @@ changes:
 	$(SPHINXBUILD) -b changes $(ALLSPHINXOPTS) $(BUILDDIR)/changes
 	@echo
 	@echo "The overview file is in $(BUILDDIR)/changes."
+	@python3 make_changelog.py
+	@echo
+	@echo "The list of changes is in $(BUILDDIR)/changes/changelog.txt"
 
 .PHONY: linkcheck
 linkcheck:
