@@ -397,6 +397,10 @@ Datasets in the Tourism Domain
 .. contents:: List of datasets in the tourism domain.
    :local:
 
+
+.. versionchanged:: 2020.09 Removed datasets not offered directly from
+   Open Data Hub (siag.museum and siag.weather)
+
 The following information is provided
 for each of the above-listed dataset:
 
@@ -482,15 +486,3 @@ it.bz.opendatahub.weather-siag
 it.bz.opendatahub.webcam
 ~~~~~~~~~~~~~~~~~~~~~~~~
 .. include:: /datasets/webcam.rst
-
-.. _museum-dataset:
-
-it.bz.siag.museum
-~~~~~~~~~~~~~~~~~
-.. include:: /datasets/museum.rst
-
-.. _siag.weather-dataset:
-
-it.bz.siag.weather
-~~~~~~~~~~~~~~~~~~
-.. include:: /datasets/siag.weather.rst
