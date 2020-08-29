@@ -401,6 +401,10 @@ Datasets in the Tourism Domain
 .. versionchanged:: 2020.09 Removed datasets not offered directly from
    Open Data Hub (siag.museum and siag.weather)
 
+.. versionchanged:: 2020.09 Renamed weather-siag dataset to
+   weather-forecast
+
+		    
 The following information is provided
 for each of the above-listed dataset:
 
@@ -477,9 +481,9 @@ it.bz.opendatahub.snowreport
 
 .. _weather-siag-dataset:
 
-it.bz.opendatahub.weather-siag
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-.. include:: /datasets/weather-siag.rst
+it.bz.opendatahub.weather-forecast
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. include:: /datasets/weather-forecast.rst
 
 .. _webcam-dataset:
 
