@@ -18,7 +18,9 @@ the data gathered by the Bluetooth devices are used in the
 Output                     JSON, mime-type application/json
 E-mail contact             |contact|
 API version                :strike:`v1` |deprecated|, v2
-Swagger URL                https://mobility.api.opendatahub.bz.it/v2/flat/BluetoothStation
-:literal:`StationType`     BluetoothStation
+:literal:`StationType`     `BluetoothStation
+	                   <https://mobility.api.opendatahub.bz.it/v2/flat/BluetoothStation>`_
+Use cases and info	   https://analytics.opendatahub.bz.it/
+Sources                    CISMA
 ======================     ==================================
 

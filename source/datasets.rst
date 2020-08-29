@@ -339,9 +339,15 @@ it.bz.opendatahub.streetelements
 
 .. _trafficstation-dataset:
 
-it.bz.opendatahub.trafficstation
-````````````````````````````````
+it.bz.opendatahub.trafficstation (1)
+````````````````````````````````````
 .. include:: /datasets/trafficstation.rst
+	     
+.. _trafficstation-vms-dataset:
+
+it.bz.opendatahub.trafficstation (2)
+````````````````````````````````````
+.. include:: /datasets/trafficstation-vms.rst
 
 .. _weather-dataset:
 
