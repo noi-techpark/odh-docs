@@ -30,6 +30,8 @@ section.
 Data Providers
 --------------
 
+.. versionchanged:: 2020.09 Updated the list of data providers
+
 A :strong:`Data Provider` is any entity that shares their Open Data
 with the Open Data Hub project, allowing their free reuse (ideally under a
 free licence like |cc0| or |bysa|) from any third-party that relies on
@@ -48,22 +50,33 @@ multiple types of data that will belong to more than one dataset.
 
 The Open Data Hub\'s Data Providers are:
 
-* IDM Südtirol/Alto Adige
-* SIAG, Südtirol Informatica AG - Informatica Alto Adige
-* SASA, public transport operator
-* Alperia/Neogy, energy provider for South Tyrol
-* Municipality of Bolzano
-* Municipality of Merano
-* Municipality of Trento
-* Municipality of Rovereto
-* APPA, Trentino Agency of the environment
-* CISMA, Bluetooth sensors
-* Carsharing Alto Adige, via its technological partner DB Rent
-* LTS, South Tyrol Association of Tourism Organisations.
-* APPA, South Tyrolean agency for the environment.
-* InnoVie.
-* Südtirol Wein.
-* Route220, Nevicam and Driwe e-charging stations provider
+* :strong:`Autostrada del Brennero/Brennerautobahn` management of the
+  A22 motorway infrastructure
+* :strong:`Alperia/Neogy` energy provider for South Tyrol
+* :strong:`APPA Bolzano` South Tyrolean agency for the environment
+* :strong:`APPA Trento` Trentino Agency of the environment
+* :strong:`Bezirksgemeinschaft Burggrafenamt Comunità Comprensoriale
+  Burgraviato`
+* :strong:`Carsharing Alto Adige` via its technological partner DB
+  Rent
+* :strong:`CISMA` bluetooth sensors
+* :strong:`IDM Südtirol/Alto Adige` trailblazer for economic
+  development in South Tyrol
+* :strong:`H2 Südtirol Alto Adige` energy company
+* :strong:`HGV Hoteliers- und Gastwirteverband`
+* :strong:`Inno.vìe` mobility solutions
+* :strong:`LTS South Tyrol` Association of Tourism Organisations
+* :strong:`Municipality of Bolzano`
+* :strong:`Municipality of Merano`
+* :strong:`Municipality of Rovereto`
+* :strong:`Municipality of Trento`
+* :strong:`NOI Techpark` technology and science park of South Tyrol
+* :strong:`Route220`, :strong:`Nevicam` and :strong:`Driwe` e-charging
+  stations provider
+* :strong:`SASA` public transport operator
+* :strong:`SIAG` Südtirol Informatica AG - Informatica Alto Adige
+* :strong:`Südtirol Wein - Vini Alto Adige` consortium of South Tyrol
+  Wines
 
 .. topic:: A note about datasets.
 
