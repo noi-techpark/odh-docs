@@ -397,14 +397,14 @@ Datasets in the Tourism Domain
 .. contents:: List of datasets in the tourism domain.
    :local:
 
-
 .. versionchanged:: 2020.09 Removed datasets not offered directly from
    Open Data Hub (siag.museum and siag.weather)
 
 .. versionchanged:: 2020.09 Renamed weather-siag dataset to
    weather-forecast
 
-		    
+.. versionadded:: 2020.09 Added venue and eventshort datasets
+	    
 The following information is provided
 for each of the above-listed dataset:
 
@@ -442,6 +442,12 @@ it.lts.event
 ~~~~~~~~~~~~
 .. include:: /datasets/event.rst
 
+.. _eventshort-dataset:
+
+it.bz.opendatahub.eventshort
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. include:: /datasets/eventshort.rst
 
 .. _gastronomy-dataset:
 
@@ -490,3 +496,10 @@ it.bz.opendatahub.weather-forecast
 it.bz.opendatahub.webcam
 ~~~~~~~~~~~~~~~~~~~~~~~~
 .. include:: /datasets/webcam.rst
+
+.. _venue-dataset:
+
+it.bz.opendatahub.venue
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. include:: /datasets/venue.rst
