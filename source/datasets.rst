@@ -272,8 +272,12 @@ are available in section :ref:`authentication-hub`.
 Datasets in the Mobility Domain
 -------------------------------
 
-.. versionchanged:: June-2020 Direct link to the browsable version of
+.. versionchanged:: 2020.06 Direct link to the browsable version of
    the datasets.
+
+.. versionchanged:: 2020.09 Improved description of datasets in the
+   mobility domain, including external links, use cases, and 
+
 
 .. contents:: List of datasets in the mobility domain.
    :local:
@@ -354,6 +358,9 @@ it.bz.opendatahub.weather
 Mobility
 ~~~~~~~~
 
+.. versionchanged:: 2020.09 Improved description of datasets in the
+   mobility/mobility domain, including new information
+   
 .. _bikesharing-dataset:
 
 it.bz.opendatahub.bikesharing
@@ -398,7 +405,9 @@ Datasets in the Tourism Domain
 .. versionchanged:: 2020.09 Renamed weather-siag dataset to
    weather-forecast
 
-.. versionadded:: 2020.09 Added venue and eventshort datasets
+.. versionchanged:: 2020.09 Ordered datasets in alphabetical order
+
+.. versionadded:: 2020.09 Added article, common, venue and eventshort datasets
 	    
 The following information is provided
 for each of the above-listed dataset:
