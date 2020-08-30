@@ -108,7 +108,7 @@ _____________
 
 Source code must be commented following the established `Javadoc style
 guide and tags
-<https://www.oracle.com/technetwork/java/javase/tech/index-137868.html>`_.
+<https://www.oracle.com/technical-resources/articles/java/javadoc-tool.html>`_.
 
 Complex section of the code (for example not-trivial algorithms) must have
 dedicated comment sections.
