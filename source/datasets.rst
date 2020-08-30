@@ -3,6 +3,9 @@
 Datasets
 ========
 
+.. versionadded:: 2020.09 New domain category `Other`, which includes
+   dataset that do not belong to existing domains.
+
 The goal of the Open Data Hub project is to make available datasets containing
 data about the South Tyrolean ecosystem, to allow third parties to
 develop novel applications on top of them, consuming the exposed
@@ -381,19 +384,6 @@ Public Transportation
 `````````````````````
 .. include:: /datasets/publictransportation.rst
 
-.. _creative-industries-dataset:
-
-Creative Industries
-```````````````````
-.. include:: /datasets/creativeindustries.rst
-
-.. _noiplace-dataset:
-
-NOI-Place
-`````````
-.. include:: /datasets/noiplace.rst
-
-
 .. _tourism-datasets:
 
 Datasets in the Tourism Domain
@@ -508,3 +498,19 @@ it.bz.opendatahub.venue
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 .. include:: /datasets/venue.rst
+
+
+Datasets in Other Domains
+-------------------------
+
+.. _creative-industries-dataset:
+
+Creative Industries
+~~~~~~~~~~~~~~~~~~~
+.. include:: /datasets/creativeindustries.rst
+
+.. _noiplace-dataset:
+
+NOI-Place
+~~~~~~~~~
+.. include:: /datasets/noiplace.rst
