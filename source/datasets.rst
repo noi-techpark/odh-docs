@@ -6,6 +6,9 @@ Datasets
 .. versionadded:: 2020.09 New domain category `Other`, which includes
    dataset that do not belong to existing domains.
 
+.. versionadded:: 2020.09 New description of domains, new diagrams
+   that show the datasets encompassed in each domain.
+
 The goal of the Open Data Hub project is to make available datasets containing
 data about the South Tyrolean ecosystem, to allow third parties to
 develop novel applications on top of them, consuming the exposed
@@ -272,34 +275,55 @@ are available in section :ref:`authentication-hub`.
 Datasets in the Mobility Domain
 -------------------------------
 
+.. contents:: List of datasets in the mobility domain.
+   :local:
+
 .. versionchanged:: 2020.06 Direct link to the browsable version of
    the datasets.
 
 .. versionchanged:: 2020.09 Improved description of datasets in the
    mobility domain, including external links, use cases, and 
 
+.. figure:: /images/Mobility-domain.png
+   :align: right
+   :scale: 120 %
 
-.. contents:: List of datasets in the mobility domain.
-   :local:
+   The dataset in the Mobility Domain at a glance.
 
-This section contains information about the datasets and how to access
-them using the API that the Open Data Hub team developed and made available.
+This section contains information about the datasets in the Mobility
+Domain and how to access them using the API that the Open Data Hub
+team developed and made available.
+
+.. note:: Recall that the API v1 for the Mobility Domain is now :strong:`deprecated`.
 
 The description of each dataset includes the following information:
 
-* The output format of the API call
-* An e-mail contact for the dataset
-* The versions of the API that can be used to access the dataset
-* The direct link to a browsable version of the dataset, which
-  contains all the data about the corresponding
-  literal:`stationType`\s
-* The :literal:`stationType` that belong to each dataset
+======================     ==================================
+Output                     The output format of the API call
+E-mail contact             An e-mail contact for the dataset
+API version                The versions of the API that can be used to
+	                   access the dataset
+:literal:`StationType`     The direct link to each
+	                   :literal:`stationType` included in the
+			   dataset 
+Use cases and info         Link to web sites that use the dataset and
+			   to use cases based on the dataset
+Web component   	   Link to Web Components developed on top of the
+			   dataset (optional)
+Sources                    The list of Data Providers whose data
+			   compose the dataset
+======================     ==================================
+
 
 The datasets in the Mobility domain are grouped in :strong:`Traffic`
-and :strong:`Mobility` as follows:
+and :strong:`Mobility` sub-domains as follows:
 
 Traffic
 ~~~~~~~
+
+The Mobility/Traffic sub-domain contains data about traffic (like e.g., real time
+traffic load of a street, environmental measurement) that are useful
+to plan a trip with an own means of transport, for example a car, or a bike.
 
 .. _bluetooth-dataset:
 
@@ -358,6 +382,10 @@ it.bz.opendatahub.weather
 Mobility
 ~~~~~~~~
 
+The Mobility/Mobility sub.domain contains data about public
+transportation, sharing of transport means, and recharging stations
+for e-cars.
+
 .. versionchanged:: 2020.09 Improved description of datasets in the
    mobility/mobility domain, including new information
    
@@ -399,6 +427,23 @@ Datasets in the Tourism Domain
 .. contents:: List of datasets in the tourism domain.
    :local:
 
+.. figure:: /images/Tourism-domain.png
+   :align: right
+   :scale: 120 %
+
+   The dataset in the Tourism Domain at a glance.
+
+
+This section contains information about the dataset in the Tourism
+Domain and how to access them using the API that the Open Data Hub
+team developed and made available.
+
+Datasets presented here are related to all kind of touristic
+activities in South Tyrol. By exploring this domain, it is possible to
+find information about winter and summer offers from local touristic
+boards, information about weather, hotels and accommodation, Points of
+Interests, and a lot more.
+
 .. versionchanged:: 2020.09 Removed datasets not offered directly from
    Open Data Hub (siag.museum and siag.weather)
 
@@ -409,13 +454,21 @@ Datasets in the Tourism Domain
 
 .. versionadded:: 2020.09 Added article, common, venue and eventshort datasets
 	    
-The following information is provided
-for each of the above-listed dataset:
+The following information is provided for each dataset in the Tourism domain:
 
-* The output format of the API call.
-* An e-mail contact for the dataset.
-* The versions of the API that can be used to access the dataset.
-* The swagger URL of the APIs.
+======================     ==================================
+Output                     The output format of the API call
+E-mail contact             An e-mail contact for the dataset
+API version                The versions of the API that can be used to
+	                   access the dataset
+Swagger URL                The URL of the swagger interface to the data
+Use cases and info         Link to web sites that use the dataset and
+			   to use cases based on the dataset
+Android App                Link to app for mobile phones developed
+			   using the data in the dataset.
+Sources                    The list of Data Providers whose data
+			   compose the dataset
+======================     ==================================
 
 .. note:: There is one :literal:`StationType`, namely
    :strong:`MobileStation` which is a mobile probe no longer
