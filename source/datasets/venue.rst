@@ -13,3 +13,13 @@ API version     v1
 Swagger URL     :stinfo:`/Venue`
 ==============  ========================================================
 
+
+======================     ==================================
+Output                     JSON, mime-type application/json
+E-mail contact             |contact|
+API version                v1,  AlpineBits HotelData 2017-10, 2018-10, and soon
+                           2020-10 
+Swagger URL                :stinfo:`/Venue`
+Use cases and info         https://databrowser.opendatahub.bz.it/
+Sources                    LTS
+======================     ==================================

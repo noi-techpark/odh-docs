@@ -422,29 +422,60 @@ for each of the above-listed dataset:
    active. It will always return an empty set of values, because
    historical data are not available in the Open Data Hub.
 
-.. _accommodation-dataset:
+.. HGV datasets
 
-it.lts.accommodation
-~~~~~~~~~~~~~~~~~~~~
-.. include:: /datasets/accommodation.rst
+.. _package-dataset:
 
+it.hgv.package
+~~~~~~~~~~~~~~
+.. include:: /datasets/package.rst
+
+.. LTS datasets
+   
 .. _activity-dataset:
 
 it.lts.activity
 ~~~~~~~~~~~~~~~
 .. include:: /datasets/activity.rst
-	     
-.. _activity_poi-dataset:
-
-it.lts.activity_poi
-~~~~~~~~~~~~~~~~~~~
-.. include:: /datasets/activity_poi.rst
 
 .. _event-dataset:
 
 it.lts.event
 ~~~~~~~~~~~~
 .. include:: /datasets/event.rst
+
+.. _gastronomy-dataset:
+
+it.lts.gastronomy
+~~~~~~~~~~~~~~~~~
+.. include:: /datasets/gastronomy.rst
+
+.. _poi-dataset:
+
+it.lts.poi
+~~~~~~~~~~
+.. include:: /datasets/poi.rst
+
+.. ODH datasets
+   
+.. _accommodation-dataset:
+
+it.bz.opendatahub.accommodation
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. include:: /datasets/accommodation.rst
+	     
+.. _activity_poi-dataset:
+
+it.bz.opendatahub.activity_poi
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. include:: /datasets/activity_poi.rst
+
+.. _common-dataset:
+
+it.bz.opendatahub.common
+~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. include:: /datasets/common.rst
 
 .. _eventshort-dataset:
 
@@ -453,29 +484,11 @@ it.bz.opendatahub.eventshort
 
 .. include:: /datasets/eventshort.rst
 
-.. _gastronomy-dataset:
-
-it.lts.gastronomy
-~~~~~~~~~~~~~~~~~
-.. include:: /datasets/gastronomy.rst
-
 .. _location-dataset:
 
 it.bz.opendatahub.location
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 .. include:: /datasets/location.rst
-
-.. _package-dataset:
-
-it.hgv.package
-~~~~~~~~~~~~~~
-.. include:: /datasets/package.rst
-
-.. _poi-dataset:
-
-it.lts.poi
-~~~~~~~~~~
-.. include:: /datasets/poi.rst
 
 .. _ski-dataset:
 
@@ -489,7 +502,14 @@ it.bz.opendatahub.snowreport
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 .. include:: /datasets/snowreport.rst
 
-.. _weather-siag-dataset:
+.. _venue-dataset:
+
+it.bz.opendatahub.venue
+~~~~~~~~~~~~~~~~~~~~~~~
+
+.. include:: /datasets/venue.rst
+
+.. _weather-forecast-dataset:
 
 it.bz.opendatahub.weather-forecast
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -500,13 +520,6 @@ it.bz.opendatahub.weather-forecast
 it.bz.opendatahub.webcam
 ~~~~~~~~~~~~~~~~~~~~~~~~
 .. include:: /datasets/webcam.rst
-
-.. _venue-dataset:
-
-it.bz.opendatahub.venue
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-.. include:: /datasets/venue.rst
 
 
 Datasets in Other Domains
