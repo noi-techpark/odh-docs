@@ -294,13 +294,6 @@ and :strong:`Mobility` as follows:
 Traffic
 ~~~~~~~
 
-.. _bikesharing-dataset:
-
-it.bz.opendatahub.bikesharing
-`````````````````````````````
-.. include:: /datasets/bikesharing.rst
-
-
 .. _bluetooth-dataset:
 
 it.bz.opendatahub.bluetooth
@@ -357,6 +350,12 @@ it.bz.opendatahub.weather
 
 Mobility
 ~~~~~~~~
+
+.. _bikesharing-dataset:
+
+it.bz.opendatahub.bikesharing
+`````````````````````````````
+.. include:: /datasets/bikesharing.rst
 
 .. _carpoolinghub-dataset:
 
