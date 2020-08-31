@@ -13,19 +13,18 @@ categorisation. This is a kind of `superdataset`, which includes also the
    without authentication. These data can be obtained by using the
    keywords :strong:`MuseumData` and :Strong:`SuedtirolWein` in the
    `source` filter of the dataset.
+
+.. csv-table::
    
-======================     ==================================
-Output                     JSON, mime-type application/json
-E-mail contact             |contact|
-API version                v1
-Swagger URL                :stinfo:`/ODHactivityPoi`
-Use cases and info         https://databrowser.opendatahub.bz.it/
-			   https://suedtirol.info/
-Android App		   `Südtirol Guide/Alto Adige Guide
-			   <https://play.google.com/store/apps/details?id=com.suedtirol.android>`_ 
-Sources 		   LTS ActivityData, LTS PoiData, LTS
-			   GastronomicData, SuedtirolWein, SIAG Museum
-			   data, IDM Content and other Sources 
-======================     ==================================
+   "Output", "JSON, mime-type application/json"
+   "E-mail contact", "|contact|"
+   "API version", "v1"
+   "Swagger URL", ":stinfo:`/ODHactivityPoi`"
+   "Use cases and info", "https://databrowser.opendatahub.bz.it/
+   https://suedtirol.info/"
+   "Android App", "`Südtirol Guide/Alto Adige Guide
+   <https://play.google.com/store/apps/details?id=com.suedtirol.android>`_"
+   "Sources", "LTS ActivityData, LTS PoiData, LTS GastronomicData,
+   SuedtirolWein, SIAG Museum data, IDM Content and other Sources"
 
 

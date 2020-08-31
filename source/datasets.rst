@@ -297,21 +297,21 @@ team developed and made available.
 
 The description of each dataset includes the following information:
 
-======================     ==================================
-Output                     The output format of the API call
-E-mail contact             An e-mail contact for the dataset
-API version                The versions of the API that can be used to
-	                   access the dataset
-:literal:`StationType`     The direct link to each
-	                   :literal:`stationType` included in the
-			   dataset 
-Use cases and info         Link to web sites that use the dataset and
-			   to use cases based on the dataset
-Web component   	   Link to Web Components developed on top of the
-			   dataset (optional)
-Sources                    The list of Data Providers whose data
-			   compose the dataset
-======================     ==================================
+.. csv-table::
+   
+   "Output", "The output format of the API call"
+   "E-mail contact", "An e-mail contact for the dataset"
+   "API version", "The versions of the API that can be used to access
+   dataset"			   
+   ":literal:`StationType`", "The direct link to each
+   :literal:`stationType` included in the dataset"
+   "Use cases and info", "Link to web sites that use the dataset and to
+   use cases based on the dataset"
+   "Web component", "Link to Web Components developed on top of the
+   dataset (optional)"			   
+   "Sources", "The list of Data Providers whose data compose the dataset"
+
+			   
 
 
 The datasets in the Mobility domain are grouped in :strong:`Traffic`
@@ -455,19 +455,19 @@ Interests, and a lot more.
 	    
 The following information is provided for each dataset in the Tourism domain:
 
-======================     ==================================
-Output                     The output format of the API call
-E-mail contact             An e-mail contact for the dataset
-API version                The versions of the API that can be used to
-	                   access the dataset
-Swagger URL                The URL of the swagger interface to the data
-Use cases and info         Link to web sites that use the dataset and
-			   to use cases based on the dataset
-Android App                Link to app for mobile phones developed
-			   using the data in the dataset.
-Sources                    The list of Data Providers whose data
-			   compose the dataset
-======================     ==================================
+.. csv-table::
+   
+   "Output", "The output format of the API call"   
+   "E-mail contact", "An e-mail contact for the dataset"   
+   "API version", "The versions of the API that can be used to access
+   the dataset"			   
+   "Swagger URL", "The URL of the swagger interface to the data"
+   "Use cases and info", "Link to web sites that use the dataset and
+   to use cases based on the dataset"			   
+   "Android App", "Link to app for mobile phones developed using the
+   data in the dataset"   
+   "Sources", "The list of Data Providers whose data compose the dataset"
+
 
 .. note:: There is one :literal:`StationType`, namely
    :strong:`MobileStation` which is a mobile probe no longer

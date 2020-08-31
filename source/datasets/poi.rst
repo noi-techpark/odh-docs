@@ -6,12 +6,13 @@ e-bike rentals, fashion shops, pharmacies, gas stations, car parks,
 shops, ski schools, and many more. This dataset offers LTS
 categorisation.
 
-======================     ==================================
-Output                     JSON, mime-type application/json
-E-mail contact             |contact|
-API version                v1
-Swagger URL                :stinfo:`/Poi`
-Use cases and info         https://databrowser.opendatahub.bz.it/
-			   https://suedtirol.info/
-Sources                    LTS PoiData
-======================     ==================================
+.. csv-table::
+
+   "Output", "JSON, mime-type application/json"
+   "E-mail contact", "|contact|"
+   "API version", "v1"   
+   "Swagger URL", ":stinfo:`/Poi`"   
+   "Use cases and info", "https://databrowser.opendatahub.bz.it/
+   https://suedtirol.info/"			   
+   "Sources", "LTS PoiData"
+			  

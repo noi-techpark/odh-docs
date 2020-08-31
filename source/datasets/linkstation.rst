@@ -17,14 +17,13 @@ The definitions and algorithm used in the computations are extensively
 described in Section `Data analysis complexity` of `this pdf article
 <https://www.integreen-life.bz.it/it/c/document_library/get_file?uuid=f1702bf2-5ed9-42a5-a85b-42a3d97a3e6b&groupId=17369>`_.
 
+.. csv-table::
    
-======================     ==================================
-Output                     JSON, mime-type application/json
-E-mail contact             |contact|
-API version                :strike:`v1` |deprecated|, v2
-:literal:`StationType`     `LinkStation
-                           <https://mobility.api.opendatahub.bz.it/v2/flat/LinkStation>`_ 
-Use cases and info	   https://analytics.opendatahub.bz.it/
-Sources                    A22
-======================     ==================================
+   "Output", "JSON, mime-type application/json"
+   "E-mail contact", "|contact|"
+   "API version", ":strike:`v1` |deprecated|, v2"
+   ":literal:`StationType`", "`LinkStation
+   <https://mobility.api.opendatahub.bz.it/v2/flat/LinkStation>`_"
+   "Use cases and info", "https://analytics.opendatahub.bz.it/"
+   "Sources", "A22"
 

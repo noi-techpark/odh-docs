@@ -13,13 +13,13 @@ All data is requested live through the Weather service of the Province
 of Bolzano-Bozen (South Tyrol). Data is available in English, German,
 and Italian language.
 
-======================     ==================================
-Output                     JSON, mime-type application/json
-E-mail contact             |contact|
-API version                v1
-Swagger URL                :stinfo:`/weather`
-Use cases and info         https://databrowser.opendatahub.bz.it/
-Android App		   `Südtirol Guide/Alto Adige Guide
-			   <https://play.google.com/store/apps/details?id=com.suedtirol.android>`_ 
-Sources                    SIAG
-======================     ==================================
+.. csv-table::
+   
+   "Output", "JSON, mime-type application/json"   
+   "E-mail contact", "|contact|"   
+   "API version", "v1"   
+   "Swagger URL", ":stinfo:`/weather`"   
+   "Use cases and info", "https://databrowser.opendatahub.bz.it/"   
+   "Android App", "`Südtirol Guide/Alto Adige Guide
+   <https://play.google.com/store/apps/details?id=com.suedtirol.android>`_"			   
+   "Sources", "SIAG"

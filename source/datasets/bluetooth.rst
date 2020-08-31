@@ -13,14 +13,14 @@ Collected data are also split within intervals (of e.g.,15, 30
 minutes), for statistical and historical offline analysis. Moreover,
 the data gathered by the Bluetooth devices are used in the
 :ref:`linkstation-dataset`.
+
+.. csv-table::
    
-======================     ==================================
-Output                     JSON, mime-type application/json
-E-mail contact             |contact|
-API version                :strike:`v1` |deprecated|, v2
-:literal:`StationType`     `BluetoothStation
-	                   <https://mobility.api.opendatahub.bz.it/v2/flat/BluetoothStation>`_
-Use cases and info	   https://analytics.opendatahub.bz.it/
-Sources                    CISMA
-======================     ==================================
+   "Output", "JSON, mime-type application/json"
+   "E-mail contact", "|contact|"
+   "API version", ":strike:`v1` |deprecated|, v2"
+   ":literal:`StationType`", "`BluetoothStation
+   <https://mobility.api.opendatahub.bz.it/v2/flat/BluetoothStation>`_"
+   "Use cases and info", "https://analytics.opendatahub.bz.it/"
+   "Sources", "CISMA"
 
