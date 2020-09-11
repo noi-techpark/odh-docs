@@ -1,9 +1,17 @@
 .. package
 
-.. csv-table::
+
+.. panels::
+   :column: col-md-6
+
+   -----
+
+   -----
    
-   "Output", "JSON, mime-type application/json"
-   "E-mail contact", "|contact|"   
-   "API version", "v1"   
-   "Swagger URL", "http://service.suedtirol.info/swagger/ui/index#/Package"
+   .. csv-table::
+   
+      "Output", "JSON, mime-type application/json"
+      "E-mail contact", "|contact|"   
+      "API version", "v1"   
+      "Swagger URL", "http://service.suedtirol.info/swagger/ui/index#/Package"
 

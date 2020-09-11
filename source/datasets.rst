@@ -425,9 +425,6 @@ for e-cars.
 Datasets in the Tourism Domain
 ------------------------------
 
-.. contents:: List of datasets in the tourism domain.
-   :local:
-
 .. figure:: /images/Tourism-domain.png
    :align: right
    :scale: 120 %
@@ -480,100 +477,97 @@ The following information is provided for each dataset in the Tourism domain:
 
 .. _package-dataset:
 
-it.hgv.package
-~~~~~~~~~~~~~~
-.. include:: /datasets/package.rst
+.. dropdown:: :strong:`it.hgv.package`
+	       
+   .. include:: /datasets/package.rst
 
 .. LTS datasets
    
 .. _activity-dataset:
 
-it.lts.activity
-~~~~~~~~~~~~~~~
-.. include:: /datasets/activity.rst
+.. dropdown:: :strong:`it.lts.activity`
+	      
+   .. include:: /datasets/activity.rst
 
 .. _event-dataset:
 
-it.lts.event
-~~~~~~~~~~~~
-.. include:: /datasets/event.rst
+.. dropdown:: :strong:`it.lts.event`
+
+   .. include:: /datasets/event.rst
 
 .. _gastronomy-dataset:
 
-it.lts.gastronomy
-~~~~~~~~~~~~~~~~~
-.. include:: /datasets/gastronomy.rst
+.. dropdown:: :strong:`it.lts.gastronomy`
+
+   .. include:: /datasets/gastronomy.rst
 
 .. _poi-dataset:
 
-it.lts.poi
-~~~~~~~~~~
-.. include:: /datasets/poi.rst
+.. dropdown:: :strong:`it.lts.poi`
+
+   .. include:: /datasets/poi.rst
 
 .. ODH datasets
    
 .. _accommodation-dataset:
 
-it.bz.opendatahub.accommodation
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-.. include:: /datasets/accommodation.rst
+.. dropdown:: :strong:`it.bz.opendatahub.accommodation`
+
+   .. include:: /datasets/accommodation.rst
 	     
 .. _activity_poi-dataset:
 
-it.bz.opendatahub.activity_poi
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-.. include:: /datasets/activity_poi.rst
+.. dropdown:: :strong:`it.bz.opendatahub.activity_poi`
+
+   .. include:: /datasets/activity_poi.rst
 
 .. _common-dataset:
 
-it.bz.opendatahub.common
-~~~~~~~~~~~~~~~~~~~~~~~~
+.. dropdown:: :strong:`it.bz.opendatahub.common`
 
-.. include:: /datasets/common.rst
+   .. include:: /datasets/common.rst
 
 .. _eventshort-dataset:
 
-it.bz.opendatahub.eventshort
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. dropdown:: :strong:`it.bz.opendatahub.eventshort`
 
-.. include:: /datasets/eventshort.rst
+   .. include:: /datasets/eventshort.rst
 
 .. _location-dataset:
 
-it.bz.opendatahub.location
-~~~~~~~~~~~~~~~~~~~~~~~~~~
-.. include:: /datasets/location.rst
+.. dropdown:: :strong:`it.bz.opendatahub.location`
+
+   .. include:: /datasets/location.rst
 
 .. _ski-dataset:
 
-it.bz.opendatahub.ski
-~~~~~~~~~~~~~~~~~~~~~
-.. include:: /datasets/ski.rst
+.. dropdown:: :strong:`it.bz.opendatahub.ski`
+
+   .. include:: /datasets/ski.rst
 
 .. _snowreport-dataset:
 
-it.bz.opendatahub.snowreport
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-.. include:: /datasets/snowreport.rst
+.. dropdown:: :strong:`it.bz.opendatahub.snowreport`
+
+   .. include:: /datasets/snowreport.rst
 
 .. _venue-dataset:
 
-it.bz.opendatahub.venue
-~~~~~~~~~~~~~~~~~~~~~~~
+.. dropdown:: :strong:`it.bz.opendatahub.venue`
 
-.. include:: /datasets/venue.rst
+   .. include:: /datasets/venue.rst
 
 .. _weather-forecast-dataset:
 
-it.bz.opendatahub.weather-forecast
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-.. include:: /datasets/weather-forecast.rst
+.. dropdown:: :strong:`it.bz.opendatahub.weather-forecast`
+
+   .. include:: /datasets/weather-forecast.rst
 
 .. _webcam-dataset:
 
-it.bz.opendatahub.webcam
-~~~~~~~~~~~~~~~~~~~~~~~~
-.. include:: /datasets/webcam.rst
+.. dropdown:: :strong:`it.bz.opendatahub.webcam`
+
+   .. include:: /datasets/webcam.rst
 
 
 Datasets in Other Domains
