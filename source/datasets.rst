@@ -274,15 +274,16 @@ are available in section :ref:`authentication-hub`.
 Datasets in the Mobility Domain
 -------------------------------
 
-.. contents:: List of datasets in the mobility domain.
-   :local:
-
 .. versionchanged:: 2020.06 Direct link to the browsable version of
    the datasets.
 
 .. versionchanged:: 2020.09 Improved description of datasets in the
-   mobility domain, including external links, use cases, and 
+   mobility domain, including external links, use cases, and Data
+   Providers.
 
+.. versionchanged:: 2020.09 added dropdowns to the list of datasets to
+   improve usability
+   
 .. figure:: /images/Mobility-domain.png
    :align: right
    :scale: 120 %
@@ -326,57 +327,58 @@ to plan a trip with an own means of transport, for example a car, or a bike.
 
 .. _bluetooth-dataset:
 
-it.bz.opendatahub.bluetooth
-```````````````````````````
-.. include:: /datasets/bluetooth.rst
+.. dropdown:: :strong:`it.bz.opendatahub.bluetooth`
+
+   .. include:: /datasets/bluetooth.rst
 
 .. _environment-dataset:
 
-it.bz.opendatahub.environment
-`````````````````````````````
-.. include:: /datasets/environment.rst
+.. dropdown:: :strong:`it.bz.opendatahub.environment`
+
+   .. include:: /datasets/environment.rst
 
 .. _linkstation-dataset:
 
-it.bz.opendatahub.linkstation
-`````````````````````````````
-.. include:: /datasets/linkstation.rst
+.. dropdown:: :strong:`it.bz.opendatahub.linkstation`
+
+   .. include:: /datasets/linkstation.rst
 
 .. _parking-dataset:
+   
+.. dropdown:: :strong:`it.bz.opendatahub.parking`
+   :animate: fade-in-slide-down
 
-it.bz.opendatahub.parking
-`````````````````````````
-.. include:: /datasets/parking.rst
+   .. include:: /datasets/parking.rst
 
 .. _rwisstation-dataset:
 
-it.bz.opendatahub.rwisstation
-`````````````````````````````
-.. include:: /datasets/rwisstation.rst
+.. dropdown:: :strong:`it.bz.opendatahub.rwisstation`
+
+   .. include:: /datasets/rwisstation.rst
 
 .. _streetelement-dataset:
 
-it.bz.opendatahub.streetelements
-````````````````````````````````
-.. include:: /datasets/streetelements.rst
+.. dropdown:: :strong:`it.bz.opendatahub.streetelements`
+
+   .. include:: /datasets/streetelements.rst
 
 .. _trafficstation-dataset:
 
-it.bz.opendatahub.trafficstation (1)
-````````````````````````````````````
-.. include:: /datasets/trafficstation.rst
+.. dropdown:: :strong:`it.bz.opendatahub.trafficstation (1)`
+
+   .. include:: /datasets/trafficstation.rst
 	     
 .. _trafficstation-vms-dataset:
 
-it.bz.opendatahub.trafficstation (2)
-````````````````````````````````````
-.. include:: /datasets/trafficstation-vms.rst
+.. dropdown:: :strong:`it.bz.opendatahub.trafficstation (2)`
+
+   .. include:: /datasets/trafficstation-vms.rst
 
 .. _weather-dataset:
 
-it.bz.opendatahub.weather
-`````````````````````````
-.. include:: /datasets/weather.rst
+.. dropdown:: :strong:`it.bz.opendatahub.weather`
+
+   .. include:: /datasets/weather.rst
 
 Mobility
 ~~~~~~~~

@@ -399,8 +399,8 @@ The :literal:`SELECT` Clause
 
 In order to build select clauses, it is necessary to know the
 structure of the JSON output to a query, therefore we illustrate this
-with an example with the following excerpt from the
-:ref:`parking-dataset` that represents all data about one parking
+with an example with the following excerpt from the :ref:`parking
+dataset <parking-dataset>` that represents all data about one parking
 station:
 
 .. _select-excerpt:
