@@ -392,33 +392,33 @@ for e-cars.
    
 .. _bikesharing-dataset:
 
-it.bz.opendatahub.bikesharing
-`````````````````````````````
-.. include:: /datasets/bikesharing.rst
+.. dropdown:: :strong:`it.bz.opendatahub.bikesharing`
+
+   .. include:: /datasets/bikesharing.rst
 
 .. _carpoolinghub-dataset:
 
-it.bz.opendatahub.carpoolinghub
-```````````````````````````````
-.. include:: /datasets/carpoolinghub.rst
+.. dropdown:: :strong:`it.bz.opendatahub.carpoolinghub`
+
+   .. include:: /datasets/carpoolinghub.rst
 
 .. _carsharing-dataset:
 
-it.bz.opendatahub.carsharing
-````````````````````````````
-.. include:: /datasets/carsharing.rst
+.. dropdown:: :strong:`it.bz.opendatahub.carsharing`
+
+   .. include:: /datasets/carsharing.rst
 
 .. _echarging-dataset:
 
-it.bz.opendatahub.echargingstation
-``````````````````````````````````
-.. include:: /datasets/ecs.rst
+.. dropdown:: :strong:`it.bz.opendatahub.echargingstation`
+
+   .. include:: /datasets/ecs.rst
 
 .. _sasabus-dataset:
 
-Public Transportation
-`````````````````````
-.. include:: /datasets/publictransportation.rst
+.. dropdown:: :strong:`Public Transportation`
+	      
+   .. include:: /datasets/publictransportation.rst
 
 .. _tourism-datasets:
 
