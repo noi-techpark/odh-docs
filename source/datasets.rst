@@ -3,6 +3,12 @@
 Datasets
 ========
 
+.. versionadded:: 2020.09 New domain category `Other`, which includes
+   dataset that do not belong to existing domains.
+
+.. versionadded:: 2020.09 New description of domains, new diagrams
+   that show the datasets encompassed in each domain.
+
 The goal of the Open Data Hub project is to make available datasets containing
 data about the South Tyrolean ecosystem, to allow third parties to
 develop novel applications on top of them, consuming the exposed
@@ -281,228 +287,313 @@ are available in section :ref:`authentication-hub`.
 Datasets in the Mobility Domain
 -------------------------------
 
-.. versionchanged:: June-2020 Direct link to the browsable version of
+.. versionchanged:: 2020.06 Direct link to the browsable version of
    the datasets.
 
-.. contents:: List of datasets in the mobility domain.
-   :local:
+.. versionchanged:: 2020.09 Improved description of datasets in the
+   mobility domain, including external links, use cases, and Data
+   Providers.
 
-This section contains information about the datasets and how to access
-them using the API that the Open Data Hub team developed and made available.
+.. versionchanged:: 2020.09 added dropdowns to the list of datasets to
+   improve usability
+   
+.. figure:: /images/Mobility-domain.png
+   :align: right
+   :scale: 120 %
+
+   The dataset in the Mobility Domain at a glance.
+
+This section contains information about the datasets in the Mobility
+Domain and how to access them using the API that the Open Data Hub
+team developed and made available.
+
+.. note:: Recall that the API v1 for the Mobility Domain is now :strong:`deprecated`.
 
 The description of each dataset includes the following information:
 
-* The output format of the API call
-* An e-mail contact for the dataset
-* The versions of the API that can be used to access the dataset
-* The direct link to a browsable version of the dataset, which
-  contains all the data about the corresponding
-  literal:`stationType`\s
-* The :literal:`stationType` that belong to each dataset
+.. csv-table::
+   
+   "Output", "The output format of the API call"
+   "E-mail contact", "An e-mail contact for the dataset"
+   "API version", "The versions of the API that can be used to access
+   dataset"			   
+   ":literal:`StationType`", "The direct link to each
+   :literal:`stationType` included in the dataset"
+   "Use cases and info", "Link to web sites that use the dataset and to
+   use cases based on the dataset"
+   "Web component", "Link to Web Components developed on top of the
+   dataset (optional)"			   
+   "Sources", "The list of Data Providers whose data compose the dataset"
+
+			   
+
 
 The datasets in the Mobility domain are grouped in :strong:`Traffic`
-and :strong:`Mobility` as follows:
+and :strong:`Mobility` sub-domains as follows:
 
 Traffic
 ~~~~~~~
 
-.. _bikesharing-dataset:
-
-it.bz.opendatahub.bikesharing
-`````````````````````````````
-.. include:: /datasets/bikesharing.rst
-
+The Mobility/Traffic sub-domain contains data about traffic (like e.g., real time
+traffic load of a street, environmental measurement) that are useful
+to plan a trip with an own means of transport, for example a car, or a bike.
 
 .. _bluetooth-dataset:
 
-it.bz.opendatahub.bluetooth
-```````````````````````````
-.. include:: /datasets/bluetooth.rst
+.. dropdown:: :strong:`it.bz.opendatahub.bluetooth`
+
+   .. include:: /datasets/bluetooth.rst
 
 .. _environment-dataset:
 
-it.bz.opendatahub.environment
-`````````````````````````````
-.. include:: /datasets/environment.rst
+.. dropdown:: :strong:`it.bz.opendatahub.environment`
+
+   .. include:: /datasets/environment.rst
 
 .. _linkstation-dataset:
 
-it.bz.opendatahub.linkstation
-`````````````````````````````
-.. include:: /datasets/linkstation.rst
+.. dropdown:: :strong:`it.bz.opendatahub.linkstation`
+
+   .. include:: /datasets/linkstation.rst
 
 .. _parking-dataset:
+   
+.. dropdown:: :strong:`it.bz.opendatahub.parking`
+   :animate: fade-in-slide-down
 
-it.bz.opendatahub.parking
-`````````````````````````
-.. include:: /datasets/parking.rst
+   .. include:: /datasets/parking.rst
 
 .. _rwisstation-dataset:
 
-it.bz.opendatahub.rwisstation
-`````````````````````````````
-.. include:: /datasets/rwisstation.rst
+.. dropdown:: :strong:`it.bz.opendatahub.rwisstation`
+
+   .. include:: /datasets/rwisstation.rst
 
 .. _streetelement-dataset:
 
-it.bz.opendatahub.streetelements
-````````````````````````````````
-.. include:: /datasets/streetelements.rst
+.. dropdown:: :strong:`it.bz.opendatahub.streetelements`
+
+   .. include:: /datasets/streetelements.rst
 
 .. _trafficstation-dataset:
 
-it.bz.opendatahub.trafficstation
-````````````````````````````````
-.. include:: /datasets/trafficstation.rst
+.. dropdown:: :strong:`it.bz.opendatahub.trafficstation (1)`
+
+   .. include:: /datasets/trafficstation.rst
+	     
+.. _trafficstation-vms-dataset:
+
+.. dropdown:: :strong:`it.bz.opendatahub.trafficstation (2)`
+
+   .. include:: /datasets/trafficstation-vms.rst
 
 .. _weather-dataset:
 
-it.bz.opendatahub.weather
-`````````````````````````
-.. include:: /datasets/weather.rst
+.. dropdown:: :strong:`it.bz.opendatahub.weather`
+
+   .. include:: /datasets/weather.rst
 
 Mobility
 ~~~~~~~~
 
+The Mobility/Mobility sub.domain contains data about public
+transportation, sharing of transport means, and recharging stations
+for e-cars.
+
+.. versionchanged:: 2020.09 Improved description of datasets in the
+   mobility/mobility domain, including new information
+   
+.. _bikesharing-dataset:
+
+.. dropdown:: :strong:`it.bz.opendatahub.bikesharing`
+
+   .. include:: /datasets/bikesharing.rst
+
 .. _carpoolinghub-dataset:
 
-it.bz.opendatahub.carpoolinghub
-```````````````````````````````
-.. include:: /datasets/carpoolinghub.rst
+.. dropdown:: :strong:`it.bz.opendatahub.carpoolinghub`
+
+   .. include:: /datasets/carpoolinghub.rst
 
 .. _carsharing-dataset:
 
-it.bz.opendatahub.carsharing
-````````````````````````````
-.. include:: /datasets/carsharing.rst
+.. dropdown:: :strong:`it.bz.opendatahub.carsharing`
+
+   .. include:: /datasets/carsharing.rst
 
 .. _echarging-dataset:
 
-it.bz.opendatahub.echargingstation
-``````````````````````````````````
-.. include:: /datasets/ecs.rst
+.. dropdown:: :strong:`it.bz.opendatahub.echargingstation`
+
+   .. include:: /datasets/ecs.rst
 
 .. _sasabus-dataset:
 
-Public Transportation
-`````````````````````
-.. include:: /datasets/sasa.rst
-
-.. _creative-industries-dataset:
-
-Creative Industries
-```````````````````
-.. include:: /datasets/creativeindustries.rst
-
-.. _noiplace-dataset:
-
-NOI-Place
-`````````
-.. include:: /datasets/noiplace.rst
-
+.. dropdown:: :strong:`Public Transportation`
+	      
+   .. include:: /datasets/publictransportation.rst
 
 .. _tourism-datasets:
 
 Datasets in the Tourism Domain
 ------------------------------
 
-.. contents:: List of datasets in the tourism domain.
-   :local:
+.. figure:: /images/Tourism-domain.png
+   :align: right
+   :scale: 120 %
 
-The following information is provided
-for each of the above-listed dataset:
+   The dataset in the Tourism Domain at a glance.
 
-* The output format of the API call.
-* An e-mail contact for the dataset.
-* The versions of the API that can be used to access the dataset.
-* The swagger URL of the APIs.
+
+This section contains information about the dataset in the Tourism
+Domain and how to access them using the API that the Open Data Hub
+team developed and made available.
+
+Datasets presented here are related to all kind of touristic
+activities in South Tyrol. By exploring this domain, it is possible to
+find information about winter and summer offers from local touristic
+boards, information about weather, hotels and accommodation, Points of
+Interests, and a lot more.
+
+.. versionchanged:: 2020.09 Removed datasets not offered directly from
+   Open Data Hub (siag.museum and siag.weather)
+
+.. versionchanged:: 2020.09 Renamed weather-siag dataset to
+   weather-forecast
+
+.. versionchanged:: 2020.09 Ordered datasets in alphabetical order
+
+.. versionadded:: 2020.09 Added article, common, venue and eventshort datasets
+	    
+The following information is provided for each dataset in the Tourism domain:
+
+.. csv-table::
+   
+   "Output", "The output format of the API call"   
+   "E-mail contact", "An e-mail contact for the dataset"   
+   "API version", "The versions of the API that can be used to access
+   the dataset"			   
+   "Swagger URL", "The URL of the swagger interface to the data"
+   "Use cases and info", "Link to web sites that use the dataset and
+   to use cases based on the dataset"			   
+   "Android App", "Link to app for mobile phones developed using the
+   data in the dataset"   
+   "Sources", "The list of Data Providers whose data compose the dataset"
+
 
 .. note:: There is one :literal:`StationType`, namely
    :strong:`MobileStation` which is a mobile probe no longer
    active. It will always return an empty set of values, because
    historical data are not available in the Open Data Hub.
 
-.. _accommodation-dataset:
-
-it.lts.accommodation
-~~~~~~~~~~~~~~~~~~~~
-.. include:: /datasets/accommodation.rst
-
-.. _activity-dataset:
-
-it.lts.activity
-~~~~~~~~~~~~~~~
-.. include:: /datasets/activity.rst
-	     
-.. _activity_poi-dataset:
-
-it.lts.activity_poi
-~~~~~~~~~~~~~~~~~~~
-.. include:: /datasets/activity_poi.rst
-
-.. _event-dataset:
-
-it.lts.event
-~~~~~~~~~~~~
-.. include:: /datasets/event.rst
-
-
-.. _gastronomy-dataset:
-
-it.lts.gastronomy
-~~~~~~~~~~~~~~~~~
-.. include:: /datasets/gastronomy.rst
-
-.. _location-dataset:
-
-it.bz.opendatahub.location
-~~~~~~~~~~~~~~~~~~~~~~~~~~
-.. include:: /datasets/location.rst
+.. HGV datasets
 
 .. _package-dataset:
 
-it.hgv.package
-~~~~~~~~~~~~~~
-.. include:: /datasets/package.rst
+.. dropdown:: :strong:`it.hgv.package`
+	       
+   .. include:: /datasets/package.rst
+
+.. LTS datasets
+   
+.. _activity-dataset:
+
+.. dropdown:: :strong:`it.lts.activity`
+	      
+   .. include:: /datasets/activity.rst
+
+.. _event-dataset:
+
+.. dropdown:: :strong:`it.lts.event`
+
+   .. include:: /datasets/event.rst
+
+.. _gastronomy-dataset:
+
+.. dropdown:: :strong:`it.lts.gastronomy`
+
+   .. include:: /datasets/gastronomy.rst
 
 .. _poi-dataset:
 
-it.lts.poi
-~~~~~~~~~~
-.. include:: /datasets/poi.rst
+.. dropdown:: :strong:`it.lts.poi`
+
+   .. include:: /datasets/poi.rst
+
+.. ODH datasets
+   
+.. _accommodation-dataset:
+
+.. dropdown:: :strong:`it.bz.opendatahub.accommodation`
+
+   .. include:: /datasets/accommodation.rst
+	     
+.. _activity_poi-dataset:
+
+.. dropdown:: :strong:`it.bz.opendatahub.activity_poi`
+
+   .. include:: /datasets/activity_poi.rst
+
+.. _common-dataset:
+
+.. dropdown:: :strong:`it.bz.opendatahub.common`
+
+   .. include:: /datasets/common.rst
+
+.. _eventshort-dataset:
+
+.. dropdown:: :strong:`it.bz.opendatahub.eventshort`
+
+   .. include:: /datasets/eventshort.rst
+
+.. _location-dataset:
+
+.. dropdown:: :strong:`it.bz.opendatahub.location`
+
+   .. include:: /datasets/location.rst
 
 .. _ski-dataset:
 
-it.bz.opendatahub.ski
-~~~~~~~~~~~~~~~~~~~~~
-.. include:: /datasets/ski.rst
+.. dropdown:: :strong:`it.bz.opendatahub.ski`
+
+   .. include:: /datasets/ski.rst
 
 .. _snowreport-dataset:
 
-it.bz.opendatahub.snowreport
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-.. include:: /datasets/snowreport.rst
+.. dropdown:: :strong:`it.bz.opendatahub.snowreport`
 
-.. _weather-siag-dataset:
+   .. include:: /datasets/snowreport.rst
 
-it.bz.opendatahub.weather-siag
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-.. include:: /datasets/weather-siag.rst
+.. _venue-dataset:
+
+.. dropdown:: :strong:`it.bz.opendatahub.venue`
+
+   .. include:: /datasets/venue.rst
+
+.. _weather-forecast-dataset:
+
+.. dropdown:: :strong:`it.bz.opendatahub.weather-forecast`
+
+   .. include:: /datasets/weather-forecast.rst
 
 .. _webcam-dataset:
 
-it.bz.opendatahub.webcam
-~~~~~~~~~~~~~~~~~~~~~~~~
-.. include:: /datasets/webcam.rst
+.. dropdown:: :strong:`it.bz.opendatahub.webcam`
 
-.. _museum-dataset:
+   .. include:: /datasets/webcam.rst
 
-it.bz.siag.museum
-~~~~~~~~~~~~~~~~~
-.. include:: /datasets/museum.rst
 
-.. _siag.weather-dataset:
+Datasets in Other Domains
+-------------------------
 
-it.bz.siag.weather
-~~~~~~~~~~~~~~~~~~
-.. include:: /datasets/siag.weather.rst
+.. _creative-industries-dataset:
+
+Creative Industries
+~~~~~~~~~~~~~~~~~~~
+.. include:: /datasets/creativeindustries.rst
+
+.. _noiplace-dataset:
+
+NOI-Place
+~~~~~~~~~
+.. include:: /datasets/noiplace.rst
