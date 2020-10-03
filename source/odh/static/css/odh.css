@@ -6209,7 +6209,16 @@ div.topic {
     vertical-align:middle;   
     margin:0 .3em
 }
-
+.rst-content .deprecated p:before {
+    content:"\f00d";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-style: normal;
+    color:#b3b3b3;
+    font-size:90%;
+    vertical-align:middle;   
+    margin:0 .3em
+}
 button.toggle-button.toggle-button-hidden:before {
     left: -3.5em !important;
 }
