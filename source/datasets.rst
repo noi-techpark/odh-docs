@@ -464,7 +464,10 @@ Interests, and a lot more.
 .. versionchanged:: 2020.09 Ordered datasets in alphabetical order
 
 .. versionadded:: 2020.09 Added article, common, venue and eventshort datasets
-	    
+		  
+.. versionchanged:: 2020.10 Changed identifier of datasets activity,
+   event, gastronomy, package, and POI
+		    
 The following information is provided for each dataset in the Tourism domain:
 
 .. csv-table::
@@ -490,7 +493,7 @@ The following information is provided for each dataset in the Tourism domain:
 
 .. _package-dataset:
 
-.. dropdown:: :strong:`it.hgv.package`
+.. dropdown:: :strong:`it.bz.opendatahub.package`
 	       
    .. include:: /datasets/package.rst
 
@@ -498,25 +501,25 @@ The following information is provided for each dataset in the Tourism domain:
    
 .. _activity-dataset:
 
-.. dropdown:: :strong:`it.lts.activity`
+.. dropdown:: :strong:`it.bz.opendatahub.activity`
 	      
    .. include:: /datasets/activity.rst
 
 .. _event-dataset:
 
-.. dropdown:: :strong:`it.lts.event`
+.. dropdown:: :strong:`it.bz.opendatahub.event`
 
    .. include:: /datasets/event.rst
 
 .. _gastronomy-dataset:
 
-.. dropdown:: :strong:`it.lts.gastronomy`
+.. dropdown:: :strong:`it.bz.opendatahub.gastronomy`
 
    .. include:: /datasets/gastronomy.rst
 
 .. _poi-dataset:
 
-.. dropdown:: :strong:`it.lts.poi`
+.. dropdown:: :strong:`it.bz.opendatahub.poi`
 
    .. include:: /datasets/poi.rst
 
