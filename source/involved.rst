@@ -35,6 +35,8 @@ Hub project grow and improve by reporting bugs or asking for new
 features, following the directions presented in  :ref:`the dedicated
 section below <bug-reports>`.
 
+.. _roles-tasks:
+   
 Roles and Tasks
 ---------------
 
@@ -74,3 +76,26 @@ Bug reporting and feature requests
 ----------------------------------
 	   
 .. include:: /includes/bugrepo.rst
+
+
+Continuous Improvement
+----------------------
+
+Since its inception, the |odh| project has reached many important
+goals and is steadily growing, with the help of all people, companies,
+and institutions that :ref:`contribute at various level
+<roles-tasks>`. For a project like |odh|, growing means that not only
+its core components constantly improve, but also that external
+entities contribute to the project, developing a community of users
+that can interact, contribute, exchange opinions, and even play
+multiple roles. The workflow of this whole process is depicted in
+:numref:`community-workflow`.
+
+.. _community-workflow:
+
+.. figure:: /images/workflow.png
+   :scale: 90%
+   :align: center
+
+   Continuous improvement and growing in |odh|\.
+
