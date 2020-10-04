@@ -3,19 +3,37 @@
 Getting Involved
 =================
 
-There are different possibilities to participate in the Open Data Hub Project,
-including -but not limited to- to report bugs in the API or errors in
-the API output, to ask for more datasets to be added to our
-repository, to make feature requests or suggestions for improvement.
+.. _odh-actors:
 
-Depending on your interest on the Open Data Hub Project, we welcome your
-participation to the project in one of the roles that we have
+.. figure:: /images/actors.png
+   :scale: 90%
+   :align: right
+
+   Relations between the actors involved in the |odh|\.
+
+There are different possibilities to participate in the Open Data Hub
+Project, including -but not limited to- to report bugs in the API or
+errors in the API output, to ask for more datasets to be added to our
+repository, to make feature requests or suggestions for improvement,
+and even to participate in the development or supply new data to be
+shared.
+
+:numref:`odh-actors` shows at a glance the various roles that one can
+play within the |odh|\, depending on their interest, expertise, and
+skills.
+
+Depending on your interest on the Open Data Hub Project, we welcome
+your participation to the project in one of the roles that we have
 envisioned: :strong:`User`, :strong:`App developer`, :strong:`Core
-Hacker`, and :strong:`Data Provider`. You can find out below which type of
-role better fits with your expertise!
+Hacker`, and :strong:`Data Provider`. Below you can find out a list of
+tasks that belong to each of these roles; we believe that this list
+can help you understand which type of contribution you can give to the
+|odh| project!
 
-You can also help the Open Data Hub project grow and improve by
-:ref:`reporting bugs or asking new features <bug-reports>`.
+Besides the tasks that you find below, you can also help the Open Data
+Hub project grow and improve by reporting bugs or asking for new
+features, following the directions presented in  :ref:`the dedicated
+section below <bug-reports>`.
 
 .. panels::
 
