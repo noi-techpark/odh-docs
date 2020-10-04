@@ -47,7 +47,7 @@ this summary.
   last version.
 * The source code :strong:`must be documented` according to the
   `Javadoc style guide and tags
-  <https://www.oracle.com/technetwork/java/javase/tech/index-137868.html>`_.
+  <https://www.oracle.com/technical-resources/articles/java/javadoc-tool.html>`_.
 * Java components of |odh| can be developed as :strong:`libraries`,
   :strong:`standalone applications`, or :strong:`server applications`
   running in Apache Tomcat.

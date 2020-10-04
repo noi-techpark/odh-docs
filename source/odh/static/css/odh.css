@@ -6187,3 +6187,29 @@ div.topic {
 .highlight .hll {
     background-color: #ADFF2F !important;
 }
+
+.rst-content .versionchanged p:before {
+    content:"\f01e";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-style: normal;
+    color:#b3b3b3;
+    font-size:80%;
+    vertical-align:middle;   
+    margin:0 .3em
+}
+
+.rst-content .versionadded p:before {
+    content:"\f00c";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-style: normal;
+    color:#b3b3b3;
+    font-size:80%;
+    vertical-align:middle;   
+    margin:0 .3em
+}
+
+button.toggle-button.toggle-button-hidden:before {
+    left: -3.5em !important;
+}

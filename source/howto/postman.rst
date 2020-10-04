@@ -11,10 +11,9 @@ mobility and tourism domains.
 
 In the remainder of this tutorial, we will use as example the
 :ref:`E-chargin station <echarging-dataset>` dataset, located at
-http://ipchannels.integreen-life.bz.it/emobility/swagger-ui.html for
-the mobility domain and the :ref:`Accommodation
-<accommodation-dataset>` dataset, located at
-:stinfo:`Accommodation`.
+https://swagger.opendatahub.bz.it/?url=https://mobility.api.opendatahub.bz.it/v2/apispec#/Mobility%20V1%20-%20Emobility/
+for the mobility domain and the :ref:`Accommodation
+<accommodation-dataset>` dataset, located at :stinfo:`Accommodation`.
 
 
 Initial Setup

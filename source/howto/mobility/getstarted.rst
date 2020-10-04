@@ -3,15 +3,17 @@
 How to Access Mobility Data With API v2
 =======================================
 
+.. versionadded:: 2020-April
+		  
 The new :strong:`API v2` (see :ref:`the description <ninja api>`) for
 the Mobility domain has simplified the access to data; among its
 features, we recall that there is now one single endpoint from which
 to retrieve data from all datasets.
 
-The starting point for all actions to be carreid out on the datasets
+The starting point for all actions to be carried out on the datasets
 made available by the Open Data Hub team is the following:
 
-https://mobility.api.opendatahub.bz.it/v2/swagger-ui.html
+https://mobility.api.opendatahub.bz.it/
 
 .. figure:: /images/mobility-swagger.png
 
@@ -27,9 +29,9 @@ Getting Started
 
 In the API v2, the central concept is :strong:`Station`: all data come
 from a given :literal:`StationType`, whose complete list can be
-retrieved by simply opening the first method of the
-:strong:`data-controller`, :strong:`/api`, then click on :button:`Try
-it out` and then on `Execute`.
+retrieved by simply opening the secong method of the :strong:`Mobility
+V2` controller, :strong:`/v2/{representation}`, then click on
+:button:`Try it out` and then on `Execute`.
 
 Station types in the resulting list can be used in the other methods to
 retrieve additional data about each of them. To check which station
@@ -54,19 +56,27 @@ The overall structure of the JSON is the following:
    "limit": 200   
 
 Here, `offset` and `limit` are used for limiting the displayed
-results: `limit` gives the maximum number of results (defaults to
-:strong:`200`), while `offset` allows to skip elements from the result
-set (defaults to :strong:`0`, i.e., the results start from the first
-one . It is therefore possible to simulate pagination when there are
-many results: for example, if there are :strong:`1000` values, by
-adding to successive queries the offsets :strong:`0`, :strong:`200`,
-:strong:`400`, :strong:`600`, and :strong:`800`, the response of the
-query is split on 5 pages of 200 results each.
+results. The three keys have the following meaning:
 
-`Data` is the actual :strong:`payload` of the response, that is, the
-data answering the query; since it changes depending on which API
-call/method is used, it will be described in the next section.
+* `limit` gives the maximum number of results that are included in the
+  response. It defaults to :strong:`200`.
 
+  .. hint:: By setting the value to :strong:`-1`, `limit` will be
+     disabled and all results will be shown.
+     
+* `offset` allows to skip elements from the result set. The default is
+  :strong:`0`, i.e., the results start from the first one.
+* `data` is the actual :strong:`payload` of the response, that is, the
+  data answering the query; since it changes depending on which API
+  call/method is used, it will be described in the next section.
+
+.. hint:: It is possible to simulate pagination when there are many
+   results: for example, if there are :strong:`1000` values, by adding
+   to successive queries the offsets :strong:`0`, :strong:`200`,
+   :strong:`400`, :strong:`600`, and :strong:`800`, the response of
+   the query is split on 5 pages of 200 results each.
+
+.. _api-v2-structure:
 
 Structure of the API calls and Payload
 --------------------------------------
@@ -75,24 +85,77 @@ In the Mobility domain, there are three general methods that can be
 used to extract data from the Open Data Hub's datasets and allow to
 incrementally refine the data retrieved. They are:
 
-#. :literal:`/api/{representation}/{stationTypes}` returns data about
-   the stations themselves, including metadata associated with it, and
-   data about its parent stations.
-#. :literal:`/api/{representation}/{stationTypes}/{dataTypes}`.  In
+#. :literal:`/v2/` gives the list of the Open Data Hub's entry points,
+   that is, the possible representations of the data contained in the
+   datasets. to be used in the next methods. See :ref:`the details
+   below <representation-types>`. 
+
+   .. versionadded:: 2020-June API method to retrieve the list of
+      dataset's entry point.
+
+#. :literal:`/v2/{representation}/` shows all the StationTypes
+   available, that is, all the sources that provided data to the Open
+   Data Hub.
+
+   .. versionadded:: 2020-June API method to retrieve the list of all
+      stationTypes available.
+			
+#. :literal:`/v2/{representation}/{stationTypes}` returns data about
+   the stations themselves, including metadata associated with each, and
+   data about its parent stations, if any.
+#. :literal:`/v2/{representation}/{stationTypes}/{dataTypes}`.  In
    addition to the data of the previous call, it contains the data
-   types defined in the dataset and the most recent measurement. This
-   method is especially suited for real time retrieval of data.
-#. :literal:`/api/{representation}/{stationTypes}/{dataTypes}/{from}/{to}`.
-   All the data retrieved by the previous method, but limited to a
-   given historical interval (:literal:`from` ... :literal:`to`)
+   types defined in the dataset.
+#. :literal:`/v2/{representation}/{stationTypes}/{dataTypes}/latest`. In
+   addition to all the data retrieved by the previous call, this call
+   retrieves also the most recent measurement. This method is
+   especially suited for real time retrieval of data.
 
-These methods introduce another facility made available by the API v2:
-the type of `representation`: each result set can be reproduced as a
-single, :strong:`flat` or as an indented, :strong:`tree`\-like JSON
-file, the former more suitable for machine consumption, while the
-latter more convenient for human reading.
+   
+   .. versionadded:: 2020-June API method to retrieve the list of
+      latest/real time measurements
 
-:literal:`/api/{representation}/{stationTypes}`
+#. :literal:`/v2/{representation}/{stationTypes}/{dataTypes}/{from}/{to}`.
+   All the data retrieved by method #3, but limited to a
+   given historical interval (:literal:`from` ... :literal:`to`).
+
+   .. note:: The interval is `half-open`, i.e., [`from`, `to`),
+      meaning that the `from` date is :strong:`included` in the result
+      set, while the `to` date is :strong:`excluded`.
+
+
+.. _representation-types:
+
+.. topic:: Showing and browsing data with API v2
+	   
+   The first method described in the previous list introduces a new
+   facility made available by the API v2: the type of
+   `representation` that can be used to browse or access the data
+   provided by the Open Data Hub Team.
+
+   The three alternative, which will be described in detail in an
+   upcoming howto, are: `flat`, `tree`, and `apispec`.
+
+   The `flat` and the `tree` alternatives are :term:`JSON`
+   representation of the data, whereas `apispec` is a YAML
+   representation in OpenAPI v3 format suitable for swagger-like
+   access to the data.
+
+   In both the :strong:`flat` and :strong:`tree` representations, all
+   the metadata and available data are shown and browsable, the
+   difference being that in `flat` all metadata are shown at the same
+   level, while `tree` keeps the hierarchical structure of the
+   metadata. Both of them are available
+   
+   The :strong:`apispec` is a YAML configuration file that can be used
+   to set up a swagger-like interface to the Open Data Hub's data.
+
+
+In the reminder of this section we show examples of some of the above
+mentioned API methods and describe the outcome, including the various
+keys and types of data returns by the call.
+
+:literal:`/v2/{representation}/{stationTypes}`
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 To describe the outcome of this method in details, we will use the
@@ -204,15 +267,15 @@ The meaning of the keys are:
 * :strong:`type`: the type of the station, which can be a MeteoStation,
   TrafficStation, EChargingPlug, Bicycle, and so on.
   
-  .. note:: This key is :strong:`Case Sensitive`! You can retrieve all
-     the station types with the following call:
+  .. note:: The name of the StationType is :strong:`Case Sensitive`!
+     You can retrieve all the station types with the following API call.
 
      .. code::
 	
-	curl -X GET "https://mobility.api.opendatahub.bz.it/v2/" -H "accept: application/json"
+	curl -X GET "https://mobility.api.opendatahub.bz.it/v2/tree" -H "accept: application/json" 
 
-:literal:`/api/{representation}/{stationTypes}/{dataTypes}`
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+:literal:`/v2/{representation}/{stationTypes}/{dataTypes}/latest`
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 This API call introduces two new prefixes to the keys, as shown in :numref:`apiv2-datatypes`.
 
@@ -302,7 +365,7 @@ anymore, so historical data might not be available.
    not true for machine-processed data
 
    
-:literal:`/api/{representation}/{stationTypes}/{dataTypes}/{from}/{to}`
+:literal:`/v2/{representation}/{stationTypes}/{dataTypes}/{from}/{to}`
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 This method does not add any other keys to the JSON response; all the
@@ -312,6 +375,8 @@ keys described in the previous two section are valid and can be used.
 Advanced Data Processing
 ------------------------
 
+.. versionchanged:: 2020-May keyword alias was replaced by :strong:`target`.
+		    
 Before introducing advanced data processing techniques, we recall that
 queries against the Open Data Hub's datasets always return a
 :strong:`JSON` output.
@@ -321,7 +386,7 @@ Advanced processing allows to build SQL-style queries using the
 fields returned by the calls described in the previous section.
 :literal:`SELECT` and :literal:`WHERE` have the usual meaning, with
 the former retrieving data from a JSON field, in the form of
-:literal:`SELECT=alias[,alias,...]`, and the latter retrieving records
+:literal:`SELECT=target[,target,...]`, and the latter retrieving records
 from the JSON output, using the :literal:`WHERE=filter[,filter,...]`
 form, with an implicit :strong:`and` among the filters, therefore
 evaluation of the filters takes place only if all filters would
@@ -334,8 +399,8 @@ The :literal:`SELECT` Clause
 
 In order to build select clauses, it is necessary to know the
 structure of the JSON output to a query, therefore we illustrate this
-with an example with the following excerpt from the
-:ref:`parking-dataset` that represents all data about one parking
+with an example with the following excerpt from the :ref:`parking
+dataset <parking-dataset>` that represents all data about one parking
 station:
 
 .. _select-excerpt:
@@ -367,7 +432,7 @@ station:
 You see that there are two hierarchies with two levels in the snippet:
 `scoordinate` and `smetadata`; to retrieve only data from them we will
 use the `select` clause with the
-:literal:`/api/{representation}/{stationTypes}` call; you can
+:literal:`/v2/{representation}/{stationTypes}` call; you can
 therefore:
 
 * retrieve only the metadata associated with all the stations; the
@@ -381,13 +446,13 @@ The latter two examples show that to go down one more step into the
 hierarchy, you simply add a dot (":literal:`.`") before the attribute
 in the next level of the hierarchy. Moreover, you can extract multiple
 values from a JSON output, provided you separate them with a comma
-(":literal:`,`") and use :strong:`no empty spaces` in the clause. in
+(":literal:`,`") and use :strong:`no empty spaces` in the clause. In
 the above examples, each of the element within
 parentheses--:literal:`smetadata`, :literal:`smetadata.municipality`,
-and :literal:`smetadata.mainaddress`\-- is called :strong:`alias`.
+and :literal:`smetadata.mainaddress`\-- is called :strong:`target`.
 
 Within a :literal:`SELECT` clause, SQL functions are allowed and can
-be mixed with aliases, allowing to further process the output, with
+be mixed with targets, allowing to further process the output, with
 the following limitations:
 
 * Only `numeric` functions are allowed, like e.g., :literal:`min`,
@@ -396,7 +461,7 @@ the following limitations:
   a post-processing task
 * Functions can be use :strong:`only` with the :literal:`flat`
   representation
-* When a function is used together with other aliases, these are used
+* When a function is used together with other targets, these are used
   for grouping purposes. For example:
   :literal:`select=sname,max(smetadata.capacity),min(smetadata.capacity)`
   will return the parking lots with the highest and lowest number of
@@ -425,9 +490,9 @@ operators:
   covered by the box)
 - `bbc`: bounding box containing objects (ex., a station or street, that is
   completely covered by the box)
-- `in`: true if the value of the alias can be found within the given list.
+- `in`: true if the value of the target can be found within the given list.
   Example: `name.in.(Patrick,Rudi,Peter)`
-- `nin`: False if the value of the alias can be found within the given list.
+- `nin`: False if the value of the target can be found within the given list.
   Example: `name.nin.(Patrick,Rudi,Peter)`
 - `and(filter,filter,...)`: Conjunction of filters (can be nested)
 - `or(filter,filter,...)`: Disjunction of filters (can be nested)
@@ -445,3 +510,28 @@ of values, respectively:
 * :literal:`where=smetadata.capacity.gt.100,smetadata.municipality.eq."Bolzano -
   Bozen"` same as previous query, but only parking lots in Bolzano are shown.
 
+Additional Parameters
+~~~~~~~~~~~~~~~~~~~~~
+
+.. versionadded:: 2020-May `shownull` and `distinct`.
+
+There are a couple of other parameter that can be given to the API
+calls and are described in this section.
+
+.. rubric:: :literal:`shownull`
+         
+In order to show :strong:`null` values in the output of a query, add
+:literal:`shownull=true` to the end of your query.
+
+.. rubric:: :literal:`distinct`
+
+Results in query responses contain unique results, that is, if for
+some reason one element is retrieved multiple times while the query is
+executed, it will be nonetheless shown only once, for performance
+reasons. It is however possible to retrieve each single result and
+have it appear in the response by adding :literal:`distinct=true` to
+the API call.
+
+.. warning:: Keeping track of all distinct values might be a
+   resource-intensive process that significantly rises the response
+   time, therefore use it with care.

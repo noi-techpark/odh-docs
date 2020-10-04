@@ -1,5 +1,5 @@
 Projects developed during `Vertical Innovation 2018
-<http://hackathon.bz.it/edition/november-2018>`_.
+<https://hackathon.bz.it/edition/november-2018>`_.
 
 * `Smart Bivouac <https://hackathon.bz.it/project/smart-bivouac>`_ is
   the project that won the :strong:`Cassa di Risparmio / Sparkasse
