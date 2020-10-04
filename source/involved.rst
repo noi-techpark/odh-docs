@@ -24,11 +24,11 @@ interest, expertise, skills, and knowledge.
 
 Depending on your interest on the Open Data Hub Project, we welcome
 your participation to the project in one of the roles that we have
-envisioned: :strong:`User`, :strong:`App developer`, :strong:`Core
-Hacker`, and :strong:`Data Provider`. Below you can find out a list of
-tasks that belong to each of these roles; we believe that this list
-can help you understand which type of contribution you can give to the
-|odh| project!
+envisioned: :strong:`User (Data Consumer)`, :strong:`App developer`,
+:strong:`Core Hacker`, and :strong:`Data Provider`. Below you can find
+out a list of tasks that belong to each of these roles; we believe
+that this list can help you understand which type of contribution you
+can give to the |odh| project!
 
 Besides the tasks that you find below, you can also help the Open Data
 Hub project grow and improve by reporting bugs or asking for new
@@ -43,7 +43,7 @@ collaborating with the |odh| project.
 
 .. panels::
 
-   .. toggle:: As a user I can...
+   .. toggle:: As a User I can...
    
       .. include:: /includes/user.rst    
 
@@ -74,6 +74,3 @@ Bug reporting and feature requests
 ----------------------------------
 	   
 .. include:: /includes/bugrepo.rst
- 
-
-
