@@ -485,15 +485,7 @@ The following information is provided for each dataset in the Tourism domain:
    :strong:`MobileStation` which is a mobile probe no longer
    active. It will always return an empty set of values, because
    historical data are not available in the Open Data Hub.
-
-.. _alpinebits-dataset:
-
-https\://alpinebits.opendatahub.bz.it/AlpineBits
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-.. include:: /datasets/alpinebits.rst
 	     
-.. _accommodation-dataset:
-
 .. _package-dataset:
 
 .. dropdown:: :strong:`it.hgv.package`
@@ -603,3 +595,10 @@ Creative Industries
 NOI-Place
 ~~~~~~~~~
 .. include:: /datasets/noiplace.rst
+	     
+.. _alpinebits-dataset:
+
+https\://alpinebits.opendatahub.bz.it/AlpineBits
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+.. include:: /datasets/alpinebits.rst
+
