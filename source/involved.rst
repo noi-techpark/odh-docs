@@ -18,9 +18,9 @@ repository, to make feature requests or suggestions for improvement,
 and even to participate in the development or supply new data to be
 shared.
 
-:numref:`odh-actors` shows at a glance the various roles that one can
-play within the |odh|\, depending on their interest, expertise, and
-skills.
+:numref:`odh-actors` shows at a glance the various roles that
+potential users can play within the |odh|\, according to their
+interest, expertise, skills, and knowledge.
 
 Depending on your interest on the Open Data Hub Project, we welcome
 your participation to the project in one of the roles that we have
@@ -34,6 +34,12 @@ Besides the tasks that you find below, you can also help the Open Data
 Hub project grow and improve by reporting bugs or asking for new
 features, following the directions presented in  :ref:`the dedicated
 section below <bug-reports>`.
+
+Roles and Tasks
+---------------
+
+This section gives an overview of which tasks you can play when
+collaborating with the |odh| project. 
 
 .. panels::
 
