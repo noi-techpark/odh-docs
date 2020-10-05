@@ -5,6 +5,9 @@
    :column: col-md-6
 
    -----
+
+   .. warning:: This dataset is not supported anymore and will
+      be removed from the |odh| in the next future.
    
    This dataset shows the real time position of buses operated by SASA
    in South Tyrol and, through a few subsets, additional information

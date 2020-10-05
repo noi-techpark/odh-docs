@@ -396,12 +396,14 @@ to plan a trip with an own means of transport, for example a car, or a bike.
 Mobility
 ~~~~~~~~
 
-The Mobility/Mobility sub.domain contains data about public
+The Mobility/Mobility sub-domain contains data about public
 transportation, sharing of transport means, and recharging stations
 for e-cars.
 
 .. versionchanged:: 2020.09 Improved description of datasets in the
    mobility/mobility domain, including new information
+
+.. deprecated:: 2020.10 Public Transportation dataset
    
 .. _bikesharing-dataset:
 
@@ -429,8 +431,8 @@ for e-cars.
 
 .. _sasabus-dataset:
 
-.. dropdown:: :strong:`Public Transportation`
-	      
+.. dropdown:: :strong:`Public Transportation` |deprec|
+
    .. include:: /datasets/publictransportation.rst
 
 .. _tourism-datasets:
