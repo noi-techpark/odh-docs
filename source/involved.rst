@@ -3,6 +3,10 @@
 Getting Involved
 =================
 
+.. versionadded:: 2020.10 Rewritten introduction and added description
+   of possible actors involved in the |odh| and how their possible
+   interactions with the |odh| project.
+
 .. _odh-actors:
 
 .. figure:: /images/actors.png
