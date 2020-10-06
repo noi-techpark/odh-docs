@@ -7,7 +7,6 @@ This page contains the list of available howtos, divided into
 areas. The list of howtos, together with a short description is
 available here:
 
-
 .. panels::
 
    .. toggle:: Mobility
@@ -32,9 +31,11 @@ available here:
 	 provided within the Tourism domain.
       #. :doc:`/howto/tourism/tips` Mini howtos, tricks&tips, and
 	 use cases for data in the Tourism domain.
+      #. :doc:`howto/tourism/alpinebits` access AlpineBits data
 
    -----
    :column: col-sm-12
+
 	    
    .. toggle:: Miscellaneous
       
@@ -71,3 +72,4 @@ available here:
    howto/noievents
    howto/tourism/tips
    howto/webcomponents
+   howto/tourism/alpinebits
