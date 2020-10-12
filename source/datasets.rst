@@ -9,6 +9,9 @@ Datasets
 .. versionadded:: 2020.09 New description of domains, new diagrams
    that show the datasets encompassed in each domain.
 
+.. versionadded:: 2020.10 Information about licensing of data
+   contained in the |ODH| responses
+
 The goal of the Open Data Hub project is to make available datasets containing
 data about the South Tyrolean ecosystem, to allow third parties to
 develop novel applications on top of them, consuming the exposed
@@ -270,6 +273,65 @@ to use is to go to the :strong:`swagger interface` of the `tourism
 domains and execute a query: with the output, also the corresponding
 :program:`curl` command used to retrieve the data will be shown.
 
+.. _license-json-records:
+
+License of the JSON Responses
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Whenever you query the data in the |odh|\, the snippet that you
+retrieve always includes a block of information called
+:literal:`LicenseInfo`, similar to the following one:
+
+.. code-block:: json
+   :linenos:
+   :emphasize-lines: 3
+
+   "LicenseInfo": {
+      "Author": "",
+      "License": "CC0",
+      "ClosedData": false,
+      "LicenseHolder": "https://www.lts.it"
+   },
+
+The highlighted line shows a licence, which in this case is
+:strong:`CC0`, i.e., public domain and therefore freely reusable.
+
+This block is always included as a child node within a JSON record
+that starts with an ID and a number of additional information, which
+may include also hyperlinks to resources that are external to the
+|odh|\, like for example this example which refers to a webcam and
+contains a link to an external provider where to find actual images
+from that webcam (snippet code shortened for the sake of simplicity):
+
+.. code-block:: json
+   :linenos:
+   :emphasize-lines: 4-5
+
+   {
+     "Id": "D3659E1F111C4CDB2EC19F8FC95118B7",
+     "Active": true,
+     "Streamurl": null,
+     "Webcamurl": "https://webtv.feratel.com/webtv/?&pg=5EB12424-7C2D-428A-BEFF-0C9140CD772F&design=v3&cam=6323&c1=0",
+     "LicenseInfo": {
+       "Author": "",
+       "License": "CC0",
+       "ClosedData": false,
+       "LicenseHolder": "https://www.lts.it"
+     },
+   },
+
+Whenever hyperlinks like the one shown in line :strong:`5` above
+appear, it must not be implied that the license mentioned in the
+:literal:`LicenseInfo` block (again, CC0) is applied to them:
+everything contained in that link may be covered by a different
+licence.
+
+Indeed, the :strong:`Licence` mentioned in :literal:`LicenseInfo`
+nodes refer only to content of the parent node--i.e., the one that
+starts with :strong:`"Id"`, not to the content of any of the other
+children nodes, including :literal:`Streamurl` and
+:literal:`Webcamurl`.
+
 Authentication
 ~~~~~~~~~~~~~~
 
@@ -466,7 +528,10 @@ Interests, and a lot more.
 .. versionchanged:: 2020.09 Ordered datasets in alphabetical order
 
 .. versionadded:: 2020.09 Added article, common, venue and eventshort datasets
-	    
+		  
+.. versionchanged:: 2020.10 Changed identifier of datasets activity,
+   event, gastronomy, package, and POI
+		    
 The following information is provided for each dataset in the Tourism domain:
 
 .. csv-table::
@@ -490,7 +555,7 @@ The following information is provided for each dataset in the Tourism domain:
 	     
 .. _package-dataset:
 
-.. dropdown:: :strong:`it.hgv.package`
+.. dropdown:: :strong:`it.bz.opendatahub.package`
 	       
    .. include:: /datasets/package.rst
 
@@ -498,25 +563,25 @@ The following information is provided for each dataset in the Tourism domain:
    
 .. _activity-dataset:
 
-.. dropdown:: :strong:`it.lts.activity`
+.. dropdown:: :strong:`it.bz.opendatahub.activity`
 	      
    .. include:: /datasets/activity.rst
 
 .. _event-dataset:
 
-.. dropdown:: :strong:`it.lts.event`
+.. dropdown:: :strong:`it.bz.opendatahub.event`
 
    .. include:: /datasets/event.rst
 
 .. _gastronomy-dataset:
 
-.. dropdown:: :strong:`it.lts.gastronomy`
+.. dropdown:: :strong:`it.bz.opendatahub.gastronomy`
 
    .. include:: /datasets/gastronomy.rst
 
 .. _poi-dataset:
 
-.. dropdown:: :strong:`it.lts.poi`
+.. dropdown:: :strong:`it.bz.opendatahub.poi`
 
    .. include:: /datasets/poi.rst
 
