@@ -27,6 +27,7 @@ provide feedback, or to report issues.
 Getting Started
 ---------------
 
+  
 In the API v2, the central concept is :strong:`Station`: all data come
 from a given :literal:`StationType`, whose complete list can be
 retrieved by simply opening the secong method of the :strong:`Mobility
@@ -81,8 +82,8 @@ results. The three keys have the following meaning:
 Structure of the API calls and Payload
 --------------------------------------
 
-In the Mobility domain, there are three general methods that can be
-used to extract data from the Open Data Hub's datasets and allow to
+In the Mobility domain, there are different general methods that can
+be used to extract data from the Open Data Hub's datasets and allow to
 incrementally refine the data retrieved. They are:
 
 #. :literal:`/v2/` gives the list of the Open Data Hub's entry points,
@@ -103,6 +104,11 @@ incrementally refine the data retrieved. They are:
 #. :literal:`/v2/{representation}/{stationTypes}` returns data about
    the stations themselves, including metadata associated with each, and
    data about its parent stations, if any.
+
+#. :literal:`/v2/{representation}/{edgeTypes}` returns data about edges,
+
+   .. versionadded:: 2020.10 edgeTypes method.
+		     
 #. :literal:`/v2/{representation}/{stationTypes}/{dataTypes}`.  In
    addition to the data of the previous call, it contains the data
    types defined in the dataset.
@@ -123,32 +129,91 @@ incrementally refine the data retrieved. They are:
       meaning that the `from` date is :strong:`included` in the result
       set, while the `to` date is :strong:`excluded`.
 
-
 .. _representation-types:
 
-.. topic:: Showing and browsing data with API v2
-	   
-   The first method described in the previous list introduces a new
-   facility made available by the API v2: the type of
-   `representation` that can be used to browse or access the data
-   provided by the Open Data Hub Team.
-
-   The three alternative, which will be described in detail in an
-   upcoming howto, are: `flat`, `tree`, and `apispec`.
-
-   The `flat` and the `tree` alternatives are :term:`JSON`
-   representation of the data, whereas `apispec` is a YAML
-   representation in OpenAPI v3 format suitable for swagger-like
-   access to the data.
-
-   In both the :strong:`flat` and :strong:`tree` representations, all
-   the metadata and available data are shown and browsable, the
-   difference being that in `flat` all metadata are shown at the same
-   level, while `tree` keeps the hierarchical structure of the
-   metadata. Both of them are available
+Representation types
+~~~~~~~~~~~~~~~~~~~~
    
-   The :strong:`apispec` is a YAML configuration file that can be used
-   to set up a swagger-like interface to the Open Data Hub's data.
+.. versionchanged:: 2020.10 New types of representation for API calls:
+   node and edge.
+
+The first method described in the previous list introduces the
+available entry points to the API v2: the types of `representation`
+that can be used to browse or access the data provided by the Open
+Data Hub Team
+
+The `representation` consists now of a pair of comma-separated
+keywords composed of:
+
+1. the already existent `flat` or `tree` AND
+2. either `node` and `edge`
+
+In both the :strong:`flat` and :strong:`tree` representations, all the
+metadata and available data are shown and browsable, the difference
+being that in `flat`, while
+`tree` keeps the hierarchical structure of the metadata.
+
+The `node` and `edge` describe a :literal:`StationType` and the
+connection between two :literal:`StationType`\s, respectively.
+
+.. _edge-definition:
+
+.. _node-definition:
+
+.. panels::
+
+   Flat
+   ^^^^
+   
+   In the `flat` representation, all metadata and available data can
+   be accessed and browsed. However, no hierarchy appears and data and
+   metadata are shown at the same level.
+
+   ----
+   
+   Tree
+   ^^^^^
+
+   In the `tree` representation, all metadata and available data can
+   be accessed and browsed as in `flat`, but in this case, any
+   hierarchy of data or metadata is preserved and shown.
+
+   
+   -----
+   Node
+   ^^^^^
+
+   A node is a measurement station and contains all metadata
+   associated to it.
+
+   .. note:: While only :strong:`available` nodes are exposed by the
+      |odh|\, the resulting JSON response might still include the
+      `savailable` field, short for station available.
+
+   ----
+
+   Edge
+   ^^^^^
+   
+   An Edge is a connection between two stations, improved with
+   additional information, including some descriptive field and
+   geometries that describe the connection on a map. Internally, an
+   edge is composed of three parts (stations): a start station
+   (beginning of the edge), an end station and a station describing
+   the edge.
+
+   .. note:: While only :strong:`available` edges are exposed by the
+      |odh|\, the resulting JSON response might still include the
+      `sbavailable`, `seavailable` and `eavailable` fields, referring
+      to start station, end station, and edge description, respectively.
+   
+Valid combinations are therefore: `flat,node`, `tree,node`,
+`flat,edge`, and `tree,edge`; if neither `node` or `edge` are
+provided, the default :strong:`node` will be used.
+
+An additional representation is `apispec`, which allows to see and
+reuse the API specification in an OpenAPI v3 YAML format, suitable for
+swagger-like access to the data.
 
 
 In the reminder of this section we show examples of some of the above
