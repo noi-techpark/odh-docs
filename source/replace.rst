@@ -47,4 +47,9 @@
 .. |q| replace:: :strong:`Q:`
 .. |a| replace:: :strong:`A:`
 
+.. badges
+
+.. |deprec| replace:: :badge:`deprecated, badge-danger badge-pill`
+
+
 .. EOF 
