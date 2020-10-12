@@ -325,8 +325,10 @@ The description of each dataset includes the following information:
    dataset (optional)"			   
    "Sources", "The list of Data Providers whose data compose the dataset"
 
-			   
-
+.. note:: There is one :literal:`StationType`, namely
+   :strong:`MobileStation` which is a mobile probe no longer
+   active. It will always return an empty set of values, because
+   historical data are not available in the Open Data Hub.			   
 
 The datasets in the Mobility domain are grouped in :strong:`Traffic`
 and :strong:`Mobility` sub-domains as follows:
@@ -466,7 +468,12 @@ Interests, and a lot more.
 .. versionchanged:: 2020.09 Ordered datasets in alphabetical order
 
 .. versionadded:: 2020.09 Added article, common, venue and eventshort datasets
-	    
+		  
+.. versionchanged:: 2020.10 Changed identifier of datasets activity,
+   event, gastronomy, package, and POI
+
+.. versionadded:: 2020.10 API URL for all Tourism datasets.
+		    
 The following information is provided for each dataset in the Tourism domain:
 
 .. csv-table::
@@ -476,51 +483,42 @@ The following information is provided for each dataset in the Tourism domain:
    "API version", "The versions of the API that can be used to access
    the dataset"			   
    "Swagger URL", "The URL of the swagger interface to the data"
+   "API URL", "The URL of the browsable version of the dataset"
    "Use cases and info", "Link to web sites that use the dataset and
    to use cases based on the dataset"			   
    "Android App", "Link to app for mobile phones developed using the
    data in the dataset"   
    "Sources", "The list of Data Providers whose data compose the dataset"
-
-
-.. note:: There is one :literal:`StationType`, namely
-   :strong:`MobileStation` which is a mobile probe no longer
-   active. It will always return an empty set of values, because
-   historical data are not available in the Open Data Hub.
 	     
 .. _package-dataset:
 
-.. dropdown:: :strong:`it.hgv.package`
+.. dropdown:: :strong:`it.bz.opendatahub.package`
 	       
    .. include:: /datasets/package.rst
-
-.. LTS datasets
    
 .. _activity-dataset:
 
-.. dropdown:: :strong:`it.lts.activity`
+.. dropdown:: :strong:`it.bz.opendatahub.activity`
 	      
    .. include:: /datasets/activity.rst
 
 .. _event-dataset:
 
-.. dropdown:: :strong:`it.lts.event`
+.. dropdown:: :strong:`it.bz.opendatahub.event`
 
    .. include:: /datasets/event.rst
 
 .. _gastronomy-dataset:
 
-.. dropdown:: :strong:`it.lts.gastronomy`
+.. dropdown:: :strong:`it.bz.opendatahub.gastronomy`
 
    .. include:: /datasets/gastronomy.rst
 
 .. _poi-dataset:
 
-.. dropdown:: :strong:`it.lts.poi`
+.. dropdown:: :strong:`it.bz.opendatahub.poi`
 
    .. include:: /datasets/poi.rst
-
-.. ODH datasets
    
 .. _accommodation-dataset:
 
