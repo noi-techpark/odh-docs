@@ -325,8 +325,10 @@ The description of each dataset includes the following information:
    dataset (optional)"			   
    "Sources", "The list of Data Providers whose data compose the dataset"
 
-			   
-
+.. note:: There is one :literal:`StationType`, namely
+   :strong:`MobileStation` which is a mobile probe no longer
+   active. It will always return an empty set of values, because
+   historical data are not available in the Open Data Hub.			   
 
 The datasets in the Mobility domain are grouped in :strong:`Traffic`
 and :strong:`Mobility` sub-domains as follows:
@@ -487,11 +489,6 @@ The following information is provided for each dataset in the Tourism domain:
    "Android App", "Link to app for mobile phones developed using the
    data in the dataset"   
    "Sources", "The list of Data Providers whose data compose the dataset"
-
-.. note:: There is one :literal:`StationType`, namely
-   :strong:`MobileStation` which is a mobile probe no longer
-   active. It will always return an empty set of values, because
-   historical data are not available in the Open Data Hub.
 	     
 .. _package-dataset:
 
