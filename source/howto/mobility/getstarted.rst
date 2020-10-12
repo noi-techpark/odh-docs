@@ -459,8 +459,6 @@ the following limitations:
   :literal:`max`, :literal:`avg`, and :literal:`count`
 * :strong:`No` string selection or manipulation is allowed, but left as
   a post-processing task
-* Functions can be use :strong:`only` with the :literal:`flat`
-  representation
 * When a function is used together with other targets, these are used
   for grouping purposes. For example:
   :literal:`select=sname,max(smetadata.capacity),min(smetadata.capacity)`
