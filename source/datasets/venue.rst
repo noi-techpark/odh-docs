@@ -19,5 +19,6 @@
       "E-mail contact", "|contact|"   
       "API version", "v1"   
       "Swagger URL", ":stinfo:`/Venue`"   
+      "API URL", "http://tourism.opendatahub.bz.it/api/Venue"
       "Use cases and info", "https://databrowser.opendatahub.bz.it/"   
       "Sources", "LTS"

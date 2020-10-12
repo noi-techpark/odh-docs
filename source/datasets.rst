@@ -469,6 +469,8 @@ Interests, and a lot more.
 		  
 .. versionchanged:: 2020.10 Changed identifier of datasets activity,
    event, gastronomy, package, and POI
+
+.. versionadded:: 2020.10 API URL for all Tourism datasets.
 		    
 The following information is provided for each dataset in the Tourism domain:
 
@@ -479,12 +481,12 @@ The following information is provided for each dataset in the Tourism domain:
    "API version", "The versions of the API that can be used to access
    the dataset"			   
    "Swagger URL", "The URL of the swagger interface to the data"
+   "API URL", "The URL of the browsable version of the dataset"
    "Use cases and info", "Link to web sites that use the dataset and
    to use cases based on the dataset"			   
    "Android App", "Link to app for mobile phones developed using the
    data in the dataset"   
    "Sources", "The list of Data Providers whose data compose the dataset"
-
 
 .. note:: There is one :literal:`StationType`, namely
    :strong:`MobileStation` which is a mobile probe no longer
@@ -496,8 +498,6 @@ The following information is provided for each dataset in the Tourism domain:
 .. dropdown:: :strong:`it.bz.opendatahub.package`
 	       
    .. include:: /datasets/package.rst
-
-.. LTS datasets
    
 .. _activity-dataset:
 
@@ -522,8 +522,6 @@ The following information is provided for each dataset in the Tourism domain:
 .. dropdown:: :strong:`it.bz.opendatahub.poi`
 
    .. include:: /datasets/poi.rst
-
-.. ODH datasets
    
 .. _accommodation-dataset:
 
