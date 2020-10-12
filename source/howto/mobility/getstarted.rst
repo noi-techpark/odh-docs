@@ -105,7 +105,9 @@ incrementally refine the data retrieved. They are:
    the stations themselves, including metadata associated with each, and
    data about its parent stations, if any.
 
-#. :literal:`/v2/{representation}/{edgeTypes}` returns data about edges,
+#. :literal:`/v2/{representation}/{edgeTypes}` returns data related to
+   the :ref:`edges <edge-definition>` and their parts, and is very
+   similar to the previous call.
 
    .. versionadded:: 2020.10 edgeTypes method.
 		     
