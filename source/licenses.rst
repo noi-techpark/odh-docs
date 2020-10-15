@@ -66,14 +66,17 @@ These licenses are applied to the |odh| components:
   an overview and quick description of CC licenses and derivative
   material.
 
- 
+.. note:: There is an additional clarification about the licence for
+   any content that is retrieved from the datasets in JSON format,
+   which is detailed in Section :ref:`license-json-records`.
+
 .. _dac-lm:
 
 .. figure:: images/DAC-LM.png
    :scale: 80%
 
-   Creative Common Licenses and derivative material. 
-  
+   Creative Common Licenses and derivative material.
+
 APIs Terms of Service
 ---------------------
 
