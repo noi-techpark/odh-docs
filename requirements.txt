@@ -1,2 +1,3 @@
 sphinx_panels
 sphinx-tooglebutton
+sphinx==3.2.1
