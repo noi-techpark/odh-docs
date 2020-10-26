@@ -4,13 +4,15 @@ Datasets
 ========
 
 .. versionadded:: 2020.09 New domain category `Other`, which includes
-   dataset that do not belong to existing domains.
+   dataset that do not belong to existing domains
 
 .. versionadded:: 2020.09 New description of domains, new diagrams
-   that show the datasets encompassed in each domain.
+   that show the datasets encompassed in each domain
 
 .. versionadded:: 2020.10 Information about licensing of data
    contained in the |ODH| responses
+
+.. versionadded:: 2020.10 Links from the dataset lists to the howto section
 
 The goal of the Open Data Hub project is to make available datasets containing
 data about the South Tyrolean ecosystem, to allow third parties to
