@@ -10,7 +10,7 @@ makes available.
 Applications are grouped according to their status in three categories:
 
 * Production status. These applications are already used in production
-  environment.  
+  environment.
 * Development status, aka `beta stage`, shown by the |beta|
   badge. Application in beta stage are developed actively and might
   already be suitable for a production environment.
@@ -77,7 +77,7 @@ Beta Stage Apps
 * http://traffic.bz.it/ Some streets in South Tyrol are monitored for
   real-time vehicular travel times; the data collected are used by
   this web site to show traffic slowdowns or jams.
-  
+
 * http://bus.bz.it/ This web site shows the real-time positions of the
   buses managed by the public transport operator SASA. Urban or
   suburban bus lines can be shown, and for each bus can be shown the
@@ -86,7 +86,7 @@ Beta Stage Apps
 * https://map.clean-roads.eu/ One of the CLEAN-ROADS project outcomes,
   this web site shows real-time data of the meteorological stations
   that are situated along public streets.
-  
+
 .. _alpha-stage-apps:
 
 Alpha Stage Apps
@@ -95,44 +95,26 @@ Alpha Stage Apps
 All the projects listed in this section have been built during various
 hackathons and must be considered as `Experimental`. |alpha|
 
-
 .. rubric::  Year 2018
-   
-.. panels::
-   :container: container-lg pb-3
-   :column: col-sm-4
 
-   .. toggle:: Summer Lido Hackathon 
+.. tabbed:: Summer Lido Hackathon
 
-      .. include:: /apps/summerlido2018.rst
+   .. include:: /apps/summerlido2018.rst
 
-   -----
-   
-   .. toggle:: HackTheAlps
-	    
-      .. include:: /apps/hackthealps2018.rst
-   
-   -----
-   
-   .. toggle:: Vertical Innovation Hackathon
+.. tabbed:: HackTheAlps
 
-      .. include:: /apps/verticalinnovation2018.rst
+   .. include:: /apps/hackthealps2018.rst
 
+.. tabbed:: Vertical Innovation Hackathon
 
+   .. include:: /apps/verticalinnovation2018.rst
 
 .. rubric:: Year 2019
 
-.. panels::
-   :container: container-lg pb-3
-   :column: col-sm-6
-	    
-   .. toggle:: NOI Hackathon Summer edition 
+.. tabbed:: NOI Hackathon Summer edition
 
-      .. include:: /apps/summerlido2019.rst
+   .. include:: /apps/summerlido2019.rst
 
-   -----
+.. tabbed:: NOI Hackathon SFScon Edition
 
-   .. toggle:: NOI Hackathon SFScon Edition 
-
-      .. include:: /apps/sfscon2019.rst
-      
+   .. include:: /apps/sfscon2019.rst
