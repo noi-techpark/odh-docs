@@ -75,6 +75,9 @@ and "$TOKEN" is the string of the token.
 Authentication To Internal Infrastructure
 -----------------------------------------
 
+.. versionchanged:: 2020.10 Authentication to internal infrastructure
+   does not require :literal:`client_secret` and credentials anyumore 
+
 Access to the Open Data Hub's internal infrastructure requires
 authentication, which is provided by :strong:`Keycloack`, an Open
 Source software that provides Identity and Access Management. In a
@@ -89,14 +92,27 @@ documentation <https://www.keycloak.org/documentation>`_.
 
 Source code for both the authentication server and a few pre-cooked
 examples of applications configured to connect to it can be found in
-dedicated servers created by the Open Data Hub Team: the
+dedicated repository created by the Open Data Hub Team: the
 `authentication server
-<https://github.com/noi-techpark/authentication-server-examples>`_,
-and the `example applications
-<https://github.com/noi-techpark/authentication-server-examples>`_,
+<https://github.com/noi-techpark/authentication-server-examples>`_.
 
 Quick howto
 ~~~~~~~~~~~
+
+.. note:: This howto describes the :strong:`old guidelines` to access
+   authentication to |odh|\s internal infrastructure. A newer version
+   of :literal:`odh-generic-client` has been implemented, that does
+   not require anymore credentials and a
+   :strong:`client_secret`. Therefore, all :command:`curl` examples
+   below can be safely used without all the corresponding options;
+   credentials can be used for testing purposes, as explained in the
+   `repository's README.md
+   <https://github.com/noi-techpark/authentication-server-examples/blob/master/readme.md>`_
+   file.
+
+   More information in the `dedicated repository
+   <https://github.com/noi-techpark/authentication-server-examples>`_.
+
 
 In order to access the internal infrastructure, you need first to get
 a token, then use it together with the API. Both steps can be achieved
@@ -114,7 +130,7 @@ from the Open Data Hub. For this, also other OAuth2 flows exist.
 With your username and password, and a client secret (:strong:`my_username`,
 :strong:`my_password`, :strong:`the_client_secret`), the access token is granted
 to you with the following call:
- 
+
 .. code-block:: bash
    :name: grant-token
    :caption: Receiving an access topic
@@ -134,7 +150,7 @@ parameters given in the query above with
 .. code-block::
    :name: refresh-token
    :caption: Refreshing the access token
-	  
+
    curl -X POST -L "https://auth.opendatahub.bz.it/auth/realms/noi/protocol/openid-connect/token" \
    --header 'Content-Type: application/x-www-form-urlencoded' \
    --data-urlencode 'grant_type=refresh_token' \
@@ -150,7 +166,7 @@ Here, use the refresh token received from :numref:`grant-token`.
 Once you received the access token, it is easy to use it in actual
 requests. The following API call shows how to get all
 :strong:`sname`\s and :strong:`mvalue`\s from the VMS dataset:
-	    
+
 .. code-block::
    :name: get-closed-data
    :caption: Retrieving data with the access token
@@ -164,5 +180,3 @@ except for some of the latest values and historical data: Only a
 subset of `m`\-prefixed data from the :literal:`/latest` and
 :literal:`/from/to` API calls can be closed date. See section
 :ref:`api-v2-structure`) for more information about the API calls.
-
-
