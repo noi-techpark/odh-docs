@@ -72,7 +72,7 @@ features, by following the directions presented in  :ref:`the dedicated
 section below <bug-reports>`.
 
 .. _roles-tasks:
-   
+
 Roles and Tasks
 ---------------
 
@@ -87,38 +87,35 @@ out a list of tasks that belong to each of these roles; we believe
 that this list can help you understand which type of contribution you
 can give to the |odh| project!
 
-
 .. panels::
 
-   .. toggle:: As a User I can...
-   
-      .. include:: /includes/user.rst    
+   .. dropdown:: As a User I can...
 
-   -----
-   
-   .. toggle:: As an App Developer I can...
+      .. include:: /includes/user.rst
+
+   ---
+
+   .. dropdown:: As an App Developer I can...
 
       .. include:: /includes/appdevel.rst
 
-   -----
+   ---
 
-   .. toggle:: As a Open Data Hub Core Hacker I can...
+   .. dropdown:: As a Open Data Hub Core Hacker I can...
 
       .. include:: /includes/corehacker.rst
 
+   ---
 
-   -----
-   
+   .. dropdown:: As a Data Provider I can....
 
-   .. toggle:: As a Data Provider I can....
-      
+
       .. include:: /includes/dataproviders.rst
-			 
+
 
 .. _bug-reports:
-   
+
 Bug reporting and feature requests
 ----------------------------------
-	   
-.. include:: /includes/bugrepo.rst
 
+.. include:: /includes/bugrepo.rst
