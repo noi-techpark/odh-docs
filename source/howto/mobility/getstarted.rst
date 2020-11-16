@@ -158,6 +158,7 @@ being that in `flat`, while
 The `node` and `edge` describe a :literal:`StationType` and the
 connection between two :literal:`StationType`\s, respectively.
 
+
 .. _edge-definition:
 
 .. _node-definition:
@@ -186,7 +187,16 @@ connection between two :literal:`StationType`\s, respectively.
    ^^^^^
 
    A node is a measurement station and contains all metadata
-   associated to it.
+   associated to it. The :strong:`node` representation corresponds to
+   the `old` (pre-2020.10) output of the API calls, therefore it can
+   safely be omitted for backward compatibility. As an example, valid
+   for all methods listed in the :ref:`previous section
+   <api-v2-structure>`, these two API calls are equivalent.
+
+     :literal:`/v2/node/{stationTypes}`
+	    
+     :literal:`/v2/{stationTypes}`
+	    
 
    .. note:: While only :strong:`available` nodes are exposed by the
       |odh|\, the resulting JSON response might still include the
@@ -200,23 +210,28 @@ connection between two :literal:`StationType`\s, respectively.
    An Edge is a connection between two stations, improved with
    additional information, including some descriptive field and
    geometries that describe the connection on a map. Internally, an
-   edge is composed of three parts (stations): a start station
-   (beginning of the edge), an end station and a station describing
-   the edge.
+   edge is composed of three parts (all calles `stations`): a start
+   station (beginning of the edge), an end station and a station
+   describing the edge. Whenever retrieving an Edge, all metadata
+   referring directly to it begin with `e`, like for example
+   `eactive`, `eavailable`, and so on.
 
    .. note:: While only :strong:`available` edges are exposed by the
       |odh|\, the resulting JSON response might still include the
       `sbavailable`, `seavailable` and `eavailable` fields, referring
-      to start station, end station, and edge description, respectively.
+      to start station, end station, and edge description,
+      respectively.
+
+   Moreover, there are neither measurements nor types associated with
+   edges.
    
-Valid combinations are therefore: `flat,node`, `tree,node`,
-`flat,edge`, and `tree,edge`; if neither `node` or `edge` are
-provided, the default :strong:`node` will be used.
+Valid combinations are therefore: `flat,node`; `tree,node`;
+`flat,edge`; `tree,edge`; if neither `node` or `edge` are provided,
+the default :strong:`node` will be used.
 
 An additional representation is `apispec`, which allows to see and
 reuse the API specification in an OpenAPI v3 YAML format, suitable for
 swagger-like access to the data.
-
 
 In the reminder of this section we show examples of some of the above
 mentioned API methods and describe the outcome, including the various
@@ -325,7 +340,7 @@ The meaning of the keys are:
   describe the type of plugs available to recharge a car.
 
   .. hint:: The metadata has only one limitation: it must be either a
-     JSON object or :literal:`NULL`.
+     JSON object or :literal:`NULL0`.
      
 * :strong:`name`: a (human readable) name of the station
 * :strong:`origin`: the `source` of the station, which can be anything, like for
