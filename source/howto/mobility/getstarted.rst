@@ -191,13 +191,17 @@ connection between two :literal:`StationType`\s, respectively.
    the `old` (pre-2020.10) output of the API calls, therefore it can
    safely be omitted for backward compatibility. As an example, valid
    for all methods listed in the :ref:`previous section
-   <api-v2-structure>`, these two API calls are equivalent.
+   <api-v2-structure>`, these API calls are equivalent.
 
-     :literal:`/v2/node/{stationTypes}`
+     :literal:`/v2/tree,node/{stationTypes}`
 	    
-     :literal:`/v2/{stationTypes}`
-	    
+     :literal:`/v2/flat,node/{stationTypes}`
 
+     :literal:`/v2/tree/{stationTypes}`
+	    
+     :literal:`/v2/flat/{stationTypes}`
+
+   
    .. note:: While only :strong:`available` nodes are exposed by the
       |odh|\, the resulting JSON response might still include the
       `savailable` field, short for station available.
@@ -340,7 +344,7 @@ The meaning of the keys are:
   describe the type of plugs available to recharge a car.
 
   .. hint:: The metadata has only one limitation: it must be either a
-     JSON object or :literal:`NULL0`.
+     JSON object or :literal:`NULL`.
      
 * :strong:`name`: a (human readable) name of the station
 * :strong:`origin`: the `source` of the station, which can be anything, like for
