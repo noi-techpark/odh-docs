@@ -597,6 +597,8 @@ Additional Parameters
 
 .. versionadded:: 2020-May `shownull` and `distinct`.
 
+.. versionadded:: 2020.11 `timezone`
+
 There are a couple of other parameter that can be given to the API
 calls and are described in this section.
 
@@ -617,3 +619,21 @@ the API call.
 .. warning:: Keeping track of all distinct values might be a
    resource-intensive process that significantly rises the response
    time, therefore use it with care.
+
+
+.. rubric:: :literal:`timezone`
+
+By default, the timestamp of the |odh| responses is given in
+:strong:`UTC` time zone. The use of the :literal:`timezone` parameter
+allows to modify the timestamp whenever desirable. To use it, simply
+append the parameter to your API call.
+
+   :literal:`/flat/ParkingStation/occupied/latest?timezone=UTC-2`
+	    
+	    
+   :literal:`/flat/ParkingStation/occupied/latest?timezone=Europe/Rome`
+
+
+.. note:: As argument to the :literal:`timezone` parameter, you can
+   use any allowed value in `Java's Time zone implementation
+   <https://docs.oracle.com/javase/8/docs/api/java/time/ZoneId.html#of-java.lang.String-java.util.Map->`_.
