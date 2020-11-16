@@ -4,13 +4,15 @@ Datasets
 ========
 
 .. versionadded:: 2020.09 New domain category `Other`, which includes
-   dataset that do not belong to existing domains.
+   dataset that do not belong to existing domains
 
 .. versionadded:: 2020.09 New description of domains, new diagrams
-   that show the datasets encompassed in each domain.
+   that show the datasets encompassed in each domain
 
 .. versionadded:: 2020.10 Information about licensing of data
    contained in the |ODH| responses
+
+.. versionadded:: 2020.10 Links from the dataset lists to the howto section
 
 The goal of the Open Data Hub project is to make available datasets containing
 data about the South Tyrolean ecosystem, to allow third parties to
@@ -225,7 +227,7 @@ data by using a browser:
    interact with the Mobility domain datasets and the description of
    the new APIv2 are described in the :ref:`dedicated howto
    <get-started-mobility>`.
-	
+
 #. Open the :strong:`Analytics for Mobility` web page, at
    https://analytics.opendatahub.bz.it/ This portal uses data in the
    mobility domain to display various information about the sensors,
@@ -374,17 +376,17 @@ team developed and made available.
 The description of each dataset includes the following information:
 
 .. csv-table::
-   
+
    "Output", "The output format of the API call"
    "E-mail contact", "An e-mail contact for the dataset"
    "API version", "The versions of the API that can be used to access
-   dataset"			   
+   dataset"
    ":literal:`StationType`", "The direct link to each
    :literal:`stationType` included in the dataset"
    "Use cases and info", "Link to web sites that use the dataset and to
    use cases based on the dataset"
    "Web component", "Link to Web Components developed on top of the
-   dataset (optional)"			   
+   dataset (optional)"
    "Sources", "The list of Data Providers whose data compose the dataset"
 
 .. note:: There is one :literal:`StationType`, namely
@@ -394,6 +396,13 @@ The description of each dataset includes the following information:
 
 The datasets in the Mobility domain are grouped in :strong:`Traffic`
 and :strong:`Mobility` sub-domains as follows:
+
+.. seealso:: The following howto will help you access data in the
+   Mobility domain:
+
+    :doc:`/howto/mobility/getstarted` Access and technical details about the available data
+
+    Other howtos are available in the :ref:`dedicated section <howto-list>`.
 
 Traffic
 ~~~~~~~
@@ -421,7 +430,7 @@ to plan a trip with an own means of transport, for example a car, or a bike.
    .. include:: /datasets/linkstation.rst
 
 .. _parking-dataset:
-   
+
 .. dropdown:: :strong:`it.bz.opendatahub.parking`
    :animate: fade-in-slide-down
 
@@ -444,7 +453,7 @@ to plan a trip with an own means of transport, for example a car, or a bike.
 .. dropdown:: :strong:`it.bz.opendatahub.trafficstation (1)`
 
    .. include:: /datasets/trafficstation.rst
-	     
+
 .. _trafficstation-vms-dataset:
 
 .. dropdown:: :strong:`it.bz.opendatahub.trafficstation (2)`
@@ -468,7 +477,7 @@ for e-cars.
    mobility/mobility domain, including new information
 
 .. deprecated:: 2020.10 Public Transportation dataset
-   
+
 .. _bikesharing-dataset:
 
 .. dropdown:: :strong:`it.bz.opendatahub.bikesharing`
@@ -530,38 +539,50 @@ Interests, and a lot more.
 .. versionchanged:: 2020.09 Ordered datasets in alphabetical order
 
 .. versionadded:: 2020.09 Added article, common, venue and eventshort datasets
-		  
+
 .. versionchanged:: 2020.10 Changed identifier of datasets activity,
    event, gastronomy, package, and POI
 
 .. versionadded:: 2020.10 API URL for all Tourism datasets.
-		    
+
 The following information is provided for each dataset in the Tourism domain:
 
 .. csv-table::
-   
-   "Output", "The output format of the API call"   
-   "E-mail contact", "An e-mail contact for the dataset"   
+
+   "Output", "The output format of the API call"
+   "E-mail contact", "An e-mail contact for the dataset"
    "API version", "The versions of the API that can be used to access
-   the dataset"			   
+   the dataset"
    "Swagger URL", "The URL of the swagger interface to the data"
    "API URL", "The URL of the browsable version of the dataset"
    "Use cases and info", "Link to web sites that use the dataset and
-   to use cases based on the dataset"			   
+   to use cases based on the dataset"
    "Android App", "Link to app for mobile phones developed using the
-   data in the dataset"   
+   data in the dataset"
    "Sources", "The list of Data Providers whose data compose the dataset"
-	     
+
+.. seealso:: The following howto will help you access data in the
+   Tourism domain:
+
+    :doc:`/howto/tourism/getstarted` Access and technical details
+    about the available data
+
+    :doc:`/howto/tourism/browse` Browse Open Data offered by the |odh|
+   
+    :doc:`/howto/tourism/tips` Quick tips and troubleshooting
+	 
+    Other howtos are available in the :ref:`dedicated section <howto-list>`.
+   
 .. _package-dataset:
 
 .. dropdown:: :strong:`it.bz.opendatahub.package`
-	       
+
    .. include:: /datasets/package.rst
-   
+
 .. _activity-dataset:
 
 .. dropdown:: :strong:`it.bz.opendatahub.activity`
-	      
+
    .. include:: /datasets/activity.rst
 
 .. _event-dataset:
@@ -581,13 +602,13 @@ The following information is provided for each dataset in the Tourism domain:
 .. dropdown:: :strong:`it.bz.opendatahub.poi`
 
    .. include:: /datasets/poi.rst
-   
+
 .. _accommodation-dataset:
 
 .. dropdown:: :strong:`it.bz.opendatahub.accommodation`
 
    .. include:: /datasets/accommodation.rst
-	     
+
 .. _activity_poi-dataset:
 
 .. dropdown:: :strong:`it.bz.opendatahub.activity_poi`
@@ -657,10 +678,9 @@ Creative Industries
 NOI-Place
 ~~~~~~~~~
 .. include:: /datasets/noiplace.rst
-	     
+
 .. _alpinebits-dataset:
 
 https\://alpinebits.opendatahub.bz.it/AlpineBits
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 .. include:: /datasets/alpinebits.rst
-
