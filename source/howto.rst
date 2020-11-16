@@ -3,6 +3,9 @@
 List of HOWTOs
 ==============
 
+.. versionchanged:: 2020.10 Panels layout was replaced by tabs in the
+   howto list.
+
 This page contains the list of available howtos, divided into
 areas. The list of howtos, together with a short description is
 available here:

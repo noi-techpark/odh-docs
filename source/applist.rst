@@ -3,6 +3,9 @@
 Apps Built From Open Data Hub Datasets
 ======================================
 
+.. versionchanged:: 2020.10 Panels layout was replaced with tabs in
+   the `Alpha Stage` application list.
+
 This section features a list of applications--and their
 descriptions--built using the :doc:`datasets` that the Open Data Hub team
 makes available.
