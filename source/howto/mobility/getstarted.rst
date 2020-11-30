@@ -514,9 +514,12 @@ of values, respectively:
 Logical Operators
 ~~~~~~~~~~~~~~~~~
 
+.. versionadded:: 2020.11 description of logical operators
+
 Besides the operators described in section
 :ref:`mobility-where-clause`, |odh| supports the use of logical
-operators :literal:`and` and :literal:`or`.
+operators :literal:`and` and :literal:`or` in the :literal:`WHERE`
+clause, like these examples show.
 
 .. code-block::
    :linenos:
@@ -527,10 +530,22 @@ operators :literal:`and` and :literal:`or`.
    or(x.eq.3,y.eq.5)
    or(x.eq.3,and(y.gt.5,y.lt.10))
 
-That is, the operators are followed by a comma-separated list of
-arguments. In complex logical expression, parentheses are employed to
-assign precedence. Lines 1 and 2 above are equivalent, because the
-default logical operator is :literal:`and`.
+Logical operators are followed by a comma-separated list of `targets`,
+which can be filters (see previous section for some example), or other
+logical operators. In complex logical expression, parentheses are
+employed to assign precedence. Lines 1 and 2 above are equivalent,
+because the default logical operator is :literal:`and`.
+
+The above example will be translated into Postgres as follows:
+
+.. code-block::
+   :linenos:
+
+   (x = 3 AND y = 5)
+   (x = 3 AND y = 5)
+   
+   (x = 3 OR y = 5)
+   (x = 3 OR (y > 5 AND y < 10))
 
 Additional Parameters
 ~~~~~~~~~~~~~~~~~~~~~
