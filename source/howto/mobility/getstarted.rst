@@ -392,6 +392,7 @@ form, with an implicit :strong:`and` among the filters, therefore
 evaluation of the filters takes place only if all filters would
 individually evaluate to :strong:`true`.
 
+
 .. _mobility-select-clause:
 
 The :literal:`SELECT` Clause
@@ -507,6 +508,29 @@ of values, respectively:
   than 100 parking spaces
 * :literal:`where=smetadata.capacity.gt.100,smetadata.municipality.eq."Bolzano -
   Bozen"` same as previous query, but only parking lots in Bolzano are shown.
+
+.. _logical-operators:
+
+Logical Operators
+~~~~~~~~~~~~~~~~~
+
+Besides the operators described in section
+:ref:`mobility-where-clause`, |odh| supports the use of logical
+operators :literal:`and` and :literal:`or`.
+
+.. code-block::
+   :linenos:
+
+   and(x.eq.3,y.eq.5)
+   x.eq.3,y.eq.5
+
+   or(x.eq.3,y.eq.5)
+   or(x.eq.3,and(y.gt.5,y.lt.10))
+
+That is, the operators are followed by a comma-separated list of
+arguments. In complex logical expression, parentheses are employed to
+assign precedence. Lines 1 and 2 above are equivalent, because the
+default logical operator is :literal:`and`.
 
 Additional Parameters
 ~~~~~~~~~~~~~~~~~~~~~
