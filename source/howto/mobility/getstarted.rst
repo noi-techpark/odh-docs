@@ -478,6 +478,7 @@ form, with an implicit :strong:`and` among the filters, therefore
 evaluation of the filters takes place only if all filters would
 individually evaluate to :strong:`true`.
 
+
 .. _mobility-select-clause:
 
 The :literal:`SELECT` Clause
@@ -545,8 +546,6 @@ the following limitations:
   :literal:`max`, :literal:`avg`, and :literal:`count`
 * :strong:`No` string selection or manipulation is allowed, but left as
   a post-processing task
-* Functions can be use :strong:`only` with the :literal:`flat`
-  representation
 * When a function is used together with other targets, these are used
   for grouping purposes. For example:
   :literal:`select=sname,max(smetadata.capacity),min(smetadata.capacity)`
@@ -595,6 +594,44 @@ of values, respectively:
   than 100 parking spaces
 * :literal:`where=smetadata.capacity.gt.100,smetadata.municipality.eq."Bolzano -
   Bozen"` same as previous query, but only parking lots in Bolzano are shown.
+
+.. _logical-operators:
+
+Logical Operators
+~~~~~~~~~~~~~~~~~
+
+.. versionadded:: 2020.11 description of logical operators
+
+Besides the operators described in section
+:ref:`mobility-where-clause`, |odh| supports the use of logical
+operators :literal:`and` and :literal:`or` in the :literal:`WHERE`
+clause, like these examples show.
+
+.. code-block::
+   :linenos:
+
+   and(x.eq.3,y.eq.5)
+   x.eq.3,y.eq.5
+
+   or(x.eq.3,y.eq.5)
+   or(x.eq.3,and(y.gt.5,y.lt.10))
+
+Logical operators are followed by a comma-separated list of `targets`,
+which can be filters (see previous section for some example), or other
+logical operators. In complex logical expression, parentheses are
+employed to assign precedence. Lines 1 and 2 above are equivalent,
+because the default logical operator is :literal:`and`.
+
+The above example will be translated into Postgres as follows:
+
+.. code-block::
+   :linenos:
+
+   (x = 3 AND y = 5)
+   (x = 3 AND y = 5)
+   
+   (x = 3 OR y = 5)
+   (x = 3 OR (y > 5 AND y < 10))
 
 Additional Parameters
 ~~~~~~~~~~~~~~~~~~~~~
