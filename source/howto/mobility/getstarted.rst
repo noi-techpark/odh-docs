@@ -557,6 +557,8 @@ the following limitations:
 The :literal:`WHERE` Clause
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+.. versionadded:: 2020.12 explanation about string values in WHERE clauses
+
 The :literal:`WHERE` clause can be used to define conditions to filter
 out unwanted results and can be built with the use of the following
 operators:
@@ -593,7 +595,14 @@ of values, respectively:
 * :literal:`where=smetadata.capacity.gt.100` returns only parking lots with more
   than 100 parking spaces
 * :literal:`where=smetadata.capacity.gt.100,smetadata.municipality.eq."Bolzano -
-  Bozen"` same as previous query, but only parking lots in Bolzano are shown.
+  Bozen"` same as previous query, but only parking lots in Bolzano are
+  shown.
+
+In these two examples we use a number in the filter (i.e., gt.\
+:strong:`100`), which is by default automatically recognised as a
+number and the required math is calculated out of the box. In case
+there is a query in which you use a number, but need to consider is as
+a string, you need to use double quotes, like gt.\ :strong:`"100"`.
 
 .. _logical-operators:
 
