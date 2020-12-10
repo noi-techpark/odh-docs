@@ -601,7 +601,7 @@ of values, respectively:
 In these two examples we use a number in the filter (i.e., gt.\
 :strong:`100`), which is by default automatically recognised as a
 number and the required math is calculated out of the box. In case
-there is a query in which you use a number, but need to consider is as
+there is a query in which you use a number, but need to consider it as
 a string, you need to use double quotes, like gt.\ :strong:`"100"`.
 
 .. _logical-operators:
