@@ -278,7 +278,7 @@ to use is to go to the :strong:`swagger interface` of the `tourism
 domains and execute a query: with the output, also the corresponding
 :program:`curl` command used to retrieve the data will be shown.
 
-.. _license-json-records:
+.. _r-access:
 
 Statistical Access with R
 ~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -294,6 +294,8 @@ an R package that can be used to access `BZ Analytics
 capabilities. Download and installation instructions, along with
 example usage can be found on the `bzar repository
 <https://github.com/noi-techpark/it.bz.opendatahub.analytics.libs/tree/main/api/R>`_.
+
+.. _license-json-records:
 
 License of the JSON Responses
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
