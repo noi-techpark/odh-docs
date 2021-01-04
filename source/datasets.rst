@@ -306,12 +306,14 @@ retrieve always includes a block of information called
    :linenos:
    :emphasize-lines: 3
 
-   "LicenseInfo": {
-      "Author": "",
-      "License": "CC0",
-      "ClosedData": false,
-      "LicenseHolder": "https://www.lts.it"
-   },
+   {
+      "LicenseInfo": {
+        "Author": "",
+	"License": "CC0",
+	"ClosedData": false,
+	"LicenseHolder": "https://www.lts.it"
+      }
+   }
 
 The highlighted line shows a licence, which in this case is
 :strong:`CC0`, i.e., public domain and therefore freely reusable.
@@ -337,8 +339,8 @@ from that webcam (snippet code shortened for the sake of simplicity):
        "License": "CC0",
        "ClosedData": false,
        "LicenseHolder": "https://www.lts.it"
-     },
-   },
+     }
+   }
 
 Whenever hyperlinks like the one shown in line :strong:`5` above
 appear, it must not be implied that the license mentioned in the
