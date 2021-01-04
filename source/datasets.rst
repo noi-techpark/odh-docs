@@ -12,7 +12,10 @@ Datasets
 .. versionadded:: 2020.10 Information about licensing of data
    contained in the |ODH| responses
 
-.. versionadded:: 2020.10 Links from the dataset lists to the howto section
+.. versionadded:: 2020.10 Links from the dataset lists to the howto
+   section
+
+.. versionadded:: 2021:01 access to data using R
 
 The goal of the Open Data Hub project is to make available datasets containing
 data about the South Tyrolean ecosystem, to allow third parties to
@@ -276,6 +279,21 @@ domains and execute a query: with the output, also the corresponding
 :program:`curl` command used to retrieve the data will be shown.
 
 .. _license-json-records:
+
+Statistical Access with R
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+`R <https://www.r-project.org/>`_ is a free software for statistical
+analysis that creates also graphics from the gathered data.
+
+The Open Data Hub Team has developed and made available `bzar
+<https://github.com/noi-techpark/it.bz.opendatahub.analytics.libs/tree/main/api/R>`_,
+an R package that can be used to access `BZ Analytics
+<https://analytics.opendatahub.bz.it/>`_ data (see also
+:ref:`bz-analytics`) and process them using all the R
+capabilities. Download and installation instructions, along with
+example usage can be found on the `bzar repository
+<https://github.com/noi-techpark/it.bz.opendatahub.analytics.libs/tree/main/api/R>`_.
 
 License of the JSON Responses
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

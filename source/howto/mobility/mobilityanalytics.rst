@@ -1,4 +1,5 @@
-	
+.. _bz-analytics:
+
 How to Access Analytics Data in the Mobility Domain
 ===================================================
 
