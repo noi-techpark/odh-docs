@@ -358,7 +358,7 @@ The meaning of the keys are:
 
      .. code::
 	
-	curl -X GET "https://mobility.api.opendatahub.bz.it/v2/tree" -H "accept: application/json" 
+	~$ curl -X GET "https://mobility.api.opendatahub.bz.it/v2/tree" -H "accept: application/json" 
 
 :literal:`/v2/{representation}/{stationTypes}/{dataTypes}/latest`
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

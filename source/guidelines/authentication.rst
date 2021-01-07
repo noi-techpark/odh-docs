@@ -64,7 +64,7 @@ description of the client-server interaction:
 
    .. code-block:: bash
 			    
-      curl -X GET "$HTTP_URL_WITH_GET_PARAMETERS" -H "accept: */*" -H "Authorization: Bearer $TOKEN"
+      ~$ curl -X GET "$HTTP_URL_WITH_GET_PARAMETERS" -H "accept: */*" -H "Authorization: Bearer $TOKEN"
 
 
 Here, $HTTP_URL_WITH_GET_PARAMETERS is the URL containing the API call
