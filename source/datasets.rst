@@ -234,6 +234,28 @@ content.
 
 	 .. include:: /includes/CLI.rst
 
+      ----
+
+      .. _ab-access:
+
+      .. dropdown:: AlpineBits client
+
+	 TBD
+
+	 .. placeholder
+	    .. include:: /includes/AlpineBits.rst
+
+      ----
+
+      .. _r-access:
+
+      .. dropdown:: Statistical Access with R
+
+
+	 TBD
+
+	 .. placeholder
+	   .. include:: /includes/R.rst
 
 .. _license-json-records:
 
