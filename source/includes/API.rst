@@ -9,8 +9,8 @@ used within the Open Data Hub's domains.
 === ============  =============
 API  Tourism      Mobility
 === ============  =============
-v1   Recommended  |deprecated|
-v2   --            Recommended
+v1  |recommend|   |deprecated|
+v2   --           |recommend|
 === ============  =============
 
 

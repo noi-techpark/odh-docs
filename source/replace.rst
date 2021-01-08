@@ -51,5 +51,5 @@
 
 .. |deprecated| replace:: :badge:`deprecated, badge-danger`
 .. |deprec| replace:: :badge:`deprecated, badge-danger badge-pill`
-
+.. |recommend| replace:: :badge:`recommended, badge-success badge-pill`
 .. EOF 
