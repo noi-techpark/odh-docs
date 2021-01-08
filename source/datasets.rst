@@ -12,7 +12,11 @@ Datasets
 .. versionadded:: 2020.10 Information about licensing of data
    contained in the |ODH| responses
 
-.. versionadded:: 2020.10 Links from the dataset lists to the howto section
+.. versionadded:: 2020.10 Links from the dataset lists to the howto
+   section
+
+.. versionchanged:: 2021.01 Reorganised presentation of the
+   :ref:`data-access` section
 
 The goal of the Open Data Hub project is to make available datasets containing
 data about the South Tyrolean ecosystem, to allow third parties to
@@ -112,6 +116,8 @@ At the date of writing, datasets in the :ref:`Mobility
 <mobility-datasets>` and :ref:`Tourism <tourism-datasets>` domains are
 available.
 
+.. _data-access:
+
 Accessing data in the Open Data Hub
 -----------------------------------
 
@@ -126,154 +132,108 @@ the data and the Open Data Hub team. The remainder of this section describes
 all the possibilities to access the Open Data Hub's datasets and their
 content.
 
-.. _ninja api:
 
-API
-~~~
+.. dropdown:: Browser access
+   :title: font-weight-bold
+   :animate: fade-in-slide-down
 
-Programmatic and non-interactive access to the Open Data Hub's dataset
-is possible using the APIs made available by the Open Data Hub Team.
+   Accessing data in the Open Data Hub by using a browser is useful on
+   different levels: for the casual user, who can have a look at the
+   type and quality of data provided; for a developer, that can use
+   the :term:`REST API` implemented by the Open Data Hub or even check
+   if the results of his app are coherent with those retrieved with
+   the API; for everyone in order to get acquainted with the various
+   methods to retrieve data.
 
-The APIs are composed of a few generic methods, that can be combined
-with many parameters to retrieve only the relevant data and then
-post-processed in the preferred way.
+   More in detail, these are the possibilities to interact with Open Data Hub's
+   data by using a browser:
 
-The following table summarises how the two versions of the API can be
-used within the Open Data Hub's domains.
+   .. panels::
+      :container: container-fluid pb-3
+      :column: col-lg-4 col-md-4 col-sm-6 col-xs-12 p-2
 
-=== ============  =============
-API  Tourism      Mobility
-=== ============  =============
-v1   Recommended   Deprecated
-v2   --            Recommended
-=== ============  =============
+      Go to the :ref:`applist` section of the documentation,
+      particularly sub-sections :ref:`production-stage-apps` and
+      :ref:`beta-stage-apps`, and choose one of the web sites and
+      portals that are listed there. Each of them uses the data
+      gathered from one or more OPEN DATA HUB's datasets to display a
+      number of useful information. You can then see how data are
+      exposed and browse them.
 
+      ---
 
-There are currently two versions of the API, v1 and v2, with the
-former now :strong:`deprecated` for the Mobility domain and marked as
-such |deprecated| throughout the Open Data Hub documentation. New users are
-recommended to use the new API v2, while users of the API v1 are
-encouraged to plan a migration to the new API.
+      In the same :ref:`applist` section, you can also check the list
+      of the :strong:`Alpha Stage Apps` and choose one of them that
+      you think you can expand, then get in touch with the authors to
+      suggest additional features or collaborate with them to discuss
+      its further development to improve it.
 
-The new API v2 has a different approach compared to the previous
-version, and therefore is not compatible with the API v1, the main
-difference being that all data stored in the Open Data Hub can now be
-retrieved `from a single endpoint`, while with API v1 there was an
-endpoint for each dataset.
+      ---
 
-This change in approach requires also a breaking change for the users
-of API v1. The initial step, indeed, will not be to open the URL of
-the dataset and start exploring, but to retrieve the
-:literal:`stationType`\s and then retrieve additional data about each
-station. A :literal:`stationType` is the main object of a datasets,
-about which all the information in a dataset relate to; a dataset
-includes at least one :literal:`stationType`.  A new, dedicated howto
-describing in detail the new API v2 and a few basic examples is
-:ref:`already available <get-started-mobility>` in the dedicated section
-of this documentation.
+      Access the `ODH Tourism data browser
+      <http://tourism.opendatahub.bz.it/>`_ and search for the Open
+      Data available in the Tourism domain. You can simply use those
+      data for your convenience, or you might even find a novel way to
+      exploit those data and use them in an app or portal you are
+      going to develop. A detailed howto is available:
+      :ref:`tourism-data-browser-howto` to help you getting acquainted
+      with the browser.
 
-.. note:: It is important to remark that the API v2 is :strong:`only
-   available` for datasets in the :strong:`Mobility` Domain.
+      ---
 
+      Go to the :strong:`Swagger interface` of the datasets in the
+      Tourism domain, located at
+      http://tourism.opendatahub.bz.it/swagger/ui/index, to learn how
+      the REST APIs are built and how you can script them to fetch
+      data for your application. To get started, there is a dedicated
+      howto: :ref:`tourism-data-howto` that will guide you in the
+      first steps.
 
-Browser access
-~~~~~~~~~~~~~~
+      ---
 
-Accessing data in the Open Data Hub by using a browser is useful on different
-levels: for the casual user, who can have a look at the type and
-quality of data provided; for a developer, that can use the
-:term:`REST API` implemented by the Open Data Hub or even check if the results
-of his app are coherent with those retrieved with the API; for
-everyone in order to get acquainted with the various methods to
-retrieve data.
+      Access the :strong:`Swagger interface` of the datasets in the
+      Mobility domain, located at
+      https://mobility.api.opendatahub.bz.it/. Like in the case of the
+      tourism' Swagger interface, you can learn REST API call for that
+      domain and fetch data for your application. More possibilities
+      to interact with the Mobility domain datasets and the
+      description of the new APIv2 are described in the
+      :ref:`dedicated howto <get-started-mobility>`.
 
-More in detail, these are the possibilities to interact with Open Data Hub's
-data by using a browser:
+      ---
 
-#. Go to the :ref:`applist` section of the documentation, particularly
-   sub-sections :ref:`production-stage-apps` and
-   :ref:`beta-stage-apps`, and choose one of the web sites and portals
-   that are listed there. Each of them uses the data gathered from one
-   or more OPEN DATA HUB's datasets to display a number of useful
-   information. You can then see how data are exposed and browse them.
+      Open the :strong:`Analytics for Mobility` web page, at
+      https://analytics.opendatahub.bz.it/ This portal uses data in
+      the mobility domain to display various information about the
+      sensors, including their locations, what they measure, and
+      actual data in near-real time. You can retrieve data gathered by
+      the sensors directly from the dataset, in almost real-time.
 
-#. In the same :ref:`applist` section, you can also check the list of
-   the :strong:`Alpha Stage Apps` and choose one of them that you
-   think you can expand, then get in touch with the authors to suggest
-   additional features or collaborate with them to discuss its further
-   development to improve it.
+.. dropdown:: Programmatic access
+   :title: font-weight-bold
+   :animate: fade-in-slide-down
 
-#. Access the `ODH Tourism data browser
-   <http://tourism.opendatahub.bz.it/>`_ and search for the Open Data
-   available in the Tourism domain. You can simply use those data for
-   your convenience, or you might even find a novel way to exploit
-   those data and use them in an app or portal you are going to
-   develop. A detailed howto is available:
-   :ref:`tourism-data-browser-howto` to help you getting acquainted
-   with the browser.
+   Programmatic and non-interactive access to the Open Data Hub's dataset
+   is possible using any of the following methods made  available
+   by the |odh| team.
 
-#. Go to the :strong:`Swagger interface` of the datasets in the
-   Tourism domain, located at
-   http://tourism.opendatahub.bz.it/swagger/ui/index, to learn how the REST
-   APIs are built and how you can script them to fetch data for your
-   application. To get started, there is a dedicated howto:
-   :ref:`tourism-data-howto` that will guide you in the first steps.
+   .. panels::
+      :container: container-fluid
 
-#. Access the :strong:`Swagger interface` of the datasets in the
-   Mobility domain, located at
-   https://mobility.api.opendatahub.bz.it/. Like in the case of the
-   tourism' Swagger interface, you can learn REST API call for that
-   domain and fetch data for your application. More possibilities to
-   interact with the Mobility domain datasets and the description of
-   the new APIv2 are described in the :ref:`dedicated howto
-   <get-started-mobility>`.
+      .. _ninja api:
 
-#. Open the :strong:`Analytics for Mobility` web page, at
-   https://analytics.opendatahub.bz.it/ This portal uses data in the
-   mobility domain to display various information about the sensors,
-   including their locations, what they measure, and actual data in
-   near-real time. You can retrieve data gathered by the sensors
-   directly from the dataset, in almost real-time.
+      .. dropdown:: API
 
-CLI access
-~~~~~~~~~~
+	 .. include:: /includes/API.rst
 
-Unlike browser access, that provides an interactive access to data,
-with the option to incrementally refine a query, command line access
-proves useful for non-interactive, one-directional, and quick data
-retrieval in a number of scenarios, including:
+      ---
 
-* Scripting, data manipulation and interpolation, to be used in
-  statistical analysis.
-* Applications that gather data and present them to the end users.
-* Automatic updates to third-parties websites or kiosk-systems like
-  e.g., in the hall of hotels.
+      .. _cli-access:
 
-Command line access to the data is usually carried out with the
-:program:`curl` Linux utility, which is used to retrieve information
-in a non-interactive way from a remote site and can be
-used with a variety of options and can save the contents it downloads,
-which can them be send to other applications and manipulated.
+      .. dropdown:: CLI access
 
-The number of options required by :program:`curl` to retrieve data
-from Open Data Hub's dataset is limited, usually they are not more than 3 or
-4, but their syntax and content might become long and not easily
-readable by a human, due to the number of :ref:`filters
-<common-filters>` available. For example, to retrieve the list of all
-points of interests in South Tyrol, the following command should be
-used:
+	 .. include:: /includes/CLI.rst
 
-.. code-block:: bash
-
-   curl -X GET "http://tourism.opendatahub.bz.it/api/ODHActivityPoi?pagenumber=1&pagesize=10&type=63&subtype=null&poitype=null&idlist=null&locfilter=null&langfilter=null&areafilter=null&highlight=null&source=null&odhtagfilter=null&odhactive=null&active=null&seed=null&latitude=null&longitude=null&radius=null" -H "accept: application/json"
-
-
-Your best opportunity to learn about the correct syntax and parameters
-to use is to go to the :strong:`swagger interface` of the `tourism
-<http://tourism.opendatahub.bz.it/swagger/ui/index>`_ or `mobility
-<https://mobility.api.opendatahub.bz.it/>`_
-domains and execute a query: with the output, also the corresponding
-:program:`curl` command used to retrieve the data will be shown.
 
 .. _license-json-records:
 
