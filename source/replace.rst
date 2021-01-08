@@ -34,9 +34,9 @@
    :alt: This application is in beta stage
 
 .. API v2
-   
-.. |deprecated| image:: /images/deprecated.png
-   :alt: API v1 are now deprecated
+.. replaced with a badge, see below
+   .. |deprecated| image:: /images/deprecated.png
+      :alt: API v1 are now deprecated
 
 .. abbreviations
 
@@ -49,7 +49,7 @@
 
 .. badges
 
+.. |deprecated| replace:: :badge:`deprecated, badge-danger`
 .. |deprec| replace:: :badge:`deprecated, badge-danger badge-pill`
-
 
 .. EOF 

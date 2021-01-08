@@ -1,6 +1,7 @@
 .. e-charging station
 
 .. panels::
+   :container: container-fluid
    :column: col-md-6
 
    -----
