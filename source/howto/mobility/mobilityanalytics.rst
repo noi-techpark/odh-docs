@@ -9,8 +9,8 @@ This howto guides you in browsing and querying data from the Mobility
 domain using the https://analytics.opendatahub.bz.it/ web site.
 
 .. note:: Access to data on this website is now possible by
-   using R. See :ref:`r-access` section for information and
-   directions.
+   using R. See :ref:`the dedicated section <r-access>`  for
+   information and directions.
 
 
 Introduction
