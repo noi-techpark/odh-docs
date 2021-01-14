@@ -76,10 +76,15 @@ and cleanly distinguish the initial creation and later updates.
 
 .. _example-sql:
 
-.. topic:: Sample Code 1: A DDL source file called :file:`foo.sql`
+.. panels::
+   :container: container-fluid:
+
+   Sample Code 1: A DDL source file called :file:`foo.sql`
+   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
 
    .. code-block:: sql
-      
+
       -- foo.sql
       -- a document with appendices
       --
@@ -87,9 +92,9 @@ and cleanly distinguish the initial creation and later updates.
       -- version 1.0
       --
       -- copyright, author etc.
-      
+
       create sequence foo_seq;
-   
+
       create table doc (
           id      int default nextval('foo_seq'),
 	  title   text not null,
@@ -107,21 +112,24 @@ and cleanly distinguish the initial creation and later updates.
 	  primary key(id),
 	  foreign key (doc_id) references doc(id)
       );
- 
+
       comment on table appendix is 'stores appendices to foo documents';
-   
+
       create table foo_version (
           version varchar not null
       );
 
       insert into foo_version values ('1.0');
 
-.. _update-sql:
+   ---
 
-.. topic:: Sample Code 2: Update to schema of `foo.sql`, version 2.0:
+   .. _update-sql:
+
+   Sample Code 2: Update to schema of `foo.sql`, version 2.0:
+   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
    .. code-block:: sql
-		   
+
       -- foo.sql
       -- a document with appendices
       --
@@ -130,23 +138,23 @@ and cleanly distinguish the initial creation and later updates.
       -- version 1.0
       --
       -- copyright, author etc.
-      
+
       BEGIN;
-      
+
       alter table doc add column publication_date date default current_date;
-      
+
       update foo_version set version = '2.0';
-      
+
       COMMIT;
-     
+
 The explicit transaction (:command:`BEGIN` - :command:`COMMIT`)
 will make sure the DDL update is applied cleanly or not at
 all. Note that DDL statements in PostgreSQL are transactional.
- 	
+
 
 If methodology 2 (ORM) is chosen, the contributor should provide the
 cleanest DDL output the framework provides.
- 
+
 Contributors can expect their database design to be stored into a
 schema whose name is determined by the |odh| team and executed as a
 non-privileged user account that has the given schema in its default
