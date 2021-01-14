@@ -1,11 +1,17 @@
-	
+.. _bz-analytics:
+
 How to Access Analytics Data in the Mobility Domain
 ===================================================
+
+.. versionadded:: 2021.01 data access with R.
 
 This howto guides you in browsing and querying data from the Mobility
 domain using the https://analytics.opendatahub.bz.it/ web site.
 
-.. introduction
+.. note:: Access to data on this website is now possible by
+   using R. See :ref:`r-access` section for information and
+   directions.
+
 
 Introduction
 ------------
@@ -37,7 +43,7 @@ Italian provinces and regions.
    The landing page of analytics.mobility.bz.it.
 
 While there are many controllers in the page, that allow to tweak the
-search parameter, the basic usage is quite simple and requires 
+search parameter, the basic usage is quite simple and requires
 two steps:
 
 #. Select a dataset to be added to the chart, from the drop-down menus
@@ -108,4 +114,3 @@ coordinates. Additional information displayed depend on the dataset.
    :width: 90%
 
    Details of a sensor.
-
