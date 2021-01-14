@@ -203,9 +203,7 @@ retrieve and save data in CSV format:
 
 * when using a browser, append the keyword :literal:`&format=csv` to any
   query and you will be prompted to provide a name to the file that
-  will contain the required data. Examples:
-
-  .. code:: bash
+  will contain the required data. Examples::
 	    
      http://tourism.opendatahub.bz.it/api/Activity?fields=Id,Detail.en.Title,ContactInfos.en.CompanyName&pagesize=500
      
@@ -225,14 +223,14 @@ retrieve and save data in CSV format:
 
   .. code:: bash
 	    
-     curl -X GET "http://tourism.opendatahub.bz.it/api/Activity?fields=Id,Detail.en.Title,ContactInfos.en.CompanyName&pagesize=500" -H "accept: application/json"
+     ~$ curl -X GET "http://tourism.opendatahub.bz.it/api/Activity?fields=Id,Detail.en.Title,ContactInfos.en.CompanyName&pagesize=500" -H "accept: application/json"
   
   
   The output of this query will be in JSON format.
 
   .. code:: bash
 	    
-     curl -X GET "http://tourism.opendatahub.bz.it/api/Activity?fields=Id,Detail.en.Title,ContactInfos.en.CompanyName&pagesize=500" -H "accept: text/csv"
+     ~$ curl -X GET "http://tourism.opendatahub.bz.it/api/Activity?fields=Id,Detail.en.Title,ContactInfos.en.CompanyName&pagesize=500" -H "accept: text/csv"
   
   
   The output of this query will be in CSV format.

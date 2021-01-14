@@ -64,14 +64,16 @@ If you plan to access the API methods with command line tools like
 :command:`curl` or :command:`wget`, or only from scripts, you need to
 add an authentication header to each call. For example, using curl:
 
-.. parsed-literal::
+.. code-block:: bash
 
-   curl -X GET --header 'Accept: application/json' --header \\
-   'Authorization: Bearer vLwemAqrLKVKXsvgvEQgtkeanbMq7Xcs' \\
+   curl -X GET --header 'Accept: application/json' \
+   --header 'Authorization: Bearer vLwemAqrLKVKXsvgvEQgtkeanbMq7Xcs' \
    'http\://tourism.opendatahub.bz.it/api/Gastronomy'
 
 .. note:: The string of the token is shortened for the sake of
    clarity. 
+
+   
 
 It is important to mention that the authorisation header reaquires the
 following syntax: :strong:`Authorization: Bearer`, followed by the

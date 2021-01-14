@@ -15,6 +15,8 @@ Datasets
 .. versionadded:: 2020.10 Links from the dataset lists to the howto
    section
 
+.. versionadded:: 2021:01 access to data using R
+		  
 .. versionchanged:: 2021.01 Reorganised presentation of the
    :ref:`data-access` section
 
@@ -254,8 +256,27 @@ content.
 
 	 TBD
 
+
 	 .. placeholder
 	   .. include:: /includes/R.rst
+
+
+.. _r-access:
+
+Statistical Access with R
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+`R <https://www.r-project.org/>`_ is a free software for statistical
+analysis that creates also graphics from the gathered data.
+
+The Open Data Hub Team has developed and made available `bzar
+<https://github.com/noi-techpark/it.bz.opendatahub.analytics.libs/tree/main/api/R>`_,
+an R package that can be used to access `BZ Analytics
+<https://analytics.opendatahub.bz.it/>`_ data (see also
+:ref:`bz-analytics`) and process them using all the R
+capabilities. Download and installation instructions, along with
+example usage can be found on the `bzar repository
+<https://github.com/noi-techpark/it.bz.opendatahub.analytics.libs/tree/main/api/R>`_.
 
 .. _license-json-records:
 
@@ -270,12 +291,14 @@ retrieve always includes a block of information called
    :linenos:
    :emphasize-lines: 3
 
-   "LicenseInfo": {
-      "Author": "",
-      "License": "CC0",
-      "ClosedData": false,
-      "LicenseHolder": "https://www.lts.it"
-   },
+   {
+      "LicenseInfo": {
+        "Author": "",
+	"License": "CC0",
+	"ClosedData": false,
+	"LicenseHolder": "https://www.lts.it"
+      }
+   }
 
 The highlighted line shows a licence, which in this case is
 :strong:`CC0`, i.e., public domain and therefore freely reusable.
@@ -301,8 +324,8 @@ from that webcam (snippet code shortened for the sake of simplicity):
        "License": "CC0",
        "ClosedData": false,
        "LicenseHolder": "https://www.lts.it"
-     },
-   },
+     }
+   }
 
 Whenever hyperlinks like the one shown in line :strong:`5` above
 appear, it must not be implied that the license mentioned in the

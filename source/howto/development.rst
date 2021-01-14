@@ -1,4 +1,4 @@
-
+make html
 .. geobank #10
 
 .. _development:
@@ -62,7 +62,7 @@ command, provided you have the rights to install software:
 
 .. code-block:: bash
 	  
-   odh@odh:~$ sudo apt-get install git openjdk-8-jdk postgresql postgis maven tomcat8 xmlstarlet 
+   ~$ sudo apt-get install git openjdk-8-jdk postgresql postgis maven tomcat8 xmlstarlet 
 
 This command ensures that all dependencies are installed as well. If
 you have none of these package already installed, you might need to
@@ -109,7 +109,7 @@ read.
 
 .. code-block:: bash
 
-   odh@odh:~$ service tomcat8 status
+   ~$ service tomcat8 status
      tomcat8.service - LSB: Start Tomcat.
       Loaded: loaded (/etc/init.d/tomcat8; bad; vendor preset: enabled)
       Active: active (running) since Wed 2018-06-13 16:36:28 CEST; 14min ago
@@ -126,8 +126,9 @@ If you do not use systemd, the command will have a differnt output:
 
 .. code-block:: bash
 
-   odh@odh:~$ service tomcat8 status
+   ~$ service tomcat8 status
    [ ok ] Tomcat servlet engine is running with pid 11357.
+   
 
 From a browser you should connect to http://localhost:8080/ (replace
 :envvar:`localhost` this the URL or IP where your application server
@@ -143,7 +144,7 @@ entering your password.
 
 .. code-block:: bash
    
-   odh@odh:~$ sudo service tomcat8 start
+   ~$ sudo service tomcat8 start
    [sudo] password for odh: 
 
 You can check again if tomcat is running with the command
@@ -157,7 +158,7 @@ You can use the :command:`netstat` command line utility, like this:
    
 .. code-block:: bash
    
-  root@odh:~$ netstat -plnt4
+  ~# netstat -plnt4
   Active Internet connections (only servers)
   Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program name    
   tcp        0      0 0.0.0.0:5432              0.0.0.0:*               LISTEN      2427/postgresql        
@@ -169,3 +170,5 @@ postgres respectively) in the :strong:`Local Address`.
 
 It is suggested to run this command as superuser, because otherwise
 not all information is present.
+
+netstat -plnt4

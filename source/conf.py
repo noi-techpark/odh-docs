@@ -29,12 +29,17 @@ extensions = [
     'sphinx.ext.extlinks',
     'sphinx.ext.imgconverter',
     'ga', 'hidemail',
-    'sphinx_togglebutton', 'sphinx_panels'
+    'sphinx_togglebutton', 'sphinx_panels',
+    'sphinx_copybutton'
 ]
 
 ### Configuration values for extensions
 
 togglebutton_hint = "More..."
+
+copybutton_prompt_text = r'\~\$ |\~\# '
+copybutton_prompt_is_regexp = True
+
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
@@ -59,7 +64,7 @@ author = u'The ODH Team'
 # built documents.
 #
 # The short X.Y version.
-version = u'2020.09'
+version = u'2021.01'
 # The full version, including alpha/beta/rc tags.
 release = version
 
