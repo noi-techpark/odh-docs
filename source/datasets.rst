@@ -255,6 +255,14 @@ content.
 
 	 .. include:: /includes/R.rst
 
+      ---
+
+      .. _sparql-access:
+
+      .. dropdown:: SPARQL access to |odh| data
+
+	 .. include:: /includes/sparql.rst
+
 
 
 .. _license-json-records:
