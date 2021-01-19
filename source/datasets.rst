@@ -20,6 +20,8 @@ Datasets
 .. versionchanged:: 2021.01 Reorganised presentation of the
    :ref:`data-access` section
 
+.. versionadded:: 2021.01 access to data with SPARQL
+
 The goal of the Open Data Hub project is to make available datasets containing
 data about the South Tyrolean ecosystem, to allow third parties to
 develop novel applications on top of them, consuming the exposed
@@ -185,7 +187,7 @@ content.
 
       Go to the :strong:`Swagger interface` of the datasets in the
       Tourism domain, located at
-      http://tourism.opendatahub.bz.it/swagger/ui/index, to learn how
+      http://tourism.opendatahub.bz.it/swagger/ui/index to learn how
       the REST APIs are built and how you can script them to fetch
       data for your application. To get started, there is a dedicated
       howto: :ref:`tourism-data-howto` that will guide you in the
@@ -210,6 +212,18 @@ content.
       sensors, including their locations, what they measure, and
       actual data in near-real time. You can retrieve data gathered by
       the sensors directly from the dataset, in almost real-time.
+
+      ---
+      :column: col-12 p-2
+
+      Open the `Open Data Hub Knowledge Graph Portal
+      <https://sparql.opendatahub.bz.it/>`_ where you can explore all
+      the data that are already available as a virtual knowledge
+      graph. Here you can check out some of the precooked query to see
+      and modify them to suit your needs with the help of W3C's
+      `SPARQL query language
+      <https://www.w3.org/TR/sparql11-overview/>`_; SPARQL can be used
+      also in the `Playground` to freely query the endpoint.
 
 .. dropdown:: Programmatic access
    :title: font-weight-bold
@@ -254,8 +268,6 @@ content.
       .. dropdown:: Statistical Access with R
 
 	 .. include:: /includes/R.rst
-
-
 
 .. _license-json-records:
 
