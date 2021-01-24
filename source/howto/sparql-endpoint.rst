@@ -5,10 +5,30 @@ How to Access |odh| Data Using SPARQL
 
 The |odh|\'s dataset can be queried using the SPARQL query language,
 using the `Open Data Hub Knowledge Graph Portal
-<https://sparql.opendatahub.bz.it/>`_. This howto helps you in
-getting acquainted with the functionalities offered by the endpoint.
+<https://sparql.opendatahub.bz.it/>`_. This howto helps you in getting
+acquainted with the functionalities offered by the endpoint. However,
+this howto does not cover SPARQL: if you are not familiar with it,
+here is some reference:
 
+* The `SPARQL Query Language Recommendation
+  <https://www.w3.org/TR/sparql11-query/>`_ is the official and
+  normative W3C definition of SPARQL and also contains a lot of
+  examples and querie to learn from
 
+* A `tutorial about SPARQL
+  <https://jena.apache.org/tutorials/sparql.html>`_ written by Apache
+  Jena's team. Oriented toward Jena, it nonetheless includes and
+  explains a lot of basic notions
+
+   
+Data Available in the Portal
+----------------------------
+
+The data that can be accessed from the SPARQL endpoint originate
+currently from the following datasets: :ref:`Gatronomy
+<gastronomy-dataset>`, :ref:`Accommodation <accommodation-dataset>`,
+and :ref:`Event <event-dataset>`.
+  
 Layout of the SPARQL endpoint
 -----------------------------
 
@@ -68,11 +88,11 @@ zones.
    
 3. A number of visualisation and download options in the bottom area.
 
-
 .. _playground:
 
 Working in The Playground
 -------------------------
+
 
 .. _regular-queries:
 
