@@ -112,6 +112,9 @@ numfig_format = { 'figure': ('Figure %s'),
                   'section': ('Section')
 }
 
+# fontawesome css, required by sphix-panels
+panels_add_fontawesome_latex = True
+
 # -- Options for HTML output ----------------------------------------------
 
 # The theme to use for HTML and HTML Help pages.  See the documentation for
