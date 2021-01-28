@@ -24,22 +24,7 @@ here is some reference:
 Data Available in the Portal
 ----------------------------
 
-The data that can be accessed from the SPARQL endpoint originate
-currently from the following datasets: :ref:`Gatronomy
-<gastronomy-dataset>`, :ref:`Accommodation <accommodation-dataset>`,
-and :ref:`Event <event-dataset>`.
-  
-Layout of the SPARQL endpoint
------------------------------
-
-The landing page of the portal is shown in :numref:`kg-portal` and consists of three main
-zones.
-
-.. _kg-portal:
-
-.. figure:: /images/kg-portal.png
-
-   The landing page of |odh| SPARQL endpoint.
+The data that can be accessed from the SPARQL endpoint    The landing page of |odh| SPARQL endpoint.
 
 1. The three buttons in the banner at the top of the page.
 
@@ -83,10 +68,29 @@ zones.
       
 2. The main area, consisting of a large textarea, in which to write
    SQARQL queries, and of a number of precooked queries when the `Regular
-   Queries` or `Data Quality Queries` buttons are clicked.
+   Queries` or `Data Quality Queries` buttons are clicked. The three
+   buttons on the textarea's top right corner can be used to
 
-   
-3. A number of visualisation and download options in the bottom area.
+   * :fa:`share-alt` Copy the URL of the query and share it, store it
+     for future use, or use it in scripts.
+   * :fa:`expand-arrows-alt` maximise the textarea
+   * :fa:`caret-square-right` execute the query. If the query contains
+     some syntactic error, it is accompanied by a yellow question mark
+     :fa:`exclamation-triangle,text-warning bg-dark` and it is not
+     executed, but an error message is displayed
+     
+3. A number of visualisation and download options in the bottom
+   area. Also this part of the area can be maximised
+
+   * `Table`. A simple table with a result on each row
+   * `Response`. The actual JSON received as result
+   * `Pivot Table`. Analyse statistically the query result
+   * `Google chart`. Use the data retrieved within a Google Chart. The
+     default representation is a simple table, more can be employed,
+     by clicking on the :button:`Chart Config` button on the
+     right-hand side.
+   * `Geo`. See on a map the location of the results
+   * :fa:`download` download the result set as a CSV file
 
 .. _playground:
 
