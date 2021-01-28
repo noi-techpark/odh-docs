@@ -97,13 +97,31 @@ The data that can be accessed from the SPARQL endpoint    The landing page of |o
 Working in The Playground
 -------------------------
 
+The playground is the place in which you can build you queries against
+the |odh| endpoint. Queries can be built using built-in or custom
+prefixes as well as all SPARQL operators. There is a validation of the
+queries, therefore in case of mistakes a red warning icon
+:opticon:`issue-opened,text-danger` will appear on the left-hand side
+of the offending line.
+
+.. note:: Generic queries might return hundreds or thousands of
+   results, so the use of the :literal:`LIMIT` clause helps to receive
+   quicker answers.
 
 .. _regular-queries:
 
 Working with Regular Queries
 ----------------------------
 
+Regular queries are predefined queries that give a glimpse of the data
+contained in the |odh|\. Regular queries are rather generic and can be
+used as starting point for more precise and refined queries. They can
+be edited directly in the textarea or copy and pasted in the Playground.
+
 .. _data-quality-queries:
 
 Working with Data Quality Queries
 ---------------------------------
+
+Data quality queries are built with purpose to verify if there are
+incomplete or wrong data in a dataset. 
