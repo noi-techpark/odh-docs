@@ -50,6 +50,9 @@ available here:
    #. :doc:`/howto/webcomponents` share your Web Components with Open
       Data Hub team
 
+   #. :doc:`/howto/sparql-endpoint` query |odh| datasets using W3C's
+      Query Language. 
+
 
 .. toctree::
    :maxdepth: 1
@@ -67,3 +70,4 @@ available here:
    howto/tourism/tips
    howto/webcomponents
    howto/tourism/alpinebits
+   howto/sparql-endpoint
