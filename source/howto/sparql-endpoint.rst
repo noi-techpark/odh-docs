@@ -1,3 +1,5 @@
+.. _howto-sparql:
+
 How to Access |odh| Data Using SPARQL
 =====================================
 
@@ -24,7 +26,7 @@ here is some reference:
 Data Available in the Portal
 ----------------------------
 
-The data that can be accessed from the SPARQL endpoint    The landing page of |odh| SPARQL endpoint.
+The landing page of |odh|\'s SPARQL endpoint contains the following elements:
 
 1. The three buttons in the banner at the top of the page.
 
