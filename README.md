@@ -1,5 +1,4 @@
-=============================
- Open Data Hub Documentation
+Open Data Hub Documentation
 =============================
 
 This repository contains documentation about the Open Data Hub
