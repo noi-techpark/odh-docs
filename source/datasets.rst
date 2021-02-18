@@ -708,11 +708,12 @@ underlying the SPARQL-accessible datasets. The description of each
    Common Notation
    ^^^^^^^^^^^^^^^
 
-   Diagrams use UML formalism, in particular, the following applies to
-   all VKGs.
-
-   Prefix
-     The default prefix used is :strong:`http://schema.org/`.
+   Diagrams use UML class diagram formalism widely adopted in
+   Knowledge Representation and in particular in the `W3C's
+   Recommendation` documents for the Semantic Web.  The following
+   additional notation applies:
+   
+   Prefix The default prefix used is :strong:`http://schema.org/`.
      
    Arrows  
      White arrows denote a `sub-class` relationship, while black
@@ -730,9 +731,7 @@ underlying the SPARQL-accessible datasets. The description of each
    ---
 
    .. image::  /images/sparql/cardinality.png
-
-
-
+	       
 .. _accommodation-dataset-kg:
 
 .. dropdown:: Accommodation Dataset
@@ -745,8 +744,25 @@ underlying the SPARQL-accessible datasets. The description of each
 
 .. dropdown:: Event Dataset
 
+   .. panels::
+
+      
+      -----
+
+      .. figure:: /images/sparql/odh-event.png
+
+
+	 The UML diagram of the :ref:`Event Dataset <event-dataset>`.
 
 .. seealso::
 
    The :ref:`SPARQL howto <howto-sparql>`, which guides you in
    interacting with the SPARQL endpoint.
+
+   W3C Recommendation for `OWL2
+   <http://www.w3.org/TR/2012/REC-owl2-syntax-20121211/>`_ and `RDF
+   <http://www.w3.org/TR/2014/REC-rdf11-concepts-20140225/>`_.
+
+   Official Specification of `UML Infrastructure
+   <http://www.omg.org/spec/UML/2.1.2/Infrastructure/PDF/>`_ are
+   available from `Object management group <https://www.omg.org/>`_
