@@ -22,6 +22,9 @@ Datasets
 
 .. versionadded:: 2021.01 access to data with SPARQL
 
+.. versionadded:: 2021.02 |odh| Virtual Knowledge Graph and
+   description of underlying Knowledge Model
+
 The goal of the Open Data Hub project is to make available datasets containing
 data about the South Tyrolean ecosystem, to allow third parties to
 develop novel applications on top of them, consuming the exposed
@@ -683,9 +686,11 @@ https\://alpinebits.opendatahub.bz.it/AlpineBits
 
 
 .. _datasets-km:
+
+.. _odh-vkg:
    
-The Dataset's Knowledge Model
------------------------------
+The |odh| Virtual Knowledge Graph
+---------------------------------
 
 .. versionadded:: 2020.02 Description of the Knowledge Model
    underlying datasets Accommodation and Event
@@ -721,12 +726,24 @@ underlying the SPARQL-accessible datasets. The description of each
      side--excerpt from the :ref:`event dataset <event-dataset-kg>`--
      can be read as `0 to N` :literal:`MeetingRoom`\ `s are`
      :literal:`ContainedInPlace` :literal:`Place`
-     
+
    ---
 
    .. image::  /images/sparql/cardinality.png
 
-		  
+
+
+.. _accommodation-dataset-kg:
+
+.. dropdown:: Accommodation Dataset
+
+.. _gastronomy-dataset-kg:
+
+.. dropdown:: Gastronomy Dataset
+
+.. _event-dataset-kg:
+
+.. dropdown:: Event Dataset
 
 
 .. seealso::
