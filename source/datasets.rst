@@ -680,3 +680,56 @@ NOI-Place
 https\://alpinebits.opendatahub.bz.it/AlpineBits
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 .. include:: /datasets/alpinebits.rst
+
+
+.. _datasets-km:
+   
+The Dataset's Knowledge Model
+-----------------------------
+
+.. versionadded:: 2020.02 Description of the Knowledge Model
+   underlying datasets Accommodation and Event
+
+Some datasets in the |odh| are organised into a `Virtual Knowledge
+Graph` that can be accessed using SPARQL from the dedicated `SPARQL
+endpoint <https://sparql.opendatahub.bz.it>`_. In order to define more
+precise queries, this section describes the Knowledge Models (`KM`)
+underlying the SPARQL-accessible datasets. The description of each
+|km| is accompanied by an UML diagram which shows the KM at a glance.
+
+.. panels::
+   
+
+   Common Notation
+   ^^^^^^^^^^^^^^^
+
+   Diagrams use UML formalism, in particular, the following applies to
+   all VKGs.
+
+   Prefix
+     The default prefix used is :strong:`http://schema.org/`.
+     
+   Arrows  
+     White arrows denote a `sub-class` relationship, while black
+     arrows denote `object properties`.
+   
+   Cardinality
+     Cardinality of :strong:`1` is usually not shown, but implied; the
+     `look across
+     <https://www.quora.com/How-do-we-read-cardinality-in-a-UML-diagram-or-in-E-A-diagram>`_
+     notation is used. For example, the image on the right-hand
+     side--excerpt from the :ref:`event dataset <event-dataset-kg>`--
+     can be read as `0 to N` :literal:`MeetingRoom`\ `s are`
+     :literal:`ContainedInPlace` :literal:`Place`
+     
+   ---
+
+   .. image::  /images/sparql/cardinality.png
+
+		  
+
+
+.. seealso::
+
+   The :ref:`SPARQL howto <howto-sparql>`, which guides you in
+   interacting with the SPARQL endpoint.

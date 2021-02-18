@@ -5839,7 +5839,7 @@ footer span.commit code,footer span.commit .rst-content tt,.rst-content footer s
 
 .rst-content dl dt {
     font-weight: bold;
-    margin-bottom: 12px
+    /* margin-bottom: 12px */
 }
 
 .rst-content dl p,.rst-content dl table,.rst-content dl ul,.rst-content dl ol {
