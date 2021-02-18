@@ -46,6 +46,7 @@
 .. |dto| replace:: :abbr:`DTO (Data Transfer Object)`
 .. |q| replace:: :strong:`Q:`
 .. |a| replace:: :strong:`A:`
+.. |km| replace:: :abbr:`KM (Kwowledge Model)`
 
 .. badges
 
