@@ -80,7 +80,7 @@ language = None
 # This patterns also effect to html_static_path and html_extra_path
 exclude_patterns = [ 'replace.rst', 'dtp.rst', 'datasets',
                      'domains.rst', 'architecture.rst',
-                     'howto/tourism/access.rst', 'includes' ] 
+                     'howto/tourism/access.rst', 'includes', 'kg.rst' ] 
 
 # The name of the Pygments (syntax highlighting) style to use.
 pygments_style = 'sphinx'
