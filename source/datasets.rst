@@ -692,18 +692,28 @@ https\://alpinebits.opendatahub.bz.it/AlpineBits
 The |odh| Virtual Knowledge Graph
 ---------------------------------
 
-.. versionadded:: 2020.02 Description of the Knowledge Model
-   underlying datasets Accommodation and Event
+.. versionadded:: 2021.02 Description of the Knowledge Model
+   underlying datasets Accommodation, Gastronomy, and Event datasets
 
-Some datasets in the |odh| are organised into a `Virtual Knowledge
+Some datasets in the |odh|, namely :ref:`Accommodation
+<accommodation-dataset>`, :ref:`Gastronomy <gastronomy-dataset>`, and
+:ref:`Event <event-dataset>`, are organised into a `Virtual Knowledge
 Graph` that can be accessed using SPARQL from the dedicated `SPARQL
 endpoint <https://sparql.opendatahub.bz.it>`_. In order to define more
 precise queries, this section describes the Knowledge Models (`KM`)
-underlying the SPARQL-accessible datasets. The description of each
-|km| is accompanied by an UML diagram which shows the KM at a glance.
+underlying these datasets; the description of each |km| is accompanied
+by an UML diagram which shows the KM at a glance.
+
+
+Besides standard W3C's OWL and RDF vocabularies, the |odh| VKG
+uses:
+
+* `schema.org <http://schema.org/>`_ for most of the entities used
+* `geosparql <http://www.opengis.net/ont/geosparql#>`_ for
+  geo-references and coordinates of objects
+* `purl <http://purl.org/dc/terms/>`_ for linking to related resources
 
 .. panels::
-
 
    Common Notation
    ^^^^^^^^^^^^^^^
@@ -713,7 +723,18 @@ underlying the SPARQL-accessible datasets. The description of each
    Recommendation` documents for the Semantic Web.  The following
    additional notation applies:
 
-   Prefix The default prefix used is :strong:`http://schema.org/`.
+   Prefix
+      The default prefix used for classes and properties is
+      :strong:`http://schema.org/`. This means that, unless
+      differently stated, the definition of classes and properties,
+      including their attributes, rely on a common standard as defined
+      in schema.org's vocabulary. As examples, see the
+      `LodgingBusiness <http:schema.org//LodgingBusiness>`_ class and
+      the `containedInPlace <https://schema.org/containedInPlace>`_
+      property.
+
+      .. hint:: Other prefixes are explicitly pre-pended to the Class
+	 or Property name, like e.g., `noi:numberOfUnits`.
 
    Arrows
      Arrows with a white tip denote a `sub-class` relationship, while
@@ -724,9 +745,10 @@ underlying the SPARQL-accessible datasets. The description of each
      `look across
      <https://www.quora.com/How-do-we-read-cardinality-in-a-UML-diagram-or-in-E-A-diagram>`_
      notation is used. For example, the image on the right-hand
-     side--excerpt from the :ref:`event dataset <event-dataset-kg>`--
-     can be read as `0 to N` :literal:`MeetingRoom`\ `s are`
-     :literal:`ContainedInPlace` :literal:`Place`.
+     side--excerpt from the :ref:`event dataset <event-dataset-kg>`
+     VKG--can be read as `0 to N` :strong:`MeetingRoom`\s are
+     `ContainedInPlace` :strong:`Place`.
+
 
    ---
 
@@ -770,8 +792,12 @@ underlying the SPARQL-accessible datasets. The description of each
 
       `noi:numberOfUnits` is the number of available
       rooms, suites, apartments, etc. that are available in that
-      Accommodation
+      :strong:`Accommodation`
 
+      `geo:asWKT` is a method used by opengis.net's `geosparql
+      <http://www.geosparql.org/>` to express geographic coordinates
+      in a standard, textual form based on :abbr:`WKT (Well-known
+      text)`.
 
       ---
 
@@ -792,11 +818,6 @@ underlying the SPARQL-accessible datasets. The description of each
       described by `geo:asWKT`, `description`, `name`, `telephone`,
       and `url`.
 
-      .. note:: `geo:asWKT` is a method used by opengis.net's
-	 `geosparql <http://www.geosparql.org/>` to express geographic
-	 coordinates in a standard, textual form based on :abbr:`WKT
-	 (Well-known text)`.
-
       A :strong:`FoodEstablishment` has
 
       * a :strong:`PostalAddress`--consisting of `streetAddress`,
@@ -810,12 +831,20 @@ underlying the SPARQL-accessible datasets. The description of each
       :strong:`BarOrPub`, :strong:`Winery`, and
       :strong:`IceCreamShop`.
 
+
+      +++
+
+      `geo:asWKT` is a method used by opengis.net's `geosparql
+      <http://www.geosparql.org/>` to express geographic coordinates
+      in a standard, textual form based on :abbr:`WKT (Well-known
+      text)`.
+
       ---
 
        .. figure:: /images/sparql/odh-food-establishment.png
+	  :width: 100%
 
-
-	 The UML diagram of the :ref:`Gastronomy Dataset <gastronomy-dataset>`.
+	  The UML diagram of the :ref:`Gastronomy Dataset <gastronomy-dataset>`.
 
 .. _event-dataset-kg:
 
@@ -823,11 +852,10 @@ underlying the SPARQL-accessible datasets. The description of each
 
    .. panels::
 
-      .. todo:: fix organizer definition
-
       The main classe in this dataset is :strong:`Event`, described by
       a `startDate`, an `endDate`, and a `description`.  Every
-      :strong:`Event` has an `organizer` and a `location`.
+      :strong:`Event` has an `organizer`, either a :strong:`Person` or
+      an :strong:`Organization` and a `location`.
 
       A :strong:`Person`--identified by `givenName`, `familyName`,
       `email`, and `telephone`--`worksFor` an :strong:`Organization`,
@@ -835,14 +863,14 @@ underlying the SPARQL-accessible datasets. The description of each
       :strong:`PostalAddress` consisting of `streetAddress`,
       `postalCode`, `AddressLocality`, and `AddressCountry`.
 
-      Finally, an :strong:`Event` have as `location` a
+      Finally, an :strong:`Event` has as `location` a
       :strong:`MeetingRoom`--identified by a `name`-- which is
-      `containedInPlace` a :strong:`Place`.
+      `containedInPlace` a :strong:`Place`--which has also a `name`
 
       -----
 
       .. figure:: /images/sparql/odh-event.png
-
+	 :width: 100%
 
 	 The UML diagram of the :ref:`Event Dataset <event-dataset>`.
 
