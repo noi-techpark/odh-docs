@@ -739,7 +739,6 @@ underlying the SPARQL-accessible datasets. The description of each
 .. _gastronomy-dataset-kg:
 
 .. dropdown:: Gastronomy Dataset
-   :open:
 
    .. panels::
 
