@@ -688,7 +688,7 @@ https\://alpinebits.opendatahub.bz.it/AlpineBits
 .. _datasets-km:
 
 .. _odh-vkg:
-   
+
 The |odh| Virtual Knowledge Graph
 ---------------------------------
 
@@ -703,7 +703,7 @@ underlying the SPARQL-accessible datasets. The description of each
 |km| is accompanied by an UML diagram which shows the KM at a glance.
 
 .. panels::
-   
+
 
    Common Notation
    ^^^^^^^^^^^^^^^
@@ -712,13 +712,13 @@ underlying the SPARQL-accessible datasets. The description of each
    Knowledge Representation and in particular in the `W3C's
    Recommendation` documents for the Semantic Web.  The following
    additional notation applies:
-   
+
    Prefix The default prefix used is :strong:`http://schema.org/`.
-     
-   Arrows  
-     White arrows denote a `sub-class` relationship, while black
-     arrows denote `object properties`.
-   
+
+   Arrows
+     Arrows with a white tip denote a `sub-class` relationship, while
+     black tips denote `object properties`.
+
    Cardinality
      Cardinality of :strong:`1` is usually not shown, but implied; the
      `look across
@@ -726,12 +726,12 @@ underlying the SPARQL-accessible datasets. The description of each
      notation is used. For example, the image on the right-hand
      side--excerpt from the :ref:`event dataset <event-dataset-kg>`--
      can be read as `0 to N` :literal:`MeetingRoom`\ `s are`
-     :literal:`ContainedInPlace` :literal:`Place`
+     :literal:`ContainedInPlace` :literal:`Place`.
 
    ---
 
    .. image::  /images/sparql/cardinality.png
-	       
+
 .. _accommodation-dataset-kg:
 
 .. dropdown:: Accommodation Dataset
@@ -746,7 +746,22 @@ underlying the SPARQL-accessible datasets. The description of each
 
    .. panels::
 
-      
+      .. todo:: fix organizer definition
+
+      The main classe in this dataset is :strong:`Event`, described by
+      a `startDate`, an `endDate`, and a `description`.  Every
+      :strong:`Event` has an `organizer` and a `location`.
+
+      A :strong:`Person`--identified by `givenName`, `familyName`,
+      `email`, and `telephone`--`worksFor` an :strong:`Organization`,
+      which has a `name` and an `address`, i.e., a
+      :strong:`PostalAddress` consisting of `streetAddress`,
+      `postalCode`, `AddressLocality`, and `AddressCountry`.
+
+      Finally, an :strong:`Event` have as `location` a
+      :strong:`MeetingRoom`--identified by a `name`-- which is
+      `containedInPlace` a :strong:`Place`.
+
       -----
 
       .. figure:: /images/sparql/odh-event.png
