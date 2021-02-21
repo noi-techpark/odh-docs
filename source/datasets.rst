@@ -739,6 +739,38 @@ underlying the SPARQL-accessible datasets. The description of each
 .. _gastronomy-dataset-kg:
 
 .. dropdown:: Gastronomy Dataset
+   :open:
+
+   .. panels::
+
+      The main class of this dataset is :strong:`FoodEstablishment`,
+      described by `geo:asWKT`, `description`, `name`, `telephone`,
+      and `url`.
+
+      .. note:: `geo:asWKT` is a method used by opengis.net's
+	 `geosparql <http://www.geosparql.org/>` to express geographic
+	 coordinates in a standard, textual form based on :abbr:`WKT
+	 (Well-known text)`.
+
+      A :strong:`FoodEstablishment` has
+
+      * a :strong:`PostalAddress`--consisting of `streetAddress`,
+	`postalCode`, and `AddressLocality`--as `address`
+      * a :strong:`GeoCoordinates`--`latitude`, `longitude`, and
+	`elevation`--as a geographical location `geo`
+
+      There are different (sub-)\types of
+      :strong:`FoodEstablishment`, all sharing the same attributes:
+      :strong:`Restaurant`, :strong:`FastFoodRestaurant`,
+      :strong:`BarOrPub`, :strong:`Winery`, and
+      :strong:`IceCreamShop`.
+
+      ---
+
+       .. figure:: /images/sparql/odh-food-establishment.png
+
+
+	 The UML diagram of the :ref:`Gastronomy Dataset <gastronomy-dataset>`.
 
 .. _event-dataset-kg:
 
