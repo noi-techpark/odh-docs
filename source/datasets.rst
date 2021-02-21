@@ -736,6 +736,52 @@ underlying the SPARQL-accessible datasets. The description of each
 
 .. dropdown:: Accommodation Dataset
 
+   .. panels::
+
+      .. postalAddress has one attribute more in Event than in other
+	 datasets.
+
+      Central class in this dataset is :strong:`LodgingBusiness`, to
+      which belong multiple :strong:`Accommodation`\s.
+
+      A :strong:`LodgingBusiness` has as attributes `geo:asWKT`,
+      `email`, `name`, `telephone`, and `faxNumber` and relations
+
+      * `address` to class :strong:`PostalAddress`, which consists of
+	`streetAddress`, `postalCode`, and `AddressLocality`
+      * `geo`, i.e., a geographical location, to class
+	:strong:`GeoCoordinates`, consisting of `latitude`,
+	`longitude`,  and `elevation`
+
+      There are (sub-)types of :strong:`LodgingBusiness`--called
+      :strong:`Campground`, :strong:`Hotel`, :strong:`Hostel`, and
+      :strong:`BedAndBreakfast`--sharing its attributes and relations.
+
+      An :strong:`Accommodation` is identified by a `name` and a
+      `noi:numberOfUnits` and has relations
+
+      * `containedInPlace` to :strong:`LodgingBusiness` (multiple
+	:strong:`Accommodation`\s can belong to it)
+      * `occupancy` to :strong:`QuantitativeValue`, which gives the
+	`maxValue` and `minValues` of available units of accommodation
+	and a `unitCode`.
+
+      +++
+
+      `noi:numberOfUnits` is the number of available
+      rooms, suites, apartments, etc. that are available in that
+      Accommodation
+
+
+      ---
+
+      .. figure:: /images/sparql/odh-accommodation.png
+	 :width: 100%
+
+	 The UML diagram of the :ref:`Accommodation Dataset
+	 <accommodation-dataset>`.
+
+
 .. _gastronomy-dataset-kg:
 
 .. dropdown:: Gastronomy Dataset
