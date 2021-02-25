@@ -26,4 +26,5 @@
       "Android App", "`Südtirol Guide/Alto Adige Guide
       <https://play.google.com/store/apps/details?id=com.suedtirol.android>`_"
       "Sources", "LTS"
+      "SPARQL Endpoint", "https://sparql.opendatahub.bz.it"
 

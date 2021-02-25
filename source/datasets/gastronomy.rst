@@ -1,5 +1,7 @@
 .. gastronomy
+   
 
+	    
 .. panels::
    :column: col-md-6
 
@@ -23,3 +25,4 @@
       "Use cases and info", "https://databrowser.opendatahub.bz.it/
       https://suedtirol.info/"
       "Sources", "LTS"
+      "SPARQL Endpoint", "https://sparql.opendatahub.bz.it"
