@@ -22,6 +22,9 @@ Datasets
 
 .. versionadded:: 2021.01 access to data with SPARQL
 
+.. versionadded:: 2021.02 |odh| Virtual Knowledge Graph and
+   description of underlying Knowledge Model
+
 The goal of the Open Data Hub project is to make available datasets containing
 data about the South Tyrolean ecosystem, to allow third parties to
 develop novel applications on top of them, consuming the exposed
@@ -383,7 +386,8 @@ The description of each dataset includes the following information:
    use cases based on the dataset"
    "Web component", "Link to Web Components developed on top of the
    dataset (optional)"
-   "Sources", "The list of Data Providers whose data compose the dataset"
+   "Sources", "The list of Data Providers whose data compose the
+   dataset"
 
 .. note:: There is one :literal:`StationType`, namely
    :strong:`MobileStation` which is a mobile probe no longer
@@ -555,7 +559,13 @@ The following information is provided for each dataset in the Tourism domain:
    to use cases based on the dataset"
    "Android App", "Link to app for mobile phones developed using the
    data in the dataset"
-   "Sources", "The list of Data Providers whose data compose the dataset"
+   "Sources", "The list of Data Providers whose data compose the
+   dataset"
+   "SPARQL Endpoint", "Dataset is accessible through the `SPARQL
+   Endpoint <https://sparql.opendatahub.bz.it>`_ [#]_"
+
+.. [#] This information is provided only if the dataset is accessible
+   through SPARQL.
 
 .. seealso:: The following howto will help you access data in the
    Tourism domain:
@@ -680,3 +690,7 @@ NOI-Place
 https\://alpinebits.opendatahub.bz.it/AlpineBits
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 .. include:: /datasets/alpinebits.rst
+
+.. odh vkg km
+
+.. include:: kg.rst
