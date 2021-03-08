@@ -64,7 +64,7 @@ author = u'The ODH Team'
 # built documents.
 #
 # The short X.Y version.
-version = u'2021.01'
+version = u'2021.03'
 # The full version, including alpha/beta/rc tags.
 release = version
 
