@@ -45,7 +45,7 @@ copybutton_prompt_is_regexp = True
 #changelog_sections = ["Improvements", "Changes", "Bugfix"]
 
 # tags to sort on inside of sections
-changelog_inner_tag_sort = ["Improvement", "Changes", "Bugfix"]
+changelog_inner_tag_sort = ["Improvement", "Changes", "Bugfixes"]
 # whether sections should be hidden from tags list
 #changelog_hide_sections_from_tags = False
 changelog_render_ticket = "https://github.com/noi-techpark/odh-docs/issues/%s"
