@@ -669,6 +669,7 @@ The following information is provided for each dataset in the Tourism domain:
 
    .. include:: /datasets/webcam.rst
 
+.. _other-domains-datasets:
 
 Datasets in Other Domains
 -------------------------
