@@ -30,7 +30,7 @@ extensions = [
     'sphinx.ext.imgconverter',
     'ga', 'hidemail',
     'sphinx_togglebutton', 'sphinx_panels',
-    'sphinx_copybutton'
+    'sphinx_copybutton', 'changelog'
 ]
 
 ### Configuration values for extensions
