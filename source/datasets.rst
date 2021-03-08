@@ -675,21 +675,21 @@ Datasets in Other Domains
 
 .. _creative-industries-dataset:
 
-Creative Industries
-~~~~~~~~~~~~~~~~~~~
-.. include:: /datasets/creativeindustries.rst
+.. dropdown:: :strong:`Creative Industries`
+
+   .. include:: /datasets/creativeindustries.rst
 
 .. _noiplace-dataset:
 
-NOI-Place
-~~~~~~~~~
-.. include:: /datasets/noiplace.rst
+.. dropdown:: :strong:`NOI-Place`
+
+   .. include:: /datasets/noiplace.rst
 
 .. _alpinebits-dataset:
 
-https\://alpinebits.opendatahub.bz.it/AlpineBits
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-.. include:: /datasets/alpinebits.rst
+.. dropdown:: :strong:`https\://alpinebits.opendatahub.bz.it/AlpineBits`
+
+   .. include:: /datasets/alpinebits.rst
 
 .. odh vkg km
 
