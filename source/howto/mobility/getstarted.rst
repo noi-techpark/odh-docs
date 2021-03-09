@@ -2,8 +2,6 @@
 
 How to Access Mobility Data With API v2
 =======================================
-
-.. versionadded:: 2020-April
 		  
 The new :strong:`API v2` (see :ref:`the description <ninja api>`) for
 the Mobility domain has simplified the access to data; among its
@@ -91,15 +89,9 @@ incrementally refine the data retrieved. They are:
    datasets. to be used in the next methods. See :ref:`the details
    below <representation-types>`. 
 
-   .. versionadded:: 2020-June API method to retrieve the list of
-      dataset's entry point.
-
 #. :literal:`/v2/{representation}/` shows all the StationTypes
    available, that is, all the sources that provided data to the Open
    Data Hub.
-
-   .. versionadded:: 2020-June API method to retrieve the list of all
-      stationTypes available.
 			
 #. :literal:`/v2/{representation}/{stationTypes}` returns data about
    the stations themselves, including metadata associated with each, and
@@ -114,15 +106,12 @@ incrementally refine the data retrieved. They are:
 #. :literal:`/v2/{representation}/{stationTypes}/{dataTypes}`.  In
    addition to the data of the previous call, it contains the data
    types defined in the dataset.
+
 #. :literal:`/v2/{representation}/{stationTypes}/{dataTypes}/latest`. In
    addition to all the data retrieved by the previous call, this call
    retrieves also the most recent measurement. This method is
    especially suited for real time retrieval of data.
-
-   
-   .. versionadded:: 2020-June API method to retrieve the list of
-      latest/real time measurements
-
+  
 #. :literal:`/v2/{representation}/{stationTypes}/{dataTypes}/{from}/{to}`.
    All the data retrieved by method #3, but limited to a
    given historical interval (:literal:`from` ... :literal:`to`).
@@ -460,8 +449,6 @@ keys described in the previous two section are valid and can be used.
 	 
 Advanced Data Processing
 ------------------------
-
-.. versionchanged:: 2020-May keyword alias was replaced by :strong:`target`.
 		    
 Before introducing advanced data processing techniques, we recall that
 queries against the Open Data Hub's datasets always return a
@@ -644,8 +631,6 @@ The above example will be translated into Postgres as follows:
 
 Additional Parameters
 ~~~~~~~~~~~~~~~~~~~~~
-
-.. versionadded:: 2020-May `shownull` and `distinct`.
 
 .. versionadded:: 2020.11 `timezone`
 

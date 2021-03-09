@@ -3,23 +3,6 @@
 Datasets
 ========
 
-.. versionadded:: 2020.09 New domain category `Other`, which includes
-   dataset that do not belong to existing domains
-
-.. versionadded:: 2020.09 New description of domains, new diagrams
-   that show the datasets encompassed in each domain
-
-.. versionadded:: 2020.10 Information about licensing of data
-   contained in the |ODH| responses
-
-.. versionadded:: 2020.10 Links from the dataset lists to the howto
-   section
-
-.. versionadded:: 2021:01 access to data using R
-		  
-.. versionchanged:: 2021.01 Reorganised presentation of the
-   :ref:`data-access` section
-
 .. versionadded:: 2021.01 access to data with SPARQL
 
 .. versionadded:: 2021.02 |odh| Virtual Knowledge Graph and
@@ -529,16 +512,6 @@ activities in South Tyrol. By exploring this domain, it is possible to
 find information about winter and summer offers from local touristic
 boards, information about weather, hotels and accommodation, Points of
 Interests, and a lot more.
-
-.. versionchanged:: 2020.09 Removed datasets not offered directly from
-   Open Data Hub (siag.museum and siag.weather)
-
-.. versionchanged:: 2020.09 Renamed weather-siag dataset to
-   weather-forecast
-
-.. versionchanged:: 2020.09 Ordered datasets in alphabetical order
-
-.. versionadded:: 2020.09 Added article, common, venue and eventshort datasets
 
 .. versionchanged:: 2020.10 Changed identifier of datasets activity,
    event, gastronomy, package, and POI
