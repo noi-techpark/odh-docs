@@ -10,4 +10,4 @@ The following is the list of appendices.
 
    glossary
    licenses
-
+   changelog

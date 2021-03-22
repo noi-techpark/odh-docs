@@ -30,7 +30,7 @@ extensions = [
     'sphinx.ext.imgconverter',
     'ga', 'hidemail',
     'sphinx_togglebutton', 'sphinx_panels',
-    'sphinx_copybutton'
+    'sphinx_copybutton', 'changelog'
 ]
 
 ### Configuration values for extensions
@@ -40,6 +40,15 @@ togglebutton_hint = "More..."
 copybutton_prompt_text = r'\~\$ |\~\# '
 copybutton_prompt_is_regexp = True
 
+
+# section names - we don't need them 
+#changelog_sections = ["Improvements", "Changes", "Bugfix"]
+
+# tags to sort on inside of sections
+changelog_inner_tag_sort = ["Improvement", "Change", "Bugfix"]
+# whether sections should be hidden from tags list
+#changelog_hide_sections_from_tags = False
+changelog_render_ticket = "https://github.com/noi-techpark/odh-docs/issues/%s"
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
@@ -64,7 +73,7 @@ author = u'The ODH Team'
 # built documents.
 #
 # The short X.Y version.
-version = u'2021.01'
+version = u'2021.03'
 # The full version, including alpha/beta/rc tags.
 release = version
 
