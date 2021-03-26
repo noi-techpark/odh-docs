@@ -242,10 +242,7 @@ content.
 
       .. dropdown:: AlpineBits client
 
-	 TBD
-
-	 .. placeholder
-	    .. include:: /includes/AlpineBits.rst
+         .. include:: /includes/AlpineBits.rst
 
       ----
 

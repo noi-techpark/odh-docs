@@ -3,9 +3,8 @@
 How to access Open Data Hub AlpineBits Server as a client
 =========================================================
 
-The AlpineBits Alliance strives to develop and to spread a standard
-format to exchange data. In this howto, we show how to retrieve data
-from the AlpineBits Server endpoint for the Open Data Hub located at
+In this howto, we show how to retrieve data from the AlpineBits Server
+endpoint for the Open Data Hub located at
 https://alpinebits.opendatahub.bz.it/AlpineBits, by using the (Linux)
 command line--in particular the :command:`curl` application, and the
 popular `Postman` API development environment.  An example call can be
