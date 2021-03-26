@@ -2,3 +2,4 @@ sphinx_panels
 sphinx-togglebutton
 sphinx-copybutton
 sphinx==3.2.1
+changelog
