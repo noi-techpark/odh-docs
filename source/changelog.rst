@@ -35,3 +35,9 @@ documentation.
        :tickets: 199
 
        Fix layout of datasets in :ref:`Other Domains <other-domains-datasets>`.
+
+    .. change::
+       :tags: Improvement
+       :tickets: 203
+
+       Add AlpineBits to the :ref:`data-access` section.
