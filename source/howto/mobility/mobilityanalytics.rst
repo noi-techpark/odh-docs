@@ -61,7 +61,7 @@ sensors.
 
 .. _analytics-chart-one-dataset:
 
-.. figure:: /images/analytics/analytics-map-overview.png
+.. figure:: /images/analytics/analytics-chart-onedataset.png
    :scale: 33%
    :align: center
 
@@ -69,7 +69,7 @@ sensors.
 
 .. _analytics-chart-two-datasets:
 
-.. figure:: /images/analytics/analytics-map-overview.png
+.. figure:: /images/analytics/analytics-chart-twodatasets.png
    :scale: 33%
    :align: center
 
