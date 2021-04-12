@@ -53,3 +53,9 @@ documentation.
 
       Add to each dataset a direct permalink that can be copied and
       sent to third party.
+
+   .. change::
+      :tags: Improvement
+      :tickets: 208
+
+      Replace tabs in the howto list with subsections.
