@@ -60,3 +60,12 @@ documentation.
 
       * Replace tabs in the howto list with subsections.
       * Remove the mobility howto for deprecated API v1.
+      * Reduce size of images in howtos to 33%-40% and align them if
+        layout allows.
+
+   .. change::
+      :tags: Bugfix
+      :tickets: 208
+
+      Add correct images to `How to Access Analytics Data in the
+      Mobility Domain` howto.
