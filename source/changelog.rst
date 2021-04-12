@@ -21,23 +21,35 @@ documentation.
 	`YYYY` is the year and `MM` the month of the release.
 
 .. changelog::
-    :version: 2021.03
-    :released: 31 March 2021
+   :version: 2021.03
+   :released: 31 March 2021
 
-    .. change::
-       :tags: Improvement
-       :tickets: 194
+   .. change::
+      :tags: Improvement
+      :tickets: 194
 
-       Add :strong:`changelog` extension.
+      Add :strong:`changelog` extension.
 
-    .. change::
-       :tags: Bugfix
-       :tickets: 199
+   .. change::
+      :tags: Bugfix
+      :tickets: 199
 
-       Fix layout of datasets in :ref:`Other Domains <other-domains-datasets>`.
+      Fix layout of datasets in :ref:`Other Domains <other-domains-datasets>`.
 
-    .. change::
-       :tags: Improvement
-       :tickets: 203
+   .. change::
+      :tags: Improvement
+      :tickets: 203
 
-       Add AlpineBits to the :ref:`data-access` section.
+      Add AlpineBits to the :ref:`data-access` section.
+
+.. changelog::
+   :version: 2021.04
+   :released: 30 April 2021
+
+
+   .. change::
+      :tags: Improvement
+      :tickets: 206
+
+      Add to each dataset a direct permalink that can be copied and
+      sent to third party.
