@@ -58,4 +58,5 @@ documentation.
       :tags: Improvement
       :tickets: 208
 
-      Replace tabs in the howto list with subsections.
+      * Replace tabs in the howto list with subsections.
+      * Remove the mobility howto for deprecated API v1.
