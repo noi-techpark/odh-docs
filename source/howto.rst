@@ -17,19 +17,19 @@ Mobility
 
 #. :doc:`/howto/mobility/getstarted` Getting started with the
    new API v2.
-#. :doc:`/howto/mobility/mobility`. Since the APIs are very
-   generic, directions contained in this howto can be applied to
-   any dataset of the mobility domain.
-#. :doc:`/howto/mobility/mobilityanalytics`. This howto guides you in
+#. :doc:`/howto/mobility/mobilityanalytics` This howto guides you in
    browse and query data produces from the sensors used in
    the mobility domain.
+#. How to access e-Charging Stations Data? This howto is
+   |deprecated| and has been removed, please refer to
+   :doc:`/howto/mobility/getstarted` if you are interested in
+   accessing the mobility dataset.
 
 .. toctree::
    :maxdepth: 1
    :hidden:
 
    howto/mobility/getstarted
-   howto/mobility/mobility
    howto/mobility/mobilityanalytics
 
 Tourism
