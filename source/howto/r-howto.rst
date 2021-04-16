@@ -1,3 +1,5 @@
+.. _howto-r:
+
 How to access Data with R and SPARQL
 ====================================
 

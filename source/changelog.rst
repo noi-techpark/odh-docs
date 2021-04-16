@@ -53,3 +53,9 @@ documentation.
 
       Add to each dataset a direct permalink that can be copied and
       sent to third party.
+
+   .. change::
+      :tags: New Feature
+      :tickets: 208
+
+      New Howto: :ref:`howto-r`
