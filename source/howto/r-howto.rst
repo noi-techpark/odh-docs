@@ -1,7 +1,7 @@
 .. _howto-r:
 
-How to access Data with R and SPARQL
-====================================
+How to Access |odh| Data With R and SPARQL
+==========================================
 
 .. versionadded:: 2021.04
 
