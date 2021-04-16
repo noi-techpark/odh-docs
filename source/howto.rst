@@ -53,6 +53,8 @@ available here:
    #. :doc:`/howto/sparql-endpoint` query |odh| datasets using W3C's
       Query Language. 
 
+   #. :doc:`/howto/r-howto`  query |odh| datasets using R and its
+      SPARQL library.
 
 .. toctree::
    :maxdepth: 1
@@ -71,3 +73,4 @@ available here:
    howto/webcomponents
    howto/tourism/alpinebits
    howto/sparql-endpoint
+   howto/r-howto
