@@ -78,7 +78,7 @@ Generic HOWTOs
 #. :doc:`/howto/generic/sparql-endpoint` query |odh| datasets using W3C's
    Query Language.
 
-#. :doc:`/howto/r-howto`  query |odh| datasets using R and its
+#. :doc:`/howto/generic/r-howto`  query |odh| datasets using R and its
    SPARQL library.
 
 
@@ -92,4 +92,4 @@ Generic HOWTOs
    howto/generic/noievents
    howto/generic/webcomponents
    howto/generic/sparql-endpoint
-   howto/r-howto
+   howto/generic/r-howto
