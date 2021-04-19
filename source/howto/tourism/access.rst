@@ -25,7 +25,8 @@ the :strong:`Authorize` button on the right-hand side of the page
 .. _tourism-ui:
 
 .. figure:: /images/tourism-01.png
-   :width: 90% 
+   :scale: 33%
+   :align: center
 
    The new Swagger UI for Tourism domain.
 
@@ -36,7 +37,8 @@ other parameter.
 .. _tourism-auth:
 
 .. figure:: /images/tourism-02.png
-   :width: 70% 
+   :scale: 33%
+   :align: center
 
    Providing credentials for authentication.
 
@@ -50,7 +52,8 @@ data.
 .. _tourism-auth-ok:
 
 .. figure:: /images/tourism-03.png
-   :width: 70% 
+   :scale: 33%
+   :align: center
 
    Successful authentication.
 
