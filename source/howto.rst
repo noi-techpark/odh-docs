@@ -59,23 +59,23 @@ Tourism
 Generic HOWTOs
 --------------
 
-#. :doc:`/howto/authentication` Access to data that are not yet
+#. :doc:`/howto/generic/authentication` Access to data that are not yet
    open (mostly for internal use).
 
-#. :doc:`/howto/development` Set up your workstation to develop for
+#. :doc:`/howto/generic/development` Set up your workstation to develop for
    Open Data Hub--This tutorial is still in development and not so
    useful at the moment!
 
-#. :doc:`/howto/postman` Setup of Postman, a popular API
+#. :doc:`/howto/generic/postman` Setup of Postman, a popular API
    development environment, to access data from the Open Data Hub.
 
-#. :doc:`/howto/noievents` Create and modify NOI events directly
+#. :doc:`/howto/generic/noievents` Create and modify NOI events directly
    from the Open Data Hub portal.
 
-#. :doc:`/howto/webcomponents` share your Web Components with Open
+#. :doc:`/howto/generic/webcomponents` share your Web Components with Open
    Data Hub team
 
-#. :doc:`/howto/sparql-endpoint` query |odh| datasets using W3C's
+#. :doc:`/howto/generic/sparql-endpoint` query |odh| datasets using W3C's
    Query Language.
 
 
@@ -83,9 +83,9 @@ Generic HOWTOs
    :maxdepth: 1
    :hidden:
 
-   howto/authentication
-   howto/development
-   howto/postman
-   howto/noievents
-   howto/webcomponents
-   howto/sparql-endpoint
+   howto/generic/authentication
+   howto/generic/development
+   howto/generic/postman
+   howto/generic/noievents
+   howto/generic/webcomponents
+   howto/generic/sparql-endpoint
