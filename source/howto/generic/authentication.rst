@@ -48,7 +48,8 @@ respectively, as shown in :numref:`token-request`.
 
 .. _token-request:
 .. figure:: /images/token-request.png
-   :width: 80%
+   :scale: 33%
+   :align: center
 
    Request a new OAuth2 token.
 
@@ -62,10 +63,10 @@ parameter: You must use prefix the authentication token with the
 :strong:`Bearer` string, followed by an empty space, then by the
 token.
 
-
 .. _oauth-success:
 .. figure:: /images/emobility-200.png
-   :width: 80%
+   :scale: 33%
+   :align: center
 
    A successful call to a method requiring authentication.
 
@@ -75,8 +76,10 @@ shows), or use an invalid token, you will receive an :strong:`401 -
 Unauthorized` HTTP response.
 
 .. _oauth-failure:
+
 .. figure:: /images/emobility-401.png
-   :width: 80%
+   :scale: 33%
+   :align: center
 
    A failed call to a method requiring authentication.
 
@@ -86,7 +89,7 @@ Open a shell on your workstation and use a tool like :command:`curl`
 or :command:`wget`, with the appropriate options:
 
 .. option:: -X
-	       
+
    Specify the request method (GET)
 
 .. option:: --header, -H
@@ -96,7 +99,7 @@ or :command:`wget`, with the appropriate options:
 Note that the :option:`--header` option is used twice: The first to
 receive the answer in :strong:`text/html` format, the second to
 provide the credentials required to access protected content.
-   
+
 API calls can be done using a tool like :command:`curl` or
 :command:`wget`, with the same :option:`-X` and :option:`--header`
 option used twice: The first to require the format of the response,
