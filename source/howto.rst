@@ -17,6 +17,7 @@ available here:
 Mobility
 --------
 
+
 #. :doc:`/howto/mobility/getstarted` Getting started with the
    new API v2.
 #. :doc:`/howto/mobility/mobilityanalytics` This howto guides you in
@@ -55,7 +56,6 @@ Tourism
    howto/tourism/tips
    howto/tourism/alpinebits
 
-
 Generic HOWTOs
 --------------
 
@@ -78,6 +78,9 @@ Generic HOWTOs
 #. :doc:`/howto/generic/sparql-endpoint` query |odh| datasets using W3C's
    Query Language.
 
+#. :doc:`/howto/r-howto`  query |odh| datasets using R and its
+   SPARQL library.
+
 
 .. toctree::
    :maxdepth: 1
@@ -89,3 +92,4 @@ Generic HOWTOs
    howto/generic/noievents
    howto/generic/webcomponents
    howto/generic/sparql-endpoint
+   howto/r-howto
