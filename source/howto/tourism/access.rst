@@ -66,7 +66,7 @@ add an authentication header to each call. For example, using curl:
 
 .. code-block:: bash
 
-   curl -X GET --header 'Accept: application/json' \
+   ~# curl -X GET --header 'Accept: application/json' \
    --header 'Authorization: Bearer vLwemAqrLKVKXsvgvEQgtkeanbMq7Xcs' \
    'http\://tourism.opendatahub.bz.it/api/Gastronomy'
 

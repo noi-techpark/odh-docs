@@ -72,7 +72,7 @@ looks like the following one:
 	 
 .. code-block:: 
 		
-   curl --location --request POST \
+   ~# curl --location --request POST \
    'https://alpinebits.opendatahub.bz.it/AlpineBits' \
    --header 'Authorization: Basic <your-token-here>' \
    --header 'X-AlpineBits-ClientProtocolVersion: 2017-10' \
