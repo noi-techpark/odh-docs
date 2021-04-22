@@ -26,6 +26,8 @@ endpoints, like shown in :numref:`postman1`.
 .. _postman1:
 
 .. figure:: /images/postman/newrequest.png
+   :scale: 33%
+   :align: center
 
    Start of a new request creation.
 
@@ -45,6 +47,8 @@ dataset you want to query.
 .. _postman2:
 
 .. figure:: /images/postman/newendpoint.png
+   :scale: 50%
+   :align: center
 
    Defining a new endpoint in the mobility domain.
 
@@ -59,12 +63,13 @@ status :green:`401 Unauthorized`.
 .. do not wordwrap the table!
    
 .. table::
+   :align: center
 
-   +----------------------------------------------+-------------------------------------------+ 
+   +-------------------------------------------+--+-------------------------------------------+ 
    | .. _postman3:                                | .. _postman4:                             |
    |                                              |                                           |
    | .. figure:: /images/postman/postman8.png     | .. figure:: /images/postman/postman1.png  |
-   |    :width: 90%                               |    :width: 90%                            |
+   |    :scale: 33%                               |    :scale: 33%                            |
    |                                              |                                           |
    |    Querying the `E-charging station`         |    Querying the `Accommodation`           |
    |    endpoint.                                 |    endpoint.                              |   
@@ -91,6 +96,8 @@ New Access Token` button (:numref:`postman6`).
 .. _postman6:
 
 .. figure:: /images/postman/postman3.png
+   :scale: 33%
+   :align: center
 
    Requesting an access token.
 
@@ -103,7 +110,9 @@ give it a name easy to remember.
 .. _postman7:
 
 .. figure:: /images/postman/postman4.png
-
+   :scale: 33%
+   :align: center
+           
    A filled-in token request.
 
 If your credentials are correct and the request is successful, the
@@ -114,12 +123,13 @@ date, see :numref:`postman8` and :numref:`postman9`.
 .. do not wordwrap the table!
    
 .. table::
+   :align: center
 
    +----------------------------------------------+-------------------------------------------+ 
    | .. _postman8:                                | .. _postman9:                             |
    |                                              |                                           |
    | .. figure:: /images/postman/postman5.png     | .. figure:: /images/postman/postman6.png  |
-   |    :width: 90%                               |    :width: 90%                            |
+   |    :scale: 33%                               |    :scale: 33%                            |
    |                                              |                                           |
    |    An access token.                          |    Information about an access token      |
    +----------------------------------------------+-------------------------------------------+
@@ -134,7 +144,9 @@ should be able to see now the data in the dataset, like shown in
 .. _postman10:  
 
 .. figure:: /images/postman/postman7.png
-
+   :scale: 33%
+   :align: center
+           
    Access to data requiring authorisation.
 
 .. _postman-export:
@@ -153,5 +165,7 @@ key :strong:`Accept` with value :strong:`text/csv`.
 .. _postman-exp-fig:
 
 .. figure:: /images/postman/postman-export.png
-
+   :scale: 33%
+   :align: center
+           
    Exporting data from the Tourism domain in CSV format.

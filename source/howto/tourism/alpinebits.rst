@@ -72,7 +72,7 @@ looks like the following one:
 	 
 .. code-block:: 
 		
-   curl --location --request POST \
+   ~# curl --location --request POST \
    'https://alpinebits.opendatahub.bz.it/AlpineBits' \
    --header 'Authorization: Basic <your-token-here>' \
    --header 'X-AlpineBits-ClientProtocolVersion: 2017-10' \
@@ -95,6 +95,8 @@ in the two screenshots.
 .. _ab-postman-header:
 
 .. figure:: /images/postman/AB-postman1.png
+   :scale: 50%
+   :align: center
 
    Definition of the call's headers.
 
@@ -115,6 +117,8 @@ of the method to retrieve data, in our example :strong:`getVersion`.
 .. _ab-postman-body:
 
 .. figure:: /images/postman/AB-postman2.png
+   :scale: 50%
+   :align: center
 
    Definition of the `action` and the outcome of the call.
 

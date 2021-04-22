@@ -5,6 +5,8 @@ How to Access Analytics Data in the Mobility Domain
 
 .. versionadded:: 2021.01 data access with R.
 
+.. versionchanged:: 2021.04 Replace two wrong images with correct ones.
+
 This howto guides you in browsing and querying data from the Mobility
 domain using the https://analytics.opendatahub.bz.it/ web site.
 
@@ -38,7 +40,8 @@ Italian provinces and regions.
 
 
 .. figure:: /images/analytics/analytics-home.png
-   :width: 90%
+   :scale: 40%
+   :align: center
 
    The landing page of analytics.mobility.bz.it.
 
@@ -60,17 +63,20 @@ sensors.
 
 .. _analytics-chart-one-dataset:
 
-.. figure:: /images/analytics/analytics-map-overview.png
-   :width: 90%
+.. figure:: /images/analytics/analytics-chart-onedataset.png
+   :scale: 33%
+   :align: center
 
    Sample temperature diagram on Cima Presena.
 
 .. _analytics-chart-two-datasets:
 
-.. figure:: /images/analytics/analytics-map-overview.png
-   :width: 90%
+.. figure:: /images/analytics/analytics-chart-twodatasets.png
+   :scale: 33%
+   :align: center
 
    Sample temperature diagram on Cima Presena and Cima Paganella.
+
 .. _mapoverview:
 
 Map Overview
@@ -82,13 +88,6 @@ left-hand side. When clicking on one or more items, the position of
 all sensors will appear on the map, see :numref:`map-overview-image`
 for the parking lots available in the Trentino-South Tyrol region.
 
-.. _map-overview-image:
-
-.. figure:: /images/analytics/analytics-map-overview.png
-   :width: 90%
-
-   Map with parking lot signposts.
-
 A signpost with a circled :strong:`+` indicates that there are more
 sensors around at that location; this is true especially when the map
 encompasses a large area, like e.g., the whole South Tyrol region.
@@ -96,6 +95,14 @@ Therefore, by zooming in on the map, or by (repeatedly) clicking on
 the :strong:`+`, more signposts will appear, until the :strong:`+`
 either disappears or is replaced by a different sign: you have found
 the (unique) sensor at that location.
+
+.. _map-overview-image:
+
+.. figure:: /images/analytics/analytics-map-overview.png
+   :scale: 33%
+   :align: center
+
+   Map with parking lot signposts.
 
 In the case of Parking data--and in a few other datasets, the
 :strong:`+` will be replaced by a green, yellow, or red circle,
@@ -111,6 +118,7 @@ coordinates. Additional information displayed depend on the dataset.
 .. _analytics-signpost-info:
 
 .. figure:: /images/analytics/analytics-signpost-info.png
-   :width: 90%
+   :scale: 33%
+   :align: center
 
    Details of a sensor.

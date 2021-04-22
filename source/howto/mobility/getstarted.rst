@@ -14,6 +14,8 @@ made available by the Open Data Hub team is the following:
 https://mobility.api.opendatahub.bz.it/
 
 .. figure:: /images/mobility-swagger.png
+   :scale: 33%
+   :align: right
 
    The swagger interface of the Mobility API v2.
 

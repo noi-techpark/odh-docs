@@ -17,6 +17,8 @@ and point it to http://tourism.opendatahub.bz.it/.
 .. _tourism-login-web:
 
 .. figure:: /images/tourism-04.png
+   :scale: 33%
+   :align: center
 
    The home page of the Tourism Data Browser.
 
@@ -70,6 +72,8 @@ page is not fully translated in all languages!)
 .. _tourism-data-filter:
 
 .. figure:: /images/tourism-05.png
+   :scale: 33%
+   :align: center
 
    Accessing the data through filters or menu item.
 
@@ -83,6 +87,8 @@ contains more detailed information about that activity.
 .. _tourism-data-detail:
 
 .. figure:: /images/tourism-06.png
+   :scale: 33%
+   :align: center
 
    Detailed view of a :abbr:`POI (Point Of Interest)`.
 
@@ -97,9 +103,10 @@ slightly changes
 .. _tourism-logged-in-web:
 
 .. figure:: /images/tourism-07.png
+   :scale: 33%
+   :align: center
 
    The home page after a successful login.
-
 
 In particular, at the bottom of the page a table with the user's role
 and permissions replaces the list of datasets, and an additional menu
