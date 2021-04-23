@@ -11,9 +11,11 @@ software for statistical analysis.
 This howto shows you a method to retrieve data from the |odh|, but
 does not address other features like, for example, plotting fetched
 data on a map.
-
+           
 It is also assumed you have already installed R on your workstation as
-well as the required :strong:`SPARQL` library.
+well as the required R's `SPARQL library
+<http://cran.mirror.garr.it/CRAN/web/packages/SPARQL/>`_ from a
+:abbr:`CRAN (Comprehensive R Archive Network)` mirror.
 
 
 .. dropdown:: Install SPARQL library
@@ -48,6 +50,15 @@ well as the required :strong:`SPARQL` library.
 
    If you see the message :strong:`* DONE (SPARQL)`, the installation
    was successful.
+
+   If you see instead  any :strong:`ERROR`, like those reported below, 
+   please refer to section :ref:`r-tbs`::
+
+     Warning messages:
+     1: In install.packages("SPARQL") :
+       installation of package ‘RCurl’ had non-zero exit status
+     2: In install.packages("SPARQL") :
+       installation of package ‘SPARQL’ had non-zero exit status
 
    Documentation for the library can be found in the library's `PDF
    documentation
@@ -109,7 +120,7 @@ The script above can be saved in a file called :file:`R-demo.r` and
 executed using the :command:`Rscript R-demo.r` command. The output
 will be similar to::
 
-  ~# Rscript  pippo.r
+  ~# Rscript R-demo.r
    Loading required package: XML
    Loading required package: RCurl
    $results
@@ -138,3 +149,42 @@ will be similar to::
 
 In the script, all data fetched are kept into the :strong:`result_set`
 variable and can be manipulated at will using  R libaries.
+
+.. _r-tbs:
+
+Troubleshooting
+---------------
+
+.. rubric:: SPARQL installation fails!
+
+When installing a package, R tries to satisfy all the package's
+dependencies and installs any missing library required by the
+package. If you still stumble upon errors, like for example::
+
+     Warning messages:
+     1: In install.packages("SPARQL") :
+       installation of package ‘RCurl’ had non-zero exit status
+     2: In install.packages("SPARQL") :
+       installation of package ‘SPARQL’ had non-zero exit status
+
+It means that SPARQL's dependency :strong:`RCurl` also failed. In this
+case it is not easy to spot the root cause, which is a missing package
+in the OS installation, called :strong:`libcurl4-gnutls-dev`. To
+install it on a Debian-like system, use as `root` the following command::
+
+  ~# apt-get install libcurl4-gnutls-dev
+
+.. rubric:: I have some strange warning when executing the script!
+
+If you execute a query and the outcome is not a result set but some
+error message similar to the following ones, please verify that the
+URL of the SPARQL endpoint is correct: :strong:`https\://sparql.opendatahub.bz.it/sparql`
+
+::
+   
+   Opening and ending tag mismatch: meta line 5 and head
+   Opening and ending tag mismatch: meta line 4 and html
+   Premature end of data in tag meta line 3
+   Premature end of data in tag head line 2
+   Premature end of data in tag html line 1
+            
