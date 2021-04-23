@@ -16,9 +16,9 @@ documentation.
   documentation.
 
 .. note:: We do not schedule regular releases of the documentation, we
-	rather publish new versions `"When they are ready"`, therefore each
-	`version` is identified by a string :strong:`YYYY.MM`, in which
-	`YYYY` is the year and `MM` the month of the release.
+   rather publish new versions `"When they are ready"`, therefore each
+   `version` is identified by a string :strong:`YYYY.MM`, in which
+   `YYYY` is the year and `MM` the month of the release.
 
 .. changelog::
    :version: 2021.03
@@ -75,3 +75,11 @@ documentation.
       :tickets: 204
 
       New Howto: :ref:`howto-r`
+
+   .. change::
+      :tags: Bugfix
+      :tickets: 212
+
+      * Remove drop downs from all the lists of :ref:`datasets
+        <mobility-datasets>` (Mobility, Tourism, Other)
+      * fix the panel's width to avoid scrollbars whenever possible.
