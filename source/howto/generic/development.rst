@@ -1,6 +1,3 @@
-make html
-.. geobank #10
-
 .. _development:
 
 How to set up your local Development Environment?
@@ -15,8 +12,6 @@ This tutorial is divided into three parts:
 #. Software installation
 #. Services configuration
 #. Troubleshooting
-
-.. warning:: This tutorial is still work in progress and is largely incomplete!
 
 	     
 Software Installation

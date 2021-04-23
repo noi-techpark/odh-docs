@@ -20,8 +20,9 @@ Go to http://tourism.opendatahub.bz.it and click on Log in (top right
 corner)
 
 .. figure:: /images/events/login.png
-   :width: 90%
-
+   :scale: 33%
+   :align: center
+           
    Upper section of the tourism portal.
 
 Provide your credentials, then you will be redirected to your
@@ -41,8 +42,9 @@ Events EURAC NOI` (see :numref:`newevent`).
 .. _newevent:
 
 .. figure:: /images/events/newevent.png
-   :scale: 70%
-
+   :scale: 33%
+   :align: center
+           
    Menu item to create a new event
 
 You will now see a list of events that will take place at Bolzano's
@@ -52,8 +54,9 @@ are shown. If the event is marked as :strong:`Active`, it is displayed
 on the official NOI web page at https://today.noi.bz.it/.
 
 .. figure:: /images/events/eventlist.png
-   :width: 90%
-
+   :scale: 33%
+   :align: center
+           
    List of events.
 
 In order to add a new event, click on the :greenbtn:`New` button to
@@ -63,8 +66,9 @@ In the dialog that opens, fill in all the fields you deem necessary,
 but at least the title, organiser, location, and time.
 
 .. figure:: /images/events/createevent.png
-   :width: 90%
-
+   :scale: 33%
+   :align: center
+           
    An example event with a few details provided.
 
 Remember to tick the `Active` and `noi.bz.it Active` checkboxes: The
@@ -100,8 +104,9 @@ list.
 .. _listedevent:
 
 .. figure:: /images/events/listedevent.png
-   :width: 90%
-
+   :scale: 33%
+   :align: center
+           
    List with the new event.
 
 Note that the title of the event is shown in the list in the language
@@ -118,9 +123,10 @@ changed as well. These changes are shown in picture
 .. _modifyevent:
 
 .. figure:: /images/events/modifyevent.png
-   :width: 90%
-
-   Changing  event's details.
+   :scale: 33%
+   :align: center
+           
+   Changing event's details.
    
 Click on :blackbtn:`Save` to save the modified event.
 
