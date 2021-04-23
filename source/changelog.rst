@@ -75,3 +75,9 @@ documentation.
       :tickets: 204
 
       New Howto: :ref:`howto-r`
+
+   .. change::
+      :tags: Bugfix
+      :tickets: 213
+
+      Add troubleshooting section to :ref:`R howto <howto-r>`.
