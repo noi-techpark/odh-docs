@@ -1,11 +1,11 @@
 .. weather
 
-   
+
 .. panels::
-   :column: col-md-6
+   :container: container-fluid
 
    -----
-      
+
    This dataset contains meteorological data provided by the `Weather
    and Avalanche Service`\s of South Tyrol and Trentino, such as
    Precipitation and Air temperature
@@ -14,15 +14,14 @@
    data, not the :strong:`forecast`.
 
    -----
-   
+
    .. csv-table::
-   
-      "Output", "JSON, mime-type application/json"   
-      "E-mail contact", "|contact|"   
-      "API version", ":strike:`v1` |deprecated|, v2"   
+
+      "Output", "JSON, mime-type application/json"
+      "E-mail contact", "|contact|"
+      "API version", ":strike:`v1` |deprecated|, v2"
       ":literal:`StationType`", "`MeteoStation
-      <https://mobility.api.opendatahub.bz.it/v2/flat/MeteoStation>`_"   
+      <https://mobility.api.opendatahub.bz.it/v2/flat/MeteoStation>`_"
       "Use cases and info", "https://analytics.opendatahub.bz.it/"
       "Sources", "Weather and Avalanche Services of South Tyrol and
       Trentino"
-

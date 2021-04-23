@@ -1,7 +1,7 @@
 .. alpinebits
-   
+
 .. panels::
-   :column: col-md-6
+   :container: container-fluid
 
    -----
 
@@ -17,7 +17,7 @@
    http://development.alpinebits.org/#/home.
 
    -----
-   
+
    ===================== =================================================
    Output                 XML, multipart/form-data
    E-mail contact         help@opendatahub.bz.it

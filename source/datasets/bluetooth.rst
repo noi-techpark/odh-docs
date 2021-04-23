@@ -1,10 +1,10 @@
 .. bluetooth
 
 .. panels::
-   :column: col-md-6
+   :container: container-fluid
 
    -----
-   
+
    The data for this datasets are collected by experimental
    Bluetooth-based sensors and detectors currently located on various
    points of the streets of Bolzano and soon in other location of
@@ -22,7 +22,7 @@
    -----
 
    .. csv-table::
-   
+
       "Output", "JSON, mime-type application/json"
       "E-mail contact", "|contact|"
       "API version", ":strike:`v1` |deprecated|, v2"
@@ -30,4 +30,3 @@
       <https://mobility.api.opendatahub.bz.it/v2/flat/BluetoothStation>`_"
       "Use cases and info", "https://analytics.opendatahub.bz.it/"
       "Sources", "CISMA"
-

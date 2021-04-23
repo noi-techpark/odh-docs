@@ -1,11 +1,11 @@
 .. traffic station 2 - VMS
 
-   
+
 .. panels::
-   :column: col-md-6
+   :container: container-fluid
 
    -----
-      
+
    The :strong:`VMS` (Variable Message Sign) sensors collect data
    about the electronic road signs on the A22 Motorway.
 
@@ -14,7 +14,7 @@
    split them for clarity.
 
    -----
-   
+
    .. csv-table::
 
       "Output", "JSON, mime-type application/json"
@@ -22,6 +22,5 @@
       "API version", ":strike:`v1` |deprecated|, v2"
       ":literal:`StationType`", "`VMS
       <https://mobility.api.opendatahub.bz.it/v2/flat/VMS>`_"
-      "Use cases and info", "https://analytics.opendatahub.bz.it/"   
+      "Use cases and info", "https://analytics.opendatahub.bz.it/"
       "Sources", "A22"
-

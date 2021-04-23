@@ -1,7 +1,7 @@
 .. creativeindustries:
 
 .. panels::
-   :column: col-md-6
+   :container: container-fluid
 
    -----
 
@@ -14,6 +14,7 @@
    source to generate a map for a dedicated :term:`Web Component`
 
    -----
+
 
    .. csv-table::
 

@@ -1,7 +1,7 @@
 .. accomodation dataset
 
 .. panels::
-   :column: col-md-6
+   :container: container-fluid
 
    -----
 
@@ -12,19 +12,18 @@
    the AlpineBits protocol.
 
    -----
-   
+
    .. csv-table::
-   
-      "Output", "JSON, mime-type application/json"  
+
+      "Output", "JSON, mime-type application/json"
       "E-mail contact", "|contact|"
       "API version", "v1, AlpineBits HotelData 2017-10, 2018-10, and soon
-      2020-10"  
-      "Swagger URL", ":stinfo:`/Accommodation`"  
+      2020-10"
+      "Swagger URL", ":stinfo:`/Accommodation`"
       "API URL", "http://tourism.opendatahub.bz.it/api/Accommodation"
       "Use cases and info", "https://databrowser.opendatahub.bz.it/
-      https://suedtirol.info/"   
+      https://suedtirol.info/"
       "Android App", "`Südtirol Guide/Alto Adige Guide
       <https://play.google.com/store/apps/details?id=com.suedtirol.android>`_"
       "Sources", "LTS"
       "SPARQL Endpoint", "https://sparql.opendatahub.bz.it"
-

@@ -1,11 +1,10 @@
 .. linkstation
 
-
 .. panels::
-   :column: col-md-6
+   :container: container-fluid
 
    -----
-      
+
    The data for this dataset are collected by the same Bluetooth-based
    sensors that are used to produce the :ref:`Bluetooth dataset
    <bluetooth-dataset>`. Indeed, the data gathered by the sensors will
@@ -25,9 +24,9 @@
      <https://www.integreen-life.bz.it/it/c/document_library/get_file?uuid=f1702bf2-5ed9-42a5-a85b-42a3d97a3e6b&groupId=17369>`_.
 
    -----
-   
+
    .. csv-table::
-   
+
       "Output", "JSON, mime-type application/json"
       "E-mail contact", "|contact|"
       "API version", ":strike:`v1` |deprecated|, v2"
@@ -35,4 +34,3 @@
       <https://mobility.api.opendatahub.bz.it/v2/flat/LinkStation>`_"
       "Use cases and info", "https://analytics.opendatahub.bz.it/"
       "Sources", "A22"
-

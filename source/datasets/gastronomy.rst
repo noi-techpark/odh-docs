@@ -1,9 +1,7 @@
 .. gastronomy
-   
 
-	    
 .. panels::
-   :column: col-md-6
+   :container: container-fluid
 
    -----
 
@@ -14,9 +12,9 @@
    (cuisine types, ceremony codes, dish codes etc.).
 
    -----
-   
+
    .. csv-table::
-   
+
       "Output", "JSON, mime-type application/json"
       "E-mail contact", "|contact|"
       "API version", "v1"
