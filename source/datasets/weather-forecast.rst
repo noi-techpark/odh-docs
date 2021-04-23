@@ -23,11 +23,11 @@
 
      .. csv-table::
 
-   "Output", "JSON, mime-type application/json"
-   "E-mail contact", "|contact|"
-   "API version", "v1"
-   "Swagger URL", ":stinfo:`/weather`"
-   "Use cases and info", "https://databrowser.opendatahub.bz.it/"
-   "Android App", "`Südtirol Guide/Alto Adige Guide
-   <https://play.google.com/store/apps/details?id=com.suedtirol.android>`_"
-   "Sources", "SIAG"
+        "Output", "JSON, mime-type application/json"
+        "E-mail contact", "|contact|"
+        "API version", "v1"
+        "Swagger URL", ":stinfo:`/weather`"
+        "Use cases and info", "https://databrowser.opendatahub.bz.it/"
+        "Android App", "`Südtirol Guide/Alto Adige Guide
+        <https://play.google.com/store/apps/details?id=com.suedtirol.android>`_"
+        "Sources", "SIAG"
