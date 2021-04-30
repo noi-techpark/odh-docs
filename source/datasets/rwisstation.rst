@@ -1,21 +1,21 @@
 .. rwisstation
 
 .. panels::
-   :column: col-md-6
+   :container: container-fluid
 
    -----
-      
+
    The :strong:`Road Weather stations` are sensors that measure both
    the `road surface` and the `weather conditions`. Data represent a
    showcase from project CLEAN-ROADS, which offered open data
    until 2016.
 
    -----
-   
+
    .. csv-table::
 
-      "Output", "JSON, mime-type application/json"   
-      "E-mail contact", "|contact|"   
+      "Output", "JSON, mime-type application/json"
+      "E-mail contact", "|contact|"
       "API version", ":strike:`v1` |deprecated|, v2"
       ":literal:`StationType`", "`RWISstation
       <https://mobility.api.opendatahub.bz.it/v2/flat/RWISstation>`_"

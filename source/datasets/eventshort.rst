@@ -1,17 +1,19 @@
 .. eventshort
 
 .. panels::
-   :column: col-md-6
+   :container: container-fluid
 
    -----
-
+   :column: col-lg-4 col-md-4 col-sm-4 col-xs-6 p-2
+            
    This dataset contains events provided by :strong:`NOI Techpark`,
    :strong:`Eurac` and :strong:`St. Virtual`.
 
    -----
+   :column: col-lg-8 col-md-8 col-sm-8 col-xs-6 p-2
    
    .. csv-table::
-   
+
       "Output", "JSON, mime-type application/json"
       "E-mail contact", "|contact|"
       "API version", "v1"

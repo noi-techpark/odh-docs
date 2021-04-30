@@ -1,7 +1,7 @@
 .. event
 
 .. panels::
-   :column: col-md-6
+   :container: container-fluid
 
    -----
 
@@ -11,16 +11,16 @@
    about past events is also included.
 
    -----
-   
+
    .. csv-table::
-   
+
       "Output", "JSON, mime-type application/json"
       "E-mail contact", "|contact|"
       "API version", "v1"
       "Swagger URL", ":stinfo:`/Event`"
       "API URL", "http://tourism.opendatahub.bz.it/api/Event"
       "Use cases and info", "https://databrowser.opendatahub.bz.it/
-      https://suedtirol.info/" 
+      https://suedtirol.info/"
       "Android App", "`Südtirol Guide/Alto Adige Guide
       <https://play.google.com/store/apps/details?id=com.suedtirol.android>`_"
       "Sources", "LTS"

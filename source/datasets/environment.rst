@@ -2,19 +2,19 @@
 
 
 .. panels::
-   :column: col-md-6
+   :container: container-fluid
 
    -----
-      
+
    In this dataset can be found :strong:`Pollution` and :strong:`Air
    Quality data` (including, but not limited to, CO, NO2, PM 2.5,
    PM10). Some portion of the data have been manually elaborated, with
    the purpose to increase data quality.
 
    -----
-   
+
    .. csv-table::
-   
+
       "Output", "JSON, mime-type application/json"
       "E-mail contact", "|contact|"
       "API version", ":strike:`v1` |deprecated|, v2"

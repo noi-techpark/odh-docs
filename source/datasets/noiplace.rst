@@ -1,7 +1,7 @@
 .. noiplace
 
 .. panels::
-   :column: col-md-6
+   :container: container-fluid
 
    -----
 
