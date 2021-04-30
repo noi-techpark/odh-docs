@@ -83,3 +83,10 @@ documentation.
       * Remove drop downs from all the lists of :ref:`datasets
         <mobility-datasets>` (Mobility, Tourism, Other)
       * fix the panel's width to avoid scrollbars whenever possible.
+
+   .. change::
+      :tags: Bugfix
+      :tickets: 213
+
+      Add troubleshooting section to :ref:`R howto <howto-r>`.
+
