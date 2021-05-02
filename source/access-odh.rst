@@ -1,7 +1,7 @@
 .. _data-access:
 
-Accessing data in the Open Data Hub
------------------------------------
+Accessing the Open Data Hub
+---------------------------
 
 There are different modalities to access data that are provided by the
 Open Data Hub, that are listed here. Currently, data from the

@@ -12,15 +12,19 @@ Welcome to |odh| Documentation Repository!
    :caption: Table of Contents
 
    Introduction & Project Overview <intro>
-   Datasets and Access to Data <datasets>
    involved
-   guidelines
+   access-odh
+   datasets
    howto
+   guidelines
    applist
-   faq
    appendices
 
-..
-   Indices and tables
-   ==================
+
+.. toctree:: 
+
+   faq
+
+
+
 
