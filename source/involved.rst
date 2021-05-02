@@ -71,10 +71,10 @@ Hub project grow and improve by reporting bugs or asking for new
 features, by following the directions presented in  :ref:`the dedicated
 section below <bug-reports>`.
 
-.. _roles-tasks:
+.. _how-to-access:
 
-Roles and Tasks
----------------
+How to access
+-------------
 
 .. versionchanged:: 2020.10 Panels layout was modified to fix the
    wrong visualisation in the `Getting Involved` section.
@@ -91,6 +91,7 @@ that this list can help you understand which type of contribution you
 can give to the |odh| project!
 
 .. panels::
+   :container: container-fluid
 
    .. dropdown:: As a User I can...
 
