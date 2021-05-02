@@ -96,10 +96,4 @@ Available Domains
 .. include:: /includes/domains.rst
 
 
-Available Datasets
-==================
-
-The list of available datasets has been moved :doc:`to a dedicated page
-<datasets>`.
-
 
