@@ -194,15 +194,14 @@ Datasets in the Mobility Domain
 .. versionchanged:: 2020.09 added dropdowns to the list of datasets to
    improve usability
    
-.. figure:: /images/Mobility-domain.png
-   :align: right
-   :scale: 120 %
-
-   The dataset in the Mobility Domain at a glance.
-
 This section contains information about the datasets in the Mobility
 Domain and how to access them using the API that the Open Data Hub
 team developed and made available.
+
+.. figure:: /images/Mobility-domain.png
+   :align: center
+
+   The dataset in the Mobility Domain at a glance.
 
 .. note:: Recall that the API v1 for the Mobility Domain is now :strong:`deprecated`.
 
@@ -346,16 +345,14 @@ for e-cars.
 Datasets in the Tourism Domain
 ------------------------------
 
-.. figure:: /images/Tourism-domain.png
-   :align: right
-   :scale: 120 %
-
-   The dataset in the Tourism Domain at a glance.
-
-
 This section contains information about the dataset in the Tourism
 Domain and how to access them using the API that the Open Data Hub
 team developed and made available.
+
+.. figure:: /images/Tourism-domain.png
+   :align: center
+
+   The dataset in the Tourism Domain at a glance.
 
 Datasets presented here are related to all kind of touristic
 activities in South Tyrol. By exploring this domain, it is possible to

@@ -10,8 +10,8 @@ Getting Involved
 .. _odh-actors:
 
 .. figure:: /images/actors.png
-   :scale: 90%
-   :align: right
+   :scale: 60%
+   :align: left
 
    Relations between the actors involved in the |odh|\.
 

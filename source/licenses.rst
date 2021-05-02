@@ -10,10 +10,10 @@ shown in :numref:`floss-lm`.
 .. _floss-lm:
 
 .. figure:: images/FLOSS-LM.png
-   :scale: 80%
+   :scale: 50%
+   :align: center
 
    Licenses for the |odh| and derivative material.
-
 
 The FLOSS four freedoms
 -----------------------
@@ -35,7 +35,6 @@ can find a lot more information and details), they are:
   (:strong:`freedom 3`). By doing this you can give the whole
   community a chance to benefit from your changes. Access to the
   source code is a precondition for this.
-
 
 .. _odh-license:
 
@@ -73,7 +72,8 @@ These licenses are applied to the |odh| components:
 .. _dac-lm:
 
 .. figure:: images/DAC-LM.png
-   :scale: 80%
+   :scale: 50%
+   :align: center
 
    Creative Common Licenses and derivative material.
 

@@ -65,8 +65,10 @@ uses:
 
 
    ---
-
-   .. image::  /images/sparql/cardinality.png
+        
+   .. figure::  /images/sparql/cardinality.png
+      :align: center
+      :class: pt-5 mt-5
 
 .. _accommodation-dataset-kg:
 
