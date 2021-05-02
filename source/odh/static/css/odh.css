@@ -3325,7 +3325,8 @@ a .fa,a .wy-menu-vertical li span.toctree-expand,.wy-menu-vertical li a span.toc
     padding: 12px;
     line-height: 24px;
     margin-bottom: 24px;
-    background: #e7f2fa
+    background: #e7f2fa;
+    max-width: 1024px
 }
 
 .wy-alert-title,.rst-content .admonition-title {
@@ -4582,7 +4583,12 @@ p {
     line-height: 24px;
     margin: 0;
     font-size: 16px;
-    margin-bottom: 24px
+    margin-bottom: 24px;
+    max-width: 1024px
+}
+
+p card-text{
+    width: auto
 }
 
 h1 {
@@ -5486,13 +5492,15 @@ footer span.commit code,footer span.commit .rst-content tt,.rst-content footer s
     }
 }
 
+
 .rst-content img {
     max-width: 100%;
     height: auto
 }
 
 .rst-content div.figure {
-    margin-bottom: 24px
+    margin-bottom: 24px;
+    max-width: 1024px
 }
 
 .rst-content div.figure p.caption {
