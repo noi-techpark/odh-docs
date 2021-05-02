@@ -54,7 +54,8 @@ maturity: production stage, beta and alpha stage.
 .. _domains-diagram:
 
 .. figure:: /images/domain.png
-   :width: 90%
+   :scale: 33%
+   :align: center
 
    An overview of the |odh| Project.
 
