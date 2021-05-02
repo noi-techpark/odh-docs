@@ -93,25 +93,25 @@ can give to the |odh| project!
 .. panels::
    :container: container-fluid
 
-   .. dropdown:: As a User I can...
+   .. dropdown:: As a :strong:`User` I can...
 
       .. include:: /includes/user.rst
 
    ---
 
-   .. dropdown:: As an App Developer I can...
+   .. dropdown:: As an :strong:`App Developer` I can...
 
       .. include:: /includes/appdevel.rst
 
    ---
 
-   .. dropdown:: As a Open Data Hub Core Hacker I can...
+   .. dropdown:: As a :strong:`Open Data Hub Core Hacker` I can...
 
       .. include:: /includes/corehacker.rst
 
    ---
 
-   .. dropdown:: As a Data Provider I can....
+   .. dropdown:: As a :strong:`Data Provider` I can....
 
 
       .. include:: /includes/dataproviders.rst
