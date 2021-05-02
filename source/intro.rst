@@ -54,7 +54,7 @@ maturity: production stage, beta and alpha stage.
 .. _domains-diagram:
 
 .. figure:: /images/domain.png
-   :width: 99%
+   :width: 90%
 
    An overview of the |odh| Project.
 
@@ -85,14 +85,14 @@ in the future.
 |ODH| Architecture
 ------------------
 
-.. include:: /architecture.rst
+.. include:: /includes/architecture.rst
 
 .. _available-domains:
 	     
 Available Domains
 =================
 
-.. include:: /domains.rst
+.. include:: /includes/domains.rst
 
 
 Available Datasets

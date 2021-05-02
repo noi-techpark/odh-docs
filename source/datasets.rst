@@ -517,4 +517,4 @@ Datasets in Other Domains
 
 .. odh vkg km
 
-.. include:: kg.rst
+.. include:: /includes/kg.rst
