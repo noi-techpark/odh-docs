@@ -5671,7 +5671,7 @@ footer span.commit code,footer span.commit .rst-content tt,.rst-content footer s
 }
 
 .rst-content .align-center {
-    margin: auto
+    margin: 24px 0px 24px 0px
 }
 
 .rst-content .align-center:not(table) {
