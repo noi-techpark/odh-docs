@@ -7,7 +7,7 @@ Welcome to |odh| Documentation Repository!
 ==========================================
 
 .. toctree:: 
-   :maxdepth: 4
+   :maxdepth: 3
    :includehidden:
    :caption: Table of Contents
 
