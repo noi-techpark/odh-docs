@@ -90,3 +90,19 @@ documentation.
 
       Add troubleshooting section to :ref:`R howto <howto-r>`.
 
+.. changelog::
+   :version: 2021.05
+   :released: 31 May 2021
+
+   .. change::
+      :tags: Improvement
+      :tickets: 209
+
+      A lot of improvements have been added to the general structure
+      of the documentation, the most important being:
+
+      * reorder ToC and make some section more prominent
+      * made bash code snippets more usable
+      * made accessing methods more immediate to see
+
+      For more details, please check the reference.
