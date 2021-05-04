@@ -77,7 +77,7 @@ you need to follow the following steps.
    
    .. code-block:: bash
 
-      ~$ git checkout -b $BRANCH
+      ~$ git checkout -b test-branch
 
 3. Make some changes to the code and commit them:
 
@@ -90,7 +90,7 @@ you need to follow the following steps.
 
    .. code-block:: bash   
 		   
-      ~$ git push --set-upstream origin $BRANCH
+      ~$ git push --set-upstream origin test-branch
 
 5. Navigate to your feature branch on Github
    (https://github.com/$USERNAME/bdp-core/pull/new/$BRANCH)
@@ -212,7 +212,8 @@ To resolve merge conflicts, the following steps must be performed.
    your local destination (development) branch is up to date with the
    original (upstream) repository branch.
 
-2. Check out your feature branch.
+2. Check out your feature branch (replace `$BRANCH` with the actual
+   branch name).
 
    .. code-block:: bash
 

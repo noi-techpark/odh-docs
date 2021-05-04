@@ -135,7 +135,7 @@ to you with the following call:
    :name: grant-token
    :caption: Receiving an access topic
 
-   curl -X POST -L "https://auth.opendatahub.bz.it/auth/realms/noi/protocol/openid-connect/token" \
+   ~$ curl -X POST -L "https://auth.opendatahub.bz.it/auth/realms/noi/protocol/openid-connect/token" \
    --header 'Content-Type: application/x-www-form-urlencoded' \
    --data-urlencode 'grant_type=password' \
    --data-urlencode 'username=my_username' \
@@ -151,7 +151,7 @@ parameters given in the query above with
    :name: refresh-token
    :caption: Refreshing the access token
 
-   curl -X POST -L "https://auth.opendatahub.bz.it/auth/realms/noi/protocol/openid-connect/token" \
+   ~$ curl -X POST -L "https://auth.opendatahub.bz.it/auth/realms/noi/protocol/openid-connect/token" \
    --header 'Content-Type: application/x-www-form-urlencoded' \
    --data-urlencode 'grant_type=refresh_token' \
    --data-urlencode 'refresh_token=the_refresh_token' \
@@ -171,7 +171,7 @@ requests. The following API call shows how to get all
    :name: get-closed-data
    :caption: Retrieving data with the access token
 
-   curl -X GET "https://mobility.api.opendatahub.bz.it/v2/flat/VMS/*/latest?select=sname,mvalue" \
+   ~$ curl -X GET "https://mobility.api.opendatahub.bz.it/v2/flat/VMS/*/latest?select=sname,mvalue" \
    --header 'Content-Type: application/json' \
    --header 'Authorization: bearer your-access-token'
 

@@ -117,7 +117,7 @@ read.
    Jun 13 16:36:28 odh tomcat8[13802]:    ...done.
    Jun 13 16:36:28 odh systemd[1]: Started LSB: Start Tomcat..
 
-If you do not use systemd, the command will have a differnt output:
+If you do not use systemd, the command will have a different output:
 
 .. code-block:: bash
 
