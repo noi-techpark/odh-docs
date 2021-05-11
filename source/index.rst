@@ -7,20 +7,24 @@ Welcome to |odh| Documentation Repository!
 ==========================================
 
 .. toctree:: 
-   :maxdepth: 4
+   :maxdepth: 3
    :includehidden:
    :caption: Table of Contents
 
    Introduction & Project Overview <intro>
-   Datasets and Access to Data <datasets>
    involved
-   guidelines
+   access-odh
+   datasets
    howto
+   guidelines
    applist
-   faq
    appendices
 
-..
-   Indices and tables
-   ==================
+
+.. toctree:: 
+
+   faq
+
+
+
 

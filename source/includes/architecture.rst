@@ -10,11 +10,11 @@ data analysis to produce :term:`Statistical Graphics`.
 .. _arch-odh:
 
 .. figure::  /images/odh-architecture.png
-   :width: 99%
+   :scale: 40%
+   :align: center
 
    The |odh| architecture with the components (top) and the data
    formats used (bottom) during each data transformation.
-
 
 At the core of the |odh| lays :strong:`bdp-core`, a java application
 which contains all the business logic and handles all the connections

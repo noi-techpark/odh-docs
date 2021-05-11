@@ -120,14 +120,14 @@ with other datasets by simply replacing the datasets' name in the URL.
 
 The following query will retrieve from the dataset only those item
 which have a :strong:`Type` and a strong:`Active` keys defined in the
-dataset:
+dataset::
 
-https://tourism.opendatahub.bz.it/api/ODHActivityPoi?fields=Type,Active 
+  https://tourism.opendatahub.bz.it/api/ODHActivityPoi?fields=Type,Active 
 
 The following query retrieves information from within a dictionary
-field:
+field::
 
-https://tourism.opendatahub.bz.it/api/ODHActivityPoi?fields=Detail.en.Title
+  https://tourism.opendatahub.bz.it/api/ODHActivityPoi?fields=Detail.en.Title
 
 In particular, all items which have a `Title` in `en`\ glish within
 the `Detail` will appear in the result set of this query.
@@ -155,9 +155,9 @@ The `language` filter is used to retrieve only the data stored in one
 of the languages supported by the Open Data Hub. Let's build on the
 example of previous section and use the `ODHActivityPOI` dataset. The
 following query will retrieve all the data in the dataset that have
-some information stored in English:
+some information stored in English::
 
-http://tourism.opendatahub.bz.it/api/ODHActivityPoi?language=en
+  http://tourism.opendatahub.bz.it/api/ODHActivityPoi?language=en
 
 Most of the data in the Open Data Hub datasets are available in three
 languages, English, German, and Italian, for which :literal:`en`,
@@ -208,9 +208,8 @@ retrieve and save data in CSV format:
      http://tourism.opendatahub.bz.it/api/Activity?fields=Id,Detail.en.Title,ContactInfos.en.CompanyName&pagesize=500
      
   This query shows its JSON output on the screen. To save it, right
-  click on the page and select `Save as`.
+  click on the page and select `Save as`. ::
 
-  .. code:: bash
 
      http://tourism.opendatahub.bz.it/api/Activity?fields=Id,Detail.de.Title,ContactInfos.de.CompanyName&pagesize=500&format=csv
      

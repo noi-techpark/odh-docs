@@ -11,11 +11,11 @@ Development, Testing, and Production Environments
 .. _dtp:
 
 .. figure:: /images/DTP.png
-   :scale: 99%
+   :scale: 50%
+   :align: center
 
    Diagram showing the development, testing, and production
    environments in the |odh| project.
-
 
 On the right-hand side, the internal structure of development is
 shown, while on the left-hand side, how external, and potentially

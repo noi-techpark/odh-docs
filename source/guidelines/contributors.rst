@@ -37,7 +37,8 @@ Before starting the development, you need to fork the original
    username and password.
 
    .. figure:: /images/contributors/fork.png
-      :width: 90%
+      :scale: 33%
+      :align: center
 
       Fork the repository.
 
@@ -54,7 +55,8 @@ Before starting the development, you need to fork the original
    .. _checkout-pic:
    
    .. figure:: /images/contributors/checkout.png
-      :width: 90%
+      :scale: 33%
+      :align: center
 	      
       Clone the repository.
 
@@ -75,7 +77,7 @@ you need to follow the following steps.
    
    .. code-block:: bash
 
-      ~$ git checkout -b $BRANCH
+      ~$ git checkout -b test-branch
 
 3. Make some changes to the code and commit them:
 
@@ -88,7 +90,7 @@ you need to follow the following steps.
 
    .. code-block:: bash   
 		   
-      ~$ git push --set-upstream origin $BRANCH
+      ~$ git push --set-upstream origin test-branch
 
 5. Navigate to your feature branch on Github
    (https://github.com/$USERNAME/bdp-core/pull/new/$BRANCH)
@@ -97,7 +99,8 @@ you need to follow the following steps.
    .. _create-pr:
 
    .. figure:: /images/contributors/create-pull-request-development.png
-      :width: 90%
+      :scale: 33%
+      :align: center
 	      
       Create a pull request.
 
@@ -112,7 +115,8 @@ you need to follow the following steps.
    .. _pr-ok:
 
    .. figure:: /images/contributors/show-pull-request-ok-development.png
-      :width: 90%
+      :scale: 33%
+      :align: center
       
       Show outcome of a pull request.
 
@@ -194,11 +198,11 @@ destination branch of the original repository will change. These
 changes could result in merge conflicts when pulling your code, like
 shown in :numref:`merge-conflict-picture`.
 
-
 .. _merge-conflict-picture:
 
 .. figure:: /images/contributors/merge-conflicts-conflicts-development.png
-   :width: 90%
+   :scale: 33%
+   :align: center
 	   
    A Merge Conflict.
 
@@ -208,19 +212,18 @@ To resolve merge conflicts, the following steps must be performed.
    your local destination (development) branch is up to date with the
    original (upstream) repository branch.
 
-2. Check out your feature branch.
+2. Check out your feature branch (replace `$BRANCH` with the actual
+   branch name).
 
    .. code-block:: bash
 
-      ~$ git checkout $BRANCH
-    
+      ~$ git checkout $BRANCH  
 
 3. Merge the changes of the development branch to the feature branch.
 
    .. code-block:: bash
 
       ~$ git merge development
-    
 
    The command will output the files with merge conflicts. See sample
    output in :numref:`merge-conflict-output`.
@@ -228,7 +231,8 @@ To resolve merge conflicts, the following steps must be performed.
    .. _merge-conflict-output:
 
    .. figure:: /images/contributors/merge-conflicts-output-development.png
-      :width: 90%
+      :scale: 33%
+      :align: center
 	      
       Merge conflicts output.
 
@@ -238,7 +242,8 @@ To resolve merge conflicts, the following steps must be performed.
    :literal:`=======` separates the two versions.
 
    .. figure:: /images/contributors/merge-conflicts-solving-development.png
-      :width: 90%
+      :scale: 33%
+      :align: center
 	      
       Solving a merge conflicts.
 
@@ -265,7 +270,8 @@ To resolve merge conflicts, the following steps must be performed.
    accepted.
 
    .. figure:: /images/contributors/merge-conflicts-resolved-development.png 
-      :width: 90%
+      :scale: 33%
+      :align: center
 	      
       A solved merge conflict. 
 
