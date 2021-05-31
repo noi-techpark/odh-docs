@@ -1,8 +1,26 @@
 .. tech info for mobility datasets
 
+.. _mobility-tech:
+
 ============================================
  Technical Information for Mobility Dataset
 ============================================
+
+This section contains detailed technical information shared by the
+datasets in the Mobility domain.  The purpose of this section is
+manifold:
+
+* To understand what output is received as result of a query and its
+  structure--see :ref:`mobility-json`
+
+* To know which methods are available to gather data from the domains
+  via the API calls--see :ref:`api-v2-structure`
+  
+* To learn how to improve responses by tweaking queries using SELECT,
+  and WHERE clauses, logical operators, and parameters.--see
+  :ref:`mobility-advanced`
+
+.. _mobility-json:
 
 The JSON Response Schema
 ========================
@@ -412,6 +430,7 @@ anymore, so historical data might not be available.
 This method does not add any other keys to the JSON response; all the
 keys described in the previous two section are valid and can be used.
 
+.. _mobility-advanced:
 	 
 Advanced Data Processing
 ========================
