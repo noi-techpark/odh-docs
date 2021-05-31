@@ -352,9 +352,15 @@ for e-cars.
 Datasets in the Tourism Domain
 ------------------------------
 
-This section contains information about the dataset in the Tourism
-Domain and how to access them using the API that the Open Data Hub
-team developed and made available.
+.. toctree::
+   :hidden:
+
+   Technical Information <tourism-tech>
+
+
+This section contains :ref:`technical information <tourism-tech>`
+about the dataset in the Tourism Domain and how to access them using
+the API that the Open Data Hub team developed and made available.
 
 .. figure:: /images/Tourism-domain.png
    :align: center
