@@ -4,6 +4,8 @@
 How to access Tourism Data?
 ===========================
 
+.. versionchanged:: 2021.05 moved technical info to dataset section
+   
 The purpose of this howto is to quickly introduce the structure of the
 API calls, the available filters for the datasets in the Tourism
 domain, and give some general and useful information about the Tourism

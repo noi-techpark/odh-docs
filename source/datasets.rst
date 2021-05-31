@@ -8,6 +8,9 @@ Datasets
 .. versionadded:: 2021.02 |odh| Virtual Knowledge Graph and
    description of underlying Knowledge Model
 
+.. versionchanged:: 2021.05 moved technical information for tourism
+   and mobility to this section
+
 The goal of the Open Data Hub project is to make available datasets containing
 data about the South Tyrolean ecosystem, to allow third parties to
 develop novel applications on top of them, consuming the exposed
