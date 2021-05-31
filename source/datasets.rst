@@ -38,8 +38,6 @@ section.
 Data Providers
 --------------
 
-.. versionchanged:: 2020.09 Updated the list of data providers
-
 A :strong:`Data Provider` is any entity that shares their Open Data
 with the Open Data Hub project, allowing their free reuse (ideally under a
 free licence like |cc0| or |bysa|) from any third-party that relies on
@@ -191,18 +189,6 @@ Datasets in the Mobility Domain
    :hidden:
 
    Technical Information <mobility-tech>
-   
-.. versionchanged:: 2020.06 Direct link to the browsable version of
-   the datasets.
-
-.. versionchanged:: 2020.09 Improved description of datasets in the
-   mobility domain, including external links, use cases, and Data
-   Providers.
-
-.. versionchanged:: 2020.09 added dropdowns to the list of datasets to
-   improve usability
-
-
      
 This section contains :ref:`technical information <mobility-tech>`
 about the datasets in the Mobility Domain and how to access them using
@@ -315,11 +301,6 @@ The Mobility/Mobility sub-domain contains data about public
 transportation, sharing of transport means, and recharging stations
 for e-cars.
 
-.. versionchanged:: 2020.09 Improved description of datasets in the
-   mobility/mobility domain, including new information
-
-.. deprecated:: 2020.10 Public Transportation dataset
-
 .. _bikesharing-dataset:
 
 :link-badge:`bikesharing-dataset,it.bz.opendatahub.bikesharing,ref,badge-light`
@@ -376,10 +357,6 @@ find information about winter and summer offers from local touristic
 boards, information about weather, hotels and accommodation, Points of
 Interests, and a lot more.
 
-.. versionchanged:: 2020.10 Changed identifier of datasets activity,
-   event, gastronomy, package, and POI
-
-.. versionadded:: 2020.10 API URL for all Tourism datasets.
 
 The following information is provided for each dataset in the Tourism domain:
 

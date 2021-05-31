@@ -20,9 +20,6 @@ All the APIs available for the tourism domain can be accessed from the
 same URL through their Swagger user interface:
 http://tourism.opendatahub.bz.it/swagger/ui/index
 
-.. versionchanged:: 2019-May new and easier procedure to authenticate
-   and to store credentials.
-
 With the introduction on the Tourism API graphic interface of a newer
 swagger version, supplying and storing the token has become easier,
 making older procedures deprecated or obsolete. Moreover, in the new

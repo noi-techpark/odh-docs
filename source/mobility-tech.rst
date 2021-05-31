@@ -84,8 +84,6 @@ incrementally refine the data retrieved. They are:
 #. :literal:`/v2/{representation}/{edgeTypes}` returns data related to
    the :ref:`edges <edge-definition>` and their parts, and is very
    similar to the previous call.
-
-   .. versionadded:: 2020.10 edgeTypes method.
 		     
 #. :literal:`/v2/{representation}/{stationTypes}/{dataTypes}`.  In
    addition to the data of the previous call, it contains the data
@@ -108,9 +106,6 @@ incrementally refine the data retrieved. They are:
 
 Representation types
 ====================
-   
-.. versionchanged:: 2020.10 New types of representation for API calls:
-   node and edge.
 
 The first method described in the previous list introduces the
 available entry points to the API v2: the types of `representation`
@@ -581,8 +576,6 @@ a string, you need to use double quotes, like gt.\ :strong:`"100"`.
 Logical Operators
 -----------------
 
-.. versionadded:: 2020.11 description of logical operators
-
 Besides the operators described in section
 :ref:`mobility-where-clause`, |odh| supports the use of logical
 operators :literal:`and` and :literal:`or` in the :literal:`WHERE`
@@ -617,8 +610,6 @@ The above example will be translated into Postgres as follows:
 Additional Parameters
 ---------------------
 
-.. versionadded:: 2020.11 `timezone`
-
 There are a couple of other parameter that can be given to the API
 calls and are described in this section.
 
@@ -639,7 +630,6 @@ the API call.
 .. warning:: Keeping track of all distinct values might be a
    resource-intensive process that significantly rises the response
    time, therefore use it with care.
-
 
 .. rubric:: :literal:`timezone`
 
