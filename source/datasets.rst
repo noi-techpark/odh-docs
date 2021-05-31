@@ -184,6 +184,11 @@ are available in section :ref:`authentication-hub`.
 Datasets in the Mobility Domain
 -------------------------------
 
+.. toctree::
+   :hidden:
+
+   Technical Information <mobility-tech>
+   
 .. versionchanged:: 2020.06 Direct link to the browsable version of
    the datasets.
 
@@ -193,10 +198,12 @@ Datasets in the Mobility Domain
 
 .. versionchanged:: 2020.09 added dropdowns to the list of datasets to
    improve usability
-   
-This section contains information about the datasets in the Mobility
-Domain and how to access them using the API that the Open Data Hub
-team developed and made available.
+
+
+     
+This section contains :ref:`technical information <mobility-tech>`
+about the datasets in the Mobility Domain and how to access them using
+the API that the Open Data Hub team developed and made available.
 
 .. figure:: /images/Mobility-domain.png
    :align: center
@@ -515,3 +522,4 @@ Datasets in Other Domains
 .. odh vkg km
 
 .. include:: /includes/kg.rst
+
