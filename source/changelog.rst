@@ -4,6 +4,9 @@ Changelog
 .. versionadded:: 2021.03 Add extension to provide structured
    Changelogs
 
+.. contents:: Available Changelogs:
+   :local:
+                  
 This section contains the Changelog of the |odh| project's
 documentation.
 
@@ -106,3 +109,11 @@ documentation.
       * made accessing methods more immediate to see
 
       For more details, please check the reference.
+
+   .. change::
+      :tags: Improvement
+      :tickets: 214
+                
+      The technical content of the `getting started` howtos has been
+      moved to the `Datasets` section, making them
+      shorter. Also a few examples have been added to :ref:`get-started-mobility`.

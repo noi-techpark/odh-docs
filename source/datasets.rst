@@ -8,6 +8,9 @@ Datasets
 .. versionadded:: 2021.02 |odh| Virtual Knowledge Graph and
    description of underlying Knowledge Model
 
+.. versionchanged:: 2021.05 moved technical information for tourism
+   and mobility to this section
+
 The goal of the Open Data Hub project is to make available datasets containing
 data about the South Tyrolean ecosystem, to allow third parties to
 develop novel applications on top of them, consuming the exposed
@@ -34,8 +37,6 @@ section.
 
 Data Providers
 --------------
-
-.. versionchanged:: 2020.09 Updated the list of data providers
 
 A :strong:`Data Provider` is any entity that shares their Open Data
 with the Open Data Hub project, allowing their free reuse (ideally under a
@@ -184,19 +185,14 @@ are available in section :ref:`authentication-hub`.
 Datasets in the Mobility Domain
 -------------------------------
 
-.. versionchanged:: 2020.06 Direct link to the browsable version of
-   the datasets.
+.. toctree::
+   :hidden:
 
-.. versionchanged:: 2020.09 Improved description of datasets in the
-   mobility domain, including external links, use cases, and Data
-   Providers.
-
-.. versionchanged:: 2020.09 added dropdowns to the list of datasets to
-   improve usability
-   
-This section contains information about the datasets in the Mobility
-Domain and how to access them using the API that the Open Data Hub
-team developed and made available.
+   Technical Information <mobility-tech>
+     
+This section contains :ref:`technical information <mobility-tech>`
+about the datasets in the Mobility Domain and how to access them using
+the API that the Open Data Hub team developed and made available.
 
 .. figure:: /images/Mobility-domain.png
    :align: center
@@ -305,11 +301,6 @@ The Mobility/Mobility sub-domain contains data about public
 transportation, sharing of transport means, and recharging stations
 for e-cars.
 
-.. versionchanged:: 2020.09 Improved description of datasets in the
-   mobility/mobility domain, including new information
-
-.. deprecated:: 2020.10 Public Transportation dataset
-
 .. _bikesharing-dataset:
 
 :link-badge:`bikesharing-dataset,it.bz.opendatahub.bikesharing,ref,badge-light`
@@ -345,9 +336,15 @@ for e-cars.
 Datasets in the Tourism Domain
 ------------------------------
 
-This section contains information about the dataset in the Tourism
-Domain and how to access them using the API that the Open Data Hub
-team developed and made available.
+.. toctree::
+   :hidden:
+
+   Technical Information <tourism-tech>
+
+
+This section contains :ref:`technical information <tourism-tech>`
+about the dataset in the Tourism Domain and how to access them using
+the API that the Open Data Hub team developed and made available.
 
 .. figure:: /images/Tourism-domain.png
    :align: center
@@ -360,10 +357,6 @@ find information about winter and summer offers from local touristic
 boards, information about weather, hotels and accommodation, Points of
 Interests, and a lot more.
 
-.. versionchanged:: 2020.10 Changed identifier of datasets activity,
-   event, gastronomy, package, and POI
-
-.. versionadded:: 2020.10 API URL for all Tourism datasets.
 
 The following information is provided for each dataset in the Tourism domain:
 
@@ -515,3 +508,4 @@ Datasets in Other Domains
 .. odh vkg km
 
 .. include:: /includes/kg.rst
+

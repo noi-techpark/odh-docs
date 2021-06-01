@@ -3,10 +3,6 @@
 Getting Involved
 =================
 
-.. versionadded:: 2020.10 Rewritten introduction and added description
-   of possible actors involved in the |odh| and how their possible
-   interactions with the |odh| project.
-
 .. _odh-actors:
 
 .. figure:: /images/actors.png
@@ -75,9 +71,6 @@ section below <bug-reports>`.
 
 How to access
 -------------
-
-.. versionchanged:: 2020.10 Panels layout was modified to fix the
-   wrong visualisation in the `Getting Involved` section.
 
 This section gives an overview of which tasks you can play when
 collaborating with the |odh| project.

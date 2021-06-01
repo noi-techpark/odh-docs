@@ -3,12 +3,9 @@
 List of HOWTOs
 ==============
 
-.. versionchanged:: 2020.10 Panels layout was replaced by tabs in the
-   howto list.
-
-.. versionchanged:: 2021:04 Replace tabs with (sub-)sections.
-.. versionchanged:: 2021:04 Remove howto for API v1.
-.. versionchanged:: 2021:04 Resize images in all howtos.
+.. versionchanged:: 2021.04 Replace tabs with (sub-)sections.
+.. versionchanged:: 2021.04 Remove howto for API v1.
+.. versionchanged:: 2021.04 Resize images in all howtos.
 
 This page contains the list of available howtos, divided into
 areas. The list of howtos, together with a short description is

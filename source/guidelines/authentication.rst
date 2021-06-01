@@ -75,9 +75,6 @@ and :literal:`$TOKEN` is the string of the token.
 Authentication To Internal Infrastructure
 -----------------------------------------
 
-.. versionchanged:: 2020.10 Authentication to internal infrastructure
-   does not require :literal:`client_secret` and credentials anyumore 
-
 Access to the Open Data Hub's internal infrastructure requires
 authentication, which is provided by :strong:`Keycloack`, an Open
 Source software that provides Identity and Access Management. In a
