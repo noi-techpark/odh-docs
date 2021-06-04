@@ -117,3 +117,22 @@ documentation.
       The technical content of the `getting started` howtos has been
       moved to the `Datasets` section, making them
       shorter. Also a few examples have been added to :ref:`get-started-mobility`.
+
+.. changelog::
+   :version: 2021.06
+   :released: 30 June 2021
+
+   .. change::
+      :tags: Change, Improvement
+      :tickets: 220
+
+      The Tourism domain was modified and improved in several points,
+      which are reflected in the documentation:
+
+      * New Swagger and API URLs
+      * Localised methods have been definitely removed
+      * A new `extlink` to shorten URLs of tourism API in the
+        documentation source code has been introduced
+      * The :ref:`tourism-data-howto` article has been modified to
+        include the API browsable interface
+      * Tourism datasets have been ordered lexicographically

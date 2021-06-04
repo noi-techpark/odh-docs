@@ -336,6 +336,9 @@ for e-cars.
 Datasets in the Tourism Domain
 ------------------------------
 
+.. versionchanged:: 2021.06 modified URLs of datasets and API; ordered
+   Tourism datasets lexicographically
+
 .. toctree::
    :hidden:
 

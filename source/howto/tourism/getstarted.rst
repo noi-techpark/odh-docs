@@ -5,6 +5,9 @@ How to access Tourism Data?
 ===========================
 
 .. versionchanged:: 2021.05 moved technical info to dataset section
+
+.. versionchanged:: 2021.06 removed broken URL, added `browsing API`
+   section, general improvement to the content
    
 The purpose of this howto is to quickly introduce the alternatives to
 access datasets in the Tourism domain. Technical information about the

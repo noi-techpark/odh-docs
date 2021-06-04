@@ -25,6 +25,9 @@ manifold:
 Structure of the API calls
 ==========================
 
+.. versionchanged:: 2021.06 marked as unavailable two API calls that
+   were removed 
+
 In the Tourism domain, there are a few API calls that allow to extract
 the same type of data from the various datasets. Each of these calls
 can prove useful in different scenarios, depending on the data
