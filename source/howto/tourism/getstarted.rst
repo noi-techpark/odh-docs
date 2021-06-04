@@ -95,5 +95,3 @@ One you have retrieved the data, which come in JSON format, you can
 process and manipulate them with a tool like `jq
 <https://github.com/stedolan/jq>`_.
 
-.. seealso:: More detailed documentation of the exposed API methods
-   can be found on http://tourism.opendatahub.bz.it/Help.
