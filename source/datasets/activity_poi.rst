@@ -28,7 +28,7 @@
       "Output", "JSON, mime-type application/json"
       "E-mail contact", "|contact|"
       "API version", "v1"
-      "Swagger URL", ":stinfo:`/ODHactivityPoi`"
+      "Swagger URL", ":stinfo:`/ODHActivityPoi`"
       "API URL", ":apit:`/ODHActivityPoi`"
       "Use cases and info", "https://databrowser.opendatahub.bz.it/
       https://suedtirol.info/"
