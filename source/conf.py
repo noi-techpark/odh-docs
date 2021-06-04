@@ -111,7 +111,9 @@ rst_prolog = """
 
 extlinks = { 'sasabus': ('http://sasabus.org/%s', None),
              'stinfo':
-             ('https://tourism.api.opendatahub.bz.it/#%s', None)
+             ('https://tourism.api.opendatahub.bz.it/#%s', None),
+             'apit':
+             ('https://tourism.api.opendatahub.bz.it/v1%s', None)
 }
 
 numfig = True

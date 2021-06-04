@@ -21,7 +21,7 @@
       "E-mail contact", "|contact|"
       "API version", "v1"
       "Swagger URL", ":stinfo:`/Weather/Weather_GetSnowReportBase`"
-      "API URL", "http://tourism.opendatahub.bz.it/api/Weather/SnowReportBase"
+      "API URL", ":apit:`/Weather/SnowReportBase`"
       "Use cases and info", "https://databrowser.opendatahub.bz.it/
       https://suedtirol.info/"
       "Sources", "LTS, IDM"

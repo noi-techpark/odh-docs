@@ -18,7 +18,7 @@
       "E-mail contact", "|contact|"
       "API version", "v1"
       "Swagger URL", ":stinfo:`/EventShort`"
-      "API URL", "http://tourism.opendatahub.bz.it/api/EventShort"
+      "API URL", ":apit:`/EventShort`"
       "Use cases and info", "https://today.noi.bz.it/
       https://noi.bz.it/event-calendar/
       https://virtual.noi.bz.it/programma.html"
