@@ -20,7 +20,7 @@
       "API version", "v1, AlpineBits HotelData 2017-10, 2018-10, and soon
       2020-10"
       "Swagger URL", ":stinfo:`/Accommodation`"
-      "API URL", "http://tourism.opendatahub.bz.it/api/Accommodation"
+      "API URL", ":apit:`/Accommodation`"
       "Use cases and info", "https://databrowser.opendatahub.bz.it/
       https://suedtirol.info/"
       "Android App", "`Südtirol Guide/Alto Adige Guide

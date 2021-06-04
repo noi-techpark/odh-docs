@@ -19,7 +19,7 @@
       "E-mail contact", "|contact|"
       "API version", "v1"
       "Swagger URL", ":stinfo:`/Gastronomy`"
-      "API URL", "http://tourism.opendatahub.bz.it/api/Gastyronomy"
+      "API URL", ":apit:`/Gastyronomy`"
       "Use cases and info", "https://databrowser.opendatahub.bz.it/
       https://suedtirol.info/"
       "Sources", "LTS"

@@ -20,8 +20,8 @@
       "Output", "JSON, mime-type application/json"
       "E-mail contact", "|contact|"
       "API version", "v1"
-      "Swagger URL", ":stinfo:`/Weather/Weather_GetSnowReportBase`"
-      "API URL", "http://tourism.opendatahub.bz.it/api/Weather/SnowReportBase"
+      "Swagger URL", ":stinfo:`/Weather/get_v1_Weather_SnowReport`"
+      "API URL", ":apit:`/Weather/SnowReportBase`"
       "Use cases and info", "https://databrowser.opendatahub.bz.it/
       https://suedtirol.info/"
       "Sources", "LTS, IDM"

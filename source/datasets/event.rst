@@ -18,7 +18,7 @@
       "E-mail contact", "|contact|"
       "API version", "v1"
       "Swagger URL", ":stinfo:`/Event`"
-      "API URL", "http://tourism.opendatahub.bz.it/api/Event"
+      "API URL", ":apit:`/Event`"
       "Use cases and info", "https://databrowser.opendatahub.bz.it/
       https://suedtirol.info/"
       "Android App", "`Südtirol Guide/Alto Adige Guide

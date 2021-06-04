@@ -336,6 +336,9 @@ for e-cars.
 Datasets in the Tourism Domain
 ------------------------------
 
+.. versionchanged:: 2021.06 modified URLs of datasets and API; ordered
+   Tourism datasets lexicographically
+
 .. toctree::
    :hidden:
 
@@ -356,7 +359,6 @@ activities in South Tyrol. By exploring this domain, it is possible to
 find information about winter and summer offers from local touristic
 boards, information about weather, hotels and accommodation, Points of
 Interests, and a lot more.
-
 
 The following information is provided for each dataset in the Tourism domain:
 
@@ -392,41 +394,17 @@ The following information is provided for each dataset in the Tourism domain:
 	 
     Other howtos are available in the :ref:`dedicated section <howto-list>`.
    
-.. _package-dataset:
+.. _accommodation-dataset:
 
-:link-badge:`package-dataset,it.bz.opendatahub.package,ref,badge-light`
+:link-badge:`accommodation-dataset,it.bz.opendatahub.accommodation,ref,badge-light`
 
-.. include:: /datasets/package.rst
+.. include:: /datasets/accommodation.rst
 
 .. _activity-dataset:
 
 :link-badge:`activity-dataset,it.bz.opendatahub.activity,ref,badge-light`
 
 .. include:: /datasets/activity.rst
-
-.. _event-dataset:
-
-:link-badge:`event-dataset,it.bz.opendatahub.event,ref,badge-light`
-
-.. include:: /datasets/event.rst
-
-.. _gastronomy-dataset:
-
-:link-badge:`gastronomy-dataset,it.bz.opendatahub.gastronomy,ref,badge-light`
-
-.. include:: /datasets/gastronomy.rst
-
-.. _poi-dataset:
-
-:link-badge:`poi-dataset,it.bz.opendatahub.poi,ref,badge-light`
-
-.. include:: /datasets/poi.rst
-
-.. _accommodation-dataset:
-
-:link-badge:`accommodation-dataset,it.bz.opendatahub.accommodation,ref,badge-light`
-
-.. include:: /datasets/accommodation.rst
 
 .. _activity_poi-dataset:
 
@@ -440,17 +418,41 @@ The following information is provided for each dataset in the Tourism domain:
 
 .. include:: /datasets/common.rst
 
+.. _event-dataset:
+
+:link-badge:`event-dataset,it.bz.opendatahub.event,ref,badge-light`
+
+.. include:: /datasets/event.rst
+
 .. _eventshort-dataset:
 
 :link-badge:`eventshort-dataset,it.bz.opendatahub.eventshort,ref,badge-light`
 
 .. include:: /datasets/eventshort.rst
 
+.. _gastronomy-dataset:
+
+:link-badge:`gastronomy-dataset,it.bz.opendatahub.gastronomy,ref,badge-light`
+
+.. include:: /datasets/gastronomy.rst
+
 .. _location-dataset:
 
 :link-badge:`location-dataset,it.bz.opendatahub.location,ref,badge-light`
 
 .. include:: /datasets/location.rst
+
+.. _package-dataset:
+
+:link-badge:`package-dataset,it.bz.opendatahub.package,ref,badge-light`
+
+.. include:: /datasets/package.rst
+
+.. _poi-dataset:
+
+:link-badge:`poi-dataset,it.bz.opendatahub.poi,ref,badge-light`
+
+.. include:: /datasets/poi.rst
 
 .. _ski-dataset:
 

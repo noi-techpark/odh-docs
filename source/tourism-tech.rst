@@ -25,6 +25,9 @@ manifold:
 Structure of the API calls
 ==========================
 
+.. versionchanged:: 2021.06 marked as unavailable two API calls that
+   were removed 
+
 In the Tourism domain, there are a few API calls that allow to extract
 the same type of data from the various datasets. Each of these calls
 can prove useful in different scenarios, depending on the data
@@ -50,16 +53,16 @@ The calls defined for every datasets are:
   the dataset, that can be later used to ask more precise queries to
   the dataset.
 
-The following calls have been obsoleted and can not be used
+The following calls have been :strong:`removed` and can not be used
 anymore. They have been replaced by a new filter, called `language`,
 that operates on the datasets in a similar way to the
-:ref:`fields-filter` and is
-described in section :ref:`language-filter`.
+:ref:`fields-filter` and is described in section
+:ref:`language-filter`.
 
-- :literal:`/api/{Name}Localized` Return the whole dataset in only
-  the given language (which is a mandatory part of the query). 
-- :literal:`/api/{Name}Localized/{Id}` Return only item with given Id
-  an in given language.
+- :strike:`/api/{Name}Localized Return the whole dataset in only
+  the given language (which is a mandatory part of the query)`
+- :strike:`/api/{Name}Localized/{Id} Return only item with given Id
+  an in given language.`
 
 .. _common-filters:
 

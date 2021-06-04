@@ -28,8 +28,8 @@
       "Output", "JSON, mime-type application/json"
       "E-mail contact", "|contact|"
       "API version", "v1"
-      "Swagger URL", ":stinfo:`/ODHactivityPoi`"
-      "API URL", "http://tourism.opendatahub.bz.it/api/ODHActivityPoi"
+      "Swagger URL", ":stinfo:`/ODHActivityPoi`"
+      "API URL", ":apit:`/ODHActivityPoi`"
       "Use cases and info", "https://databrowser.opendatahub.bz.it/
       https://suedtirol.info/"
       "Android App", "`Südtirol Guide/Alto Adige Guide

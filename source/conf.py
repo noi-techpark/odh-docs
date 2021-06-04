@@ -73,7 +73,7 @@ author = u'The ODH Team'
 # built documents.
 #
 # The short X.Y version.
-version = u'2021.05'
+version = u'2021.06'
 # The full version, including alpha/beta/rc tags.
 release = version
 
@@ -111,7 +111,9 @@ rst_prolog = """
 
 extlinks = { 'sasabus': ('http://sasabus.org/%s', None),
              'stinfo':
-             ('http://tourism.opendatahub.bz.it/swagger/ui/index#%s', None)
+             ('https://tourism.api.opendatahub.bz.it/#%s', None),
+             'apit':
+             ('https://tourism.api.opendatahub.bz.it/v1%s', None)
 }
 
 numfig = True
