@@ -357,7 +357,6 @@ find information about winter and summer offers from local touristic
 boards, information about weather, hotels and accommodation, Points of
 Interests, and a lot more.
 
-
 The following information is provided for each dataset in the Tourism domain:
 
 .. csv-table::

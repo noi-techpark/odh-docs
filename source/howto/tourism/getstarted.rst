@@ -6,25 +6,32 @@ How to access Tourism Data?
 
 .. versionchanged:: 2021.05 moved technical info to dataset section
    
-The purpose of this howto is to quickly introduce the structure of the
-API calls, the available filters for the datasets in the Tourism
-domain, and give some general and useful information about the Tourism
-API.
+The purpose of this howto is to quickly introduce the alternatives to
+access datasets in the Tourism domain. Technical information about the
+datasets can now be found in section :ref:`tourism-tech`.
 	 
-.. _data-access-tourismAPI:
    
-Data Access and Manipulation
-----------------------------
+Swagger Interface
+-----------------
 
 All the APIs available for the tourism domain can be accessed from the
 same URL through their Swagger user interface:
-http://tourism.opendatahub.bz.it/swagger/ui/index
+
+https://tourism.api.opendatahub.bz.it/
+
+.. hint:: Check section :ref:`tourism-datasets` for direct URLs to the
+   datasets.
 
 With the introduction on the Tourism API graphic interface of a newer
 swagger version, supplying and storing the token has become easier,
 making older procedures deprecated or obsolete. Moreover, in the new
 GUI, for every API method is shown whether it can provide Open Data as
 a result and if not, it will be necessary to authenticate.
+
+.. _data-access-tourismAPI:
+
+Authentication with Swagger
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Authentication is easy and, unlike it happened in the past, it does
 require only to supply your credentials. From the swagger UI, click on
@@ -69,8 +76,37 @@ data.
 To log out, click again on :strong:`Authorize` in the Swagger UI (see
 :numref:`tourism-ui`), then on :strong:`Logout`.
 
+Browsing API Datasets
+---------------------
+
+The data in the API can be browsed at the following URL:
+
+https://tourism.api.opendatahub.bz.it/v1/
+
+.. note:: You may need to install a `JSON browser plugin` for your
+   browser to browse the datasets in this way.
+
+.. _tourism-api-browse:
+
+.. figure:: /images/API-browser.png
+   :scale: 33%
+   :align: center
+
+   Browsing Tourism API
+
+Here, every link can be clicked to navigate through the various
+datasets and the data they contain. A lot of metadata and information
+is provided for every object in the dataset, depending on the type of
+object. For example, The starting point to browse the API, shown in
+:numref:`tourism-api-browse` includes for each datas licensing
+information, a description, an ID, the API and swagger URLs, while a
+dataset shows the total number of items and of pages it contains, the
+current page, pointers to previous and next page, and the items
+themselves.
+
+
 Using Command Line Tools
-~~~~~~~~~~~~~~~~~~~~~~~~
+------------------------
 
 If you plan to access the API methods with command line tools like
 :command:`curl` or :command:`wget`, or only from scripts, you need to
