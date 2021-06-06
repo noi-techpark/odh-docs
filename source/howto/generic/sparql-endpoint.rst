@@ -28,7 +28,7 @@ Data Available in the Portal
 
 The landing page of |odh|\'s SPARQL endpoint contains the following elements:
 
-1. The three buttons in the banner at the top of the page.
+1. The buttons in the banner at the top of the page.
 
    .. panels::
       :container: container-fluid pb-3
@@ -66,6 +66,31 @@ The landing page of |odh|\'s SPARQL endpoint contains the following elements:
       incomplete. 
       +++
       See section :ref:`data-quality-queries`.
+
+      ---
+      :column: col-lg-6 col-md-6 col-sm-8 col-xs-12 p-2
+               
+      Mobility
+      ^^^^^^^^
+
+      `Mobility` queries are sample queries against all the datasets
+      in the entire mobility domain. They can be used as they are or
+      modified and tweaked to extract more precise data. 
+      +++
+
+      You can refer to section :ref:`playground`.
+
+      ---
+      :column: col-lg-6 col-md-6 col-sm-8 col-xs-12 p-2
+               
+      Tourism and Mobility
+      ^^^^^^^^^^^^^^^^^^^^
+
+      `Tourism and Mobility` queries combine datasets from the tourism
+      domain with observations gathered by sensors in the mobility domain.
+      +++
+
+      You can refer to section :ref:`playground`.
 
       
 2. The main area, consisting of a large textarea, in which to write
