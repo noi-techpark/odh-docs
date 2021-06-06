@@ -7,7 +7,10 @@ The |odh| Virtual Knowledge Graph
 ---------------------------------
 
 .. versionadded:: 2021.02 Description of the Knowledge Model
-   underlying datasets Accommodation, Gastronomy, and Event datasets
+   underlying datasets Accommodation, Gastronomy, and Event
+
+.. versionadded:: 2021.06 Description of the Knowledge Model
+   underlying the mobility domain
 
 Some datasets in the |odh|, namely :ref:`Accommodation
 <accommodation-dataset>`, :ref:`Gastronomy <gastronomy-dataset>`, and

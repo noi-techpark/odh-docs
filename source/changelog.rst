@@ -136,3 +136,13 @@ documentation.
       * The :ref:`tourism-data-howto` article has been modified to
         include the API browsable interface
       * Tourism datasets have been ordered lexicographically
+
+   
+   .. change::
+      :tags: Change, Improvement
+      :tickets: 219
+
+      The description of the new Knowledge Graph underlying the
+      Mobility domain has been added. Also the :ref:`SPARQL Howto
+      <howto-sparql>` has been updated to reflect the new precooked
+      queries and layout.
