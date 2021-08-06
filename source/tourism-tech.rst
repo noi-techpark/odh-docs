@@ -1,6 +1,5 @@
-
 .. technical info for tourism datasets
-   
+
 .. _tourism-tech:
 
 ============================================
@@ -26,7 +25,7 @@ Structure of the API calls
 ==========================
 
 .. versionchanged:: 2021.06 marked as unavailable two API calls that
-   were removed 
+   were removed
 
 In the Tourism domain, there are a few API calls that allow to extract
 the same type of data from the various datasets. Each of these calls
@@ -35,7 +34,7 @@ returned and is described in this section, in which the following
 conventions are used:
 
 * :literal:`{Name}` is the (case sensitive!) name of the dataset you are
-  currently working with, like for example :literal:`Accomodation`. 
+  currently working with, like for example :literal:`Accomodation`.
 * :literal:`{Id}` is the unique identifier of an array within the
   dataset, i.e., an item of the dataset. It is usually the first key
   of the resulting JSON output of a query.
@@ -48,7 +47,7 @@ The calls defined for every datasets are:
   respective name of the items in the dataset. It is useful to create
   lists of items or just to have an overview of the dataset's items.
 - :literal:`/api/{Name}Changed` Return all items that have changed
-  since date :literal:`YYYY-MM-DD`	    
+  since date :literal:`YYYY-MM-DD`
 - :literal:`/api/{Name}Types` Returns all types of data present in
   the dataset, that can be later used to ask more precise queries to
   the dataset.
@@ -68,6 +67,9 @@ that operates on the datasets in a similar way to the
 
 Filters common to all datasets
 ==============================
+
+.. versionadded:: 2021.08 new ``removenullvalues``, ``rawfilter`` and
+   ``rawsort`` filters
 
 .. note:: Besides the filters available globally, for each dataset
    several additional filters are available. They are described in the
@@ -107,9 +109,55 @@ examples of their use can be found in section :doc:`/howto/tourism/tips`.
   defined by the Open Data Hub team. These tags are mostly related
   with places to see, activities that can be carried out in winter or
   summer, food and beverage, cultural events and so on
- 
+
+Special common filters
+----------------------
+
+This section describes some useful filters that can be used on all
+Tourism Datasets. Some of them relies on simpler filters, like
+`field`, that is described in the :ref:`fields-filter` section
+below. These filters allow to customise queries and have been
+introduced for all cases for which there is no existent filter or
+sorting possibilities.
+
+.. panels::
+   :container: container-fluid pb-3
+   :column: col-lg-4 col-md-4 col-sm-6 col-xs-12 p-2
+
+   rawfilter
+   ^^^
+   `rawfilter` can be appended to any query with the syntax
+   ``?rawfilter=<filter(s)>``, in which <filter> has the generic form
+   ``<field>, <value>``. These logical operators can be used to
+   combine multiple filters: `eq`, `ne`, `gt`, `ge`, `lt`, `le`,
+   `and`, `or`, `isnull`, `isnotnull`, `in`, `nin`
+
+   ---
+
+   rawsort
+   ^^^
+   `rawsort` can be used to sort in ascending order the results of a
+   query; its syntax is ``?rawfilter=<filter(s)>``. Here, `<filter>`
+   is the name of a field in the result set. Multiple fields can be
+   specified as comma separated, e.g.,
+   ``?rawfilter=startDate,Detail.en.Title``. If a `<filter>` is prefixed with
+   a dash, ``-`` sorting is reverted, i.e., output is shown in
+   descending order.
+
+   ---
+
+   removenullvalues
+   ^^^
+
+   ``?removenullvalues=true`` removes all :strong:`NULL` values from
+   the query's output. While usually it's always desirable to have a
+   full JSON output to be parsed, removing NULL values proves useful
+   to reduce the output size or to verify data quality. By using
+   ``removenullvalues``, one can check if all fields of a given entry
+   are populated or not.
+
 .. _fields-filter:
-  
+
 The `fields` Filter
 -------------------
 
@@ -130,7 +178,7 @@ The following query will retrieve from the dataset only those item
 which have a :strong:`Type` and a strong:`Active` keys defined in the
 dataset::
 
-  https://tourism.opendatahub.bz.it/api/ODHActivityPoi?fields=Type,Active 
+  https://tourism.opendatahub.bz.it/api/ODHActivityPoi?fields=Type,Active
 
 The following query retrieves information from within a dictionary
 field::
@@ -151,13 +199,13 @@ to discover the :strong:`Detail.en.Title` elements:
        "Header": null,
 
 .. _language-filter:
- 
+
 The `language` Filter
 ---------------------
 
 The `language` filter can be seen as a special case of the more
 generic `fields` filter, described in the previous section, and is
-similar to the second example presented there. 
+similar to the second example presented there.
 
 The `language` filter is used to retrieve only the data stored in one
 of the languages supported by the Open Data Hub. Let's build on the
@@ -175,7 +223,7 @@ are: Dutch (:literal:`nl`), Czech (:literal:`cs`), Polish
 (:literal:`pl`), French (:literal:`fr`), and Russian (:literal:`ru`).
 
 .. _search-filter:
- 
+
 The `search` Filter
 -------------------
 
@@ -183,7 +231,7 @@ Currently available for only a limited number of datasets, namely
 Accommodations, Gastronomies, Events, Activities, Pois,
 ODHActivitiesPois, and Article, this filters allows to find whether the
 given string is contained in one of the field of the JSON response
-sent as answer to a query. 
+sent as answer to a query.
 
 .. _export-tourism:
 
@@ -204,23 +252,23 @@ Separated value)` format.
    SkiRegion, and TourismAssociation
 
    However, plans are to soon have all Tourism datasets support it.
-   
-	  
+
+
 Depending on how you access the data, there are different modalities to
 retrieve and save data in CSV format:
 
 * when using a browser, append the keyword :literal:`&format=csv` to any
   query and you will be prompted to provide a name to the file that
   will contain the required data. Examples::
-	    
+
      http://tourism.opendatahub.bz.it/api/Activity?fields=Id,Detail.en.Title,ContactInfos.en.CompanyName&pagesize=500
-     
+
   This query shows its JSON output on the screen. To save it, right
   click on the page and select `Save as`. ::
 
 
      http://tourism.opendatahub.bz.it/api/Activity?fields=Id,Detail.de.Title,ContactInfos.de.CompanyName&pagesize=500&format=csv
-     
+
   Nothing is shown on screen, but a dialog window opens that allows you
   to select a name for the file and the directory where to save it.
 
@@ -229,17 +277,17 @@ retrieve and save data in CSV format:
   header that you send with the :command:`curl` command:
 
   .. code:: bash
-	    
+
      ~$ curl -X GET "http://tourism.opendatahub.bz.it/api/Activity?fields=Id,Detail.en.Title,ContactInfos.en.CompanyName&pagesize=500" -H "accept: application/json"
-  
-  
+
+
   The output of this query will be in JSON format.
 
   .. code:: bash
-	    
+
      ~$ curl -X GET "http://tourism.opendatahub.bz.it/api/Activity?fields=Id,Detail.en.Title,ContactInfos.en.CompanyName&pagesize=500" -H "accept: text/csv"
-  
-  
+
+
   The output of this query will be in CSV format.
 
 * When using an API Development Environment like Postman, add `accept:
@@ -263,7 +311,7 @@ strings, dates, and integers.
 
 .. _bitmask-value:
 
-:strong:`Bitmask` value	
+:strong:`Bitmask` value
    A Bitmasks value is a kind of shorthand that can be entered in a
    filter to obtain results for different types of that filter's
    accepted values. Each of the accepted values has a code that is a
@@ -292,4 +340,3 @@ strings, dates, and integers.
    Italian, German, and English. To retrieve values only in one
    language, enter :strong:`it`, :strong:`de`, or :strong:`en`,
    respectively.
-
