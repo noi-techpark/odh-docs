@@ -136,3 +136,14 @@ documentation.
       * The :ref:`tourism-data-howto` article has been modified to
         include the API browsable interface
       * Tourism datasets have been ordered lexicographically
+
+.. changelog::
+   :version: 2021.08
+   :released: 31 August 2021
+
+   .. change::
+      :tags: New Feature
+      :tickets: 224
+
+      New filters for the tourism domain: rawfilter, rawsort, and
+      removenullvalues.
