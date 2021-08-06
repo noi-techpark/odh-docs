@@ -7,7 +7,10 @@ The |odh| Virtual Knowledge Graph
 ---------------------------------
 
 .. versionadded:: 2021.02 Description of the Knowledge Model
-   underlying datasets Accommodation, Gastronomy, and Event datasets
+   underlying datasets Accommodation, Gastronomy, and Event
+
+.. versionadded:: 2021.06 Description of the Knowledge Model
+   underlying the mobility domain
 
 Some datasets in the |odh|, namely :ref:`Accommodation
 <accommodation-dataset>`, :ref:`Gastronomy <gastronomy-dataset>`, and
@@ -70,6 +73,47 @@ uses:
       :align: center
       :class: pt-5 mt-5
 
+
+.. _mobility-domain-kg:
+
+.. dropdown:: Mobility Domain
+
+   .. panels::
+      :column: pt-12 mt-12
+
+      The entire mobility domain has a unique underlying knowledge
+      model, which encompasses all the datasets and therefore also
+      allows an easier creation of cross-dataset queries. Since the
+      mobility domain gathers data from `sensors`, useful in this
+      domain is also the :abbr:`SOSA (Sensor, Observation, Sample, and
+      Actuator)` ontology, which uses :strong:`sosa` as prefix. You
+      can check the Classes and Properties of SOSA in the `W3C's
+      dedicated wiki page
+      <https://www.w3.org/2015/spatial/wiki/SOSA_Ontology>`_
+
+      The central concept is :strong:`Station`, of which all
+      :literal:`StationType`\s are subclass, while
+      :strong:`Observation`, :strong:`LatestObservation`, and
+      :strong:`ObservableProperty` are used to provide time-related
+      information of the data gathered and relate to
+      :strong:`Sensor`. Together with :strong:`Platform`,
+      :strong:`Sensor` make the relation between a `Station` and its
+      `Sensors`: For example, sensor `EChargingPlug` ``isHostedby`` an
+      `EChargingstation` `Platform`, which is also a `Station`.
+
+      The knowledge model is completed by the :strong:`Feature`
+      superconcept, which contains also :strong:`Municipality` and
+      :strong:`RoadSegment`, the latter defined by an
+      `hasOriginStation` and an `hasDestinationStation`.
+
+      ---
+            
+      .. figure:: /images/sparql/odh-mobility.png
+         :width: 100%
+
+         The UML diagram of the :ref:`Mobility Domain
+         <mobility-datasets>`.
+         
 .. _accommodation-dataset-kg:
 
 .. dropdown:: Accommodation Dataset
