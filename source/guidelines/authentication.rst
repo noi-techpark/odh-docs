@@ -1,13 +1,18 @@
-
 .. _authentication-hub:
 
 Authentication in the Open Data Hub
 -----------------------------------
 
+.. deprecated:: 2021.08 Token-based authentication in the Tourism
+   domain has been removed
+
+.. versionadded:: 2021.08 Keycloack as default authentication method
+   for API v2 (all domains)
+
 The authentication layer is currently intended for :strong:`internal
 use only`, therefore it is :strong:`not` necessary to use
 authentication to access data provided by the Open Data Hub.
-	   
+
 While the Open Data Hub project strives to offer only Open Data, it
 relies on third-party :ref:`data-providers`, which may not offer the
 whole content of a dataset for public use. For this reason, an
@@ -21,22 +26,35 @@ each dataset only to those who are allowed to, i.e., developers and
 members of the Open Data Hub team.
 
 In the remainder of this section, we describe how authentication works
-within the Open Data Hub, because this information might be of interest to
-user that might become app developers for the Open Data Hub team; further
-information about how to use authentication can be found in the
-:ref:`dedicated howto <authentication-howto>`.
+within the Open Data Hub, because this information is of interest to
+users that might become app developers for the Open Data Hub project;
+further information about how to use authentication can be found in
+the :ref:`dedicated howto <authentication-howto>`.
 
 There are currently two different authentication methods available:
 
-* The :strong:`Token-based Authentication`, defined in :rfc:`6750`,
-  requires that anyone who wants to access resources supply a valid
-  username and password and becomes a Bearer Token that must be used
-  to access the data. After the token expires, a new one must be
-  obtained. This type of authentication is used for the datasets in
-  the tourism domain.
-
+* :strong:`Keycloack` is the default authentication server for all
+  datasets that are accessed with the :strong:`API v2`.
 * The :strong:`OAuth2 Authentication` follows the :rfc:`6749` and is
-  used for all the datasets in the mobility domain. 
+  used for all the datasets in the mobility domain :strong:`when using
+  the legacy API v1`.
+
+.. warning:: The :strong:`Token-based Authentication` was used for the
+  datasets in the tourism domain and is now not available anymore.
+
+Keycloack for API v2
+~~~~~~~~~~~~~~~~~~~~
+
+Keycloack Server is already used as authentication method for |odh|\'s
+:ref:`internal infrastructure <authentication-internal>`. The same
+directions described in that section can be used.
+
+OAuth2 Authentication
+~~~~~~~~~~~~~~~~~~~~~
+
+.. warning:: |deprecated| This authentication method is supported
+   :strong:`only` for accessing datasets in the mobility domain with
+   the :strong:`API v1`.
 
 The OAuth2 authentication mechanism  Authentication tokens are
 based on :term:`JSON Web Token (JWT) <JSON Web Token>` as defined in
@@ -63,9 +81,8 @@ description of the client-server interaction:
    follows:
 
    .. code-block:: bash
-			    
-      ~$ curl -X GET "$HTTP_URL_WITH_GET_PARAMETERS" -H "accept: */*" -H "Authorization: Bearer $TOKEN"
 
+      ~$ curl -X GET "$HTTP_URL_WITH_GET_PARAMETERS" -H "accept: */*" -H "Authorization: Bearer $TOKEN"
 
 Here, :literal:`$HTTP_URL_WITH_GET_PARAMETERS` is the URL containing the API call
 and :literal:`$TOKEN` is the string of the token.
@@ -144,7 +161,7 @@ Since the token expires after a given amount of time, it might prove
 necessary to refresh it, an action that can be done by replacing the
 parameters given in the query above with
 
-.. code-block::
+.. code-block:: bash
    :name: refresh-token
    :caption: Refreshing the access token
 
