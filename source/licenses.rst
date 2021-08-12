@@ -82,7 +82,7 @@ APIs Terms of Service
 
 The |odh| project is already used in production for NOI internal
 projects, and in particular it is the data hub used by the South
-Tyrolean tourism portal, www.suedtirol.info.
+Tyrolean tourism portal, https://www.suedtirol.info/en/.
 
 The public API are in early development and therefore should be still
 considered as a :strong:`beta` version. If any third party would like

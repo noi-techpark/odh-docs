@@ -12,7 +12,7 @@ Data Browsing and Exploring
 ---------------------------
 
 In order to access the data in the tourism domain, launch a browser
-and point it to http://tourism.opendatahub.bz.it/.
+and point it to https://databrowser.opendatahub.bz.it/.
    
 .. _tourism-login-web:
 
@@ -26,9 +26,10 @@ Under the header and an informative message, hyperlinks in the centre
 of the page allow to open various resources about the Tourism domain.
 
 * The `Swagger interface
-  <http://tourism.opendatahub.bz.it/swagger/ui/index>`_ of the
+  <https://tourism.opendatahub.bz.it/swagger/ui/index>`_ of the
   datasets, the quickest place from where to access the datasets and
   learn how to programmatically retrieve the data
+
 * The :apit:`Open Data Hub API </>`, a browsable, hyperlinked
   interface over the data in the Tourism domain.
         

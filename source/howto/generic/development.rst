@@ -125,7 +125,7 @@ If you do not use systemd, the command will have a different output:
    [ ok ] Tomcat servlet engine is running with pid 11357.
    
 
-From a browser you should connect to http://localhost:8080/ (replace
+From a browser you should connect to https://localhost:8080/ (replace
 :envvar:`localhost` this the URL or IP where your application server
 is located) and see the following page:
 

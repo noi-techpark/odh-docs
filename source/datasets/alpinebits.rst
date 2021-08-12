@@ -11,10 +11,10 @@
 
    Documentation for developers, including sample code snippets and
    additional material can be found on AlpineBits dedicated page for
-   developers https://www.alpinebits.org/developers/.
+   developers https://www.alpinebits.org/hoteldata/.
 
    Various development and testing tools can be found on
-   http://development.alpinebits.org/#/home.
+   https://development.alpinebits.org/#/home.
 
    -----
 

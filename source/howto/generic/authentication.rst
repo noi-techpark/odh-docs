@@ -107,6 +107,6 @@ the second to provide the credentials, like for example:
 
 .. code:: bash
 
-   ~$ curl -X GET "http://bdp-test-env.b7twwguhyj.example.com/emobility/rest/get-records?station=83&name=CP1-Tignale&seconds=50" --header "Accept: */*" --header 'Authorization: Bearer <token>'
+   ~$ curl -X GET "https://bdp-test-env.b7twwguhyj.example.com/emobility/rest/get-records?station=83&name=CP1-Tignale&seconds=50" --header "Accept: */*" --header 'Authorization: Bearer <token>'
 
 Make sure to replace the <token> with the actual token you received.

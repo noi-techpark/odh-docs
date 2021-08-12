@@ -25,10 +25,13 @@ by an UML diagram which shows the KM at a glance.
 Besides standard W3C's OWL and RDF vocabularies, the |odh| VKG
 uses:
 
-* `schema.org <http://schema.org/>`_ for most of the entities used
-* `geosparql <http://www.opengis.net/ont/geosparql#>`_ for
-  geo-references and coordinates of objects
-* `purl <http://purl.org/dc/terms/>`_ for linking to related resources
+* `schema.org <https://schema.org/>`_ for most of the entities used
+* `geosparql
+  <http://schemas.opengis.net/geosparql/1.0/geosparql_vocab_all.rdf#>`_
+  for geo-references and coordinates of objects
+* `Dublin Core's purl
+  <https://dublincore.org/specifications/dublin-core/dcmi-terms/>`_
+  for linking to related resources
 
 .. panels::
 
@@ -42,11 +45,11 @@ uses:
 
    Prefix
       The default prefix used for classes and properties is
-      :strong:`http://schema.org/`. This means that, unless
+      :strong:`https://schema.org/`. This means that, unless
       differently stated, the definition of classes and properties,
       including their attributes, rely on a common standard as defined
       in schema.org's vocabulary. As examples, see the
-      `LodgingBusiness <http:schema.org//LodgingBusiness>`_ class and
+      `LodgingBusiness <https://schema.org//LodgingBusiness>`_ class and
       the `containedInPlace <https://schema.org/containedInPlace>`_
       property.
 
@@ -155,7 +158,7 @@ uses:
       :strong:`Accommodation`
 
       `geo:asWKT` is a method used by opengis.net's `geosparql
-      <http://www.geosparql.org/>` to express geographic coordinates
+      <https://www.geosparql.org/>` to express geographic coordinates
       in a standard, textual form based on :abbr:`WKT (Well-known
       text)`.
 
@@ -195,7 +198,7 @@ uses:
       +++
 
       `geo:asWKT` is a method used by opengis.net's `geosparql
-      <http://www.geosparql.org/>` to express geographic coordinates
+      <https://www.geosparql.org/>` to express geographic coordinates
       in a standard, textual form based on :abbr:`WKT (Well-known
       text)`.
 
@@ -240,9 +243,9 @@ uses:
    interacting with the SPARQL endpoint.
 
    W3C Recommendation for `OWL2
-   <http://www.w3.org/TR/2012/REC-owl2-syntax-20121211/>`_ and `RDF
-   <http://www.w3.org/TR/2014/REC-rdf11-concepts-20140225/>`_.
+   <https://www.w3.org/TR/2012/REC-owl2-syntax-20121211/>`_ and `RDF
+   <https://www.w3.org/TR/2014/REC-rdf11-concepts-20140225/>`_.
 
    Official Specification of `UML Infrastructure
-   <http://www.omg.org/spec/UML/2.1.2/Infrastructure/PDF/>`_ are
+   <https://www.omg.org/spec/UML/2.1.2/Infrastructure/PDF/>`_ are
    available from `Object management group <https://www.omg.org/>`_

@@ -227,10 +227,10 @@ linkcheck_anchors = False
 linkcheck_retries = 2
 linkcheck_ignore = [
     'https://ci.opendatahub.bz.it',
-    'https://github.com/your-username/',
-    'http://localhost:\d+/',
+    'https://github.com/$USERNAME/',
+    'https://localhost:\d+/',
     'https://cert.provinz.bz.it/musport/services/MuseumsService.MuseumsServiceHttpSoap11Endpoint/',
-    'http://tourism.opendatahub.bz.it/token'
+    'http://tourism.opendatahub.bz.it/token',
 ]
 
 # -- Options for Texinfo output -------------------------------------------

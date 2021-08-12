@@ -10,5 +10,5 @@ still updated.
 "API version",                v1
 "Swagger URL",                :stinfo:`/Article`
 "Use cases and info",         https://databrowser.opendatahub.bz.it/
-			   https://suedtirol.info/
+                              https://suedtirol.info/en/
 "Sources",                    IDM editorial staff

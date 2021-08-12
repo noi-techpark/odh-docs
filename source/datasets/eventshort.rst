@@ -20,6 +20,6 @@
       "Swagger URL", ":stinfo:`/EventShort`"
       "API URL", ":apit:`/EventShort`"
       "Use cases and info", "https://today.noi.bz.it/
-      https://noi.bz.it/event-calendar/
+      https://noi.bz.it/it/event-calendar/
       https://virtual.noi.bz.it/programma.html"
       "Sources", "LTS"

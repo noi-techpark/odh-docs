@@ -22,7 +22,7 @@
       "Swagger URL", ":stinfo:`/Accommodation`"
       "API URL", ":apit:`/Accommodation`"
       "Use cases and info", "https://databrowser.opendatahub.bz.it/
-      https://suedtirol.info/"
+      https://suedtirol.info/en/"
       "Android App", "`Südtirol Guide/Alto Adige Guide
       <https://play.google.com/store/apps/details?id=com.suedtirol.android>`_"
       "Sources", "LTS"

@@ -21,6 +21,6 @@
       "Swagger URL", ":stinfo:`/Gastronomy`"
       "API URL", ":apit:`/Gastyronomy`"
       "Use cases and info", "https://databrowser.opendatahub.bz.it/
-      https://suedtirol.info/"
+      https://suedtirol.info/en/"
       "Sources", "LTS"
       "SPARQL Endpoint", "https://sparql.opendatahub.bz.it"

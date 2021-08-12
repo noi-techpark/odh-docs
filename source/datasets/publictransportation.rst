@@ -30,9 +30,9 @@
       "Output", "geoJSON"
       "E-mail contact", "info\@sasabus\.org"
       "API version", "--"
-      "URL", "http://daten.buergernetz.bz.it/dataset/southtyrolean-public-transport
-      http://sasabus.org/opendata"
-      "Use cases and info", "https://suedtirolmobil.info/,
+      "URL", "https://daten.buergernetz.bz.it/dataset/southtyrolean-public-transport
+      https://sasabus.org/opendata"
+      "Use cases and info", "https://suedtirolmobil.info/en/,
       https://mobility.meran.eu/, https://analytics.opendatahub.bz.it/,
       https://mobility.bz.it/"
       "Web Component", "`Smart Mobility

@@ -128,6 +128,6 @@ Postman's window, like in :numref:`ab-postman-body`.
 
 .. seealso:: More information about the interaction with AlpineBits
    can be found in the official documentation, available at
-   https://www.alpinebits.org/developers/.
+   https://www.alpinebits.org/hoteldata/.
 
 

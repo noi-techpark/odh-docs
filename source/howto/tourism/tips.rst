@@ -15,6 +15,7 @@ Example Calls
 
 .. rubric:: EX1. Why does this query return no result?
 
+
 :apit:`Gastronomy?pagesize=3&categorycodefilter=0&locfilter=reg268`
 
 Because there is no value :strong:`reg268` for `locfilter`. You can
@@ -198,7 +199,7 @@ will see something like:
   "CurrentPage": 1,
   "OnlineResults": -1,
   "Seed": "43",
-  "Items": [
+n  "Items": [
     {
 
 The remainder of the :strong:`Response Body` contains the first 15
