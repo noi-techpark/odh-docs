@@ -3,8 +3,6 @@
 How to Access Analytics Data in the Mobility Domain
 ===================================================
 
-.. versionadded:: 2021.01 data access with R.
-
 .. versionchanged:: 2021.04 Replace two wrong images with correct ones.
 
 This howto guides you in browsing and querying data from the Mobility

@@ -3,8 +3,6 @@
 Datasets
 ========
 
-.. versionadded:: 2021.01 access to data with SPARQL
-
 .. versionadded:: 2021.02 |odh| Virtual Knowledge Graph and
    description of underlying Knowledge Model
 
