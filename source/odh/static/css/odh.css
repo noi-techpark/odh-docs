@@ -4366,7 +4366,7 @@ input[type="radio"][disabled],input[type="checkbox"][disabled] {
     font-size: 90%;
     margin: 0;
     overflow: visible;
-    padding: 8px 16px
+    padding: 8px
 }
 
 .wy-table td:first-child,.rst-content table.docutils td:first-child,.rst-content table.field-list td:first-child,.wy-table th:first-child,.rst-content table.docutils th:first-child,.rst-content table.field-list th:first-child {
