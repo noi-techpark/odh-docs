@@ -156,3 +156,10 @@ documentation.
 
       New filters for the tourism domain: rawfilter, rawsort, and
       removenullvalues.
+
+   .. change::
+      :tags: Change, Improvement
+      :tickets: 223
+
+      Keycloak has been introduced as default authentication method
+      for the |ODH|.
