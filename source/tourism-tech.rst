@@ -213,7 +213,7 @@ example of previous section and use the `ODHActivityPOI` dataset. The
 following query will retrieve all the data in the dataset that have
 some information stored in English::
 
-  http://tourism.opendatahub.bz.it/api/ODHActivityPoi?language=en
+  https://tourism.api.opendatahub.bz.it/v1/ODHActivityPoi?language=en
 
 Most of the data in the Open Data Hub datasets are available in three
 languages, English, German, and Italian, for which :literal:`en`,
@@ -259,33 +259,31 @@ retrieve and save data in CSV format:
 
 * when using a browser, append the keyword :literal:`&format=csv` to any
   query and you will be prompted to provide a name to the file that
-  will contain the required data. Examples::
+  will contain the required data. Example:
 
-     http://tourism.opendatahub.bz.it/api/Activity?fields=Id,Detail.en.Title,ContactInfos.en.CompanyName&pagesize=500
+     :apit:`Activity?fields=Id,Detail.en.Title,ContactInfos.en.CompanyName&pagesize=500`
 
   This query shows its JSON output on the screen. To save it, right
   click on the page and select `Save as`. ::
 
-
-     http://tourism.opendatahub.bz.it/api/Activity?fields=Id,Detail.de.Title,ContactInfos.de.CompanyName&pagesize=500&format=csv
+     :apit:`Activity?fields=Id,Detail.de.Title,ContactInfos.de.CompanyName&pagesize=500&format=csv`
 
   Nothing is shown on screen, but a dialog window opens that allows you
   to select a name for the file and the directory where to save it.
-
 
 * When using a CLI command to query the Tourism endpoint, replace the
   header that you send with the :command:`curl` command:
 
   .. code:: bash
 
-     ~$ curl -X GET "http://tourism.opendatahub.bz.it/api/Activity?fields=Id,Detail.en.Title,ContactInfos.en.CompanyName&pagesize=500" -H "accept: application/json"
+     ~$ curl -X GET "https://tourism.api.opendatahub.bz.it/v1/Activity?fields=Id,Detail.en.Title,ContactInfos.en.CompanyName&pagesize=500" -H "accept: application/json"
 
 
   The output of this query will be in JSON format.
 
   .. code:: bash
 
-     ~$ curl -X GET "http://tourism.opendatahub.bz.it/api/Activity?fields=Id,Detail.en.Title,ContactInfos.en.CompanyName&pagesize=500" -H "accept: text/csv"
+     ~$ curl -X GET "https://tourism.api.opendatahub.bz.it/v1/Activity?fields=Id,Detail.en.Title,ContactInfos.en.CompanyName&pagesize=500" -H "accept: text/csv"
 
 
   The output of this query will be in CSV format.
