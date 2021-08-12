@@ -60,10 +60,30 @@ These licenses are applied to the |odh| components:
   found at https://github.com/noi-techpark.
 * The :strong:`Datasets` currently expose only Open Data that are in
   the public domain, so they are released as CC0. |cc0|
+  :numref:`cc0-images` shows for the Tourism domain the number and
+  percentage of images with CC0 license.`
 * The :strong:`APIs` have no license yet, since we are in the process to define
   which among the CC licenses could fit best. See :numref:`dac-lm` for
   an overview and quick description of CC licenses and derivative
   material.
+
+.. _cc0-images:
+
+.. csv-table:: Images with CC0 license in the Tourism domain.
+   :width: 60%
+   :header: "Dataset", "Total Data", "Active Open Data", "Data with
+            CC0 Image", "# CC0 Images", "# Proprietary
+            Images", "% CC0 Images"
+
+   "Accommodations", "11507", "9639", "789", "4672", "134805", "3.35"
+   "Gastronomies", "4380", "2818", "49", "150", "13591", "1.09"
+   "Events", "35826", "26610", "397", "469", "49105", "0.95"
+   "Poi", "10981", "8669", "269", "432", "16984", "2.48"
+   "Activity", "6905", "5284", "189", "403", "10577", "3.67"
+   "ODH Activity Poi", "20611", "18072", "468", "936", "39672", "2.30"
+   "Region", "12", "12", "0", "0", "85", "0.00"
+   "Tourismassociations", "78", "76", "0", "0", "450", "0.00"
+   "Skiareas", "28", "26", "0", "0", "56", "0.00"
 
 .. note:: There is an additional clarification about the licence for
    any content that is retrieved from the datasets in JSON format,
