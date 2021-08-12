@@ -6,7 +6,7 @@ This section guides you in setting up on your local workstation the
 (forked) git repositories needed to contribute to the |odh| project,
 along with some troubleshooting concerning pull requests and merge
 conflicts. For more detailed help, please refer to the online Github
-help, at https://help.github.com/en.
+help, at https://docs.github.com/en/.
 
 
 
@@ -138,9 +138,8 @@ following steps have to be performed.
 Before you can sync your fork with the original repository (an
 upstream repository), you must configure a remote that points to the
 upstream repository in Git. A more detailed description for the
-following steps can be found in the online Github help
-https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/configuring-a-remote-for-a-fork
-
+following steps can be found in the `online Github help
+<https://docs.github.com/en/github/collaborating-with-pull-requests/working-with-forks/configuring-a-remote-for-a-fork>`_.
 
 1. List the current configured remote repository for your fork.
 
@@ -165,7 +164,7 @@ https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/co
 You need sync a fork of a repository to keep it up-to-date with the
 original repository (upstream repository). A more detailed description
 for the following steps can be found in the online Github help
-https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/syncing-a-fork
+https://docs.github.com/en/github/collaborating-with-pull-requests/working-with-forks/syncing-a-fork.
 
 1. Fetch the branches and their respective commits from the upstream
    repository. Commits to :strong:`development` will be stored in a
@@ -276,4 +275,5 @@ To resolve merge conflicts, the following steps must be performed.
       A solved merge conflict. 
 
 A more detailed description can be found in the online Github help:
-https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/resolving-a-merge-conflict-using-the-command-line.
+ttps://docs.github.com/en/github/collaborating-with-pull-requests/addressing-merge-conflicts/resolving-a-merge-conflict-using-the-command-line
+

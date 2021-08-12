@@ -23,5 +23,5 @@
       "Swagger URL", ":stinfo:`/Weather/get_v1_Weather_SnowReport`"
       "API URL", ":apit:`/Weather/SnowReportBase`"
       "Use cases and info", "https://databrowser.opendatahub.bz.it/
-      https://suedtirol.info/"
+      https://suedtirol.info/en/"
       "Sources", "LTS, IDM"

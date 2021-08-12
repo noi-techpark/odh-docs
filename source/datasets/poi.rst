@@ -21,5 +21,5 @@
       "Swagger URL", ":stinfo:`/Poi`"
       "API URL", ":apit:`/Poi`"
       "Use cases and info", "https://databrowser.opendatahub.bz.it/
-      https://suedtirol.info/"
+      https://suedtirol.info/en/"
       "Sources", "LTS PoiData"

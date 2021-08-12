@@ -26,9 +26,12 @@ Besides standard W3C's OWL and RDF vocabularies, the |odh| VKG
 uses:
 
 * `schema.org <https://schema.org/>`_ for most of the entities used
-* `geosparql <https://www.opengis.net/ont/geosparql#>`_ for
-  geo-references and coordinates of objects
-* `purl <https://purl.org/dc/terms/>`_ for linking to related resources
+* `geosparql
+  <http://schemas.opengis.net/geosparql/1.0/geosparql_vocab_all.rdf#>`_
+  for geo-references and coordinates of objects
+* `Dublin Core's purl
+  <https://dublincore.org/specifications/dublin-core/dcmi-terms/>`_
+  for linking to related resources
 
 .. panels::
 
@@ -46,7 +49,7 @@ uses:
       differently stated, the definition of classes and properties,
       including their attributes, rely on a common standard as defined
       in schema.org's vocabulary. As examples, see the
-      `LodgingBusiness <https:schema.org//LodgingBusiness>`_ class and
+      `LodgingBusiness <https://schema.org//LodgingBusiness>`_ class and
       the `containedInPlace <https://schema.org/containedInPlace>`_
       property.
 

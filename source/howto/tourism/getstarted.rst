@@ -20,7 +20,7 @@ Swagger Interface
 All the APIs available for the tourism domain can be accessed from the
 same URL through their Swagger user interface:
 
-https://tourism.api.opendatahub.bz.it/
+https://tourism.api.opendatahub.bz.it/swagger/index.html
 
 .. hint:: Check section :ref:`tourism-datasets` for direct URLs to the
    datasets.

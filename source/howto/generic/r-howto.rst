@@ -75,7 +75,7 @@ In order to fetch data, you need:
    .. code:: sparql
 
       PREFIX schema: <https://schema.org/>
-      PREFIX geo: <https://www.opengis.net/ont/geosparql#>
+      PREFIX geo: <http://schemas.opengis.net/geosparql/1.0/geosparql_vocab_all.rdf#>
       PREFIX noi: <https://noi.example.org/ontology/odh#>
 
       SELECT ?pos ?posLabel
@@ -100,7 +100,7 @@ In order to fetch data, you need:
 
       query <- 
       'PREFIX schema: <https://schema.org/>
-      PREFIX geo: <https://www.opengis.net/ont/geosparql#>
+      PREFIX geo: <http://schemas.opengis.net/geosparql/1.0/geosparql_vocab_all.rdf#>
       PREFIX noi: <https://noi.example.org/ontology/odh#>
 
       SELECT ?pos ?posLabel
@@ -125,16 +125,16 @@ will be similar to::
    Loading required package: RCurl
    $results
                                                                                    pos
-   1  "POINT (11.440394 46.511651)"^^<https://www.opengis.net/ont/geosparql#wktLiteral>
-   2  "POINT (11.200728 46.729921)"^^<https://www.opengis.net/ont/geosparql#wktLiteral>
-   3      "POINT (11.9412 46.9803)"^^<https://www.opengis.net/ont/geosparql#wktLiteral>
-   4      "POINT (11.4278 46.4135)"^^<https://www.opengis.net/ont/geosparql#wktLiteral>
-   5  "POINT (11.326362 46.310963)"^^<https://www.opengis.net/ont/geosparql#wktLiteral>
-   6  "POINT (12.279453 46.733497)"^^<https://www.opengis.net/ont/geosparql#wktLiteral>
-   7  "POINT (10.867335 46.622179)"^^<https://www.opengis.net/ont/geosparql#wktLiteral>
-   8  "POINT (11.241217 46.246141)"^^<https://www.opengis.net/ont/geosparql#wktLiteral>
-   9   "POINT (11.598339 46.40688)"^^<https://www.opengis.net/ont/geosparql#wktLiteral>
-   10     "POINT (12.0114 46.7474)"^^<https://www.opengis.net/ont/geosparql#wktLiteral>
+   1  "POINT (11.440394 46.511651)"^^<http://schemas.opengis.net/geosparql/1.0/geosparql_vocab_all.rdf#wktLiteral>
+   2  "POINT (11.200728 46.729921)"^^<http://schemas.opengis.net/geosparql/1.0/geosparql_vocab_all.rdf#wktLiteral>
+   3      "POINT (11.9412 46.9803)"^^<http://schemas.opengis.net/geosparql/1.0/geosparql_vocab_all.rdf#wktLiteral>
+   4      "POINT (11.4278 46.4135)"^^<http://schemas.opengis.net/geosparql/1.0/geosparql_vocab_all.rdf#wktLiteral>
+   5  "POINT (11.326362 46.310963)"^^<http://schemas.opengis.net/geosparql/1.0/geosparql_vocab_all.rdf#wktLiteral>
+   6  "POINT (12.279453 46.733497)"^^<http://schemas.opengis.net/geosparql/1.0/geosparql_vocab_all.rdf#wktLiteral>
+   7  "POINT (10.867335 46.622179)"^^<http://schemas.opengis.net/geosparql/1.0/geosparql_vocab_all.rdf#wktLiteral>
+   8  "POINT (11.241217 46.246141)"^^<http://schemas.opengis.net/geosparql/1.0/geosparql_vocab_all.rdf#wktLiteral>
+   9   "POINT (11.598339 46.40688)"^^<http://schemas.opengis.net/geosparql/1.0/geosparql_vocab_all.rdf#wktLiteral>
+   10     "POINT (12.0114 46.7474)"^^<http://schemas.opengis.net/geosparql/1.0/geosparql_vocab_all.rdf#wktLiteral>
                                             posLabel
    1           "Ristorante Pizzeria Bar Pirpamer"@it
    2                      "Bar Pizzeria Alpenhof"@it

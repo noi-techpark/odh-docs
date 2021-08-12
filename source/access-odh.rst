@@ -52,7 +52,7 @@ data by using a browser:
    ---
 
    Access the `ODH Tourism data browser
-   <https://tourism.opendatahub.bz.it/>`_ and search for the Open
+   <https://databrowser.opendatahub.bz.it/>`_ and search for the Open
    Data available in the Tourism domain. You can simply use those
    data for your convenience, or you might even find a novel way to
    exploit those data and use them in an app or portal you are
