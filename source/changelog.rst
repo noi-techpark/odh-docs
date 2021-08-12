@@ -136,3 +136,23 @@ documentation.
       * The :ref:`tourism-data-howto` article has been modified to
         include the API browsable interface
       * Tourism datasets have been ordered lexicographically
+
+   .. change::
+      :tags: Change, Improvement
+      :tickets: 219
+
+      The description of the new Knowledge Graph underlying the
+      Mobility domain has been added. Also the :ref:`SPARQL Howto
+      <howto-sparql>` has been updated to reflect the new precooked
+      queries and layout.
+
+.. changelog::
+   :version: 2021.08
+   :released: 31 August 2021
+
+   .. change::
+      :tags: New Feature
+      :tickets: 224
+
+      New filters for the tourism domain: rawfilter, rawsort, and
+      removenullvalues.
