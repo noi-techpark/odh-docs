@@ -156,3 +156,10 @@ documentation.
 
       New filters for the tourism domain: rawfilter, rawsort, and
       removenullvalues.
+
+
+   .. change::
+      :tags: Change
+      :tickets: 231
+
+      The URL of the Tourism API has been updated
