@@ -170,3 +170,9 @@ documentation.
       :tickets: 231
 
       The URL of the Tourism API has been updated
+
+   .. change::
+      :tags: Bugfix, Improvement
+      :tickets: 227
+
+      Update old URLS, fix broken links.
