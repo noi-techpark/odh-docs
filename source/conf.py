@@ -107,7 +107,10 @@ rst_prolog = """
 .. role:: strike
 """ + open("replace.rst").read()
 
-#facility to shorten/change external links to datasets - useful if hosting changes
+# facility to shorten/change external links - useful if hosting changes
+#
+# IMPORTANT! not all links can be shortened (i.e., when they are
+# within example GET calls), so make sure to fix those as well.
 
 extlinks = { 'sasabus': ('http://sasabus.org/%s', None),
              'stinfo':

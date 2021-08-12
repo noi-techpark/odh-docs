@@ -119,7 +119,7 @@ add an authentication header to each call. For example, using curl:
 
    ~# curl -X GET --header 'Accept: application/json' \
    --header 'Authorization: Bearer vLwemAqrLKVKXsvgvEQgtkeanbMq7Xcs' \
-   'http\://tourism.opendatahub.bz.it/api/Gastronomy'
+   'https://tourism.api.opendatahub.bz.it/v1/Gastronomy'
 
 .. note:: The string of the token is shortened for the sake of
    clarity. 

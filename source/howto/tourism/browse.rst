@@ -29,10 +29,10 @@ of the page allow to open various resources about the Tourism domain.
   <https://tourism.opendatahub.bz.it/swagger/ui/index>`_ of the
   datasets, the quickest place from where to access the datasets and
   learn how to programmatically retrieve the data
-* The `Open Data Hub API <https://tourism.opendatahub.bz.it/api>`_, a
-  browsable, hyperlinked interface over the data in the Tourism
-  domain.
 
+* The :apit:`Open Data Hub API </>`, a browsable, hyperlinked
+  interface over the data in the Tourism domain.
+        
   .. note:: Depending on the browser used to access the APIs, an
      extension might by needed for the JSON to be properly displayed
      and browsed. For example, on Chrome you should install
