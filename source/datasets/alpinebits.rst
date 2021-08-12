@@ -14,7 +14,7 @@
    developers https://www.alpinebits.org/developers/.
 
    Various development and testing tools can be found on
-   http://development.alpinebits.org/#/home.
+   https://development.alpinebits.org/#/home.
 
    -----
 

@@ -16,7 +16,7 @@ Since you must login to create events, you need valid credentials to
 be able to add NOI events, that you should have received from the
 |odh| team.
 
-Go to http://tourism.opendatahub.bz.it and click on Log in (top right
+Go to https://tourism.opendatahub.bz.it and click on Log in (top right
 corner)
 
 .. figure:: /images/events/login.png

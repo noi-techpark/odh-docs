@@ -52,7 +52,7 @@ data by using a browser:
    ---
 
    Access the `ODH Tourism data browser
-   <http://tourism.opendatahub.bz.it/>`_ and search for the Open
+   <https://tourism.opendatahub.bz.it/>`_ and search for the Open
    Data available in the Tourism domain. You can simply use those
    data for your convenience, or you might even find a novel way to
    exploit those data and use them in an app or portal you are
@@ -64,7 +64,7 @@ data by using a browser:
 
    Go to the :strong:`Swagger interface` of the datasets in the
    Tourism domain, located at
-   http://tourism.opendatahub.bz.it/swagger/ui/index to learn how
+   https://tourism.opendatahub.bz.it/swagger/ui/index to learn how
    the REST APIs are built and how you can script them to fetch
    data for your application. To get started, there is a dedicated
    howto: :ref:`tourism-data-howto` that will guide you in the

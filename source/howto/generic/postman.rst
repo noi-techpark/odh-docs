@@ -90,7 +90,7 @@ below the GET request, then select OAuth 2.0 as the `Type`.
 
 Now, in the right-hand side of the window, write the URL that manages
 the tokens (for the tourism domain, this is
-http://tourism.opendatahub.bz.it/token and click on the :button:`Get
+https://tourism.opendatahub.bz.it/token and click on the :button:`Get
 New Access Token` button (:numref:`postman6`).
 
 .. _postman6:

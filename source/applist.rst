@@ -74,11 +74,11 @@ Beta Stage Apps
   devices, it can also show directions from your current position to
   the chosen parking lot.
 
-* http://traffic.bz.it/ Some streets in South Tyrol are monitored for
+* https://traffic.bz.it/ Some streets in South Tyrol are monitored for
   real-time vehicular travel times; the data collected are used by
   this web site to show traffic slowdowns or jams.
 
-* http://bus.bz.it/ This web site shows the real-time positions of the
+* https://bus.bz.it/ This web site shows the real-time positions of the
   buses managed by the public transport operator SASA. Urban or
   suburban bus lines can be shown, and for each bus can be shown the
   next few stops and an estimate of the arrival time.

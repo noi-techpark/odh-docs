@@ -17,14 +17,14 @@ Example Calls
    
 .. code:: 
 	  
-   http://tourism.opendatahub.bz.it/api/Gastronomy?pagesize=3&categorycodefilter=0&locfilter=reg268
+   https://tourism.opendatahub.bz.it/api/Gastronomy?pagesize=3&categorycodefilter=0&locfilter=reg268
 
 Because there is no value :strong:`reg268` for `locfilter`. You can
 return valid IDs to be used as locfilter using this call:
 
 .. code:: 
 	     
-   http://tourism.opendatahub.bz.it/api/RegionReduced?language=it
+   https://tourism.opendatahub.bz.it/api/RegionReduced?language=it
 
 An example result for this call is:
 	  
@@ -73,23 +73,23 @@ interface or using an API calls:
 
 * :strong:`reg`::
 
-     http://tourism.opendatahub.bz.it/swagger/ui/index#!/Common/Common_GetRegionsReduced 
-     http://tourism.opendatahub.bz.it/api/RegionReduced?language=it 
+     https://tourism.opendatahub.bz.it/swagger/ui/index#!/Common/Common_GetRegionsReduced 
+     https://tourism.opendatahub.bz.it/api/RegionReduced?language=it 
 
 * :strong:`tvs`::
 
-    http://tourism.opendatahub.bz.it/swagger/ui/index#!/Common/Common_GetTourismvereinReduced
-    http://tourism.opendatahub.bz.it/api/TourismAssociationReduced?language=iturismusverein)
+    https://tourism.opendatahub.bz.it/swagger/ui/index#!/Common/Common_GetTourismvereinReduced
+    https://tourism.opendatahub.bz.it/api/TourismAssociationReduced?language=iturismusverein)
     
 * :strong:`mun`::
     
-    http://tourism.opendatahub.bz.it/swagger/ui/index#!/Common/Common_GetMunicipalityReduced
-    http://tourism.opendatahub.bz.it/api/MunicipalityReduced?language=it
+    https://tourism.opendatahub.bz.it/swagger/ui/index#!/Common/Common_GetMunicipalityReduced
+    https://tourism.opendatahub.bz.it/api/MunicipalityReduced?language=it
     
 * :strong:`fra`::
   
-    http://tourism.opendatahub.bz.it/swagger/ui/index#!/Common/Common_GetDistrictReduced
-    http://tourism.opendatahub.bz.it/api/DistrictReduced?language=it
+    https://tourism.opendatahub.bz.it/swagger/ui/index#!/Common/Common_GetDistrictReduced
+    https://tourism.opendatahub.bz.it/api/DistrictReduced?language=it
 
 For example, to retrieve all Gastronomy in the suburb of Lana, first
 retrieve its ID, which is:
@@ -104,7 +104,7 @@ retrieve its ID, which is:
 Then pass the string :strong:`fra79CBD79551C911D18F1400A02427D15E` as
 `locfilter`::
 
-  http://tourism.opendatahub.bz.it/api/Gastronomy?locfilter=fra79CBD79551C911D18F1400A02427D15E
+  https://tourism.opendatahub.bz.it/api/Gastronomy?locfilter=fra79CBD79551C911D18F1400A02427D15E
 
 *****
 
@@ -134,7 +134,7 @@ category is a power of 2, so to search in multiple categories, simply
 parameter. For example, to search for Restaurants (1) and Pizzerias
 (32), pass :strong:`33` to `categorycodefilter`::
 
-  http://tourism.opendatahub.bz.it/api/Gastronomy?categorycodefilter=33
+  https://tourism.opendatahub.bz.it/api/Gastronomy?categorycodefilter=33
 
 Tips and Tricks
 ~~~~~~~~~~~~~~~

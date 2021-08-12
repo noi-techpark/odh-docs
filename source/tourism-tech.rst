@@ -79,7 +79,7 @@ Filters are used within a dataset and their primary purpose is to
 limit the result set according to specific parameters, although they
 might not be available in every API call. Information about default
 values can be found for each datasets in the `swagger interface
-<http://tourism.opendatahub.bz.it/swagger/ui/index>`_ of the API. Some
+<https://tourism.opendatahub.bz.it/swagger/ui/index>`_ of the API. Some
 examples of their use can be found in section :doc:`/howto/tourism/tips`.
 
 - :strong:`Seed` is used to set pagination. See tip :ref:`TT3
@@ -213,7 +213,7 @@ example of previous section and use the `ODHActivityPOI` dataset. The
 following query will retrieve all the data in the dataset that have
 some information stored in English::
 
-  http://tourism.opendatahub.bz.it/api/ODHActivityPoi?language=en
+  https://tourism.opendatahub.bz.it/api/ODHActivityPoi?language=en
 
 Most of the data in the Open Data Hub datasets are available in three
 languages, English, German, and Italian, for which :literal:`en`,
@@ -261,13 +261,13 @@ retrieve and save data in CSV format:
   query and you will be prompted to provide a name to the file that
   will contain the required data. Examples::
 
-     http://tourism.opendatahub.bz.it/api/Activity?fields=Id,Detail.en.Title,ContactInfos.en.CompanyName&pagesize=500
+     https://tourism.opendatahub.bz.it/api/Activity?fields=Id,Detail.en.Title,ContactInfos.en.CompanyName&pagesize=500
 
   This query shows its JSON output on the screen. To save it, right
   click on the page and select `Save as`. ::
 
 
-     http://tourism.opendatahub.bz.it/api/Activity?fields=Id,Detail.de.Title,ContactInfos.de.CompanyName&pagesize=500&format=csv
+     https://tourism.opendatahub.bz.it/api/Activity?fields=Id,Detail.de.Title,ContactInfos.de.CompanyName&pagesize=500&format=csv
 
   Nothing is shown on screen, but a dialog window opens that allows you
   to select a name for the file and the directory where to save it.
@@ -278,14 +278,14 @@ retrieve and save data in CSV format:
 
   .. code:: bash
 
-     ~$ curl -X GET "http://tourism.opendatahub.bz.it/api/Activity?fields=Id,Detail.en.Title,ContactInfos.en.CompanyName&pagesize=500" -H "accept: application/json"
+     ~$ curl -X GET "https://tourism.opendatahub.bz.it/api/Activity?fields=Id,Detail.en.Title,ContactInfos.en.CompanyName&pagesize=500" -H "accept: application/json"
 
 
   The output of this query will be in JSON format.
 
   .. code:: bash
 
-     ~$ curl -X GET "http://tourism.opendatahub.bz.it/api/Activity?fields=Id,Detail.en.Title,ContactInfos.en.CompanyName&pagesize=500" -H "accept: text/csv"
+     ~$ curl -X GET "https://tourism.opendatahub.bz.it/api/Activity?fields=Id,Detail.en.Title,ContactInfos.en.CompanyName&pagesize=500" -H "accept: text/csv"
 
 
   The output of this query will be in CSV format.

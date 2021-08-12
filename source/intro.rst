@@ -75,7 +75,7 @@ General Transit Feed Specification <https://gtfs.org/>`_ (GTFS),
 
 The |odh| team also strives to keep all data regularly updated, and
 use standard exchange formats for them like `Json
-<http://www.json.org/>`_ and the `Data Catalog Vocabulary
+<https://www.json.org/>`_ and the `Data Catalog Vocabulary
 <https://www.w3.org/TR/vocab-dcat/>`_ (DCAT) to facilitate their
 spreading and use. Depending on the development of the project and the
 interest of users, more standards and data formats might be supported
