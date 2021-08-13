@@ -176,3 +176,9 @@ documentation.
       :tickets: 227
 
       Update old URLS, fix broken links.
+
+   .. change::
+      :tags: Improvement
+      :tickets: 232
+
+      Add statistics about Tourism's Open Data and CC0-licensed images

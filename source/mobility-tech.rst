@@ -524,8 +524,6 @@ the following limitations:
 The :literal:`WHERE` Clause
 ---------------------------
 
-.. versionadded:: 2020.12 explanation about string values in WHERE clauses
-
 The :literal:`WHERE` clause can be used to define conditions to filter
 out unwanted results and can be built with the use of the following
 operators:

@@ -199,7 +199,7 @@ will see something like:
   "CurrentPage": 1,
   "OnlineResults": -1,
   "Seed": "43",
-n  "Items": [
+  "Items": [
     {
 
 The remainder of the :strong:`Response Body` contains the first 15

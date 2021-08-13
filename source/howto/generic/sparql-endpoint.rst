@@ -3,8 +3,6 @@
 How to Access |odh| Data Using SPARQL
 =====================================
 
-.. versionadded:: 2021.01
-
 The |odh|\'s dataset can be queried using the SPARQL query language,
 using the `Open Data Hub Knowledge Graph Portal
 <https://sparql.opendatahub.bz.it/>`_. This howto helps you in getting
