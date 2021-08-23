@@ -453,7 +453,3 @@ Datasets in Other Domains
 :link-badge:`alpinebits-dataset,https\://alpinebits.opendatahub.bz.it/AlpineBits,ref,badge-light`
 
 .. include:: /datasets/alpinebits.rst
-
-.. odh vkg km
-
-.. include:: /includes/kg.rst
