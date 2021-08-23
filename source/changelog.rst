@@ -182,3 +182,12 @@ documentation.
       :tickets: 232
 
       Add statistics about Tourism's Open Data and CC0-licensed images
+
+
+   .. change::
+      :tags: Improvement
+      :tickets: 221
+
+      Rearrange subsections in sections :ref:`data-access` and
+      :ref:`available_datasets`, add a new FAQ entry and reformat FAQ
+      section.

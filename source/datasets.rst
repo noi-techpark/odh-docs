@@ -9,6 +9,12 @@ Datasets
 .. versionchanged:: 2021.05 moved technical information for tourism
    and mobility to this section
 
+.. versionchanged:: 2021.08 move subsections `Licenses for ODH
+   resources` and `ODH Virtual Knowledge Graph` to appendix `Licenses
+   and TOS for the Open Data Hub material` and section `Accessing the
+   Open Data Hub` respectively
+
+
 The goal of the Open Data Hub project is to make available datasets containing
 data about the South Tyrolean ecosystem, to allow third parties to
 develop novel applications on top of them, consuming the exposed

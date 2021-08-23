@@ -3,10 +3,13 @@
 Frequently Asked Questions
 ==========================
 
+.. versionchanged:: 2021.08 new format for content
+
+.. versionadded:: 2021.08 new entry for licenses
+
 This section contains answers to questions frequently asked by people
 who want to contribute to the |odh| project or search for information
 about the project.
-
 
 .. dropdown:: |q| What is this project about?
 

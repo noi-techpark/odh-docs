@@ -4,6 +4,9 @@
 Accessing the Open Data Hub
 =============================
 
+.. versionchanged:: 2021.08 move `ODH Virtual Knowledge Graph` subsection
+   from Dataset section
+
 There are different modalities to access data that are provided by the
 Open Data Hub, that are listed here. Currently, data from the
 :strong:`Mobility` and :strong:`Tourism` domains can be accessed, both

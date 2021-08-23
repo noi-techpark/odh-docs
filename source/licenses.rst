@@ -4,6 +4,9 @@ Licenses and TOS for the |odh| material
 .. versionadded:: 2021.08 statistics about Tourism's Open Data and
    images with CC0 licence.
 
+.. versionchanged:: 2021.08 move `Licenses for ODH resources` subsection
+   from Dataset section
+
 The resources that are part of the |odh| Project are subject to
 different licenses, which are described in section
 :ref:`odh-license`\. Derivative material built using |odh| material is
