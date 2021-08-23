@@ -100,6 +100,9 @@ These licenses are applied to the |odh| components:
 
    Creative Common Licenses and derivative material.
 
+.. include:: /includes/json-license.rst
+
+   
 APIs Terms of Service
 ---------------------
 
