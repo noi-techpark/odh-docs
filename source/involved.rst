@@ -83,31 +83,36 @@ out a list of tasks that belong to each of these roles; we believe
 that this list can help you understand which type of contribution you
 can give to the |odh| project!
 
-.. panels::
-   :container: container-fluid
+.. grid::
+   :gutter: 1
 
-   .. dropdown:: As a :strong:`User` I can...
+   .. grid-item::
+      :columns: 6
 
-      .. include:: /includes/user.rst
+      .. dropdown:: As a :strong:`User` I can...
 
-   ---
+         .. include:: /includes/user.rst
 
-   .. dropdown:: As an :strong:`App Developer` I can...
+   .. grid-item::
+      :columns: 6
 
-      .. include:: /includes/appdevel.rst
+      .. dropdown:: As an :strong:`App Developer` I can...
 
-   ---
+         .. include:: /includes/appdevel.rst
 
-   .. dropdown:: As a :strong:`Open Data Hub Core Hacker` I can...
+   .. grid-item::
+      :columns: 6
 
-      .. include:: /includes/corehacker.rst
+      .. dropdown:: As a :strong:`Open Data Hub Core Hacker` I can...
 
-   ---
+         .. include:: /includes/corehacker.rest
 
-   .. dropdown:: As a :strong:`Data Provider` I can....
+   .. grid-item::
+      :columns: 6
 
+      .. dropdown:: As a :strong:`Data Provider` I can....
 
-      .. include:: /includes/dataproviders.rst
+         .. include:: /includes/dataproviders.rst
 
 
 .. _bug-reports:
