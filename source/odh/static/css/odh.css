@@ -6239,3 +6239,11 @@ div.topic {
 button.toggle-button.toggle-button-hidden:before {
     left: -3.5em !important;
 }
+
+:root {
+    --sd-color-card-header: #F7F7F7 !important;
+}
+
+.sd-card-header {
+    font-weight: 600;
+}
