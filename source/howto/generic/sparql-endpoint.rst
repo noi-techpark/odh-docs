@@ -31,67 +31,71 @@ The landing page of |odh|\'s SPARQL endpoint contains the following elements:
 
 1. The buttons in the banner at the top of the page.
 
-   .. panels::
-      :container: container-fluid pb-3
-      :column: col-lg-4 col-md-4 col-sm-6 col-xs-12 p-2
-      :header: bg-light text-center
+   .. grid:: 6
+      :gutter: 1
 
+      .. grid-item-card::
+         :columns: 4
 
-      Playground
-      ^^^^^^^^^^
+         Playground
+         ^^^^^^^^^^
       
-      The `Playground` is a space in which to freely write SPARQL
-      queries against the |odh| datasets. It is most suited for users
-      that already know SPARQL and how to use it to interact with |odh|\.
-      +++
-      See section :ref:`playground`.
+         The `Playground` is a space in which to freely write SPARQL
+         queries against the |odh| datasets. It is most suited for users
+         that already know SPARQL and how to use it to interact with |odh|\.
+         +++
+         See section :ref:`playground`.
+
+      .. grid-item-card::
+         :columns: 4
       
-      ---
-      Regular Queries
-      ^^^^^^^^^^^^^^^
+         Regular Queries
+         ^^^^^^^^^^^^^^^
 
-      `Regular Queries` are a sample queries that can be used either 
-      standalone, to gather example data, or can be edited and
-      modified to tweak the results.  
-      +++
+         `Regular Queries` are a sample queries that can be used either 
+         standalone, to gather example data, or can be edited and
+         modified to tweak the results.  
+         +++
 
-      See section :ref:`regular-queries`.
-      
-      ---
-      Data Quality Queries
-      ^^^^^^^^^^^^^^^^^^^^
+         See section :ref:`regular-queries`.
 
-      Similar to Regular Queries, `Data Quality Queries` are precooked
-      queries that will gather data, but with an emphasis on their
-      quality. They can be used to check whether some of the data are
-      incomplete. 
-      +++
-      See section :ref:`data-quality-queries`.
+      .. grid-item-card::
+         :columns: 4
 
-      ---
-      :column: col-lg-6 col-md-6 col-sm-8 col-xs-12 p-2
-               
-      Mobility
-      ^^^^^^^^
+         Data Quality Queries
+         ^^^^^^^^^^^^^^^^^^^^
 
-      `Mobility` queries are sample queries against all the datasets
-      in the entire mobility domain. They can be used as they are or
-      modified and tweaked to extract more precise data. 
-      +++
+         Similar to Regular Queries, `Data Quality Queries` are precooked
+         queries that will gather data, but with an emphasis on their
+         quality. They can be used to check whether some of the data are
+         incomplete. 
+         +++
+         See section :ref:`data-quality-queries`.
 
-      You can refer to section :ref:`playground`.
+      .. grid-item-card::
+         :columns: 6
+                   
+         Mobility
+         ^^^^^^^^
 
-      ---
-      :column: col-lg-6 col-md-6 col-sm-8 col-xs-12 p-2
-               
-      Tourism and Mobility
-      ^^^^^^^^^^^^^^^^^^^^
+         `Mobility` queries are sample queries against all the datasets
+         in the entire mobility domain. They can be used as they are or
+         modified and tweaked to extract more precise data. 
+         +++
 
-      `Tourism and Mobility` queries combine datasets from the tourism
-      domain with observations gathered by sensors in the mobility domain.
-      +++
+         You can refer to section :ref:`playground`.
 
-      You can refer to section :ref:`playground`.
+      .. grid-item-card::
+         :columns: 6    
+
+         Tourism and Mobility
+         ^^^^^^^^^^^^^^^^^^^^
+
+         `Tourism and Mobility` queries combine datasets from the tourism
+         domain with observations gathered by sensors in the mobility domain.
+         +++
+
+         You can refer to section :ref:`playground`.
 
       
 2. The main area, consisting of a large textarea, in which to write
