@@ -119,30 +119,41 @@ by the |odh| team.
 .. grid::
    :gutter: 1
 
-   .. _ab-access:
    
-   .. grid-item-card:: AlpineBits client
+   .. grid-item-card:: 
       :columns: 6
 
+      .. _ab-access:
+
+      AlpineBits client
+      ^^^^^^^^^^^^^^^^^
       .. include:: /includes/AlpineBits.rst
 
-   .. _r-access:
-
-   .. grid-item-card:: Statistical Access with R
+   .. grid-item-card::
       :columns: 6
 
+      .. _r-access:
+
+      Statistical Access with R
+      ^^^^^^^^^^^^^^^^^^^^^^^^^
+      
       .. include:: /includes/R.rst
 
-   .. _ninja api:
-
-   .. grid-item-card:: API
+   .. grid-item-card::
       :columns: 6
+      
+      .. _ninja api:
 
+      API
+      ^^^
+      
       .. include:: /includes/API.rst
 
-   .. _cli-access:
-
-   .. grid-item-card:: CLI access
+   .. grid-item-card::
       :columns: 6
+      
+      .. _cli-access:
 
+      CLI access
+      ^^^^^^^^^^
       .. include:: /includes/CLI.rst
