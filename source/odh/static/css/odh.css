@@ -4584,7 +4584,7 @@ p {
     margin: 0;
     font-size: 16px;
     margin-bottom: 24px;
-    max-width: 1024px
+    max-width: inherit
 }
 
 p card-text{
@@ -5186,7 +5186,7 @@ html {
 .wy-nav-content {
     padding: 1.618em 3.236em;
     height: 100%;
-    max-width: none
+    max-width: 1024px;
     margin: auto
 }
 
