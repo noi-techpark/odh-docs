@@ -97,24 +97,28 @@ hackathons and must be considered as `Experimental`. |alpha|
 
 .. rubric::  Year 2018
 
-.. tabbed:: Summer Lido Hackathon
+.. tab-set::
 
-   .. include:: /apps/summerlido2018.rst
+   .. tab-item:: Summer Lido Hackathon
 
-.. tabbed:: HackTheAlps
+      .. include:: /apps/summerlido2018.rst
 
-   .. include:: /apps/hackthealps2018.rst
+   .. tab-item:: HackTheAlps
 
-.. tabbed:: Vertical Innovation Hackathon
+      .. include:: /apps/hackthealps2018.rst
 
-   .. include:: /apps/verticalinnovation2018.rst
+   .. tab-item:: Vertical Innovation Hackathon
+
+      .. include:: /apps/verticalinnovation2018.rst
 
 .. rubric:: Year 2019
 
-.. tabbed:: NOI Hackathon Summer edition
+.. tab-set::
 
-   .. include:: /apps/summerlido2019.rst
+   .. tab-item:: NOI Hackathon Summer edition
 
-.. tabbed:: NOI Hackathon SFScon Edition
+      .. include:: /apps/summerlido2019.rst
 
-   .. include:: /apps/sfscon2019.rst
+   .. tab-item:: NOI Hackathon SFScon Edition
+
+      .. include:: /apps/sfscon2019.rst
