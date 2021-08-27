@@ -17,9 +17,10 @@ home page:
 
 https://mobility.api.opendatahub.bz.it/
 
-.. note:: This page contains also the |deprec| Mobility V1 API, for
-   backward compatibility only. This API may be removed in the future,
-   so please do not rely on it and use the API V2 :strong:`only`.
+.. note:: This page contains also the |deprecated| Mobility V1 API,
+   for backward compatibility only. This API may be removed in the
+   future, so please do not rely on it and use the API V2
+   :strong:`only`.
           
 .. figure:: /images/mobility-swagger.png
    :scale: 33%

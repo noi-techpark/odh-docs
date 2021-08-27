@@ -325,7 +325,7 @@ for e-cars.
 
 .. _sasabus-dataset:
 
-:link-badge:`sasabus-dataset,Public Transportation,ref,badge-light` |deprec|
+:link-badge:`sasabus-dataset,Public Transportation,ref,badge-light` |deprecated|
 
 .. include:: /datasets/publictransportation.rst
 
