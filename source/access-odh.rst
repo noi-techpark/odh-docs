@@ -29,78 +29,85 @@ methods to retrieve data.
 More in detail, these are the possibilities to interact with Open Data Hub's
 data by using a browser:
 
-.. panels::
-   :container: container-fluid pb-3
-   :column: col-lg-4 col-md-4 col-sm-6 col-xs-12 p-2
+.. grid::
+   :gutter: 1
 
-   Go to the :ref:`applist` section of the documentation,
-   particularly sub-sections :ref:`production-stage-apps` and
-   :ref:`beta-stage-apps`, and choose one of the web sites and
-   portals that are listed there. Each of them uses the data
-   gathered from one or more OPEN DATA HUB's datasets to display a
-   number of useful information. You can then see how data are
-   exposed and browse them.
+   .. grid-item-card::
+      :columns: 4
 
-   ---
+      Go to the :ref:`applist` section of the documentation,
+      particularly sub-sections :ref:`production-stage-apps` and
+      :ref:`beta-stage-apps`, and choose one of the web sites and
+      portals that are listed there. Each of them uses the data
+      gathered from one or more OPEN DATA HUB's datasets to display a
+      number of useful information. You can then see how data are
+      exposed and browse them.
 
-   In the same :ref:`applist` section, you can also check the list
-   of the :strong:`Alpha Stage Apps` and choose one of them that
-   you think you can expand, then get in touch with the authors to
-   suggest additional features or collaborate with them to discuss
-   its further development to improve it.
+   .. grid-item-card::
+      :columns: 4
 
-   ---
+      In the same :ref:`applist` section, you can also check the list
+      of the :strong:`Alpha Stage Apps` and choose one of them that
+      you think you can expand, then get in touch with the authors to
+      suggest additional features or collaborate with them to discuss
+      its further development to improve it.
 
-   Access the `ODH Tourism data browser
-   <https://databrowser.opendatahub.bz.it/>`_ and search for the Open
-   Data available in the Tourism domain. You can simply use those
-   data for your convenience, or you might even find a novel way to
-   exploit those data and use them in an app or portal you are
-   going to develop. A detailed howto is available:
-   :ref:`tourism-data-browser-howto` to help you getting acquainted
-   with the browser.
+   .. grid-item-card::
+      :columns: 4
 
-   ---
+      Access the `ODH Tourism data browser
+      <https://databrowser.opendatahub.bz.it/>`_ and search for the
+      Open Data available in the Tourism domain. You can simply use
+      those data for your convenience, or you might even find a novel
+      way to exploit those data and use them in an app or portal you
+      are going to develop. A detailed howto is available:
+      :ref:`tourism-data-browser-howto` to help you getting acquainted
+      with the browser.
 
-   Go to the :strong:`Swagger interface` of the datasets in the
-   Tourism domain, located at
-   https://tourism.opendatahub.bz.it/swagger/ui/index to learn how
-   the REST APIs are built and how you can script them to fetch
-   data for your application. To get started, there is a dedicated
-   howto: :ref:`tourism-data-howto` that will guide you in the
-   first steps.
+   .. grid-item-card::
+      :columns: 4
 
-   ---
+      Go to the :strong:`Swagger interface` of the datasets in the
+      Tourism domain, located at
+      https://tourism.opendatahub.bz.it/swagger/ui/index to learn how
+      the REST APIs are built and how you can script them to fetch
+      data for your application. To get started, there is a dedicated
+      howto: :ref:`tourism-data-howto` that will guide you in the
+      first steps.
 
-   Access the :strong:`Swagger interface` of the datasets in the
-   Mobility domain, located at
-   https://mobility.api.opendatahub.bz.it/. Like in the case of the
-   tourism' Swagger interface, you can learn REST API call for that
-   domain and fetch data for your application. More possibilities
-   to interact with the Mobility domain datasets and the
-   description of the new APIv2 are described in the
-   :ref:`dedicated howto <get-started-mobility>`.
+   .. grid-item-card::
+      :columns: 4
 
-   ---
+      Access the :strong:`Swagger interface` of the datasets in the
+      Mobility domain, located at
+      https://mobility.api.opendatahub.bz.it/. Like in the case of the
+      tourism' Swagger interface, you can learn REST API call for that
+      domain and fetch data for your application. More possibilities
+      to interact with the Mobility domain datasets and the
+      description of the new APIv2 are described in the
+      :ref:`dedicated howto <get-started-mobility>`.
 
-   Open the :strong:`Analytics for Mobility` web page, at
-   https://analytics.opendatahub.bz.it/ This portal uses data in
-   the mobility domain to display various information about the
-   sensors, including their locations, what they measure, and
-   actual data in near-real time. You can retrieve data gathered by
-   the sensors directly from the dataset, in almost real-time.
+   .. grid-item-card::
+      :columns: 4
 
-   ---
-   :column: col-12 p-2
+      Open the :strong:`Analytics for Mobility` web page, at
+      https://analytics.opendatahub.bz.it/ This portal uses data in
+      the mobility domain to display various information about the
+      sensors, including their locations, what they measure, and
+      actual data in near-real time. You can retrieve data gathered by
+      the sensors directly from the dataset, in almost real-time.
 
-   Open the `Open Data Hub Knowledge Graph Portal
-   <https://sparql.opendatahub.bz.it/>`_ where you can explore all
-   the data that are already available as a virtual knowledge
-   graph. Here you can check out some of the precooked query to see
-   and modify them to suit your needs with the help of W3C's
-   `SPARQL query language
-   <https://www.w3.org/TR/sparql11-overview/>`_; SPARQL can be used
-   also in the `Playground` to freely query the endpoint.
+   .. grid-item-card::
+
+
+      Open the `Open Data Hub Knowledge Graph Portal
+      <https://sparql.opendatahub.bz.it/>`_ where you can explore all
+      the data that are already available as a virtual knowledge
+      graph. Here you can check out some of the precooked query to see
+      and modify them to suit your needs with the help of W3C's
+      `SPARQL query language
+      <https://www.w3.org/TR/sparql11-overview/>`_; SPARQL can be used
+      also in the `Playground` to freely query the endpoint.
 
 Programmatic access
 ~~~~~~~~~~~~~~~~~~~
@@ -109,36 +116,33 @@ Programmatic and non-interactive access to the Open Data Hub's dataset
 is possible using any of the following methods made  available
 by the |odh| team.
 
-.. panels::
-   :container: container-fluid
+.. grid::
+   :gutter: 1
 
    .. _ab-access:
+   
+   .. grid-item-card:: AlpineBits client
+      :columns: 6
 
-   AlpineBits client
-   ^^^^
-   .. include:: /includes/AlpineBits.rst
-
-   ----
+      .. include:: /includes/AlpineBits.rst
 
    .. _r-access:
 
-   Statistical Access with R
-   ^^^^
-   .. include:: /includes/R.rst
+   .. grid-item-card:: Statistical Access with R
+      :columns: 6
 
-   ---
+      .. include:: /includes/R.rst
+
    .. _ninja api:
 
-   API
-   ^^^^
+   .. grid-item-card:: API
+      :columns: 6
 
-   .. include:: /includes/API.rst
-
-   ---
+      .. include:: /includes/API.rst
 
    .. _cli-access:
 
-   CLI access
-   ^^^^
+   .. grid-item-card:: CLI access
+      :columns: 6
 
-   .. include:: /includes/CLI.rst
+      .. include:: /includes/CLI.rst
