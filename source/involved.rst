@@ -105,7 +105,7 @@ can give to the |odh| project!
 
       .. dropdown:: As a :strong:`Open Data Hub Core Hacker` I can...
 
-         .. include:: /includes/corehacker.rest
+         .. include:: /includes/corehacker.rst
 
    .. grid-item::
       :columns: 6
