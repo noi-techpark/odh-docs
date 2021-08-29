@@ -29,7 +29,7 @@ extensions = [
     'sphinx.ext.extlinks',
     'sphinx.ext.imgconverter',
     'ga', 'hidemail',
-    'sphinx_togglebutton', 'sphinx_panels',
+    'sphinx_togglebutton', 'sphinx_design',
     'sphinx_copybutton', 'changelog'
 ]
 
