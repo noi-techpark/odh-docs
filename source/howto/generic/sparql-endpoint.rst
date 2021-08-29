@@ -108,7 +108,7 @@ The landing page of |odh|\'s SPARQL endpoint contains the following elements:
    * :fa:`expand-arrows-alt` maximise the textarea
    * :fa:`caret-square-right` execute the query. If the query contains
      some syntactic error, it is accompanied by a yellow question mark
-     :fa:`exclamation-triangle,text-warning bg-dark` and it is not
+     :octicon:`alert;1em;sd-text-warning sd-bg-black` and it is not
      executed, but an error message is displayed
      
 3. A number of visualisation and download options in the bottom
@@ -133,7 +133,7 @@ The playground is the place in which you can build you queries against
 the |odh| endpoint. Queries can be built using built-in or custom
 prefixes as well as all SPARQL operators. There is a validation of the
 queries, therefore in case of mistakes a red warning icon
-:opticon:`issue-opened,text-danger` will appear on the left-hand side
+:octicon:`issue-opened;1em;sd-text-danger` will appear on the left-hand side
 of the offending line.
 
 .. note:: Generic queries might return hundreds or thousands of
