@@ -240,55 +240,55 @@ to plan a trip with an own means of transport, for example a car, or a bike.
 
 .. _bluetooth-dataset:
 
-:link-badge:`bluetooth-dataset,it.bz.opendatahub.bluetooth,ref,badge-light`
+:bdg-link-light:`bluetooth-dataset,it.bz.opendatahub.bluetooth`
 
 .. include:: /datasets/bluetooth.rst
 
 .. _environment-dataset:
 
-:link-badge:`environment-dataset,it.bz.opendatahub.environment,ref,badge-light`
+:bdg-link-light:`environment-dataset,it.bz.opendatahub.environment`
             
 .. include:: /datasets/environment.rst
                          
 .. _linkstation-dataset:
 
-:link-badge:`linkstation-dataset,it.bz.opendatahub.linkstation,ref,badge-light`
+:bdg-link-light:`linkstation-dataset,it.bz.opendatahub.linkstation`
 
 .. include:: /datasets/linkstation.rst
 
 .. _parking-dataset:
 
-:link-badge:`parking-dataset,it.bz.opendatahub.parking,ref,badge-light`
+:bdg-link-light:`parking-dataset,it.bz.opendatahub.parking`
 
 .. include:: /datasets/parking.rst
 
 .. _rwisstation-dataset:
 
-:link-badge:`rwisstation-dataset,it.bz.opendatahub.rwisstation,ref,badge-light`
+:bdg-link-light:`rwisstation-dataset,it.bz.opendatahub.rwisstation`
 
 .. include:: /datasets/rwisstation.rst
 
 .. _streetelement-dataset:
 
-:link-badge:`streetelement-dataset,it.bz.opendatahub.streetelements,ref,badge-light`
+:bdg-link-light:`streetelement-dataset,it.bz.opendatahub.streetelements`
 
 .. include:: /datasets/streetelements.rst
 
 .. _trafficstation-dataset:
 
-:link-badge:`trafficstation-dataset,it.bz.opendatahub.trafficstation (1),ref,badge-light`
+:bdg-link-light:`trafficstation-dataset,it.bz.opendatahub.trafficstation (1)`
 
 .. include:: /datasets/trafficstation.rst
 
 .. _trafficstation-vms-dataset:
 
-:link-badge:`trafficstation-vms-dataset,it.bz.opendatahub.trafficstation (2),ref,badge-light`
+:bdg-link-light:`trafficstation-vms-dataset,it.bz.opendatahub.trafficstation (2)`
 
 .. include:: /datasets/trafficstation-vms.rst
 
 .. _weather-dataset:
 
-:link-badge:`weather-dataset,it.bz.opendatahub.weather,ref,badge-light`
+:bdg-link-light:`weather-dataset,it.bz.opendatahub.weather`
 
 .. include:: /datasets/weather.rst
 
@@ -301,31 +301,31 @@ for e-cars.
 
 .. _bikesharing-dataset:
 
-:link-badge:`bikesharing-dataset,it.bz.opendatahub.bikesharing,ref,badge-light`
+:bdg-link-light:`bikesharing-dataset,it.bz.opendatahub.bikesharing`
 
 .. include:: /datasets/bikesharing.rst
 
 .. _carpoolinghub-dataset:
 
-:link-badge:`carpoolinghub-dataset,it.bz.opendatahub.carpoolinghub,ref,badge-light`
+:bdg-link-light:`carpoolinghub-dataset,it.bz.opendatahub.carpoolinghub`
 
 .. include:: /datasets/carpoolinghub.rst
 
 .. _carsharing-dataset:
 
-:link-badge:`carsharing-dataset,it.bz.opendatahub.carsharing,ref,badge-light`
+:bdg-link-light:`carsharing-dataset,it.bz.opendatahub.carsharing`
 
 .. include:: /datasets/carsharing.rst
 
 .. _echarging-dataset:
 
-:link-badge:`echarging-dataset,it.bz.opendatahub.echargingstation,ref,badge-light`
+:bdg-link-light:`echarging-dataset,it.bz.opendatahub.echargingstation`
 
 .. include:: /datasets/ecs.rst
 
 .. _sasabus-dataset:
 
-:link-badge:`sasabus-dataset,Public Transportation,ref,badge-light` |deprecated|
+:bdg-link-light:`sasabus-dataset,Public Transportation` |deprecated|
 
 .. include:: /datasets/publictransportation.rst
 
@@ -394,91 +394,91 @@ The following information is provided for each dataset in the Tourism domain:
    
 .. _accommodation-dataset:
 
-:link-badge:`accommodation-dataset,it.bz.opendatahub.accommodation,ref,badge-light`
+:bdg-link-light:`accommodation-dataset,it.bz.opendatahub.accommodation`
 
 .. include:: /datasets/accommodation.rst
 
 .. _activity-dataset:
 
-:link-badge:`activity-dataset,it.bz.opendatahub.activity,ref,badge-light`
+:bdg-link-light:`activity-dataset,it.bz.opendatahub.activity`
 
 .. include:: /datasets/activity.rst
 
 .. _activity_poi-dataset:
 
-:link-badge:`activity_poi-dataset,it.bz.opendatahub.activity_poi,ref,badge-light`
+:bdg-link-light:`activity_poi-dataset,it.bz.opendatahub.activity_poi`
 
 .. include:: /datasets/activity_poi.rst
 
 .. _common-dataset:
 
-:link-badge:`common-dataset,it.bz.opendatahub.common,ref,badge-light`
+:bdg-link-light:`common-dataset,it.bz.opendatahub.common`
 
 .. include:: /datasets/common.rst
 
 .. _event-dataset:
 
-:link-badge:`event-dataset,it.bz.opendatahub.event,ref,badge-light`
+:bdg-link-light:`event-dataset,it.bz.opendatahub.event`
 
 .. include:: /datasets/event.rst
 
 .. _eventshort-dataset:
 
-:link-badge:`eventshort-dataset,it.bz.opendatahub.eventshort,ref,badge-light`
+:bdg-link-light:`eventshort-dataset,it.bz.opendatahub.eventshort`
 
 .. include:: /datasets/eventshort.rst
 
 .. _gastronomy-dataset:
 
-:link-badge:`gastronomy-dataset,it.bz.opendatahub.gastronomy,ref,badge-light`
+:bdg-link-light:`gastronomy-dataset,it.bz.opendatahub.gastronomy`
 
 .. include:: /datasets/gastronomy.rst
 
 .. _location-dataset:
 
-:link-badge:`location-dataset,it.bz.opendatahub.location,ref,badge-light`
+:bdg-link-light:`location-dataset,it.bz.opendatahub.location`
 
 .. include:: /datasets/location.rst
 
 .. _package-dataset:
 
-:link-badge:`package-dataset,it.bz.opendatahub.package,ref,badge-light`
+:bdg-link-light:`package-dataset,it.bz.opendatahub.package`
 
 .. include:: /datasets/package.rst
 
 .. _poi-dataset:
 
-:link-badge:`poi-dataset,it.bz.opendatahub.poi,ref,badge-light`
+:bdg-link-light:`poi-dataset,it.bz.opendatahub.poi`
 
 .. include:: /datasets/poi.rst
 
 .. _ski-dataset:
 
-:link-badge:`ski-dataset,it.bz.opendatahub.ski,ref,badge-light`
+:bdg-link-light:`ski-dataset,it.bz.opendatahub.ski`
 
 .. include:: /datasets/ski.rst
 
 .. _snowreport-dataset:
 
-:link-badge:`snowreport-dataset,it.bz.opendatahub.snowreport,ref,badge-light`
+:bdg-link-light:`snowreport-dataset,it.bz.opendatahub.snowreport`
 
 .. include:: /datasets/snowreport.rst
 
 .. _venue-dataset:
 
-:link-badge:`venue-dataset,it.bz.opendatahub.venue,ref,badge-light`
+:bdg-link-light:`venue-dataset,it.bz.opendatahub.venue`
 
 .. include:: /datasets/venue.rst
 
 .. _weather-forecast-dataset:
 
-:link-badge:`weather-forecast-dataset,it.bz.opendatahub.weather-forecast,ref,badge-light`
+:bdg-link-light:`weather-forecast-dataset,it.bz.opendatahub.weather-forecast`
 
 .. include:: /datasets/weather-forecast.rst
 
 .. _webcam-dataset:
 
-:link-badge:`webcam-dataset,it.bz.opendatahub.webcam,ref,badge-light`
+:bdg-link-light:`webcam-dataset,it.bz.opendatahub.webcam`
 
 .. include:: /datasets/webcam.rst
 
@@ -489,23 +489,22 @@ Datasets in Other Domains
 
 .. _creative-industries-dataset:
 
-:link-badge:`creative-industries-dataset,Creative Industries,ref,badge-light`
+:bdg-link-light:`creative-industries-dataset,Creative Industries`
 
 .. include:: /datasets/creativeindustries.rst
 
 .. _noiplace-dataset:
 
-:link-badge:`noiplace-dataset,NOI-Place,ref,badge-light`
+:bdg-link-light:`noiplace-dataset,NOI-Place`
 
 .. include:: /datasets/noiplace.rst
 
 .. _alpinebits-dataset:
 
-:link-badge:`alpinebits-dataset,https\://alpinebits.opendatahub.bz.it/AlpineBits,ref,badge-light`
+:bdg-link-light:`alpinebits-dataset,https\://alpinebits.opendatahub.bz.it/AlpineBits`
 
 .. include:: /datasets/alpinebits.rst
 
 .. odh vkg km
-
-.. include:: /includes/kg.rst
+   .. include:: /includes/kg.rst
 

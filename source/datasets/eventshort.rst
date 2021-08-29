@@ -1,25 +1,24 @@
 .. eventshort
 
-.. panels::
-   :container: container-fluid
+.. grid::
 
-   -----
-   :column: col-lg-4 col-md-4 col-sm-4 col-xs-6 p-2
-            
-   This dataset contains events provided by :strong:`NOI Techpark`,
-   :strong:`Eurac` and :strong:`St. Virtual`.
+   .. grid-item-card::
+      :columns: 6
 
-   -----
-   :column: col-lg-8 col-md-8 col-sm-8 col-xs-6 p-2
-   
-   .. csv-table::
+      This dataset contains events provided by :strong:`NOI Techpark`,
+      :strong:`Eurac` and :strong:`St. Virtual`.
 
-      "Output", "JSON, mime-type application/json"
-      "E-mail contact", "|contact|"
-      "API version", "v1"
-      "Swagger URL", ":stinfo:`/EventShort`"
-      "API URL", ":apit:`/EventShort`"
-      "Use cases and info", "https://today.noi.bz.it/
-      https://noi.bz.it/it/event-calendar/
-      https://virtual.noi.bz.it/programma.html"
-      "Sources", "LTS"
+   .. grid-item-card::
+      :columns: 6
+
+      .. csv-table::
+
+         "Output", "JSON, mime-type application/json"
+         "E-mail contact", "|contact|"
+         "API version", "v1"
+         "Swagger URL", ":stinfo:`/EventShort`"
+         "API URL", ":apit:`/EventShort`"
+         "Use cases and info", "https://today.noi.bz.it/
+         https://noi.bz.it/it/event-calendar/
+         https://virtual.noi.bz.it/programma.html"
+         "Sources", "LTS"
