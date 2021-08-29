@@ -120,41 +120,47 @@ below. These filters allow to customise queries and have been
 introduced for all cases for which there is no existent filter or
 sorting possibilities.
 
-.. panels::
-   :container: container-fluid pb-3
-   :column: col-lg-4 col-md-4 col-sm-6 col-xs-12 p-2
+.. grid::
 
-   rawfilter
-   ^^^
-   `rawfilter` can be appended to any query with the syntax
-   ``?rawfilter=<filter(s)>``, in which <filter> has the generic form
-   ``<field>, <value>``. These logical operators can be used to
-   combine multiple filters: `eq`, `ne`, `gt`, `ge`, `lt`, `le`,
-   `and`, `or`, `isnull`, `isnotnull`, `in`, `nin`
+   .. grid-item-card::
+      :columns: 4
+      :padding: 1
+      
+      rawfilter
+      ^^^
+      `rawfilter` can be appended to any query with the syntax
+      ``?rawfilter=<filter(s)>``, in which <filter> has the generic form
+      ``<field>, <value>``. These logical operators can be used to
+      combine multiple filters: `eq`, `ne`, `gt`, `ge`, `lt`, `le`,
+      `and`, `or`, `isnull`, `isnotnull`, `in`, `nin`
 
-   ---
+   .. grid-item-card::
+      :columns: 4
+      :padding: 1
 
-   rawsort
-   ^^^
-   `rawsort` can be used to sort in ascending order the results of a
-   query; its syntax is ``?rawfilter=<filter(s)>``. Here, `<filter>`
-   is the name of a field in the result set. Multiple fields can be
-   specified as comma separated, e.g.,
-   ``?rawfilter=startDate,Detail.en.Title``. If a `<filter>` is prefixed with
-   a dash, ``-`` sorting is reverted, i.e., output is shown in
-   descending order.
+      rawsort
+      ^^^
+      `rawsort` can be used to sort in ascending order the results of a
+      query; its syntax is ``?rawfilter=<filter(s)>``. Here, `<filter>`
+      is the name of a field in the result set. Multiple fields can be
+      specified as comma separated, e.g.,
+      ``?rawfilter=startDate,Detail.en.Title``. If a `<filter>` is prefixed with
+      a dash, ``-`` sorting is reverted, i.e., output is shown in
+      descending order.
 
-   ---
+   .. grid-item-card::
+      :columns: 4
+      :padding: 1
 
-   removenullvalues
-   ^^^
+      removenullvalues
+      ^^^
 
-   ``?removenullvalues=true`` removes all :strong:`NULL` values from
-   the query's output. While usually it's always desirable to have a
-   full JSON output to be parsed, removing NULL values proves useful
-   to reduce the output size or to verify data quality. By using
-   ``removenullvalues``, one can check if all fields of a given entry
-   are populated or not.
+      ``?removenullvalues=true`` removes all :strong:`NULL` values from
+      the query's output. While usually it's always desirable to have a
+      full JSON output to be parsed, removing NULL values proves useful
+      to reduce the output size or to verify data quality. By using
+      ``removenullvalues``, one can check if all fields of a given entry
+      are populated or not.
 
 .. _fields-filter:
 
@@ -253,7 +259,6 @@ Separated value)` format.
 
    However, plans are to soon have all Tourism datasets support it.
 
-
 Depending on how you access the data, there are different modalities to
 retrieve and save data in CSV format:
 
@@ -317,7 +322,6 @@ strings, dates, and integers.
    to enter a number as a filter, that is the sum of the values'
    corresponding codes. See :ref:`Example 3 <tour-ex3>`.
 
-
 :strong:`Lists`
    A list is an (unordered) sequence of items. The available values
    are usually listed on the right-hand side of the filter, along with
@@ -329,7 +333,6 @@ strings, dates, and integers.
    type of value. See for example :ref:`Example2 <tour-ex2>` for a
    deeper explanation and  :ref:`Example 1 <tour-ex1>` for a sample
    query that fails because  a wrong compound value was supplied.
-
 
 :strong:`Language`
    The descriptions of items in the dataset appear in three languages:
