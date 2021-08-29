@@ -506,5 +506,6 @@ Datasets in Other Domains
 .. include:: /datasets/alpinebits.rst
 
 .. odh vkg km
-   .. include:: /includes/kg.rst
+   
+.. include:: /includes/kg.rst
 
