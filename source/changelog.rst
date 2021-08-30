@@ -188,6 +188,6 @@ documentation.
       :tickets: 233
 
       The `sphinx-panels
-      <https://github.com/executablebooks/sphinx-panels >`_ extension
+      <https://github.com/executablebooks/sphinx-panels>`_ extension
       has been replaced by its successor, `sphinx-design
-      <https://github.com/executablebooks/sphinx-design`_.
+      <https://github.com/executablebooks/sphinx-design>`_.
