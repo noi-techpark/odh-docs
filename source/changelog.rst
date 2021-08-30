@@ -182,3 +182,12 @@ documentation.
       :tickets: 232
 
       Add statistics about Tourism's Open Data and CC0-licensed images
+
+   .. change::
+      :tags: Improvement
+      :tickets: 233
+
+      The `sphinx-panels
+      <https://github.com/executablebooks/sphinx-panels >`_ extension
+      has been replaced by its successor, `sphinx-design
+      <https://github.com/executablebooks/sphinx-design`_.
