@@ -1,7 +1,11 @@
 .. _data-access:
 
+
 Accessing the Open Data Hub
----------------------------
+=============================
+
+.. versionchanged:: 2021.08 move `ODH Virtual Knowledge Graph` subsection
+   from Dataset section
 
 There are different modalities to access data that are provided by the
 Open Data Hub, that are listed here. Currently, data from the
@@ -16,7 +20,7 @@ content.
 
 
 Browser access
-~~~~~~~~~~~~~~
+--------------
 
 Accessing data in the Open Data Hub by using a browser is useful on
 different levels: for the casual user, who can have a look at the
@@ -110,7 +114,7 @@ data by using a browser:
       also in the `Playground` to freely query the endpoint.
 
 Programmatic access
-~~~~~~~~~~~~~~~~~~~
+-------------------
 
 Programmatic and non-interactive access to the Open Data Hub's dataset
 is possible using any of the following methods made  available
@@ -157,3 +161,8 @@ by the |odh| team.
       CLI access
       ^^^^^^^^^^
       .. include:: /includes/CLI.rst
+
+.. odh vkg km
+
+.. include:: /includes/kg.rst
+

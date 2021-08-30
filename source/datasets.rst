@@ -9,6 +9,12 @@ Datasets
 .. versionchanged:: 2021.05 moved technical information for tourism
    and mobility to this section
 
+.. versionchanged:: 2021.08 move subsections `Licenses for ODH
+   resources` and `ODH Virtual Knowledge Graph` to appendix `Licenses
+   and TOS for the Open Data Hub material` and section `Accessing the
+   Open Data Hub` respectively
+
+
 The goal of the Open Data Hub project is to make available datasets containing
 data about the South Tyrolean ecosystem, to allow third parties to
 develop novel applications on top of them, consuming the exposed
@@ -82,89 +88,38 @@ The Open Data Hub\'s Data Providers are:
 * :strong:`Südtirol Wein - Vini Alto Adige` consortium of South Tyrol
   Wines
 
-.. topic:: A note about datasets
+.. _datasets-license:
 
-   The Open Data Hub contains many datasets: a few have been provided for
-   testing purposes, other are meant for internal use only, and other
-   contain only a part of their data that is available as Open Data.
+Datasets, Open Data, and Licenses
+---------------------------------
 
-   While the goal of the Open Data Hub project is to expose :strong:`only Open
-   Data` and the Open Data Hub team members always suggest to use |CC0| to
-   third-parties releasing datasets, it is not yet possible for the
-   Open Data Hub team to guarantee the availability as open data of all the
-   data in the datasets, because the data licensing and its
-   distribution rights are decided by the copyright holder of each
-   dataset.
+The Open Data Hub contains many datasets: a few have been provided for
+testing purposes, other are meant for internal use only, and other
+contain only a part of their data that is available as Open Data.
 
-   Since some of the datasets may contain data that can not be
-   distributed by the Open Data Hub team under an open licence like, e.g.,
-   |cc0| or |bysa|, a user will be able to retrieve from each dataset
-   only those data that are distributed as :strong:`Open Data`.
+While the goal of the Open Data Hub project is to expose :strong:`only
+Open Data` and the Open Data Hub team members always suggest to use
+|CC0| to third-parties releasing datasets, it is not yet possible for
+the Open Data Hub team to guarantee the availability as open data of
+all the data in the datasets, because the data licensing and its
+distribution rights are decided by the copyright holder of each
+dataset.
 
-At the date of writing, datasets in the :ref:`Mobility
-<mobility-datasets>` and :ref:`Tourism <tourism-datasets>` domains are
-available.
+Since some of the datasets may contain data that can not be
+distributed by the Open Data Hub team under an open licence like,
+e.g., |cc0| or |bysa|, a user will be able to retrieve from each
+dataset only those data that are distributed as :strong:`Open
+Data`. The response to a query is in JSON format (although :term:`CSV`
+output can be forced) and is :strong:`always` licensed as Open
+Data. However, the response may include resources like links to web
+pages, streams, or images that are subject to a different, even
+proprietary, licence. For more information about this topic, there is
+a :ref:`dedicated section in the appendices <license-json-records>`.
 
-.. _license-json-records:
-
-License of the JSON Responses
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-Whenever you query the data in the |odh|\, the snippet that you
-retrieve always includes a block of information called
-:literal:`LicenseInfo`, similar to the following one:
-
-.. code-block:: json
-   :linenos:
-   :emphasize-lines: 3
-
-   {
-      "LicenseInfo": {
-        "Author": "",
-	"License": "CC0",
-	"ClosedData": false,
-	"LicenseHolder": "https://www.lts.it"
-      }
-   }
-
-The highlighted line shows a licence, which in this case is
-:strong:`CC0`, i.e., public domain and therefore freely reusable.
-
-This block is always included as a child node within a JSON record
-that starts with an ID and a number of additional information, which
-may include also hyperlinks to resources that are external to the
-|odh|\, like for example this example which refers to a webcam and
-contains a link to an external provider where to find actual images
-from that webcam (snippet code shortened for the sake of simplicity):
-
-.. code-block:: json
-   :linenos:
-   :emphasize-lines: 4-5
-
-   {
-     "Id": "D3659E1F111C4CDB2EC19F8FC95118B7",
-     "Active": true,
-     "Streamurl": null,
-     "Webcamurl": "https://webtv.feratel.com/webtv/?&pg=5EB12424-7C2D-428A-BEFF-0C9140CD772F&design=v3&cam=6323&c1=0",
-     "LicenseInfo": {
-       "Author": "",
-       "License": "CC0",
-       "ClosedData": false,
-       "LicenseHolder": "https://www.lts.it"
-     }
-   }
-
-Whenever hyperlinks like the one shown in line :strong:`5` above
-appear, it must not be implied that the license mentioned in the
-:literal:`LicenseInfo` block (again, CC0) is applied to them:
-everything contained in that link may be covered by a different
-licence.
-
-Indeed, the :strong:`Licence` mentioned in :literal:`LicenseInfo`
-nodes refer only to content of the parent node--i.e., the one that
-starts with :strong:`"Id"`, not to the content of any of the other
-children nodes, including :literal:`Streamurl` and
-:literal:`Webcamurl`.
+At the date of writing, datasets mostly fall in either the
+:ref:`Mobility <mobility-datasets>` and the :ref:`Tourism
+<tourism-datasets>` domains; while a few more uncategorised datasets
+are available.
 
 Authentication
 ~~~~~~~~~~~~~~
@@ -187,7 +142,7 @@ Datasets in the Mobility Domain
    :hidden:
 
    Technical Information <mobility-tech>
-     
+
 This section contains :ref:`technical information <mobility-tech>`
 about the datasets in the Mobility Domain and how to access them using
 the API that the Open Data Hub team developed and made available.
@@ -219,7 +174,7 @@ The description of each dataset includes the following information:
 .. note:: There is one :literal:`StationType`, namely
    :strong:`MobileStation` which is a mobile probe no longer
    active. It will always return an empty set of values, because
-   historical data are not available in the Open Data Hub.			   
+   historical data are not available in the Open Data Hub.
 
 The datasets in the Mobility domain are grouped in :strong:`Traffic`
 and :strong:`Mobility` sub-domains as follows:
@@ -252,10 +207,10 @@ to plan a trip with an own means of transport, for example a car, or a bike.
 .. button-ref:: environment-dataset
    :color: info
 
-   it.bz.opendatahub.environment
-   
+   it.bz.opendatahub.environment  
+
 .. include:: /datasets/environment.rst
-                         
+
 .. _linkstation-dataset:
 
 .. button-ref:: linkstation-dataset
@@ -429,11 +384,11 @@ The following information is provided for each dataset in the Tourism domain:
     about the available data
 
     :doc:`/howto/tourism/browse` Browse Open Data offered by the |odh|
-   
+
     :doc:`/howto/tourism/tips` Quick tips and troubleshooting
-	 
+
     Other howtos are available in the :ref:`dedicated section <howto-list>`.
-   
+
 .. _accommodation-dataset:
 
 .. button-ref:: accommodation-dataset
@@ -600,8 +555,3 @@ Datasets in Other Domains
    https\://alpinebits.opendatahub.bz.it/AlpineBits
 
 .. include:: /datasets/alpinebits.rst
-
-.. odh vkg km
-   
-.. include:: /includes/kg.rst
-

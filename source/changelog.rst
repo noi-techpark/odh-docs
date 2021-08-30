@@ -185,6 +185,14 @@ documentation.
 
    .. change::
       :tags: Improvement
+      :tickets: 221
+
+      Rearrange subsections in sections :ref:`data-access` and
+      :ref:`available_datasets`, add a new FAQ entry and reformat FAQ
+      section.
+
+   .. change::
+      :tags: Improvement
       :tickets: 233
 
       The `sphinx-panels
