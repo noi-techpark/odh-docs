@@ -76,76 +76,80 @@ and cleanly distinguish the initial creation and later updates.
 
 .. _example-sql:
 
-.. panels::
-   :container: container-fluid:
+.. grid::
+   :gutter: 1
+            
+   .. grid-item-card::
+      :columns: 6
+      
+      Sample Code 1: A DDL source file called :file:`foo.sql`
+      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-   Sample Code 1: A DDL source file called :file:`foo.sql`
-   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+      .. code-block:: sql
 
-   .. code-block:: sql
+         -- foo.sql
+         -- a document with appendices
+         --
+         -- changelog:
+         -- version 1.0
+         --
+         -- copyright, author etc.
 
-      -- foo.sql
-      -- a document with appendices
-      --
-      -- changelog:
-      -- version 1.0
-      --
-      -- copyright, author etc.
+         create sequence foo_seq;
 
-      create sequence foo_seq;
+         create table doc (
+             id      int default nextval('foo_seq'),
+        title   text not null,
+        body    text,
+        primary key(id)
+         );
 
-      create table doc (
-          id      int default nextval('foo_seq'),
-	  title   text not null,
-	  body    text,
-	  primary key(id)
-      );
+         comment on table doc is 'stores foo documents';
 
-      comment on table doc is 'stores foo documents';
+         create table appendix (
+             id      int default nextval('foo_seq'),
+        section char(1) not null,
+        body    text,
+        doc_id  int not null,
+        primary key(id),
+        foreign key (doc_id) references doc(id)
+         );
 
-      create table appendix (
-          id      int default nextval('foo_seq'),
-	  section char(1) not null,
-	  body    text,
-	  doc_id  int not null,
-	  primary key(id),
-	  foreign key (doc_id) references doc(id)
-      );
+         comment on table appendix is 'stores appendices to foo documents';
 
-      comment on table appendix is 'stores appendices to foo documents';
+         create table foo_version (
+             version varchar not null
+         );
 
-      create table foo_version (
-          version varchar not null
-      );
+         insert into foo_version values ('1.0');
 
-      insert into foo_version values ('1.0');
+   .. grid-item-card::
+      :columns: 6
 
-   ---
+      .. _update-sql:
 
-   .. _update-sql:
+      Sample Code 2: Update to schema of `foo.sql`, version 2.0:
+      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-   Sample Code 2: Update to schema of `foo.sql`, version 2.0:
-   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+      .. code-block:: sql
 
-   .. code-block:: sql
+         -- foo.sql
+         -- a document with appendices
+         --
+         -- changelog:
+         -- version 2.0 - added a field
+         -- version 1.0
+         --
+         -- copyright, author etc.
 
-      -- foo.sql
-      -- a document with appendices
-      --
-      -- changelog:
-      -- version 2.0 - added a field
-      -- version 1.0
-      --
-      -- copyright, author etc.
+         BEGIN;
 
-      BEGIN;
+         alter table doc add column publication_date date default current_date;
 
-      alter table doc add column publication_date date default current_date;
+         update foo_version set version = '2.0';
 
-      update foo_version set version = '2.0';
-
-      COMMIT;
+         COMMIT;
 
 The explicit transaction (:command:`BEGIN` - :command:`COMMIT`)
 will make sure the DDL update is applied cleanly or not at

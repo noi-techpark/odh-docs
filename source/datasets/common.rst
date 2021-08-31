@@ -1,14 +1,12 @@
 .. common
 
-.. panels::
-   :container: container-fluid
+.. grid::
+ 
+   .. grid-item-card::
 
-   -----
-   -----
+      .. csv-table::
 
-   .. csv-table::
-
-      "Output", "JSON, mime-type application/json"
-      "E-mail contact", "|contact|"
-      "API version", "v1"
-      "Swagger URL", ":stinfo:`/Common`"
+         "Output", "JSON, mime-type application/json"
+         "E-mail contact", "|contact|"
+         "API version", "v1"
+         "Swagger URL", ":stinfo:`/Common`"

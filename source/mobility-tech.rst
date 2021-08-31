@@ -131,71 +131,79 @@ connection between two :literal:`StationType`\s, respectively.
 
 .. _node-definition:
 
-.. panels::
+.. grid::
+   :gutter: 1
 
-   Flat
-   ^^^^
-   
-   In the `flat` representation, all metadata and available data can
-   be accessed and browsed. However, no hierarchy appears and data and
-   metadata are shown at the same level.
+   .. grid-item-card::
+      :columns: 6
 
-   ----
-   
-   Tree
-   ^^^^^
+      Flat
+      ^^^^
 
-   In the `tree` representation, all metadata and available data can
-   be accessed and browsed as in `flat`, but in this case, any
-   hierarchy of data or metadata is preserved and shown.
+      In the `flat` representation, all metadata and available data can
+      be accessed and browsed. However, no hierarchy appears and data and
+      metadata are shown at the same level.
 
-   
-   -----
-   Node
-   ^^^^^
+   .. grid-item-card::
+      :columns: 6
 
-   A node is a measurement station and contains all metadata
-   associated to it. The :strong:`node` representation corresponds to
-   the `old` (pre-2020.10) output of the API calls, therefore it can
-   safely be omitted for backward compatibility. As an example, valid
-   for all methods listed in the :ref:`previous section
-   <api-v2-structure>`, these API calls are equivalent.
+      Tree
+      ^^^^^
 
-     :literal:`/v2/tree,node/{stationTypes}`
-	    
-     :literal:`/v2/flat,node/{stationTypes}`
+      In the `tree` representation, all metadata and available data can
+      be accessed and browsed as in `flat`, but in this case, any
+      hierarchy of data or metadata is preserved and shown.
 
-     :literal:`/v2/tree/{stationTypes}`
-	    
-     :literal:`/v2/flat/{stationTypes}`
 
-   
-   .. note:: While only :strong:`available` nodes are exposed by the
-      |odh|\, the resulting JSON response might still include the
-      `savailable` field, short for station available.
+   .. grid-item-card::
+      :columns: 6
 
-   ----
+      Node
+      ^^^^^
 
-   Edge
-   ^^^^^
-   
-   An Edge is a connection between two stations, improved with
-   additional information, including some descriptive field and
-   geometries that describe the connection on a map. Internally, an
-   edge is composed of three parts (all calles `stations`): a start
-   station (beginning of the edge), an end station and a station
-   describing the edge. Whenever retrieving an Edge, all metadata
-   referring directly to it begin with `e`, like for example
-   `eactive`, `eavailable`, and so on.
+      A node is a measurement station and contains all metadata
+      associated to it. The :strong:`node` representation corresponds to
+      the `old` (pre-2020.10) output of the API calls, therefore it can
+      safely be omitted for backward compatibility. As an example, valid
+      for all methods listed in the :ref:`previous section
+      <api-v2-structure>`, these API calls are equivalent.
 
-   .. note:: While only :strong:`available` edges are exposed by the
-      |odh|\, the resulting JSON response might still include the
-      `sbavailable`, `seavailable` and `eavailable` fields, referring
-      to start station, end station, and edge description,
-      respectively.
+        :literal:`/v2/tree,node/{stationTypes}`
 
-   Moreover, there are neither measurements nor types associated with
-   edges.
+        :literal:`/v2/flat,node/{stationTypes}`
+
+        :literal:`/v2/tree/{stationTypes}`
+
+        :literal:`/v2/flat/{stationTypes}`
+
+
+      .. note:: While only :strong:`available` nodes are exposed by the
+         |odh|\, the resulting JSON response might still include the
+         `savailable` field, short for station available.
+
+   .. grid-item-card::
+      :columns: 6
+
+      Edge
+      ^^^^^
+
+      An Edge is a connection between two stations, improved with
+      additional information, including some descriptive field and
+      geometries that describe the connection on a map. Internally, an
+      edge is composed of three parts (all calles `stations`): a start
+      station (beginning of the edge), an end station and a station
+      describing the edge. Whenever retrieving an Edge, all metadata
+      referring directly to it begin with `e`, like for example
+      `eactive`, `eavailable`, and so on.
+
+      .. note:: While only :strong:`available` edges are exposed by the
+         |odh|\, the resulting JSON response might still include the
+         `sbavailable`, `seavailable` and `eavailable` fields, referring
+         to start station, end station, and edge description,
+         respectively.
+
+      Moreover, there are neither measurements nor types associated with
+      edges.
    
 Valid combinations are therefore: `flat,node`; `tree,node`;
 `flat,edge`; `tree,edge`; if neither `node` or `edge` are provided,

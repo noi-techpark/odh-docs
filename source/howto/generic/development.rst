@@ -166,4 +166,3 @@ postgres respectively) in the :strong:`Local Address`.
 It is suggested to run this command as superuser, because otherwise
 not all information is present.
 
-netstat -plnt4
