@@ -131,8 +131,7 @@ by the |odh| team.
 
       AlpineBits client
       ^^^^^^^^^^^^^^^^^
-
-      .. include:: /includes/AlpineBits.rst
+      .. include:: /includes/ab-short.rst
 
    .. grid-item-card::
       :columns: 6
@@ -173,3 +172,10 @@ The |odh| Virtual Knowledge Graph
 ---------------------------------
 
 .. include:: /includes/kg.rst
+
+.. _alpinebits_client:
+
+The AlpineBits Client
+---------------------
+
+.. include:: /includes/AlpineBits.rst
