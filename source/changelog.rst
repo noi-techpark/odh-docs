@@ -199,3 +199,16 @@ documentation.
       <https://github.com/executablebooks/sphinx-panels>`_ extension
       has been replaced by its successor, `sphinx-design
       <https://github.com/executablebooks/sphinx-design>`_.
+
+
+.. changelog::
+   :version: 2021.09
+   :released: 30 September 2021
+
+   .. change::
+      :tags: Improvement, New Feature
+      :tickets: 225
+
+      AlpineBits DestinationData and HotelData have now a dedicated
+      page.
+      
