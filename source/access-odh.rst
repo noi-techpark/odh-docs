@@ -123,14 +123,15 @@ by the |odh| team.
 .. grid::
    :gutter: 1
 
-   
-   .. grid-item-card:: 
+
+   .. grid-item-card::
       :columns: 6
 
       .. _ab-access:
 
       AlpineBits client
       ^^^^^^^^^^^^^^^^^
+
       .. include:: /includes/AlpineBits.rst
 
    .. grid-item-card::
@@ -140,22 +141,22 @@ by the |odh| team.
 
       Statistical Access with R
       ^^^^^^^^^^^^^^^^^^^^^^^^^
-      
+
       .. include:: /includes/R.rst
 
    .. grid-item-card::
       :columns: 6
-      
+
       .. _ninja api:
 
       API
       ^^^
-      
+
       .. include:: /includes/API.rst
 
    .. grid-item-card::
       :columns: 6
-      
+
       .. _cli-access:
 
       CLI access
@@ -164,5 +165,11 @@ by the |odh| team.
 
 .. odh vkg km
 
-.. include:: /includes/kg.rst
+.. _datasets-km:
 
+.. _odh-vkg:
+
+The |odh| Virtual Knowledge Graph
+---------------------------------
+
+.. include:: /includes/kg.rst
