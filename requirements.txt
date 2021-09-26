@@ -1,5 +1,6 @@
-sphinx_panels
-sphinx-togglebutton
-sphinx-copybutton
-sphinx==3.2.1
 changelog
+sphinx
+sphinx-copybutton
+sphinx_design
+sphinx_rtd_theme
+sphinx-togglebutton
