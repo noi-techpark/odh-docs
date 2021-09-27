@@ -6,7 +6,7 @@ Changelog
 
 .. contents:: Available Changelogs:
    :local:
-                  
+
 This section contains the Changelog of the |odh| project's
 documentation.
 
@@ -113,10 +113,10 @@ documentation.
    .. change::
       :tags: Improvement
       :tickets: 214
-                
+
       The technical content of the `getting started` howtos has been
-      moved to the `Datasets` section, making them
-      shorter. Also a few examples have been added to :ref:`get-started-mobility`.
+      moved to the `Datasets` section, making them shorter. Also a few
+      examples have been added to :ref:`get-started-mobility`.
 
 .. changelog::
    :version: 2021.06
@@ -200,10 +200,15 @@ documentation.
       has been replaced by its successor, `sphinx-design
       <https://github.com/executablebooks/sphinx-design>`_.
 
-
 .. changelog::
    :version: 2021.09
    :released: 30 September 2021
+
+   .. change::
+      :tags: Bugfix
+      :tickets: 244
+
+      Fix requirements.txt file
 
    .. change::
       :tags: Improvement, New Feature
@@ -211,4 +216,3 @@ documentation.
 
       AlpineBits DestinationData and HotelData have now a dedicated
       page.
-      
