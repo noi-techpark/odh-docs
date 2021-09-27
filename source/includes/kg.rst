@@ -1,11 +1,4 @@
 
-.. _datasets-km:
-
-.. _odh-vkg:
-
-The |odh| Virtual Knowledge Graph
----------------------------------
-
 .. versionadded:: 2021.02 Description of the Knowledge Model
    underlying datasets Accommodation, Gastronomy, and Event
 
