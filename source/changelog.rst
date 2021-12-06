@@ -216,3 +216,13 @@ documentation.
 
       AlpineBits DestinationData and HotelData have now a dedicated
       page.
+
+.. changelog::
+   :version: 2021.12
+   :released: 31 December 2021
+
+   .. change::
+      :tags: New Feature
+      :tickets: 247
+
+      Add WeatherHistory dataset
