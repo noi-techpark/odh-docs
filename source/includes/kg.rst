@@ -1,7 +1,4 @@
 
-.. versionadded:: 2021.02 Description of the Knowledge Model
-   underlying datasets Accommodation, Gastronomy, and Event
-
 .. versionadded:: 2021.06 Description of the Knowledge Model
    underlying the mobility domain
 

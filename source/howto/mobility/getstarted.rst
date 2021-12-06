@@ -3,9 +3,6 @@
 How to Access Mobility Data With API v2
 =======================================
 
-.. versionchanged:: 2021.05 moved technical info to dataset section and
-   added new examples.
-
 The new :strong:`API v2` (see :ref:`the description <ninja api>`) for
 the Mobility domain has simplified the access to data; among its
 features, we recall that there is now one single endpoint from which

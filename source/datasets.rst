@@ -3,12 +3,6 @@
 Datasets
 ========
 
-.. versionadded:: 2021.02 |odh| Virtual Knowledge Graph and
-   description of underlying Knowledge Model
-
-.. versionchanged:: 2021.05 moved technical information for tourism
-   and mobility to this section
-
 .. versionchanged:: 2021.08 move subsections `Licenses for ODH
    resources` and `ODH Virtual Knowledge Graph` to appendix `Licenses
    and TOS for the Open Data Hub material` and section `Accessing the

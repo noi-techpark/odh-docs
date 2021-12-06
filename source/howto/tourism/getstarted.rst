@@ -4,8 +4,6 @@
 How to access Tourism Data?
 ===========================
 
-.. versionchanged:: 2021.05 moved technical info to dataset section
-
 .. versionchanged:: 2021.06 removed broken URL, added `browsing API`
    section, general improvement to the content
    

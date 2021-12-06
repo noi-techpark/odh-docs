@@ -3,8 +3,6 @@
 How to Access |odh| Data With R and SPARQL
 ==========================================
 
-.. versionadded:: 2021.04
-
 Datasets and their data in the |odh| can be accessed using R, a
 software for statistical analysis.
 

@@ -1,9 +1,6 @@
 Changelog
 =========
 
-.. versionadded:: 2021.03 Add extension to provide structured
-   Changelogs
-
 .. contents:: Available Changelogs:
    :local:
 
