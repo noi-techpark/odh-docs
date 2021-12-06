@@ -515,6 +515,15 @@ The following information is provided for each dataset in the Tourism domain:
 
 .. include:: /datasets/weather-forecast.rst
 
+.. _weather-history:
+
+.. button-ref:: weather-history
+   :color: info
+
+   it.bz.opendatahub.weather-history
+
+.. include:: /datasets/weatherhistory.rst
+
 .. _webcam-dataset:
 
 .. button-ref:: webcam-dataset
