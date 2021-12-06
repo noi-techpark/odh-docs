@@ -3,8 +3,6 @@
 How to Access Analytics Data in the Mobility Domain
 ===================================================
 
-.. versionchanged:: 2021.04 Replace two wrong images with correct ones.
-
 This howto guides you in browsing and querying data from the Mobility
 domain using the https://analytics.opendatahub.bz.it/ web site.
 

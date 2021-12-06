@@ -3,12 +3,6 @@
 Datasets
 ========
 
-.. versionadded:: 2021.02 |odh| Virtual Knowledge Graph and
-   description of underlying Knowledge Model
-
-.. versionchanged:: 2021.05 moved technical information for tourism
-   and mobility to this section
-
 .. versionchanged:: 2021.08 move subsections `Licenses for ODH
    resources` and `ODH Virtual Knowledge Graph` to appendix `Licenses
    and TOS for the Open Data Hub material` and section `Accessing the
@@ -334,6 +328,8 @@ Datasets in the Tourism Domain
 .. versionchanged:: 2021.06 modified URLs of datasets and API; ordered
    Tourism datasets lexicographically
 
+.. versionadded:: 2012.12 New WeatherHistory datasaet
+
 .. toctree::
    :hidden:
 
@@ -514,6 +510,15 @@ The following information is provided for each dataset in the Tourism domain:
    it.bz.opendatahub.weather-forecast
 
 .. include:: /datasets/weather-forecast.rst
+
+.. _weather-history:
+
+.. button-ref:: weather-history
+   :color: info
+
+   it.bz.opendatahub.weather-history
+
+.. include:: /datasets/weatherhistory.rst
 
 .. _webcam-dataset:
 
