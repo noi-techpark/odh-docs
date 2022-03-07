@@ -11,6 +11,7 @@ Welcome to |odh| Documentation Repository!
    :includehidden:
    :caption: Table of Contents
 
+   quickstart
    Introduction & Project Overview <intro>
    involved
    access-odh
