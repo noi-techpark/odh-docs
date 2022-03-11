@@ -3,16 +3,12 @@
 How to Publish your Web Component on the |ODH| Store
 ====================================================
 
-If you have developed a :term:`Web Component` that you deem useful for
-the |odh| project or that can be used on top of data provided by the
-|odh|, you can share it and allow other to reuse it, by making it
-freely available on |odh|\'s `Web Components Store
-<https://webcomponents.opendatahub.bz.it/>`_.
+This how to guides you in the process of making available a Web
+Component that you created with the |odh| Community, by publishing it
+on |odh| Store.
 
-The only requirement for all the Web Components offered through the
-Store is that they :strong:`must` be released as an :ref:`Open Source
-Licence <odh-license>`, compatible with those used within the |odh|
-project.
+The only requirement is that the Web Component :strong:`must` be
+released as an :ref:`Open Source Licence <odh-license>`.
 
 One of three alternatives can be chosen to publish a Web Component on
 the Store: as a :strong:`full open source` project, as a
