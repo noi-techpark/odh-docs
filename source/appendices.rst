@@ -8,6 +8,8 @@ The following is the list of appendices.
    :numbered: 1
    :maxdepth: 4
 
+   architecture
    glossary
    licenses
    changelog
+
