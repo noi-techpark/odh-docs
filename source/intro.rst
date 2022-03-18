@@ -5,6 +5,9 @@
  Introduction
 ==============
 
+.. versionchanged:: 2022.03 moved sections `Getting Involved` and
+   `Accessing the Open Data Hub` as part of this section.
+
 This is the website of the |ODH| documentation, a collection of
 technical resources about the |odh| project. The website serves as the
 main resource portal for everyone interested in accessing the data or

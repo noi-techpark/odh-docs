@@ -3,6 +3,8 @@
 Domains and Datasets
 ====================
 
+.. versionchanged:: 2022.03 Move Domain description in this section
+
 .. topic:: What is a Domain?
 
    .. include:: /includes/domains.rst

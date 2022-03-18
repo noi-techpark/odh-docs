@@ -1,6 +1,8 @@
 Appendices
 ==========
 
+.. versionchanged:: 2022.03 Moved |odh| Architecture in the appendices.
+
 The following is the list of appendices.
 
 .. toctree::
