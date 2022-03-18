@@ -4,19 +4,14 @@
 Accessing the Open Data Hub
 =============================
 
-.. versionchanged:: 2021.08 move `ODH Virtual Knowledge Graph` subsection
-   from Dataset section
+There are lots of alternatives to access the |odh| and its data:
+interactive and non-interactive, using a browser or the command line.
 
-There are different modalities to access data that are provided by the
-Open Data Hub, that are listed here. Currently, data from the
-:strong:`Mobility` and :strong:`Tourism` domains can be accessed, both
-from the command line and using a browser. Non-interactive access
-using APIs is also available.  Various dedicated tutorials are
-available in the :ref:`howto-list` section; while in section
-:ref:`getting-involved` you can find additional ways to interact with
-the data and the Open Data Hub team. The remainder of this section describes
-all the possibilities to access the Open Data Hub's datasets and their
-content.
+
+Various dedicated tutorials are available in the :ref:`howto-list`
+section to help you getting started, while in section
+:ref:`getting-involved` you can find additional ways to collaborate
+with the |odh| Team and use the data.
 
 
 Browser access
@@ -34,32 +29,32 @@ Besides the online tools developed by the |odh| and described in
 section :ref:`quickstart`, these other resources can be access using a
 browser.
 
-.. grid::
+.. grid:: 1 1 1 3
    :gutter: 1
 
    .. grid-item-card::
-      :columns: 4
+      :columns: 12 12 12 4
 
       Go to the :ref:`applist` section of the documentation,
       particularly sub-sections :ref:`production-stage-apps` and
       :ref:`beta-stage-apps`, and choose one of the web sites and
       portals that are listed there. Each of them uses the data
-      gathered from one or more OPEN DATA HUB's datasets to display a
-      number of useful information. You can then see how data are
-      exposed and browse them.
+      gathered from one or more |odh|\ 's datasets to display a number
+      of useful information. You can then see how data are exposed and
+      browse them.
 
    .. grid-item-card::
-      :columns: 4
+      :columns: 12 12 12 4
 
       In the same :ref:`applist` section, you can also check the list
-      of the :strong:`Alpha Stage Apps` and choose one of them that
+      of the :ref:`alpha-stage-apps` and choose one of them that
       you think you can expand, then get in touch with the authors to
       suggest additional features or collaborate with them to discuss
       its further development to improve it.
 
 
    .. grid-item-card::
-      :columns: 4
+      :columns: 12 12 12 4
 
       Open the `Open Data Hub Knowledge Graph Portal
       <https://sparql.opendatahub.bz.it/>`_ where you can explore all
@@ -77,12 +72,12 @@ Programmatic and non-interactive access to the Open Data Hub's dataset
 is possible using any of the following methods made  available
 by the |odh| team.
 
-.. grid::
+.. grid:: 1 1 2 2
    :gutter: 1
 
 
    .. grid-item-card::
-      :columns: 6
+      :columns: 12 12 6 6
 
       .. _ab-access:
 
@@ -91,7 +86,7 @@ by the |odh| team.
       .. include:: /includes/ab-short.rst
 
    .. grid-item-card::
-      :columns: 6
+      :columns: 12 12 6 6
 
       .. _r-access:
 
@@ -101,7 +96,7 @@ by the |odh| team.
       .. include:: /includes/R.rst
 
    .. grid-item-card::
-      :columns: 6
+      :columns: 12 12 6 6
 
       .. _ninja api:
 
@@ -111,7 +106,7 @@ by the |odh| team.
       .. include:: /includes/API.rst
 
    .. grid-item-card::
-      :columns: 6
+      :columns: 12 12 6 6
 
       .. _cli-access:
 
