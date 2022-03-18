@@ -205,7 +205,7 @@ documentation.
       :tags: Bugfix
       :tickets: 244
 
-      Fix requirements.txt file
+      Fix requirements.txt file.
 
    .. change::
       :tags: Improvement, New Feature
@@ -222,4 +222,28 @@ documentation.
       :tags: New Feature
       :tickets: 247
 
-      Add WeatherHistory dataset
+      Add WeatherHistory dataset.
+
+
+.. changelog::
+   :version: 2022.03
+   :released: 31 March 2022
+
+   .. change::
+      :tags: New Feature
+      :tickets: 250
+
+      Add section :ref:`quickstart`.
+
+.. changelog::
+   :version: 2022.03
+   :released: 31 March 2022
+
+   .. change::
+      :tags: Improvement
+      :tickets: 251
+
+      Major changes to sectioning: unify sections :ref:`project-overview`,
+      :ref:`getting-involved`, and :ref:`data-access`; move description of
+      domains to :ref:`available_datasets` section, move
+      :ref:`architecture-odh` to :doc:`appendices`.
