@@ -13,7 +13,6 @@ Welcome to |odh| Documentation Repository!
 
    quickstart
    Introduction & Project Overview <intro>
-   access-odh
    datasets
    howto
    guidelines
