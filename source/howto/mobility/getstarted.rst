@@ -40,7 +40,7 @@ Getting Started
   
 In the API v2, the central concept is :strong:`Station`: all data come
 from a given :literal:`StationType`, whose complete list can be
-retrieved by simply opening the secong method of the :strong:`Mobility
+retrieved by simply opening the second method of the :strong:`Mobility
 V2` controller, :strong:`/v2/{representation}`, then click on
 :button:`Try it out` and then on `Execute`.
 

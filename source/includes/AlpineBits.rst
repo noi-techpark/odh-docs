@@ -19,7 +19,7 @@ The `AlpineBits DestinationData
 effort to allow the exchange of information related to mountains,
 events, tourism. Developed by the AlpineBits Alliance, Destination
 Data relies on a number of standards (Including :term:`json`, REST
-API, Schema.org, OntoUML to build the :strong:`AlpineBits
+API, Schema.org, OntoUML) to build the :strong:`AlpineBits
 DestinationData Ontology`, the core result of the effort. The goal of
 `DestinationData` it to provide a means to describe events, their
 location, and additional information on them. For this purpose, the
