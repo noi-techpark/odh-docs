@@ -12,7 +12,7 @@ Welcome to |odh| Documentation Repository!
    :caption: Table of Contents
 
    quickstart
-   Introduction & Project Overview <intro>
+   Project Overview & Interactions <intro>
    datasets
    howto
    guidelines

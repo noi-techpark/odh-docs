@@ -64,8 +64,7 @@ data within the |odh|\: at the bottom, :term:`sensors <Sensor>` gather
 data from various domains, which are fed to the |odh| Big Data
 infrastructure and made available through endpoints to (third-party)
 applications, web sites, and vocal assistants. A more technical and
-in-depth overview can be found in next section,
-:ref:`architecture-odh`.
+in-depth overview can be found in Section :ref:`architecture-odh`.
 	
 All the data within the |odh| will be easily accessible, preferring
 open interfaces and APIs which are built on existing standards like
