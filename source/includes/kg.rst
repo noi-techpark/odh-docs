@@ -1,7 +1,4 @@
 
-.. versionadded:: 2021.06 Description of the Knowledge Model
-   underlying the mobility domain
-
 Some datasets in the |odh|, namely :ref:`Accommodation
 <accommodation-dataset>`, :ref:`Gastronomy <gastronomy-dataset>`, and
 :ref:`Event <event-dataset>`, are organised into a `Virtual Knowledge

@@ -24,9 +24,6 @@ manifold:
 Structure of the API calls
 ==========================
 
-.. versionchanged:: 2021.06 marked as unavailable two API calls that
-   were removed
-
 In the Tourism domain, there are a few API calls that allow to extract
 the same type of data from the various datasets. Each of these calls
 can prove useful in different scenarios, depending on the data
@@ -67,9 +64,6 @@ that operates on the datasets in a similar way to the
 
 Filters common to all datasets
 ==============================
-
-.. versionadded:: 2021.08 new ``removenullvalues``, ``rawfilter`` and
-   ``rawsort`` filters
 
 .. note:: Besides the filters available globally, for each dataset
    several additional filters are available. They are described in the

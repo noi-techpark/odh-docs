@@ -24,9 +24,6 @@ here is some reference:
 Data Available in the Portal
 ----------------------------
 
-.. versionchanged:: 2021.06 Add two new `buttons` with new precooked
-   queries for mobility domain.
-                    
 The landing page of |odh|\'s SPARQL endpoint contains the following elements:
 
 1. The buttons in the banner at the top of the page.

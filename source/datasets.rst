@@ -3,11 +3,6 @@
 Domains and Datasets
 ====================
 
-.. versionchanged:: 2021.08 move subsections `Licenses for ODH
-   resources` and `ODH Virtual Knowledge Graph` to appendix `Licenses
-   and TOS for the Open Data Hub material` and section `Accessing the
-   Open Data Hub` respectively
-
 .. topic:: What is a Domain?
 
    .. include:: /includes/domains.rst
@@ -327,9 +322,6 @@ for e-cars.
 
 Datasets in the Tourism Domain
 ------------------------------
-
-.. versionchanged:: 2021.06 modified URLs of datasets and API; ordered
-   Tourism datasets lexicographically
 
 .. versionadded:: 2012.12 New WeatherHistory datasaet
 
