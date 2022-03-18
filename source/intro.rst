@@ -88,12 +88,5 @@ in the future.
 
 .. include:: /includes/architecture.rst
 
-.. _available-domains:
-	     
-Available Domains
-=================
-
-.. include:: /includes/domains.rst
-
 
 

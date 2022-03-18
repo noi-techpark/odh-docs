@@ -1,13 +1,16 @@
 .. _available_datasets:
 
-Datasets
-========
+Domains and Datasets
+====================
 
 .. versionchanged:: 2021.08 move subsections `Licenses for ODH
    resources` and `ODH Virtual Knowledge Graph` to appendix `Licenses
    and TOS for the Open Data Hub material` and section `Accessing the
    Open Data Hub` respectively
 
+.. topic:: What is a Domain?
+
+   .. include:: /includes/domains.rst
 
 The goal of the Open Data Hub project is to make available datasets containing
 data about the South Tyrolean ecosystem, to allow third parties to
