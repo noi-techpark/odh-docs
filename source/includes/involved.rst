@@ -29,48 +29,72 @@ the |odh|\.
 within the |odh|\, according to their interest, expertise, skills, and
 knowledge.
 
-Data Sharing
-   The |odh| team helps you in various activities: give
-   :strong:`visibility` to your data, identify both :strong:`suitable,
-   common formats`, processing algorithms and licenses to share your
-   data, and to use popular technologies known by application
-   developers.
+.. grid:: 1 1 2 2
+   :gutter: 1 1 2 2
 
-   This service is suitable for :ref:`Data Providers
-   <data-provider-def>`.
+   .. grid-item-card::
+      :columns: 12 12 6 6
 
-Data Access
-   The |odh| team supports software development companies to
-   :strong:`access to real-time data`, by making available to everyone
-   a stable :strong:`communication channel` which uses a
-   :strong:`machine-readable` protocol and an :strong:`Open Data
-   license`, to ensure everybody can easily find all the available
-   data.
+      Data Sharing
+      ^^^^^
 
-   This service is most suitable for :ref:`Data Consumers
-   <data-consumer-def>` and App developers.
+      The |odh| team helps you in various activities: give
+      :strong:`visibility` to your data, identify both
+      :strong:`suitable, common formats`, processing algorithms and
+      licenses to share your data, and to use popular technologies
+      known by application developers.
 
-Demo App Development
-   The |odh| team collaborates with companies to design and develop
-   Proof of Concepts and demo software, released under an :ref:`Open
-   Source License <odh-license>` that use data offered by the
-   |odh|\. All the software can then either be used as-is--to show and
-   test its potentials, or as a guideline and inspiration to develop
-   new digital products.
+      +++++
 
-   This service is suitable for :ref:`Data Consumers
-   <data-consumer-def>`, App developers, and companies interested in
-   development built on top of the |odh|\.
+      This service is suitable for :ref:`Data Providers
+      <data-provider-def>`.
+
+   .. grid-item-card::
+      :columns: 12 12 6 6
+
+      Data Access
+      ^^^^^
+
+      The |odh| team supports software development companies to
+      :strong:`access to real-time data`, by making available to
+      everyone a stable :strong:`communication channel` which uses a
+      :strong:`machine-readable` protocol and an :strong:`Open Data
+      license`, to ensure everybody can easily find all the available
+      data.
+
+      +++++
+
+      This service is most suitable for :ref:`Data Consumers
+      <data-consumer-def>` and App developers.
+
+   .. grid-item-card::
+      :columns: 12
+
+      Demo App Development
+      ^^^^^
+
+      The |odh| team collaborates with companies to design and develop
+      Proof of Concepts and demo software, released under an
+      :ref:`Open Source License <odh-license>` that use data offered
+      by the |odh|\. All the software can then either be used
+      as-is--to show and test its potentials, or as a guideline and
+      inspiration to develop new digital products.
+
+      +++++
+
+      This service is suitable for :ref:`Data Consumers
+      <data-consumer-def>`, App developers, and companies interested
+      in development built on top of the |odh|\.
 
 Besides the tasks that you find below, you can also help the Open Data
 Hub project grow and improve by reporting bugs or asking for new
 features, by following the directions presented in  :ref:`the dedicated
 section below <bug-reports>`.
 
-.. _how-to-access:
+.. _how-to-collaborate:
 
-How to access
--------------
+How to Collaborate
+------------------
 
 This section gives an overview of which tasks you can play when
 collaborating with the |odh| project.
@@ -83,41 +107,46 @@ out a list of tasks that belong to each of these roles; we believe
 that this list can help you understand which type of contribution you
 can give to the |odh| project!
 
-.. grid::
+.. grid:: 1 1 2 2
    :gutter: 1
 
-   .. grid-item::
-      :columns: 6
+   .. grid-item-card::
+      :columns: 12 12 6 6
 
-      .. dropdown:: As a :strong:`User` I can...
+      As a :strong:`User` I can...
+      ^^^^^
 
-         .. include:: /includes/user.rst
+      .. include:: /includes/user.rst
 
-   .. grid-item::
-      :columns: 6
+   .. grid-item-card::
+      :columns: 12 12 6 6
 
-      .. dropdown:: As an :strong:`App Developer` I can...
+      As a :strong:`Data Provider` I can....
+      ^^^^^
 
-         .. include:: /includes/appdevel.rst
+      .. include:: /includes/dataproviders.rst
 
-   .. grid-item::
-      :columns: 6
 
-      .. dropdown:: As a :strong:`Open Data Hub Core Hacker` I can...
+   .. grid-item-card::
+      :columns: 12 12 6 6
 
-         .. include:: /includes/corehacker.rst
+      As an :strong:`App Developer` I can...
+      ^^^^^
 
-   .. grid-item::
-      :columns: 6
+      .. include:: /includes/appdevel.rst
 
-      .. dropdown:: As a :strong:`Data Provider` I can....
+   .. grid-item-card::
+      :columns: 12 12 6 6
 
-         .. include:: /includes/dataproviders.rst
+      As a :strong:`Open Data Hub Core Hacker` I can...
+      ^^^^^
+
+      .. include:: /includes/corehacker.rst
 
 
 .. _bug-reports:
 
-Bug reporting and feature requests
+Bug Reporting and Feature Requests
 ----------------------------------
 
 .. include:: /includes/bugrepo.rst
