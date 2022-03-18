@@ -41,7 +41,7 @@ copybutton_prompt_text = r'\~\$ |\~\# '
 copybutton_prompt_is_regexp = True
 
 
-# section names - we don't need them 
+# section names - we don't need them
 #changelog_sections = ["Improvements", "Changes", "Bugfix"]
 
 # tags to sort on inside of sections
@@ -73,7 +73,7 @@ author = u'The ODH Team'
 # built documents.
 #
 # The short X.Y version.
-version = u'2021.09'
+version = u'2022.03'
 # The full version, including alpha/beta/rc tags.
 release = version
 
@@ -87,7 +87,7 @@ language = None
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
 # This patterns also effect to html_static_path and html_extra_path
-exclude_patterns = [ 'replace.rst', 'datasets', 'includes' ] 
+exclude_patterns = [ 'replace.rst', 'datasets', 'includes' ]
 
 # The name of the Pygments (syntax highlighting) style to use.
 pygments_style = 'sphinx'
@@ -99,9 +99,9 @@ rst_prolog = """
 .. role:: uline
 .. role:: button
 .. role:: monospace
-.. role:: greenswbutton 
+.. role:: greenswbutton
 .. role:: raw-latex(raw)
-   :format: latex 
+   :format: latex
 .. role:: strike
 """ + open("replace.rst").read()
 
