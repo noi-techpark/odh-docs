@@ -3,12 +3,6 @@
 Authentication in the Open Data Hub
 -----------------------------------
 
-.. deprecated:: 2021.08 Token-based authentication in the Tourism
-   domain has been removed
-
-.. versionadded:: 2021.08 Keycloack as default authentication method
-   for API v2 (all domains)
-
 The authentication layer is currently intended for :strong:`internal
 use only`, therefore it is :strong:`not` necessary to use
 authentication to access data provided by the Open Data Hub.

@@ -2,8 +2,6 @@
    :scale: 30%
    :align: right
 
-.. versionadded:: 2021.09 Dedicated section for AlpineBits.
-
 The AlpineBits Alliance strives to develop and to spread a standard
 format to exchange tourism data. There are two datasets they developed
 and keep up to date, that are of particular interest for |odh| users:
