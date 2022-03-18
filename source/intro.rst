@@ -81,12 +81,5 @@ spreading and use. Depending on the development of the project and the
 interest of users, more standards and data formats might be supported
 in the future.
 
-.. _architecture-odh:
-
-|ODH| Architecture
-------------------
-
-.. include:: /includes/architecture.rst
-
 
 
