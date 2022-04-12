@@ -30,8 +30,8 @@ Both of them are summarised in the remainder of this section, and can
 be found in full version in the pages :ref:`platform-guidelines` and
 :ref:`db-guidelines` respectively
 
-Platform Guidelines - Bignami Version
--------------------------------------
+Platform Guidelines in a Nutshell
+---------------------------------
 
 The `Platform Guidelines` contain the software and programming
 language requirements, coding conventions, and directions for
@@ -83,8 +83,8 @@ this summary.
   follow best practices to query the DB from Java/Javascript.
 
 
-Database Guidelines - Bignami Version
--------------------------------------
+Database Guidelines  in a Nutshell
+----------------------------------
 
 The `Database Guidelines` contain the database design and database
 programming principles along with software version requirements. This

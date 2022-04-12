@@ -1,23 +1,36 @@
-=============================================
- GITHUB Quick Documentation for Contributors
-=============================================
+====================
+ GITHUB Quick Howto
+====================
 
-This section guides you in setting up on your local workstation the
-(forked) git repositories needed to contribute to the |odh| project,
+This howto guides you in setting up on your local workstation the
+(forked) ``git`` repositories needed to contribute to the |odh| project,
 along with some troubleshooting concerning pull requests and merge
 conflicts. For more detailed help, please refer to the online Github
 help, at https://docs.github.com/en/.
 
-
-
 Prerequisites
 =============
 
-In the following documentation some example names are used. Please
-replace them with your names:
+There are no particular requirements to be satisfied to set up a
+workstation to work on |odh| code, besides the standard
+software ``git`` and an IDE of your choice.
 
-- You need an account on Github to be able to fork projects and
-  contribute to the |odh| project.
+However, depending on the contribution you want to give, you may need
+to install some of the software used by the |odh|, so make sure that
+you read the :ref:`devel-guidelines` to understand if you need to
+install some more software.
+
+
+You also need an account on Github to be able to fork projects and
+contribute to the |odh| project.
+
+
+Conventions
+===========
+
+In the following documentation some example names are used. Please
+replace them with suitable values:
+
 - Replace :literal:`$USERNAME` with your username on GitHub.
 - Replace :literal:`$BRANCH` with the branch name you will
   develop in your forked version.
