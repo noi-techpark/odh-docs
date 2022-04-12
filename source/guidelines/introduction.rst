@@ -33,6 +33,8 @@ be found in full version in the pages :ref:`platform-guidelines` and
 Platform Guidelines in a Nutshell
 ---------------------------------
 
+.. versionchanged:: 2022.04 Section renamed
+                    
 The `Platform Guidelines` contain the software and programming
 language requirements, coding conventions, and directions for
 development. This section contains :strong:`only` the most important
@@ -83,8 +85,10 @@ this summary.
   follow best practices to query the DB from Java/Javascript.
 
 
-Database Guidelines  in a Nutshell
-----------------------------------
+Database Guidelines in a Nutshell
+---------------------------------
+
+.. versionchanged:: 2022.04 Section renamed
 
 The `Database Guidelines` contain the database design and database
 programming principles along with software version requirements. This

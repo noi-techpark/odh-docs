@@ -2,6 +2,8 @@
  GITHUB Quick Howto
 ====================
 
+.. versionchanged:: 2022.04 moved from section :ref:`devels-resources`
+
 This howto guides you in setting up on your local workstation the
 (forked) ``git`` repositories needed to contribute to the |odh| project,
 along with some troubleshooting concerning pull requests and merge
@@ -20,10 +22,8 @@ to install some of the software used by the |odh|, so make sure that
 you read the :ref:`devel-guidelines` to understand if you need to
 install some more software.
 
-
 You also need an account on Github to be able to fork projects and
 contribute to the |odh| project.
-
 
 Conventions
 ===========
@@ -34,7 +34,6 @@ replace them with suitable values:
 - Replace :literal:`$USERNAME` with your username on GitHub.
 - Replace :literal:`$BRANCH` with the branch name you will
   develop in your forked version.
-
 
 Project Checkout
 ================
@@ -62,15 +61,15 @@ Before starting the development, you need to fork the original
    link that appears in your repository (see :numref:`checkout-pic`):
 
    .. code-block:: bash
-		  
+
       ~$ git clone git@github.com:$USERNAME/bdp-core.git
 
    .. _checkout-pic:
-   
+
    .. figure:: /images/contributors/checkout.png
       :scale: 33%
       :align: center
-	      
+
       Clone the repository.
 
 Create a pull request
@@ -80,14 +79,14 @@ In order to let your contribution be accepted in the |odh| code base,
 you need to follow the following steps.
 
 1. Checkout the :strong:`development` branch:
-   
+
    .. code-block:: bash
-		   
+
       ~$ git checkout development
 
 2. Create a new branch from the :strong:`development` branch locally
    on your machine:
-   
+
    .. code-block:: bash
 
       ~$ git checkout -b test-branch
@@ -101,8 +100,8 @@ you need to follow the following steps.
 
 4. Push the new branch to GitHub:
 
-   .. code-block:: bash   
-		   
+   .. code-block:: bash
+
       ~$ git push --set-upstream origin test-branch
 
 5. Navigate to your feature branch on Github
@@ -114,7 +113,7 @@ you need to follow the following steps.
    .. figure:: /images/contributors/create-pull-request-development.png
       :scale: 33%
       :align: center
-	      
+
       Create a pull request.
 
    You can write some description as well, to describe your changes.
@@ -130,14 +129,14 @@ you need to follow the following steps.
    .. figure:: /images/contributors/show-pull-request-ok-development.png
       :scale: 33%
       :align: center
-      
+
       Show outcome of a pull request.
 
 8. In addition, the detailed logs can be viewed under
    https://ci.opendatahub.bz.it.
 
 .. _syncing-a-fork:
-   
+
 Syncing a Fork
 ==============
 
@@ -159,21 +158,19 @@ following steps can be found in the `online Github help
    .. code-block:: bash
 
       ~$ git remote -v
-    
 
 2. Specify a new remote upstream repository that will be synced with the fork.
 
    .. code-block:: bash
 
       ~$ git remote add upstream https://github.com/noi-techpark/bdp-core.git
-    
 
 3. Verify the new upstream repository you've specified for your fork.
 
    .. code-block:: bash
 
       ~$ git remote -v
-    
+
 You need sync a fork of a repository to keep it up-to-date with the
 original repository (upstream repository). A more detailed description
 for the following steps can be found in the online Github help
@@ -186,13 +183,13 @@ https://docs.github.com/en/github/collaborating-with-pull-requests/working-with-
    .. code-block:: bash
 
       ~$ git fetch upstream
-    
+
 2. Check out your fork's local :strong:`development` branch.
-   
+
    .. code-block:: bash
 
       ~$ git checkout development
-   
+
 3. Merge the changes from :strong:`upstream/development` into your
    local :strong:`development` branch. This brings your fork's
    development branch into sync with the upstream repository, without
@@ -201,7 +198,7 @@ https://docs.github.com/en/github/collaborating-with-pull-requests/working-with-
    .. code-block:: bash
 
       ~$ git merge upstream/development
-    
+
 Resolving Merge Conflicts
 =========================
 
@@ -215,7 +212,7 @@ shown in :numref:`merge-conflict-picture`.
 .. figure:: /images/contributors/merge-conflicts-conflicts-development.png
    :scale: 33%
    :align: center
-	   
+
    A Merge Conflict.
 
 To resolve merge conflicts, the following steps must be performed.
@@ -229,7 +226,7 @@ To resolve merge conflicts, the following steps must be performed.
 
    .. code-block:: bash
 
-      ~$ git checkout $BRANCH  
+      ~$ git checkout $BRANCH
 
 3. Merge the changes of the development branch to the feature branch.
 
@@ -245,7 +242,7 @@ To resolve merge conflicts, the following steps must be performed.
    .. figure:: /images/contributors/merge-conflicts-output-development.png
       :scale: 33%
       :align: center
-	      
+
       Merge conflicts output.
 
 4. Go the the listed files of the previous output and resolve all
@@ -256,7 +253,7 @@ To resolve merge conflicts, the following steps must be performed.
    .. figure:: /images/contributors/merge-conflicts-solving-development.png
       :scale: 33%
       :align: center
-	      
+
       Solving a merge conflicts.
 
    You can resolve a conflict by simply deleting one of the two
@@ -270,23 +267,22 @@ To resolve merge conflicts, the following steps must be performed.
 
 5. Add all resolved files to the index, commit the changes and push the
    changes to the server.
-   
+
     .. code-block:: bash
 
        ~$ git add -A
        ~$ git commit
        ~$ git push
-    
+
 
 6. After resolving the merge conflicts, the pull request can be
    accepted.
 
-   .. figure:: /images/contributors/merge-conflicts-resolved-development.png 
+   .. figure:: /images/contributors/merge-conflicts-resolved-development.png
       :scale: 33%
       :align: center
-	      
-      A solved merge conflict. 
+
+      A solved merge conflict.
 
 A more detailed description can be found in the online Github help:
 ttps://docs.github.com/en/github/collaborating-with-pull-requests/addressing-merge-conflicts/resolving-a-merge-conflict-using-the-command-line
-
