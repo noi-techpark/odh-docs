@@ -1,7 +1,9 @@
 .. _db-guidelines:
 
-Database Guidelines - Full Version
-----------------------------------
+Database Documentation
+----------------------
+
+.. versionchanged:: 22.05 Integrate summaries
 
 .. topic:: Changelog
 
@@ -20,6 +22,47 @@ developers that contribute code that just uses an existing database,
 are explained in the :ref:`platform-guidelines` document as
 well. Please refer to that document for a general introduction to the
 scope of the present guidelines.
+
+.. dropdown:: Database Guidelines Summary
+
+   The `Database Guidelines` contain the database design and database
+   programming principles along with software version requirements. This
+   section contains :strong:`only` the most important points.
+
+   Please check the full version of this document at :ref:`db-guidelines`
+   if you want to know more details, if you have some doubt or if what
+   you were looking for is not mentioned in this summary.
+
+   * The database can be designed with one of the :strong:`Relational
+     Model`, :strong:`Object-Relational Mapping (ORM)`, or
+     :strong:`Semi-structured Data`  methodologies.
+   * A database designed with either methodology must be shipped with
+     |DDL| - `schema files` containing the :command:`CREATE` statements.
+   * Each database must include a :strong:`version table` and
+     :strong:`indices` on tables.
+   * All (SQL) source code must be well-documented, with in-line comments
+     and higher level documentation.
+   * Use standard database features - Sequences, primary and foreign
+     keys, constraints (unique, check, not null), default values, views,
+     and so on and so forth.
+   * Separate business logic from database design; avoid stored procedure
+     as much as possible.
+   * Small procedures and functions, if needed. must be written in
+     :strong:`PL/PgSQL`.
+   * Do :strong:`not` use foreign data wrappers.
+   * Consider using declarative partitioning for large tables - and
+     contact |odh| team beforehand to discuss it.
+   * Always use :envvar:`UTF8` character encoding and do :strong:`not`
+     override it.
+   * Default collation is :envvar:`en_US`, which works well for German and Italian
+     as well.
+   * Never use money type, but numeric.
+   * Dates and time stamps must be store to avoid ambiguity. Never store
+     them as text, but rather use their data types, :envvar:`date` (in
+     UTC format) and :envvar:`timestamp with timezone`. Unix timestamp is
+     accepted as well.
+   * When using or manipulating JSON data always follow
+     :strong:`ISO_8601` standard.
 
 Database design methodology
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
