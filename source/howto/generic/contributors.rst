@@ -2,7 +2,7 @@
  GITHUB Quick Howto
 ====================
 
-.. versionchanged:: 2022.04 moved from section :ref:`devels-resources`
+.. versionchanged:: 2022.05 moved from section :ref:`devels-resources`
 
 This howto guides you in setting up on your local workstation the
 (forked) ``git`` repositories needed to contribute to the |odh| project,

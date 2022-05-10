@@ -4,7 +4,7 @@
 Documentation for Developers
 ============================
 
-.. versionchanged:: 2022.04 Section renamed
+.. versionchanged:: 2022.05 Section renamed
 
 This section contains all information that is necessary to
 developers that want to collaborate with the |odh| team (e.g.,

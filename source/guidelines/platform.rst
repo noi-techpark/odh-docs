@@ -4,7 +4,7 @@
 Platform Documentation
 ----------------------
 
-.. versionchanged:: 22.05 Integrate summaries
+.. versionchanged:: 2022.05 Integrate summaries
 
 .. topic:: Changelog
    

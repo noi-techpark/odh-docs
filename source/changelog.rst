@@ -246,7 +246,7 @@ documentation.
       :ref:`architecture-odh` to :doc:`appendices`.
 
 .. changelog::
-   :version: 2022.04
+   :version: 2022.05
    :released: 30 April 2022
 
    .. change::
