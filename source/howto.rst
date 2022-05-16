@@ -59,6 +59,8 @@ Generic HOWTOs
    Open Data Hub--This tutorial is still in development and not so
    useful at the moment!
 
+#. :doc:`howto/generic/contributors` get started with GitHub workflow
+
 #. :doc:`/howto/generic/postman` Setup of Postman, a popular API
    development environment, to access data from the Open Data Hub.
 
@@ -81,6 +83,7 @@ Generic HOWTOs
 
    howto/generic/authentication
    howto/generic/development
+   howto/generic/contributors
    howto/generic/postman
    howto/generic/noievents
    howto/generic/webcomponents

@@ -1,8 +1,10 @@
 .. _devels-resources:
 
-========================
-Resources for Developers
-========================
+============================
+Documentation for Developers
+============================
+
+.. versionchanged:: 2022.05 Section renamed
 
 This section contains all information that is necessary to
 developers that want to collaborate with the |odh| team (e.g.,
@@ -18,4 +20,3 @@ contracted to write code or apps for the |odh| project (|odh| Core Hacker)
    /guidelines/database.rst
    /guidelines/dtp.rst
    /guidelines/authentication.rst
-   /guidelines/contributors.rst

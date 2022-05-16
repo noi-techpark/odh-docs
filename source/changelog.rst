@@ -1,9 +1,6 @@
 Changelog
 =========
 
-.. contents:: Available Changelogs:
-   :local:
-
 This section contains the Changelog of the |odh| project's
 documentation.
 
@@ -247,3 +244,14 @@ documentation.
       :ref:`getting-involved`, and :ref:`data-access`; move description of
       domains to :ref:`available_datasets` section, move
       :ref:`architecture-odh` to :doc:`appendices`.
+
+.. changelog::
+   :version: 2022.05
+   :released: 30 April 2022
+
+   .. change::
+      :tags: Improvement
+      :tickets: 255
+
+      Slight improvements to the section names, documentation
+      for GitHub workflow moved to howto.

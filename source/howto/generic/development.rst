@@ -43,9 +43,9 @@ xmlstarlet     1.6.1     1.6.1
 Apache Maven   3.3.9     3.5.2      Optional. If you don't use it, do
                                     not install it.
 
-tomcat8        8.0       8.5        You Optional can either use the
+tomcat8        8.0       8.5        Optional. You can either use the
                                     tomcat server provided by |odh| or
-				    install another application server.
+                                    install another application server.
 ============ ========= =========== =======================================
 
 .. note:: In case you opt to not use Maven or Tomcat, remember to
