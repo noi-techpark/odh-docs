@@ -11,8 +11,10 @@ import os
 import sys
 import io
 import time
+
 current_year = time.strftime('%Y')
 sys.path.append(os.path.abspath("./_ext"))
+contact_mail = 'help@opendatahub.bz.it'
 
 # -- General configuration ------------------------------------------------
 
@@ -28,7 +30,7 @@ extensions = [
     'sphinx.ext.ifconfig',
     'sphinx.ext.extlinks',
     'sphinx.ext.imgconverter',
-    'ga', 'hidemail',
+    'hidemail',
     'sphinx_togglebutton', 'sphinx_design',
     'sphinx_copybutton', 'changelog'
 ]
@@ -132,10 +134,19 @@ panels_add_fontawesome_latex = True
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 #
-html_theme = 'odh'
+html_theme = 'sphinx_rtd_theme'
+
+html_theme_options = {
+    'analytics_id': 'UA-138331709-2',
+    'analytics_anonymize_ip': False
+}
+
+html_context = {'contact_mail' : '%s' %contact_mail }
 
 # Add any paths that contain custom themes here, relative to this directory.
-html_theme_path = ['.']
+html_static_path = [ '_static' ]
+html_templates_path = [ '_templates' ]
+html_css_files = [ 'css/odh.css' ]
 
 # The name for this set of Sphinx documents.
 # "<project> v<release> documentation" by default.
@@ -178,8 +189,6 @@ html_show_sourcelink = False
 # If true, "Created using Sphinx" is shown in the HTML footer. Default is True.
 #
 html_show_sphinx = False
-
-googleanalytics_id = 'UA-138331709-2'
 
 # Output file base name for HTML help builder.
 htmlhelp_basename = 'OpenDataHubDocsdoc'
@@ -255,5 +264,3 @@ epub_css_files = [ 'odh.css' ]
 def setup(app):
     app.add_css_file('https://use.fontawesome.com/releases/v5.7.0/css/all.css')
     app.add_js_file('searchtools.js')
-    app.add_config_value('googleanalytics_id', '', 'html')
-    app.add_config_value('googleanalytics_enabled', True, 'html')

@@ -247,7 +247,7 @@ documentation.
 
 .. changelog::
    :version: 2022.05
-   :released: 30 April 2022
+   :released: 31 May 2022
 
    .. change::
       :tags: Improvement
@@ -255,3 +255,14 @@ documentation.
 
       Slight improvements to the section names, documentation
       for GitHub workflow moved to howto.
+
+.. changelog::
+   :version: 2022.05
+   :released: 31 May 2022
+
+   .. change::
+      :tags: Improvement
+      :tickets: 253
+
+      The custom theme was modified to keep it updated with the
+      upstream one. Also, contact information were changed.

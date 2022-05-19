@@ -1,4 +1,5 @@
-
+.. versionchanged:: 2022.05 updated contact information
+                    
 This section explains what to do in case you:
 
 1. have found an error or a bug in the APIs;
@@ -16,11 +17,16 @@ following website:
 https://github.com/noi-techpark/bdp-core/issues
 
 If your feedback is related to the Open Data Hub Documentation, please
-insert your issue on the following website, using the template that
-suits your needs:
+send an email to :email:`help@opendatahub.bz.it`: our Customer Service
+will take charge of it.
 
-* `Report a bug <https://github.com/login?return_to=https%3A%2F%2Fgithub.com%2Fnoi-techpark%2Fodh-docs%2Fissues%2Fnew%3Ftemplate%3Dbug_report.md>`_
-* `Leave your feedback <https://github.com/login?return_to=https%3A%2F%2Fgithub.com%2Fnoi-techpark%2Fodh-docs%2Fissues%2Fnew%3Ftemplate%3Dfeedback.md>`_
+However, if you feel confident with :fa:`github` GitHub, you can
+insert a new issue using either of  the templates
+
+* `Report a bug
+  <https://github.com/login?return_to=https%3A%2F%2Fgithub.com%2Fnoi-techpark%2Fodh-docs%2Fissues%2Fnew%3Ftemplate%3Dbug_report.md>`_
+* `Leave your feedback
+  <https://github.com/login?return_to=https%3A%2F%2Fgithub.com%2Fnoi-techpark%2Fodh-docs%2Fissues%2Fnew%3Ftemplate%3Dfeedback.md>`_
 
 .. note:: You need to have a valid github account to report issues and
    interact with the Open Data Hub team.
