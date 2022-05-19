@@ -11,8 +11,10 @@ import os
 import sys
 import io
 import time
+
 current_year = time.strftime('%Y')
 sys.path.append(os.path.abspath("./_ext"))
+contact_mail = 'help@opendatahub.bz.it'
 
 # -- General configuration ------------------------------------------------
 
@@ -138,6 +140,8 @@ html_theme_options = {
     'analytics_id': 'UA-138331709-2',
     'analytics_anonymize_ip': False
 }
+
+html_context = {'contact_mail' : '%s' %contact_mail }
 
 # Add any paths that contain custom themes here, relative to this directory.
 html_static_path = [ '_static' ]
