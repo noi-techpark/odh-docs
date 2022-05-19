@@ -1,4 +1,5 @@
-
+.. versionchanged:: 2022.05 updated contact information
+                    
 This section explains what to do in case you:
 
 1. have found an error or a bug in the APIs;
