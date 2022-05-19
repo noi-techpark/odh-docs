@@ -132,10 +132,12 @@ panels_add_fontawesome_latex = True
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 #
-html_theme = 'odh'
+html_theme = 'sphinx_rtd_theme'
 
 # Add any paths that contain custom themes here, relative to this directory.
-html_theme_path = ['.']
+html_static_path = [ '_static' ]
+html_templates_path = [ '_templates' ]
+html_css_files = [ 'css/odh.css' ]
 
 # The name for this set of Sphinx documents.
 # "<project> v<release> documentation" by default.
