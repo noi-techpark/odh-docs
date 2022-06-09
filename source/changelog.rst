@@ -266,3 +266,13 @@ documentation.
 
       The custom theme was modified to keep it updated with the
       upstream one. Also, contact information were changed.
+
+.. changelog::
+   :version: 2022.06
+   :released: 30 June 2022
+
+   .. change::
+      :tags: Improvement
+      :tickets: 259
+
+      Support for Mobility API v1 has been dropped and is no longer available.
