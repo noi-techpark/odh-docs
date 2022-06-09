@@ -25,7 +25,7 @@
 
          "Output", "JSON, mime-type application/json"
          "E-mail contact", "|contact|"
-         "API version", ":strike:`v1` |deprecated|, v2"
+         "API version", "v2"
          ":literal:`StationType`", "`BluetoothStation
          <https://mobility.api.opendatahub.bz.it/v2/flat/BluetoothStation>`_"
          "Use cases and info", "https://analytics.opendatahub.bz.it/"
