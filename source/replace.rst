@@ -33,11 +33,6 @@
 .. |beta| image:: /images/status-beta-darkblue.png
    :alt: This application is in beta stage
 
-.. API v2
-.. replaced with a badge, see below
-   .. |deprecated| image:: /images/deprecated.png
-      :alt: API v1 are now deprecated
-
 .. abbreviations
 
 .. |rdbms| replace:: :abbr:`RDBMS (Relational DataBase Management System)`
