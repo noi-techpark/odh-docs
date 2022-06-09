@@ -132,6 +132,8 @@ are available in section :ref:`authentication-hub`.
 Datasets in the Mobility Domain
 -------------------------------
 
+.. versionchanged:: 2022.06 API v1 for Mobility domain are no longer available.
+
 .. toctree::
    :hidden:
 
@@ -146,7 +148,8 @@ the API that the Open Data Hub team developed and made available.
 
    The dataset in the Mobility Domain at a glance.
 
-.. note:: Recall that the API v1 for the Mobility Domain is now :strong:`deprecated`.
+.. warning:: Recall that the API v1 for the Mobility Domain are
+   :strong:`no longer available`.
 
 The description of each dataset includes the following information:
 

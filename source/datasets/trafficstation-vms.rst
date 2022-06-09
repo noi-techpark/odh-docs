@@ -18,7 +18,7 @@
 
          "Output", "JSON, mime-type application/json"
          "E-mail contact", "|contact|"
-         "API version", ":strike:`v1` |deprecated|, v2"
+         "API version", "v2"
          ":literal:`StationType`", "`VMS
          <https://mobility.api.opendatahub.bz.it/v2/flat/VMS>`_"
          "Use cases and info", "https://analytics.opendatahub.bz.it/"

@@ -22,7 +22,7 @@
 
          Output, "JSON, mime-type application/json"
          E-mail contact, contact
-         API version, "`v1` deprecated, v2"
+         API version, "v2"
          :literal:`StationType`, "`ParkingStation <https://mobility.api.opendatahub.bz.it/v2/flat/ParkingStation>`_, `ParkingSensor <https://mobility.api.opendatahub.bz.it/v2/flat/ParkingSensor>`_"
          Use cases and info, "https://parking.bz.it
          https://mobility.meran.eu

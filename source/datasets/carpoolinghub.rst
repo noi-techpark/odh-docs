@@ -21,7 +21,7 @@
 
          "Output", "JSON, mime-type application/json"
          "E-mail contact", "|contact|"
-         "API version", ":strike:`v1` |deprecated|, v2"
+         "API version", "v2"
          ":literal:`StationType`", "`CarpoolingHub
          <https://mobility.api.opendatahub.bz.it/v2/flat/CarpoolingHub>`_
          `CarpoolingService
