@@ -25,13 +25,8 @@ users that might become app developers for the Open Data Hub project;
 further information about how to use authentication can be found in
 the :ref:`dedicated howto <authentication-howto>`.
 
-There are currently two different authentication methods available:
-
-* :strong:`Keycloack` is the default authentication server for all
-  datasets that are accessed with the :strong:`API v2`.
-* The :strong:`OAuth2 Authentication` follows the :rfc:`6749` and is
-  used for all the datasets in the mobility domain :strong:`when using
-  the legacy API v1`.
+:strong:`Keycloack` is the default authentication server for all
+datasets that are accessed with the :strong:`API v2`.
 
 .. warning:: The :strong:`Token-based Authentication` was used for the
   datasets in the tourism domain and is now not available anymore.
@@ -42,44 +37,6 @@ Keycloack for API v2
 Keycloack Server is already used as authentication method for |odh|\'s
 :ref:`internal infrastructure <authentication-internal>`. The same
 directions described in that section can be used.
-
-OAuth2 Authentication
-~~~~~~~~~~~~~~~~~~~~~
-
-.. warning:: |deprecated| This authentication method is supported
-   :strong:`only` for accessing datasets in the mobility domain with
-   the :strong:`API v1`.
-
-The OAuth2 authentication mechanism  Authentication tokens are
-based on :term:`JSON Web Token (JWT) <JSON Web Token>` as defined in
-:rfc:`7519#section-3`, to send :term:`claims <Claim>`.
-
-For those not familiar with the OAuth2 mechanism, here is a quick
-description of the client-server interaction:
-
-#. The client requests the permission to access restricted resources
-   to the `authorisation server`.
-#. The authorisation server replies with a :strong:`refresh token` and an
-   :strong:`access token`. The access token contains an expire date.
-#. The access token can now be used to access protected resources on
-   the `resource server`. To be able to use the access token, add it
-   as a Bearer token in the Authorization header of the HTTP
-   call. :strong:`Bearer` is a means to use tokens in HTTP
-   transactions. The complete specification can be found in
-   :rfc:`6750`.
-#. If the access token has expired, you'll get a HTTP :literal:`401
-   Unauthorized` response. In this case you need to request a new
-   access-token, passing your refresh token in the `Authorization`
-   header as Bearer token.  As an example, in Open Data Hub datasets
-   Bearer tokens can be inserted in a :command:`curl` call like
-   follows:
-
-   .. code-block:: bash
-
-      ~$ curl -X GET "$HTTP_URL_WITH_GET_PARAMETERS" -H "accept: */*" -H "Authorization: Bearer $TOKEN"
-
-Here, :literal:`$HTTP_URL_WITH_GET_PARAMETERS` is the URL containing the API call
-and :literal:`$TOKEN` is the string of the token.
 
 .. _authentication-internal:
 
