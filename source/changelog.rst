@@ -276,3 +276,14 @@ documentation.
       :tickets: 259
 
       Support for Mobility API v1 has been dropped and is no longer available.
+
+
+.. changelog::
+   :version: 2022.10
+   :released: 31 October 2022
+
+   .. change::
+      :tags: Change
+      :tickets: 255
+
+      FAQ were moved to the wiki.
