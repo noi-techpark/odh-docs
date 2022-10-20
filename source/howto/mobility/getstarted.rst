@@ -50,8 +50,8 @@ Example Queries
 ---------------
 
 We use some of the techniques presented in section
-:ref:`mobility-advanced` and the :ref:`parking dataset
-<parking-dataset>` to show a few simple queries and see the output
+:ref:`mobility-advanced` and the :dataset:`Parking dataset
+<traffic/parking/>` to show a few simple queries and see the output
 they provide.
 
 We recall that the two :literal:`StationType`\s of that datasets are

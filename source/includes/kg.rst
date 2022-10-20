@@ -1,12 +1,13 @@
 
-Some datasets in the |odh|, namely :ref:`Accommodation
-<accommodation-dataset>`, :ref:`Gastronomy <gastronomy-dataset>`, and
-:ref:`Event <event-dataset>`, are organised into a `Virtual Knowledge
-Graph` that can be accessed using SPARQL from the dedicated `SPARQL
-endpoint <https://sparql.opendatahub.bz.it>`_. In order to define more
-precise queries, this section describes the Knowledge Models (`KM`)
-underlying these datasets; the description of each |km| is accompanied
-by an UML diagram which shows the KM at a glance.
+Some datasets in the |odh|, namely :dataset:`Accommodations
+<tourism/accommodation_one/>`, :dataset:`Gastronomy
+<tourism/activitiesandpois_four/>`, and :dataset:`Events
+<tourism/events/>` , are organised into a `Virtual Knowledge Graph`
+that can be accessed using SPARQL from the dedicated `SPARQL endpoint
+<https://sparql.opendatahub.bz.it>`_. In order to define more precise
+queries, this section describes the Knowledge Models (`KM`) underlying
+these datasets; the description of each |km| is accompanied by an UML
+diagram which shows the KM at a glance.
 
 
 Besides standard W3C's OWL and RDF vocabularies, the |odh| VKG
@@ -163,8 +164,8 @@ uses:
             .. figure:: /images/sparql/odh-accommodation.png
                :width: 100%
 
-               The UML diagram of the :ref:`Accommodation Dataset
-               <accommodation-dataset>`.
+               The UML diagram of the :dataset:`Accommodations
+               <tourism/accommodation_one/>` dataset.
 
 .. _gastronomy-dataset-kg:
 
@@ -206,8 +207,8 @@ uses:
           .. figure:: /images/sparql/odh-food-establishment.png
              :width: 100%
 
-             The UML diagram of the :ref:`Gastronomy Dataset
-             <gastronomy-dataset>`.
+             The UML diagram of the :dataset:`Gastronomy
+             <tourism/activitiesandpois_four/>` dataset.
 
 
 .. _event-dataset-kg:
@@ -239,8 +240,8 @@ uses:
          .. figure:: /images/sparql/odh-event.png
             :width: 100%
 
-            The UML diagram of the :ref:`Event Dataset
-            <event-dataset>`.
+            The UML diagram of the :dataset:`Events <tourism/events/>` 
+            dataset.
 
 .. seealso::
 

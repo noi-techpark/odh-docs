@@ -119,7 +119,9 @@ extlinks = { 'sasabus':
              'apit':
              ('https://tourism.api.opendatahub.bz.it/v1%s', None),
              'home':
-             ('https://opendatahub.com/datatype/%s', None)
+             ('https://opendatahub.com/datatype/%s', None),
+             'dataset':
+             ('https://opendatahub.com/datasets/%s', None)
 }
 
 numfig = True
