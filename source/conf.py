@@ -112,11 +112,14 @@ rst_prolog = """
 # IMPORTANT! not all links can be shortened (i.e., when they are
 # within example GET calls), so make sure to fix those as well.
 
-extlinks = { 'sasabus': ('http://sasabus.org/%s', None),
+extlinks = { 'sasabus':
+             ('http://sasabus.org/%s', None),
              'stinfo':
              ('https://tourism.api.opendatahub.bz.it/#%s', None),
              'apit':
-             ('https://tourism.api.opendatahub.bz.it/v1%s', None)
+             ('https://tourism.api.opendatahub.bz.it/v1%s', None),
+             'home':
+             ('https://opendatahub.com/datatype/%s', None)
 }
 
 numfig = True
