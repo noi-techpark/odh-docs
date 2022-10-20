@@ -10,11 +10,12 @@ necessary to set Postman to connect to the |odh| datasets in both the
 mobility and tourism domains.
 
 In the remainder of this tutorial, we will use as example the
-:ref:`E-chargin station <echarging-dataset>` dataset, located at
+:dataset:`E-charging station <mobility/echargingstation/>` dataset,
+located at
 https://swagger.opendatahub.bz.it/?url=https://mobility.api.opendatahub.bz.it/v2/apispec#/Mobility%20V1%20-%20Emobility/
-for the mobility domain and the :ref:`Accommodation
-<accommodation-dataset>` dataset, located at :stinfo:`Accommodation`.
-
+for the mobility domain and the :dataset:`Accommodations
+<tourism/accommodation_one/>` dataset, located at
+:stinfo:`Accommodation`.
 
 Initial Setup
 ~~~~~~~~~~~~~
