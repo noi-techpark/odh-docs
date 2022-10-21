@@ -1,5 +1,10 @@
+.. _changelogs:
+
 Changelogs
 ==========
+
+.. versionchanged:: 2022.10 this section has been split, now there is
+   a dedicated Changelog page for each year.
 
 This section contains the Changelog of the |odh| project's
 documentation.

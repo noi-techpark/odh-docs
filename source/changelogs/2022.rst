@@ -75,3 +75,13 @@
       For improved terminology consistency, we made sure that all
       occurrences of the *ODH* acronym were replaced with its expanded
       form, |odh|.
+
+   .. change::
+      :tags: Improvement, Bugfix
+      :tickets: 268
+
+      The :ref:`changelogs` section was reorganised: entries of each
+      year were moved to a separate page and issues were grouped
+      according to their released version. Also, missing changelog
+      entries for tickets :ticket:`263` and :ticket:`264` have been
+      added.
