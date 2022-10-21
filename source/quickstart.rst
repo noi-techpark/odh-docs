@@ -22,7 +22,7 @@ available online: they are summarised in the following table.
       Data Browser
       ^^^^^
 
-      The `ODH Tourism Data Browser
+      The |odh| `Tourism Data Browser
       <https://databrowser.opendatahub.bz.it/>`_ allows to access all
       the Open Data available in the Tourism domain by simply browsing
       the content of the various datasets.
