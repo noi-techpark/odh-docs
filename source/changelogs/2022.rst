@@ -1,0 +1,69 @@
+================
+ Changelog 2022
+================
+
+.. changelog::
+   :version: 2022.03
+   :released: 31 March 2022
+
+   .. change::
+      :tags: New Feature
+      :tickets: 250
+
+      Add section :ref:`quickstart`.
+
+.. changelog::
+   :version: 2022.03
+   :released: 31 March 2022
+
+   .. change::
+      :tags: Improvement
+      :tickets: 251
+
+      Major changes to sectioning: unify sections :ref:`project-overview`,
+      :ref:`getting-involved`, and :ref:`data-access`; move description of
+      domains to :ref:`available_datasets` section, move
+      :ref:`architecture-odh` to :ref:`appendices`.
+
+.. changelog::
+   :version: 2022.05
+   :released: 31 May 2022
+
+   .. change::
+      :tags: Improvement
+      :tickets: 255
+
+      Slight improvements to the section names, documentation
+      for GitHub workflow moved to howto.
+
+.. changelog::
+   :version: 2022.05
+   :released: 31 May 2022
+
+   .. change::
+      :tags: Improvement
+      :tickets: 253
+
+      The custom theme was modified to keep it updated with the
+      upstream one. Also, contact information were changed.
+
+.. changelog::
+   :version: 2022.06
+   :released: 30 June 2022
+
+   .. change::
+      :tags: Improvement
+      :tickets: 259
+
+      Support for Mobility API v1 has been dropped and is no longer available.
+
+
+.. changelog::
+   :version: 2022.10
+   :released: 31 October 2022
+
+   .. change::
+      :tags: Change
+      :tickets: 255
+
+      FAQ were moved to the wiki.
