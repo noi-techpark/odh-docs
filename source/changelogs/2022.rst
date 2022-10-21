@@ -12,10 +12,6 @@
 
       Add section :ref:`quickstart`.
 
-.. changelog::
-   :version: 2022.03
-   :released: 31 March 2022
-
    .. change::
       :tags: Improvement
       :tickets: 251
@@ -35,10 +31,6 @@
 
       Slight improvements to the section names, documentation
       for GitHub workflow moved to howto.
-
-.. changelog::
-   :version: 2022.05
-   :released: 31 May 2022
 
    .. change::
       :tags: Improvement
