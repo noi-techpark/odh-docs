@@ -95,7 +95,6 @@ exclude_patterns = [ 'replace.rst', 'datasets', 'includes' ]
 pygments_style = 'sphinx'
 
 rst_prolog = """
-
 .. role:: license
 .. role:: green
 .. role:: uline
