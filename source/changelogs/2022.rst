@@ -59,3 +59,19 @@
       :tickets: 255
 
       FAQ were moved to the wiki.
+
+
+   .. change::
+      :tags: Change
+      :tickets: 263
+
+      The list of datasets and  information about them was moved
+      to the main |odh| web page.
+
+   .. change::
+      :tags: Change
+      :tickets: 264
+
+      For improved terminology consistency, we made sure that all
+      occurrences of the *ODH* acronym were replaced with its expanded
+      form, |odh|.
