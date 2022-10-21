@@ -65,9 +65,9 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'OpenDataHub Docs'
-copyright = u'2018-%s, The ODH Team' %(current_year)
-author = u'The ODH Team'
+project = u'Open Data Hub Docs'
+copyright = u'2018-%s, The Open Data Hub Team' %(current_year)
+author = u'The Open Data Hub Team'
 
 
 # The version info for the project you're documenting, acts as replacement for
