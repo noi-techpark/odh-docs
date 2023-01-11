@@ -58,9 +58,10 @@ well as the required R's `SPARQL library
      2: In install.packages("SPARQL") :
        installation of package ‘SPARQL’ had non-zero exit status
 
-   Documentation for the library can be found in the library's `PDF
-   documentation
-   <https://cran.mirror.garr.it/CRAN/web/packages/SPARQL/SPARQL.pdf>`_
+   ..
+      Documentation for the library can be found in the library's `PDF
+      documentation
+      <https://cran.mirror.garr.it/CRAN/web/packages/SPARQL/SPARQL.pdf>`_
 
 In order to fetch data, you need:
 

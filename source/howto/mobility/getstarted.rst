@@ -12,7 +12,7 @@ The starting point for all actions to be carried out on the datasets
 made available by the Open Data Hub team is the swagger mobility API
 home page:
 
-https://mobility.api.opendatahub.com/
+https://swagger.opendatahub.com/?url=https://mobility.api.opendatahub.com/v2/apispec
           
 .. figure:: /images/mobility-swagger.png
    :scale: 33%

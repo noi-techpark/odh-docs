@@ -151,7 +151,8 @@ Before you can sync your fork with the original repository (an
 upstream repository), you must configure a remote that points to the
 upstream repository in Git. A more detailed description for the
 following steps can be found in the `online Github help
-<https://docs.github.com/en/github/collaborating-with-pull-requests/working-with-forks/configuring-a-remote-for-a-fork>`_.
+<https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/configuring-a-remote-repository-for-a-fork>`_.
+
 
 1. List the current configured remote repository for your fork.
 
@@ -174,7 +175,7 @@ following steps can be found in the `online Github help
 You need sync a fork of a repository to keep it up-to-date with the
 original repository (upstream repository). A more detailed description
 for the following steps can be found in the online Github help
-https://docs.github.com/en/github/collaborating-with-pull-requests/working-with-forks/syncing-a-fork.
+`<https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/syncing-a-fork>`_.
 
 1. Fetch the branches and their respective commits from the upstream
    repository. Commits to :strong:`development` will be stored in a

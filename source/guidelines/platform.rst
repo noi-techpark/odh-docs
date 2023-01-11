@@ -104,8 +104,8 @@ The chosen programing language for |odh| is Java, more precisely the Java
 Platform, Standard Edition (Java SE).
 
 Source code will be compiled with either the `OpenJDK
-<https://openjdk.java.net/>`_ or the `OracleJDK
-<https://www.oracle.com/java/technologies/javase-downloads.html>`_,
+<https://openjdk.org/>`_ or the `OracleJDK
+<https://www.oracle.com/java/technologies/downloads>`_,
 which share the same code base anyway. Resulting binaries will run in
 the corresponding JVM.
 
