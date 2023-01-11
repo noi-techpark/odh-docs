@@ -4,7 +4,6 @@
 Platform Documentation
 ----------------------
 
-.. versionchanged:: 2022.05 Integrate summaries
 
 .. topic:: Changelog
    

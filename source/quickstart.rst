@@ -4,7 +4,6 @@
  Quickstart
 ============
 
-.. versionadded:: 2022.03 Quickstart section
 
 This section helps you in getting quickly in touch with the most
 popular tools developed by |odh| to interact with the dataset and

@@ -1,4 +1,3 @@
-.. versionchanged:: 2022.05 updated contact information
                     
 This section explains what to do in case you:
 
