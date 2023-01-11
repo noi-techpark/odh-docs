@@ -88,7 +88,7 @@ is the method shown here.
 
 In order to receive an access token, you need in advance to have credentials for
 the Open Data Hub. If you do not have them, please open a ticket on
-issues.opendatahub.bz.it or send an email to :email:`help@opendatahub.bz.it`.
+issues.opendatahub.com or send an email to :email:`help@opendatahub.bz.it`.
 The same holds, if you plan to create an application that retrieves closed data
 from the Open Data Hub. For this, also other OAuth2 flows exist.
 
@@ -100,7 +100,7 @@ to you with the following call:
    :name: grant-token
    :caption: Receiving an access topic
 
-   ~$ curl -X POST -L "https://auth.opendatahub.bz.it/auth/realms/noi/protocol/openid-connect/token" \
+   ~$ curl -X POST -L "https://auth.opendatahub.com/auth/realms/noi/protocol/openid-connect/token" \
    --header 'Content-Type: application/x-www-form-urlencoded' \
    --data-urlencode 'grant_type=password' \
    --data-urlencode 'username=my_username' \
@@ -116,7 +116,7 @@ parameters given in the query above with
    :name: refresh-token
    :caption: Refreshing the access token
 
-   ~$ curl -X POST -L "https://auth.opendatahub.bz.it/auth/realms/noi/protocol/openid-connect/token" \
+   ~$ curl -X POST -L "https://auth.opendatahub.com/auth/realms/noi/protocol/openid-connect/token" \
    --header 'Content-Type: application/x-www-form-urlencoded' \
    --data-urlencode 'grant_type=refresh_token' \
    --data-urlencode 'refresh_token=the_refresh_token' \
@@ -136,7 +136,7 @@ requests. The following API call shows how to get all
    :name: get-closed-data
    :caption: Retrieving data with the access token
 
-   ~$ curl -X GET "https://mobility.api.opendatahub.bz.it/v2/flat/VMS/*/latest?select=sname,mvalue" \
+   ~$ curl -X GET "https://mobility.api.opendatahub.com/v2/flat/VMS/*/latest?select=sname,mvalue" \
    --header 'Content-Type: application/json' \
    --header 'Authorization: bearer your-access-token'
 

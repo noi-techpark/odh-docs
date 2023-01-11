@@ -133,7 +133,7 @@ you need to follow the following steps.
       Show outcome of a pull request.
 
 8. In addition, the detailed logs can be viewed under
-   https://ci.opendatahub.bz.it.
+   https://ci.opendatahub.com.
 
 .. _syncing-a-fork:
 

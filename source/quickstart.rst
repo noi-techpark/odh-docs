@@ -23,7 +23,7 @@ available online: they are summarised in the following table.
       ^^^^^
 
       The |odh| `Tourism Data Browser
-      <https://databrowser.opendatahub.bz.it/>`_ allows to access all
+      <https://databrowser.opendatahub.com/>`_ allows to access all
       the Open Data available in the Tourism domain by simply browsing
       the content of the various datasets.
 
@@ -43,7 +43,7 @@ available online: they are summarised in the following table.
       ^^^^^
 
       Open the :strong:`Analytics for Mobility` web page, at
-      https://analytics.opendatahub.bz.it/ This portal uses data in
+      https://analytics.opendatahub.com/ This portal uses data in
       the mobility domain to display various information about the
       sensors, including their locations, what they measure, and
       actual data in near-real time. You can retrieve data gathered by
@@ -68,7 +68,7 @@ available online: they are summarised in the following table.
          .. tab-item:: Mobility resources
 
             * :octicon:`triangle-right` The URL of the Swagger
-              interface is https://mobility.api.opendatahub.bz.it/
+              interface is https://mobility.api.opendatahub.com/
 
             * :octicon:`triangle-right` Check out the `Mobility
               dedicated howto` (:ref:`get-started-mobility`) that will
@@ -99,7 +99,7 @@ available online: they are summarised in the following table.
       useful for the |odh| project or that can be used on top of data
       provided by the |odh|, you can share it and allow other to reuse
       it, by making it freely available on |odh|\'s `Web Components
-      Store <https://webcomponents.opendatahub.bz.it/>`_.
+      Store <https://webcomponents.opendatahub.com/>`_.
 
       The only requirement for all the Web Components offered through
       the Store is that they :strong:`must` be released as an

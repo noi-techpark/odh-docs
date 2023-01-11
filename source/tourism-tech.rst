@@ -213,7 +213,7 @@ example of previous section and use the `ODHActivityPOI` dataset. The
 following query will retrieve all the data in the dataset that have
 some information stored in English::
 
-  https://tourism.api.opendatahub.bz.it/v1/ODHActivityPoi?language=en
+  https://tourism.api.opendatahub.com/v1/ODHActivityPoi?language=en
 
 Most of the data in the Open Data Hub datasets are available in three
 languages, English, German, and Italian, for which :literal:`en`,
@@ -275,13 +275,13 @@ retrieve and save data in CSV format:
 
   .. code:: bash
 
-     ~$ curl -X GET "https://tourism.api.opendatahub.bz.it/v1/Activity?fields=Id,Detail.en.Title,ContactInfos.en.CompanyName&pagesize=500" -H "accept: application/json"
+     ~$ curl -X GET "https://tourism.api.opendatahub.com/v1/Activity?fields=Id,Detail.en.Title,ContactInfos.en.CompanyName&pagesize=500" -H "accept: application/json"
 
   The output of this query will be in JSON format.
 
   .. code:: bash
 
-     ~$ curl -X GET "https://tourism.api.opendatahub.bz.it/v1/Activity?fields=Id,Detail.en.Title,ContactInfos.en.CompanyName&pagesize=500" -H "accept: text/csv"
+     ~$ curl -X GET "https://tourism.api.opendatahub.com/v1/Activity?fields=Id,Detail.en.Title,ContactInfos.en.CompanyName&pagesize=500" -H "accept: text/csv"
 
   The output of this query will be in CSV format.
 

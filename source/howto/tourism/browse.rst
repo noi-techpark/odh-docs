@@ -12,7 +12,7 @@ Data Browsing and Exploring
 ---------------------------
 
 In order to access the data in the tourism domain, launch a browser
-and point it to https://databrowser.opendatahub.bz.it/.
+and point it to https://databrowser.opendatahub.com/.
    
 .. _tourism-login-web:
 

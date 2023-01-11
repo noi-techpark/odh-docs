@@ -5,7 +5,7 @@ How to access Open Data Hub AlpineBits Server as a client
 
 In this howto, we show how to retrieve data from the AlpineBits Server
 endpoint for the Open Data Hub located at
-https://alpinebits.opendatahub.bz.it/AlpineBits, by using the (Linux)
+https://alpinebits.opendatahub.com/AlpineBits, by using the (Linux)
 command line--in particular the :command:`curl` application, and the
 popular `Postman` API development environment.  An example call can be
 seen :ref:`at the bottom <ab-request>` of this section.
@@ -73,7 +73,7 @@ looks like the following one:
 .. code-block:: 
 		
    ~# curl --location --request POST \
-   'https://alpinebits.opendatahub.bz.it/AlpineBits' \
+   'https://alpinebits.opendatahub.com/AlpineBits' \
    --header 'Authorization: Basic <your-token-here>' \
    --header 'X-AlpineBits-ClientProtocolVersion: 2017-10' \
    --header 'X-AlpineBits-ClientID: 'My test request' \

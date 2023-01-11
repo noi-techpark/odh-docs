@@ -14,7 +14,7 @@ Swagger Interface
 All the APIs available for the tourism domain can be accessed from the
 same URL through their Swagger user interface:
 
-https://tourism.api.opendatahub.bz.it/swagger/index.html
+https://tourism.api.opendatahub.com/swagger/index.html
 
 .. hint:: Check section :ref:`tourism-datasets` for direct URLs to the
    datasets.
@@ -78,7 +78,7 @@ Browsing API Datasets
 
 The data in the API can be browsed at the following URL:
 
-https://tourism.api.opendatahub.bz.it/v1/
+https://tourism.api.opendatahub.com/v1/
 
 .. note:: You may need to install a `JSON browser plugin` for your
    browser to browse the datasets in this way.
@@ -113,7 +113,7 @@ add an authentication header to each call. For example, using curl:
 
    ~# curl -X GET --header 'Accept: application/json' \
    --header 'Authorization: Bearer vLwemAqrLKVKXsvgvEQgtkeanbMq7Xcs' \
-   'https://tourism.api.opendatahub.bz.it/v1/Gastronomy'
+   'https://tourism.api.opendatahub.com/v1/Gastronomy'
 
 .. note:: The string of the token is shortened for the sake of
    clarity. 

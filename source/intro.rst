@@ -22,7 +22,7 @@ The technical stuff is composed of:
 * Resources for developers.
   
 For non-technical information about the |odh| project, please point 
-your browser to https://opendatahub.bz.it/.
+your browser to https://opendatahub.com/.
 
 .. _project-overview:
 

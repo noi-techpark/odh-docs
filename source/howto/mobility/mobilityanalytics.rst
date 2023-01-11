@@ -4,7 +4,7 @@ How to Access Analytics Data in the Mobility Domain
 ===================================================
 
 This howto guides you in browsing and querying data from the Mobility
-domain using the https://analytics.opendatahub.bz.it/ web site.
+domain using the https://analytics.opendatahub.com/ web site.
 
 .. note:: Access to data on this website is now possible by
    using R. See :ref:`the dedicated section <r-access>`  for
@@ -14,7 +14,7 @@ domain using the https://analytics.opendatahub.bz.it/ web site.
 Introduction
 ------------
 
-The website https://analytics.opendatahub.bz.it/ gathers data from
+The website https://analytics.opendatahub.com/ gathers data from
 datasets in the mobility domain and uses them to draw two types of
 diagram: a :ref:`chart <charts>` using historical data and an
 interactive :ref:`map <mapoverview>` that show where are located the
