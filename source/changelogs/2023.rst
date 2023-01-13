@@ -16,6 +16,12 @@
       :tags: Changes
       :tickets: 269
 
-      Update outdated links, and fix ``linkcheck`` builder's
-      configuration.
-      
+      Update outdated links, remove broken links, and fix
+      ``linkcheck`` builder's configuration.
+
+   .. change::
+      :tags: Changes
+      :tickets: 273
+
+      Added a warning to inform that the SPARQL endpoint is available
+      on demand only. 
