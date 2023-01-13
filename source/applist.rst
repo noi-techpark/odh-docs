@@ -83,9 +83,9 @@ Beta Stage Apps
   suburban bus lines can be shown, and for each bus can be shown the
   next few stops and an estimate of the arrival time.
 
-* https://map.clean-roads.eu/ One of the CLEAN-ROADS project outcomes,
-  this web site shows real-time data of the meteorological stations
-  that are situated along public streets.
+* https\://map.clean-roads.eu/ This web page was one of the
+  CLEAN-ROADS project outcomes, which presented real-time data of the
+  meteorological stations that situated along public streets.
 
 .. _alpha-stage-apps:
 
