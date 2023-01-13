@@ -26,7 +26,7 @@ Under the header and an informative message, hyperlinks in the centre
 of the page allow to open various resources about the Tourism domain.
 
 * The `Swagger interface
-  <https://tourism.opendatahub.bz.it/swagger/index>`_ of the
+  <https://tourism.opendatahub.bz.it/swagger/ui/index>`_ of the
   datasets, the quickest place from where to access the datasets and
   learn how to programmatically retrieve the data
 
