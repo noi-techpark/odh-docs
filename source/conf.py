@@ -75,7 +75,7 @@ author = u'The Open Data Hub Team'
 # built documents.
 #
 # The short X.Y version.
-version = u'2022.10'
+version = u'2023.01'
 # The full version, including alpha/beta/rc tags.
 release = version
 
