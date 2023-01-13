@@ -2,7 +2,6 @@
  GITHUB Quick Howto
 ====================
 
-.. versionchanged:: 2022.05 moved from section :ref:`devels-resources`
 
 This howto guides you in setting up on your local workstation the
 (forked) ``git`` repositories needed to contribute to the |odh| project,
@@ -133,7 +132,7 @@ you need to follow the following steps.
       Show outcome of a pull request.
 
 8. In addition, the detailed logs can be viewed under
-   https://ci.opendatahub.bz.it.
+   https://ci.opendatahub.com.
 
 .. _syncing-a-fork:
 
@@ -151,7 +150,8 @@ Before you can sync your fork with the original repository (an
 upstream repository), you must configure a remote that points to the
 upstream repository in Git. A more detailed description for the
 following steps can be found in the `online Github help
-<https://docs.github.com/en/github/collaborating-with-pull-requests/working-with-forks/configuring-a-remote-for-a-fork>`_.
+<https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/configuring-a-remote-repository-for-a-fork>`_.
+
 
 1. List the current configured remote repository for your fork.
 
@@ -174,7 +174,7 @@ following steps can be found in the `online Github help
 You need sync a fork of a repository to keep it up-to-date with the
 original repository (upstream repository). A more detailed description
 for the following steps can be found in the online Github help
-https://docs.github.com/en/github/collaborating-with-pull-requests/working-with-forks/syncing-a-fork.
+`<https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/syncing-a-fork>`_.
 
 1. Fetch the branches and their respective commits from the upstream
    repository. Commits to :strong:`development` will be stored in a

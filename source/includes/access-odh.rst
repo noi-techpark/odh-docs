@@ -57,7 +57,7 @@ browser.
       :columns: 12 12 12 4
 
       Open the `Open Data Hub Knowledge Graph Portal
-      <https://sparql.opendatahub.bz.it/>`_ where you can explore all
+      <https://sparql.opendatahub.com/>`_ where you can explore all
       the data that are already available as a virtual knowledge
       graph. Here you can check out some of the precooked query to see
       and modify them to suit your needs with the help of W3C's

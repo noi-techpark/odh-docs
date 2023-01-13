@@ -34,7 +34,7 @@ Data specs` (`pdf
 
 The :strong:`reference implementation` of AlpineBits DestinationData
 is provided by |odh| and publicly available at the dedicated endpoint at
-https://destinationdata.alpinebits.opendatahub.bz.it/.
+https://destinationdata.alpinebits.opendatahub.com/.
 
 .. seealso:: More information and resources about AlpineBits
    DestinationData can be found on the `official page
@@ -49,7 +49,7 @@ The `AlpineBits HotelData <https://www.alpinebits.org/hoteldata/>`_ is
 meant for data strictly related to hotels and booking, like Inventory
 Basic, Inventory HotelInfo, and FreeRooms. This dataset can be access
 from the dedicated endpoint at
-https://alpinebits.opendatahub.bz.it/AlpineBits/
+https://alpinebits.opendatahub.com/AlpineBits/
 
 .. seealso::
 

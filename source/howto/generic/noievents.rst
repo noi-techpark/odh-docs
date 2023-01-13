@@ -16,7 +16,7 @@ Since you must login to create events, you need valid credentials to
 be able to add NOI events, that you should have received from the
 |odh| team.
 
-Go to https://databrowser.opendatahub.bz.it and click on Log in (top
+Go to https://databrowser.opendatahub.com and click on Log in (top
 right corner)
 
 .. figure:: /images/events/login.png

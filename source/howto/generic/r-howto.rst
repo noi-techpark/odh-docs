@@ -58,16 +58,17 @@ well as the required R's `SPARQL library
      2: In install.packages("SPARQL") :
        installation of package ‘SPARQL’ had non-zero exit status
 
-   Documentation for the library can be found in the library's `PDF
-   documentation
-   <https://cran.mirror.garr.it/CRAN/web/packages/SPARQL/SPARQL.pdf>`_
+   ..
+      Documentation for the library can be found in the library's `PDF
+      documentation
+      <https://cran.mirror.garr.it/CRAN/web/packages/SPARQL/SPARQL.pdf>`_
 
 In order to fetch data, you need:
 
-1. An endpoint, which for |odh| is https://sparql.opendatahub.bz.it/sparql
+1. An endpoint, which for |odh| is https://sparql.opendatahub.com/sparql
 
 2. a SPARQL query, that you can simply copy from one of the precooked
-   queries at https://sparql.opendatahub.bz.it/ We'll be using this
+   queries at https://sparql.opendatahub.com/ We'll be using this
    one:
 
    .. code:: sparql
@@ -94,7 +95,7 @@ In order to fetch data, you need:
       
       library(SPARQL)
 
-      endpoint <- "https://sparql.opendatahub.bz.it/sparql"
+      endpoint <- "https://sparql.opendatahub.com/sparql"
 
       query <- 
       'PREFIX schema: <https://schema.org/>
@@ -176,7 +177,7 @@ install it on a Debian-like system, use as `root` the following command::
 
 If you execute a query and the outcome is not a result set but some
 error message similar to the following ones, please verify that the
-URL of the SPARQL endpoint is correct: :strong:`https\://sparql.opendatahub.bz.it/sparql`
+URL of the SPARQL endpoint is correct: :strong:`https\://sparql.opendatahub.com/sparql`
 
 ::
    
