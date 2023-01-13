@@ -7,9 +7,15 @@
    :released: 31 January 2023
 
    .. change::
-      :tags: Bugfix, Changes
+      :tags: Changes
       :tickets: 262
 
-      Replace |odh| domains from ``.bz.it`` to ``.com``, update
-      outdated links, and fix ``linkcheck`` builder's configuration
+      Replace |odh| domains from ``.bz.it`` to ``.com``.
+
+   .. change::
+      :tags: Changes
+      :tickets: 269
+
+      Update outdated links, and fix ``linkcheck`` builder's
+      configuration.
       
