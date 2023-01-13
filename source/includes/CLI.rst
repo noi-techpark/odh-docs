@@ -25,12 +25,12 @@ used:
 
 .. code-block:: bash
 		
-   ~$ curl -X GET "https://tourism.api.opendatahub.bz.it/v1/ODHActivityPoi?pagenumber=1&pagesize=10&type=63&subtype=null&poitype=null&idlist=null&locfilter=null&langfilter=null&areafilter=null&highlight=null&source=null&odhtagfilter=null&odhactive=null&active=null&seed=null&latitude=null&longitude=null&radius=null" -H "accept: application/json"
+   ~$ curl -X GET "https://tourism.api.opendatahub.com/v1/ODHActivityPoi?pagenumber=1&pagesize=10&type=63&subtype=null&poitype=null&idlist=null&locfilter=null&langfilter=null&areafilter=null&highlight=null&source=null&odhtagfilter=null&odhactive=null&active=null&seed=null&latitude=null&longitude=null&radius=null" -H "accept: application/json"
 
 
 Your best opportunity to learn about the correct syntax and parameters
 to use is to go to the :strong:`swagger interface` of the `tourism
 <https://tourism.opendatahub.bz.it/swagger/ui/index>`_ or `mobility
-<https://mobility.api.opendatahub.bz.it/>`_ domains and execute a
+<https://mobility.api.opendatahub.com/>`_ domains and execute a
 query: with the output, also the corresponding :program:`curl` command
 used to retrieve the data will be shown.

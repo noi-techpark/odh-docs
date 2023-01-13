@@ -73,7 +73,7 @@ licensed data it contains. Please note, this data is calculated on
 some datasets and does not consider all datasets of the whole Open
 Data Hub yet.
 
-https://databrowser.opendatahub.bz.it/Home/LicenseStatus
+https://databrowser.opendatahub.com/Home/LicenseStatus
 
 .. note:: There is an additional clarification about the licence for
    any content that is retrieved from the datasets in JSON format,

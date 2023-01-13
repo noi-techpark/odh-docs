@@ -3,8 +3,8 @@ Some datasets in the |odh|, namely :dataset:`Accommodations
 <tourism/accommodation_one/>`, :dataset:`Gastronomy
 <tourism/activitiesandpois_four/>`, and :dataset:`Events
 <tourism/events/>` , are organised into a `Virtual Knowledge Graph`
-that can be accessed using SPARQL from the dedicated `SPARQL endpoint
-<https://sparql.opendatahub.bz.it>`_. In order to define more precise
+that can be accessed using SPARQL from the dedicated `SPARQL portal
+<https://sparql.opendatahub.com>`_. In order to define more precise
 queries, this section describes the Knowledge Models (`KM`) underlying
 these datasets; the description of each |km| is accompanied by an UML
 diagram which shows the KM at a glance.

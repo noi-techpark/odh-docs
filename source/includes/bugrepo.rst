@@ -1,4 +1,3 @@
-.. versionchanged:: 2022.05 updated contact information
                     
 This section explains what to do in case you:
 
@@ -17,7 +16,7 @@ following website:
 https://github.com/noi-techpark/bdp-core/issues
 
 If your feedback is related to the Open Data Hub Documentation, please
-send an email to :email:`help@opendatahub.bz.it`: our Customer Service
+send an email to :email:`help@opendatahub.com`: our Customer Service
 will take charge of it.
 
 However, if you feel confident with :fa:`github` GitHub, you can

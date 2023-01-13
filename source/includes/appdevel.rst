@@ -17,7 +17,7 @@
 
 ...integrate Open Data Hub data using Web Components.
    The Open Data Hub team and their partner have developed a `small library of
-   Web Components <https://webcomponents.opendatahub.bz.it/>`_ that can
+   Web Components <https://webcomponents.opendatahub.com/>`_ that can
    be integrated in existing web sites or used as guidance to develop
    new Web Components.
 

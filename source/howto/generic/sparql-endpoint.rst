@@ -3,9 +3,17 @@
 How to Access |odh| Data Using SPARQL
 =====================================
 
+.. versionchanged:: 2023.1 notify users of SPARQL endpoint reachable
+   upon request only.
+
+.. warning:: The SPARQL endpoint is currently not active, but can be
+   activated upon request to |contact|. However, the ODH SPARQL
+   portal, which contains sample data and queries, can be accessed at
+   https://sparql.opendatahub.com/.
+
 The |odh|\'s dataset can be queried using the SPARQL query language,
 using the `Open Data Hub Knowledge Graph Portal
-<https://sparql.opendatahub.bz.it/>`_. This howto helps you in getting
+<https://sparql.opendatahub.com/>`_. This howto helps you in getting
 acquainted with the functionalities offered by the endpoint. However,
 this howto does not cover SPARQL: if you are not familiar with it,
 here is some reference:
@@ -20,7 +28,8 @@ here is some reference:
   Jena's team. Oriented toward Jena, it nonetheless includes and
   explains a lot of basic notions
 
-   
+.. _sparql-gui:
+
 Data Available in the Portal
 ----------------------------
 
@@ -36,7 +45,7 @@ The landing page of |odh|\'s SPARQL endpoint contains the following elements:
 
          Playground
          ^^^^^^^^^^
-      
+
          The `Playground` is a space in which to freely write SPARQL
          queries against the |odh| datasets. It is most suited for users
          that already know SPARQL and how to use it to interact with |odh|\.
@@ -45,13 +54,13 @@ The landing page of |odh|\'s SPARQL endpoint contains the following elements:
 
       .. grid-item-card::
          :columns: 4
-      
+
          Regular Queries
          ^^^^^^^^^^^^^^^
 
-         `Regular Queries` are a sample queries that can be used either 
+         `Regular Queries` are a sample queries that can be used either
          standalone, to gather example data, or can be edited and
-         modified to tweak the results.  
+         modified to tweak the results.
          +++
 
          See section :ref:`regular-queries`.
@@ -65,25 +74,25 @@ The landing page of |odh|\'s SPARQL endpoint contains the following elements:
          Similar to Regular Queries, `Data Quality Queries` are precooked
          queries that will gather data, but with an emphasis on their
          quality. They can be used to check whether some of the data are
-         incomplete. 
+         incomplete.
          +++
          See section :ref:`data-quality-queries`.
 
       .. grid-item-card::
          :columns: 6
-                   
+
          Mobility
          ^^^^^^^^
 
          `Mobility` queries are sample queries against all the datasets
          in the entire mobility domain. They can be used as they are or
-         modified and tweaked to extract more precise data. 
+         modified and tweaked to extract more precise data.
          +++
 
          You can refer to section :ref:`playground`.
 
       .. grid-item-card::
-         :columns: 6    
+         :columns: 6
 
          Tourism and Mobility
          ^^^^^^^^^^^^^^^^^^^^
@@ -94,7 +103,6 @@ The landing page of |odh|\'s SPARQL endpoint contains the following elements:
 
          You can refer to section :ref:`playground`.
 
-      
 2. The main area, consisting of a large textarea, in which to write
    SQARQL queries, and of a number of precooked queries when the `Regular
    Queries` or `Data Quality Queries` buttons are clicked. The three
@@ -107,7 +115,7 @@ The landing page of |odh|\'s SPARQL endpoint contains the following elements:
      some syntactic error, it is accompanied by a yellow question mark
      :octicon:`alert;1em;sd-text-warning sd-bg-black` and it is not
      executed, but an error message is displayed
-     
+
 3. A number of visualisation and download options in the bottom
    area. Also this part of the area can be maximised
 
@@ -153,4 +161,4 @@ Working with Data Quality Queries
 ---------------------------------
 
 Data quality queries are built with purpose to verify if there are
-incomplete or wrong data in a dataset. 
+incomplete or wrong data in a dataset.

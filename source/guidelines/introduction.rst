@@ -3,7 +3,6 @@
 Guidelines for Developers
 =========================
 
-.. versionchanged:: 22.05 Move summaries before their respective full
    versions
 
 |odh| is a collection of software, databases, and services coordinated

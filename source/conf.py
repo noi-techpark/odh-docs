@@ -14,7 +14,7 @@ import time
 
 current_year = time.strftime('%Y')
 sys.path.append(os.path.abspath("./_ext"))
-contact_mail = 'help@opendatahub.bz.it'
+contact_mail = 'help@opendatahub.com'
 
 # -- General configuration ------------------------------------------------
 
@@ -75,7 +75,7 @@ author = u'The Open Data Hub Team'
 # built documents.
 #
 # The short X.Y version.
-version = u'2022.10'
+version = u'2023.01'
 # The full version, including alpha/beta/rc tags.
 release = version
 
@@ -84,7 +84,7 @@ release = version
 #
 # This is also used if you do content translation via gettext catalogs.
 # Usually you set "language" from the command line for these cases.
-language = None
+language = 'en'
 
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
@@ -237,11 +237,13 @@ man_pages = [
 linkcheck_anchors = False
 linkcheck_retries = 2
 linkcheck_ignore = [
-    'https://ci.opendatahub.bz.it',
-    'https://github.com/$USERNAME/',
-    'https://localhost:\d+/',
-    'https://cert.provinz.bz.it/musport/services/MuseumsService.MuseumsServiceHttpSoap11Endpoint/',
-    'http://tourism.opendatahub.bz.it/token',
+    r'https://ci.opendatahub.com',
+    r'https://github.com/\$USERNAME/(.+)',
+    r'https://alpinebits.opendatahub.com/AlpineBits',
+    r'https://localhost:\d+/',
+    r'https://cert.provinz.bz.it/musport/services/MuseumsService.MuseumsServiceHttpSoap11Endpoint/',
+    r'https://tourism.opendatahub.bz.it/token',
+    r'https://tourism.api.opendatahub.bz.it/(.+)'
 ]
 
 # -- Options for Texinfo output -------------------------------------------

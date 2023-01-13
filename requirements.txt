@@ -4,3 +4,4 @@ sphinx-copybutton
 sphinx_design
 sphinx_rtd_theme
 sphinx-togglebutton
+docutils<0.17
