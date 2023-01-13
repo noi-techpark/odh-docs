@@ -3,6 +3,9 @@
 How to Access |odh| Data Using SPARQL
 =====================================
 
+.. versionchanged:: 2023.1 notify users of SPARQL endpoint reachable
+   upon request only.
+
 .. warning:: The SPARQL endpoint is currently not active, but can be
    activated upon request to |contact|. However, the ODH SPARQL
    portal, which contains sample data and queries, can be accessed at

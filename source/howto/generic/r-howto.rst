@@ -3,6 +3,9 @@
 How to Access |odh| Data With R and SPARQL
 ==========================================
 
+.. versionchanged:: 2023.1 notify users of SPARQL endpoint reachable
+   upon request only.
+
 Datasets and their data in the |odh| can be accessed using R, a
 software for statistical analysis and |odh|'s  SPARQL endpoint.
 
