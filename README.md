@@ -7,7 +7,7 @@ project.
 The documentation consists of two complimentary parts:
 
 1. The 'stable' documentation, that does not change much over time,
-   available at https://docs.opendatahub.bz.it/en/latest/.  This
+   available at https://docs.opendatahub.com/en/latest/.  This
    documentation can be accessed by anyone to have an overview of the
    Open Data Hub and to discover if the project can interest them or
    if they can join or interact with the Team. In more details, this
@@ -36,6 +36,6 @@ The documentation consists of two complimentary parts:
 **Note:** If you experience any issue when using the APIs (like e.g.,
 endpoints down or throwing errors, query outcome not meeting the
 expected result), please send an email directly to
-help@opendatahub.bz.it. Your feedback or request will be processed
+help@opendatahub.com. Your feedback or request will be processed
 directly by the Customer Care Team and you will likely receive a quick
 response!
