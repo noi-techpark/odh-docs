@@ -1,3 +1,9 @@
+<!--
+SPDX-FileCopyrightText: NOI Techpark <digital@noi.bz.it>
+
+SPDX-License-Identifier: CC0-1.0
+-->
+
 **CONTRIBUTING TO THE ODH DOCUMENTATION PROJECT**
 
 This project takes part of the [Open Data Hub](http://opendatahub.bz.it/).
