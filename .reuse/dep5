@@ -3,7 +3,7 @@ Upstream-Name: documentation
 Upstream-Contact: NOI Techpark <digital@noi.bz.it>
 Source: https://github.com/noi-techpark/documentation
 
-Files: make.bat Makefile requirements.txt source/*.rst source/*.txt source/*.sty source/_static/fonts/* source/images/*
+Files: make.bat Makefile .pre-commit-config.yaml requirements.txt source/*.rst source/*.txt source/*.sty source/_static/fonts/* source/images/*
 Copyright: (c) NOI Techpark <digital@noi.bz.it>
 License: CC0-1.0
 
