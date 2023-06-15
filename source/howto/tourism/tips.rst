@@ -70,22 +70,22 @@ interface or using an API calls:
 
 * :strong:`reg`:
 
-     http://tourism.opendatahub.bz.it/swagger/ui/index#!/Common/Common_GetRegionsReduced
+     http://tourism.opendatahub.com/swagger/ui/index#!/Common/Common_GetRegionsReduced
      :apit:`RegionReduced?language=it`
 
 * :strong:`tvs`:
 
-    http://tourism.opendatahub.bz.it/swagger/ui/index#!/Common/Common_GetTourismvereinReduced
+    http://tourism.opendatahub.com/swagger/ui/index#!/Common/Common_GetTourismvereinReduced
     :apit:`TourismAssociationReduced?language=iturismusverein)`
 
 * :strong:`mun`:
 
-    http://tourism.opendatahub.bz.it/swagger/ui/index#!/Common/Common_GetMunicipalityReduced
+    http://tourism.opendatahub.com/swagger/ui/index#!/Common/Common_GetMunicipalityReduced
     :apit:`MunicipalityReduced?language=it`
 
 * :strong:`fra`:
 
-    http://tourism.opendatahub.bz.it/swagger/ui/index#!/Common/Common_GetDistrictReduced
+    http://tourism.opendatahub.com/swagger/ui/index#!/Common/Common_GetDistrictReduced
     :apit:`DistrictReduced?language=it`
 
 For example, to retrieve all Gastronomy in the suburb of Lana, first

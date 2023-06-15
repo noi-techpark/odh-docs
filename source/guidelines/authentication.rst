@@ -88,7 +88,7 @@ is the method shown here.
 
 In order to receive an access token, you need in advance to have credentials for
 the Open Data Hub. If you do not have them, please open a ticket on
-issues.opendatahub.com or send an email to :email:`help@opendatahub.bz.it`.
+issues.opendatahub.com or send an email to :email:`help@opendatahub.com`.
 The same holds, if you plan to create an application that retrieves closed data
 from the Open Data Hub. For this, also other OAuth2 flows exist.
 

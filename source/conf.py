@@ -118,9 +118,9 @@ rst_prolog = """
 extlinks = { 'sasabus':
              ('http://sasabus.org/%s', None),
              'stinfo':
-             ('https://tourism.api.opendatahub.bz.it/#%s', None),
+             ('https://tourism.api.opendatahub.com/#%s', None),
              'apit':
-             ('https://tourism.api.opendatahub.bz.it/v1%s', None),
+             ('https://tourism.api.opendatahub.com/v1%s', None),
              'home':
              ('https://opendatahub.com/datatype/%s', None),
              'dataset':
@@ -246,8 +246,8 @@ linkcheck_ignore = [
     r'https://alpinebits.opendatahub.com/AlpineBits',
     r'https://localhost:\d+/',
     r'https://cert.provinz.bz.it/musport/services/MuseumsService.MuseumsServiceHttpSoap11Endpoint/',
-    r'https://tourism.opendatahub.bz.it/token',
-    r'https://tourism.api.opendatahub.bz.it/(.+)'
+    r'https://tourism.opendatahub.com/token',
+    r'https://tourism.api.opendatahub.com/(.+)'
 ]
 
 # -- Options for Texinfo output -------------------------------------------
