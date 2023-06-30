@@ -77,7 +77,7 @@ available online: they are summarised in the following table.
 
             * :octicon:`triangle-right` The URL of the Swagger
               interface is
-              https://tourism.opendatahub.bz.it/swagger/ui/index
+              https://tourism.opendatahub.com/swagger/ui/index
 
             * :octicon:`triangle-right` Check out the `Tourism
               dedicated howto` (:ref:`tourism-data-howto`) that will

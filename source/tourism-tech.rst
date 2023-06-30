@@ -73,7 +73,7 @@ Filters are used within a dataset and their primary purpose is to
 limit the result set according to specific parameters, although they
 might not be available in every API call. Information about default
 values can be found for each datasets in the `swagger interface
-<https://tourism.opendatahub.bz.it/swagger/ui/index>`_ of the API. Some
+<https://tourism.opendatahub.com/swagger/ui/index>`_ of the API. Some
 examples of their use can be found in section :doc:`/howto/tourism/tips`.
 
 - :strong:`Seed` is used to set pagination. See tip :ref:`TT3
@@ -178,12 +178,12 @@ The following query will retrieve from the dataset only those item
 which have a :strong:`Type` and a strong:`Active` keys defined in the
 dataset::
 
-  https://tourism.opendatahub.bz.it/api/ODHActivityPoi?fields=Type,Active
+  https://tourism.opendatahub.com/api/ODHActivityPoi?fields=Type,Active
 
 The following query retrieves information from within a dictionary
 field::
 
-  https://tourism.opendatahub.bz.it/api/ODHActivityPoi?fields=Detail.en.Title
+  https://tourism.opendatahub.com/api/ODHActivityPoi?fields=Detail.en.Title
 
 In particular, all items which have a `Title` in `en`\ glish within
 the `Detail` will appear in the result set of this query.
