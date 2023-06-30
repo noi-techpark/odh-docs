@@ -6258,3 +6258,10 @@ button.toggle-button.toggle-button-hidden:before {
 /*     max-width: 1024px; */
 /*     margin: auto */
 /* } */
+
+
+html {
+    --pst-font-family-base: "Open Sans", Arial, sans-serif, var(--pst-font-family-base-system);
+    --pst-font-family-heading: "Open Sans", Arial, sans-serif, var(--pst-font-family-base-system);
+    --pst-font-family-monospace: Courier, var(--pst-font-family-monospace-system);
+}
