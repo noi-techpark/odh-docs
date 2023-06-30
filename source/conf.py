@@ -138,11 +138,10 @@ panels_add_fontawesome_latex = True
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 #
-html_theme = 'sphinx_rtd_theme'
+html_theme = 'pydata_sphinx_theme'
 
 html_theme_options = {
-    'analytics_id': 'UA-138331709-2',
-    'analytics_anonymize_ip': False
+    'announcement': '<p>Content on this page may not be updated, is by no means official, and  is used only for testing!</p>',
 }
 
 html_context = {'contact_mail' : '%s' %contact_mail }
@@ -164,7 +163,7 @@ html_title = u'OpenDataHub Docs Repo'
 # The name of an image file (relative to this directory) to place at the top
 # of the sidebar.
 #
-html_logo = 'images/OpenDataHub.png'
+html_logo = 'images/opendatahub-logo.svg'
 
 # If not None, a 'Last updated on:' timestamp is inserted at every page
 # bottom, using the given strftime format.
