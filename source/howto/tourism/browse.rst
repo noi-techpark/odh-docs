@@ -39,7 +39,7 @@ of the page allow to open various resources about the Tourism domain.
      https://github.com/callumlocke/json-formatter.
 
 * The `Official documentation
-  <https://opendatahub.readthedocs.io/en/latest/index.html>`_ of the
+  <https://docs.opendatahub.com/en/latest/index.html>`_ of the
   Open Data Hub project
 
 The bar at the top of the page allows to carry out a few actions:
