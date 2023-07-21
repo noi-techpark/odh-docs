@@ -13,6 +13,5 @@ The following is the list of appendices.
 
    architecture
    glossary
-   licenses
    changelog
 
