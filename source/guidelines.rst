@@ -28,8 +28,8 @@ all the content that was featured in this section has been moved and
 rearranged. The repository
 https://github.com/noi-techpark/documentation contains a `README.md
 <https://github.com/noi-techpark/documentation/blob/main/README.md>`_
-file with all information that allows a new collaborator to be
-productive in a short time.
+file organised as a set of `Flight Rules` that allows a new
+collaborator to be productive in a short time.
 
 Then, depending on which part of the Open Data Hub Project you are
 going to collaborate, have a look at the :file:`README.md` files in
