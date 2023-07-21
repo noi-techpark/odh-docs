@@ -18,8 +18,9 @@ software ``git`` and an IDE of your choice.
 
 However, depending on the contribution you want to give, you may need
 to install some of the software used by the |odh|, so make sure that
-you read the :ref:`devel-guidelines` to understand if you need to
-install some more software.
+you read the `Developer's Flight Rules
+<https://github.com/noi-techpark/documentation/blob/main/README.md>`_
+to understand if you need to install some more software.
 
 You also need an account on Github to be able to fork projects and
 contribute to the |odh| project.

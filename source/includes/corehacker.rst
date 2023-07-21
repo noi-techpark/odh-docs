@@ -11,14 +11,11 @@ tasks to be carried out:
 
 
 #. Learn how to successfully integrate your code with the existing
-   code-base and how to interact with the Open Data Hub team.  In other words,
-   you need to read and accept the :ref:`devel-guidelines` (click on
-   the link for a summary), which are available in two extended,
-   separate parts: :ref:`platform-guidelines` and
-   :ref:`db-guidelines`.
+   code-base and how to interact with the Open Data Hub team.  In
+   other words, you need to check the `Developer's Flight Rules
+   <https://github.com/noi-techpark/documentation/blob/main/README.md>`_
 
 #. Understand the :ref:`architecture-odh`.
-#. Learn about the :ref:`dtp-env`.
 #. Install the necessary software on your local workstation (be it a
    physical workstation, a virtual machine, or a Docker instance),
    including PostgreSQL with postgis extension, JDK, git.
