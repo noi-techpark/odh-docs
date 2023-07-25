@@ -34,9 +34,9 @@ extensions = [
     'sphinx.ext.ifconfig',
     'sphinx.ext.extlinks',
     'sphinx.ext.imgconverter',
-    'hidemail',
     'sphinx_togglebutton', 'sphinx_design',
-    'sphinx_copybutton', 'changelog'
+    'sphinx_copybutton', 'changelog',
+    'sphinxcontrib.email'
 ]
 
 ### Configuration values for extensions
