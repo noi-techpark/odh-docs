@@ -168,7 +168,7 @@ html_title = u'OpenDataHub Docs Repo'
 # The name of an image file (relative to this directory) to place at the top
 # of the sidebar.
 #
-html_logo = 'images/OpenDataHub.png'
+html_logo = 'images/opendatahub-logo.svg'
 
 # If not None, a 'Last updated on:' timestamp is inserted at every page
 # bottom, using the given strftime format.
@@ -219,7 +219,7 @@ latex_documents = [
 # The name of an image file (relative to this directory) to place at the top of
 # the title page.
 #
-latex_logo = 'images/OpenDataHub.png'
+latex_logo = 'images/opendatahub-logo.svg'
 
 latex_additional_files = [ 'odh.sty' ]
 
