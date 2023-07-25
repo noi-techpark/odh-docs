@@ -6,3 +6,4 @@ sphinx_rtd_theme
 sphinx-togglebutton
 docutils
 sphinxcontrib-email
+sphinx-new-tab-link

@@ -36,7 +36,7 @@ extensions = [
     'sphinx.ext.imgconverter',
     'sphinx_togglebutton', 'sphinx_design',
     'sphinx_copybutton', 'changelog',
-    'sphinxcontrib.email'
+    'sphinxcontrib.email', 'sphinx_new_tab_link'
 ]
 
 ### Configuration values for extensions
