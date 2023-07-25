@@ -155,7 +155,7 @@ html_favicon = 'images/favicon.png'
 # The name for this set of Sphinx documents.
 # "<project> v<release> documentation" by default.
 #
-html_title = u'OpenDataHub Docs Repo'
+html_title = u'%s Repo v%s' %(project, release)
 
 # A shorter title for the navigation bar.  Default is the same as html_title.
 #
