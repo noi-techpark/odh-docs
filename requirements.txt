@@ -4,5 +4,6 @@ sphinx-copybutton
 sphinx_design
 sphinx_rtd_theme
 sphinx-togglebutton
-docutils
+docutils<0.17
 sphinxcontrib-email
+sphinx-new-tab-link

@@ -29,15 +29,10 @@ contact_mail = 'help@opendatahub.com'
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
-extensions = [
-    'sphinx.ext.todo',
-    'sphinx.ext.ifconfig',
-    'sphinx.ext.extlinks',
-    'sphinx.ext.imgconverter',
-    'sphinx_togglebutton', 'sphinx_design',
-    'sphinx_copybutton', 'changelog',
-    'sphinxcontrib.email'
-]
+extensions = [ 'sphinx.ext.todo', 'sphinx.ext.ifconfig',
+               'sphinx.ext.extlinks', 'sphinx.ext.imgconverter',
+               'sphinx_togglebutton', 'sphinx_design', 'sphinx_copybutton',
+               'changelog', 'sphinxcontrib.email', 'sphinx_new_tab_link' ]
 
 ### Configuration values for extensions
 
@@ -155,6 +150,7 @@ html_context = {'contact_mail' : '%s' %contact_mail }
 html_static_path = [ '_static' ]
 html_templates_path = [ '_templates' ]
 html_css_files = [ 'css/odh.css' ]
+html_favicon = 'images/favicon.png'
 
 # The name for this set of Sphinx documents.
 # "<project> v<release> documentation" by default.
@@ -168,7 +164,7 @@ html_title = u'OpenDataHub Docs Repo'
 # The name of an image file (relative to this directory) to place at the top
 # of the sidebar.
 #
-html_logo = 'images/OpenDataHub.png'
+html_logo = 'images/opendatahub-logo.svg'
 
 # If not None, a 'Last updated on:' timestamp is inserted at every page
 # bottom, using the given strftime format.
@@ -219,7 +215,7 @@ latex_documents = [
 # The name of an image file (relative to this directory) to place at the top of
 # the title page.
 #
-latex_logo = 'images/OpenDataHub.png'
+latex_logo = 'images/opendatahub-logo.svg'
 
 latex_additional_files = [ 'odh.sty' ]
 
