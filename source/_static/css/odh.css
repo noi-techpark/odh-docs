@@ -6042,13 +6042,13 @@
 
 /* Customisations for the ODH project */
 
-/* body { */
-/*     font-family: Lato, Helvetica, Arial, sans-serif; */
-/* } 
+body {
+    font-family: "Open Sans", arial, sans-serif;
+} 
 
 .wy-nav-content{
-    max-width: 1024px;    
-} */
+    max-width: 1200px;    
+}
 
 .license {
     text-decoration: none;
@@ -6258,3 +6258,29 @@ button.toggle-button.toggle-button-hidden:before {
 /*     max-width: 1024px; */
 /*     margin: auto */
 /* } */
+
+.wy-side-nav-search {
+    background-color: white;
+}
+.wy-side-scroll {
+    background-color: white;
+}
+.wy-nav-side {
+    background-color: white;
+}    
+.wy-side-nav-search>div.version {
+    color: var(--sd-color-muted);
+}
+.wy-menu-vertical li.current>a {
+    color:var(--sd-color-dark);
+}
+.wy-menu-vertical li>a {
+    color:var(--sd-color-muted);
+}
+.wy-nav-content-wrap {
+    background-color: white;
+}    
+.wy-menu-vertical p.caption {
+    color: var(--sd-color-black);
+    font-size: 100%;
+}
