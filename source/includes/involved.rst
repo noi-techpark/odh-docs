@@ -47,7 +47,7 @@ knowledge.
       +++++
 
       This service is suitable for :ref:`Data Providers
-      <data-provider-def>`.
+      <data-providers>`.
 
    .. grid-item-card::
       :columns: 12 12 6 6
@@ -64,8 +64,8 @@ knowledge.
 
       +++++
 
-      This service is most suitable for :ref:`Data Consumers
-      <data-consumer-def>` and App developers.
+      This service is most suitable for Data Consumers and App
+      developers.
 
    .. grid-item-card::
       :columns: 12
@@ -82,9 +82,8 @@ knowledge.
 
       +++++
 
-      This service is suitable for :ref:`Data Consumers
-      <data-consumer-def>`, App developers, and companies interested
-      in development built on top of the |odh|\.
+      This service is suitable for Data Consumers, App developers, and
+      companies interested in development built on top of the |odh|\.
 
 Besides the tasks that you find below, you can also help the Open Data
 Hub project grow and improve by reporting bugs or asking for new
