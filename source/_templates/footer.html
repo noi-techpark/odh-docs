@@ -6,8 +6,15 @@ SPDX-License-Identifier: CC0-1.0
 
 {% extends '!footer.html' %}
 
-{% block extrafooter %}
+{%- block contentinfo %}
+<p>
+  {%- trans copyright=copyright|e %}&#169;
+  Copyright <a href="https://noi.bz.it/en">{{ copyright }}</a>.{%
+  endtrans %}
+</p>
+{% endblock %}
 
+{% block extrafooter %}
 <div class="extrafooter">
   Please report mistakes, bug, or suggest new topics for this
   documentation by sending an email to our <a href="mailto:{{
