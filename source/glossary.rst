@@ -16,8 +16,7 @@ Glossary
       belong to.
 
    Dataset
-      A dataset is a collection of records from a Data source. See the
-      :ref:`detailed description <dataset-def>`.
+      A dataset is a collection of records from a Data source. 
 
    Data Format
       Data format is the way information is encoded and exchanged between
@@ -48,52 +47,8 @@ Glossary
      
    Data Provider  
       A Data Provider is an entity that supplies data or datasets to
-      the |odh|. See how it :ref:`is integrated <data-provider-def>`
-      in the |odh| and a :ref:`detailed description <data-providers>`.
-
-   Data Collector   
-      A component of the |odh|\, a data collector is used to gather
-      data from datasets and send them to the |odh|\. See the
-      :ref:`detailed description <data-collector-def>`.
-	    
-   DTO   
-      A core component of the |odh|\, the DTO transforms the data
-      format of a Source into a |odh|\-understandable format.  See the
-      :ref:`detailed description <dto-def>`.
+      the |odh|. See :ref:`detailed description <data-providers>`.
    
-   Writer   
-      The Writer is a core component of the |odh|\. It receives data
-      from the Data Collectors and stores them in the Database.  See
-      the :ref:`detailed description <writer-def>`.
-
-   DAL      
-      The |dal| is used by the reader and writer to communicate with
-      the database.  See the :ref:`detailed description <dal-def>`.
-   
-   Database      
-      Also known as persistence layer, the database ("DB") stores all
-      the data received by the writer. See the :ref:`detailed
-      description <database-def>`.
-
-   Reader      
-      A core component of the |odh|\, the Reader extract data form the
-      Database and sends it to the web services.  See the
-      :ref:`detailed description <reader-def>`.
-
-   Web Services
-      In the context of the |odh| Project, web services expose to Data
-      Consumers the data received from the reader. See the
-      :ref:`detailed description <ws-def>`.
-
-   Data Consumers      
-      Applications that use data received from the Web Services.  See
-      the :ref:`detailed description <data-consumer-def>`.
-
-
-   Persistence Layer      
-      Another name for Database, see the above entry or the
-      :ref:`detailed description <database-def>`.
-
    Claim
      In JSON Web Token, a claim is a piece of information about a
      subject, structured as a key/value pair.
