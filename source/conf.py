@@ -65,7 +65,7 @@ master_doc = 'index'
 
 # General information about the project.
 project = u'Open Data Hub Docs'
-copyright = u'2018-%s, The Open Data Hub Team' %(current_year)
+copyright = u'%s, NOI Spa' %(current_year)
 author = u'The Open Data Hub Team'
 
 
@@ -189,7 +189,7 @@ html_use_index = True
 #
 html_copy_source = False
 html_show_sourcelink = False
-
+html_show_copyright = False
 # If true, "Created using Sphinx" is shown in the HTML footer. Default is True.
 #
 html_show_sphinx = False

@@ -100,3 +100,9 @@
 
       Replace the outdated descriptio of the architecture with link to
       dedicated :octicon:`mark-github` repository.
+
+   .. change::
+      :tags: Improvements
+      :tickets: 295
+
+      Update documentation footer with NOI's copyright.
