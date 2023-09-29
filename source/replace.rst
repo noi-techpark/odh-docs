@@ -36,9 +36,6 @@
 .. abbreviations
 
 .. |rdbms| replace:: :abbr:`RDBMS (Relational DataBase Management System)`
-.. |ddl| replace:: :abbr:`DDL (Data Definition Language)`
-.. |dal| replace:: :abbr:`DAL (Data Access Layer)`
-.. |dto| replace:: :abbr:`DTO (Data Transfer Object)`
 .. |q| replace:: :strong:`Q:`
 .. |a| replace:: :strong:`A:`
 .. |km| replace:: :abbr:`KM (Kwowledge Model)`
