@@ -4,6 +4,8 @@
 |ODH| Architecture
 ==================
 
+.. versionchanged:: 2023-09 replace obsolete architecture description
+
 The architecture of the |odh| has grown over time from a software that
 could be run on (almost) anyone's box with little requirements to a
 fully fledged infrastructure built on `Kubernetes
