@@ -141,7 +141,8 @@ html_theme = 'sphinx_rtd_theme'
 
 html_theme_options = {
     'analytics_id': 'UA-138331709-2',
-    'analytics_anonymize_ip': False
+    'analytics_anonymize_ip': False,
+    'style_external_links': True
 }
 
 html_context = {'contact_mail' : '%s' %contact_mail }
@@ -268,5 +269,5 @@ epub_exclude_files = ['search.html']
 epub_css_files = [ 'odh.css' ]
 
 def setup(app):
-    app.add_css_file('https://use.fontawesome.com/releases/v5.7.0/css/all.css')
+    app.add_css_file('https://fonts.testingmachine.eu/open-sans/style.css')
     app.add_js_file('searchtools.js')
