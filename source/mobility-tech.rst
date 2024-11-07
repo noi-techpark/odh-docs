@@ -550,6 +550,8 @@ operators:
   covered by the box)
 - `bbc`: bounding box containing objects (ex., a station or street, that is
   completely covered by the box)
+- `dlt`: Within distance from point (e.g., all stations within a 5 km radius from point X)  
+  `Learn more and see examples <https://github.com/noi-techpark/odh-docs/wiki/Time-series-API-filter-operators#dlt-operator>`_
 - `in`: true if the value of the target can be found within the given list.
   Example: `name.in.(Patrick,Rudi,Peter)`
 - `nin`: False if the value of the target can be found within the given list.
